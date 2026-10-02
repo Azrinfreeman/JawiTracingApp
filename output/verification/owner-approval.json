@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-02",
+  "approvalSource": "projectOwner",
+  "checks": [
+    {
+      "browser": "chromium",
+      "approvedModelRows": 12,
+      "pendingModelRows": 25,
+      "missingAudioRows": 37,
+      "studentReady": 0,
+      "approvalDates": 12,
+      "screenshot": "output/screenshots/owner-approved-models-chromium.png",
+      "phoneOverflow": false,
+      "pageErrors": []
+    },
+    {
+      "browser": "webkit",
+      "approvedModelRows": 12,
+      "pendingModelRows": 25,
+      "missingAudioRows": 37,
+      "studentReady": 0,
+      "approvalDates": 12,
+      "screenshot": "output/screenshots/owner-approved-models-webkit.png",
+      "phoneOverflow": false,
+      "pageErrors": []
+    }
+  ]
+}

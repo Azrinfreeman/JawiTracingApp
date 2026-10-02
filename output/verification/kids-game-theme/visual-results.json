@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-02T11:31:51.668Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "protectedFilesUnchanged": 94,
+  "screenshots": [
+    "output/verification/kids-game-theme/screens/welcome-320x740.png",
+    "output/verification/kids-game-theme/screens/garden-320x740.png",
+    "output/verification/kids-game-theme/screens/practice-320x740.png",
+    "output/verification/kids-game-theme/screens/completion-320x740.png",
+    "output/verification/kids-game-theme/screens/welcome-390x844.png",
+    "output/verification/kids-game-theme/screens/garden-390x844.png",
+    "output/verification/kids-game-theme/screens/practice-390x844.png",
+    "output/verification/kids-game-theme/screens/completion-390x844.png",
+    "output/verification/kids-game-theme/screens/welcome-1024x768.png",
+    "output/verification/kids-game-theme/screens/garden-1024x768.png",
+    "output/verification/kids-game-theme/screens/practice-1024x768.png",
+    "output/verification/kids-game-theme/screens/completion-1024x768.png",
+    "output/verification/kids-game-theme/screens/welcome-768x1024.png",
+    "output/verification/kids-game-theme/screens/garden-768x1024.png",
+    "output/verification/kids-game-theme/screens/practice-768x1024.png",
+    "output/verification/kids-game-theme/screens/completion-768x1024.png",
+    "output/verification/kids-game-theme/screens/welcome-1920x1080.png",
+    "output/verification/kids-game-theme/screens/garden-1920x1080.png",
+    "output/verification/kids-game-theme/screens/practice-1920x1080.png",
+    "output/verification/kids-game-theme/screens/completion-1920x1080.png",
+    "output/verification/kids-game-theme/screens/welcome-1280x720.png",
+    "output/verification/kids-game-theme/screens/garden-1280x720.png",
+    "output/verification/kids-game-theme/screens/practice-1280x720.png",
+    "output/verification/kids-game-theme/screens/completion-1280x720.png",
+    "output/verification/kids-game-theme/screens/welcome-200-percent.png",
+    "output/verification/kids-game-theme/screens/welcome-artwork-fallback.png"
+  ],
+  "viewports": [
+    {
+      "width": 320,
+      "height": 740,
+      "approvedLetters": 37,
+      "traceCompleted": "nga",
+      "writingPaperStable": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "approvedLetters": 37,
+      "traceCompleted": "nga",
+      "writingPaperStable": true
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "approvedLetters": 37,
+      "traceCompleted": "nga",
+      "writingPaperStable": true
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "approvedLetters": 37,
+      "traceCompleted": "nga",
+      "writingPaperStable": true
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "approvedLetters": 37,
+      "traceCompleted": "nga",
+      "writingPaperStable": true
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "approvedLetters": 37,
+      "traceCompleted": "nga",
+      "writingPaperStable": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "checks": [
+    "Welcome gestures run and settle; no continuous ambient animation",
+    "Reduced motion and 200 percent document zoom",
+    "Missing illustration falls back to local SVG and preserves entry"
+  ],
+  "browser": "153.0.8010.12",
+  "build": "/assets/index-CJtG654z.js"
+}

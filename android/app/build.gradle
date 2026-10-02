@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+def releaseSigning = new Properties()
+def signingFile = rootProject.file('signing.properties')
+if (signingFile.exists()) signingFile.withInputStream { releaseSigning.load(it) }
+
+android {
+    namespace 'com.hananaacademy.tamanjawi'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+    buildFeatures { buildConfig true }
+    defaultConfig {
+        applicationId 'com.hananaacademy.tamanjawi'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+    }
+    signingConfigs {
+        release {
+            if (signingFile.exists()) {
+                storeFile rootProject.file(releaseSigning['storeFile'])
+                storePassword releaseSigning['storePassword']
+                keyAlias releaseSigning['keyAlias']
+                keyPassword releaseSigning['keyPassword']
+            }
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            debuggable false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    androidResources { noCompress += ['wav', 'mp3', 'ogg', 'm4a', 'woff', 'woff2'] }
+    lint { abortOnError true }
+}
+dependencies { implementation 'androidx.webkit:webkit:1.14.0' }
+tasks.register('checkReleaseSigning') {
+    doLast { if (!signingFile.exists()) throw new GradleException('Create local signing.properties before building a release APK.') }
+}
+tasks.matching { it.name == 'preReleaseBuild' }.configureEach { dependsOn 'checkReleaseSigning' }

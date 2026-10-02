@@ -1,0 +1,1184 @@
+{
+  "date": "2026-10-02T12:45:59.711Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "build": [
+    "index-Cvp3q2w3.js",
+    "index-BgvUgsC8.css"
+  ],
+  "totals": {
+    "passed": 157,
+    "skipped": 9,
+    "failed": 0
+  },
+  "reports": [
+    "browser-results.json",
+    "browser-followup.json"
+  ],
+  "visualCaptures": 45,
+  "protectedFilesUnchanged": 93,
+  "inputHashes": 156,
+  "cases": [
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "held tracing and demonstrations cannot turn; interruption cannot strand a pending turn",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "copy exit offers save, discard and return without silently losing ink",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "filtered contents, keyboard turns and missing animation events keep one destination",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "native touch completion needs a fresh page turn at 768 and DPR 2",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "native touch completion needs a fresh page turn at 390 and DPR 3",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 320x740",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 390x844",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 1024x768",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 768x1024",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 1280x720",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 1920x1080",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 844x390",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "held tracing and demonstrations cannot turn; interruption cannot strand a pending turn",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "copy exit offers save, discard and return without silently losing ink",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "filtered contents, keyboard turns and missing animation events keep one destination",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "native touch completion needs a fresh page turn at 768 and DPR 2",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "native touch completion needs a fresh page turn at 390 and DPR 3",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 320x740",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 390x844",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 1024x768",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 768x1024",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 1280x720",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 1920x1080",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "book, guides and labelled controls fit 844x390",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "welcome, approved student entry, explicit adult preview, full catalogue and unavailable audio",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "native pointer flow requires dots, records progress, then saves actual copying",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "teleport, reverse and cancellation do not finish; native tracing recovers",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "demo never updates progress; reduced motion and keyboard navigation work",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "second contact, capture loss, dragging outside and orientation interruption recover",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "corrupt or unavailable storage stays usable; reset requires a deliberate action",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "teacher audition uses an actual local WAV; unsupported and denied playback are reported",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "responsive layouts, scrolling and SVG transforms remain accurate",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "coalesced-event fallback and lighter-guided precision use actual input",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "game.spec.js",
+      "title": "quota errors preserve newly completed work in the current session",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "welcome, approved student entry, explicit adult preview, full catalogue and unavailable audio",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "native pointer flow requires dots, records progress, then saves actual copying",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "teleport, reverse and cancellation do not finish; native tracing recovers",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "demo never updates progress; reduced motion and keyboard navigation work",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "second contact, capture loss, dragging outside and orientation interruption recover",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "corrupt or unavailable storage stays usable; reset requires a deliberate action",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "teacher audition uses an actual local WAV; unsupported and denied playback are reported",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "responsive layouts, scrolling and SVG transforms remain accurate",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "coalesced-event fallback and lighter-guided precision use actual input",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "game.spec.js",
+      "title": "quota errors preserve newly completed work in the current session",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "all 37 models are student-ready and teacher review has no authored drafts",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "Qaf requires the complete closed head, then its bowl, then both separate dots",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "student book includes Ye and Nya and closes after Nya without wrapping",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "all 15 final-batch stroke and dot stages fit the 320 layout",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "all 15 final-batch stroke and dot stages fit the 768 layout",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "nga completes with native touch at 320",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "qaf completes with native touch at 320",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "nga completes with native touch at 768",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "letter-batch-3.spec.js",
+      "title": "qaf completes with native touch at 768",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "all 37 models are student-ready and teacher review has no authored drafts",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "Qaf requires the complete closed head, then its bowl, then both separate dots",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "student book includes Ye and Nya and closes after Nya without wrapping",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "all 15 final-batch stroke and dot stages fit the 320 layout",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "all 15 final-batch stroke and dot stages fit the 768 layout",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "nga completes with native touch at 320",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "qaf completes with native touch at 320",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "nga completes with native touch at 768",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "letter-batch-3.spec.js",
+      "title": "qaf completes with native touch at 768",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "numbered-guides.spec.js",
+      "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "numbered-guides.spec.js",
+      "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "numbered-guides.spec.js",
+      "title": "demonstrations and blank copying have no numbered touch guides",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "numbered-guides.spec.js",
+      "title": "all 12 initial guides are legible and contained on phone and tablet",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "numbered-guides.spec.js",
+      "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "numbered-guides.spec.js",
+      "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "numbered-guides.spec.js",
+      "title": "demonstrations and blank copying have no numbered touch guides",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "numbered-guides.spec.js",
+      "title": "all 12 initial guides are legible and contained on phone and tablet",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+      "status": "passed",
+      "run": "browser-followup.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "native pad drag outside does not place a dot; a new contained press can finish",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+      "status": "passed",
+      "run": "browser-followup.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "native pad drag outside does not place a dot; a new contained press can finish",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "touch gate rejects mouse verification; adult preview cannot persist a score or trophy",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1024x768",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 768x1024",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1280x720",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1920x1080",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1366x768",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "small and short Duo screens offer space guidance before racing; Solo remains usable",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "storage failure retains session export and reload never restores a live match",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "held dot pad and virtual activation cannot complete during pause or countdown",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "fullscreen rejection has a useful fallback and setup pool limits follow eligibility",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Solo has a usable board and completes at 320x740",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Solo has a usable board and completes at 844x390",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "touch gate rejects mouse verification; adult preview cannot persist a score or trophy",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1024x768",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 768x1024",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1280x720",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1920x1080",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1366x768",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "small and short Duo screens offer space guidance before racing; Solo remains usable",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "storage failure retains session export and reload never restores a live match",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "held dot pad and virtual activation cannot complete during pause or countdown",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "fullscreen rejection has a useful fallback and setup pool limits follow eligibility",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+      "status": "skipped",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Solo has a usable board and completes at 320x740",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Solo has a usable board and completes at 844x390",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "native emulated touch at 768 CSS pixels and DPR 2",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "native emulated touch at 390 CSS pixels and DPR 3",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "native emulated pen preserves pointer type and completes a strict stroke",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "play touch preserves colour after an excursion at 768 CSS pixels and DPR 2",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "play touch preserves colour after an excursion at 390 CSS pixels and DPR 3",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "native emulated pen completes assisted play with its own recorded input type",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "ui-theme.spec.js",
+      "title": "welcome profiles and catalogue stay readable with two, four or six columns",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "ui-theme.spec.js",
+      "title": "rendered text, control boundaries and keyboard focus have contrast",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "ui-theme.spec.js",
+      "title": "body completion never places celebration over the paper or moves its square",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "ui-theme.spec.js",
+      "title": "teacher content, confirmations and previews fit narrow screens",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "ui-theme.spec.js",
+      "title": "a phone completion shows the next-letter action without scrolling",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "ui-theme.spec.js",
+      "title": "welcome profiles and catalogue stay readable with two, four or six columns",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "ui-theme.spec.js",
+      "title": "rendered text, control boundaries and keyboard focus have contrast",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "ui-theme.spec.js",
+      "title": "body completion never places celebration over the paper or moves its square",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "ui-theme.spec.js",
+      "title": "teacher content, confirmations and previews fit narrow screens",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "ui-theme.spec.js",
+      "title": "a phone completion shows the next-letter action without scrolling",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "ui-zoom.spec.js",
+      "title": "200% zoom-equivalent reflow keeps navigation, writing and adult controls usable",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "webkit",
+      "file": "ui-zoom.spec.js",
+      "title": "200% zoom-equivalent reflow keeps navigation, writing and adult controls usable",
+      "status": "passed",
+      "run": "browser-results.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+      "status": "passed",
+      "run": "browser-followup.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+      "status": "passed",
+      "run": "browser-followup.json"
+    }
+  ]
+}

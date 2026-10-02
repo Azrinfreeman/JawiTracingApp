@@ -1,0 +1,172 @@
+{
+  "verifiedOn": "2026-10-02",
+  "status": "local engineering implementation complete",
+  "interactionPolicy": "play-guided-v1",
+  "defaultMode": "play",
+  "units": {
+    "passed": 58,
+    "prior": 43,
+    "assistedMatcherCases": 15
+  },
+  "browsers": {
+    "fullRun": {
+      "chromiumAndWebkit": 120,
+      "passed": 120,
+      "failed": 0,
+      "pilotCases": 48,
+      "playInteractionCases": 22,
+      "strictRegressionCases": 12,
+      "nativeTouchPenCases": 6,
+      "existingGameAndBrandingCases": 32
+    },
+    "finalCueSizeChecks": {
+      "passed": 4,
+      "scope": "Affected native Ta pad and five-viewport layout cases in Chromium and WebKit after visual-only arrow/plus scaling",
+      "separateOutput": "output/verification/play-cue-browser"
+    },
+    "firefox": "Launch fails with spawn UNKNOWN; no interaction verification"
+  },
+  "build": {
+    "passed": true,
+    "letters": 37,
+    "draftModels": 12,
+    "studentReady": 0
+  },
+  "evidence": {
+    "performance": {
+      "date": "2026-10-01T20:52:33.568Z",
+      "platform": "win32",
+      "osRelease": "10.0.26200",
+      "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+      "node": "v24.19.0",
+      "browser": "153.0.8010.12",
+      "viewport": {
+        "width": 1280,
+        "height": 1000,
+        "dpr": 1
+      },
+      "letter": "sin",
+      "geometryVersion": 1,
+      "interactionPolicy": "play-guided-v1",
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "input": "native mouse",
+      "handler": {
+        "samples": 284,
+        "meanMs": 0.27007042228336064,
+        "maxMs": 1.2000000029802322
+      },
+      "animationFrameObservation": {
+        "samples": 282,
+        "medianMs": 0.20000000298023224,
+        "p95Ms": 0.30000001192092896,
+        "maxMs": 0.5
+      },
+      "bounds": {
+        "maxInputSamples": 18000,
+        "maxGestures": 100
+      },
+      "scope": "Handler and DOM route-fill/ink availability on animation frames in a Windows headless Chromium session; excludes physical screen, stylus and finger latency."
+    },
+    "visual": {
+      "verifiedOn": "2026-10-02",
+      "screenshots": 28,
+      "captures": [
+        "output/screenshots/play-start-320.png",
+        "output/screenshots/play-colour-320.png",
+        "output/screenshots/play-paused-320.png",
+        "output/screenshots/play-dots-320.png",
+        "output/screenshots/play-result-320.png",
+        "output/screenshots/play-start-390.png",
+        "output/screenshots/play-colour-390.png",
+        "output/screenshots/play-paused-390.png",
+        "output/screenshots/play-dots-390.png",
+        "output/screenshots/play-result-390.png",
+        "output/screenshots/play-start-768.png",
+        "output/screenshots/play-colour-768.png",
+        "output/screenshots/play-paused-768.png",
+        "output/screenshots/play-dots-768.png",
+        "output/screenshots/play-result-768.png",
+        "output/screenshots/play-start-1280.png",
+        "output/screenshots/play-colour-1280.png",
+        "output/screenshots/play-paused-1280.png",
+        "output/screenshots/play-dots-1280.png",
+        "output/screenshots/play-result-1280.png",
+        "output/screenshots/play-start-844.png",
+        "output/screenshots/play-colour-844.png",
+        "output/screenshots/play-paused-844.png",
+        "output/screenshots/play-dots-844.png",
+        "output/screenshots/play-result-844.png",
+        "output/screenshots/play-teacher.png",
+        "output/screenshots/play-audio-missing.png",
+        "output/screenshots/play-free-copy.png"
+      ],
+      "errors": [],
+      "externalRequests": [],
+      "layouts": [
+        {
+          "width": 320,
+          "height": 740,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "height": 1024,
+          "overflow": false
+        },
+        {
+          "width": 1280,
+          "height": 1000,
+          "overflow": false
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "overflow": false
+        }
+      ],
+      "scope": "Native mouse input: assisted route fill, retained paused prefix, same-pointer recovery, equivalent dot pads, original reduced-motion reward, teacher disclosure, missing audio and actual free copying."
+    },
+    "production": {
+      "verifiedOn": "2026-10-02",
+      "browser": "153.0.8010.12",
+      "assetHashes": {
+        "hanana-academy-logo.png": "d66edc873f7c838418fe924bf73ffd8311fe41804d665843e271d3a59752c801",
+        "public/branding/hanana-academy-logo.png": "d66edc873f7c838418fe924bf73ffd8311fe41804d665843e271d3a59752c801",
+        "dist/branding/hanana-academy-logo.png": "d66edc873f7c838418fe924bf73ffd8311fe41804d665843e271d3a59752c801"
+      },
+      "publicLogoStatus": 200,
+      "automaticContinuation": "passed with the real browser clock",
+      "manualContinuation": "passed",
+      "focusTransfer": "passed",
+      "splashCssZoom200Percent": "passed at 1280 × 900",
+      "nativeAlifTracing": "passed",
+      "strictExcursionRollback": "passed; held-pointer re-entry cannot complete, fresh clean retry can",
+      "interactionPolicy": "strict-v2",
+      "playfulBaTracing": "passed; retained colour, same-pointer recovery, native equivalent dot pad and assisted outcome",
+      "playInteractionPolicy": "play-guided-v1",
+      "productionFallback": "passed",
+      "errors": [],
+      "failedRequests": [],
+      "externalRequests": []
+    }
+  },
+  "bounds": {
+    "rawSamples": 18000,
+    "rawGestures": 100,
+    "playContinuation": "Deliberate diagnostic rotation preserves accepted progress, aggregate metrics, source frontier and turn allowance",
+    "tightTurnAllowancePerStroke": 18
+  },
+  "teaching": {
+    "unchangedContentVersions": true,
+    "geometryApprovals": 0,
+    "missingNameRecordings": 37,
+    "physicalDevicesAndPupilCalibration": "pending",
+    "independentHandwritingAssessment": false
+  },
+  "deployment": false
+}

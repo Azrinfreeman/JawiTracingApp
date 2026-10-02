@@ -1,0 +1,90 @@
+{
+  "date": "2026-10-02",
+  "status": "implementedPendingContentReview",
+  "batch": [
+    {
+      "id": "sa",
+      "glyph": "ث",
+      "version": 2,
+      "status": "pendingReview",
+      "dots": 3
+    },
+    {
+      "id": "jim",
+      "glyph": "ج",
+      "version": 2,
+      "status": "pendingReview",
+      "dots": 1
+    },
+    {
+      "id": "ca",
+      "glyph": "چ",
+      "version": 2,
+      "status": "pendingReview",
+      "dots": 3
+    },
+    {
+      "id": "ha-pedat",
+      "glyph": "ح",
+      "version": 2,
+      "status": "pendingReview",
+      "dots": 0
+    },
+    {
+      "id": "kha",
+      "glyph": "خ",
+      "version": 2,
+      "status": "pendingReview",
+      "dots": 1
+    }
+  ],
+  "studentReady": 12,
+  "authoredModels": 17,
+  "pendingAuthoredModels": 5,
+  "missingModels": 20,
+  "approvedAudioPreserved": 37,
+  "unchangedCatalogueEntries": 32,
+  "checks": {
+    "unit": {
+      "command": "npm test",
+      "passed": 59
+    },
+    "build": {
+      "command": "npm run build",
+      "status": "passed"
+    },
+    "batchBrowser": {
+      "projects": [
+        "chromium",
+        "webkit"
+      ],
+      "passed": 38,
+      "skipped": 2,
+      "skipReason": "Native emulated touch uses Chromium CDP; matching WebKit cases are inapplicable."
+    },
+    "regressionBrowser": {
+      "files": [
+        "game.spec.js",
+        "audio-approval.spec.js",
+        "numbered-guides.spec.js"
+      ],
+      "projects": [
+        "chromium",
+        "webkit"
+      ],
+      "passed": 30
+    },
+    "production": {
+      "report": "output/verification/letter-batch-1-production.json",
+      "screenshots": 33,
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  },
+  "limitations": [
+    "New geometry and writing order are not approved.",
+    "No physical preschool pupil/device review was performed.",
+    "Firefox was not rerun because of the recorded Windows launch failure."
+  ],
+  "review": "docs/LETTER_BATCH_1_REVIEW.md"
+}

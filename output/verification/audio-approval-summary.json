@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-02",
+  "approvedNames": 37,
+  "onlyStatusAndReviewChanged": true,
+  "all37AudioHashesUnchanged": true,
+  "studentReady": 12,
+  "pendingModels": 25,
+  "unitTestsPassed": 59,
+  "browserTestsPassed": 45,
+  "browserTestsSkipped": 3,
+  "productionRecord": "output/verification/audio-approved-production.json"
+}

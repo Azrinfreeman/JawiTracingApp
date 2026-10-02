@@ -1,0 +1,44 @@
+{
+  "verifiedOn": "2026-10-02",
+  "feature": "Hanana Academy company credits and launch splash",
+  "splash": {
+    "automaticDurationMs": 1800,
+    "manualActionMs": "immediate",
+    "replayPolicy": "once per application mount, including reload",
+    "logoFailure": "text fallback; continuation stays available",
+    "storageChanges": false,
+    "autoplayAudio": false
+  },
+  "placements": ["launch splash", "welcome screen", "shared footer"],
+  "logo": {
+    "source": "hanana-academy-logo.png",
+    "publicCopy": "public/branding/hanana-academy-logo.png",
+    "width": 375,
+    "height": 181,
+    "bytes": 13655,
+    "originalAndPublicAndProductionBytesEqual": true,
+    "sha256": "d66edc873f7c838418fe924bf73ffd8311fe41804d665843e271d3a59752c801"
+  },
+  "verification": {
+    "unitTestsPassed": 30,
+    "build": "passed",
+    "brandingCasesPassed": 12,
+    "broaderRun": { "passed": 56, "failed": 2, "failures": "test coordinates above the viewport after the mode control scrolled the page" },
+    "precisionRegressionRerunPassed": 2,
+    "finalGameFlowRerunPassed": 20,
+    "pilotCasesPassed": 24,
+    "emulatedTouchCasesPassed": 2,
+    "distinctChromiumWebKitCasesPassedAcrossRuns": 58,
+    "singleFinal58CaseRun": false,
+    "productionPreview": "passed including actual logo response, automatic and manual continuation, focus, fallback and native Alif tracing",
+    "screenshots": 14,
+    "visualPageErrors": 0,
+    "visualExternalRequests": 0,
+    "capturedViewportWidths": [320, 390, 768, 1280],
+    "landscapeViewport": { "width": 844, "height": 390 },
+    "splashCssZoom200Percent": "passed at 1280 × 900",
+    "firefox": "launch fails with spawn UNKNOWN; unverified"
+  },
+  "teachingReadiness": { "catalogueEntries": 37, "draftModels": 12, "studentReadyLessons": 0 },
+  "deployed": false
+}

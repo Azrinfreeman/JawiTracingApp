@@ -1,0 +1,23 @@
+{
+  "verifiedOn": "2026-10-02",
+  "browser": "153.0.8010.12",
+  "assetHashes": {
+    "hanana-academy-logo.png": "d66edc873f7c838418fe924bf73ffd8311fe41804d665843e271d3a59752c801",
+    "public/branding/hanana-academy-logo.png": "d66edc873f7c838418fe924bf73ffd8311fe41804d665843e271d3a59752c801",
+    "dist/branding/hanana-academy-logo.png": "d66edc873f7c838418fe924bf73ffd8311fe41804d665843e271d3a59752c801"
+  },
+  "publicLogoStatus": 200,
+  "automaticContinuation": "passed with the real browser clock",
+  "manualContinuation": "passed",
+  "focusTransfer": "passed",
+  "splashCssZoom200Percent": "passed at 1280 × 900",
+  "nativeAlifTracing": "passed",
+  "strictExcursionRollback": "passed; held-pointer re-entry cannot complete, fresh clean retry can",
+  "interactionPolicy": "strict-v2",
+  "playfulBaTracing": "passed; retained colour, same-pointer recovery, native equivalent dot pad and assisted outcome",
+  "playInteractionPolicy": "play-guided-v1",
+  "productionFallback": "passed",
+  "errors": [],
+  "failedRequests": [],
+  "externalRequests": []
+}

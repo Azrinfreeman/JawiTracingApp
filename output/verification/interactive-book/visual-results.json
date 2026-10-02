@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-02T12:32:18.180Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "protectedFilesUnchanged": 93,
+  "screenshots": [
+    "output/verification/interactive-book/screens/contents-320x740.png",
+    "output/verification/interactive-book/screens/nga-start-320x740.png",
+    "output/verification/interactive-book/screens/nga-dots-320x740.png",
+    "output/verification/interactive-book/screens/nga-complete-320x740.png",
+    "output/verification/interactive-book/screens/next-page-320x740.png",
+    "output/verification/interactive-book/screens/contents-390x844.png",
+    "output/verification/interactive-book/screens/nga-start-390x844.png",
+    "output/verification/interactive-book/screens/nga-dots-390x844.png",
+    "output/verification/interactive-book/screens/nga-complete-390x844.png",
+    "output/verification/interactive-book/screens/next-page-390x844.png",
+    "output/verification/interactive-book/screens/contents-1024x768.png",
+    "output/verification/interactive-book/screens/nga-start-1024x768.png",
+    "output/verification/interactive-book/screens/nga-dots-1024x768.png",
+    "output/verification/interactive-book/screens/nga-complete-1024x768.png",
+    "output/verification/interactive-book/screens/next-page-1024x768.png",
+    "output/verification/interactive-book/screens/contents-768x1024.png",
+    "output/verification/interactive-book/screens/nga-start-768x1024.png",
+    "output/verification/interactive-book/screens/nga-dots-768x1024.png",
+    "output/verification/interactive-book/screens/nga-complete-768x1024.png",
+    "output/verification/interactive-book/screens/next-page-768x1024.png",
+    "output/verification/interactive-book/screens/contents-1280x720.png",
+    "output/verification/interactive-book/screens/nga-start-1280x720.png",
+    "output/verification/interactive-book/screens/nga-dots-1280x720.png",
+    "output/verification/interactive-book/screens/nga-complete-1280x720.png",
+    "output/verification/interactive-book/screens/next-page-1280x720.png",
+    "output/verification/interactive-book/screens/contents-1920x1080.png",
+    "output/verification/interactive-book/screens/nga-start-1920x1080.png",
+    "output/verification/interactive-book/screens/nga-dots-1920x1080.png",
+    "output/verification/interactive-book/screens/nga-complete-1920x1080.png",
+    "output/verification/interactive-book/screens/next-page-1920x1080.png",
+    "output/verification/interactive-book/screens/contents-844x390.png",
+    "output/verification/interactive-book/screens/nga-start-844x390.png",
+    "output/verification/interactive-book/screens/nga-dots-844x390.png",
+    "output/verification/interactive-book/screens/nga-complete-844x390.png",
+    "output/verification/interactive-book/screens/next-page-844x390.png",
+    "output/verification/interactive-book/screens/book-end.png",
+    "output/verification/interactive-book/screens/alif-start.png",
+    "output/verification/interactive-book/screens/book-200-percent.png",
+    "output/verification/interactive-book/screens/book-turn.png",
+    "output/verification/interactive-book/screens/ba-complete.png",
+    "output/verification/interactive-book/screens/copy-warning.png",
+    "output/verification/interactive-book/screens/qaf-start.png",
+    "output/verification/interactive-book/screens/qaf-head.png",
+    "output/verification/interactive-book/screens/qaf-dots.png",
+    "output/verification/interactive-book/screens/qaf-complete.png"
+  ],
+  "viewports": [
+    {
+      "width": 320,
+      "height": 740,
+      "writingWidth": 280,
+      "completion": "d16c6a69-2f3d-4e0f-bcbf-c2ed46860dcc"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "writingWidth": 350,
+      "completion": "9cbf8f34-179c-4053-876f-505709d2c323"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "writingWidth": 416,
+      "completion": "dbd1c1f0-4ac8-48b2-8200-bb2048648605"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "writingWidth": 618,
+      "completion": "46c4ec9e-a142-47ac-a6ce-4665f573da84"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "writingWidth": 368,
+      "completion": "1519daa0-7c03-464b-919f-0e9a12db9523"
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "writingWidth": 598,
+      "completion": "7f6bbc75-772a-4ed1-9bd3-eab6df5d3c57"
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "writingWidth": 280,
+      "completion": "741826aa-471d-48f7-9709-6f461b5361dc"
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "End page without wrapping",
+    "200 percent document zoom",
+    "Animated turn and unchanged upright writing board",
+    "Unsaved copy warning and deliberate discard",
+    "Qaf closed head, bowl and separate dots"
+  ],
+  "browser": "153.0.8010.12",
+  "build": "/assets/index-Cvp3q2w3.js"
+}

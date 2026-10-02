@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-10-02T10:10:14.636680+08:00",
+  "provider": "Microsoft Edge online speech synthesis",
+  "client": "edge-tts 7.2.8",
+  "voice": "ms-MY-YasminNeural",
+  "locale": "ms-MY",
+  "rate": "-15%",
+  "pitch": "+0Hz",
+  "authorisation": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+  "reviewStatus": "pendingReview",
+  "recordings": [
+    {
+      "id": "alif",
+      "glyph": "ا",
+      "label": "Alif",
+      "transcript": "Alif",
+      "src": "/audio/letters/alif-name.mp3",
+      "version": 1,
+      "bytes": 12384,
+      "sha256": "9efcc54e37712daab9ac8845c7ebfe272ef2093bde52fdf6685369c1c94e6a29"
+    }
+  ]
+}

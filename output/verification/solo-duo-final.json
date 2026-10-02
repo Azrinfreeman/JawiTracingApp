@@ -1,0 +1,26 @@
+{
+  "production": {
+    "url": "http://127.0.0.1:4173/",
+    "failed": 0,
+    "skipped": 3,
+    "passed": 35
+  },
+  "units": 78,
+  "checkedBuild": "index-BRjy5ctv.js",
+  "broad": {
+    "teardownTimeout": 1,
+    "resolvedBy": "final production demo repeat in Chromium and WebKit",
+    "skipped": 10,
+    "passed": 349
+  },
+  "protectedFiles": 75,
+  "captures": 25,
+  "limitations": [
+    "Simultaneous touch emulated through Chromium CDP; no physical classroom device test.",
+    "Firefox runtime not retried without changed conditions."
+  ],
+  "date": "2026-10-02",
+  "mobileHandoffRepeats": 10,
+  "matchedFinalInputs": true,
+  "changedProtected": 0
+}

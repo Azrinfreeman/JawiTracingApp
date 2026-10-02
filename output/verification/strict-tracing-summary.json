@@ -1,0 +1,41 @@
+{
+  "verifiedOn": "2026-10-02",
+  "status": "implemented locally after user requested proceed",
+  "interactionPolicy": "strict-v2",
+  "inkPolicy": "validatedSegments",
+  "dotInputPolicy": "validatedTapStamp",
+  "storageVersion": 1,
+  "legacyRecords": "readable; optional new fields; no relabelling or deletion",
+  "rules": {
+    "wrongStarts": "no ink; blocked until release",
+    "rejectedStroke": "remove provisional gesture ink; restore pre-gesture baseline; held-pointer re-entry cannot recover",
+    "guidedPartial": "clean prefixes can resume; dirty resume preserves earlier clean prefix",
+    "precisionPartial": "early lift restarts an unfinished continuous stroke; whole-attempt deviation budget retained",
+    "dots": "live containment and cumulative travel; one valid down/up stamps one pending target; actual tap coordinates retained",
+    "cancelResizeCaptureLoss": "unfinished stroke cleared; completed parts retained",
+    "copying": "unrestricted actual ink; teacher observation without automatic handwriting scoring"
+  },
+  "profiles": {
+    "guidedMousePen": { "radius": 22, "startRadius": 30, "endRadius": 26, "coverage": 0.98, "backwardJitter": 10, "dotRadius": 24, "dotTravel": 14 },
+    "guidedTouch": { "radius": 34, "startRadius": 46, "endRadius": 38, "coverage": 0.98, "backwardJitter": 10, "dotRadius": 34, "dotTravel": 20 },
+    "precisionMousePen": { "radius": 16, "startRadius": 24, "endRadius": 20, "coverage": 0.99, "backwardJitter": 6, "dotRadius": 20, "dotTravel": 10 },
+    "precisionTouch": { "radius": 24, "startRadius": 34, "endRadius": 30, "coverage": 0.99, "backwardJitter": 6, "dotRadius": 28, "dotTravel": 14 },
+    "guidedSupport": "adds 8 logical units to body/start/end radii only; fixed throughout attempt",
+    "calibration": "engineering defaults; physical device and teacher/pupil calibration pending"
+  },
+  "verification": {
+    "unitTests": { "passed": 43, "failed": 0 },
+    "build": "passed with content validation",
+    "fullBrowserRun": { "projects": ["chromium", "webkit"], "passed": 71, "failed": 0, "workers": 4, "durationMinutes": 2.9 },
+    "browserBreakdown": { "pilot": 24, "strict": 12, "touchPen": 3, "gameAndBranding": 32 },
+    "affectedCoordinateChecks": "4 passed after correcting test input positions and comparing to delivered native coordinates",
+    "screenshots": { "count": 18, "widths": [320, 390, 768, 1280], "overflow": false, "pageErrors": 0, "externalRequests": 0, "report": "output/screenshots/strict-render-check.json" },
+    "productionSmoke": "strict Alif rollback and clean retry, branding, splash, focus and fallback passed",
+    "productionReport": "output/verification/branding-production-smoke.json",
+    "performanceReport": "output/verification/strict-tracing-performance.json",
+    "firefox": "launch failed with spawn UNKNOWN; unverified",
+    "hardware": "touch and pen are browser emulation; physical iPad, Android and stylus checks pending"
+  },
+  "content": { "catalogue": 37, "draftModels": 12, "studentReady": 0, "missingNameRecordings": 37, "contentVersionChanges": false, "approvalsAdded": false },
+  "publication": "none"
+}

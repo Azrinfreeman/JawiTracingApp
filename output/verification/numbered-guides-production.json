@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-02",
+  "productionURL": "http://127.0.0.1:4173",
+  "screenshots": [
+    "output/screenshots/numbered-guides-ba-390.png",
+    "output/screenshots/numbered-guides-ba-dot-390.png",
+    "output/screenshots/numbered-guides-mim-loop-390.png",
+    "output/screenshots/numbered-guides-kaf-second-390.png",
+    "output/screenshots/numbered-guides-ta-768.png",
+    "output/screenshots/numbered-guides-ta-final-dot-768.png",
+    "output/screenshots/numbered-guides-alif-1280.png",
+    "output/screenshots/numbered-guides-sin-320.png"
+  ],
+  "layouts": [
+    {
+      "capture": "ba",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "capture": "ba-dot",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "capture": "mim-loop",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "capture": "kaf-second",
+      "width": 390,
+      "overflow": false
+    },
+    {
+      "capture": "ta",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "capture": "ta-final-dot",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "capture": "alif",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "capture": "sin",
+      "width": 320,
+      "overflow": false
+    }
+  ],
+  "nativeNumberedDotFinishesBa": true,
+  "dotCount": 1,
+  "equivalentDotActions": 0,
+  "sharedLoopBadge": true,
+  "shortSecondStroke": true,
+  "sequentialDots": true,
+  "studentReady": 12,
+  "audioApprovals": 37,
+  "teachingContentAndAudioBytesPreserved": true,
+  "pageErrors": [],
+  "externalRequests": [],
+  "scope": "Chromium production mouse input and responsive captures; actual pupil/device review remains pending."
+}

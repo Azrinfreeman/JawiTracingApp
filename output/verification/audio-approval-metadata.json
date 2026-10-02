@@ -1,0 +1,350 @@
+{
+  "date": "2026-10-02",
+  "approvalSource": "User explicitly wrote approve all after being asked to review all 37 active recordings",
+  "approvedAudio": 37,
+  "reviewerKind": "projectOwner",
+  "existingModelsApproved": 12,
+  "studentReady": 12,
+  "pendingModels": 25,
+  "changedFields": [
+    "audio.name.status",
+    "audio.name.review"
+  ],
+  "audioFilesUnchanged": true,
+  "versionsUnchanged": true,
+  "rows": [
+    {
+      "id": "alif",
+      "glyph": "ا",
+      "label": "Alif",
+      "version": 2,
+      "src": "/audio/letters/alphabet/alif-name-v2.mp3",
+      "sha256": "062b495ec1506ebaf1bb66bbbd1bd0cf3143f69fe1e8c5d0645450fbcaf4d8e4",
+      "source": "voices/alphabet/01_aliff.mp3"
+    },
+    {
+      "id": "ba",
+      "glyph": "ب",
+      "label": "Ba",
+      "version": 2,
+      "src": "/audio/letters/alphabet/ba-name-v2.mp3",
+      "sha256": "987d2db9dc79dc348d022a5d6324ae1702e8a4736875113a5d4172f10603cf91",
+      "source": "voices/alphabet/02_ba.mp3"
+    },
+    {
+      "id": "ta",
+      "glyph": "ت",
+      "label": "Ta",
+      "version": 2,
+      "src": "/audio/letters/alphabet/ta-name-v2.mp3",
+      "sha256": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d",
+      "source": "voices/alphabet/03_ta.mp3"
+    },
+    {
+      "id": "ta-marbuta",
+      "glyph": "ة",
+      "label": "Ta marbutah",
+      "version": 1,
+      "src": "/audio/letters/ta-marbuta-name.mp3",
+      "sha256": "c3d6e0b040ef65215cc3dd52899505ab8e00d1ceb00ebbd44a65a5aec4082773",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "sa",
+      "glyph": "ث",
+      "label": "Sa",
+      "version": 2,
+      "src": "/audio/letters/alphabet/sa-name-v2.mp3",
+      "sha256": "ecd13ed9a2d6ef025b117fa5ed9b8aeb3f9c48564fbc3b9d7cacae932bda3ff6",
+      "source": "voices/alphabet/04_sa.mp3"
+    },
+    {
+      "id": "jim",
+      "glyph": "ج",
+      "label": "Jim",
+      "version": 2,
+      "src": "/audio/letters/alphabet/jim-name-v2.mp3",
+      "sha256": "e50bb0c1cff95018602e0dd884a1f99c7a2aa48e65d919ad38a687516f6fa4a9",
+      "source": "voices/alphabet/05_jin.mp3"
+    },
+    {
+      "id": "ca",
+      "glyph": "چ",
+      "label": "Ca",
+      "version": 1,
+      "src": "/audio/letters/ca-name.mp3",
+      "sha256": "f01709e62cd3aeb3da609a3c6b34a07373a8ec529f7a7c86c983214144e2a5b3",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "ha-pedat",
+      "glyph": "ح",
+      "label": "Ha (ح)",
+      "version": 2,
+      "src": "/audio/letters/alphabet/ha-pedat-name-v2.mp3",
+      "sha256": "70aff1d8e0cdfe0951644a4fb4f8d398db47962e435d75a19890b84347edf074",
+      "source": "voices/alphabet/06_ha.mp3"
+    },
+    {
+      "id": "kha",
+      "glyph": "خ",
+      "label": "Kha",
+      "version": 2,
+      "src": "/audio/letters/alphabet/kha-name-v2.mp3",
+      "sha256": "d2ec10e1bf498155442361153ebe04f38d6e161857a4aac09d6cbfdd1f28a3a2",
+      "source": "voices/alphabet/07_hor.mp3"
+    },
+    {
+      "id": "dal",
+      "glyph": "د",
+      "label": "Dal",
+      "version": 2,
+      "src": "/audio/letters/alphabet/dal-name-v2.mp3",
+      "sha256": "743ca5838453493045fe17d85f2377bb57eebbdbe0b6859f160b36ab8410c921",
+      "source": "voices/alphabet/08_da.mp3"
+    },
+    {
+      "id": "zal",
+      "glyph": "ذ",
+      "label": "Zal",
+      "version": 2,
+      "src": "/audio/letters/alphabet/zal-name-v2.mp3",
+      "sha256": "0ea67e64c41d8e8414fa4ebc754e71332b1069b4523fe99d4d6aa10f3b575a32",
+      "source": "voices/alphabet/09_dzal.mp3"
+    },
+    {
+      "id": "ra",
+      "glyph": "ر",
+      "label": "Ra",
+      "version": 2,
+      "src": "/audio/letters/alphabet/ra-name-v2.mp3",
+      "sha256": "3fbc1ca4733dd40e419891248ae6184b149a63903bfe46a3ba21b6147bee2553",
+      "source": "voices/alphabet/10_raw.mp3"
+    },
+    {
+      "id": "zai",
+      "glyph": "ز",
+      "label": "Zai",
+      "version": 2,
+      "src": "/audio/letters/alphabet/zai-name-v2.mp3",
+      "sha256": "4e887a969999838cfce6ae60b5c146929650d5aef53c7ecb8934ffd49b09a3eb",
+      "source": "voices/alphabet/11_zai.mp3"
+    },
+    {
+      "id": "sin",
+      "glyph": "س",
+      "label": "Sin",
+      "version": 2,
+      "src": "/audio/letters/alphabet/sin-name-v2.mp3",
+      "sha256": "58f170c037b8f4229466df9cfb7ecddcf9875706c68cc47255ca3521129e9a3b",
+      "source": "voices/alphabet/12_1sin.mp3"
+    },
+    {
+      "id": "syin",
+      "glyph": "ش",
+      "label": "Syin",
+      "version": 2,
+      "src": "/audio/letters/alphabet/syin-name-v2.mp3",
+      "sha256": "d2ecece86ebe31e9dd22595a94eaf265fef04afcf10b75acdd6eb32a306f2dc5",
+      "source": "voices/alphabet/12_2syin.mp3"
+    },
+    {
+      "id": "sad",
+      "glyph": "ص",
+      "label": "Sad",
+      "version": 2,
+      "src": "/audio/letters/alphabet/sad-name-v2.mp3",
+      "sha256": "df2c1465abccebc534a738658b4098c62be74c780729b4e03f6e3ceb4769f8ed",
+      "source": "voices/alphabet/13_sod.mp3"
+    },
+    {
+      "id": "dad",
+      "glyph": "ض",
+      "label": "Dad",
+      "version": 2,
+      "src": "/audio/letters/alphabet/dad-name-v2.mp3",
+      "sha256": "69222ad37d2e7e17910cfe66578f83c239483cd9639c41bdb848d34e45c89ebb",
+      "source": "voices/alphabet/14_dod.mp3"
+    },
+    {
+      "id": "tho",
+      "glyph": "ط",
+      "label": "Ta (ط)",
+      "version": 2,
+      "src": "/audio/letters/alphabet/tho-name-v2.mp3",
+      "sha256": "781fbf7ed4c2edc5044b002a974c83f45f353361e51ca4604401329c572fe81e",
+      "source": "voices/alphabet/15_tor.mp3"
+    },
+    {
+      "id": "za",
+      "glyph": "ظ",
+      "label": "Za",
+      "version": 2,
+      "src": "/audio/letters/alphabet/za-name-v2.mp3",
+      "sha256": "e5af1f6c308fde0b3347bc1685181251295a8cde7e29ea15a18568d03f6057d3",
+      "source": "voices/alphabet/16_zor.mp3"
+    },
+    {
+      "id": "ain",
+      "glyph": "ع",
+      "label": "Ain",
+      "version": 2,
+      "src": "/audio/letters/alphabet/ain-name-v2.mp3",
+      "sha256": "7c3974d9768f6747ae0b99df2c991f05b7ac44faad64e2e333937dcc03c87e1b",
+      "source": "voices/alphabet/17_ain.mp3"
+    },
+    {
+      "id": "ghain",
+      "glyph": "غ",
+      "label": "Ghain",
+      "version": 2,
+      "src": "/audio/letters/alphabet/ghain-name-v2.mp3",
+      "sha256": "371dba3f910d3118713a6a35bd08aa96d0d24bbc44583dbe1bdb2052b602d188",
+      "source": "voices/alphabet/18_ghain.mp3"
+    },
+    {
+      "id": "nga",
+      "glyph": "ڠ",
+      "label": "Nga",
+      "version": 1,
+      "src": "/audio/letters/nga-name.mp3",
+      "sha256": "93ba5c22db7b8858245af633349eea1e50df6cf2d101fd249b7db25687e0850f",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "fa",
+      "glyph": "ف",
+      "label": "Fa",
+      "version": 2,
+      "src": "/audio/letters/alphabet/fa-name-v2.mp3",
+      "sha256": "9650bfd6c8b3a7642a099efcc43705cd31bce7d8eb1ae1948ae6a3ed06ad8f94",
+      "source": "voices/alphabet/19_faa.mp3"
+    },
+    {
+      "id": "pa",
+      "glyph": "ڤ",
+      "label": "Pa",
+      "version": 1,
+      "src": "/audio/letters/pa-name.mp3",
+      "sha256": "7a857dd174d2ee83a6c5aefaa7e2d2c0cb84da6d922e481379597454ede1f55c",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "qaf",
+      "glyph": "ق",
+      "label": "Qaf",
+      "version": 2,
+      "src": "/audio/letters/alphabet/qaf-name-v2.mp3",
+      "sha256": "35a6903e672757cb808d22f121b348a572326d8246200ea0b6e90fce4b59b842",
+      "source": "voices/alphabet/20_kof.mp3"
+    },
+    {
+      "id": "kaf",
+      "glyph": "ک",
+      "label": "Kaf",
+      "version": 1,
+      "src": "/audio/letters/kaf-name.mp3",
+      "sha256": "2e5ac33e648cdc580caecb63c3fb8ef2afde8ab63daba042f489d2bc990ac308",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "ga",
+      "glyph": "ڬ",
+      "label": "Ga",
+      "version": 1,
+      "src": "/audio/letters/ga-name.mp3",
+      "sha256": "862051b6c910b369a1d060720cc6a8ff7ea93190ffa3d189d8712810f8811bed",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "lam",
+      "glyph": "ل",
+      "label": "Lam",
+      "version": 2,
+      "src": "/audio/letters/alphabet/lam-name-v2.wav",
+      "sha256": "2ea37a3cfe0f7ce7c67670717d99f0ee35d5f0d4a3fe38064f25d6fb8a37fd71",
+      "source": "voices/alphabet/21_lam.wav"
+    },
+    {
+      "id": "mim",
+      "glyph": "م",
+      "label": "Mim",
+      "version": 2,
+      "src": "/audio/letters/alphabet/mim-name-v2.wav",
+      "sha256": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2",
+      "source": "voices/alphabet/22_mim.wav"
+    },
+    {
+      "id": "nun",
+      "glyph": "ن",
+      "label": "Nun",
+      "version": 2,
+      "src": "/audio/letters/alphabet/nun-name-v2.wav",
+      "sha256": "6056e86e290d10e576e347e9049d3fc7dc1caeef1fe5d6ca8044b2157d223f5c",
+      "source": "voices/alphabet/23_nun.wav"
+    },
+    {
+      "id": "wau",
+      "glyph": "و",
+      "label": "Wau",
+      "version": 2,
+      "src": "/audio/letters/alphabet/wau-name-v2.wav",
+      "sha256": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298",
+      "source": "voices/alphabet/24_wau.wav"
+    },
+    {
+      "id": "va",
+      "glyph": "ۏ",
+      "label": "Va",
+      "version": 1,
+      "src": "/audio/letters/va-name.mp3",
+      "sha256": "4b8879c9200a0ecfdc119327b9d1a308ab48404095dbb4dba271dfe6f0edd0f0",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "ha",
+      "glyph": "ه",
+      "label": "Ha (ه)",
+      "version": 1,
+      "src": "/audio/letters/ha-name.mp3",
+      "sha256": "83bc8720b12d8bfc5f0e66dc5deac6546a3d3817bd5ee43d50e94ca81a4136ed",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "hamzah",
+      "glyph": "ء",
+      "label": "Hamzah",
+      "version": 2,
+      "src": "/audio/letters/alphabet/hamzah-name-v2.wav",
+      "sha256": "9145078ee74a68a71ab028a833170c24d7c139ae659b8fc9abcfc7d167357dd1",
+      "source": "voices/alphabet/25_hamzah.wav"
+    },
+    {
+      "id": "ya",
+      "glyph": "ي",
+      "label": "Ya",
+      "version": 2,
+      "src": "/audio/letters/alphabet/ya-name-v2.wav",
+      "sha256": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1",
+      "source": "voices/alphabet/26_ya.wav"
+    },
+    {
+      "id": "ye",
+      "glyph": "ى",
+      "label": "Ye",
+      "version": 1,
+      "src": "/audio/letters/ye-name.mp3",
+      "sha256": "11130897351163086760089d6112d40b02b7d7aaf3353c4e833132cf476b4b02",
+      "source": "ms-MY-YasminNeural"
+    },
+    {
+      "id": "nya",
+      "glyph": "ڽ",
+      "label": "Nya",
+      "version": 1,
+      "src": "/audio/letters/nya-name.mp3",
+      "sha256": "279ee3232eeb27eeb0ee9c77929611d32380e4aa997f596f27444cf8fb57cd56",
+      "source": "ms-MY-YasminNeural"
+    }
+  ]
+}

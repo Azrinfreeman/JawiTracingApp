@@ -1,0 +1,15 @@
+android/gradlew text eol=lf
+# Markdown uses two trailing spaces for deliberate line breaks.
+*.md whitespace=-blank-at-eol
+# Preserve packaged/media bytes; generated reports retain their recorded formatting.
+*.apk binary
+*.jar binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.mp3 binary
+*.wav binary
+*.woff binary
+*.woff2 binary
+output/verification/** -whitespace

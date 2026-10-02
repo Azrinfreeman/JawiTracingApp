@@ -1,0 +1,279 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Kuala_Lumpur",
+  "status": "approved",
+  "scope": "Project-owner approval of the 15 final models at existing content revision 2; geometry and audio preserved.",
+  "studentReady": 37,
+  "newlyApproved": 15,
+  "contentVersion": 2,
+  "checks": [
+    {
+      "command": "npm test",
+      "scope": "Final approved catalogue, deterministic geometry/state/storage/audio lifecycle",
+      "result": "passed",
+      "tests": 59
+    },
+    {
+      "command": "npm run build",
+      "scope": "Content/asset validation and production bundle",
+      "result": "passed"
+    },
+    {
+      "command": "node node_modules/@playwright/test/cli.js test tests/browser/letter-batch-3.spec.js tests/browser/game.spec.js tests/browser/audio-approval.spec.js tests/browser/letter-batch-1.spec.js tests/browser/letter-batch-2.spec.js --project=chromium --project=webkit --workers=2 --grep \": play completes|all 37|student next-letter|welcome, approved|student entry\" --reporter=json",
+      "scope": "Student access/completion and saved approved revision-2 records; catalogue, teacher labels, adult preview and next-letter navigation",
+      "result": "passed",
+      "tests": 54,
+      "evidence": "output/verification/letter-batch-3-approval-browser.json"
+    },
+    {
+      "command": "node node_modules/@playwright/test/cli.js test tests/browser/audio-approval.spec.js tests/browser/branding.spec.js tests/browser/draft-audio.spec.js --project=chromium --project=webkit --workers=2 --grep \"approved student attempt|manual continue|review list, approval labels\" --reporter=json",
+      "scope": "Approved Ba save, launch/student entry, responsive review labels and audio codec feedback",
+      "result": "passed",
+      "tests": 6,
+      "evidence": "output/verification/letter-batch-3-approval-entry.json"
+    },
+    {
+      "command": "node scripts/verify-letter-batch-3-approval.js",
+      "scope": "Production Chromium student mouse traces for all 15 new approvals, all 15 next-letter transitions, phone/tablet catalogue and teacher-row captures; no teacher or physical pupil/device assessment inferred.",
+      "result": "passed",
+      "studentCompletions": 15,
+      "navigationChecks": 15,
+      "screenshots": 4,
+      "evidence": "output/verification/letter-batch-3-approval.json"
+    }
+  ],
+  "browserPassed": 60,
+  "browserSkipped": 0,
+  "unresolvedFailures": 0,
+  "preservedEntries": 22,
+  "recordingHashesPreserved": 37,
+  "geometryDotsSequencesAndVersionsPreserved": true,
+  "visualInspection": [
+    "approved-garden-320",
+    "approved-garden-768",
+    "approved-teacher-stats-1280"
+  ],
+  "runtime": {
+    "node": "v24.19.0",
+    "browser": "153.0.8010.12"
+  },
+  "inputs": [
+    {
+      "path": "src/App.jsx",
+      "sha256": "31c9f54d1be06d1ffbe48e1c9c3a82c392a1fdc20c4ade6bf42b334fbffc249f"
+    },
+    {
+      "path": "src/main.jsx",
+      "sha256": "4c150b808e9e5dcf7ca21217a484aea16b483746d48e902e17857206e8190362"
+    },
+    {
+      "path": "src/audio/audioManager.js",
+      "sha256": "071bd25c41168f7324e17e8c72a2a28670af859831f7f39d2cbdad5e613bce6f"
+    },
+    {
+      "path": "src/components/AudioControls.jsx",
+      "sha256": "4ff05355164256436115b7dae5da99b5a1206ad53ab38e23bb2852c425229bad"
+    },
+    {
+      "path": "src/components/AudioReviewPanel.jsx",
+      "sha256": "b27555073378eafd75454cd2a97def5d8b5decb6374383d72925d228a9b29a99"
+    },
+    {
+      "path": "src/components/CompanyBrand.jsx",
+      "sha256": "bf0777c606cf5624a4afced6f8f9d8310afe1a153dc7905a3ccd74eaf1e8dd14"
+    },
+    {
+      "path": "src/components/DotTapPad.jsx",
+      "sha256": "2c29d0224bad319906422ec5200b57d3d56ab428ce243afd26addcf5dc824600"
+    },
+    {
+      "path": "src/components/DraftModelReview.jsx",
+      "sha256": "4eb99bfafc0987e4de080a0d54afaec301b3afb84e7b60c2e089dbd29f4557fd"
+    },
+    {
+      "path": "src/components/Icons.jsx",
+      "sha256": "f18954c0b67f91437445a6005eb6ef01c85ac8355b39714e29ae91fe0ccffeaf"
+    },
+    {
+      "path": "src/components/LetterCard.jsx",
+      "sha256": "63f141ee0fee2826c9bbd2c981eca272fb53812c2c67864c5b41264d8bf7863e"
+    },
+    {
+      "path": "src/components/NumberedTraceGuides.jsx",
+      "sha256": "618200c7ff5a20e7aa926543e5ff92936b188fe5910d493cf274e9abb62d6cd3"
+    },
+    {
+      "path": "src/components/PlayFeedback.jsx",
+      "sha256": "5917e632f42b457676bed9693710dd133acc0fc57bfca49588b57ada49a84470"
+    },
+    {
+      "path": "src/components/TraceBoard.jsx",
+      "sha256": "f6c709f5fe04ffa7e993cc5358b96698c26def7cace2b739878b22b0f76baecd"
+    },
+    {
+      "path": "src/content/letters.json",
+      "sha256": "4433bf1131d2d0a0c151d67ddf7ad961cd53f8e2bea3b8b75c783c84246c32b9"
+    },
+    {
+      "path": "src/content/validateContent.js",
+      "sha256": "96eeb1864af9e67b11564a6de54125e72c0a3c546f25b0cdb4be62ae3c234606"
+    },
+    {
+      "path": "src/screens/LessonScreen.jsx",
+      "sha256": "d352b82f372c0a2a080f6b0ed1b9c923c22dd8e1cdd5760a9a5095aaca65635b"
+    },
+    {
+      "path": "src/screens/LetterGarden.jsx",
+      "sha256": "bcfc7ba57d9fb3d0a1a4af6a3416a70f383e209c75c96f2644b479ac644a967f"
+    },
+    {
+      "path": "src/screens/ResultScreen.jsx",
+      "sha256": "025969bfa2c432892d7998b7c66d36074235827cf034e72e3a6daea5bfed4530"
+    },
+    {
+      "path": "src/screens/SplashScreen.jsx",
+      "sha256": "9b7eba6178c5260e295398df120121383744cbb7de9179f04d63333458125b52"
+    },
+    {
+      "path": "src/screens/TeacherScreen.jsx",
+      "sha256": "98785ea57c6a6516f2d860c71d339d557a41b886646a2d87fadf351633d842c1"
+    },
+    {
+      "path": "src/screens/WelcomeScreen.jsx",
+      "sha256": "202947d02156ace1b5e704d5a4320fb84ad3377dc7e75865231255587f16a8be"
+    },
+    {
+      "path": "src/storage/progressStore.js",
+      "sha256": "b73d2c306c2e164a0016a1f0763f69cbb52184c2fbe45fcfad7ee9de0a30c319"
+    },
+    {
+      "path": "src/styles/app.css",
+      "sha256": "11134965e3c6ede9361e438ec666969c4bd3e70df4a7537fb84b2a2522e22100"
+    },
+    {
+      "path": "src/tracing/dotMatcher.js",
+      "sha256": "84e3742623c7ec46ce9fb1dc585a55db3d6fc0955063bb7e0322da4b26ac1999"
+    },
+    {
+      "path": "src/tracing/geometry.js",
+      "sha256": "0c72b47aa27b69c653489da3fc9efd6a8d1335381290791e78025fc9197ece57"
+    },
+    {
+      "path": "src/tracing/inputController.js",
+      "sha256": "8160f4bcfb66ca79d6a5d4822839ec2864fcb3cc1b74201e7de8cb8f96e6bfae"
+    },
+    {
+      "path": "src/tracing/matcher.js",
+      "sha256": "f8802416a97366a9d6b8143559781552c75a3e5bead368122bd90015976ca358"
+    },
+    {
+      "path": "src/tracing/numberedGuides.js",
+      "sha256": "ad7f57196b9d9206407c7a201c02201d93c9bbb6b575be0131f4db1de9a59e73"
+    },
+    {
+      "path": "src/tracing/playMatcher.js",
+      "sha256": "d38cbc96484c3fcf145992dac6842b0f98cb8a1b761802cc8838039742662112"
+    },
+    {
+      "path": "src/tracing/prepareReference.js",
+      "sha256": "d4402dda2203cfa1bc7a3b76dc3f97c774ece17c6fde8d5c612ced48a5910f61"
+    },
+    {
+      "path": "src/tracing/profiles.js",
+      "sha256": "4e0c71ba7d820325aa553ca5df0985cf10027830e3167e46df413a4f53dfb51d"
+    },
+    {
+      "path": "src/tracing/traceReducer.js",
+      "sha256": "459959d0ac8236f56f365e153d5294904832c0028330a389fee152a6d62e8853"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a68f130c5b87c91c0a36ad799d3826fe7095f250f3863045085b912bf8618f97"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d"
+    },
+    {
+      "path": "playwright.config.js",
+      "sha256": "f86b865fbb679b755336020da3079cc3563485ab257f1208dddb5c1acb4770a6"
+    },
+    {
+      "path": "tests/geometry/support.test.js",
+      "sha256": "1e0e751922f7af029a9408a255f4bcb66d26e57fdac617eb877cebbd3b7db0ed"
+    },
+    {
+      "path": "tests/browser/audio-approval.spec.js",
+      "sha256": "76104d7fe0b7132327c4d9c2fec2850a63a4de43628ea76e83b5a228e0bd8284"
+    },
+    {
+      "path": "tests/browser/branding.spec.js",
+      "sha256": "0b4dab9e4a7a47da4680d33c7e2af665a421b3ed7083e161ed1dc5f89733b2d7"
+    },
+    {
+      "path": "tests/browser/draft-audio.spec.js",
+      "sha256": "232fdbff9a041611a85964d6c15e7f2e944eb16900715adfbe404e54e9ef5f9a"
+    },
+    {
+      "path": "tests/browser/game.spec.js",
+      "sha256": "d23fbc0dcf6acc4816c7729648d4d38480c0b175d8bb6b8f8fa13c259128d91e"
+    },
+    {
+      "path": "tests/browser/letter-batch-1.spec.js",
+      "sha256": "7872fb4c29a468347af49afa58af0fa5da4a1a73b9bf186b729c9423d01fbad2"
+    },
+    {
+      "path": "tests/browser/letter-batch-2.spec.js",
+      "sha256": "0a037b340bed7594327274218566bb4c13cfaab197a0420604140974a42e7a1a"
+    },
+    {
+      "path": "tests/browser/letter-batch-3.spec.js",
+      "sha256": "a09a37244c6a2f6a00a39ddfbef6b054bb8322bbda40c4b92d3d1c70c63bd5a9"
+    },
+    {
+      "path": "tests/browser/numbered-guides.spec.js",
+      "sha256": "9d9e33ec6c59afd77b22e9b207e01acab37bf0ad8444c4bafaab6c430a177992"
+    },
+    {
+      "path": "tests/browser/pilot.spec.js",
+      "sha256": "9ff25d4519d413ac170dd5c3bda7a90417440038e2aa5eeadc42b52fb017a8f3"
+    },
+    {
+      "path": "tests/browser/play-tracing.spec.js",
+      "sha256": "ee1570f80f000e49fde10c0f41c64885de955963b3ca9b3f34ab219e58500744"
+    },
+    {
+      "path": "tests/browser/strict-tracing.spec.js",
+      "sha256": "bab2ada1d2d05917870c3faa4d52b72b0da73a34a1f8c8d72a5f33ac63f37247"
+    },
+    {
+      "path": "tests/browser/touch.spec.js",
+      "sha256": "2c28333920ca77b3c66b19bff4f8a43e4112f3d8596ef85c2059a80ee642772e"
+    },
+    {
+      "path": "tests/browser/helpers/tracing.js",
+      "sha256": "aa9f29d649fa58e1e72ddf2a61d270878e7b04c95e1d98c475cfe76bb4d649b5"
+    },
+    {
+      "path": "tests/browser/helpers/navigation.js",
+      "sha256": "5c2768ecfbc2e8408a6ec7727131e0233e5c08c3fa9d701807040dd532b72629"
+    },
+    {
+      "path": "dist/assets/index-aR-WCKKE.css",
+      "sha256": "2279159026a69b9d6d013e16f8b3cc2d158a5242205c1fe33b10a92c6cf9e482"
+    },
+    {
+      "path": "dist/assets/index-J8MKich5.js",
+      "sha256": "b29967dbcf9c461642400e08faec5f8831716ae66ee9e120221f18c5a936d946"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "75a9a6ebb0b8b5af8776ea2089020f47c98ba8c77f736f56876d08867b5dd275"
+    }
+  ],
+  "limitations": [
+    "Project-owner approval; no named teacher assessment or physical pupil/device trial",
+    "Recorded Firefox Windows launch and audio-codec limits remain outside this approval scope"
+  ],
+  "repeatTrigger": "Relevant geometry, approval metadata, application/tests, assets, dependencies, build or runtime changed, or a new concern arises"
+}

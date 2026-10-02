@@ -1,0 +1,30 @@
+/* Taman Kawan Ceria: warm storybook scenery, readable controls, stable paper. */
+:root {
+  --page-bg: #fff8e9;
+  --surface: #ffffff;
+  --ink: #263d32;
+  --text-muted: #536457;
+  --primary: #236b46;
+  --primary-hover: #185536;
+  --sky-soft: #e5f2ff;
+  --mint-soft: #e1f4d9;
+  --sun: #ffd66b;
+  --sun-soft: #fff4d4;
+  --coral: #ff916f;
+  --coral-soft: #ffede5;
+  --lavender-soft: #ece8ff;
+  --success: #13785a;
+  --guide-start: #13785a;
+  --guide-follow: #815b00;
+  --guide-stop: #9d4328;
+  --trace-route: #607d99;
+  --trace-accepted: #be4e23;
+  --focus-ring: #193f7a;
+  --control-border: #64765d;
+  --divider: #dbe7f0;
+  --shadow-card: 0 5px 0 #e1dcc5, 0 8px 18px #3455350b;
+  --shadow-panel: 0 8px 0 #e1dcc5, 0 14px 30px #34553512;
+  --font-body: 'DM Sans', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+  --font-jawi: 'Noto Naskh Arabic', serif;
+}

@@ -1,0 +1,263 @@
+{
+  "date": "2026-10-02",
+  "productionURL": "http://127.0.0.1:4173",
+  "browser": "153.0.8010.12",
+  "packagedRecordings": 37,
+  "totalBytes": 441936,
+  "packaging": [
+    {
+      "id": "alif",
+      "bytes": 12384,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ba",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ta",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ta-marbuta",
+      "bytes": 14688,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "sa",
+      "bytes": 11808,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "jim",
+      "bytes": 11808,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ca",
+      "bytes": 11376,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ha-pedat",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "kha",
+      "bytes": 11520,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "dal",
+      "bytes": 12096,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "zal",
+      "bytes": 12528,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ra",
+      "bytes": 11520,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "zai",
+      "bytes": 11664,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "sin",
+      "bytes": 12384,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "syin",
+      "bytes": 12528,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "sad",
+      "bytes": 12384,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "dad",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "tho",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "za",
+      "bytes": 11520,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ain",
+      "bytes": 11952,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ghain",
+      "bytes": 12240,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "nga",
+      "bytes": 13392,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "fa",
+      "bytes": 12384,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "pa",
+      "bytes": 10800,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "qaf",
+      "bytes": 12240,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "kaf",
+      "bytes": 11952,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ga",
+      "bytes": 11520,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "lam",
+      "bytes": 12096,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "mim",
+      "bytes": 11808,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "nun",
+      "bytes": 12096,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "wau",
+      "bytes": 11808,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "va",
+      "bytes": 12960,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ha",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "hamzah",
+      "bytes": 12672,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ya",
+      "bytes": 11520,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ye",
+      "bytes": 11664,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "nya",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    }
+  ],
+  "teacherPlayback": "Alif succeeded in Chromium",
+  "lessonPlayback": "Ba succeeded in Chromium",
+  "audioStatus": "pendingReview",
+  "audioApprovals": 0,
+  "geometryApprovals": 12,
+  "studentReady": 0,
+  "layouts": [
+    {
+      "width": 1280,
+      "height": 1000,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "overflow": false
+    }
+  ],
+  "screenshots": [
+    "output/screenshots/draft-audio-review-1280.png",
+    "output/screenshots/draft-audio-review-390.png",
+    "output/screenshots/draft-audio-review-320.png",
+    "output/screenshots/draft-audio-lesson-390.png"
+  ],
+  "pageErrors": [],
+  "externalRuntimeRequests": [],
+  "limitation": "Windows Playwright WebKit has no AudioContext and rejects actual MP3 playback; failure feedback checked separately. Physical Safari/Android and pronunciation review pending."
+}

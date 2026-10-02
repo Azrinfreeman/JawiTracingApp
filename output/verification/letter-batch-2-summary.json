@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-02",
+  "status": "implementedPendingContentReview",
+  "batch": [
+    {
+      "id": "zal",
+      "glyph": "ذ",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 1
+    },
+    {
+      "id": "zai",
+      "glyph": "ز",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 1
+    },
+    {
+      "id": "syin",
+      "glyph": "ش",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 3
+    },
+    {
+      "id": "sad",
+      "glyph": "ص",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 2,
+      "dots": 0
+    },
+    {
+      "id": "dad",
+      "glyph": "ض",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 2,
+      "dots": 1
+    }
+  ],
+  "studentReady": 17,
+  "authoredModels": 22,
+  "pendingAuthoredModels": 5,
+  "missingModels": 15,
+  "preservedCatalogueEntries": 32,
+  "approvedAudioPreserved": 37,
+  "checks": {
+    "unit": {
+      "passed": 59
+    },
+    "build": "passed",
+    "newBrowser": {
+      "passed": 40,
+      "skipped": 2,
+      "projects": [
+        "chromium",
+        "webkit"
+      ],
+      "skipReason": "Native emulated touch uses Chromium CDP."
+    },
+    "existingEntryRegression": {
+      "passed": 8
+    },
+    "finalLayoutAndGuideChecks": {
+      "passed": 14,
+      "includesFourNewCaseRechecks": true
+    },
+    "distinctBrowserCasesPassed": 58,
+    "production": {
+      "report": "output/verification/letter-batch-2-production.json",
+      "screenshots": 39,
+      "pageErrors": [],
+      "externalRequests": []
+    }
+  },
+  "layoutFix": "Place the reward leaf in the lower corner and keep numbered labels clear of that corner.",
+  "implementationFiles": [
+    {
+      "path": "src/content/letters.json",
+      "sha256": "7cced5af76044f2baa17fb3fa578d350285b7772c2e00e922f7a0f95b48ab45d"
+    },
+    {
+      "path": "src/tracing/numberedGuides.js",
+      "sha256": "ad7f57196b9d9206407c7a201c02201d93c9bbb6b575be0131f4db1de9a59e73"
+    },
+    {
+      "path": "src/styles/app.css",
+      "sha256": "11134965e3c6ede9361e438ec666969c4bd3e70df4a7537fb84b2a2522e22100"
+    }
+  ],
+  "limitations": [
+    "New geometry and writing sequences remain pending review.",
+    "No physical preschool pupil/device review was performed.",
+    "Firefox was not rerun because of the recorded Windows launch limitation."
+  ],
+  "review": "docs/LETTER_BATCH_2_REVIEW.md"
+}

@@ -1,0 +1,281 @@
+{
+  "date": "2026-10-02",
+  "productionURL": "http://127.0.0.1:4173",
+  "browser": "153.0.8010.12",
+  "packagedRecordings": 37,
+  "totalBytes": 1761779,
+  "packaging": [
+    {
+      "id": "alif",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ba",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ta",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ta-marbuta",
+      "bytes": 14688,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "sa",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "jim",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ca",
+      "bytes": 11376,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ha-pedat",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "kha",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "dal",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "zal",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ra",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "zai",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "sin",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "syin",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "sad",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "dad",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "tho",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "za",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ain",
+      "bytes": 41205,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ghain",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "nga",
+      "bytes": 13392,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "fa",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "pa",
+      "bytes": 10800,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "qaf",
+      "bytes": 39327,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "kaf",
+      "bytes": 11952,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ga",
+      "bytes": 11520,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "lam",
+      "bytes": 154436,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "mim",
+      "bytes": 154436,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "nun",
+      "bytes": 154436,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "wau",
+      "bytes": 154436,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "va",
+      "bytes": 12960,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ha",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "hamzah",
+      "bytes": 41038,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ya",
+      "bytes": 154436,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "ye",
+      "bytes": 11664,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    },
+    {
+      "id": "nya",
+      "bytes": 11232,
+      "httpStatus": 200,
+      "sourceBuildAndHttpHashesMatch": true
+    }
+  ],
+  "teacherPlayback": [
+    {
+      "id": "alif",
+      "src": "/audio/letters/alphabet/alif-name-v2.mp3",
+      "playing": true
+    },
+    {
+      "id": "qaf",
+      "src": "/audio/letters/alphabet/qaf-name-v2.mp3",
+      "playing": true
+    },
+    {
+      "id": "lam",
+      "src": "/audio/letters/alphabet/lam-name-v2.wav",
+      "playing": true
+    }
+  ],
+  "lessonPlayback": "Ba succeeded in Chromium",
+  "audioStatus": "approved",
+  "audioApprovals": 37,
+  "geometryApprovals": 12,
+  "suppliedRecordings": 27,
+  "retainedSyntheticRecordings": 10,
+  "studentReady": 12,
+  "layouts": [
+    {
+      "width": 1280,
+      "height": 1000,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "overflow": false
+    }
+  ],
+  "screenshots": [
+    "output/screenshots/audio-approved-review-1280.png",
+    "output/screenshots/audio-approved-review-390.png",
+    "output/screenshots/audio-approved-review-320.png",
+    "output/screenshots/audio-approved-lesson-390.png"
+  ],
+  "pageErrors": [],
+  "externalRuntimeRequests": [],
+  "limitation": "Windows Playwright WebKit has no AudioContext and rejects actual MP3 playback; failure feedback checked separately. Physical Safari/Android testing pending; audio approval source is projectOwner."
+}

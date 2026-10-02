@@ -1,0 +1,2136 @@
+{
+  "letters": [
+    {
+      "id": "alif",
+      "glyph": "ا",
+      "labelMs": "Alif",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 510 175 Q 498 445 520 795"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 510 175 Q 498 445 520 795",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/alif-name.mp3",
+          "transcriptMs": "Alif",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ba",
+      "glyph": "ب",
+      "labelMs": "Ba",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [
+          {
+            "id": "dot-1",
+            "x": 500,
+            "y": 810,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          }
+        ],
+        "validSequences": [
+          [
+            "stroke-1",
+            "dot-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ba-name.mp3",
+          "transcriptMs": "Ba",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ta",
+      "glyph": "ت",
+      "labelMs": "Ta",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [
+          {
+            "id": "dot-1",
+            "x": 430,
+            "y": 300,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          },
+          {
+            "id": "dot-2",
+            "x": 570,
+            "y": 300,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          }
+        ],
+        "validSequences": [
+          [
+            "stroke-1",
+            "dot-1",
+            "dot-2"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ta-name.mp3",
+          "transcriptMs": "Ta",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ta-marbuta",
+      "glyph": "ة",
+      "labelMs": "Ta marbutah",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ta-marbuta-name.mp3",
+          "transcriptMs": "Ta marbutah",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "sa",
+      "glyph": "ث",
+      "labelMs": "Sa",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/sa-name.mp3",
+          "transcriptMs": "Sa",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "jim",
+      "glyph": "ج",
+      "labelMs": "Jim",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/jim-name.mp3",
+          "transcriptMs": "Jim",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ca",
+      "glyph": "چ",
+      "labelMs": "Ca",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": true,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ca-name.mp3",
+          "transcriptMs": "Ca",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ha-pedat",
+      "glyph": "ح",
+      "labelMs": "Ha (ح)",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ha-pedat-name.mp3",
+          "transcriptMs": "Ha",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "kha",
+      "glyph": "خ",
+      "labelMs": "Kha",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/kha-name.mp3",
+          "transcriptMs": "Kha",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "dal",
+      "glyph": "د",
+      "labelMs": "Dal",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 460 285 Q 645 350 720 560 Q 550 635 300 595"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 460 285 Q 645 350 720 560 Q 550 635 300 595",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/dal-name.mp3",
+          "transcriptMs": "Dal",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "zal",
+      "glyph": "ذ",
+      "labelMs": "Zal",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/zal-name.mp3",
+          "transcriptMs": "Zal",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ra",
+      "glyph": "ر",
+      "labelMs": "Ra",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 690 355 Q 790 655 330 780"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 690 355 Q 790 655 330 780",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ra-name.mp3",
+          "transcriptMs": "Ra",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "zai",
+      "glyph": "ز",
+      "labelMs": "Zai",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/zai-name.mp3",
+          "transcriptMs": "Zai",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "sin",
+      "glyph": "س",
+      "labelMs": "Sin",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 550"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 550",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/sin-name.mp3",
+          "transcriptMs": "Sin",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "syin",
+      "glyph": "ش",
+      "labelMs": "Syin",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/syin-name.mp3",
+          "transcriptMs": "Syin",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "sad",
+      "glyph": "ص",
+      "labelMs": "Sad",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/sad-name.mp3",
+          "transcriptMs": "Sad",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "dad",
+      "glyph": "ض",
+      "labelMs": "Dad",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/dad-name.mp3",
+          "transcriptMs": "Dad",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "tho",
+      "glyph": "ط",
+      "labelMs": "Ta (ط)",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/tho-name.mp3",
+          "transcriptMs": "Ta",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "za",
+      "glyph": "ظ",
+      "labelMs": "Za",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/za-name.mp3",
+          "transcriptMs": "Za",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ain",
+      "glyph": "ع",
+      "labelMs": "Ain",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ain-name.mp3",
+          "transcriptMs": "Ain",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ghain",
+      "glyph": "غ",
+      "labelMs": "Ghain",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ghain-name.mp3",
+          "transcriptMs": "Ghain",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "nga",
+      "glyph": "ڠ",
+      "labelMs": "Nga",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": true,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/nga-name.mp3",
+          "transcriptMs": "Nga",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "fa",
+      "glyph": "ف",
+      "labelMs": "Fa",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/fa-name.mp3",
+          "transcriptMs": "Fa",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "pa",
+      "glyph": "ڤ",
+      "labelMs": "Pa",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": true,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/pa-name.mp3",
+          "transcriptMs": "Pa",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "qaf",
+      "glyph": "ق",
+      "labelMs": "Qaf",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/qaf-name.mp3",
+          "transcriptMs": "Qaf",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "kaf",
+      "glyph": "ک",
+      "labelMs": "Kaf",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 780 200 L 780 610 Q 660 710 400 710 Q 190 710 205 535",
+          "M 565 365 L 460 430 L 560 485"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 780 200 L 780 610 Q 660 710 400 710 Q 190 710 205 535",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          },
+          {
+            "id": "stroke-2",
+            "path": "M 565 365 L 460 430 L 560 485",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1",
+            "stroke-2"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/kaf-name.mp3",
+          "transcriptMs": "Kaf",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ga",
+      "glyph": "ڬ",
+      "labelMs": "Ga",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": true,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ga-name.mp3",
+          "transcriptMs": "Ga",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "lam",
+      "glyph": "ل",
+      "labelMs": "Lam",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 700 175 L 700 635 Q 610 785 365 745 Q 210 715 220 545"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 700 175 L 700 635 Q 610 785 365 745 Q 210 715 220 545",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/lam-name.mp3",
+          "transcriptMs": "Lam",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "mim",
+      "glyph": "م",
+      "labelMs": "Mim",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 660 440 C 740 390 760 565 650 555 C 545 545 575 410 660 440",
+          "M 650 555 Q 470 545 380 615 L 370 815"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 660 440 C 740 390 760 565 650 555 C 545 545 575 410 660 440",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          },
+          {
+            "id": "stroke-2",
+            "path": "M 650 555 Q 470 545 380 615 L 370 815",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1",
+            "stroke-2"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/mim-name.mp3",
+          "transcriptMs": "Mim",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "nun",
+      "glyph": "ن",
+      "labelMs": "Nun",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [
+          {
+            "id": "dot-1",
+            "x": 500,
+            "y": 355,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          }
+        ],
+        "validSequences": [
+          [
+            "stroke-1",
+            "dot-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/nun-name.mp3",
+          "transcriptMs": "Nun",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "wau",
+      "glyph": "و",
+      "labelMs": "Wau",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 625 440 C 730 335 830 565 650 575 C 515 580 535 400 625 440 C 845 575 570 770 275 765"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 625 440 C 730 335 830 565 650 575 C 515 580 535 400 625 440 C 845 575 570 770 275 765",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/wau-name.mp3",
+          "transcriptMs": "Wau",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "va",
+      "glyph": "ۏ",
+      "labelMs": "Va",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": true,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/va-name.mp3",
+          "transcriptMs": "Va",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ha",
+      "glyph": "ه",
+      "labelMs": "Ha (ه)",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ha-name.mp3",
+          "transcriptMs": "Ha",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "hamzah",
+      "glyph": "ء",
+      "labelMs": "Hamzah",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/hamzah-name.mp3",
+          "transcriptMs": "Hamzah",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ya",
+      "glyph": "ي",
+      "labelMs": "Ya",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 785 375 C 620 320 565 475 745 530 C 820 630 660 695 450 695 C 255 695 180 625 205 465"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 785 375 C 620 320 565 475 745 530 C 820 630 660 695 450 695 C 255 695 180 625 205 465",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ]
+          }
+        ],
+        "dotTargets": [
+          {
+            "id": "dot-1",
+            "x": 400,
+            "y": 805,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          },
+          {
+            "id": "dot-2",
+            "x": 540,
+            "y": 805,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          }
+        ],
+        "validSequences": [
+          [
+            "stroke-1",
+            "dot-1",
+            "dot-2"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ya-name.mp3",
+          "transcriptMs": "Ya",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "ye",
+      "glyph": "ى",
+      "labelMs": "Ye",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ye-name.mp3",
+          "transcriptMs": "Ye",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    {
+      "id": "nya",
+      "glyph": "ڽ",
+      "labelMs": "Nya",
+      "contentVersion": 1,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": true,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [],
+        "strokes": [],
+        "dotTargets": [],
+        "validSequences": []
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/nya-name.mp3",
+          "transcriptMs": "Nya",
+          "version": 1,
+          "status": "pendingReview",
+          "review": null,
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    }
+  ],
+  "hashes": {
+    "alif": "dc8047a95258bbd8a0a960a84ceadafa8818b32b6646b23ab31ca07aa9af08df",
+    "ba": "28c01c3510448e1292b9fce1db71c918becc9f539cb66a9205e79fe5eadb84b3",
+    "ta": "ad972577bfa8a42667a6ad7fedebfbc201acc3a8d7e9ebe215588caa7593b1b0",
+    "ta-marbuta": "c3d6e0b040ef65215cc3dd52899505ab8e00d1ceb00ebbd44a65a5aec4082773",
+    "sa": "d4d63be5248d85b8c53e31ece40d5b2d97fc5f7913b4b121e5f9036cc9b43d4e",
+    "jim": "1b0d00185718fa97bc3a6b3788b779e228947cac268fb9d92d1839684046aeea",
+    "ca": "f01709e62cd3aeb3da609a3c6b34a07373a8ec529f7a7c86c983214144e2a5b3",
+    "ha-pedat": "9a3b5e184aeab9bec75d66a973be68e2e8169375c1d678455b574ddec84a8d2f",
+    "kha": "a0a7ead28bb8964a68d804edbbd36315d64f60d8986d16233c28d64b69b118ac",
+    "dal": "b1b49c0034d699f57b83eb18632b108bcf2361f1b3bfe03d5ace7e82bdfbd9d4",
+    "zal": "cf05a82fa42531c01962de44e7d6aa761af5841e959baa1a50fab9c41166572c",
+    "ra": "7eeb860adc28413003e17ee373b6a7354f24d93abc89453e1d5560531a04fdf3",
+    "zai": "4824e07684cb1c9eb52b7a6b0d74f4f37f87bceb160d8a453b85404131b7c44d",
+    "sin": "19d2fcd0bf6eb01bacaf653a52e3186ebcff1f0f5b931fd88ccbe9b52ca2014b",
+    "syin": "a9f15b1db76c6a23c5cf29d766588ff1376bae1848ab2e8b0b385a251c08d8d1",
+    "sad": "b2612e4fff10dcc3b1174bbf120b53c3a9fd053ae06fa7323224c890ef580d32",
+    "dad": "888e59d9cf3f50107819c528cd0b19e926a7f413e6f728ed132006b857b9a5c9",
+    "tho": "395ec1d204572040312dd200d6442a287c1b1d117c88e5788420bb5c075694f0",
+    "za": "9ce5b3817df99a1c299f244749a494e14311575add2bca266ef4935037514fad",
+    "ain": "1e565f571b011a0abfc6440f95ac4d8eb5fce3ee1acae6f0c1d72050b8cec14f",
+    "ghain": "55b69cf8ad44e0f40370a8acd4ea778ae9591fcb87375fb0a6a6ebc7b045ad78",
+    "nga": "93ba5c22db7b8858245af633349eea1e50df6cf2d101fd249b7db25687e0850f",
+    "fa": "161d3f26744bd10e974b9abfdea7481d7ece842061c6536a4599ad4f668b4c81",
+    "pa": "7a857dd174d2ee83a6c5aefaa7e2d2c0cb84da6d922e481379597454ede1f55c",
+    "qaf": "acfdd44472b10f80987dfd3a52f99f1a0de1d6c8379a842b574c43b82d21f59c",
+    "kaf": "2e5ac33e648cdc580caecb63c3fb8ef2afde8ab63daba042f489d2bc990ac308",
+    "ga": "862051b6c910b369a1d060720cc6a8ff7ea93190ffa3d189d8712810f8811bed",
+    "lam": "b7057662d624341b6f3233a5d3d9ccfcc8cbad4ea2546026fd3362de7267ef87",
+    "mim": "9ab6be394e78a611328f412c20d5441d361f637a626fd7835ea3f0c38a004c35",
+    "nun": "40956a05c19dcd0d0cdae92260e0ee9628d512288f64a393a6d2566ec0e945c4",
+    "wau": "01224d7c03edfbbe9b5582008a0168b8067ec5417e2cb26effd57acaccf48bad",
+    "va": "4b8879c9200a0ecfdc119327b9d1a308ab48404095dbb4dba271dfe6f0edd0f0",
+    "ha": "83bc8720b12d8bfc5f0e66dc5deac6546a3d3817bd5ee43d50e94ca81a4136ed",
+    "hamzah": "85e6a3bd09608c05862f47742368dccf9c8dcc28729dc289d38aa71a93e27d81",
+    "ya": "f10741e605476f2420da82fd6add1bed9109f5338ea1c0fb89be85c3e4a59a88",
+    "ye": "11130897351163086760089d6112d40b02b7d7aaf3353c4e833132cf476b4b02",
+    "nya": "279ee3232eeb27eeb0ee9c77929611d32380e4aa997f596f27444cf8fb57cd56"
+  },
+  "files": [
+    {
+      "name": "01_aliff.mp3",
+      "sha256": "062b495ec1506ebaf1bb66bbbd1bd0cf3143f69fe1e8c5d0645450fbcaf4d8e4"
+    },
+    {
+      "name": "02_ba.mp3",
+      "sha256": "987d2db9dc79dc348d022a5d6324ae1702e8a4736875113a5d4172f10603cf91"
+    },
+    {
+      "name": "03_ta.mp3",
+      "sha256": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d"
+    },
+    {
+      "name": "04_sa.mp3",
+      "sha256": "ecd13ed9a2d6ef025b117fa5ed9b8aeb3f9c48564fbc3b9d7cacae932bda3ff6"
+    },
+    {
+      "name": "05_jin.mp3",
+      "sha256": "e50bb0c1cff95018602e0dd884a1f99c7a2aa48e65d919ad38a687516f6fa4a9"
+    },
+    {
+      "name": "06_ha.mp3",
+      "sha256": "70aff1d8e0cdfe0951644a4fb4f8d398db47962e435d75a19890b84347edf074"
+    },
+    {
+      "name": "07_hor.mp3",
+      "sha256": "d2ec10e1bf498155442361153ebe04f38d6e161857a4aac09d6cbfdd1f28a3a2"
+    },
+    {
+      "name": "08_da.mp3",
+      "sha256": "743ca5838453493045fe17d85f2377bb57eebbdbe0b6859f160b36ab8410c921"
+    },
+    {
+      "name": "09_dzal.mp3",
+      "sha256": "0ea67e64c41d8e8414fa4ebc754e71332b1069b4523fe99d4d6aa10f3b575a32"
+    },
+    {
+      "name": "10_raw.mp3",
+      "sha256": "3fbc1ca4733dd40e419891248ae6184b149a63903bfe46a3ba21b6147bee2553"
+    },
+    {
+      "name": "11_zai.mp3",
+      "sha256": "4e887a969999838cfce6ae60b5c146929650d5aef53c7ecb8934ffd49b09a3eb"
+    },
+    {
+      "name": "12_1sin.mp3",
+      "sha256": "58f170c037b8f4229466df9cfb7ecddcf9875706c68cc47255ca3521129e9a3b"
+    },
+    {
+      "name": "12_2syin.mp3",
+      "sha256": "d2ecece86ebe31e9dd22595a94eaf265fef04afcf10b75acdd6eb32a306f2dc5"
+    },
+    {
+      "name": "13_sod.mp3",
+      "sha256": "df2c1465abccebc534a738658b4098c62be74c780729b4e03f6e3ceb4769f8ed"
+    },
+    {
+      "name": "14_dod.mp3",
+      "sha256": "69222ad37d2e7e17910cfe66578f83c239483cd9639c41bdb848d34e45c89ebb"
+    },
+    {
+      "name": "15_tor.mp3",
+      "sha256": "781fbf7ed4c2edc5044b002a974c83f45f353361e51ca4604401329c572fe81e"
+    },
+    {
+      "name": "16_zor.mp3",
+      "sha256": "e5af1f6c308fde0b3347bc1685181251295a8cde7e29ea15a18568d03f6057d3"
+    },
+    {
+      "name": "17_ain.mp3",
+      "sha256": "7c3974d9768f6747ae0b99df2c991f05b7ac44faad64e2e333937dcc03c87e1b"
+    },
+    {
+      "name": "18_ghain.mp3",
+      "sha256": "371dba3f910d3118713a6a35bd08aa96d0d24bbc44583dbe1bdb2052b602d188"
+    },
+    {
+      "name": "19_faa.mp3",
+      "sha256": "9650bfd6c8b3a7642a099efcc43705cd31bce7d8eb1ae1948ae6a3ed06ad8f94"
+    },
+    {
+      "name": "20_kof.mp3",
+      "sha256": "35a6903e672757cb808d22f121b348a572326d8246200ea0b6e90fce4b59b842"
+    },
+    {
+      "name": "21_lam.wav",
+      "sha256": "2ea37a3cfe0f7ce7c67670717d99f0ee35d5f0d4a3fe38064f25d6fb8a37fd71"
+    },
+    {
+      "name": "22_mim.wav",
+      "sha256": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2"
+    },
+    {
+      "name": "23_nun.wav",
+      "sha256": "6056e86e290d10e576e347e9049d3fc7dc1caeef1fe5d6ca8044b2157d223f5c"
+    },
+    {
+      "name": "24_wau.wav",
+      "sha256": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298"
+    },
+    {
+      "name": "25_hamzah.wav",
+      "sha256": "9145078ee74a68a71ab028a833170c24d7c139ae659b8fc9abcfc7d167357dd1"
+    },
+    {
+      "name": "26_ya.wav",
+      "sha256": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1"
+    }
+  ]
+}

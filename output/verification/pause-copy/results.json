@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-02T11:46:26.024Z",
+  "cases": [
+    {
+      "mode": "solo",
+      "width": 320,
+      "height": 740,
+      "stopLabelFits": true,
+      "pauseFreezesClock": true,
+      "resumeWorks": true
+    },
+    {
+      "mode": "duo",
+      "width": 1024,
+      "height": 768,
+      "stopLabelFits": true,
+      "pauseFreezesClock": true,
+      "resumeWorks": true
+    },
+    {
+      "mode": "duo",
+      "width": 768,
+      "height": 1024,
+      "stopLabelFits": true,
+      "pauseFreezesClock": true,
+      "resumeWorks": true
+    }
+  ],
+  "errors": []
+}

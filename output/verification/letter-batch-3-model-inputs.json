@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Kuala_Lumpur",
+  "letters": [
+    {
+      "id": "alif",
+      "contentVersion": 1,
+      "geometrySha256": "6b3085a722e00229a2b27475b7f019faa5b1a89c2f8728b98c7828903f9c5ff9"
+    },
+    {
+      "id": "ba",
+      "contentVersion": 1,
+      "geometrySha256": "c0bf250a8c25f57f12441df1bfc34cdf597da451b0695f6a1022a3241441dd47"
+    },
+    {
+      "id": "ta",
+      "contentVersion": 1,
+      "geometrySha256": "eb1bf348bdd51c30650c03a3c5062d5db0dbe5b321761f0bb7235c1d45c01e56"
+    },
+    {
+      "id": "ta-marbuta",
+      "contentVersion": 2,
+      "geometrySha256": "4c916663e57ba10eb92313cb45f59bf2a2aa75f7207a44396b75665ab35a07c2"
+    },
+    {
+      "id": "sa",
+      "contentVersion": 2,
+      "geometrySha256": "2339562b395877c2c9c203150bdcc8b0d4e88605b6371b6b89d5a8c2909c64a5"
+    },
+    {
+      "id": "jim",
+      "contentVersion": 2,
+      "geometrySha256": "2c6de04bc74b4e804742141071a925a3916d2b7dfab6eb00795d8dfd32f55d6e"
+    },
+    {
+      "id": "ca",
+      "contentVersion": 2,
+      "geometrySha256": "af03398695c774c387518b5fc1a6ad7b36ebd56dd9ca714370f0f69ca0a76b07"
+    },
+    {
+      "id": "ha-pedat",
+      "contentVersion": 2,
+      "geometrySha256": "450a4873d3e247f454d313dd59f139d92b74da31b41c0526d7ca7565f9e7afc3"
+    },
+    {
+      "id": "kha",
+      "contentVersion": 2,
+      "geometrySha256": "de592a27d84261925afdc9fdf4b94bcdc57c51c5f9ec8b32a2f40ebd67a156fc"
+    },
+    {
+      "id": "dal",
+      "contentVersion": 1,
+      "geometrySha256": "54df668ee8b2e35c3ba8c3362d603689056d6c8eba9dda46a2450a57c403e50b"
+    },
+    {
+      "id": "zal",
+      "contentVersion": 2,
+      "geometrySha256": "4da7ff1ac14571408b867e6678c88a101d175e55bcc8079f059c860c692ffab4"
+    },
+    {
+      "id": "ra",
+      "contentVersion": 1,
+      "geometrySha256": "5f22e170154a4048b971617beb0e3b25a520c592365acf89b4e507842ff015be"
+    },
+    {
+      "id": "zai",
+      "contentVersion": 2,
+      "geometrySha256": "37bbdb38b174f917da8aa98533a8656219fcc84272fc7deb71b81d3796a90e81"
+    },
+    {
+      "id": "sin",
+      "contentVersion": 1,
+      "geometrySha256": "090842e9e004461ccd0d017b87fed3fe1ad549c9835414d058c921f8ad4a25c6"
+    },
+    {
+      "id": "syin",
+      "contentVersion": 2,
+      "geometrySha256": "e076e4f4a74260b193f3142a237dd76237a33520f102acf8a9d544a49a364ee4"
+    },
+    {
+      "id": "sad",
+      "contentVersion": 2,
+      "geometrySha256": "48ddb1a90752da90d6292df3397da30a598ab0386eca51ec374a100357a44118"
+    },
+    {
+      "id": "dad",
+      "contentVersion": 2,
+      "geometrySha256": "6051d29a2eff8c10bc5e8c69a92d274ef5738998a4ed13eb685bac357f24dca1"
+    },
+    {
+      "id": "tho",
+      "contentVersion": 2,
+      "geometrySha256": "ec861eeaaa125ac45c2344760c8ff9315b69e4c44b6c43476da2a0bf4c08cc40"
+    },
+    {
+      "id": "za",
+      "contentVersion": 2,
+      "geometrySha256": "ba3d127ea55331aea6322ae0c67b4c40bea0e4352835cb45f1f7a8928ddb5fe2"
+    },
+    {
+      "id": "ain",
+      "contentVersion": 2,
+      "geometrySha256": "c54045174c8bbadb9e5a5d6b7bccc09c81b6572fb7f9d9071fd2417adf193c39"
+    },
+    {
+      "id": "ghain",
+      "contentVersion": 2,
+      "geometrySha256": "325645b5c9988af3372a460a16bf8e77670b5b5f8982ad98264ffc8a6a47a94a"
+    },
+    {
+      "id": "nga",
+      "contentVersion": 2,
+      "geometrySha256": "180078860515f669943078d5fe5b58bc9b41ff6553a21fa3ccb223e8d7f4a6fb"
+    },
+    {
+      "id": "fa",
+      "contentVersion": 2,
+      "geometrySha256": "49536edd9abe1d108bb1075504301d7748200decb95d92e3dc9f7052e02022cc"
+    },
+    {
+      "id": "pa",
+      "contentVersion": 2,
+      "geometrySha256": "a4881cba5e0e6f177bc47feeffaf8e273a72a76455548de6551c8c15331ec12d"
+    },
+    {
+      "id": "qaf",
+      "contentVersion": 2,
+      "geometrySha256": "41e7a6855058281e909b71f39ce68e466a22c16e1bbc172c929c9364271d4ed5"
+    },
+    {
+      "id": "kaf",
+      "contentVersion": 1,
+      "geometrySha256": "199448e297b36535456966e15d123cf08587f2669302cdda6ad6e1e60ee6967e"
+    },
+    {
+      "id": "ga",
+      "contentVersion": 2,
+      "geometrySha256": "fa639e8906675adca88da2c13e851a0175b6ee1d667257d158a10e89d1da808a"
+    },
+    {
+      "id": "lam",
+      "contentVersion": 1,
+      "geometrySha256": "9ff470786c7aad1c32d4628c22ed73b48ca21e0b0e8b131cc9b08f88e6082374"
+    },
+    {
+      "id": "mim",
+      "contentVersion": 1,
+      "geometrySha256": "12dd247b783107d0fb0aa31da1ea1e3bfc760dffddd06c5dfd16fdfb70672975"
+    },
+    {
+      "id": "nun",
+      "contentVersion": 1,
+      "geometrySha256": "601974447c183b60a2f24a5b8e1d3dbc6b82aa8e33ce7a58168ba93f907ae621"
+    },
+    {
+      "id": "wau",
+      "contentVersion": 1,
+      "geometrySha256": "9ce907080f5181d07e202ccf5cf8f1490deb503d57ce3b727ca49de5c23ac7a9"
+    },
+    {
+      "id": "va",
+      "contentVersion": 2,
+      "geometrySha256": "ede6e2bc435899ae44852dc197e8467efc55c1cc3b013acc506a5fa5499144cd"
+    },
+    {
+      "id": "ha",
+      "contentVersion": 2,
+      "geometrySha256": "4fa09effe70808613dc2b20752c198b03e124c7a2008aebea1ba75eee8425b44"
+    },
+    {
+      "id": "hamzah",
+      "contentVersion": 2,
+      "geometrySha256": "ccf3c480901c6da7b18b91257c692dda1b2ba3e1a91e219590c6e32116dcec56"
+    },
+    {
+      "id": "ya",
+      "contentVersion": 1,
+      "geometrySha256": "e6d1908c6ebcd755a54ca62d6e938b2017764aa5098e7ddd679a68534e6729a4"
+    },
+    {
+      "id": "ye",
+      "contentVersion": 2,
+      "geometrySha256": "841a11e23f146b4489595e0b0005256af5c4fd6916695c40c1a7aab25104713a"
+    },
+    {
+      "id": "nya",
+      "contentVersion": 2,
+      "geometrySha256": "fbf4b3de795c5cfb33c47fe1c14b2f208e493ada8357042212bbb9fb112b486e"
+    }
+  ]
+}

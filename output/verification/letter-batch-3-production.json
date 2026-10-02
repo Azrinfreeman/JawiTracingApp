@@ -1,0 +1,1443 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Kuala_Lumpur",
+  "status": "implementedPendingContentReview",
+  "command": "node scripts/verify-letter-batch-3.js",
+  "runtime": {
+    "node": "v24.19.0",
+    "browser": "153.0.8010.12"
+  },
+  "inputs": [
+    {
+      "path": "src/content/letters.json",
+      "sha256": "af14c2de23be61fe6eac449c6012721aa7eebd77abdd44b6784ba0f7bbe56af0"
+    },
+    {
+      "path": "src/content/validateContent.js",
+      "sha256": "96eeb1864af9e67b11564a6de54125e72c0a3c546f25b0cdb4be62ae3c234606"
+    },
+    {
+      "path": "src/App.jsx",
+      "sha256": "31c9f54d1be06d1ffbe48e1c9c3a82c392a1fdc20c4ade6bf42b334fbffc249f"
+    },
+    {
+      "path": "src/components/TraceBoard.jsx",
+      "sha256": "f6c709f5fe04ffa7e993cc5358b96698c26def7cace2b739878b22b0f76baecd"
+    },
+    {
+      "path": "src/components/NumberedTraceGuides.jsx",
+      "sha256": "618200c7ff5a20e7aa926543e5ff92936b188fe5910d493cf274e9abb62d6cd3"
+    },
+    {
+      "path": "src/components/DraftModelReview.jsx",
+      "sha256": "4eb99bfafc0987e4de080a0d54afaec301b3afb84e7b60c2e089dbd29f4557fd"
+    },
+    {
+      "path": "src/tracing/numberedGuides.js",
+      "sha256": "ad7f57196b9d9206407c7a201c02201d93c9bbb6b575be0131f4db1de9a59e73"
+    },
+    {
+      "path": "src/tracing/prepareReference.js",
+      "sha256": "d4402dda2203cfa1bc7a3b76dc3f97c774ece17c6fde8d5c612ced48a5910f61"
+    },
+    {
+      "path": "src/tracing/playMatcher.js",
+      "sha256": "d38cbc96484c3fcf145992dac6842b0f98cb8a1b761802cc8838039742662112"
+    },
+    {
+      "path": "src/tracing/matcher.js",
+      "sha256": "f8802416a97366a9d6b8143559781552c75a3e5bead368122bd90015976ca358"
+    },
+    {
+      "path": "src/tracing/profiles.js",
+      "sha256": "4e0c71ba7d820325aa553ca5df0985cf10027830e3167e46df413a4f53dfb51d"
+    },
+    {
+      "path": "src/styles/app.css",
+      "sha256": "11134965e3c6ede9361e438ec666969c4bd3e70df4a7537fb84b2a2522e22100"
+    },
+    {
+      "path": "tests/browser/letter-batch-3.spec.js",
+      "sha256": "f406b0c81778b43393b9603432dbc52d5691074a8b8537c8efd4b9cd5ccea403"
+    },
+    {
+      "path": "tests/browser/helpers/tracing.js",
+      "sha256": "aa9f29d649fa58e1e72ddf2a61d270878e7b04c95e1d98c475cfe76bb4d649b5"
+    },
+    {
+      "path": "tests/browser/helpers/navigation.js",
+      "sha256": "5c2768ecfbc2e8408a6ec7727131e0233e5c08c3fa9d701807040dd532b72629"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "d4586bfe11f82438e9a37a248b36312da8e551fb1c5b13b9778c1865171d9080"
+    }
+  ],
+  "batch": [
+    {
+      "id": "ta-marbuta",
+      "glyph": "ة",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 2
+    },
+    {
+      "id": "tho",
+      "glyph": "ط",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 2,
+      "dots": 0
+    },
+    {
+      "id": "za",
+      "glyph": "ظ",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 2,
+      "dots": 1
+    },
+    {
+      "id": "ain",
+      "glyph": "ع",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 0
+    },
+    {
+      "id": "ghain",
+      "glyph": "غ",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 1
+    },
+    {
+      "id": "nga",
+      "glyph": "ڠ",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 3
+    },
+    {
+      "id": "fa",
+      "glyph": "ف",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 2,
+      "dots": 1
+    },
+    {
+      "id": "pa",
+      "glyph": "ڤ",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 2,
+      "dots": 3
+    },
+    {
+      "id": "qaf",
+      "glyph": "ق",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 2,
+      "dots": 2
+    },
+    {
+      "id": "ga",
+      "glyph": "ڬ",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 2,
+      "dots": 1
+    },
+    {
+      "id": "va",
+      "glyph": "ۏ",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 1
+    },
+    {
+      "id": "ha",
+      "glyph": "ه",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 0
+    },
+    {
+      "id": "hamzah",
+      "glyph": "ء",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 0
+    },
+    {
+      "id": "ye",
+      "glyph": "ى",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 0
+    },
+    {
+      "id": "nya",
+      "glyph": "ڽ",
+      "contentVersion": 2,
+      "geometryStatus": "pendingReview",
+      "strokes": 1,
+      "dots": 3
+    }
+  ],
+  "authoredModels": 37,
+  "studentReady": 22,
+  "pendingAuthoredModels": 15,
+  "missingModels": 0,
+  "preservedEntries": 22,
+  "approvedAudioPreserved": 37,
+  "audioRows": [
+    {
+      "id": "alif",
+      "src": "/audio/letters/alphabet/alif-name-v2.mp3",
+      "version": 2,
+      "sha256": "062b495ec1506ebaf1bb66bbbd1bd0cf3143f69fe1e8c5d0645450fbcaf4d8e4"
+    },
+    {
+      "id": "ba",
+      "src": "/audio/letters/alphabet/ba-name-v2.mp3",
+      "version": 2,
+      "sha256": "987d2db9dc79dc348d022a5d6324ae1702e8a4736875113a5d4172f10603cf91"
+    },
+    {
+      "id": "ta",
+      "src": "/audio/letters/alphabet/ta-name-v2.mp3",
+      "version": 2,
+      "sha256": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d"
+    },
+    {
+      "id": "ta-marbuta",
+      "src": "/audio/letters/ta-marbuta-name.mp3",
+      "version": 1,
+      "sha256": "c3d6e0b040ef65215cc3dd52899505ab8e00d1ceb00ebbd44a65a5aec4082773"
+    },
+    {
+      "id": "sa",
+      "src": "/audio/letters/alphabet/sa-name-v2.mp3",
+      "version": 2,
+      "sha256": "ecd13ed9a2d6ef025b117fa5ed9b8aeb3f9c48564fbc3b9d7cacae932bda3ff6"
+    },
+    {
+      "id": "jim",
+      "src": "/audio/letters/alphabet/jim-name-v2.mp3",
+      "version": 2,
+      "sha256": "e50bb0c1cff95018602e0dd884a1f99c7a2aa48e65d919ad38a687516f6fa4a9"
+    },
+    {
+      "id": "ca",
+      "src": "/audio/letters/ca-name.mp3",
+      "version": 1,
+      "sha256": "f01709e62cd3aeb3da609a3c6b34a07373a8ec529f7a7c86c983214144e2a5b3"
+    },
+    {
+      "id": "ha-pedat",
+      "src": "/audio/letters/alphabet/ha-pedat-name-v2.mp3",
+      "version": 2,
+      "sha256": "70aff1d8e0cdfe0951644a4fb4f8d398db47962e435d75a19890b84347edf074"
+    },
+    {
+      "id": "kha",
+      "src": "/audio/letters/alphabet/kha-name-v2.mp3",
+      "version": 2,
+      "sha256": "d2ec10e1bf498155442361153ebe04f38d6e161857a4aac09d6cbfdd1f28a3a2"
+    },
+    {
+      "id": "dal",
+      "src": "/audio/letters/alphabet/dal-name-v2.mp3",
+      "version": 2,
+      "sha256": "743ca5838453493045fe17d85f2377bb57eebbdbe0b6859f160b36ab8410c921"
+    },
+    {
+      "id": "zal",
+      "src": "/audio/letters/alphabet/zal-name-v2.mp3",
+      "version": 2,
+      "sha256": "0ea67e64c41d8e8414fa4ebc754e71332b1069b4523fe99d4d6aa10f3b575a32"
+    },
+    {
+      "id": "ra",
+      "src": "/audio/letters/alphabet/ra-name-v2.mp3",
+      "version": 2,
+      "sha256": "3fbc1ca4733dd40e419891248ae6184b149a63903bfe46a3ba21b6147bee2553"
+    },
+    {
+      "id": "zai",
+      "src": "/audio/letters/alphabet/zai-name-v2.mp3",
+      "version": 2,
+      "sha256": "4e887a969999838cfce6ae60b5c146929650d5aef53c7ecb8934ffd49b09a3eb"
+    },
+    {
+      "id": "sin",
+      "src": "/audio/letters/alphabet/sin-name-v2.mp3",
+      "version": 2,
+      "sha256": "58f170c037b8f4229466df9cfb7ecddcf9875706c68cc47255ca3521129e9a3b"
+    },
+    {
+      "id": "syin",
+      "src": "/audio/letters/alphabet/syin-name-v2.mp3",
+      "version": 2,
+      "sha256": "d2ecece86ebe31e9dd22595a94eaf265fef04afcf10b75acdd6eb32a306f2dc5"
+    },
+    {
+      "id": "sad",
+      "src": "/audio/letters/alphabet/sad-name-v2.mp3",
+      "version": 2,
+      "sha256": "df2c1465abccebc534a738658b4098c62be74c780729b4e03f6e3ceb4769f8ed"
+    },
+    {
+      "id": "dad",
+      "src": "/audio/letters/alphabet/dad-name-v2.mp3",
+      "version": 2,
+      "sha256": "69222ad37d2e7e17910cfe66578f83c239483cd9639c41bdb848d34e45c89ebb"
+    },
+    {
+      "id": "tho",
+      "src": "/audio/letters/alphabet/tho-name-v2.mp3",
+      "version": 2,
+      "sha256": "781fbf7ed4c2edc5044b002a974c83f45f353361e51ca4604401329c572fe81e"
+    },
+    {
+      "id": "za",
+      "src": "/audio/letters/alphabet/za-name-v2.mp3",
+      "version": 2,
+      "sha256": "e5af1f6c308fde0b3347bc1685181251295a8cde7e29ea15a18568d03f6057d3"
+    },
+    {
+      "id": "ain",
+      "src": "/audio/letters/alphabet/ain-name-v2.mp3",
+      "version": 2,
+      "sha256": "7c3974d9768f6747ae0b99df2c991f05b7ac44faad64e2e333937dcc03c87e1b"
+    },
+    {
+      "id": "ghain",
+      "src": "/audio/letters/alphabet/ghain-name-v2.mp3",
+      "version": 2,
+      "sha256": "371dba3f910d3118713a6a35bd08aa96d0d24bbc44583dbe1bdb2052b602d188"
+    },
+    {
+      "id": "nga",
+      "src": "/audio/letters/nga-name.mp3",
+      "version": 1,
+      "sha256": "93ba5c22db7b8858245af633349eea1e50df6cf2d101fd249b7db25687e0850f"
+    },
+    {
+      "id": "fa",
+      "src": "/audio/letters/alphabet/fa-name-v2.mp3",
+      "version": 2,
+      "sha256": "9650bfd6c8b3a7642a099efcc43705cd31bce7d8eb1ae1948ae6a3ed06ad8f94"
+    },
+    {
+      "id": "pa",
+      "src": "/audio/letters/pa-name.mp3",
+      "version": 1,
+      "sha256": "7a857dd174d2ee83a6c5aefaa7e2d2c0cb84da6d922e481379597454ede1f55c"
+    },
+    {
+      "id": "qaf",
+      "src": "/audio/letters/alphabet/qaf-name-v2.mp3",
+      "version": 2,
+      "sha256": "35a6903e672757cb808d22f121b348a572326d8246200ea0b6e90fce4b59b842"
+    },
+    {
+      "id": "kaf",
+      "src": "/audio/letters/kaf-name.mp3",
+      "version": 1,
+      "sha256": "2e5ac33e648cdc580caecb63c3fb8ef2afde8ab63daba042f489d2bc990ac308"
+    },
+    {
+      "id": "ga",
+      "src": "/audio/letters/ga-name.mp3",
+      "version": 1,
+      "sha256": "862051b6c910b369a1d060720cc6a8ff7ea93190ffa3d189d8712810f8811bed"
+    },
+    {
+      "id": "lam",
+      "src": "/audio/letters/alphabet/lam-name-v2.wav",
+      "version": 2,
+      "sha256": "2ea37a3cfe0f7ce7c67670717d99f0ee35d5f0d4a3fe38064f25d6fb8a37fd71"
+    },
+    {
+      "id": "mim",
+      "src": "/audio/letters/alphabet/mim-name-v2.wav",
+      "version": 2,
+      "sha256": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2"
+    },
+    {
+      "id": "nun",
+      "src": "/audio/letters/alphabet/nun-name-v2.wav",
+      "version": 2,
+      "sha256": "6056e86e290d10e576e347e9049d3fc7dc1caeef1fe5d6ca8044b2157d223f5c"
+    },
+    {
+      "id": "wau",
+      "src": "/audio/letters/alphabet/wau-name-v2.wav",
+      "version": 2,
+      "sha256": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298"
+    },
+    {
+      "id": "va",
+      "src": "/audio/letters/va-name.mp3",
+      "version": 1,
+      "sha256": "4b8879c9200a0ecfdc119327b9d1a308ab48404095dbb4dba271dfe6f0edd0f0"
+    },
+    {
+      "id": "ha",
+      "src": "/audio/letters/ha-name.mp3",
+      "version": 1,
+      "sha256": "83bc8720b12d8bfc5f0e66dc5deac6546a3d3817bd5ee43d50e94ca81a4136ed"
+    },
+    {
+      "id": "hamzah",
+      "src": "/audio/letters/alphabet/hamzah-name-v2.wav",
+      "version": 2,
+      "sha256": "9145078ee74a68a71ab028a833170c24d7c139ae659b8fc9abcfc7d167357dd1"
+    },
+    {
+      "id": "ya",
+      "src": "/audio/letters/alphabet/ya-name-v2.wav",
+      "version": 2,
+      "sha256": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1"
+    },
+    {
+      "id": "ye",
+      "src": "/audio/letters/ye-name.mp3",
+      "version": 1,
+      "sha256": "11130897351163086760089d6112d40b02b7d7aaf3353c4e833132cf476b4b02"
+    },
+    {
+      "id": "nya",
+      "src": "/audio/letters/nya-name.mp3",
+      "version": 1,
+      "sha256": "279ee3232eeb27eeb0ee9c77929611d32380e4aa997f596f27444cf8fb57cd56"
+    }
+  ],
+  "screenshots": [
+    "output/screenshots/letter-batch-3-review-1280.png",
+    "output/screenshots/letter-batch-3-ta-marbuta-start-1280.png",
+    "output/screenshots/letter-batch-3-tho-start-1280.png",
+    "output/screenshots/letter-batch-3-za-start-1280.png",
+    "output/screenshots/letter-batch-3-ain-start-1280.png",
+    "output/screenshots/letter-batch-3-ghain-start-1280.png",
+    "output/screenshots/letter-batch-3-nga-start-1280.png",
+    "output/screenshots/letter-batch-3-fa-start-1280.png",
+    "output/screenshots/letter-batch-3-pa-start-1280.png",
+    "output/screenshots/letter-batch-3-qaf-start-1280.png",
+    "output/screenshots/letter-batch-3-ga-start-1280.png",
+    "output/screenshots/letter-batch-3-va-start-1280.png",
+    "output/screenshots/letter-batch-3-ha-start-1280.png",
+    "output/screenshots/letter-batch-3-hamzah-start-1280.png",
+    "output/screenshots/letter-batch-3-ye-start-1280.png",
+    "output/screenshots/letter-batch-3-nya-start-1280.png",
+    "output/screenshots/letter-batch-3-review-320.png",
+    "output/screenshots/letter-batch-3-ta-marbuta-stroke-1-320.png",
+    "output/screenshots/letter-batch-3-ta-marbuta-dot-1-320.png",
+    "output/screenshots/letter-batch-3-ta-marbuta-dot-2-320.png",
+    "output/screenshots/letter-batch-3-tho-stroke-1-320.png",
+    "output/screenshots/letter-batch-3-tho-stroke-2-320.png",
+    "output/screenshots/letter-batch-3-nga-stroke-1-320.png",
+    "output/screenshots/letter-batch-3-nga-dot-1-320.png",
+    "output/screenshots/letter-batch-3-nga-dot-2-320.png",
+    "output/screenshots/letter-batch-3-nga-dot-3-320.png",
+    "output/screenshots/letter-batch-3-pa-stroke-1-320.png",
+    "output/screenshots/letter-batch-3-pa-stroke-2-320.png",
+    "output/screenshots/letter-batch-3-pa-dot-1-320.png",
+    "output/screenshots/letter-batch-3-pa-dot-2-320.png",
+    "output/screenshots/letter-batch-3-pa-dot-3-320.png",
+    "output/screenshots/letter-batch-3-qaf-stroke-1-320.png",
+    "output/screenshots/letter-batch-3-qaf-stroke-2-320.png",
+    "output/screenshots/letter-batch-3-qaf-dot-1-320.png",
+    "output/screenshots/letter-batch-3-qaf-dot-2-320.png",
+    "output/screenshots/letter-batch-3-ga-stroke-1-320.png",
+    "output/screenshots/letter-batch-3-ga-stroke-2-320.png",
+    "output/screenshots/letter-batch-3-ga-dot-1-320.png",
+    "output/screenshots/letter-batch-3-hamzah-stroke-1-320.png",
+    "output/screenshots/letter-batch-3-review-768.png",
+    "output/screenshots/letter-batch-3-ta-marbuta-stroke-1-768.png",
+    "output/screenshots/letter-batch-3-ta-marbuta-dot-1-768.png",
+    "output/screenshots/letter-batch-3-ta-marbuta-dot-2-768.png",
+    "output/screenshots/letter-batch-3-tho-stroke-1-768.png",
+    "output/screenshots/letter-batch-3-tho-stroke-2-768.png",
+    "output/screenshots/letter-batch-3-nga-stroke-1-768.png",
+    "output/screenshots/letter-batch-3-nga-dot-1-768.png",
+    "output/screenshots/letter-batch-3-nga-dot-2-768.png",
+    "output/screenshots/letter-batch-3-nga-dot-3-768.png",
+    "output/screenshots/letter-batch-3-pa-stroke-1-768.png",
+    "output/screenshots/letter-batch-3-pa-stroke-2-768.png",
+    "output/screenshots/letter-batch-3-pa-dot-1-768.png",
+    "output/screenshots/letter-batch-3-pa-dot-2-768.png",
+    "output/screenshots/letter-batch-3-pa-dot-3-768.png",
+    "output/screenshots/letter-batch-3-qaf-stroke-1-768.png",
+    "output/screenshots/letter-batch-3-qaf-stroke-2-768.png",
+    "output/screenshots/letter-batch-3-qaf-dot-1-768.png",
+    "output/screenshots/letter-batch-3-qaf-dot-2-768.png",
+    "output/screenshots/letter-batch-3-ga-stroke-1-768.png",
+    "output/screenshots/letter-batch-3-ga-stroke-2-768.png",
+    "output/screenshots/letter-batch-3-ga-dot-1-768.png",
+    "output/screenshots/letter-batch-3-hamzah-stroke-1-768.png"
+  ],
+  "layouts": [
+    {
+      "name": "review-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "ta-marbuta-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "tho-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "za-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "ain-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "ghain-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "nga-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "fa-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "pa-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "qaf-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "ga-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "va-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "ha-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "hamzah-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "ye-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "nya-start-1280",
+      "width": 1280,
+      "overflow": false
+    },
+    {
+      "name": "review-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "ta-marbuta-stroke-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "ta-marbuta-dot-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "ta-marbuta-dot-2-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "tho-stroke-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "tho-stroke-2-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "nga-stroke-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "nga-dot-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "nga-dot-2-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "nga-dot-3-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "pa-stroke-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "pa-stroke-2-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "pa-dot-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "pa-dot-2-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "pa-dot-3-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "qaf-stroke-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "qaf-stroke-2-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "qaf-dot-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "qaf-dot-2-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "ga-stroke-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "ga-stroke-2-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "ga-dot-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "hamzah-stroke-1-320",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "name": "review-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "ta-marbuta-stroke-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "ta-marbuta-dot-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "ta-marbuta-dot-2-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "tho-stroke-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "tho-stroke-2-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "nga-stroke-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "nga-dot-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "nga-dot-2-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "nga-dot-3-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "pa-stroke-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "pa-stroke-2-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "pa-dot-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "pa-dot-2-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "pa-dot-3-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "qaf-stroke-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "qaf-stroke-2-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "qaf-dot-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "qaf-dot-2-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "ga-stroke-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "ga-stroke-2-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "ga-dot-1-768",
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "name": "hamzah-stroke-1-768",
+      "width": 768,
+      "overflow": false
+    }
+  ],
+  "attempts": [
+    {
+      "id": "519d44dc-4311-4c85-90a9-134812a060b8",
+      "timestamp": "2026-10-02T06:02:24.228Z",
+      "profile": "Bunga",
+      "letterId": "ta-marbuta",
+      "contentVersion": 2,
+      "audioVersion": 1,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1084.3596053978422,
+        "errorIntegral": 11.002038791765562,
+        "maxError": 0.11091153747211999,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 184,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.000053729415412817616,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999504526427,
+        "meanError": 0.010146116414700831,
+        "dotCount": 2
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "fb48afec-62e5-4c7b-8a82-29a45f2516e9",
+      "timestamp": "2026-10-02T06:02:28.910Z",
+      "profile": "Bunga",
+      "letterId": "tho",
+      "contentVersion": 2,
+      "audioVersion": 2,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1496.557218246703,
+        "errorIntegral": 10.494605544391526,
+        "maxError": 0.17801576664522936,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 253,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 1,
+        "meanError": 0.007012498697969275,
+        "dotCount": 0
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "6e01bef3-8a79-4c29-8571-8def9cf829b5",
+      "timestamp": "2026-10-02T06:02:33.677Z",
+      "profile": "Bunga",
+      "letterId": "za",
+      "contentVersion": 2,
+      "audioVersion": 2,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1496.557218246703,
+        "errorIntegral": 10.494605544391526,
+        "maxError": 0.17801576664522936,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 254,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 1,
+        "meanError": 0.007012498697969275,
+        "dotCount": 1
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "975df068-e1dc-43d8-b825-d292a07eb881",
+      "timestamp": "2026-10-02T06:02:38.394Z",
+      "profile": "Bunga",
+      "letterId": "ain",
+      "contentVersion": 2,
+      "audioVersion": 2,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1514.5770413709695,
+        "errorIntegral": 18.67131914322101,
+        "maxError": 0.2837776319412879,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 255,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.00004639038320419786,
+        "turnProjectionAllowanceUnits": 1.8339041436851935,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999694371866,
+        "meanError": 0.012327744732166314,
+        "dotCount": 0
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "06156e12-2017-434c-b0af-ed5b6a2d9e79",
+      "timestamp": "2026-10-02T06:02:43.183Z",
+      "profile": "Bunga",
+      "letterId": "ghain",
+      "contentVersion": 2,
+      "audioVersion": 2,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1514.5770413709695,
+        "errorIntegral": 18.67131914322101,
+        "maxError": 0.2837776319412879,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 256,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.00004639038320419786,
+        "turnProjectionAllowanceUnits": 1.8339041436851935,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999694371866,
+        "meanError": 0.012327744732166314,
+        "dotCount": 1
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "dafc78c7-bcc7-4bb3-b630-d6b3c6624a07",
+      "timestamp": "2026-10-02T06:02:48.149Z",
+      "profile": "Bunga",
+      "letterId": "nga",
+      "contentVersion": 2,
+      "audioVersion": 1,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1514.5770413709695,
+        "errorIntegral": 18.67131914322101,
+        "maxError": 0.2837776319412879,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 258,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.00004639038320419786,
+        "turnProjectionAllowanceUnits": 1.8339041436851935,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999694371866,
+        "meanError": 0.012327744732166314,
+        "dotCount": 3
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "b66ed8a9-403d-4fb6-9600-696ef0a32b8c",
+      "timestamp": "2026-10-02T06:02:52.401Z",
+      "profile": "Bunga",
+      "letterId": "fa",
+      "contentVersion": 2,
+      "audioVersion": 2,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1308.9448427975376,
+        "errorIntegral": 21.472982551348597,
+        "maxError": 0.08167475979817464,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 222,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.000061033184010739205,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999533772984,
+        "meanError": 0.016404803204278298,
+        "dotCount": 1
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "b42df195-ed98-4e3a-a4e4-7aa8b8e41a30",
+      "timestamp": "2026-10-02T06:02:56.740Z",
+      "profile": "Bunga",
+      "letterId": "pa",
+      "contentVersion": 2,
+      "audioVersion": 1,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1308.9448427975376,
+        "errorIntegral": 21.472982551348597,
+        "maxError": 0.08167475979817464,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 224,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.000061033184010739205,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999533772984,
+        "meanError": 0.016404803204278298,
+        "dotCount": 3
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "5b640d2f-e030-4dba-88d4-54c4f8b6a14f",
+      "timestamp": "2026-10-02T06:03:01.534Z",
+      "profile": "Bunga",
+      "letterId": "qaf",
+      "contentVersion": 2,
+      "audioVersion": 2,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1476.652850769484,
+        "errorIntegral": 22.224859388499883,
+        "maxError": 0.053851937433534926,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 251,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.000061033184010739205,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999586713,
+        "meanError": 0.015050835663181434,
+        "dotCount": 2
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "1f801204-c653-44df-acda-06784aa7f83f",
+      "timestamp": "2026-10-02T06:03:05.818Z",
+      "profile": "Bunga",
+      "letterId": "ga",
+      "contentVersion": 2,
+      "audioVersion": 1,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1352.1786059545527,
+        "errorIntegral": 10.39141513527861,
+        "maxError": 0.894420645566966,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 230,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.0000152587890625,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999887295505,
+        "meanError": 0.007684942720967639,
+        "dotCount": 1
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "f01bcbec-21cb-4bd7-831e-3a95e06901b8",
+      "timestamp": "2026-10-02T06:03:09.767Z",
+      "profile": "Bunga",
+      "letterId": "va",
+      "contentVersion": 2,
+      "audioVersion": 1,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1235.843781099221,
+        "errorIntegral": 22.72270685120974,
+        "maxError": 0.17768749903170508,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 209,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.000029581206035800278,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999760674332,
+        "meanError": 0.018386390900473712,
+        "dotCount": 1
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "14a6c0e6-7934-4ea9-bb63-71b20801f141",
+      "timestamp": "2026-10-02T06:03:13.174Z",
+      "profile": "Bunga",
+      "letterId": "ha",
+      "contentVersion": 2,
+      "audioVersion": 1,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1084.3596053978422,
+        "errorIntegral": 11.002038791765562,
+        "maxError": 0.11091153747211999,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 182,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0.000053729415412817616,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 0.9999999504526427,
+        "meanError": 0.010146116414700831,
+        "dotCount": 0
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "61c046ca-7198-40b4-bf6c-15d2e9566a3f",
+      "timestamp": "2026-10-02T06:03:16.289Z",
+      "profile": "Bunga",
+      "letterId": "hamzah",
+      "contentVersion": 2,
+      "audioVersion": 2,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 995.1580163197825,
+        "errorIntegral": 15.810528382516225,
+        "maxError": 1.5033030046742937,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 168,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0,
+        "turnProjectionAllowanceUnits": 2.043184002733902,
+        "diagnosticRotations": 0,
+        "coverage": 1,
+        "meanError": 0.0158874551812239,
+        "dotCount": 0
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "2099ffd7-b6eb-4731-8638-99ed171a97e5",
+      "timestamp": "2026-10-02T06:03:19.906Z",
+      "profile": "Bunga",
+      "letterId": "ye",
+      "contentVersion": 2,
+      "audioVersion": 1,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1163.432610619666,
+        "errorIntegral": 14.542824785936867,
+        "maxError": 0.1397537834969515,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 195,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 1,
+        "meanError": 0.012499928791054847,
+        "dotCount": 0
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    },
+    {
+      "id": "59ed0117-1151-486c-af94-c219ae93f1f4",
+      "timestamp": "2026-10-02T06:03:23.043Z",
+      "profile": "Bunga",
+      "letterId": "nya",
+      "contentVersion": 2,
+      "audioVersion": 1,
+      "geometryStatus": "pendingReview",
+      "audioStatus": "approved",
+      "pointerType": "mouse",
+      "mode": "play",
+      "preview": true,
+      "toleranceProfile": "play-pen-mouse-standard-v1",
+      "interactionPolicy": "play-guided-v1",
+      "inkPolicy": "assistedRouteFill",
+      "dotInputPolicy": "validatedTapOrEquivalentPad",
+      "displayAssistance": "routeFill",
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 951.5955290475683,
+        "errorIntegral": 7.050296205722331,
+        "maxError": 0.02538562736898834,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 163,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 1,
+        "meanError": 0.0074089211125012554,
+        "dotCount": 3
+      },
+      "assistance": 0,
+      "retries": 0,
+      "outcome": "playComplete"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "scope": "Production Chromium adult-preview mouse completion of all 15 models; phone/tablet review cards and representative stroke/dot captures. Geometry and writing order remain pending review."
+}

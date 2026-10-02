@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-02",
+  "build": "passed",
+  "unitTestsPassed": 59,
+  "distinctBrowserChecksPassed": 44,
+  "initialRunPassed": 40,
+  "initialRunTimeouts": 4,
+  "finalRechecksPassed": 4,
+  "recheckWorkers": 2,
+  "all12InitialLayoutsWidths": [
+    320,
+    768
+  ],
+  "productionEvidence": "output/verification/numbered-guides-production.json",
+  "geometryAndAudioUnchanged": true,
+  "studentReady": 12,
+  "preview": "output/screenshots/numbered-guides-ba-review.png"
+}

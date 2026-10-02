@@ -1,0 +1,85 @@
+import { chromium, expect } from '@playwright/test';
+import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { dismissSplash, selectPractice } from '../tests/browser/helpers/navigation.js';
+import { boardModels, movePoints } from '../tests/browser/helpers/tracing.js';
+
+const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
+const source = readFileSync('hanana-academy-logo.png');
+const assetHashes = Object.fromEntries(['hanana-academy-logo.png', 'public/branding/hanana-academy-logo.png', 'dist/branding/hanana-academy-logo.png'].map(path => [path, sha256(readFileSync(path))]));
+expect(new Set(Object.values(assetHashes)).size).toBe(1);
+const browser = await chromium.launch();
+try {
+  const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+  const errors = [], failedRequests = [], externalRequests = [];
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('requestfailed', request => failedRequests.push(request.url()));
+  page.on('request', request => {
+    if (!request.url().startsWith('http://127.0.0.1:4173') && !request.url().startsWith('data:') && !request.url().startsWith('blob:')) externalRequests.push(request.url());
+  });
+  const responsePromise = page.waitForResponse('**/branding/hanana-academy-logo.png');
+  await page.goto('http://127.0.0.1:4173');
+  await expect(page.locator('.splash-screen')).toBeVisible();
+  const response = await responsePromise;
+  expect(response.status()).toBe(200); expect(await response.body()).toEqual(source);
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Huruf kecil.', { timeout: 6000 });
+  await expect(page.getByRole('heading', { level: 1 })).toBeFocused();
+  await page.reload(); await expect(page.locator('.splash-screen')).toBeVisible();
+  await page.locator('.splash-screen').evaluate(element => { element.style.zoom = '2'; });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await dismissSplash(page); await expect(page.getByRole('heading', { level: 1 })).toBeFocused();
+  await page.getByRole('button', { name: 'Jom mula' }).click();
+  await expect(page.getByRole('dialog')).toBeVisible();
+  await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();
+  await selectPractice(page,'guided');
+  await page.getByRole('button', { name: 'Alif', exact: true }).click();
+  await page.locator('.trace-board').scrollIntoViewIfNeeded();
+  const stroke = await page.locator('.reference-stroke').evaluate(path => {
+    const matrix = path.getScreenCTM(), count = Math.ceil(path.getTotalLength() / 6);
+    return Array.from({ length: count + 1 }, (_, index) => {
+      const point = path.getPointAtLength(path.getTotalLength() * index / count);
+      const screen = new DOMPoint(point.x, point.y).matrixTransform(matrix);
+      return { x: screen.x, y: screen.y };
+    });
+  });
+  await page.mouse.move(stroke[0].x, stroke[0].y); await page.mouse.down();
+  const middle=Math.floor(stroke.length/3);
+  for(const point of stroke.slice(1,middle))await page.mouse.move(point.x,point.y);
+  const scale=await page.locator('.trace-board').evaluate(svg=>Math.hypot(svg.getScreenCTM().a,svg.getScreenCTM().b));
+  await page.mouse.move(stroke[middle-1].x+50*scale,stroke[middle-1].y);
+  await expect(page.locator('.gesture-blocked')).toBeVisible();await expect(page.locator('.pupil-ink')).toHaveCount(0);
+  for(const point of stroke.slice(middle-1))await page.mouse.move(point.x,point.y);
+  await page.mouse.up();await expect(page.locator('.trace-board')).toBeVisible();
+  await page.mouse.move(stroke[0].x, stroke[0].y); await page.mouse.down();
+  for (const point of stroke.slice(1)) await page.mouse.move(point.x, point.y);
+  await page.mouse.up();
+  await expect(page.getByRole('heading', { name: 'Bagus, kamu sudah cuba!' })).toBeVisible();
+  await expect(page.locator('.site-footer .company-brand img')).toBeVisible();
+  const attempt=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));
+  expect(attempt.interactionPolicy).toBe('strict-v2');expect(attempt.metrics.blockedGestures).toBe(1);
+  await selectPractice(page,'play');await page.getByRole('button',{name:'Ba',exact:true}).click();
+  const model=await boardModels(page),body=model.strokes[0],stop=Math.floor(body.length/3);
+  await page.mouse.move(body[0].x,body[0].y);await page.mouse.down();await movePoints(page,body.slice(1,stop));
+  const saved=await page.locator('.play-fill').getAttribute('data-measured-frontier');
+  await page.mouse.move(body[stop-1].x+model.scale*150,body[stop-1].y);
+  await expect(page.locator('.board-tip')).toContainText('Sambung');
+  expect(await page.locator('.play-fill').getAttribute('data-measured-frontier')).toBe(saved);
+  await page.mouse.move(body[stop-1].x,body[stop-1].y);await movePoints(page,body.slice(stop));await page.mouse.up();
+  await page.getByRole('button',{name:'Tambah titik 1 daripada 1'}).click();
+  await expect(page.getByRole('heading',{name:'Kamu sudah ikut huruf Ba!'})).toBeVisible();
+  const playAttempt=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));
+  expect(playAttempt.outcome).toBe('playComplete');expect(playAttempt.inkPolicy).toBe('assistedRouteFill');
+  expect(playAttempt.metrics.resumeCount).toBeGreaterThan(0);expect(playAttempt.metrics.equivalentDotActions).toBe(1);
+  expect(errors).toEqual([]); expect(failedRequests).toEqual([]); expect(externalRequests).toEqual([]);
+  const fallbackPage = await browser.newPage();
+  await fallbackPage.route('**/branding/hanana-academy-logo.png', route => route.abort());
+  await fallbackPage.goto('http://127.0.0.1:4173');
+  await expect(fallbackPage.locator('.splash-screen .company-brand__fallback')).toHaveText('Hanana Academy');
+  await dismissSplash(fallbackPage);
+  const result = { verifiedOn: '2026-10-02', browser: browser.version(), assetHashes, publicLogoStatus: response.status(), automaticContinuation: 'passed with the real browser clock', manualContinuation: 'passed', focusTransfer: 'passed', splashCssZoom200Percent: 'passed at 1280 × 900', nativeAlifTracing: 'passed', strictExcursionRollback: 'passed; held-pointer re-entry cannot complete, fresh clean retry can', interactionPolicy:attempt.interactionPolicy, playfulBaTracing:'passed; retained colour, same-pointer recovery, native equivalent dot pad and assisted outcome',playInteractionPolicy:playAttempt.interactionPolicy, productionFallback: 'passed', errors, failedRequests, externalRequests };
+  mkdirSync('output/verification', { recursive: true });
+  writeFileSync('output/verification/branding-production-smoke.json', JSON.stringify(result, null, 2));
+  console.log(JSON.stringify(result));
+} finally {
+  await browser.close();
+}

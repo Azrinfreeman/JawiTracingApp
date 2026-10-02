@@ -1,0 +1,32 @@
+import { chromium } from '@playwright/test';
+import { mkdirSync,writeFileSync } from 'node:fs';
+import { dismissSplash } from '../tests/browser/helpers/navigation.js';
+const directory='output/screenshots';mkdirSync(directory,{recursive:true});
+const browser=await chromium.launch();
+const page=await browser.newPage({viewport:{width:1280,height:900}});
+await page.emulateMedia({reducedMotion:'reduce'});
+const errors=[];const externalRequests=[];
+page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!r.url().startsWith('http://127.0.0.1:5173')&&!r.url().startsWith('blob:')&&!r.url().startsWith('data:'))externalRequests.push(r.url());});
+await page.clock.install({time:new Date('2026-10-02T00:00:00Z')});
+await page.clock.pauseAt(new Date('2026-10-02T00:00:01Z'));
+const layouts=[];
+for(const [width,height,label] of [[1280,900,'desktop'],[320,740,'320'],[390,844,'phone'],[768,1024,'tablet'],[844,390,'landscape']]) {
+  await page.setViewportSize({width,height});
+  await page.goto('http://127.0.0.1:5173');await page.evaluate(()=>document.fonts.ready);
+  await page.locator('.splash-screen img').evaluate(img=>img.decode());
+  await page.screenshot({path:`${directory}/splash-${label}.png`,fullPage:true});
+  await dismissSplash(page);await page.clock.runFor(32);
+  await page.screenshot({path:`${directory}/welcome-${label}.png`,fullPage:true});
+  layouts.push({width,height,label,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)});
+}
+await page.clock.resume();await page.setViewportSize({width:1280,height:900});
+await page.getByRole('button',{name:'Jom mula'}).click();await page.getByRole('button',{name:'Buka pratonton dewasa'}).click();
+await page.getByRole('button',{name:'Semua huruf',exact:true}).click();await page.evaluate(()=>document.fonts.ready);
+await page.screenshot({path:`${directory}/catalogue-desktop.png`,fullPage:true});
+await page.getByRole('button',{name:'Ba',exact:true}).click();await page.screenshot({path:`${directory}/lesson-desktop.png`,fullPage:true});
+await page.getByRole('button',{name:'Ruang guru'}).click();await page.screenshot({path:`${directory}/teacher-desktop.png`,fullPage:true});
+await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Taman Jawi, halaman utama'}).click();await page.evaluate(()=>document.fonts.ready);
+await page.screenshot({path:`${directory}/welcome-phone.png`,fullPage:true});
+await page.getByRole('button',{name:'Jom mula'}).click();await page.getByRole('button',{name:'Ba',exact:true}).click();await page.screenshot({path:`${directory}/lesson-phone.png`,fullPage:true});
+writeFileSync(`${directory}/render-check.json`,JSON.stringify({errors,externalRequests,screenshots:14,layouts},null,2));
+console.log(JSON.stringify({errors,externalRequests,screenshots:14,layouts}));await browser.close();

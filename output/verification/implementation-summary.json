@@ -1,0 +1,41 @@
+{
+  "implementationDate": "2026-10-02",
+  "unitTests": {
+    "passed": 30
+  },
+  "browserChecks": {
+    "fullChromiumWebKitRun": 44,
+    "targetedPersistenceRun": 6,
+    "overlap": 4,
+    "distinctPassedAcrossRuns": 46,
+    "firefox": "Unverified: executable launch fails with spawn UNKNOWN"
+  },
+  "build": "passed",
+  "productionSmoke": {
+    "productionOrigin": "http://127.0.0.1:4173",
+    "lesson": "alif",
+    "outcome": "SIAP DENGAN PANDUAN",
+    "errors": [],
+    "failedRequests": []
+  },
+  "render": {
+    "errors": [],
+    "externalRequests": [],
+    "screenshots": 6
+  },
+  "teachingContent": {
+    "catalogueEntries": 37,
+    "draftModels": 12,
+    "missingModels": 25,
+    "missingLetterNameRecordings": 37,
+    "approvedLessons": 0
+  },
+  "remaining": [
+    "Teacher handwriting and pronunciation review",
+    "Permissioned teaching recordings",
+    "Remaining geometry assets",
+    "Physical iPad/Android/stylus and pupil calibration",
+    "Firefox on a functioning runtime",
+    "Successful audio codec playback in a supported WebKit/Safari runtime"
+  ]
+}

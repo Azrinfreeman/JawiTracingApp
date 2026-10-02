@@ -1,0 +1,296 @@
+{
+  "verifiedAt": "2026-10-02T02:46:16.139Z",
+  "replacements": 27,
+  "retained": 10,
+  "sourceFilesUnmodified": 27,
+  "originalPublicFilesUnmodified": 37,
+  "unchangedLetterMetadata": 10,
+  "nonNameAudioContentPreserved": 37,
+  "pendingReview": 37,
+  "zeroAudioApprovals": true,
+  "formatCounts": {
+    "mp3": 21,
+    "wav": 6
+  },
+  "qafChoice": "User explicitly mapped 20_kof.mp3 to Qaf and kept Kaf unchanged",
+  "replaced": [
+    {
+      "id": "alif",
+      "glyph": "ا",
+      "label": "Alif",
+      "source": "voices/alphabet/01_aliff.mp3",
+      "src": "/audio/letters/alphabet/alif-name-v2.mp3",
+      "sha256": "062b495ec1506ebaf1bb66bbbd1bd0cf3143f69fe1e8c5d0645450fbcaf4d8e4"
+    },
+    {
+      "id": "ba",
+      "glyph": "ب",
+      "label": "Ba",
+      "source": "voices/alphabet/02_ba.mp3",
+      "src": "/audio/letters/alphabet/ba-name-v2.mp3",
+      "sha256": "987d2db9dc79dc348d022a5d6324ae1702e8a4736875113a5d4172f10603cf91"
+    },
+    {
+      "id": "ta",
+      "glyph": "ت",
+      "label": "Ta",
+      "source": "voices/alphabet/03_ta.mp3",
+      "src": "/audio/letters/alphabet/ta-name-v2.mp3",
+      "sha256": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d"
+    },
+    {
+      "id": "sa",
+      "glyph": "ث",
+      "label": "Sa",
+      "source": "voices/alphabet/04_sa.mp3",
+      "src": "/audio/letters/alphabet/sa-name-v2.mp3",
+      "sha256": "ecd13ed9a2d6ef025b117fa5ed9b8aeb3f9c48564fbc3b9d7cacae932bda3ff6"
+    },
+    {
+      "id": "jim",
+      "glyph": "ج",
+      "label": "Jim",
+      "source": "voices/alphabet/05_jin.mp3",
+      "src": "/audio/letters/alphabet/jim-name-v2.mp3",
+      "sha256": "e50bb0c1cff95018602e0dd884a1f99c7a2aa48e65d919ad38a687516f6fa4a9"
+    },
+    {
+      "id": "ha-pedat",
+      "glyph": "ح",
+      "label": "Ha (ح)",
+      "source": "voices/alphabet/06_ha.mp3",
+      "src": "/audio/letters/alphabet/ha-pedat-name-v2.mp3",
+      "sha256": "70aff1d8e0cdfe0951644a4fb4f8d398db47962e435d75a19890b84347edf074"
+    },
+    {
+      "id": "kha",
+      "glyph": "خ",
+      "label": "Kha",
+      "source": "voices/alphabet/07_hor.mp3",
+      "src": "/audio/letters/alphabet/kha-name-v2.mp3",
+      "sha256": "d2ec10e1bf498155442361153ebe04f38d6e161857a4aac09d6cbfdd1f28a3a2"
+    },
+    {
+      "id": "dal",
+      "glyph": "د",
+      "label": "Dal",
+      "source": "voices/alphabet/08_da.mp3",
+      "src": "/audio/letters/alphabet/dal-name-v2.mp3",
+      "sha256": "743ca5838453493045fe17d85f2377bb57eebbdbe0b6859f160b36ab8410c921"
+    },
+    {
+      "id": "zal",
+      "glyph": "ذ",
+      "label": "Zal",
+      "source": "voices/alphabet/09_dzal.mp3",
+      "src": "/audio/letters/alphabet/zal-name-v2.mp3",
+      "sha256": "0ea67e64c41d8e8414fa4ebc754e71332b1069b4523fe99d4d6aa10f3b575a32"
+    },
+    {
+      "id": "ra",
+      "glyph": "ر",
+      "label": "Ra",
+      "source": "voices/alphabet/10_raw.mp3",
+      "src": "/audio/letters/alphabet/ra-name-v2.mp3",
+      "sha256": "3fbc1ca4733dd40e419891248ae6184b149a63903bfe46a3ba21b6147bee2553"
+    },
+    {
+      "id": "zai",
+      "glyph": "ز",
+      "label": "Zai",
+      "source": "voices/alphabet/11_zai.mp3",
+      "src": "/audio/letters/alphabet/zai-name-v2.mp3",
+      "sha256": "4e887a969999838cfce6ae60b5c146929650d5aef53c7ecb8934ffd49b09a3eb"
+    },
+    {
+      "id": "sin",
+      "glyph": "س",
+      "label": "Sin",
+      "source": "voices/alphabet/12_1sin.mp3",
+      "src": "/audio/letters/alphabet/sin-name-v2.mp3",
+      "sha256": "58f170c037b8f4229466df9cfb7ecddcf9875706c68cc47255ca3521129e9a3b"
+    },
+    {
+      "id": "syin",
+      "glyph": "ش",
+      "label": "Syin",
+      "source": "voices/alphabet/12_2syin.mp3",
+      "src": "/audio/letters/alphabet/syin-name-v2.mp3",
+      "sha256": "d2ecece86ebe31e9dd22595a94eaf265fef04afcf10b75acdd6eb32a306f2dc5"
+    },
+    {
+      "id": "sad",
+      "glyph": "ص",
+      "label": "Sad",
+      "source": "voices/alphabet/13_sod.mp3",
+      "src": "/audio/letters/alphabet/sad-name-v2.mp3",
+      "sha256": "df2c1465abccebc534a738658b4098c62be74c780729b4e03f6e3ceb4769f8ed"
+    },
+    {
+      "id": "dad",
+      "glyph": "ض",
+      "label": "Dad",
+      "source": "voices/alphabet/14_dod.mp3",
+      "src": "/audio/letters/alphabet/dad-name-v2.mp3",
+      "sha256": "69222ad37d2e7e17910cfe66578f83c239483cd9639c41bdb848d34e45c89ebb"
+    },
+    {
+      "id": "tho",
+      "glyph": "ط",
+      "label": "Ta (ط)",
+      "source": "voices/alphabet/15_tor.mp3",
+      "src": "/audio/letters/alphabet/tho-name-v2.mp3",
+      "sha256": "781fbf7ed4c2edc5044b002a974c83f45f353361e51ca4604401329c572fe81e"
+    },
+    {
+      "id": "za",
+      "glyph": "ظ",
+      "label": "Za",
+      "source": "voices/alphabet/16_zor.mp3",
+      "src": "/audio/letters/alphabet/za-name-v2.mp3",
+      "sha256": "e5af1f6c308fde0b3347bc1685181251295a8cde7e29ea15a18568d03f6057d3"
+    },
+    {
+      "id": "ain",
+      "glyph": "ع",
+      "label": "Ain",
+      "source": "voices/alphabet/17_ain.mp3",
+      "src": "/audio/letters/alphabet/ain-name-v2.mp3",
+      "sha256": "7c3974d9768f6747ae0b99df2c991f05b7ac44faad64e2e333937dcc03c87e1b"
+    },
+    {
+      "id": "ghain",
+      "glyph": "غ",
+      "label": "Ghain",
+      "source": "voices/alphabet/18_ghain.mp3",
+      "src": "/audio/letters/alphabet/ghain-name-v2.mp3",
+      "sha256": "371dba3f910d3118713a6a35bd08aa96d0d24bbc44583dbe1bdb2052b602d188"
+    },
+    {
+      "id": "fa",
+      "glyph": "ف",
+      "label": "Fa",
+      "source": "voices/alphabet/19_faa.mp3",
+      "src": "/audio/letters/alphabet/fa-name-v2.mp3",
+      "sha256": "9650bfd6c8b3a7642a099efcc43705cd31bce7d8eb1ae1948ae6a3ed06ad8f94"
+    },
+    {
+      "id": "qaf",
+      "glyph": "ق",
+      "label": "Qaf",
+      "source": "voices/alphabet/20_kof.mp3",
+      "src": "/audio/letters/alphabet/qaf-name-v2.mp3",
+      "sha256": "35a6903e672757cb808d22f121b348a572326d8246200ea0b6e90fce4b59b842"
+    },
+    {
+      "id": "lam",
+      "glyph": "ل",
+      "label": "Lam",
+      "source": "voices/alphabet/21_lam.wav",
+      "src": "/audio/letters/alphabet/lam-name-v2.wav",
+      "sha256": "2ea37a3cfe0f7ce7c67670717d99f0ee35d5f0d4a3fe38064f25d6fb8a37fd71"
+    },
+    {
+      "id": "mim",
+      "glyph": "م",
+      "label": "Mim",
+      "source": "voices/alphabet/22_mim.wav",
+      "src": "/audio/letters/alphabet/mim-name-v2.wav",
+      "sha256": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2"
+    },
+    {
+      "id": "nun",
+      "glyph": "ن",
+      "label": "Nun",
+      "source": "voices/alphabet/23_nun.wav",
+      "src": "/audio/letters/alphabet/nun-name-v2.wav",
+      "sha256": "6056e86e290d10e576e347e9049d3fc7dc1caeef1fe5d6ca8044b2157d223f5c"
+    },
+    {
+      "id": "wau",
+      "glyph": "و",
+      "label": "Wau",
+      "source": "voices/alphabet/24_wau.wav",
+      "src": "/audio/letters/alphabet/wau-name-v2.wav",
+      "sha256": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298"
+    },
+    {
+      "id": "hamzah",
+      "glyph": "ء",
+      "label": "Hamzah",
+      "source": "voices/alphabet/25_hamzah.wav",
+      "src": "/audio/letters/alphabet/hamzah-name-v2.wav",
+      "sha256": "9145078ee74a68a71ab028a833170c24d7c139ae659b8fc9abcfc7d167357dd1"
+    },
+    {
+      "id": "ya",
+      "glyph": "ي",
+      "label": "Ya",
+      "source": "voices/alphabet/26_ya.wav",
+      "src": "/audio/letters/alphabet/ya-name-v2.wav",
+      "sha256": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1"
+    }
+  ],
+  "unchanged": [
+    {
+      "id": "ta-marbuta",
+      "glyph": "ة",
+      "label": "Ta marbutah",
+      "src": "/audio/letters/ta-marbuta-name.mp3"
+    },
+    {
+      "id": "ca",
+      "glyph": "چ",
+      "label": "Ca",
+      "src": "/audio/letters/ca-name.mp3"
+    },
+    {
+      "id": "nga",
+      "glyph": "ڠ",
+      "label": "Nga",
+      "src": "/audio/letters/nga-name.mp3"
+    },
+    {
+      "id": "pa",
+      "glyph": "ڤ",
+      "label": "Pa",
+      "src": "/audio/letters/pa-name.mp3"
+    },
+    {
+      "id": "kaf",
+      "glyph": "ک",
+      "label": "Kaf",
+      "src": "/audio/letters/kaf-name.mp3"
+    },
+    {
+      "id": "ga",
+      "glyph": "ڬ",
+      "label": "Ga",
+      "src": "/audio/letters/ga-name.mp3"
+    },
+    {
+      "id": "va",
+      "glyph": "ۏ",
+      "label": "Va",
+      "src": "/audio/letters/va-name.mp3"
+    },
+    {
+      "id": "ha",
+      "glyph": "ه",
+      "label": "Ha (ه)",
+      "src": "/audio/letters/ha-name.mp3"
+    },
+    {
+      "id": "ye",
+      "glyph": "ى",
+      "label": "Ye",
+      "src": "/audio/letters/ye-name.mp3"
+    },
+    {
+      "id": "nya",
+      "glyph": "ڽ",
+      "label": "Nya",
+      "src": "/audio/letters/nya-name.mp3"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Kuala_Lumpur",
+  "status": "approved",
+  "reviewer": "Project owner (Codex user; name not supplied)",
+  "kind": "projectOwner",
+  "source": "User explicitly wrote approve after the numbered tracing implementation and preview.",
+  "reference": "docs/NUMBERED_TRACING_GUIDES.md#project-owner-approval--2-october-2026",
+  "scope": "Numbered guidance for the 12 existing lessons: start, follow, stop, finish, stroke/dot order and lifting instructions.",
+  "lessonIds": [
+    "alif",
+    "ba",
+    "ta",
+    "dal",
+    "ra",
+    "sin",
+    "kaf",
+    "lam",
+    "mim",
+    "nun",
+    "wau",
+    "ya"
+  ],
+  "implementationFiles": [
+    {
+      "path": "src/tracing/numberedGuides.js",
+      "sha256": "15323befa4b9bd08c60968367cc1b7157ffa5a1f455c4ff7b3f1ee5e539bba48"
+    },
+    {
+      "path": "src/components/NumberedTraceGuides.jsx",
+      "sha256": "618200c7ff5a20e7aa926543e5ff92936b188fe5910d493cf274e9abb62d6cd3"
+    },
+    {
+      "path": "src/components/TraceBoard.jsx",
+      "sha256": "f6c709f5fe04ffa7e993cc5358b96698c26def7cace2b739878b22b0f76baecd"
+    },
+    {
+      "path": "src/styles/app.css",
+      "sha256": "c0c86cc2a1501cfee1dd54ad3273da74b472d680d0392d791b5b799e71614504"
+    }
+  ],
+  "catalogueSha256": "1bb5ce7d39c6a440a36d79293e461b28db88c80a3a00f43d6c2cce65ac24e93f",
+  "evidence": [
+    "output/verification/numbered-guides-summary.json",
+    "output/verification/numbered-guides-production.json",
+    "output/screenshots/numbered-guides-ba-review.png"
+  ],
+  "studentReady": 12,
+  "audioApprovals": 37,
+  "pendingModels": 25
+}

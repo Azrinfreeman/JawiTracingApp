@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-01T20:52:33.568Z",
+  "platform": "win32",
+  "osRelease": "10.0.26200",
+  "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 1280,
+    "height": 1000,
+    "dpr": 1
+  },
+  "letter": "sin",
+  "geometryVersion": 1,
+  "interactionPolicy": "play-guided-v1",
+  "toleranceProfile": "play-pen-mouse-standard-v1",
+  "input": "native mouse",
+  "handler": {
+    "samples": 284,
+    "meanMs": 0.27007042228336064,
+    "maxMs": 1.2000000029802322
+  },
+  "animationFrameObservation": {
+    "samples": 282,
+    "medianMs": 0.20000000298023224,
+    "p95Ms": 0.30000001192092896,
+    "maxMs": 0.5
+  },
+  "bounds": {
+    "maxInputSamples": 18000,
+    "maxGestures": 100
+  },
+  "scope": "Handler and DOM route-fill/ink availability on animation frames in a Windows headless Chromium session; excludes physical screen, stylus and finger latency."
+}

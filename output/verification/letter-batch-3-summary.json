@@ -1,0 +1,266 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Kuala_Lumpur",
+  "status": "implementedPendingContentReview",
+  "inventory": {
+    "letters": 37,
+    "models": 37,
+    "studentReady": 22,
+    "pendingModels": 15,
+    "missingModels": 0,
+    "preservedApprovedEntries": 22,
+    "preservedApprovedRecordings": 37
+  },
+  "checks": [
+    {
+      "command": "npm test",
+      "scope": "Final catalogue, deterministic tracing, state, storage and audio lifecycle",
+      "result": "passed",
+      "tests": 59
+    },
+    {
+      "command": "npm run build",
+      "scope": "Content/file validation and final production bundle",
+      "result": "passed"
+    },
+    {
+      "command": "npm run test:browser -- tests/browser/letter-batch-3.spec.js --project=chromium --project=webkit --workers=2 --reporter=line",
+      "scope": "Initial new-model completions in all three modes, native touch, access, navigation and layout",
+      "result": "98 passed; 6 check failures subsequently corrected; 4 WebKit CDP-only cases skipped",
+      "note": "The 12 unrelated draft geometries were unchanged. Fa/Pa/Qaf were smoothed and rechecked below."
+    },
+    {
+      "command": "npm run test:browser -- tests/browser/letter-batch-3.spec.js tests/browser/letter-batch-1.spec.js tests/browser/letter-batch-2.spec.js tests/browser/numbered-guides.spec.js tests/browser/game.spec.js --project=chromium --project=webkit --workers=2 --reporter=line --grep \"^(fa|pa|qaf):|all 37 models|all 15 draft|Qaf requires|all 22 approved|student next-letter|all 12 initial guides|approved student entry\"",
+      "scope": "Corrected access/layout checks, final Qaf loop and existing student/guide regressions",
+      "result": "18 passed; 2 historical adult-catalogue-count failures subsequently corrected",
+      "note": "Anchored head pattern selected no head-mode cases; they were checked in the following run."
+    },
+    {
+      "command": "node node_modules/@playwright/test/cli.js test tests/browser/letter-batch-3.spec.js tests/browser/game.spec.js --project=chromium --project=webkit --workers=2 --grep \"(fa|pa|qaf):|welcome, approved\" --reporter=json",
+      "scope": "Final Fa/Pa/Qaf in every mode in both engines; corrected current-catalogue and audio-failure regression",
+      "result": "passed",
+      "tests": 20,
+      "evidence": "output/verification/letter-batch-3-final-rechecks.json"
+    },
+    {
+      "command": "node scripts/verify-letter-batch-3.js",
+      "scope": "Production Chromium adult-preview mouse completion of all 15 models; phone/tablet review cards and representative stroke/dot captures. Geometry and writing order remain pending review.",
+      "result": "passed",
+      "screenshots": 62,
+      "evidence": "output/verification/letter-batch-3-production.json"
+    }
+  ],
+  "distinctBrowserCases": {
+    "passed": 116,
+    "skipped": 4,
+    "unresolvedFailures": 0
+  },
+  "visualInspection": [
+    "review-1280",
+    "review-320",
+    "qaf-stroke-1-320",
+    "nga-dot-3-320",
+    "ga-stroke-2-320",
+    "hamzah-stroke-1-320",
+    "ta-marbuta-dot-1-768",
+    "qaf-stroke-2-768"
+  ],
+  "runtime": {
+    "node": "v24.19.0",
+    "browser": "153.0.8010.12"
+  },
+  "inputs": [
+    {
+      "path": "src/App.jsx",
+      "sha256": "31c9f54d1be06d1ffbe48e1c9c3a82c392a1fdc20c4ade6bf42b334fbffc249f"
+    },
+    {
+      "path": "src/main.jsx",
+      "sha256": "4c150b808e9e5dcf7ca21217a484aea16b483746d48e902e17857206e8190362"
+    },
+    {
+      "path": "src/audio/audioManager.js",
+      "sha256": "071bd25c41168f7324e17e8c72a2a28670af859831f7f39d2cbdad5e613bce6f"
+    },
+    {
+      "path": "src/components/AudioControls.jsx",
+      "sha256": "4ff05355164256436115b7dae5da99b5a1206ad53ab38e23bb2852c425229bad"
+    },
+    {
+      "path": "src/components/AudioReviewPanel.jsx",
+      "sha256": "b27555073378eafd75454cd2a97def5d8b5decb6374383d72925d228a9b29a99"
+    },
+    {
+      "path": "src/components/CompanyBrand.jsx",
+      "sha256": "bf0777c606cf5624a4afced6f8f9d8310afe1a153dc7905a3ccd74eaf1e8dd14"
+    },
+    {
+      "path": "src/components/DotTapPad.jsx",
+      "sha256": "2c29d0224bad319906422ec5200b57d3d56ab428ce243afd26addcf5dc824600"
+    },
+    {
+      "path": "src/components/DraftModelReview.jsx",
+      "sha256": "4eb99bfafc0987e4de080a0d54afaec301b3afb84e7b60c2e089dbd29f4557fd"
+    },
+    {
+      "path": "src/components/Icons.jsx",
+      "sha256": "f18954c0b67f91437445a6005eb6ef01c85ac8355b39714e29ae91fe0ccffeaf"
+    },
+    {
+      "path": "src/components/LetterCard.jsx",
+      "sha256": "63f141ee0fee2826c9bbd2c981eca272fb53812c2c67864c5b41264d8bf7863e"
+    },
+    {
+      "path": "src/components/NumberedTraceGuides.jsx",
+      "sha256": "618200c7ff5a20e7aa926543e5ff92936b188fe5910d493cf274e9abb62d6cd3"
+    },
+    {
+      "path": "src/components/PlayFeedback.jsx",
+      "sha256": "5917e632f42b457676bed9693710dd133acc0fc57bfca49588b57ada49a84470"
+    },
+    {
+      "path": "src/components/TraceBoard.jsx",
+      "sha256": "f6c709f5fe04ffa7e993cc5358b96698c26def7cace2b739878b22b0f76baecd"
+    },
+    {
+      "path": "src/content/letters.json",
+      "sha256": "af14c2de23be61fe6eac449c6012721aa7eebd77abdd44b6784ba0f7bbe56af0"
+    },
+    {
+      "path": "src/content/validateContent.js",
+      "sha256": "96eeb1864af9e67b11564a6de54125e72c0a3c546f25b0cdb4be62ae3c234606"
+    },
+    {
+      "path": "src/screens/LessonScreen.jsx",
+      "sha256": "d352b82f372c0a2a080f6b0ed1b9c923c22dd8e1cdd5760a9a5095aaca65635b"
+    },
+    {
+      "path": "src/screens/LetterGarden.jsx",
+      "sha256": "bcfc7ba57d9fb3d0a1a4af6a3416a70f383e209c75c96f2644b479ac644a967f"
+    },
+    {
+      "path": "src/screens/ResultScreen.jsx",
+      "sha256": "025969bfa2c432892d7998b7c66d36074235827cf034e72e3a6daea5bfed4530"
+    },
+    {
+      "path": "src/screens/SplashScreen.jsx",
+      "sha256": "9b7eba6178c5260e295398df120121383744cbb7de9179f04d63333458125b52"
+    },
+    {
+      "path": "src/screens/TeacherScreen.jsx",
+      "sha256": "98785ea57c6a6516f2d860c71d339d557a41b886646a2d87fadf351633d842c1"
+    },
+    {
+      "path": "src/screens/WelcomeScreen.jsx",
+      "sha256": "202947d02156ace1b5e704d5a4320fb84ad3377dc7e75865231255587f16a8be"
+    },
+    {
+      "path": "src/storage/progressStore.js",
+      "sha256": "b73d2c306c2e164a0016a1f0763f69cbb52184c2fbe45fcfad7ee9de0a30c319"
+    },
+    {
+      "path": "src/styles/app.css",
+      "sha256": "11134965e3c6ede9361e438ec666969c4bd3e70df4a7537fb84b2a2522e22100"
+    },
+    {
+      "path": "src/tracing/dotMatcher.js",
+      "sha256": "84e3742623c7ec46ce9fb1dc585a55db3d6fc0955063bb7e0322da4b26ac1999"
+    },
+    {
+      "path": "src/tracing/geometry.js",
+      "sha256": "0c72b47aa27b69c653489da3fc9efd6a8d1335381290791e78025fc9197ece57"
+    },
+    {
+      "path": "src/tracing/inputController.js",
+      "sha256": "8160f4bcfb66ca79d6a5d4822839ec2864fcb3cc1b74201e7de8cb8f96e6bfae"
+    },
+    {
+      "path": "src/tracing/matcher.js",
+      "sha256": "f8802416a97366a9d6b8143559781552c75a3e5bead368122bd90015976ca358"
+    },
+    {
+      "path": "src/tracing/numberedGuides.js",
+      "sha256": "ad7f57196b9d9206407c7a201c02201d93c9bbb6b575be0131f4db1de9a59e73"
+    },
+    {
+      "path": "src/tracing/playMatcher.js",
+      "sha256": "d38cbc96484c3fcf145992dac6842b0f98cb8a1b761802cc8838039742662112"
+    },
+    {
+      "path": "src/tracing/prepareReference.js",
+      "sha256": "d4402dda2203cfa1bc7a3b76dc3f97c774ece17c6fde8d5c612ced48a5910f61"
+    },
+    {
+      "path": "src/tracing/profiles.js",
+      "sha256": "4e0c71ba7d820325aa553ca5df0985cf10027830e3167e46df413a4f53dfb51d"
+    },
+    {
+      "path": "src/tracing/traceReducer.js",
+      "sha256": "459959d0ac8236f56f365e153d5294904832c0028330a389fee152a6d62e8853"
+    },
+    {
+      "path": "package.json",
+      "sha256": "a68f130c5b87c91c0a36ad799d3826fe7095f250f3863045085b912bf8618f97"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d"
+    },
+    {
+      "path": "playwright.config.js",
+      "sha256": "f86b865fbb679b755336020da3079cc3563485ab257f1208dddb5c1acb4770a6"
+    },
+    {
+      "path": "tests/geometry/support.test.js",
+      "sha256": "e06dbba26dedd581d54b2e1fecb9fdd74d91d743de81a6211aa6d97f76f0da76"
+    },
+    {
+      "path": "tests/browser/letter-batch-3.spec.js",
+      "sha256": "f406b0c81778b43393b9603432dbc52d5691074a8b8537c8efd4b9cd5ccea403"
+    },
+    {
+      "path": "tests/browser/letter-batch-1.spec.js",
+      "sha256": "f1678630151ae5922cc1bdfde30d39998c85898cd666f59e0391fc8395ee35e2"
+    },
+    {
+      "path": "tests/browser/letter-batch-2.spec.js",
+      "sha256": "61a50b804a1a5d7773305fa805ad10ccb99163cc9f86a562f64d274a7fc8fc52"
+    },
+    {
+      "path": "tests/browser/numbered-guides.spec.js",
+      "sha256": "9d9e33ec6c59afd77b22e9b207e01acab37bf0ad8444c4bafaab6c430a177992"
+    },
+    {
+      "path": "tests/browser/game.spec.js",
+      "sha256": "79397bed472f46110e05573d51c63fc0500249e586fae662b4027fcb79dc3e9c"
+    },
+    {
+      "path": "tests/browser/helpers/tracing.js",
+      "sha256": "aa9f29d649fa58e1e72ddf2a61d270878e7b04c95e1d98c475cfe76bb4d649b5"
+    },
+    {
+      "path": "tests/browser/helpers/navigation.js",
+      "sha256": "5c2768ecfbc2e8408a6ec7727131e0233e5c08c3fa9d701807040dd532b72629"
+    },
+    {
+      "path": "dist/assets/index-aR-WCKKE.css",
+      "sha256": "2279159026a69b9d6d013e16f8b3cc2d158a5242205c1fe33b10a92c6cf9e482"
+    },
+    {
+      "path": "dist/assets/index-DiInFM_n.js",
+      "sha256": "dc4a0edeac6a09b8a646ace50b39360ebc2980a8355912a48672d0a7fe138c25"
+    },
+    {
+      "path": "dist/index.html",
+      "sha256": "d4586bfe11f82438e9a37a248b36312da8e551fb1c5b13b9778c1865171d9080"
+    }
+  ],
+  "modelInputs": "output/verification/letter-batch-3-model-inputs.json",
+  "limitations": [
+    "New geometry and writing sequence pending content review",
+    "No named teacher or physical pupil/device assessment",
+    "Firefox retains recorded Windows launch limit",
+    "Native WebKit touch not established by Chromium CDP cases"
+  ],
+  "repeatTrigger": "Affected geometry, code, assets, tests, configuration, dependencies, build or environment changed, or an unresolved concern requires investigation"
+}
