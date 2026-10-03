@@ -1,8 +1,12 @@
 # Teaching content review
 
-Status: 37 student-ready lessons in the application. The project owner approved
-the 12 pilot models and all 25 additional revision-2 models on 2026-10-02.
-See [the approval record](CONTENT_APPROVALS.md).
+Status: 35 student-ready lessons as of 2026-10-03. Kaf revision 2 and Ga
+revision 3 have corrected connected bodies and await fresh geometry review.
+Both can be traced in adult preview. See [the correction review sheet and
+verification](KAF_GA_SHAPE_CORRECTION_VERIFICATION.md).
+The project owner approved the earlier 12 pilot models and 25 additional
+revision-2 models on 2026-10-02; those historical approvals are preserved in
+[the approval record](CONTENT_APPROVALS.md).
 All 37 current name recordings were subsequently approved by the project owner;
 see [the audio approval record](AUDIO_APPROVALS.md). No named teacher assessment
 has been supplied. The user's
@@ -19,31 +23,31 @@ behavioural tests of the tracing engine.
 | Content | Count | State |
 | --- | --- | --- |
 | Jawi catalogue entries | 37 | Labels/glyphs from the existing research bank |
-| Pilot handwriting models | 12 | Approved by project owner; reviewer/date/reference recorded |
+| Pilot handwriting models | 12 | 11 approved at revision 1; corrected Kaf revision 2 pending review |
 | Additional handwriting models | 5 | Sa, Jim, Ca, Ha (ح), Kha; revision 2; approved by project owner |
 | Second additional handwriting batch | 5 | Zal, Zai, Syin, Sad, Dad; revision 2; approved by project owner |
-| Final handwriting batch | 15 | Approved by project owner at revision 2; available in student lessons |
+| Final handwriting batch | 15 | 14 approved at revision 2; corrected Ga revision 3 pending review |
 | Letter-name recordings | 37 | 27 supplied MP3/WAV recordings and 10 retained synthetic MP3s; approved by project owner |
 | Pronunciation examples | As selected by educator | Not yet specified/recorded |
-| Geometry approvals | 37 | Twelve revision-1 models and 25 revision-2 models; project-owner approval |
+| Current geometry approvals | 35 | Eleven revision-1 models and 24 revision-2 models; project-owner approval |
 | Audio approvals | 37 | Project-owner approval of current recording revisions |
-| Student-ready lessons | 37 | Current model and required audio approvals match their revisions |
-| Numbered tracing guidance | All 37 approved models | Sequential movement and dot cues in student lessons |
+| Student-ready lessons | 35 | Current model and required audio approvals match their revisions |
+| Numbered tracing guidance | All 37 authored models | Sequential movement and dot cues; Kaf/Ga reviewed through adult preview |
 
 Approved models: alif, ba, ta, ta-marbuta, sa, jim, ca, ha-pedat, kha, dal, zal,
-ra, zai, sin, syin, sad, dad, tho, za, ain, ghain, nga, fa, pa, qaf, kaf, ga,
+ra, zai, sin, syin, sad, dad, tho, za, ain, ghain, nga, fa, pa, qaf,
 lam, mim, nun, wau, va, ha, hamzah, ya, ye, nya.
 
 The approval source is the user's explicit message, not a fabricated teacher
-identity. All 37 name recordings are approved at their current revisions; all 37
+identity. All 37 name recordings are approved at their current revisions; all 35
 approved models are student-ready in the app. See the
 [additional model notes](LETTER_BATCH_1_REVIEW.md).
 The second batch is also available to students; see
-[its review notes](LETTER_BATCH_2_REVIEW.md). The final 15 models are approved
-at revision 2; see [their review notes](LETTER_BATCH_3_REVIEW.md).
+[its review notes](LETTER_BATCH_2_REVIEW.md). The final batch's earlier approvals
+at revision 2 remain in [their historical review notes](LETTER_BATCH_3_REVIEW.md).
 
-No catalogue entry remains without a tracing model or current project-owner
-geometry approval. Teacher assessment and physical pupil/device review remain
+No catalogue entry remains without a tracing model. Kaf/Ga's new revisions need
+fresh geometry approval. Teacher assessment and physical pupil/device review remain
 outstanding and are separate from the recorded project-owner approvals.
 
 The chosen pilot order is not a compulsory KPM teaching order. PI 1.5.1 concerns

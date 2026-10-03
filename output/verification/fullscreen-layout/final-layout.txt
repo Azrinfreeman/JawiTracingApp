@@ -1,0 +1,58 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c playwright.fullscreen.config.js fullscreen-layout.spec.js --project=chromium --project=webkit --workers=2
+
+Running 42 tests using 2 workers
+
+
+(node:43688) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:3612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/42] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740
+[2/42] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740
+[3/42] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 390x844
+[4/42] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1024x768
+[5/42] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 768x1024
+[6/42] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 390x844
+[7/42] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720
+[8/42] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1920x1080
+[9/42] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 390x844
+[10/42] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1024x768
+[11/42] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1024x768
+[12/42] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 768x1024
+[13/42] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 768x1024
+[14/42] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720
+[15/42] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1920x1080
+[16/42] [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board
+[17/42] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1920x1080
+[18/42] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1024x768
+[19/42] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 768x1024
+[20/42] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x720
+[21/42] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1920x1080
+[22/42] [chromium] › tests\browser\fullscreen-layout.spec.js:64:1 › short viewport and zoom equivalent give fitted space guidance
+[23/42] [chromium] › tests\browser\fullscreen-layout.spec.js:66:1 › every retained attempt is paged and export includes the complete store
+[24/42] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 390x844
+[25/42] [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 320x740
+[26/42] [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 390x844
+[27/42] [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 1024x768
+[28/42] [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 1920x1080
+[29/42] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1024x768
+[30/42] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 768x1024
+[31/42] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1920x1080
+[32/42] [webkit] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board
+[33/42] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1024x768
+[34/42] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 768x1024
+[35/42] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x720
+[36/42] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1920x1080
+[37/42] [webkit] › tests\browser\fullscreen-layout.spec.js:64:1 › short viewport and zoom equivalent give fitted space guidance
+[38/42] [webkit] › tests\browser\fullscreen-layout.spec.js:66:1 › every retained attempt is paged and export includes the complete store
+[39/42] [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 320x740
+[40/42] [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 390x844
+[41/42] [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 1024x768
+[42/42] [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 1920x1080
+  Slow test file: [webkit] › tests\browser\fullscreen-layout.spec.js (5.4m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  42 passed (5.4m)

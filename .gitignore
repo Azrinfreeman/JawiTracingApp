@@ -11,13 +11,26 @@ tmp/
 # Keep release files and lightweight evidence; screenshots and browser artifacts are local.
 output/screenshots/
 output/verification/**/test-results/
+output/verification/**/*test-results/
 output/verification/**/followup-results/
 output/verification/**/.last-run.json
 output/verification/**/*.png
 output/verification/**/*.jpg
+output/verification/**/*.jpeg
 output/verification/**/*.webm
 output/verification/**/*.zip
 output/verification/**/*.html
+output/verification/**/initial-candidate/
+output/verification/**/release-*-assets/
+output/verification/**/.playwright-artifacts*/
+output/verification/**/*.mjs
+output/verification/**/*.ps1
+output/verification/**/*.py
+
+# Local bug recordings supplied for diagnosis.
+/problem.mp4
+/problem2.mp4
+/problems.mp4
 !output/verification/android-release/gradle-build.log
 !output/verification/android-release/gradle-wrapper.log
 

@@ -1,0 +1,47 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c playwright.fullscreen.config.js fullscreen-layout.spec.js --project=webkit --workers=1 --grep 3840x2160
+
+Running 3 tests using 1 worker
+
+(node:21068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/3] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 3840x2160
+[2/3] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 3840x2160
+  1) [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 3840x2160 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: page.evaluate: Test timeout of 90000ms exceeded.
+
+       5 | import { boardModels, draw } from './helpers/tracing.js';
+       6 | const evidence = process.env.JAWI_EVIDENCE_DIR || 'output/verification/fullscreen-layout'; mkdirSync(evidence,{recursive:true});
+    >  7 | async function frames(page) { await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))); }
+         |                                          ^
+       8 | async function fitted(page) {
+       9 |  await frames(page);
+      10 |  const result=await page.evaluate(()=>{
+        at frames (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:7:42)
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:9:8)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:38:101
+
+    Error Context: test-results\fullscreen-layout-all-37-c-99370-and-guides-fit-at-3840x2160-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-all-37-c-99370-and-guides-fit-at-3840x2160-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-all-37-c-99370-and-guides-fit-at-3840x2160-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:28008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/3] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 3840x2160
+  1 failed
+    [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 3840x2160 
+  2 passed (1.9m)

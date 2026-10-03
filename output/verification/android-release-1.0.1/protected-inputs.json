@@ -1,0 +1,27 @@
+﻿{
+    "verifiedAt":  "2026-10-03T10:02:43.4075974Z",
+    "baselineDate":  "2026-10-03T09:53:39.1806765Z",
+    "checked":  292,
+    "unchanged":  285,
+    "changed":  [
+                    "README.md",
+                    "scripts/verify-android-release.ps1",
+                    "scripts/sync-android-assets.js",
+                    "scripts/build-android.ps1",
+                    "docs/ANDROID_RELEASE.md",
+                    "docs/PROJECT_STATE.md",
+                    "android/app/build.gradle"
+                ],
+    "missing":  [
+
+                ],
+    "unexpected":  [
+
+                   ],
+    "previousTracingDeliveryInputsChecked":  168,
+    "previousTracingDeliveryInputsChanged":  [
+
+                                             ],
+    "previousApkUnchanged":  true,
+    "previousChecksumUnchanged":  true
+}

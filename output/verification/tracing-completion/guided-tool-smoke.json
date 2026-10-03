@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-03T09:42:09.163Z",
+  "baseURL": "http://127.0.0.1:5173",
+  "platform": "win32",
+  "os": "10.0.26200",
+  "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "mode": "guided",
+  "input": "frame-paced synthetic touch, four ordered coalesced samples per move, 5 logical-unit spacing, fixed sine jitter",
+  "scope": "Headless software pipeline timing; no physical device latency. Publications observe actual frontier/ink mutations.",
+  "inputs": {
+    "src/tracing/geometry.js": "f8b0f600007001fb656199ad1583c2db71e5c17c0e2938a0ceb611ca1078dce5",
+    "src/tracing/playMatcher.js": "0cebd164435ec48d0ac0eeec6a2d487bee2625948b8b27e5d2f4e0a11b323012",
+    "src/tracing/inputController.js": "6c5f5894e8a93684e4a18d520e53616b9282b6aeb5840672dcb1958a311ccc03",
+    "src/components/TraceBoard.jsx": "0af7e50d38e50377cf60c1413170a6bf1bd43d9b9b6b1948df34cf1abbdf01a2",
+    "src/content/letters.json": "0fd65d9ee03c83736f5e5b0ae1b52c6d1cd19ae38c77eb3f71f53047649382fd",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "scripts/measure-tracing.js": "8234026984a1ed78c679dd16b202eb54d1fcc9680801c82e4f5beb74154c3b06"
+  },
+  "results": [
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "guided-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 6.000000014901161,
+        "maxMs": 0.6000000089406967
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.19999998807907104,
+        "p95": 0.3999999910593033,
+        "max": 0.8999999910593033
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.699999999999818,
+        "p95": 16.700000000000273,
+        "max": 16.800000000000182
+      },
+      "publicationDelayMs": {
+        "count": 72,
+        "p50": 16.600000008940697,
+        "p95": 17.5,
+        "max": 17.5
+      },
+      "longTaskMs": [],
+      "coverage": 0.9998721180161949,
+      "outcome": "guidedComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "guided-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 5.6999999433755875,
+        "maxMs": 0.5
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.10000000894069672,
+        "p95": 0.29999999701976776,
+        "max": 0.8999999910593033
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.699999999999818,
+        "p95": 16.799999999999955,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 72,
+        "p50": 16.5,
+        "p95": 17.700000002980232,
+        "max": 18
+      },
+      "longTaskMs": [],
+      "coverage": 0.9998721191492174,
+      "outcome": "guidedComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "guided-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 6.100000023841858,
+        "maxMs": 0.5
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.10000000894069672,
+        "p95": 0.4000000059604645,
+        "max": 0.9000000059604645
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.700000000000045,
+        "p95": 16.700000000000273,
+        "max": 33.299999999999955
+      },
+      "publicationDelayMs": {
+        "count": 72,
+        "p50": 16.599999994039536,
+        "p95": 18.099999994039536,
+        "max": 34.70000000298023
+      },
+      "longTaskMs": [],
+      "coverage": 0.9998721202822398,
+      "outcome": "guidedComplete"
+    }
+  ]
+}

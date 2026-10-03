@@ -1,0 +1,123 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c playwright.fullscreen.config.js fullscreen-layout.spec.js --project=chromium --project=webkit --workers=2 --grep demo, completion
+
+Running 8 tests using 2 workers
+
+
+(node:40720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:29512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/8] [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 320x740
+[2/8] [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 320x740
+  1) [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 320x740 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 10
+
+      Object {
+        "offscreen": Array [],
+    -   "overflow": Array [],
+    +   "overflow": Array [
+    +     Array [
+    +       "BUTTON",
+    +       "text-button copy-action",
+    +       47,
+    +       54,
+    +       48,
+    +       48,
+    +     ],
+    +   ],
+        "scrollX": 0,
+        "scrollY": 0,
+      }
+
+      14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);
+      15 |   return {overflow,offscreen,scrollX,scrollY};
+    > 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});
+         |                     ^
+      17 | }
+      18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }
+      19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:16:21)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:77:116
+
+    Error Context: test-results\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:41404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[3/8] [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 390x844
+  2) [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 320x740 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 10
+
+      Object {
+        "offscreen": Array [],
+    -   "overflow": Array [],
+    +   "overflow": Array [
+    +     Array [
+    +       "BUTTON",
+    +       "text-button copy-action",
+    +       47,
+    +       54,
+    +       48,
+    +       48,
+    +     ],
+    +   ],
+        "scrollX": 0,
+        "scrollY": 0,
+      }
+
+      14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);
+      15 |   return {overflow,offscreen,scrollX,scrollY};
+    > 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});
+         |                     ^
+      17 | }
+      18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }
+      19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:16:21)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:77:116
+
+    Error Context: test-results\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:40192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[4/8] [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 390x844
+[5/8] [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 1024x768
+[6/8] [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 1024x768
+[7/8] [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 1920x1080
+[8/8] [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 1920x1080
+  2 failed
+    [chromium] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 320x740 
+    [webkit] › tests\browser\fullscreen-layout.spec.js:75:74 › demo, completion and copy tools fit at 320x740 
+  6 passed (37.8s)

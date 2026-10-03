@@ -13,6 +13,40 @@ async function installBridge(page) {
   }; });
 }
 
+test('Android fullscreen uses the native bridge when browser fullscreen is unavailable', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 640 });
+  await page.addInitScript(() => {
+    window.nativeFullscreen = true; window.nativeFullscreenCalls = [];
+    window.TamanJawiAndroid = {
+      isFullscreen: () => window.nativeFullscreen,
+      setFullscreen: enabled => { window.nativeFullscreen = enabled; window.nativeFullscreenCalls.push(enabled); window.dispatchEvent(new Event('taman-jawi:viewport')); },
+    };
+    HTMLElement.prototype.requestFullscreen = () => { throw new Error('Browser fullscreen must not be used in the native app'); };
+  });
+  await page.goto('/'); await dismissSplash(page);
+  const fullscreen = page.getByRole('button', { name: 'Paparan penuh', exact: true });
+  await fullscreen.click(); await fullscreen.click();
+  expect(await page.evaluate(() => window.nativeFullscreenCalls)).toEqual([false, true]);
+  await expect(page.locator('.fullscreen-notice')).toHaveCount(0);
+  await page.getByRole('button', { name: 'Jom mula', exact: true }).click(); await expect(page.locator('.letter-grid-host')).toBeVisible();
+});
+
+test('Android viewport notifications refit the current lesson without a browser resize event', async ({ page }) => {
+  await page.setViewportSize({ width: 360, height: 740 });
+  await page.addInitScript(() => {
+    const viewport = new EventTarget(); viewport.width = 360; viewport.height = 740;
+    Object.defineProperty(window, 'visualViewport', { value: viewport });
+    window.resizeNativeViewport = height => { viewport.height = height; window.dispatchEvent(new Event('taman-jawi:viewport')); };
+  });
+  await open(page, 'Ba'); await expect(page.locator('.app-shell')).toHaveCSS('height', '740px');
+  await page.evaluate(() => window.resizeNativeViewport(600)); await expect(page.locator('.app-shell')).toHaveCSS('height', '600px');
+  await expect(page.locator('.trace-space')).toHaveCount(0);
+  await expect(page.getByRole('heading', { name: 'Ba', exact: true })).toBeVisible();
+  await page.evaluate(() => window.resizeNativeViewport(740)); await expect(page.locator('.app-shell')).toHaveCSS('height', '740px');
+  await draw(page, (await boardModels(page)).strokes[0]); await page.getByRole('button', { name: 'Tambah titik 1 daripada 1', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Ba!', exact: true })).toBeVisible();
+});
+
 test('Android export hands the complete teacher payload to the document bridge', async ({ page }) => {
   await installBridge(page); await open(page); await draw(page, (await boardModels(page)).strokes[0]);
   await expect(page.locator('.book-completion')).toBeVisible(); await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
@@ -66,7 +100,7 @@ test('Android background resolves one pending page turn and stops a demonstratio
 test('Android background pauses the shared Duo clock and Back uses the existing exit confirmation', async ({ page }) => {
   await page.setViewportSize({ width: 1024, height: 768 }); await page.goto('/'); await dismissSplash(page); await page.clock.install();
   await page.getByRole('button', { name: 'Duo 1v1', exact: true }).click(); await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await page.getByRole('button', { name: 'Uji dua sentuhan', exact: true }).click(); await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();
+  await page.getByRole('button', { name: 'Seterusnya', exact: true }).click(); await page.getByRole('button', { name: 'Uji dua sentuhan', exact: true }).click(); await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();
   for (let slot = 0; slot < 2; slot++) await page.locator(`[data-player-slot="${slot}"]`).getByRole('button', { name: 'Saya sedia!', exact: true }).click();
   await page.clock.fastForward(3100); await expect(page.locator('.countdown-overlay')).toHaveCount(0);
   await signal(page, 'pause'); await expect(page.getByRole('dialog', { name: 'Rehat sekejap', exact: true })).toBeVisible();

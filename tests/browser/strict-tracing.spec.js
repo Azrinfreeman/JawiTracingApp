@@ -43,7 +43,7 @@ test('a dirty guided resume preserves earlier clean ink, then requires a clean r
   await page.mouse.move(stroke[end - 1].x, stroke[end - 1].y); await page.mouse.down();
   await movePoints(page, stroke.slice(end, end + 15));
   const point = stroke[end + 14]; await page.mouse.move(point.x + model.scale * 50, point.y);
-  await expect(page.locator('.pupil-ink')).toHaveCount(1);
+  await expect(page.locator('.pupil-ink-gesture')).toHaveCount(1);
   expect(await page.locator('.pupil-ink').getAttribute('d')).toBe(saved);
   await page.mouse.up(); await draw(page, stroke.slice(end - 1));
   await expect(page.getByRole('heading', { name: 'Bagus, kamu sudah cuba!' })).toBeVisible();
@@ -59,7 +59,7 @@ test('Ta dot scribbles and cross-target drags never leave trails or fill dots', 
     await page.mouse.move(model.dots[0].x + dx * model.scale, model.dots[0].y + dy * model.scale);
   await expect(page.locator('.gesture-blocked')).toBeVisible(); await page.mouse.up();
   await draw(page, [model.dots[0], model.dots[1]]);
-  await expect(page.locator('.pupil-ink')).toHaveCount(1);
+  await expect(page.locator('.pupil-ink-gesture')).toHaveCount(1);
   await expect(page.locator('.validated-dot')).toHaveCount(0);
   await expect(page.locator('.trace-board')).toBeVisible();
   await page.mouse.click(model.dots[0].x + model.scale * 5, model.dots[0].y);
@@ -72,8 +72,11 @@ test('Ta dot scribbles and cross-target drags never leave trails or fill dots', 
   const record = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));
   expect(record.dotInputPolicy).toBe('validatedTapStamp'); expect(record.metrics.dotCount).toBe(2);
   expect(record.metrics.rejectedDotGestures).toBe(2);
+  expect(record.interactionPolicy).toBe('strict-v2');
   await page.getByRole('button', { name: 'Ruang guru' }).click();
-  await expect(page.getByRole('row').filter({ hasText: 'Bunga · ta' })).toContainText('strict-v2');
+  await page.getByRole('tab', { name: 'Cubaan', exact: true }).click();
+  await expect(page.locator('.record-card').filter({ hasText: 'Bunga · ta' })).toBeVisible();
+  await page.getByRole('tab', { name: 'Diagnostik', exact: true }).click();
   const downloadPromise = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
   const stream = await (await downloadPromise).createReadStream(); let contents = '';
@@ -97,9 +100,9 @@ test('accepted jitter is actual raw ink within the displayed corridor on phone a
         svg.dataset.deliveredDown = JSON.stringify({ x: event.clientX, y: event.clientY });
       }, { once: true });
     });
-    await draw(page, points); await expect(page.locator('.pupil-ink[d]')).toHaveCount(1);
+    await draw(page, points); await expect(page.locator('.pupil-ink-gesture')).toHaveCount(1);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-    const actual = await page.locator('.pupil-ink').evaluate(path => {
+    const actual = await page.locator('.pupil-ink').first().evaluate(path => {
       const first = path.getPointAtLength(0); return { x: first.x, y: first.y };
     });
     const logical = await page.locator('.trace-board').evaluate(svg => {

@@ -1,0 +1,349 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c playwright.fullscreen.config.js book-layout.spec.js solo-duo.spec.js android-platform.spec.js touch.spec.js play-tracing.spec.js strict-tracing.spec.js --project=chromium --project=webkit --workers=2 --grep Android|native emulated pen|play touch preserves|wrong-start scribbles|excursion removes provisional|dirty guided resume|default play pauses|wrong down can|lift, resize|Ta dot drag|native pad drag|modest hand jitter|turns deliberately|freezes completed|held tracing|copy exit offers|filtered contents|discarding an unsaved|native touch completion|shared book turn|Solo challenge completes|shared pause cancels|native concurrent Duo|captured contact cannot
+
+Running 64 tests using 2 workers
+
+
+(node:6028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:7756) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/64] [chromium] › tests\browser\android-platform.spec.js:16:1 › Android export hands the complete teacher payload to the document bridge
+[2/64] [chromium] › tests\browser\book-layout.spec.js:16:1 › turns deliberately, ignores rapid duplicate navigation and stops at the end
+[3/64] [chromium] › tests\browser\android-platform.spec.js:27:1 › Android Back preserves unsaved copying, then returns through contents before exit
+[4/64] [chromium] › tests\browser\book-layout.spec.js:33:1 › freezes completed writing in place and saves once; revisiting is a new attempt
+[5/64] [chromium] › tests\browser\android-platform.spec.js:42:1 › Android background cancels held writing without erasing accepted colour
+[6/64] [chromium] › tests\browser\book-layout.spec.js:46:1 › held tracing and demonstrations cannot turn; interruption cannot strand a pending turn
+[7/64] [chromium] › tests\browser\android-platform.spec.js:55:1 › Android background resolves one pending page turn and stops a demonstration
+[8/64] [chromium] › tests\browser\android-platform.spec.js:66:1 › Android background pauses the shared Duo clock and Back uses the existing exit confirmation
+[9/64] [chromium] › tests\browser\play-tracing.spec.js:20:1 › default play pauses without erasing colour; held-pointer return earns no bridge
+[10/64] [chromium] › tests\browser\book-layout.spec.js:57:1 › copy exit offers save, discard and return without silently losing ink
+[11/64] [chromium] › tests\browser\book-layout.spec.js:70:1 › filtered contents, keyboard turns and missing animation events keep one destination
+[12/64] [chromium] › tests\browser\book-layout.spec.js:84:1 › discarding an unsaved copy is deliberate and preview exit uses the same guard
+[13/64] [chromium] › tests\browser\book-layout.spec.js:101:73 › native touch completion needs a fresh page turn at 768 and DPR 2
+[14/64] [chromium] › tests\browser\book-layout.spec.js:101:73 › native touch completion needs a fresh page turn at 390 and DPR 3
+[15/64] [chromium] › tests\browser\solo-duo.spec.js:61:1 › shared book turn keeps both players together and starts the next clock only after readiness
+[16/64] [chromium] › tests\browser\solo-duo.spec.js:81:1 › Solo challenge completes, earns a trophy, exports both stores and resets both
+[17/64] [chromium] › tests\browser\solo-duo.spec.js:105:1 › shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact
+  1) [chromium] › tests\browser\play-tracing.spec.js:20:1 › default play pauses without erasing colour; held-pointer return earns no bridge 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForEvent: Test timeout of 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for event "download"
+    ============================================================
+
+      12 | async function diagnostic(page) {
+      13 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+    > 14 |   const pending = page.waitForEvent('download');
+         |                        ^
+      15 |   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
+      16 |   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
+      17 |   return JSON.parse(json);
+        at diagnostic (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:14:24)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:37:20
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Eksport jejak sesi ini' })
+
+
+      13 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+      14 |   const pending = page.waitForEvent('download');
+    > 15 |   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
+         |                                                                      ^
+      16 |   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
+      17 |   return JSON.parse(json);
+      18 | }
+        at diagnostic (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:15:70)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:37:20
+
+    Error Context: test-results\play-tracing-default-play--fd56c-nter-return-earns-no-bridge-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\play-tracing-default-play--fd56c-nter-return-earns-no-bridge-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\play-tracing-default-play--fd56c-nter-return-earns-no-bridge-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:39956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+[18/64] [chromium] › tests\browser\play-tracing.spec.js:44:1 › wrong down can find the start; endpoint jumps cannot finish the letter
+[19/64] [chromium] › tests\browser\solo-duo.spec.js:161:1 › native concurrent Duo finishes both profiles, independent dot pads and one shared trophy
+[20/64] [chromium] › tests\browser\play-tracing.spec.js:53:1 › lift, resize, capture loss and demonstration preserve accepted play progress
+[21/64] [chromium] › tests\browser\play-tracing.spec.js:71:1 › Ta dot drag keeps body; large pad and held keys commit one target per release
+[22/64] [chromium] › tests\browser\solo-duo.spec.js:179:1 › captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner
+[23/64] [chromium] › tests\browser\strict-tracing.spec.js:4:1 › wrong-start scribbles stay invisible until release and a fresh correct gesture
+[24/64] [chromium] › tests\browser\strict-tracing.spec.js:22:3 › guided: excursion removes provisional ink and held-pointer re-entry cannot commit
+[25/64] [chromium] › tests\browser\strict-tracing.spec.js:22:3 › precision: excursion removes provisional ink and held-pointer re-entry cannot commit
+[26/64] [chromium] › tests\browser\strict-tracing.spec.js:39:1 › a dirty guided resume preserves earlier clean ink, then requires a clean retry
+[27/64] [chromium] › tests\browser\touch.spec.js:39:1 › native emulated pen preserves pointer type and completes a strict stroke
+[28/64] [chromium] › tests\browser\touch.spec.js:52:3 › play touch preserves colour after an excursion at 768 CSS pixels and DPR 2
+[29/64] [chromium] › tests\browser\touch.spec.js:52:3 › play touch preserves colour after an excursion at 390 CSS pixels and DPR 3
+  2) [chromium] › tests\browser\play-tracing.spec.js:71:1 › Ta dot drag keeps body; large pad and held keys commit one target per release 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForEvent: Test timeout of 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for event "download"
+    ============================================================
+
+      12 | async function diagnostic(page) {
+      13 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+    > 14 |   const pending = page.waitForEvent('download');
+         |                        ^
+      15 |   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
+      16 |   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
+      17 |   return JSON.parse(json);
+        at diagnostic (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:14:24)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:89:20
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Eksport jejak sesi ini' })
+
+
+      13 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+      14 |   const pending = page.waitForEvent('download');
+    > 15 |   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
+         |                                                                      ^
+      16 |   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
+      17 |   return JSON.parse(json);
+      18 | }
+        at diagnostic (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:15:70)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:89:20
+
+    Error Context: test-results\play-tracing-Ta-dot-drag-k-bf951-mmit-one-target-per-release-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\play-tracing-Ta-dot-drag-k-bf951-mmit-one-target-per-release-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\play-tracing-Ta-dot-drag-k-bf951-mmit-one-target-per-release-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:37404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[30/64] [chromium] › tests\browser\play-tracing.spec.js:94:1 › native pad drag outside does not place a dot; a new contained press can finish
+[31/64] [chromium] › tests\browser\touch.spec.js:73:1 › native emulated pen completes assisted play with its own recorded input type
+[32/64] [chromium] › tests\browser\play-tracing.spec.js:138:3 › Sin: modest hand jitter can follow a complex route without exact centreline input
+(node:32348) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[33/64] [webkit] › tests\browser\android-platform.spec.js:16:1 › Android export hands the complete teacher payload to the document bridge
+[34/64] [chromium] › tests\browser\play-tracing.spec.js:138:3 › Kaf: modest hand jitter can follow a complex route without exact centreline input
+[35/64] [webkit] › tests\browser\android-platform.spec.js:27:1 › Android Back preserves unsaved copying, then returns through contents before exit
+[36/64] [chromium] › tests\browser\play-tracing.spec.js:138:3 › Mim: modest hand jitter can follow a complex route without exact centreline input
+[37/64] [webkit] › tests\browser\android-platform.spec.js:42:1 › Android background cancels held writing without erasing accepted colour
+(node:38928) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[38/64] [webkit] › tests\browser\book-layout.spec.js:16:1 › turns deliberately, ignores rapid duplicate navigation and stops at the end
+[39/64] [webkit] › tests\browser\android-platform.spec.js:55:1 › Android background resolves one pending page turn and stops a demonstration
+[40/64] [webkit] › tests\browser\android-platform.spec.js:66:1 › Android background pauses the shared Duo clock and Back uses the existing exit confirmation
+[41/64] [webkit] › tests\browser\book-layout.spec.js:33:1 › freezes completed writing in place and saves once; revisiting is a new attempt
+[42/64] [webkit] › tests\browser\play-tracing.spec.js:20:1 › default play pauses without erasing colour; held-pointer return earns no bridge
+[43/64] [webkit] › tests\browser\book-layout.spec.js:46:1 › held tracing and demonstrations cannot turn; interruption cannot strand a pending turn
+  3) [webkit] › tests\browser\play-tracing.spec.js:20:1 › default play pauses without erasing colour; held-pointer return earns no bridge 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: page.waitForEvent: Test timeout of 30000ms exceeded.
+    =========================== logs ===========================
+    waiting for event "download"
+    ============================================================
+
+      12 | async function diagnostic(page) {
+      13 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+    > 14 |   const pending = page.waitForEvent('download');
+         |                        ^
+      15 |   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
+      16 |   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
+      17 |   return JSON.parse(json);
+        at diagnostic (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:14:24)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:37:20
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Eksport jejak sesi ini' })
+
+
+      13 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+      14 |   const pending = page.waitForEvent('download');
+    > 15 |   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
+         |                                                                      ^
+      16 |   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
+      17 |   return JSON.parse(json);
+      18 | }
+        at diagnostic (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:15:70)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:37:20
+
+    Error Context: test-results\play-tracing-default-play--fd56c-nter-return-earns-no-bridge-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\play-tracing-default-play--fd56c-nter-return-earns-no-bridge-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\play-tracing-default-play--fd56c-nter-return-earns-no-bridge-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:2652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[44/64] [webkit] › tests\browser\play-tracing.spec.js:44:1 › wrong down can find the start; endpoint jumps cannot finish the letter
+[45/64] [webkit] › tests\browser\play-tracing.spec.js:53:1 › lift, resize, capture loss and demonstration preserve accepted play progress
+  4) [webkit] › tests\browser\book-layout.spec.js:46:1 › held tracing and demonstrations cannot turn; interruption cannot strand a pending turn 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /^Ba(?:, pernah dijejak)?$/ })
+
+
+       at helpers\navigation.js:23
+
+      21 |     await next.click();
+      22 |   }
+    > 23 |   await card.click();
+         |              ^
+      24 | }
+      25 |
+        at chooseLetter (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\helpers\navigation.js:23:14)
+        at open (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\book-layout.spec.js:7:3)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\book-layout.spec.js:47:64
+
+    Error Context: test-results\book-layout-held-tracing-a-1e636-annot-strand-a-pending-turn-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\book-layout-held-tracing-a-1e636-annot-strand-a-pending-turn-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\book-layout-held-tracing-a-1e636-annot-strand-a-pending-turn-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:14608) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[46/64] [webkit] › tests\browser\book-layout.spec.js:57:1 › copy exit offers save, discard and return without silently losing ink
+[47/64] [webkit] › tests\browser\play-tracing.spec.js:71:1 › Ta dot drag keeps body; large pad and held keys commit one target per release
+[48/64] [webkit] › tests\browser\book-layout.spec.js:70:1 › filtered contents, keyboard turns and missing animation events keep one destination
+[49/64] [webkit] › tests\browser\book-layout.spec.js:84:1 › discarding an unsaved copy is deliberate and preview exit uses the same guard
+[50/64] [webkit] › tests\browser\book-layout.spec.js:101:73 › native touch completion needs a fresh page turn at 768 and DPR 2
+[51/64] [webkit] › tests\browser\book-layout.spec.js:101:73 › native touch completion needs a fresh page turn at 390 and DPR 3
+[52/64] [webkit] › tests\browser\solo-duo.spec.js:61:1 › shared book turn keeps both players together and starts the next clock only after readiness
+[53/64] [webkit] › tests\browser\solo-duo.spec.js:81:1 › Solo challenge completes, earns a trophy, exports both stores and resets both
+  5) [webkit] › tests\browser\play-tracing.spec.js:71:1 › Ta dot drag keeps body; large pad and held keys commit one target per release 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /^Ta(?:, pernah dijejak)?$/ })
+
+
+       at helpers\navigation.js:23
+
+      21 |     await next.click();
+      22 |   }
+    > 23 |   await card.click();
+         |              ^
+      24 | }
+      25 |
+        at chooseLetter (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\helpers\navigation.js:23:14)
+        at openLesson (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\helpers\tracing.js:9:3)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:72:3
+
+    Error Context: test-results\play-tracing-Ta-dot-drag-k-bf951-mmit-one-target-per-release-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\play-tracing-Ta-dot-drag-k-bf951-mmit-one-target-per-release-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\play-tracing-Ta-dot-drag-k-bf951-mmit-one-target-per-release-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:25464) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[54/64] [webkit] › tests\browser\play-tracing.spec.js:94:1 › native pad drag outside does not place a dot; a new contained press can finish
+[55/64] [webkit] › tests\browser\solo-duo.spec.js:105:1 › shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact
+[56/64] [webkit] › tests\browser\play-tracing.spec.js:138:3 › Sin: modest hand jitter can follow a complex route without exact centreline input
+[57/64] [webkit] › tests\browser\solo-duo.spec.js:161:1 › native concurrent Duo finishes both profiles, independent dot pads and one shared trophy
+[58/64] [webkit] › tests\browser\solo-duo.spec.js:179:1 › captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner
+[59/64] [webkit] › tests\browser\strict-tracing.spec.js:4:1 › wrong-start scribbles stay invisible until release and a fresh correct gesture
+[60/64] [webkit] › tests\browser\strict-tracing.spec.js:22:3 › guided: excursion removes provisional ink and held-pointer re-entry cannot commit
+[61/64] [webkit] › tests\browser\strict-tracing.spec.js:22:3 › precision: excursion removes provisional ink and held-pointer re-entry cannot commit
+[62/64] [webkit] › tests\browser\strict-tracing.spec.js:39:1 › a dirty guided resume preserves earlier clean ink, then requires a clean retry
+  6) [webkit] › tests\browser\play-tracing.spec.js:138:3 › Sin: modest hand jitter can follow a complex route without exact centreline input 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: /^Sin(?:, pernah dijejak)?$/ })
+
+
+       at helpers\navigation.js:23
+
+      21 |     await next.click();
+      22 |   }
+    > 23 |   await card.click();
+         |              ^
+      24 | }
+      25 |
+        at chooseLetter (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\helpers\navigation.js:23:14)
+        at openLesson (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\helpers\tracing.js:9:3)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\play-tracing.spec.js:139:5
+
+    Error Context: test-results\play-tracing-Sin-modest-ha-243ce-hout-exact-centreline-input-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\play-tracing-Sin-modest-ha-243ce-hout-exact-centreline-input-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\play-tracing-Sin-modest-ha-243ce-hout-exact-centreline-input-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:28248) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[63/64] [webkit] › tests\browser\play-tracing.spec.js:138:3 › Kaf: modest hand jitter can follow a complex route without exact centreline input
+[64/64] [webkit] › tests\browser\play-tracing.spec.js:138:3 › Mim: modest hand jitter can follow a complex route without exact centreline input
+  6 failed
+    [chromium] › tests\browser\play-tracing.spec.js:20:1 › default play pauses without erasing colour; held-pointer return earns no bridge 
+    [chromium] › tests\browser\play-tracing.spec.js:71:1 › Ta dot drag keeps body; large pad and held keys commit one target per release 
+    [webkit] › tests\browser\book-layout.spec.js:46:1 › held tracing and demonstrations cannot turn; interruption cannot strand a pending turn 
+    [webkit] › tests\browser\play-tracing.spec.js:20:1 › default play pauses without erasing colour; held-pointer return earns no bridge 
+    [webkit] › tests\browser\play-tracing.spec.js:71:1 › Ta dot drag keeps body; large pad and held keys commit one target per release 
+    [webkit] › tests\browser\play-tracing.spec.js:138:3 › Sin: modest hand jitter can follow a complex route without exact centreline input 
+  4 skipped
+  54 passed (4.1m)

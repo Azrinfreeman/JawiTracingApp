@@ -85,7 +85,7 @@ describe('independent bounded storage', () => {
     unavailable.add(record); expect(unavailable.isAvailable()).toBe(false); expect(unavailable.export().matches).toHaveLength(1); unavailable.reset(); expect(unavailable.read().matches).toEqual([]);
   });
   test('selects one distinct eligible shared sequence and excludes unrevised approvals', () => {
-    expect(eligiblePool(letters, 'pilot')).toHaveLength(12); expect(eligiblePool(letters, 'ready')).toHaveLength(37); expect(eligiblePool(letters, 'additional')).toHaveLength(6);
+    expect(eligiblePool(letters, 'pilot')).toHaveLength(11); expect(eligiblePool(letters, 'ready')).toHaveLength(35); expect(eligiblePool(letters, 'additional')).toHaveLength(5);
     const sequence = selectSequence(eligiblePool(letters, 'pilot'), 5, () => .4); expect(new Set(sequence).size).toBe(5);
     const draft = structuredClone(letters[0]); draft.geometry.status = 'draft'; expect(eligiblePool([draft], 'ready')).toEqual([]);
   });

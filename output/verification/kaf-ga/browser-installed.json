@@ -1,0 +1,1862 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/kaf-ga.spec.js",
+      "--config=playwright.fullscreen.config.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.fullscreen.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/kaf-ga/browser-installed.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "kaf-ga.spec.js",
+      "file": "kaf-ga.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "kaf play: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4405,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:28.827Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-c2c16850e0ff24cffeff",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga play: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:33.360Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-97f2ee5ae6fb832613a1",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "kaf guided: continuous body and separate required dot complete the revised preview",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6464,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 43,
+                      "line": 33
+                    },
+                    "snippet": "  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 43,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:37.540Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-guided-continuo-1d689-omplete-the-revised-preview-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-guided-continuo-1d689-omplete-the-revised-preview-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 43,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-094277d9e1b0c90b9a7a",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga guided: continuous body and separate required dot complete the revised preview",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4834,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 43,
+                      "line": 33
+                    },
+                    "snippet": "  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 43,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:45.988Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-guided-continuou-4e4fc-omplete-the-revised-preview-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-guided-continuou-4e4fc-omplete-the-revised-preview-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 43,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-d1044d4759a9a6df352c",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "kaf precision: continuous body and separate required dot complete the revised preview",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5022,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 43,
+                      "line": 33
+                    },
+                    "snippet": "  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 43,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:52.278Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-precision-conti-1dc82-omplete-the-revised-preview-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-precision-conti-1dc82-omplete-the-revised-preview-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 43,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-bb4b330cd70d93b806b7",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga precision: continuous body and separate required dot complete the revised preview",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5463,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 43,
+                      "line": 33
+                    },
+                    "snippet": "  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 43,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:59.449Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-precision-contin-8ad9e-omplete-the-revised-preview-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-precision-contin-8ad9e-omplete-the-revised-preview-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 43,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-6b368706effc6be0eba7",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "Ga equivalent dot pad completes only after its connected body",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4319,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:06.468Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-5a3bd3e354ad2c0ae447",
+          "file": "kaf-ga.spec.js",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "play: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11025,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:10.895Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-a401016886ce488bc23f",
+          "file": "kaf-ga.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "guided: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10986,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:21.931Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-54ef8c7124a5efd0c304",
+          "file": "kaf-ga.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "precision: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:32.927Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-e8e0a24440b75737e69a",
+          "file": "kaf-ga.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "kaf: demo uses the connected model, then copying keeps original coordinates and save protection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6449,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:44.453Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-4a8ff3107b2dad7479dd",
+          "file": "kaf-ga.spec.js",
+          "line": 73,
+          "column": 3
+        },
+        {
+          "title": "ga: demo uses the connected model, then copying keeps original coordinates and save protection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6867,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:50.912Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-4233f86251c6629c0d55",
+          "file": "kaf-ga.spec.js",
+          "line": 73,
+          "column": 3
+        },
+        {
+          "title": "catalogue, help, teacher and audio illustrations agree; revised lessons remain gated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6988,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\nExpected substring: \u001b[32m\"Draf · perlu semakan · 2\"\u001b[39m\nReceived string:    \u001b[31m\"Kaf\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div>…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Kaf\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\nExpected substring: \u001b[32m\"Draf · perlu semakan · 2\"\u001b[39m\nReceived string:    \u001b[31m\"Kaf\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div>…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Kaf\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:115:60",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 60,
+                      "line": 115
+                    },
+                    "snippet": "  113 |     await expect(illustration.locator('path')).toHaveAttribute('d', letter.geometry.strokes[0].path);\n  114 |     await expect(illustration.locator('circle')).toHaveCount(letter.geometry.dotTargets.length);\n> 115 |     await expect(illustration.locator('..').locator('..')).toContainText(`Draf · perlu semakan · ${letter.contentVersion}`);\n      |                                                            ^\n  116 |   }\n  117 |   await shot(page, `${browserName}-teacher-content`);\n  118 |   await page.getByRole('tab', { name: 'Suara', exact: true }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 60,
+                        "line": 115
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\nExpected substring: \u001b[32m\"Draf · perlu semakan · 2\"\u001b[39m\nReceived string:    \u001b[31m\"Kaf\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div>…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Kaf\"\u001b[22m\n\n\n  113 |     await expect(illustration.locator('path')).toHaveAttribute('d', letter.geometry.strokes[0].path);\n  114 |     await expect(illustration.locator('circle')).toHaveCount(letter.geometry.dotTargets.length);\n> 115 |     await expect(illustration.locator('..').locator('..')).toContainText(`Draf · perlu semakan · ${letter.contentVersion}`);\n      |                                                            ^\n  116 |   }\n  117 |   await shot(page, `${browserName}-teacher-content`);\n  118 |   await page.getByRole('tab', { name: 'Suara', exact: true }).click();\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:115:60"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:57.789Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-catalogue-help-teac-e2a50-evised-lessons-remain-gated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-catalogue-help-teac-e2a50-evised-lessons-remain-gated-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 60,
+                    "line": 115
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-92966167bcfa10c48b07",
+          "file": "kaf-ga.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8650,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:07.570Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-5ee9fcfb47038e30adad",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8249,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:16.348Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-a362f6f3b763f2562323",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:24.609Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-686d3a0259a4d7b84fcc",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12017,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:32.906Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-cbbb54b538bc5c56de14",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28833,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:44.935Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-6cb1ad2feae4073ce57e",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "native touch follows the corrected Ga body and upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4134,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:39:13.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-1867491961ba381144ca",
+          "file": "kaf-ga.spec.js",
+          "line": 174,
+          "column": 1
+        },
+        {
+          "title": "kaf play: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4842,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:28.827Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-619977d7d78a2b52e22f",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga play: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4575,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:33.802Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-bb6700d40b4c09c561ea",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "kaf guided: continuous body and separate required dot complete the revised preview",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 5315,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 43,
+                      "line": 33
+                    },
+                    "snippet": "  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 43,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:38.390Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-guided-continuo-1d689-omplete-the-revised-preview-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-guided-continuo-1d689-omplete-the-revised-preview-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 43,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-42a2a51ff75d2316e435",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga guided: continuous body and separate required dot complete the revised preview",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 5508,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 43,
+                      "line": 33
+                    },
+                    "snippet": "  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 43,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"guided\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:44.979Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-guided-continuou-4e4fc-omplete-the-revised-preview-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-guided-continuou-4e4fc-omplete-the-revised-preview-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 43,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-109eb3831533d846edb9",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "kaf precision: continuous body and separate required dot complete the revised preview",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 6341,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 43,
+                      "line": 33
+                    },
+                    "snippet": "  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 43,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 2,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"kaf\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 0,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:36:51.855Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-precision-conti-1dc82-omplete-the-revised-preview-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-precision-conti-1dc82-omplete-the-revised-preview-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 43,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-86cac6f12a384f09e8af",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga precision: continuous body and separate required dot complete the revised preview",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 6481,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 43,
+                      "line": 33
+                    },
+                    "snippet": "  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 43,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatchObject\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 0\u001b[39m\n\n\u001b[33m@@ -3,10 +3,9 @@\u001b[39m\n\u001b[2m    \"contentVersion\": 3,\u001b[22m\n\u001b[2m    \"geometryStatus\": \"pendingReview\",\u001b[22m\n\u001b[2m    \"letterId\": \"ga\",\u001b[22m\n\u001b[2m    \"metrics\": Object {\u001b[22m\n\u001b[2m      \"dotCount\": 1,\u001b[22m\n\u001b[32m-     \"equivalentDotActions\": 0,\u001b[39m\n\u001b[2m    },\u001b[22m\n\u001b[2m    \"mode\": \"precision\",\u001b[22m\n\u001b[2m    \"preview\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  31 |     await complete(page, letter);\n  32 |     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);\n> 33 |     expect((await attempts(page)).at(-1)).toMatchObject({ letterId: letter.id, mode, preview: true,\n     |                                           ^\n  34 |       contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',\n  35 |       metrics: { dotCount: letter.geometry.dotTargets.length, equivalentDotActions: 0 } });\n  36 |   });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:33:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:00.066Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-precision-contin-8ad9e-omplete-the-revised-preview-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-precision-contin-8ad9e-omplete-the-revised-preview-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 43,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-2b21854c29272ed36580",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "Ga equivalent dot pad completes only after its connected body",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5158,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:07.867Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-2c2ab7dd868d7799887f",
+          "file": "kaf-ga.spec.js",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "play: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10675,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:13.139Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-093b1f8ca70922dc8f00",
+          "file": "kaf-ga.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "guided: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11094,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:23.826Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-bc87e5f7028f3b9ee6c5",
+          "file": "kaf-ga.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "precision: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12054,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:34.932Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-6b5b7b4d52a24d6e2c55",
+          "file": "kaf-ga.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "kaf: demo uses the connected model, then copying keeps original coordinates and save protection",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 7195,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m300\u001b[39m\nReceived: \u001b[31m299.5\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m0.5\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m300\u001b[39m\nReceived: \u001b[31m299.5\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m0.5\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:94:76",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 76,
+                      "line": 94
+                    },
+                    "snippet": "  92 |     const copy = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies.at(-1));\n  93 |     expect(copy).toMatchObject({ letterId: letter.id, contentVersion: letter.contentVersion, preview: true });\n> 94 |     expect(copy.ink[0][0].x).toBeCloseTo(250, 0); expect(copy.ink[0][0].y).toBeCloseTo(300, 0);\n     |                                                                            ^\n  95 |   });\n  96 | }\n  97 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 76,
+                        "line": 94
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m300\u001b[39m\nReceived: \u001b[31m299.5\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m0.5\u001b[39m\n\n  92 |     const copy = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies.at(-1));\n  93 |     expect(copy).toMatchObject({ letterId: letter.id, contentVersion: letter.contentVersion, preview: true });\n> 94 |     expect(copy.ink[0][0].x).toBeCloseTo(250, 0); expect(copy.ink[0][0].y).toBeCloseTo(300, 0);\n     |                                                                            ^\n  95 |   });\n  96 | }\n  97 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:94:76"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:46.998Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-demo-uses-the-c-4f299-dinates-and-save-protection-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-kaf-demo-uses-the-c-4f299-dinates-and-save-protection-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 76,
+                    "line": 94
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-f41c3e635db2e07342c0",
+          "file": "kaf-ga.spec.js",
+          "line": 73,
+          "column": 3
+        },
+        {
+          "title": "ga: demo uses the connected model, then copying keeps original coordinates and save protection",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 9085,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m300\u001b[39m\nReceived: \u001b[31m299.5\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m0.5\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m300\u001b[39m\nReceived: \u001b[31m299.5\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m0.5\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:94:76",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 76,
+                      "line": 94
+                    },
+                    "snippet": "  92 |     const copy = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies.at(-1));\n  93 |     expect(copy).toMatchObject({ letterId: letter.id, contentVersion: letter.contentVersion, preview: true });\n> 94 |     expect(copy.ink[0][0].x).toBeCloseTo(250, 0); expect(copy.ink[0][0].y).toBeCloseTo(300, 0);\n     |                                                                            ^\n  95 |   });\n  96 | }\n  97 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 76,
+                        "line": 94
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m300\u001b[39m\nReceived: \u001b[31m299.5\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m0.5\u001b[39m\n\n  92 |     const copy = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies.at(-1));\n  93 |     expect(copy).toMatchObject({ letterId: letter.id, contentVersion: letter.contentVersion, preview: true });\n> 94 |     expect(copy.ink[0][0].x).toBeCloseTo(250, 0); expect(copy.ink[0][0].y).toBeCloseTo(300, 0);\n     |                                                                            ^\n  95 |   });\n  96 | }\n  97 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:94:76"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:37:55.625Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-demo-uses-the-co-02a7c-dinates-and-save-protection-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-ga-demo-uses-the-co-02a7c-dinates-and-save-protection-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 76,
+                    "line": 94
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-ea6f6a25ffb453fb02f6",
+          "file": "kaf-ga.spec.js",
+          "line": 73,
+          "column": 3
+        },
+        {
+          "title": "catalogue, help, teacher and audio illustrations agree; revised lessons remain gated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 8355,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\nExpected substring: \u001b[32m\"Draf · perlu semakan · 2\"\u001b[39m\nReceived string:    \u001b[31m\"Kaf\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div>…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Kaf\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\nExpected substring: \u001b[32m\"Draf · perlu semakan · 2\"\u001b[39m\nReceived string:    \u001b[31m\"Kaf\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div>…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Kaf\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:115:60",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 60,
+                      "line": 115
+                    },
+                    "snippet": "  113 |     await expect(illustration.locator('path')).toHaveAttribute('d', letter.geometry.strokes[0].path);\n  114 |     await expect(illustration.locator('circle')).toHaveCount(letter.geometry.dotTargets.length);\n> 115 |     await expect(illustration.locator('..').locator('..')).toContainText(`Draf · perlu semakan · ${letter.contentVersion}`);\n      |                                                            ^\n  116 |   }\n  117 |   await shot(page, `${browserName}-teacher-content`);\n  118 |   await page.getByRole('tab', { name: 'Suara', exact: true }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 60,
+                        "line": 115
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\nExpected substring: \u001b[32m\"Draf · perlu semakan · 2\"\u001b[39m\nReceived string:    \u001b[31m\"Kaf\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.record-card svg[data-letter-id=\"kaf\"]').locator('..').locator('..')\u001b[22m\n\u001b[2m    14 × locator resolved to <div>…</div>\u001b[22m\n\u001b[2m       - unexpected value \"Kaf\"\u001b[22m\n\n\n  113 |     await expect(illustration.locator('path')).toHaveAttribute('d', letter.geometry.strokes[0].path);\n  114 |     await expect(illustration.locator('circle')).toHaveCount(letter.geometry.dotTargets.length);\n> 115 |     await expect(illustration.locator('..').locator('..')).toContainText(`Draf · perlu semakan · ${letter.contentVersion}`);\n      |                                                            ^\n  116 |   }\n  117 |   await shot(page, `${browserName}-teacher-content`);\n  118 |   await page.getByRole('tab', { name: 'Suara', exact: true }).click();\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:115:60"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:07.587Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-catalogue-help-teac-e2a50-evised-lessons-remain-gated-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-catalogue-help-teac-e2a50-evised-lessons-remain-gated-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 60,
+                    "line": 115
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-ec5392ead222e7eccfd7",
+          "file": "kaf-ga.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10621,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:16.786Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-f7013a5c2f8d1643e951",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9730,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:27.487Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-cf70840b24bc8d041bcf",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:37.226Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-3955ca8bea0d023aed2e",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12441,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:38:48.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-c9b2e4f573b5aab67044",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 39520,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:39:00.476Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-63544e7d813e1aa6cfff",
+          "file": "kaf-ga.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "native touch follows the corrected Ga body and upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native touch uses Chromium CDP",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "line": 175,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 166,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:39:40.008Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native touch uses Chromium CDP",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "line": 175,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-6b87ec7d9e5ad4e52a09",
+          "file": "kaf-ga.spec.js",
+          "line": 174,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-03T07:36:28.166Z",
+    "duration": 192581.603,
+    "expected": 25,
+    "skipped": 1,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}

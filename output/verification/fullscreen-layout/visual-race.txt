@@ -1,0 +1,19 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c playwright.fullscreen.config.js solo-duo.spec.js --project=chromium --project=webkit --workers=2 --grep shared pause cancels|native concurrent Duo
+
+Running 4 tests using 2 workers
+
+(node:27808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:1324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/4] [webkit] › tests\browser\solo-duo.spec.js:105:1 › shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact
+[2/4] [chromium] › tests\browser\solo-duo.spec.js:105:1 › shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact
+[3/4] [chromium] › tests\browser\solo-duo.spec.js:162:1 › native concurrent Duo finishes both profiles, independent dot pads and one shared trophy
+[4/4] [webkit] › tests\browser\solo-duo.spec.js:162:1 › native concurrent Duo finishes both profiles, independent dot pads and one shared trophy
+  1 skipped
+  3 passed (16.0s)

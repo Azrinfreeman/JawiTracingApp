@@ -1,0 +1,332 @@
+{
+  "date": "2026-10-03T09:45:18.691Z",
+  "baselineDate": "2026-10-03T16:52:55.1175153+08:00",
+  "checked": 224,
+  "unchanged": 205,
+  "changed": [
+    "docs/TRACING_COMPLETION_AND_PERFORMANCE_IMPLEMENTATION.md",
+    "tests/browser/kaf-ga.spec.js",
+    "README.md",
+    "docs/NUMBERED_TRACING_GUIDES.md",
+    "docs/PROJECT_STATE.md",
+    "scripts/measure-tracing.js",
+    "src/components/NumberedTraceGuides.jsx",
+    "src/components/TraceBoard.jsx",
+    "src/styles/app.css",
+    "src/tracing/geometry.js",
+    "src/tracing/inputController.js",
+    "src/tracing/numberedGuides.js",
+    "src/tracing/playMatcher.js",
+    "tests/browser/book-layout.spec.js",
+    "tests/browser/helpers/navigation.js",
+    "tests/browser/numbered-guides.spec.js",
+    "tests/browser/play-tracing.spec.js",
+    "tests/browser/solo-duo.spec.js",
+    "tests/browser/strict-tracing.spec.js"
+  ],
+  "missing": [],
+  "unexpected": [],
+  "protectedCount": 75,
+  "protectedFiles": [
+    {
+      "path": "docs/KAF_GA_SHAPE_CORRECTION_IMPLEMENTATION.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/KAF_GA_SHAPE_CORRECTION_VERIFICATION.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/AUDIO_APPROVALS.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/CONTENT_APPROVALS.md",
+      "unchanged": true
+    },
+    {
+      "path": "docs/CONTENT_REVIEW.md",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/README.md",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ain-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alif-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/ain-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/alif-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/ba-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/dad-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/dal-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/fa-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/ghain-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/ha-pedat-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/hamzah-name-v2.wav",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/jim-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/kha-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/lam-name-v2.wav",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/mim-name-v2.wav",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/nun-name-v2.wav",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/qaf-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/ra-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/sa-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/sad-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/sin-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/syin-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/ta-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/tho-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/wau-name-v2.wav",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/ya-name-v2.wav",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/za-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/zai-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/alphabet/zal-name-v2.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ba-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ca-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/dad-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/dal-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/fa-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ga-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ghain-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ha-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ha-pedat-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/hamzah-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/jim-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/kaf-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/kha-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/lam-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/mim-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/nga-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/nun-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/nya-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/pa-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/qaf-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ra-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/sa-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/sad-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/sin-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/syin-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ta-marbuta-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ta-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/tho-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/va-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/wau-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ya-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/ye-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/za-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/zai-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "public/audio/letters/zal-name.mp3",
+      "unchanged": true
+    },
+    {
+      "path": "src/audio/audioManager.js",
+      "unchanged": true
+    },
+    {
+      "path": "src/content/letters.json",
+      "unchanged": true
+    },
+    {
+      "path": "src/content/validateContent.js",
+      "unchanged": true
+    },
+    {
+      "path": "src/storage/matchStore.js",
+      "unchanged": true
+    },
+    {
+      "path": "src/storage/progressStore.js",
+      "unchanged": true
+    }
+  ]
+}

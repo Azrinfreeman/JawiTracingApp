@@ -1,0 +1,1668 @@
+{
+  "date": "2026-10-03T17:40:24.571Z",
+  "scope": "Latest result per browser/file/title after affected follow-ups; initial failed fixture/timeout results retained in individual reports.",
+  "runs": [
+    {
+      "file": "browser-focused-results.json",
+      "stats": {
+        "startTime": "2026-10-03T16:34:58.394Z",
+        "duration": 263724.08400000003,
+        "expected": 19,
+        "skipped": 1,
+        "unexpected": 4,
+        "flaky": 0
+      }
+    },
+    {
+      "file": "browser-followup-results.json",
+      "stats": {
+        "startTime": "2026-10-03T16:39:59.352Z",
+        "duration": 27186.17,
+        "expected": 7,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "file": "browser-regression-final-results.json",
+      "stats": {
+        "startTime": "2026-10-03T16:46:37.015Z",
+        "duration": 1744319.632,
+        "expected": 166,
+        "skipped": 4,
+        "unexpected": 4,
+        "flaky": 0
+      }
+    },
+    {
+      "file": "browser-layout-pilot-copy-followup-results.json",
+      "stats": {
+        "startTime": "2026-10-03T17:27:32.292Z",
+        "duration": 321617.804,
+        "expected": 60,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "file": "browser-catalogue-followup-results.json",
+      "stats": {
+        "startTime": "2026-10-03T17:34:07.404Z",
+        "duration": 229694.336,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  ],
+  "totals": {
+    "passed": 195,
+    "skipped": 5
+  },
+  "total": 200,
+  "cases": [
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain light 320x740: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 3084
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain light 1024x768: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 2293
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain light 768x1024: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 2271
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain light 1280x800: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 2386
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain full 320x740: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 2746
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain full 1024x768: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 2562
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain full 768x1024: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 2373
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain full 1280x800: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 2776
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain final-up displacement uses bounded assistance and keeps the upper dot pending",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 1890
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "native touch confirms an already traced endpoint without movement",
+      "status": "passed",
+      "evidence": "browser-followup-results.json",
+      "duration": 1893
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "solo: independent endpoint confirmations obey pause and complete exactly once",
+      "status": "passed",
+      "evidence": "browser-followup-results.json",
+      "duration": 1327
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "duo: independent endpoint confirmations obey pause and complete exactly once",
+      "status": "passed",
+      "evidence": "browser-followup-results.json",
+      "duration": 1885
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain light 320x740: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 7563
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain light 1024x768: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 11098
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain light 768x1024: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 12641
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain light 1280x800: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 13044
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain full 320x740: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 6881
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain full 1024x768: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 14024
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain full 768x1024: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 16406
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain full 1280x800: displaced finish accepts one stationary confirmation, then a separate upper dot",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 17785
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "Ghain final-up displacement uses bounded assistance and keeps the upper dot pending",
+      "status": "passed",
+      "evidence": "browser-focused-results.json",
+      "duration": 12169
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "native touch confirms an already traced endpoint without movement",
+      "status": "skipped",
+      "evidence": "browser-followup-results.json",
+      "duration": 570
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "solo: independent endpoint confirmations obey pause and complete exactly once",
+      "status": "passed",
+      "evidence": "browser-followup-results.json",
+      "duration": 4791
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "duo: independent endpoint confirmations obey pause and complete exactly once",
+      "status": "passed",
+      "evidence": "browser-followup-results.json",
+      "duration": 6968
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "an endpoint confirmation held past the Solo deadline cannot award completion",
+      "status": "passed",
+      "evidence": "browser-followup-results.json",
+      "duration": 1220
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "an endpoint confirmation held past the Solo deadline cannot award completion",
+      "status": "passed",
+      "evidence": "browser-followup-results.json",
+      "duration": 5761
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android fullscreen uses the native bridge when browser fullscreen is unavailable",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 829
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android viewport notifications refit the current lesson without a browser resize event",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3888
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android export hands the complete teacher payload to the document bridge",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3049
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android Back preserves unsaved copying, then returns through contents before exit",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3098
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android background cancels held writing without erasing accepted colour",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 6976
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android background resolves one pending page turn and stops a demonstration",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 1002
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android background pauses the shared Duo clock and Back uses the existing exit confirmation",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 1354
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android fullscreen uses the native bridge when browser fullscreen is unavailable",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 2128
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android viewport notifications refit the current lesson without a browser resize event",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5037
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android export hands the complete teacher payload to the document bridge",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5959
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android Back preserves unsaved copying, then returns through contents before exit",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 7930
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android background cancels held writing without erasing accepted colour",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 12435
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android background resolves one pending page turn and stops a demonstration",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5654
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android background pauses the shared Duo clock and Back uses the existing exit confirmation",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 6471
+    },
+    {
+      "project": "chromium",
+      "file": "low-spec-performance.spec.js",
+      "title": "native lightweight default and adult override persist without changing fullscreen fit",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 2694
+    },
+    {
+      "project": "chromium",
+      "file": "low-spec-performance.spec.js",
+      "title": "frame-painted progress avoids per-frame control renders and exports all coalesced and release samples",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 2499
+    },
+    {
+      "project": "chromium",
+      "file": "low-spec-performance.spec.js",
+      "title": "long copy ink has bounded continuous paths and preserves the saved endpoints",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 6176
+    },
+    {
+      "project": "chromium",
+      "file": "low-spec-performance.spec.js",
+      "title": "Duo clock ticks do not rerender either board",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 1819
+    },
+    {
+      "project": "webkit",
+      "file": "low-spec-performance.spec.js",
+      "title": "native lightweight default and adult override persist without changing fullscreen fit",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9394
+    },
+    {
+      "project": "webkit",
+      "file": "low-spec-performance.spec.js",
+      "title": "frame-painted progress avoids per-frame control renders and exports all coalesced and release samples",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 18852
+    },
+    {
+      "project": "webkit",
+      "file": "low-spec-performance.spec.js",
+      "title": "long copy ink has bounded continuous paths and preserves the saved endpoints",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 30498
+    },
+    {
+      "project": "webkit",
+      "file": "low-spec-performance.spec.js",
+      "title": "Duo clock ticks do not rerender either board",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 7996
+    },
+    {
+      "project": "chromium",
+      "file": "numbered-guides.spec.js",
+      "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5113
+    },
+    {
+      "project": "chromium",
+      "file": "numbered-guides.spec.js",
+      "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5206
+    },
+    {
+      "project": "chromium",
+      "file": "numbered-guides.spec.js",
+      "title": "demonstrations and blank copying have no numbered touch guides",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5870
+    },
+    {
+      "project": "chromium",
+      "file": "numbered-guides.spec.js",
+      "title": "all 12 initial guides are legible and contained on phone and tablet",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 14242
+    },
+    {
+      "project": "webkit",
+      "file": "numbered-guides.spec.js",
+      "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9238
+    },
+    {
+      "project": "webkit",
+      "file": "numbered-guides.spec.js",
+      "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 11335
+    },
+    {
+      "project": "webkit",
+      "file": "numbered-guides.spec.js",
+      "title": "demonstrations and blank copying have no numbered touch guides",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9103
+    },
+    {
+      "project": "webkit",
+      "file": "numbered-guides.spec.js",
+      "title": "all 12 initial guides are legible and contained on phone and tablet",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 48712
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview alif: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 4309
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview ba: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5440
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview ta: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 4561
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview dal: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 4442
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview ra: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 3685
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview sin: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 7065
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview kaf: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5206
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview lam: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5535
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview mim: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 4760
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview nun: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5288
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview wau: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 7134
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview ya: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 7359
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview alif: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 3923
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview ba: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5751
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview ta: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5499
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview dal: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 4777
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview ra: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 3930
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview sin: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 7825
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview kaf: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 6421
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview lam: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 7943
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview mim: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 6450
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview nun: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 7002
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview wau: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 7432
+    },
+    {
+      "project": "chromium",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview ya: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5858
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview alif: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 10080
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview ba: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 13604
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview ta: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 13850
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview dal: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 12382
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview ra: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 13253
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview sin: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 16746
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview kaf: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 14129
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview lam: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 13150
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview mim: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 12292
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview nun: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 12176
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview wau: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 14924
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "guided pilot preview ya: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 16573
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview alif: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 9942
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview ba: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 9135
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview ta: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 8333
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview dal: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 8634
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview ra: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 7638
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview sin: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 9698
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview kaf: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 9444
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview lam: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 9651
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview mim: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 9541
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview nun: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 9316
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview wau: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 10392
+    },
+    {
+      "project": "webkit",
+      "file": "pilot.spec.js",
+      "title": "play pilot preview ya: every movement and dot completes through native pointer handlers",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 11062
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3990
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3431
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5499
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5974
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "native pad drag outside does not place a dot; a new contained press can finish",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4882
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4378
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 21540
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 10333
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 6517
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5349
+    },
+    {
+      "project": "chromium",
+      "file": "play-tracing.spec.js",
+      "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4678
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 10635
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 7484
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 10581
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 13746
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "native pad drag outside does not place a dot; a new contained press can finish",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9963
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 12300
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 36081
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 12602
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9713
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9580
+    },
+    {
+      "project": "webkit",
+      "file": "play-tracing.spec.js",
+      "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 10423
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 1627
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 11000
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4235
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "touch gate rejects mouse verification; adult preview cannot persist a score or trophy",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3439
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1024x768",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 1271
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 768x1024",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 1118
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1280x720",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 1116
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1920x1080",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 1395
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1366x768",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 1181
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "small and short Duo screens offer space guidance before racing; Solo remains usable",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 1962
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 14011
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4912
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "storage failure retains session export and reload never restores a live match",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3649
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5465
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "held dot pad and virtual activation cannot complete during pause or countdown",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 6914
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "fullscreen rejection has a useful fallback and setup pool limits follow eligibility",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 1202
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 12885
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Solo has a usable board and completes at 320x740",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 10429
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Solo has a usable board and completes at 844x390",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 10628
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 8955
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 15866
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 11215
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "touch gate rejects mouse verification; adult preview cannot persist a score or trophy",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 14032
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1024x768",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 9814
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 768x1024",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5630
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1280x720",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 5990
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1920x1080",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 10656
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo fits equal upright boards and controls at 1366x768",
+      "status": "passed",
+      "evidence": "browser-layout-pilot-copy-followup-results.json",
+      "duration": 6485
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "small and short Duo screens offer space guidance before racing; Solo remains usable",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 7237
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "status": "skipped",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 2
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "status": "skipped",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 1
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "storage failure retains session export and reload never restores a live match",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9896
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 14161
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "held dot pad and virtual activation cannot complete during pause or countdown",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 13162
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "fullscreen rejection has a useful fallback and setup pool limits follow eligibility",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5252
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+      "status": "skipped",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 2
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Solo has a usable board and completes at 320x740",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 13496
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Solo has a usable board and completes at 844x390",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 14546
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5180
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5337
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5257
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3678
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5703
+    },
+    {
+      "project": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9917
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 10907
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 11305
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 11456
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9628
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 13828
+    },
+    {
+      "project": "webkit",
+      "file": "strict-tracing.spec.js",
+      "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 26474
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "native emulated touch at 768 CSS pixels and DPR 2",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4788
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "native emulated touch at 390 CSS pixels and DPR 3",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4314
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "native emulated pen preserves pointer type and completes a strict stroke",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3255
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "play touch preserves colour after an excursion at 768 CSS pixels and DPR 2",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4929
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "play touch preserves colour after an excursion at 390 CSS pixels and DPR 3",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4650
+    },
+    {
+      "project": "chromium",
+      "file": "touch.spec.js",
+      "title": "native emulated pen completes assisted play with its own recorded input type",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3357
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 320x740",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3175
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 390x844",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3261
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 1024x768",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3565
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 768x1024",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3282
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 1920x1080",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5330
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "actual up movement completes; coalesced order and empty fallback are preserved",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 3789
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "native CDP touch recovers the remaining Alif tail",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 2763
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4295
+    },
+    {
+      "project": "chromium",
+      "file": "tracing-terminal.spec.js",
+      "title": "all 37 authored models retain valid play sequences and separate dots",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 28949
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 320x740",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 4916
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 390x844",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 5145
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 1024x768",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9068
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 768x1024",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 9225
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "Alif 94% recovery, held readiness and single release 1920x1080",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 20677
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "actual up movement completes; coalesced order and empty fallback are preserved",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 14760
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "native CDP touch recovers the remaining Alif tail",
+      "status": "skipped",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 478
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+      "status": "passed",
+      "evidence": "browser-regression-final-results.json",
+      "duration": 32873
+    },
+    {
+      "project": "webkit",
+      "file": "tracing-terminal.spec.js",
+      "title": "all 37 authored models retain valid play sequences and separate dots",
+      "status": "passed",
+      "evidence": "browser-catalogue-followup-results.json",
+      "duration": 228413
+    }
+  ]
+}

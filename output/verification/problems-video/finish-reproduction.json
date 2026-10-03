@@ -1,0 +1,127 @@
+{
+  "scope": "Source-level synthetic replay illustrates a matching failure path; video does not include pointer event logs.",
+  "steadyRelease": {
+    "held": {
+      "phase": "tracing",
+      "canFinish": true,
+      "frontier": 1517.8701862132455,
+      "length": 1517.8701862132455
+    },
+    "release": {
+      "x": 790,
+      "y": 700
+    },
+    "result": {
+      "phase": "awaitingMark",
+      "completed": [
+        "stroke-1"
+      ],
+      "pending": [
+        "dot-1"
+      ],
+      "decision": {
+        "gestureId": 1,
+        "partId": "stroke-1",
+        "kind": "stroke",
+        "action": "commit",
+        "reason": null,
+        "acceptedRawPoints": [],
+        "mark": null
+      },
+      "finish": null,
+      "metrics": {
+        "invalidEvents": 0,
+        "invalidTravel": 0,
+        "validTravel": 1517.025754909311,
+        "errorIntegral": 8.555469863318958,
+        "maxError": 0.2068574773590491,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 0,
+        "samples": 381,
+        "pauseEpisodes": 0,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 1,
+        "meanError": 0.005639633892590315,
+        "dotCount": 0
+      }
+    },
+    "resumeTap": null
+  },
+  "releaseDisplacement": {
+    "held": {
+      "phase": "tracing",
+      "canFinish": true,
+      "frontier": 1517.8701862132455,
+      "length": 1517.8701862132455
+    },
+    "release": {
+      "x": 872,
+      "y": 647
+    },
+    "result": {
+      "phase": "awaitingStart",
+      "completed": [],
+      "pending": [
+        "stroke-1"
+      ],
+      "decision": {
+        "gestureId": 1,
+        "partId": "stroke-1",
+        "kind": "stroke",
+        "action": "partial",
+        "reason": "corridor",
+        "acceptedRawPoints": [],
+        "mark": null
+      },
+      "finish": {
+        "partId": "stroke-1",
+        "frontier": 1517.8701862132455,
+        "remainingArc": 0,
+        "checkpointsSatisfied": true,
+        "coverageSatisfied": true,
+        "nearEnd": true,
+        "canFinish": false
+      },
+      "metrics": {
+        "invalidEvents": 1,
+        "invalidTravel": 50.44799302251775,
+        "validTravel": 1564.8796993653325,
+        "errorIntegral": 1225.1179698633189,
+        "maxError": 62.385257995979416,
+        "backwardTravel": 0,
+        "teleports": 0,
+        "lifts": 1,
+        "samples": 382,
+        "pauseEpisodes": 1,
+        "resumeCount": 0,
+        "ignoredStartGestures": 0,
+        "equivalentDotActions": 0,
+        "terminalDisplayFillUnits": 0,
+        "turnProjectionAllowanceUnits": 0,
+        "diagnosticRotations": 0,
+        "coverage": 1,
+        "meanError": 0.7828831637091269,
+        "dotCount": 0
+      }
+    },
+    "resumeTap": {
+      "phase": "awaitingStart",
+      "completed": [],
+      "finish": {
+        "partId": "stroke-1",
+        "frontier": 1517.8701862132455,
+        "remainingArc": 0,
+        "checkpointsSatisfied": true,
+        "coverageSatisfied": true,
+        "nearEnd": true,
+        "canFinish": false
+      }
+    }
+  }
+}

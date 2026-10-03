@@ -1,0 +1,235 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "playwright.fullscreen.config.js",
+      "fullscreen-layout.spec.js",
+      "--project=webkit",
+      "--workers=1",
+      "--grep",
+      "completion|every retained"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.fullscreen.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/fullscreen-layout/browser-followup.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "fullscreen-layout.spec.js",
+      "file": "fullscreen-layout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8963,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m198.9\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m1.0999999999999943\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m198.9\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m1.0999999999999943\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:53:132",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                      "column": 132,
+                      "line": 53
+                    },
+                    "snippet": "  51 |  await page.getByRole('button',{name:'Sekarang, cuba salin sendiri',exact:true}).click();await expect(page.locator('.copy-board')).toHaveAttribute('viewBox','0 0 1000 1000');await expect(page.getByRole('button',{name:'Cuba lagi',exact:true})).toBeEnabled();await frames(page);\n  52 |  const points=await board.evaluate(svg=>[new DOMPoint(200,200),new DOMPoint(400,400)].map(p=>{const q=p.matrixTransform(svg.getScreenCTM());return{x:q.x,y:q.y};}));await draw(page,points);await page.getByRole('button',{name:'Huruf seterusnya',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Simpan',exact:true}).click();await expect(page.getByRole('heading',{name:'Fa',exact:true})).toBeVisible();\n> 53 |  const copy=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies[0]);expect(copy.ink[0][0].x).toBeCloseTo(200,0);expect(copy.ink[0][0].y).toBeCloseTo(200,0);\n     |                                                                                                                                    ^\n  54 |  await page.route('**/audio/**',route=>route.abort());await page.getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.getByRole('dialog',{name:'Dengar nama huruf'})).toBeVisible();await fitted(page);await page.keyboard.press('Escape');\n  55 |  await page.setViewportSize({width:1024,height:768});await fitted(page);await expect(board).toBeVisible();\n  56 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                        "column": 132,
+                        "line": 53
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m198.9\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m1.0999999999999943\u001b[39m\n\n  51 |  await page.getByRole('button',{name:'Sekarang, cuba salin sendiri',exact:true}).click();await expect(page.locator('.copy-board')).toHaveAttribute('viewBox','0 0 1000 1000');await expect(page.getByRole('button',{name:'Cuba lagi',exact:true})).toBeEnabled();await frames(page);\n  52 |  const points=await board.evaluate(svg=>[new DOMPoint(200,200),new DOMPoint(400,400)].map(p=>{const q=p.matrixTransform(svg.getScreenCTM());return{x:q.x,y:q.y};}));await draw(page,points);await page.getByRole('button',{name:'Huruf seterusnya',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Simpan',exact:true}).click();await expect(page.getByRole('heading',{name:'Fa',exact:true})).toBeVisible();\n> 53 |  const copy=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies[0]);expect(copy.ink[0][0].x).toBeCloseTo(200,0);expect(copy.ink[0][0].y).toBeCloseTo(200,0);\n     |                                                                                                                                    ^\n  54 |  await page.route('**/audio/**',route=>route.abort());await page.getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.getByRole('dialog',{name:'Dengar nama huruf'})).toBeVisible();await fitted(page);await page.keyboard.press('Escape');\n  55 |  await page.setViewportSize({width:1024,height:768});await fitted(page);await expect(board).toBeVisible();\n  56 | });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:53:132"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:15:35.669Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                    "column": 132,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-cc06b5cbba3a39f305f5",
+          "file": "fullscreen-layout.spec.js",
+          "line": 46,
+          "column": 1
+        },
+        {
+          "title": "every retained attempt is paged and export includes the complete store",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 32720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:15:45.429Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-616fd8ece5c30a6bcad4",
+          "file": "fullscreen-layout.spec.js",
+          "line": 66,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-03T04:15:35.180Z",
+    "duration": 43150.935,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

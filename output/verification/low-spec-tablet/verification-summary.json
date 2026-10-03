@@ -1,0 +1,1641 @@
+{
+  "date": "2026-10-03T15:26:35.144Z",
+  "unit": {
+    "passed": 115,
+    "files": 15
+  },
+  "browser": {
+    "counts": {
+      "passed": 223,
+      "skipped": 6,
+      "unresolved": 1
+    },
+    "unique": 230,
+    "scope": "Latest affected follow-up per selected case. Final teacher-only CSS leaves broad tracing/clock/input code unchanged.",
+    "cases": [
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android fullscreen uses the native bridge when browser fullscreen is unavailable",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android viewport notifications refit the current lesson without a browser resize event",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android export hands the complete teacher payload to the document bridge",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android Back preserves unsaved copying, then returns through contents before exit",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android background cancels held writing without erasing accepted colour",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android background resolves one pending page turn and stops a demonstration",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android background pauses the shared Duo clock and Back uses the existing exit confirmation",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android fullscreen uses the native bridge when browser fullscreen is unavailable",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android viewport notifications refit the current lesson without a browser resize event",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android export hands the complete teacher payload to the document bridge",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android Back preserves unsaved copying, then returns through contents before exit",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android background cancels held writing without erasing accepted colour",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android background resolves one pending page turn and stops a demonstration",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "android-platform.spec.js",
+        "title": "Android background pauses the shared Duo clock and Back uses the existing exit confirmation",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "held tracing and demonstrations cannot turn; interruption cannot strand a pending turn",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "copy exit offers save, discard and return without silently losing ink",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "filtered contents, keyboard turns and missing animation events keep one destination",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "native touch completion needs a fresh page turn at 768 and DPR 2",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "native touch completion needs a fresh page turn at 390 and DPR 3",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 320x740",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 390x844",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 1024x768",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 768x1024",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 1280x720",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 1920x1080",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 844x390",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "held tracing and demonstrations cannot turn; interruption cannot strand a pending turn",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "copy exit offers save, discard and return without silently losing ink",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "filtered contents, keyboard turns and missing animation events keep one destination",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "native touch completion needs a fresh page turn at 768 and DPR 2",
+        "project": "webkit",
+        "status": "skipped",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "native touch completion needs a fresh page turn at 390 and DPR 3",
+        "project": "webkit",
+        "status": "skipped",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 320x740",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 390x844",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 1024x768",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 768x1024",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 1280x720",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 1920x1080",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "book-layout.spec.js",
+        "title": "book, guides and labelled controls fit 844x390",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 320x600",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 360x640",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 320x740",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 390x844",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 1024x768",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 768x1024",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 1280x720",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 1920x1080",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 1280x800",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 800x1280",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 3840x2160",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 320x600",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 360x640",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 390x844",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 1024x768",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 768x1024",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 1920x1080",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 1280x800",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 800x1280",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 3840x2160",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 1280x720",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 1920x1080",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 1280x800",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 800x1280",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 3840x2160",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "short viewport and zoom equivalent give fitted space guidance",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "every retained attempt is paged and export includes the complete store",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "demo, completion and copy tools fit at 320x740",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "demo, completion and copy tools fit at 390x844",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "demo, completion and copy tools fit at 1024x768",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "demo, completion and copy tools fit at 1920x1080",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "small-space fullscreen rejection stays visible and preserves the current screen",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 320x600",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 360x640",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 320x740",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 390x844",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 1024x768",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 768x1024",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 1280x720",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 1920x1080",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 1280x800",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 800x1280",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "fitted menus, catalogue and teacher pages at 3840x2160",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 320x600",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 360x640",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 390x844",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 1024x768",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 768x1024",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 1920x1080",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 1280x800",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 800x1280",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "all 37 complete letter envelopes and guides fit at 3840x2160",
+        "project": "webkit",
+        "status": "unexpected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 1280x720",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 1920x1080",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 1280x800",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 800x1280",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "Duo has equal fitted stages and recovers from small space at 3840x2160",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "short viewport and zoom equivalent give fitted space guidance",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "every retained attempt is paged and export includes the complete store",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "demo, completion and copy tools fit at 320x740",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "demo, completion and copy tools fit at 390x844",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "demo, completion and copy tools fit at 1024x768",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "demo, completion and copy tools fit at 1920x1080",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "small-space fullscreen rejection stays visible and preserves the current screen",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "wheel, keyboard and supported native touch panning cannot scroll game screens",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "fullscreen-layout.spec.js",
+        "title": "wheel, keyboard and supported native touch panning cannot scroll game screens",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "low-spec-performance.spec.js",
+        "title": "native lightweight default and adult override persist without changing fullscreen fit",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "low-spec-performance.spec.js",
+        "title": "frame-painted progress avoids per-frame control renders and exports all coalesced and release samples",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "low-spec-performance.spec.js",
+        "title": "long copy ink has bounded continuous paths and preserves the saved endpoints",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "low-spec-performance.spec.js",
+        "title": "Duo clock ticks do not rerender either board",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "low-spec-performance.spec.js",
+        "title": "native lightweight default and adult override persist without changing fullscreen fit",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-final-settings-results.json"
+      },
+      {
+        "file": "low-spec-performance.spec.js",
+        "title": "frame-painted progress avoids per-frame control renders and exports all coalesced and release samples",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "low-spec-performance.spec.js",
+        "title": "long copy ink has bounded continuous paths and preserves the saved endpoints",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "low-spec-performance.spec.js",
+        "title": "Duo clock ticks do not rerender either board",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "numbered-guides.spec.js",
+        "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "numbered-guides.spec.js",
+        "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "numbered-guides.spec.js",
+        "title": "demonstrations and blank copying have no numbered touch guides",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "numbered-guides.spec.js",
+        "title": "all 12 initial guides are legible and contained on phone and tablet",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "numbered-guides.spec.js",
+        "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "numbered-guides.spec.js",
+        "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "numbered-guides.spec.js",
+        "title": "demonstrations and blank copying have no numbered touch guides",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "numbered-guides.spec.js",
+        "title": "all 12 initial guides are legible and contained on phone and tablet",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "native pad drag outside does not place a dot; a new contained press can finish",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "native pad drag outside does not place a dot; a new contained press can finish",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "play-tracing.spec.js",
+        "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "touch gate rejects mouse verification; adult preview cannot persist a score or trophy",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 1024x768",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 768x1024",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 1280x720",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 1920x1080",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 1366x768",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "small and short Duo screens offer space guidance before racing; Solo remains usable",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "storage failure retains session export and reload never restores a live match",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "held dot pad and virtual activation cannot complete during pause or countdown",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "fullscreen rejection has a useful fallback and setup pool limits follow eligibility",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Solo has a usable board and completes at 320x740",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Solo has a usable board and completes at 844x390",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "touch gate rejects mouse verification; adult preview cannot persist a score or trophy",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 1024x768",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 768x1024",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 1280x720",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 1920x1080",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo fits equal upright boards and controls at 1366x768",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-followup-results.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "small and short Duo screens offer space guidance before racing; Solo remains usable",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+        "project": "webkit",
+        "status": "skipped",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+        "project": "webkit",
+        "status": "skipped",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "storage failure retains session export and reload never restores a live match",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "held dot pad and virtual activation cannot complete during pause or countdown",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "fullscreen rejection has a useful fallback and setup pool limits follow eligibility",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+        "project": "webkit",
+        "status": "skipped",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Solo has a usable board and completes at 320x740",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "solo-duo.spec.js",
+        "title": "Solo has a usable board and completes at 844x390",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "strict-tracing.spec.js",
+        "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "touch.spec.js",
+        "title": "native emulated touch at 768 CSS pixels and DPR 2",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "touch.spec.js",
+        "title": "native emulated touch at 390 CSS pixels and DPR 3",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "touch.spec.js",
+        "title": "native emulated pen preserves pointer type and completes a strict stroke",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "touch.spec.js",
+        "title": "play touch preserves colour after an excursion at 768 CSS pixels and DPR 2",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "touch.spec.js",
+        "title": "play touch preserves colour after an excursion at 390 CSS pixels and DPR 3",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "touch.spec.js",
+        "title": "native emulated pen completes assisted play with its own recorded input type",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 320x740",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 390x844",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 1024x768",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 768x1024",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 1920x1080",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 3840x2160",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "actual up movement completes; coalesced order and empty fallback are preserved",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "native CDP touch recovers the remaining Alif tail",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "all 37 authored models retain valid play sequences and separate dots",
+        "project": "chromium",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 320x740",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 390x844",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 1024x768",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 768x1024",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 1920x1080",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "Alif 94% recovery, held readiness and single release 3840x2160",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "actual up movement completes; coalesced order and empty fallback are preserved",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "native CDP touch recovers the remaining Alif tail",
+        "project": "webkit",
+        "status": "skipped",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      },
+      {
+        "file": "tracing-terminal.spec.js",
+        "title": "all 37 authored models retain valid play sequences and separate dots",
+        "project": "webkit",
+        "status": "expected",
+        "report": "browser-before-caption-followup.json"
+      }
+    ]
+  },
+  "commands": {
+    "broad": "npx playwright test --config playwright.performance.config.js tests/browser/low-spec-performance.spec.js tests/browser/play-tracing.spec.js tests/browser/strict-tracing.spec.js tests/browser/tracing-terminal.spec.js tests/browser/touch.spec.js tests/browser/numbered-guides.spec.js tests/browser/solo-duo.spec.js tests/browser/android-platform.spec.js tests/browser/book-layout.spec.js tests/browser/fullscreen-layout.spec.js --workers=1",
+    "followup": "npx playwright test --config playwright.performance.config.js tests/browser/fullscreen-layout.spec.js tests/browser/low-spec-performance.spec.js tests/browser/solo-duo.spec.js --grep \"fitted menus|all 37 complete letter envelopes and guides fit at 3840|native lightweight|Duo fits equal upright boards\" --workers=1; JAWI_SKIP_4K_WEBKIT_CAPTURES=1",
+    "finalSettings": "npx playwright test --config playwright.performance.config.js tests/browser/fullscreen-layout.spec.js tests/browser/low-spec-performance.spec.js --grep \"fitted menus.*(320x600|360x640|320x740|390x844)|native lightweight\" --workers=1",
+    "build": "npm run build",
+    "android": "scripts/build-android.ps1 -Offline -SkipWebBuild; scripts/verify-android-release.ps1 -SdkPath <installed SDK>"
+  },
+  "samePlaySamplesCoverageOutcomes": true,
+  "protected": 89,
+  "servedBuild": {
+    "/assets/index-D2FnzuJ9.js": "617318a16fd61ce482980b93b144b82666151110575253b14851b9f5bf685866",
+    "/assets/index-CCf4Eyi8.css": "3021cca9d565933280d2bd41ca416b48841034ebb71df63f9d70bffc9ac680f7"
+  }
+}

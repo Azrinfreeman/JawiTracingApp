@@ -1,12 +1,12 @@
 import { expect } from '@playwright/test';
-import { dismissSplash, selectPractice } from './navigation.js';
+import { dismissSplash, selectPractice, chooseLetter } from './navigation.js';
 
 export async function openLesson(page, label = 'Alif', mode = 'guided') {
   await page.goto('/'); await dismissSplash(page);
   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
   await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();
   if (mode !== 'play') await selectPractice(page, mode);
-  await page.getByRole('button', { name: new RegExp(`^${label}(?:, pernah dijejak)?$`) }).click();
+  await chooseLetter(page, label);
   await expect(page.locator('.start-dot')).toBeVisible();
   await page.locator('.trace-board').scrollIntoViewIfNeeded();
 }

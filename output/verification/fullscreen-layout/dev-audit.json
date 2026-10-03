@@ -1,0 +1,188 @@
+[
+  {
+    "width": 1024,
+    "height": 768,
+    "state": "welcome",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "state": "garden",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "state": "alif",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "state": "ba",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "state": "teacher",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "state": "audio",
+    "over": [
+      [
+        "P",
+        "audio-review-transcript",
+        950,
+        99,
+        950,
+        104
+      ]
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "state": "welcome",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "state": "garden",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "state": "alif",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "state": "ba",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "state": "teacher",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "state": "audio",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "state": "welcome",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "state": "garden",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "state": "alif",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "state": "ba",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "state": "teacher",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "state": "audio",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "state": "welcome",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "state": "garden",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "state": "alif",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "state": "ba",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "state": "teacher",
+    "over": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "state": "audio",
+    "over": [
+      [
+        "P",
+        "audio-review-transcript",
+        348,
+        5,
+        348,
+        56
+      ]
+    ],
+    "errors": []
+  }
+]

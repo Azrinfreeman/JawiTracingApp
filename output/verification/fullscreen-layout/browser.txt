@@ -1,0 +1,116 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c tmp/playwright-fullscreen.config.js fullscreen-layout.spec.js --project=chromium --project=webkit --workers=2
+
+Running 34 tests using 2 workers
+
+(node:3052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:22788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/34] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740
+[2/34] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740
+[3/34] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 390x844
+[4/34] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1024x768
+[5/34] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 768x1024
+[6/34] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 390x844
+[7/34] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720
+[8/34] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1920x1080
+[9/34] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 390x844
+[10/34] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1024x768
+[11/34] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1024x768
+[12/34] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 768x1024
+[13/34] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 768x1024
+[14/34] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1920x1080
+[15/34] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720
+[16/34] [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board
+[17/34] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1024x768
+[18/34] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1920x1080
+[19/34] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 768x1024
+[20/34] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x720
+[21/34] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1920x1080
+[22/34] [chromium] › tests\browser\fullscreen-layout.spec.js:64:1 › short viewport and zoom equivalent give fitted space guidance
+[23/34] [chromium] › tests\browser\fullscreen-layout.spec.js:66:1 › every retained attempt is paged and export includes the complete store
+[24/34] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 390x844
+[25/34] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1024x768
+[26/34] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 768x1024
+[27/34] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1920x1080
+[28/34] [webkit] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board
+  1) [webkit] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Simpan', exact: true })
+
+
+      50 |  for(let i=1;i<=3;i++)await page.getByRole('button',{name:`Tambah titik ${i} daripada 3`}).click();await expect(page.locator('.book-completed')).toBeVisible();await fitted(page);expect(await board.getAttribute('viewBox')).toBe(initial);expect(await board.boundingBox()).toEqual(box);
+      51 |  await page.getByRole('button',{name:'Sekarang, cuba salin sendiri',exact:true}).click();await expect(page.locator('.copy-board')).toHaveAttribute('viewBox','0 0 1000 1000');
+    > 52 |  const points=await board.evaluate(svg=>[new DOMPoint(200,200),new DOMPoint(400,400)].map(p=>{const q=p.matrixTransform(svg.getScreenCTM());return{x:q.x,y:q.y};}));await draw(page,points);await page.getByRole('button',{name:'Huruf seterusnya',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Simpan',exact:true}).click();await expect(page.getByRole('heading',{name:'Fa',exact:true})).toBeVisible();
+         |                                                                                                                                                                                                                                                                                                                                                      ^
+      53 |  const copy=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies[0]);expect(copy.ink[0][0].x).toBeCloseTo(200,0);expect(copy.ink[0][0].y).toBeCloseTo(200,0);
+      54 |  await page.route('**/audio/**',route=>route.abort());await page.getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.getByRole('dialog',{name:'Dengar nama huruf'})).toBeVisible();await fitted(page);await page.keyboard.press('Escape');
+      55 |  await page.setViewportSize({width:1024,height:768});await fitted(page);await expect(board).toBeVisible();
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:52:342
+
+    Error Context: test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:30116) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[29/34] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1024x768
+[30/34] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 768x1024
+[31/34] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x720
+[32/34] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1920x1080
+[33/34] [webkit] › tests\browser\fullscreen-layout.spec.js:64:1 › short viewport and zoom equivalent give fitted space guidance
+[34/34] [webkit] › tests\browser\fullscreen-layout.spec.js:66:1 › every retained attempt is paged and export includes the complete store
+  2) [webkit] › tests\browser\fullscreen-layout.spec.js:66:1 › every retained attempt is paged and export includes the complete store 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Halaman butiran seterusnya', exact: true })
+        - locator resolved to <button class="button button-soft" aria-label="Halaman butiran seterusnya">Seterusnya →</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+
+
+      68 |  await page.setViewportSize({width:390,height:844});await welcome(page);await page.getByRole('button',{name:'Jom mula',exact:true}).click();await chooseLetter(page,'Alif');await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toBeVisible();
+      69 |  await page.evaluate(()=>{const data=JSON.parse(localStorage.getItem('taman-jawi.progress.v1')),original=data.attempts[0];data.attempts=Array.from({length:300},(_,i)=>({...original,id:'layout-attempt-'+i}));localStorage.setItem('taman-jawi.progress.v1',JSON.stringify(data));});await page.reload();await dismissSplash(page);await page.getByRole('button',{name:'Ruang guru',exact:true}).click();await page.getByRole('tab',{name:'Cubaan',exact:true}).click();
+    > 70 |  const ids=new Set();for(let i=0;i<301;i++){await fitted(page);for(const id of await page.locator('.record-card').evaluateAll(nodes=>nodes.map(n=>n.dataset.recordId)))ids.add(id);const next=page.getByRole('button',{name:'Halaman rekod seterusnya',exact:true});if(!await next.isEnabled())break;await next.click();}expect(ids.size).toBe(300);
+         |                                                                                                                                                                                                                                                                                                                                                     ^
+      71 |  await page.getByRole('button',{name:'Butiran cubaan',exact:true}).first().click();const labels=new Set();for(let i=0;i<100;i++){await fitted(page);for(const text of await page.locator('.detail-fields dt').allTextContents())labels.add(text);const next=page.getByRole('button',{name:'Halaman butiran seterusnya',exact:true});if(!await next.isEnabled())break;await next.click();}expect(labels.has('metrics · coverage')).toBe(true);expect(labels.has('interactionPolicy')).toBe(true);await page.keyboard.press('Escape');
+      72 |  const pending=page.waitForEvent('download');await page.getByRole('button',{name:'Eksport kemajuan',exact:true}).click();let json='';for await(const chunk of await (await pending).createReadStream())json+=chunk.toString();expect(JSON.parse(json).progress.attempts.length).toBe(300);
+      73 | });
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:70:369
+
+    Error Context: test-results\fullscreen-layout-every-re-f98ba-includes-the-complete-store-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-every-re-f98ba-includes-the-complete-store-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-every-re-f98ba-includes-the-complete-store-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  2 failed
+    [webkit] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board 
+    [webkit] › tests\browser\fullscreen-layout.spec.js:66:1 › every retained attempt is paged and export includes the complete store 
+  32 passed (4.9m)

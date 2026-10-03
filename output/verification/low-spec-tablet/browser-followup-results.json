@@ -1,0 +1,1413 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.performance.config.js",
+      "tests/browser/fullscreen-layout.spec.js",
+      "tests/browser/low-spec-performance.spec.js",
+      "tests/browser/solo-duo.spec.js",
+      "--grep",
+      "fitted menus|all 37 complete letter envelopes and guides fit at 3840|native lightweight|Duo fits equal upright boards",
+      "--workers=1"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.performance.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/low-spec-tablet/followup-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/low-spec-tablet/followup-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/low-spec-tablet/browser-followup-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fullscreen-layout.spec.js",
+      "file": "fullscreen-layout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "fitted menus, catalogue and teacher pages at 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2298,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:01:43.390Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-332608c2068c407d478c",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 360x640",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2238,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:01:45.927Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-302ea1aa213752085080",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 320x740",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2205,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:01:48.177Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-eac106c20d1053437585",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1987,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:01:50.394Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-04755524bec46b88df6b",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1887,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:01:52.393Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-afafd3c2311f76bf7499",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:01:54.292Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-34dfab66a94f26836e90",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1280x720",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1973,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:01:56.158Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-9af732abdb70e9beedf3",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2132,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:01:58.142Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-9f9716a70116212b6052",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1280x800",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1944,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:00.285Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-eb3066d310f159d778f0",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 800x1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1892,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:02.240Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-aeed6238486978a5d06b",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:04.143Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-3d7f695b8b1afd585a95",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15380,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:08.178Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-fddbcf7844186ffd19f1",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6593,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:31.550Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-482713c23ed1b192d49a",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 360x640",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6898,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:38.248Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-88ab04f4f55a72a94200",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 320x740",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4747,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 26\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"MAIN\",\u001b[39m\n\u001b[31m+       \"teacher-page page-enter\",\u001b[39m\n\u001b[31m+       320,\u001b[39m\n\u001b[31m+       338,\u001b[39m\n\u001b[31m+       684,\u001b[39m\n\u001b[31m+       684,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"DIV\",\u001b[39m\n\u001b[31m+       \"teacher-content\",\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       328,\u001b[39m\n\u001b[31m+       409,\u001b[39m\n\u001b[31m+       409,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"SECTION\",\u001b[39m\n\u001b[31m+       \"teacher-panel\",\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       327,\u001b[39m\n\u001b[31m+       407,\u001b[39m\n\u001b[31m+       407,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 26\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"MAIN\",\u001b[39m\n\u001b[31m+       \"teacher-page page-enter\",\u001b[39m\n\u001b[31m+       320,\u001b[39m\n\u001b[31m+       338,\u001b[39m\n\u001b[31m+       684,\u001b[39m\n\u001b[31m+       684,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"DIV\",\u001b[39m\n\u001b[31m+       \"teacher-content\",\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       328,\u001b[39m\n\u001b[31m+       409,\u001b[39m\n\u001b[31m+       409,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"SECTION\",\u001b[39m\n\u001b[31m+       \"teacher-panel\",\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       327,\u001b[39m\n\u001b[31m+       407,\u001b[39m\n\u001b[31m+       407,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:17:21)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:34:73",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                      "column": 21,
+                      "line": 17
+                    },
+                    "snippet": "  15 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);\n  16 |   return {overflow,offscreen,scrollX,scrollY};\n> 17 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});\n     |                     ^\n  18 | }\n  19 | async function shot(page,name) {\n  20 |  // Windows WebKit can stall after native 4K capture; retain all DOM/fit checks."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                        "column": 21,
+                        "line": 17
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 26\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"MAIN\",\u001b[39m\n\u001b[31m+       \"teacher-page page-enter\",\u001b[39m\n\u001b[31m+       320,\u001b[39m\n\u001b[31m+       338,\u001b[39m\n\u001b[31m+       684,\u001b[39m\n\u001b[31m+       684,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"DIV\",\u001b[39m\n\u001b[31m+       \"teacher-content\",\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       328,\u001b[39m\n\u001b[31m+       409,\u001b[39m\n\u001b[31m+       409,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"SECTION\",\u001b[39m\n\u001b[31m+       \"teacher-panel\",\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       327,\u001b[39m\n\u001b[31m+       407,\u001b[39m\n\u001b[31m+       407,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  15 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);\n  16 |   return {overflow,offscreen,scrollX,scrollY};\n> 17 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});\n     |                     ^\n  18 | }\n  19 | async function shot(page,name) {\n  20 |  // Windows WebKit can stall after native 4K capture; retain all DOM/fit checks.\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:17:21)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:34:73"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:45.160Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\followup-test-results\\fullscreen-layout-fitted-m-e1454-nd-teacher-pages-at-320x740-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\followup-test-results\\fullscreen-layout-fitted-m-e1454-nd-teacher-pages-at-320x740-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                    "column": 21,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-9005312590fcbfa2b0a3",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6143,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:50.627Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-af70d6b7f2ad9131f75f",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7918,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:56.848Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-2e848758e9baf7a749f1",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:03:04.784Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-6d6fb6716999aa0acb8c",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1280x720",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8719,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:03:12.705Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-89ecaf292487c5289c02",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14409,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:03:21.434Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-e84be083857c1e0cc8b5",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1280x800",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10371,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:03:35.855Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-8a621b45a0fec6eadb37",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 800x1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9253,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:03:46.238Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-28f042fefc74f7a0515f",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 44701,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:03:55.502Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-e5b1bd7d5c9e1d868132",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 3840x2160",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 300354,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 300000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                        "column": 42,
+                        "line": 8
+                      },
+                      "message": "Error: page.evaluate: Test timeout of 300000ms exceeded.\n\n   6 | import { boardModels, draw } from './helpers/tracing.js';\n   7 | const evidence = process.env.JAWI_EVIDENCE_DIR || 'output/verification/fullscreen-layout'; mkdirSync(evidence,{recursive:true});\n>  8 | async function frames(page) { await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))); }\n     |                                          ^\n   9 | async function fitted(page) {\n  10 |  await frames(page);\n  11 |  const result=await page.evaluate(()=>{\n    at frames (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:8:42)\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:10:8)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:44:101"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:04:40.219Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\followup-test-results\\fullscreen-layout-all-37-c-99370-and-guides-fit-at-3840x2160-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\followup-test-results\\fullscreen-layout-all-37-c-99370-and-guides-fit-at-3840x2160-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-6028a9056270f03050c3",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        }
+      ]
+    },
+    {
+      "title": "low-spec-performance.spec.js",
+      "file": "low-spec-performance.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "native lightweight default and adult override persist without changing fullscreen fit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1810,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:23.590Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-c3fd27ff77148f176ac0",
+          "file": "low-spec-performance.spec.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "native lightweight default and adult override persist without changing fullscreen fit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8907,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:09:41.425Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-d0bed4216eafbaf0debd",
+          "file": "low-spec-performance.spec.js",
+          "line": 20,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "solo-duo.spec.js",
+      "file": "solo-duo.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Duo fits equal upright boards and controls at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 934,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:25.432Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-b9321277ae791e84b89e",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 970,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:26.379Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-a0c63f298ae19f5bd940",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 1280x720",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 977,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:27.360Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-ebc8cb442b5398b5ef81",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1143,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:28.349Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-8a9baf88646bf6465089",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 1366x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1004,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:02:29.504Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-0b0aec5c17bb9361cb96",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:09:50.431Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-14ae58f2a8a564b5aa7c",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4680,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:09:55.267Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-b5dcf729a7b4cfb9f2ba",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 1280x720",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:09:59.958Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-ab5ef3440f31a580dea7",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9857,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:10:05.094Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-705a6f656e12b0012ea3",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        },
+        {
+          "title": "Duo fits equal upright boards and controls at 1366x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T15:10:14.971Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-227f19c18f63b61fb52d",
+          "file": "solo-duo.spec.js",
+          "line": 137,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-03T15:01:42.840Z",
+    "duration": 519300.877,
+    "expected": 34,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

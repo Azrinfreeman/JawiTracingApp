@@ -9,12 +9,12 @@ export const RaceTracePane = memo(forwardRef(function RaceTracePane({ turn, onTu
   return <section className={`race-pane race-book player-${slot} ${turn ? 'book-turning' : ''}`} data-player-slot={slot} aria-label={`Pemain ${slot + 1}, ${profile}`} aria-busy={Boolean(turn)}>
     <div className="race-player-heading"><h2><ProfilePortrait profile={profile}/>{profile}<small>Pemain {slot + 1}</small></h2><strong className="race-total">{total}<small>markah</small></strong></div>
     <div className="race-paper">
-      <TraceBoard ref={ref} letter={letter} mode="play" activity="trace" attempt={retry} demo={demo} adjustment="standard" compact enabled={enabled} profileOverride={raceProfile} onValidated={onValidated} onDemoEnd={onDemoEnd}/>
-      <div className="race-actions">
+      <TraceBoard ref={ref} letter={letter} mode="play" activity="trace" attempt={retry} demo={demo} adjustment="standard" compact fitted enabled={enabled} profileOverride={raceProfile} onValidated={onValidated} onDemoEnd={onDemoEnd}
+        renderSupport={({status,instruction,dots}) => <div className="race-dock"><div>{instruction}{status}</div><div className="race-dock-controls">{dots}<div className="race-actions">
         {state === 'ready' ? <><button className="button button-primary" disabled={ready} onClick={onReady}>{ready ? 'Sedia ✓' : 'Saya sedia!'}</button><button className="button button-soft" disabled={ready || demo} onClick={onDemo}>Lihat contoh</button></>
           : state === 'racing' && !outcome ? <button className="button button-outline" onClick={onRetry}>Cuba lagi</button>
           : <p className="race-lane-status" role="status">{outcome?.outcome === 'playComplete' && <Icon name="flower" size={22}/>} {outcome?.outcome === 'playComplete' ? 'Siap! Tunggu teman.' : outcome ? 'Masa tamat. Kita cuba lagi!' : 'Tunggu isyarat mula.'}</p>}
-      </div>
+      </div></div></div>}/>
     </div>
     <BookFold direction={turn} onFinish={onTurnEnd}/>
   </section>;

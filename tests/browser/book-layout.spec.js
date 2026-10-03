@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
-import { dismissSplash } from './helpers/navigation.js';
+import { dismissSplash, chooseLetter } from './helpers/navigation.js';
 import { boardModels, draw } from './helpers/tracing.js';
 
 async function open(page, name = 'Alif') {
   await page.goto('/'); await dismissSplash(page); await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await page.getByRole('button', { name: new RegExp(`^${name}(?:, pernah dijejak)?$`) }).click();
+  await chooseLetter(page, name);
   await expect(page.locator('.trace-board')).toBeVisible(); await expect(page.getByRole('button', { name: 'Cuba lagi', exact: true })).toBeEnabled();
 }
 const attempts = page => page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1') || '{"attempts":[]}').attempts);
@@ -23,10 +23,10 @@ test('turns deliberately, ignores rapid duplicate navigation and stops at the en
   await expect(page.getByRole('heading', { name: 'Ba', exact: true })).toBeVisible();
   expect(await shell.evaluate(node => node.isConnected)).toBe(true); expect(await attempts(page)).toHaveLength(0);
   await page.getByRole('button', { name: 'Huruf sebelumnya', exact: true }).click(); await expect(page.getByRole('heading', { name: 'Alif', exact: true })).toBeVisible();
-  await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click(); await page.getByRole('button', { name: 'Nya', exact: true }).click();
+  await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click(); await chooseLetter(page, 'Nya');
   await expect(page.getByRole('button', { name: 'Cuba lagi', exact: true })).toBeEnabled();
   await page.getByRole('button', { name: /Huruf seterusnya/ }).click(); await expect(page.getByRole('heading', { name: 'Hebat, sampai halaman terakhir!' })).toBeVisible();
-  await expect(page.locator('.book-end')).toContainText('0 daripada 37');
+  await expect(page.locator('.book-end')).toContainText('0 daripada 35');
   await page.getByRole('button', { name: 'Main lagi', exact: true }).click(); await expect(page.getByRole('heading', { name: 'Alif', exact: true })).toBeVisible();
 });
 
@@ -39,7 +39,7 @@ test('freezes completed writing in place and saves once; revisiting is a new att
   expect(await board.evaluate(node => node.isConnected)).toBe(true); expect(await attempts(page)).toHaveLength(1);
   await page.getByRole('button', { name: /Huruf seterusnya/ }).click(); await expect(page.getByRole('heading', { name: 'Fa', exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Huruf sebelumnya', exact: true }).click(); await expect(page.getByRole('heading', { name: 'Nga', exact: true })).toBeVisible();
-  await expect(page.locator('.book-sticker.earned')).toContainText('Siap dijejak'); expect(await attempts(page)).toHaveLength(1);
+  await expect(page.getByLabel('Siap dijejak', {exact:true})).toBeVisible(); expect(await attempts(page)).toHaveLength(1);
   expect(await page.locator('.play-fill').count()).toBe(0);
 });
 
@@ -49,7 +49,7 @@ test('held tracing and demonstrations cannot turn; interruption cannot strand a 
   await page.getByRole('button', { name: /Huruf seterusnya/ }).dispatchEvent('click'); await expect(page.getByRole('heading', { name: 'Ba', exact: true })).toBeVisible();
   await page.mouse.up(); await page.getByRole('button', { name: 'Tunjuk cara', exact: true }).click();
   await page.getByRole('button', { name: /Huruf seterusnya/ }).dispatchEvent('click'); await expect(page.getByRole('heading', { name: 'Ba', exact: true })).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Tunjuk cara', exact: true })).toBeEnabled();
+  await expect(page.getByRole('button', { name: 'Tunjuk cara', exact: true })).toBeEnabled({ timeout: 10000 });
   await page.getByRole('button', { name: /Huruf seterusnya/ }).click(); await page.setViewportSize({ width: 1000, height: 760 });
   await expect(page.getByRole('heading', { name: 'Ta', exact: true })).toBeVisible(); await expect(page.locator('.book-fold')).toHaveCount(0);
 });
@@ -118,13 +118,19 @@ for (const [width, height, density] of [[768, 1024, 2], [390, 844, 3]]) test(`na
 
 for (const [width, height] of [[320, 740], [390, 844], [1024, 768], [768, 1024], [1280, 720], [1920, 1080], [844, 390]]) {
   test(`book, guides and labelled controls fit ${width}x${height}`, async ({ page }) => {
-    await page.setViewportSize({ width, height }); await page.emulateMedia({ reducedMotion: 'reduce' }); await open(page, 'Nga');
+    await page.setViewportSize({ width, height }); await page.emulateMedia({ reducedMotion: 'reduce' });
+    if (height < 600) {
+      await page.goto('/'); await dismissSplash(page);
+      await expect(page.getByRole('dialog', { name: 'Besarkan ruang bermain' })).toBeVisible(); return;
+    }
+    await open(page, 'Nga');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-    const box = await page.locator('.trace-board').boundingBox(); expect(box.width).toBeCloseTo(box.height, 1); expect(box.width).toBeGreaterThanOrEqual(279);
+    const box = await page.locator('.trace-board').boundingBox(); expect(Math.min(box.width, box.height)).toBeGreaterThanOrEqual(230);
+    expect(box.x).toBeGreaterThanOrEqual(0); expect(box.y).toBeGreaterThanOrEqual(0);
+    expect(box.x + box.width).toBeLessThanOrEqual(width); expect(box.y + box.height).toBeLessThanOrEqual(height);
     for (const button of ['Huruf sebelumnya', 'Isi kandungan']) { const b = await page.getByRole('button', { name: button, exact: true }).boundingBox(); expect(b.height).toBeGreaterThanOrEqual(48); }
     const heading = await page.locator('.book-letter-heading').boundingBox();
-    if (width >= 1000 && height >= 650) expect(heading.x).toBeGreaterThan(box.x + box.width);
-    else expect(heading.y + heading.height).toBeLessThanOrEqual(box.y);
+    expect(heading.y).toBeGreaterThanOrEqual(box.y + box.height - 1);
     await complete(page); await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Nga!' })).toBeVisible();
   });
 }

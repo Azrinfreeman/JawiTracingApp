@@ -2,7 +2,7 @@ import { distance, finitePoint, pointAt, projectLocal, movementSamples } from '.
 import { dotPointAllowed, validateDotMotion, validateDot } from './dotMatcher.js';
 
 /** Pure gesture transactions. Raw input controls validation; only end commits. */
-export function createMatcher(letter, references, profile) {
+export function createMatcher(letter, references, profile, { compact = false } = {}) {
   const strokes = new Map(letter.geometry.strokes.map(s => [s.id, s]));
   const dots = new Map(letter.geometry.dotTargets.map(d => [d.id, d]));
   const progress = Object.fromEntries([...strokes.keys()].map(id => [id, 0]));
@@ -30,7 +30,7 @@ export function createMatcher(letter, references, profile) {
   }
 
   function response(action = 'none', gesture = active, extra = {}) {
-    return { ...snapshot(), inputDecision: {
+    return { ...(compact ? { phase } : snapshot()), inputDecision: {
       gestureId: gesture?.gestureId ?? null, partId: gesture?.id ?? null, kind: gesture?.kind ?? null,
       action, acceptedRawPoints: [], discardGestureInk: false, clearPartInk: false,
       mark: null, reason: gesture?.reason ?? null, ...extra,
@@ -193,5 +193,8 @@ export function createMatcher(letter, references, profile) {
     active = null; phase = exhausted ? 'retry' : awaiting(); feedback = 'Sentuh semula untuk meneruskan.';
     return response('cancel', current, { discardGestureInk: true, clearPartInk: current.kind === 'stroke' });
   }
-  return { start, move, end, cancel, snapshot };
+  // Live read-only view: callers must take snapshot() before saving/exporting.
+  const view = () => ({ phase, feedback, completed, pending: pending(), progress, profile, exhausted,
+    blocked: Boolean(active?.rejected), metrics: { dotCount: completed.filter(id => dots.has(id)).length } });
+  return { start, move, end, cancel, snapshot, view, isBusy: () => Boolean(active) };
 }

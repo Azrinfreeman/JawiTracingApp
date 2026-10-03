@@ -14,5 +14,7 @@ import './styles/app.css';
 import './styles/match.css';
 import './styles/playground.css';
 import './styles/book.css';
+import './styles/fullscreen.css';
+import './styles/presentation.css';
 import App from './App.jsx';
 createRoot(document.getElementById('root')).render(<React.StrictMode><App/></React.StrictMode>);

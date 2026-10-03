@@ -1,8 +1,13 @@
-param([Parameter(Mandatory=$true)][string]$SdkPath, [string]$ApkPath)
+param([Parameter(Mandatory=$true)][string]$SdkPath, [string]$ApkPath, [string]$EvidencePath)
 $ErrorActionPreference = 'Stop'
 $androidWorkspace = Split-Path $PSScriptRoot -Parent
-if (-not $ApkPath) { $ApkPath = Join-Path $androidWorkspace 'output/releases/Taman-Jawi-1.0.0-release.apk' }
-$androidEvidence = Join-Path $androidWorkspace 'output/verification/android-release'
+$releaseConfig = Get-Content -LiteralPath (Join-Path $androidWorkspace 'android/app/build.gradle') -Raw
+$releaseVersion = [regex]::Match($releaseConfig, "versionName\s+'([0-9]+\.[0-9]+\.[0-9]+)'").Groups[1].Value
+$releaseCode = [regex]::Match($releaseConfig, 'versionCode\s+(\d+)').Groups[1].Value
+if (-not $releaseVersion -or -not $releaseCode) { throw 'Android release version metadata is missing.' }
+if (-not $ApkPath) { $ApkPath = Join-Path $androidWorkspace "output/releases/Taman-Jawi-$releaseVersion-release.apk" }
+if (-not $EvidencePath) { $EvidencePath = Join-Path $androidWorkspace "output/verification/android-release-$releaseVersion" }
+$androidEvidence = $EvidencePath
 $androidTools = Join-Path $SdkPath 'build-tools/36.0.0'
 $badging = & (Join-Path $androidTools 'aapt2.exe') dump badging $ApkPath
 if ($LASTEXITCODE -ne 0) { throw 'APK metadata could not be read.' }
@@ -14,7 +19,8 @@ $alignment = & (Join-Path $androidTools 'zipalign.exe') -c -v 4 $ApkPath
 if ($LASTEXITCODE -ne 0) { throw 'APK alignment is invalid.' }
 if (($manifest -join "`n") -match 'android:debuggable.*0xffffffff') { throw 'Release APK is debuggable.' }
 if (($manifest -join "`n") -match 'uses-permission') { throw 'Unexpected Android permission in offline APK.' }
-if (($badging -join "`n") -notmatch "package: name='com.hananaacademy.tamanjawi' versionCode='1' versionName='1.0.0'") { throw 'Unexpected package identity.' }
+$expectedIdentity = "package: name='com.hananaacademy.tamanjawi' versionCode='$releaseCode' versionName='$releaseVersion'"
+if (($badging -join "`n") -notmatch [regex]::Escape($expectedIdentity)) { throw 'Unexpected package identity.' }
 if (($badging -join "`n") -notmatch "sdkVersion:'26'" -or ($badging -join "`n") -notmatch "targetSdkVersion:'36'") { throw 'Unexpected Android compatibility.' }
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 $assetRecord = Get-Content -LiteralPath (Join-Path $androidEvidence 'bundled-assets.json') -Raw | ConvertFrom-Json
@@ -49,7 +55,7 @@ $signature | Set-Content -LiteralPath (Join-Path $androidEvidence 'apk-signature
 $alignment | Set-Content -LiteralPath (Join-Path $androidEvidence 'apk-alignment.txt')
 [ordered]@{
     verifiedAt = [DateTime]::UtcNow.ToString('o'); apk = $ApkPath; bytes = (Get-Item -LiteralPath $ApkPath).Length
-    sha256 = $sha256; package = 'com.hananaacademy.tamanjawi'; version = '1.0.0'; versionCode = 1
+    sha256 = $sha256; package = 'com.hananaacademy.tamanjawi'; version = $releaseVersion; versionCode = [int]$releaseCode
     minSdk = 26; targetSdk = 36; signatureVerified = $true; alignmentVerified = $true
     debuggable = $false; permissions = @(); matchingBundledAssets = $checkedAssets
     activeLetterRecordings = $letters.Count

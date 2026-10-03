@@ -11,6 +11,7 @@ const completeHeading = (page, letter) => page.getByRole('heading', { name: `Kam
 async function record(page) { return page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1)); }
 async function diagnostic(page) {
   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await page.getByRole('tab', { name: 'Diagnostik', exact: true }).click();
   const pending = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
@@ -19,7 +20,7 @@ async function diagnostic(page) {
 
 test('default play pauses without erasing colour; held-pointer return earns no bridge', async ({ page }) => {
   await openLesson(page, 'Alif', 'play');
-  await expect(page.locator('.trace-board')).toHaveAttribute('data-interaction-policy', 'play-guided-v1');
+  await expect(page.locator('.trace-board')).toHaveAttribute('data-interaction-policy', 'play-guided-v2');
   await expect(page.getByRole('button', { name: 'Kurang panduan', exact: true })).toHaveCount(0);
   const { strokes: [stroke], scale } = await boardModels(page), middle = Math.floor(stroke.length / 3);
   await page.mouse.move(stroke[0].x, stroke[0].y); await page.mouse.down();
@@ -111,7 +112,7 @@ test('diagnostic gesture cap offers continuation and retains the coloured prefix
 
 test('phone, tablet and short landscape keep large controls, legible cues and no overflow', async ({ page }) => {
   test.setTimeout(60000);
-  for (const [width, height] of [[320, 740], [390, 844], [768, 1024], [1280, 900], [844, 390]]) {
+  for (const [width, height] of [[320, 740], [390, 844], [768, 1024], [1280, 900], [844, 600]]) {
     await page.setViewportSize({ width, height }); await openLesson(page, 'Ba', 'play');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     for (const label of ['Dengar', 'Tunjuk cara', 'Cuba lagi']) {

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import { isLightweightPresentation } from '../platform/presentation.js';
 
 // Exactly one destination commits, including reduced motion and interrupted effects.
 export function usePageTurn() {
@@ -10,7 +11,7 @@ export function usePageTurn() {
   const start = useCallback((commit, direction = 'next') => {
     if (job.current) return false;
     job.current = commit;
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches) finish();
+    if (isLightweightPresentation() || matchMedia('(prefers-reduced-motion: reduce)').matches) finish();
     else { setTurn(direction); timer.current = setTimeout(finish, 420); }
     return true;
   }, [finish]);

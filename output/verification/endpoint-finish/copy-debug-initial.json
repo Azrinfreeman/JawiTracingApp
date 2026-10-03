@@ -1,0 +1,20 @@
+{
+  "states": [
+    {
+      "sent": 2000,
+      "started": 4989,
+      "frames": 125,
+      "now": 9987,
+      "hidden": false,
+      "focus": true,
+      "chunks": 0
+    }
+  ],
+  "result": {
+    "sent": 2000,
+    "started": 4989,
+    "frames": 125,
+    "duration": 3107,
+    "chunks": 0
+  }
+}

@@ -1,0 +1,479 @@
+{
+  "date": "2026-10-03T08:57:49.816Z",
+  "baseURL": "http://127.0.0.1:5173",
+  "platform": "win32",
+  "os": "10.0.26200",
+  "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "mode": "play",
+  "input": "frame-paced synthetic touch, four ordered coalesced samples per move, 5 logical-unit spacing, fixed sine jitter",
+  "scope": "Headless software pipeline timing; no physical device latency. Publications observe actual frontier/ink mutations.",
+  "inputs": {
+    "src/tracing/geometry.js": "0c72b47aa27b69c653489da3fc9efd6a8d1335381290791e78025fc9197ece57",
+    "src/tracing/playMatcher.js": "d38cbc96484c3fcf145992dac6842b0f98cb8a1b761802cc8838039742662112",
+    "src/tracing/inputController.js": "4740bbdd0ed2d137e143bb0a044ff019ce71895bb80947f4d0b21d867cc417dc",
+    "src/components/TraceBoard.jsx": "d8ae88f6f1b435362faec4e0f2385ac0d1f19c02046881e6df1672d2442e0c29",
+    "src/content/letters.json": "0fd65d9ee03c83736f5e5b0ae1b52c6d1cd19ae38c77eb3f71f53047649382fd",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "scripts/measure-tracing.js": "a84a0b4ff1ace3533edd9f2eda534168dc6d4b888cafdaa04a5242b847ebe7b9"
+  },
+  "results": [
+    {
+      "label": "Alif",
+      "revision": 1,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 127,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 127,
+        "totalMs": 14.500000029802322,
+        "maxMs": 0.9000000059604645
+      },
+      "batchMs": {
+        "count": 34,
+        "p50": 0.4000000059604645,
+        "p95": 1.2000000029802322,
+        "max": 1.4000000059604645
+      },
+      "frameIntervalMs": {
+        "count": 33,
+        "p50": 16.700000000000045,
+        "p95": 16.700000000000045,
+        "max": 16.800000000000068
+      },
+      "publicationDelayMs": {
+        "count": 30,
+        "p50": 3.8999999910593033,
+        "p95": 8,
+        "max": 14.399999991059303
+      },
+      "longTaskMs": [],
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 44.200000032782555,
+        "maxMs": 0.6000000089406967
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.6000000089406967,
+        "p95": 1.1000000089406967,
+        "max": 1.300000011920929
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.699999999999818,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 69,
+        "p50": 2.9000000059604645,
+        "p95": 6.299999997019768,
+        "max": 6.9000000059604645
+      },
+      "longTaskMs": [],
+      "coverage": 0.9998721180161949,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Mim",
+      "revision": 1,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 188,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 188,
+        "totalMs": 17.900000005960464,
+        "maxMs": 0.5999999940395355
+      },
+      "batchMs": {
+        "count": 51,
+        "p50": 0.30000001192092896,
+        "p95": 0.7999999970197678,
+        "max": 1.0999999940395355
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.700000000000045,
+        "p95": 16.799999999999955,
+        "max": 16.800000000000182
+      },
+      "publicationDelayMs": {
+        "count": 43,
+        "p50": 5.100000008940697,
+        "p95": 6.5,
+        "max": 7.399999991059303
+      },
+      "longTaskMs": [],
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Nya",
+      "revision": 2,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 193,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 193,
+        "totalMs": 22.300000056624413,
+        "maxMs": 0.5999999940395355
+      },
+      "batchMs": {
+        "count": 50,
+        "p50": 0.5,
+        "p95": 0.699999988079071,
+        "max": 1.2000000029802322
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.700000000000045,
+        "p95": 16.700000000000045,
+        "max": 16.800000000000182
+      },
+      "publicationDelayMs": {
+        "count": 46,
+        "p50": 5.200000002980232,
+        "p95": 6.5,
+        "max": 7.100000008940697
+      },
+      "longTaskMs": [],
+      "coverage": 0.99999996802667,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Alif",
+      "revision": 1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 127,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 127,
+        "totalMs": 13.299999982118607,
+        "maxMs": 0.800000011920929
+      },
+      "batchMs": {
+        "count": 34,
+        "p50": 0.3999999910593033,
+        "p95": 0.7999999970197678,
+        "max": 1.1000000089406967
+      },
+      "frameIntervalMs": {
+        "count": 33,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.700000000000045
+      },
+      "publicationDelayMs": {
+        "count": 30,
+        "p50": 2,
+        "p95": 7.699999988079071,
+        "max": 13.899999991059303
+      },
+      "longTaskMs": [],
+      "coverage": 0.9999999754274338,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 42.59999991953373,
+        "maxMs": 1
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.5999999940395355,
+        "p95": 1.1000000089406967,
+        "max": 1.5999999940395355
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.700000000000045,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 69,
+        "p50": 2.5,
+        "p95": 7.299999997019768,
+        "max": 8.099999994039536
+      },
+      "longTaskMs": [],
+      "coverage": 0.999872117725628,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Mim",
+      "revision": 1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 188,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 188,
+        "totalMs": 16.499999910593033,
+        "maxMs": 0.5999999940395355
+      },
+      "batchMs": {
+        "count": 51,
+        "p50": 0.29999999701976776,
+        "p95": 0.7000000029802322,
+        "max": 1.0999999940395355
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.700000000000045,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 43,
+        "p50": 4.700000002980232,
+        "p95": 7,
+        "max": 7.299999997019768
+      },
+      "longTaskMs": [],
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Nya",
+      "revision": 2,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 193,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 193,
+        "totalMs": 21.100000008940697,
+        "maxMs": 0.5
+      },
+      "batchMs": {
+        "count": 50,
+        "p50": 0.5,
+        "p95": 0.7000000029802322,
+        "max": 1
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.800000000000182
+      },
+      "publicationDelayMs": {
+        "count": 46,
+        "p50": 5.5,
+        "p95": 6.299999997019768,
+        "max": 7.299999997019768
+      },
+      "longTaskMs": [],
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Alif",
+      "revision": 1,
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 127,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 127,
+        "totalMs": 12.400000005960464,
+        "maxMs": 0.7000000029802322
+      },
+      "batchMs": {
+        "count": 34,
+        "p50": 0.3999999910593033,
+        "p95": 0.9000000059604645,
+        "max": 1.1000000089406967
+      },
+      "frameIntervalMs": {
+        "count": 33,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.700000000000045
+      },
+      "publicationDelayMs": {
+        "count": 30,
+        "p50": 5.399999991059303,
+        "p95": 8.299999997019768,
+        "max": 13
+      },
+      "longTaskMs": [],
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 52.59999993443489,
+        "maxMs": 1
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.7999999970197678,
+        "p95": 1.3999999910593033,
+        "max": 1.5
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.700000000000045,
+        "p95": 33.399999999999864,
+        "max": 33.40000000000009
+      },
+      "publicationDelayMs": {
+        "count": 69,
+        "p50": 10.799999997019768,
+        "p95": 21.600000008940697,
+        "max": 24.599999994039536
+      },
+      "longTaskMs": [],
+      "coverage": 0.9998721202822398,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Mim",
+      "revision": 1,
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 188,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 188,
+        "totalMs": 16.59999993443489,
+        "maxMs": 0.6000000089406967
+      },
+      "batchMs": {
+        "count": 51,
+        "p50": 0.29999999701976776,
+        "p95": 0.6000000089406967,
+        "max": 0.8999999910593033
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.700000000000045,
+        "p95": 16.800000000000182,
+        "max": 33.299999999999955
+      },
+      "publicationDelayMs": {
+        "count": 43,
+        "p50": 5.4000000059604645,
+        "p95": 6.9000000059604645,
+        "max": 8
+      },
+      "longTaskMs": [],
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Nya",
+      "revision": 2,
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 193,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": {
+        "samples": 193,
+        "totalMs": 22.599999979138374,
+        "maxMs": 0.9000000059604645
+      },
+      "batchMs": {
+        "count": 50,
+        "p50": 0.5,
+        "p95": 0.7999999970197678,
+        "max": 1.2999999970197678
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 46,
+        "p50": 5.5999999940395355,
+        "p95": 7.700000002980232,
+        "max": 8.200000002980232
+      },
+      "longTaskMs": [],
+      "coverage": 1,
+      "outcome": "playComplete"
+    }
+  ]
+}

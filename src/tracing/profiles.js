@@ -1,12 +1,13 @@
 export function getProfile(mode = 'guided', pointerType = 'mouse', adjustment = 'standard') {
   const touch = pointerType === 'touch';
   if (mode === 'play') return Object.freeze({
-    id: `play-${touch ? 'touch' : 'pen-mouse'}-standard-v1`, mode,
-    interactionPolicy: 'play-guided-v1', radius: touch ? 60 : 40,
+    id: `play-${touch ? 'touch' : 'pen-mouse'}-standard-v2`, mode,
+    interactionPolicy: 'play-guided-v2', radius: touch ? 60 : 40,
     startRadius: touch ? 76 : 56, endRadius: touch ? 64 : 48,
     coverage: 0.95, backwardJitter: 18, acquisitionArc: 20, turnAllowance: 18,
     maxRawGap: 80, maxAdvance: 90, advanceRatio: 1.8, projectionTie: 3,
     dotRadius: touch ? 48 : 36, dotTravel: touch ? 40 : 24,
+    finishReleaseSlack: touch ? 36 : 18, finishReleaseTravel: touch ? 60 : 30,
     padTravel: 24, maxSamples: 18000,
   });
   const precision = mode === 'precision';

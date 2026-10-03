@@ -1,0 +1,497 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.tracing.config.js",
+      "tests/browser/tracing-terminal.spec.js",
+      "tests/browser/kaf-ga.spec.js",
+      "tests/browser/solo-duo.spec.js",
+      "--workers=1",
+      "--grep",
+      "non-final Ba|native portrait Duo|3840x2160",
+      "--max-failures=2"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.tracing.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 2,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/tracing-completion/followup-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/tracing-completion/followup-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/tracing-completion/browser-followup.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "kaf-ga.spec.js",
+      "file": "kaf-ga.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26612,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T09:32:27.519Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-6cb1ad2feae4073ce57e",
+          "file": "kaf-ga.spec.js",
+          "line": 149,
+          "column": 3
+        },
+        {
+          "title": "Kaf/Ga complete model, guides, dot and stable completion fit 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 36120,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T09:33:28.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-63544e7d813e1aa6cfff",
+          "file": "kaf-ga.spec.js",
+          "line": 149,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "solo-duo.spec.js",
+      "file": "solo-duo.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 16040,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) })\nExpected substring: \u001b[32m\"Bunga / Daun\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) })\nExpected substring: \u001b[32m\"Bunga / Daun\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) })\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\solo-duo.spec.js:274:25",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\solo-duo.spec.js",
+                      "column": 25,
+                      "line": 274
+                    },
+                    "snippet": "  272 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();\n  273 |   const history = page.locator('.teacher-panel').filter({ has: page.getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) });\n> 274 |   await expect(history).toContainText('Bunga / Daun'); await expect(history).toContainText('Selesai'); await history.screenshot({ path: `${evidence}/duo-teacher-history.png`, animations: 'disabled' });\n      |                         ^\n  275 |   await context.close();\n  276 | });\n  277 | for (const [width, height] of [[320, 740], [844, 390]]) test(`Solo has a usable board and completes at ${width}x${height}`, async ({ page }) => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\solo-duo.spec.js",
+                        "column": 25,
+                        "line": 274
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) })\nExpected substring: \u001b[32m\"Bunga / Daun\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.teacher-panel').filter({ has: getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) })\u001b[22m\n\n\n  272 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();\n  273 |   const history = page.locator('.teacher-panel').filter({ has: page.getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) });\n> 274 |   await expect(history).toContainText('Bunga / Daun'); await expect(history).toContainText('Selesai'); await history.screenshot({ path: `${evidence}/duo-teacher-history.png`, animations: 'disabled' });\n      |                         ^\n  275 |   await context.close();\n  276 | });\n  277 | for (const [width, height] of [[320, 740], [844, 390]]) test(`Solo has a usable board and completes at ${width}x${height}`, async ({ page }) => {\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\solo-duo.spec.js:274:25"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T09:32:54.257Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\tracing-completion\\followup-test-results\\solo-duo-native-portrait-D-781c4-d-appear-in-teacher-history-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\tracing-completion\\followup-test-results\\solo-duo-native-portrait-D-781c4-d-appear-in-teacher-history-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\solo-duo.spec.js",
+                    "column": 25,
+                    "line": 274
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-7b64ed5cd1129ace97d2",
+          "file": "solo-duo.spec.js",
+          "line": 249,
+          "column": 1
+        },
+        {
+          "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native simultaneous touch uses Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\solo-duo.spec.js",
+                    "line": 250,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 1,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T09:34:04.303Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native simultaneous touch uses Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\solo-duo.spec.js",
+                        "line": 250,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-0ded01ce69bf404e4651",
+          "file": "solo-duo.spec.js",
+          "line": 249,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tracing-terminal.spec.js",
+      "file": "tracing-terminal.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Alif 94% recovery, held readiness and single release 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T09:33:11.981Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-9f4df8b24e54454861c5",
+          "file": "tracing-terminal.spec.js",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7551,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T09:33:19.975Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-6407e4ae515c94510cae",
+          "file": "tracing-terminal.spec.js",
+          "line": 93,
+          "column": 1
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T09:34:04.343Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-c0074fce2124eabc79f8",
+          "file": "tracing-terminal.spec.js",
+          "line": 21,
+          "column": 3
+        },
+        {
+          "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9244,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.terminal-resume-cue')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.terminal-resume-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.terminal-resume-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.terminal-resume-cue')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.terminal-resume-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.terminal-resume-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js:98:56",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js",
+                      "column": 56,
+                      "line": 98
+                    },
+                    "snippet": "   96 |     await openLesson(page, label, 'play');\n   97 |     await draw(page, await exactPoints(page, Array.from({ length: 96 }, (_, i) => Math.min(i / 100, .949))));\n>  98 |     await expect(page.locator('.terminal-resume-cue')).toBeVisible();\n      |                                                        ^\n   99 |     await page.screenshot({ path: `${evidence}/${browserName}-${label}-remaining.png`, animations: 'disabled' });\n  100 |     const points = await exactPoints(page, [.949, .96, .98]);\n  101 |     await page.mouse.move(points[0].x, points[0].y); await page.mouse.down(); await movePoints(page, points.slice(1));"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js",
+                        "column": 56,
+                        "line": 98
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.terminal-resume-cue')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.terminal-resume-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.terminal-resume-cue')\u001b[22m\n\n\n   96 |     await openLesson(page, label, 'play');\n   97 |     await draw(page, await exactPoints(page, Array.from({ length: 96 }, (_, i) => Math.min(i / 100, .949))));\n>  98 |     await expect(page.locator('.terminal-resume-cue')).toBeVisible();\n      |                                                        ^\n   99 |     await page.screenshot({ path: `${evidence}/${browserName}-${label}-remaining.png`, animations: 'disabled' });\n  100 |     const points = await exactPoints(page, [.949, .96, .98]);\n  101 |     await page.mouse.move(points[0].x, points[0].y); await page.mouse.down(); await movePoints(page, points.slice(1));\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js:98:56"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T09:34:20.249Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\tracing-completion\\followup-test-results\\tracing-terminal-non-final-dc0bc-a-lift-before-the-next-part-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\tracing-completion\\followup-test-results\\tracing-terminal-non-final-dc0bc-a-lift-before-the-next-part-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js",
+                    "column": 56,
+                    "line": 98
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-76a4c641abd11a911f9f",
+          "file": "tracing-terminal.spec.js",
+          "line": 93,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 2 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-10-03T09:32:26.949Z",
+    "duration": 122772.231,
+    "expected": 5,
+    "skipped": 1,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

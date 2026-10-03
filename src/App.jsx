@@ -17,9 +17,24 @@ import { LetterGarden } from './screens/LetterGarden.jsx';
 import { LessonScreen } from './screens/LessonScreen.jsx';
 import { eligibleBook } from './game/bookNavigation.js';
 import { TeacherScreen } from './screens/TeacherScreen.jsx';
+import { useViewportLayout } from './components/useViewportLayout.js';
+import { toggleFullscreen } from './platform/fullscreen.js';
+import { readPresentation, savePresentation, resetTracingContacts } from './platform/presentation.js';
 
 function getStorage() { try { return window.localStorage; } catch { return { getItem() { throw new Error('Unavailable'); }, setItem() { throw new Error('Unavailable'); } }; } }
 export default function App() {
+  const [presentation, setPresentation] = useState(() => readPresentation(getStorage()));
+  useEffect(() => { document.documentElement.dataset.presentation = presentation; }, [presentation]);
+  const choosePresentation = value => { savePresentation(getStorage(), value); setPresentation(value); };
+  useEffect(() => {
+    const hidden = () => { if (document.hidden) resetTracingContacts(); };
+    document.addEventListener('visibilitychange', hidden); window.addEventListener('taman-jawi:pause', resetTracingContacts);
+    return () => { resetTracingContacts(); document.removeEventListener('visibilitychange', hidden); window.removeEventListener('taman-jawi:pause', resetTracingContacts); };
+  }, []);
+  const viewport = useViewportLayout();
+  const smallScreen = viewport.width > 0 && (viewport.width < 320 || viewport.height < 600);
+  const [fullscreenNotice, setFullscreenNotice] = useState('');
+  const [gardenView, setGardenView] = useState({ filter: 'models', anchor: 0 });
   const store = useMemo(() => createProgressStore(getStorage()), []);
   const matchStore = useMemo(() => createMatchStore(getStorage()), []);
   const [matchMode, setMatchMode] = useState('solo'), [match, setMatch] = useState(null), [matchResult, setMatchResult] = useState(null);
@@ -88,6 +103,12 @@ export default function App() {
     setSelected(letter); setActivity(copy ? 'copy' : 'trace'); setScreen('lesson');
   }
   function goScreen(destination) { if (screen === 'lesson') bookExit.current?.leave(() => setScreen(destination)); else setScreen(destination); }
+  async function fullscreen() {
+    try {
+      await toggleFullscreen();
+      setFullscreenNotice('');
+    } catch { setFullscreenNotice('Paparan penuh tidak tersedia. Boleh terus bermain dalam pelayar.'); }
+  }
   useEffect(() => {
     const back = () => {
       if (screen === 'match' && !showSplash) return;
@@ -113,23 +134,24 @@ export default function App() {
     refresh(); return { outcome: 'copySaved' };
   }
   if (showSplash) return <SplashScreen onContinue={dismissSplash} />;
-  return <div className="app-shell" data-screen={screen}>
+  return <div className="app-shell" data-screen={screen} data-small={smallScreen} style={{ '--app-height': `${viewport.height || window.innerHeight}px` }}>
+    {smallScreen && <section className="space-guidance" role="dialog" aria-modal="true" aria-label="Besarkan ruang bermain"><h1>Jom besarkan ruang bermain!</h1><p>Putar peranti atau kurangkan zum supaya huruf dan semua butang muat bersama.</p><button className="button button-primary" onClick={fullscreen}>Paparan penuh</button>{fullscreenNotice && <p role="status">{fullscreenNotice}</p>}</section>}
     <a className="skip-link" href="#main-content">Langkau ke kandungan</a>
     {screen !== 'match' && <header className="site-header"><button className="brand" onClick={() => goScreen('welcome')} aria-label="Taman Jawi, halaman utama"><span className="brand-symbol"><Icon name="leaf" size={27}/><span/></span><span>Taman<span className="brand-light"> Jawi</span><small>TUMBUH BERSAMA HURUF</small></span></button>
-      <nav aria-label="Navigasi utama"><button className="header-teacher" aria-label="Ruang guru" onClick={() => goScreen('teacher')}><Icon name="teacher" size={19}/><span className="teacher-label-wide">Ruang guru</span><span className="teacher-label-short">Guru</span></button><span className="header-line"/><button className="mute-button" onClick={() => setMuted(v => !v)} aria-label={muted ? 'Hidupkan audio' : 'Senyapkan audio'} aria-pressed={muted}><Icon name={muted ? 'mute' : 'sound'} size={20}/></button><span className="profile-avatar" aria-label={`Profil ${progress.profile}`}><ProfilePortrait profile={progress.profile}/></span></nav>
+      <nav aria-label="Navigasi utama"><button className="header-teacher" aria-label="Ruang guru" onClick={() => goScreen('teacher')}><Icon name="teacher" size={19}/><span className="teacher-label-wide">Ruang guru</span><span className="teacher-label-short">Guru</span></button><button className="fullscreen-button" onClick={fullscreen} aria-label="Paparan penuh">⛶<span>Paparan penuh</span></button><span className="header-line"/><button className="mute-button" onClick={() => setMuted(v => !v)} aria-label={muted ? 'Hidupkan audio' : 'Senyapkan audio'} aria-pressed={muted}><Icon name={muted ? 'mute' : 'sound'} size={20}/></button><span className="profile-avatar" aria-label={`Profil ${progress.profile}`}><ProfilePortrait profile={progress.profile}/></span></nav>
     </header>}
-    {preview && <div className="preview-banner" role="status"><span>Pratonton dewasa · {modelCount} model huruf{draftCount > 0 && ` · ${draftCount} draf untuk semakan`} · {letters.some(letter => letter.audio.name.status !== 'approved') ? 'suara draf untuk semakan' : 'suara diluluskan'}</span><button onClick={() => { const leave = () => { setPreview(false); setScreen('welcome'); }; if (screen === 'lesson') bookExit.current?.leave(leave); else leave(); }}>Tamatkan pratonton</button></div>}
+    {preview && <div className="preview-banner" role="status"><span>Pratonton dewasa · {modelCount} model huruf{draftCount > 0 && ` · ${draftCount} draf untuk semakan`} · {letters.some(letter => letter.audio.name.status !== 'approved') ? 'suara draf untuk semakan' : 'suara diluluskan'}</span><button aria-label="Tamatkan pratonton" onClick={() => { const leave = () => { setPreview(false); setScreen('welcome'); }; if (screen === 'lesson') bookExit.current?.leave(leave); else leave(); }}>Tamat</button></div>}
+    {fullscreenNotice && <button className="fullscreen-notice" role="status" onClick={() => setFullscreenNotice('')}>{fullscreenNotice} · Tutup</button>}
     <div id="main-content" tabIndex="-1">
       {screen === 'welcome' && <WelcomeScreen onStart={start} profile={progress.profile} setProfile={profile => { store.setProfile(profile); refresh(); }}/>}
       {screen === 'matchSetup' && <MatchSetupScreen key={matchMode} mode={matchMode} profile={progress.profile} letters={letters} onStart={startMatch} onBack={() => setScreen('welcome')} onSolo={() => setMatchMode('solo')}/>}
       {screen === 'match' && <MatchScreen key={match.id} config={match} letters={letters} audio={audio} onAttempt={saveRaceAttempt} onFinish={summary => saveMatch(summary)} onExit={summary => saveMatch(summary, true)}/>}
       {screen === 'matchResult' && <MatchResultScreen result={matchResult} available={store.isAvailable() && matchStore.isAvailable()} onRematch={() => startMatch(matchResult, matchResult.letterIds)} onNew={() => startMatch(matchResult)} onHome={() => setScreen('welcome')}/>}
-      {screen === 'garden' && <LetterGarden letters={letters} preview={preview} progress={progress} mode={practiceMode} onLetter={openLetter} onBack={() => setScreen('welcome')}/>}
+      {screen === 'garden' && <LetterGarden letters={letters} preview={preview} progress={progress} mode={practiceMode} view={gardenView} onView={setGardenView} onLetter={openLetter} onBack={() => setScreen('welcome')}/>}
       {screen === 'lesson' && <LessonScreen letter={selected} sequence={book} progress={progress} navigationRef={bookExit} audio={audio} preview={preview} adjustment={adjustment} initialMode={practiceMode} initialActivity={activity} onNavigate={letter => openLetter(letter, false, book)} onActivity={copy => openLetter(selected, copy)} onBack={() => setScreen('garden')} onComplete={finish} onCopy={saveCopy} onDiagnostic={value => { diagnostic.current = { ...value, letterId: selected.id, contentVersion: selected.contentVersion }; }}/ >}
-      {screen === 'teacher' && <TeacherScreen letters={letters} progress={progress} store={store} matchStore={matchStore} audio={audio} diagnostic={diagnostic.current} preview={preview} practiceMode={practiceMode} onPracticeMode={setPracticeMode} adjustment={adjustment} onAdjustment={setAdjustment} onPreview={previewStart} onRefresh={refresh} onBack={() => setScreen('welcome')} onLetter={letter => { setBookIds([]); setPreview(true); setSelected(letter); setActivity('trace'); setScreen('lesson'); }}/ >}
+      {screen === 'teacher' && <TeacherScreen letters={letters} progress={progress} store={store} matchStore={matchStore} audio={audio} diagnostic={diagnostic.current} volume={volume} onVolume={setVolume} presentation={presentation} onPresentation={choosePresentation} preview={preview} practiceMode={practiceMode} onPracticeMode={setPracticeMode} adjustment={adjustment} onAdjustment={setAdjustment} onPreview={previewStart} onRefresh={refresh} onBack={() => setScreen('welcome')} onLetter={letter => { setBookIds([]); setPreview(true); setSelected(letter); setActivity('trace'); setScreen('lesson'); }}/ >}
     </div>
     <footer className="site-footer"><span className="footer-note"><Icon name="flower" size={16}/>Dibuat untuk langkah kecil yang bermakna.</span><span className="footer-motto">Kenal. Dengar. Jejak.</span><CompanyBrand /></footer>
-    {screen === 'teacher' && <div className="volume-control"><label htmlFor="volume">Kelantangan audio</label><input id="volume" type="range" min="0" max="1" step="0.1" value={volume} onChange={event => setVolume(Number(event.target.value))}/></div>}
     {gate && <div className="modal-backdrop"><section className="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title" ref={gateRef}><span className="modal-icon"><Icon name="teacher" size={30}/></span><h2 id="preview-title">Pratonton untuk guru & penjaga</h2><p>{modelCount} model huruf tersedia untuk pratonton dewasa. Model dan rakaman yang belum diluluskan perlu disemak sebelum digunakan bersama murid.</p><p className="small-muted">{ready.length ? `${ready.length} pelajaran tersedia untuk murid.` : 'Tiada pelajaran diluluskan untuk murid buat masa ini.'} Pratonton ini menguji fungsi game.</p><button className="button button-primary" onClick={previewStart}>Buka pratonton dewasa<Icon name="arrow"/></button><button className="text-button" onClick={() => setGate(false)}>Kembali dahulu</button></section></div>}
   </div>;
 }

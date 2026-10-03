@@ -1,0 +1,1051 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.performance.config.js",
+      "tests/browser/endpoint-finish.spec.js",
+      "--workers=1"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.performance.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/endpoint-finish/focused-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/endpoint-finish/focused-test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/endpoint-finish/browser-focused-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "endpoint-finish.spec.js",
+      "file": "endpoint-finish.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Ghain light 320x740: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3084,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:34:59.239Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-275fc1ae29319f0f79fb",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain light 1024x768: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2293,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:02.707Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-629a972854377751270f",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain light 768x1024: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2271,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:05.015Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-ba28e7a7a17a40dee312",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain light 1280x800: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2386,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:07.300Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-1286ef82080646b9b61b",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain full 320x740: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2746,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:09.699Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-c594a9b0bb4321c985a6",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain full 1024x768: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2562,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:12.458Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-f4066b0cb5b539293d7a",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain full 768x1024: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2373,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:15.033Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-4939c80397e46eb73b72",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain full 1280x800: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2776,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:17.422Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-d5919795cd57df2b5c81",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain final-up displacement uses bounded assistance and keeps the upper dot pending",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1890,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:20.214Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-616a780062702c64c7d6",
+          "file": "endpoint-finish.spec.js",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "native touch confirms an already traced endpoint without movement",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1619,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:22.122Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-abce15893d58d86df491",
+          "file": "endpoint-finish.spec.js",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "solo: independent endpoint confirmations obey pause and complete exactly once",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30302,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js",
+                        "column": 68,
+                        "line": 113
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Sambung', exact: true })\u001b[22m\n\n\n  111 |   for (let slot = 0; slot < count; slot++) { const board = pane(page, slot).locator('.trace-board'); await endpointContact(board, 'pointerdown', 61 + slot); await endpointContact(board, 'pointerup', 61 + slot); }\n  112 |   await expect(page.locator('.round-result')).toHaveCount(0);\n> 113 |   await page.getByRole('button', { name: 'Sambung', exact: true }).click(); await ready();\n      |                                                                    ^\n  114 |   for (let slot = 0; slot < count; slot++) { const board = pane(page, slot).locator('.trace-board'); await endpointContact(board, 'pointerdown', 61 + slot); await endpointContact(board, 'pointerup', 61 + slot); if (slot === 0 && count === 2) { await expect(page.locator('.round-result')).toHaveCount(0); await expect(pane(page, 1).locator('.board-tip')).toHaveText('Sentuh titik 3, kemudian angkat jari.'); } }\n  115 |   await expect(page.locator('.round-result')).toBeVisible();\n  116 |   if (mode === 'solo') { const records = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts); expect(records).toHaveLength(1); expect(records[0].metrics.endpointConfirmations).toBe(1); }\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js:113:68"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:23.760Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\endpoint-finish\\focused-test-results\\endpoint-finish-solo-indep-0f932-e-and-complete-exactly-once-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\endpoint-finish\\focused-test-results\\endpoint-finish-solo-indep-0f932-e-and-complete-exactly-once-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-e059dd6ea4a7b4e7c4bb",
+          "file": "endpoint-finish.spec.js",
+          "line": 98,
+          "column": 37
+        },
+        {
+          "title": "duo: independent endpoint confirmations obey pause and complete exactly once",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30370,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js",
+                        "column": 68,
+                        "line": 113
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Sambung', exact: true })\u001b[22m\n\n\n  111 |   for (let slot = 0; slot < count; slot++) { const board = pane(page, slot).locator('.trace-board'); await endpointContact(board, 'pointerdown', 61 + slot); await endpointContact(board, 'pointerup', 61 + slot); }\n  112 |   await expect(page.locator('.round-result')).toHaveCount(0);\n> 113 |   await page.getByRole('button', { name: 'Sambung', exact: true }).click(); await ready();\n      |                                                                    ^\n  114 |   for (let slot = 0; slot < count; slot++) { const board = pane(page, slot).locator('.trace-board'); await endpointContact(board, 'pointerdown', 61 + slot); await endpointContact(board, 'pointerup', 61 + slot); if (slot === 0 && count === 2) { await expect(page.locator('.round-result')).toHaveCount(0); await expect(pane(page, 1).locator('.board-tip')).toHaveText('Sentuh titik 3, kemudian angkat jari.'); } }\n  115 |   await expect(page.locator('.round-result')).toBeVisible();\n  116 |   if (mode === 'solo') { const records = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts); expect(records).toHaveLength(1); expect(records[0].metrics.endpointConfirmations).toBe(1); }\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js:113:68"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:35:55.491Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\endpoint-finish\\focused-test-results\\endpoint-finish-duo-indepe-20dbb-e-and-complete-exactly-once-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\endpoint-finish\\focused-test-results\\endpoint-finish-duo-indepe-20dbb-e-and-complete-exactly-once-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-9bd415c088489957e479",
+          "file": "endpoint-finish.spec.js",
+          "line": 98,
+          "column": 37
+        },
+        {
+          "title": "Ghain light 320x740: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7563,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:36:27.333Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-8f515d52eb8e447b6c9d",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain light 1024x768: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11098,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:36:35.111Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-3fd2676082059e812ee5",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain light 768x1024: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12641,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:36:46.228Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-22ab2697b746e1de8b60",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain light 1280x800: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13044,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:36:58.882Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-44c763767bb70325874c",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain full 320x740: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6881,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:37:11.938Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-5ff4aa66611991f577cd",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain full 1024x768: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:37:18.834Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-290b01a3bffe6dddcc98",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain full 768x1024: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16406,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:37:32.871Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-134673f021a541a2bf0c",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain full 1280x800: displaced finish accepts one stationary confirmation, then a separate upper dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17785,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:37:49.293Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-a8655a338b330da99f58",
+          "file": "endpoint-finish.spec.js",
+          "line": 39,
+          "column": 3
+        },
+        {
+          "title": "Ghain final-up displacement uses bounded assistance and keeps the upper dot pending",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:38:07.092Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-3271e589e07b99821c7e",
+          "file": "endpoint-finish.spec.js",
+          "line": 76,
+          "column": 1
+        },
+        {
+          "title": "native touch confirms an already traced endpoint without movement",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native touch uses Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js",
+                    "line": 87,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:38:19.273Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native touch uses Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js",
+                        "line": 87,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-9215801f570234545189",
+          "file": "endpoint-finish.spec.js",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "solo: independent endpoint confirmations obey pause and complete exactly once",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30286,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js",
+                        "column": 68,
+                        "line": 113
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Sambung', exact: true })\u001b[22m\n\n\n  111 |   const board = pane(page, 0).locator('.trace-board'); await traceBody(board);\n  112 |   await endpointContact(board, 'pointerdown'); await expect(pane(page, 0).locator('.board-tip')).toHaveText('Angkat jari untuk siap.');\n> 113 |   await page.clock.fastForward(91000); await expect(page.locator('.round-result')).toBeVisible();\n      |                                                                    ^\n  114 |   await endpointContact(board, 'pointerup');\n  115 |   const attempts = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1') || '{\"attempts\":[]}').attempts);\n  116 |   expect(attempts).toHaveLength(0);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js:113:68"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:38:19.677Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\endpoint-finish\\focused-test-results\\endpoint-finish-solo-indep-0f932-e-and-complete-exactly-once-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\endpoint-finish\\focused-test-results\\endpoint-finish-solo-indep-0f932-e-and-complete-exactly-once-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-af856a53c8663aef08ca",
+          "file": "endpoint-finish.spec.js",
+          "line": 98,
+          "column": 37
+        },
+        {
+          "title": "duo: independent endpoint confirmations obey pause and complete exactly once",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30348,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js",
+                        "column": 68,
+                        "line": 113
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Sambung', exact: true })\u001b[22m\n\n\n  111 |   const board = pane(page, 0).locator('.trace-board'); await traceBody(board);\n  112 |   await endpointContact(board, 'pointerdown'); await expect(pane(page, 0).locator('.board-tip')).toHaveText('Angkat jari untuk siap.');\n> 113 |   await page.clock.fastForward(91000); await expect(page.locator('.round-result')).toBeVisible();\n      |                                                                    ^\n  114 |   await endpointContact(board, 'pointerup');\n  115 |   const attempts = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1') || '{\"attempts\":[]}').attempts);\n  116 |   expect(attempts).toHaveLength(0);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js:113:68"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T16:38:51.281Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\endpoint-finish\\focused-test-results\\endpoint-finish-duo-indepe-20dbb-e-and-complete-exactly-once-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\endpoint-finish\\focused-test-results\\endpoint-finish-duo-indepe-20dbb-e-and-complete-exactly-once-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3b6737ca09fe333d23f4-0ba64428f798e74d0589",
+          "file": "endpoint-finish.spec.js",
+          "line": 98,
+          "column": 37
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-03T16:34:58.394Z",
+    "duration": 263724.08400000003,
+    "expected": 19,
+    "skipped": 1,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

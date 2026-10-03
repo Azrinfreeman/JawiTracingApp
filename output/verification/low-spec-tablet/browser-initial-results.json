@@ -1,0 +1,2637 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.performance.config.js",
+      "tests/browser/low-spec-performance.spec.js",
+      "tests/browser/tracing-terminal.spec.js",
+      "tests/browser/play-tracing.spec.js",
+      "tests/browser/strict-tracing.spec.js",
+      "--workers=2"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.performance.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/low-spec-tablet/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/low-spec-tablet/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/low-spec-tablet/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "low-spec-performance.spec.js",
+      "file": "low-spec-performance.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "native lightweight default and adult override persist without changing fullscreen fit",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30194,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                        "column": 71,
+                        "line": 30
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Buka pratonton dewasa' })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"button button-primary\" aria-label=\"Buka pratonton dewasa\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    56 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  28 |     expect(visible).toBe(true);\n  29 |     await page.screenshot({ path: `${evidence}/${browserName}-light-settings-${width}.png` });\n> 30 |     await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();\n     |                                                                       ^\n  31 |     const { chooseLetter } = await import('./helpers/navigation.js'); await chooseLetter(page, 'Alif');\n  32 |     await expect(page.locator('.lesson-dock')).toHaveCSS('backdrop-filter', 'none');\n  33 |     await expect(page.locator('.play-trail circle')).toHaveCount(0);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js:30:71"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:37:42.462Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-nativ-6d3ba-out-changing-fullscreen-fit-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-nativ-6d3ba-out-changing-fullscreen-fit-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-c3fd27ff77148f176ac0",
+          "file": "low-spec-performance.spec.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "frame-painted progress avoids per-frame control renders and exports all coalesced and release samples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2068,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:38:13.615Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-74c46110127861d1fa3a",
+          "file": "low-spec-performance.spec.js",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "long copy ink has bounded continuous paths and preserves the saved endpoints",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30256,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                        "column": 101,
+                        "line": 72
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Salin sendiri/ })\u001b[22m\n\n\n  70 |\n  71 | test('long copy ink has bounded continuous paths and preserves the saved endpoints', async ({ page }) => {\n> 72 |   await openLesson(page, 'Alif', 'play'); await page.getByRole('button', { name: /Salin sendiri/ }).click();\n     |                                                                                                     ^\n  73 |   await expect(page.locator('.trace-board')).toHaveAttribute('data-interaction-policy', 'free-copy');\n  74 |   await expect(page.getByRole('button', { name: 'Simpan untuk guru' })).toBeEnabled();\n  75 |   const result = await page.locator('.trace-board').evaluate(async svg => {\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js:72:101"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:38:15.939Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-long--f758f-eserves-the-saved-endpoints-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-long--f758f-eserves-the-saved-endpoints-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-eae3bd34058fe7868901",
+          "file": "low-spec-performance.spec.js",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "Duo clock ticks do not rerender either board",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30307,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                        "column": 113,
+                        "line": 102
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Saya sedia!', exact: true }).nth(1)\u001b[22m\n\n\n  100 |   await page.getByRole('button', { name: 'Seterusnya', exact: true }).click(); await page.getByRole('button', { name: 'Uji dua sentuhan' }).click();\n  101 |   await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();\n> 102 |   for (const button of await page.getByRole('button', { name: 'Saya sedia!', exact: true }).all()) await button.click();\n      |                                                                                                                 ^\n  103 |   await page.clock.fastForward(3100); await expect(page.locator('.countdown-overlay')).toHaveCount(0);\n  104 |   await page.clock.runFor(1200); await page.evaluate(() => { window.perfCounters = {}; });\n  105 |   const before = await page.locator('.race-clock').innerText(); await page.clock.runFor(2100);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js:102:113"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:38:47.044Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-Duo-c-eec8f-o-not-rerender-either-board-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-Duo-c-eec8f-o-not-rerender-either-board-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-136ca18597f5057e2949",
+          "file": "low-spec-performance.spec.js",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "native lightweight default and adult override persist without changing fullscreen fit",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30203,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                        "column": 71,
+                        "line": 30
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Buka pratonton dewasa' })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"button button-primary\" aria-label=\"Buka pratonton dewasa\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    43 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  28 |     expect(visible).toBe(true);\n  29 |     await page.screenshot({ path: `${evidence}/${browserName}-light-settings-${width}.png` });\n> 30 |     await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();\n     |                                                                       ^\n  31 |     const { chooseLetter } = await import('./helpers/navigation.js'); await chooseLetter(page, 'Alif');\n  32 |     await expect(page.locator('.lesson-dock')).toHaveCSS('backdrop-filter', 'none');\n  33 |     await expect(page.locator('.play-trail circle')).toHaveCount(0);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js:30:71"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:40:03.986Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-nativ-6d3ba-out-changing-fullscreen-fit-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-nativ-6d3ba-out-changing-fullscreen-fit-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-d0bed4216eafbaf0debd",
+          "file": "low-spec-performance.spec.js",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "frame-painted progress avoids per-frame control renders and exports all coalesced and release samples",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 14555,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m26\u001b[39m\nReceived:   \u001b[31m28\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m26\u001b[39m\nReceived:   \u001b[31m28\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js:65:38",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                      "column": 38,
+                      "line": 65
+                    },
+                    "snippet": "  63 |   await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Alif!' })).toBeVisible();\n  64 |   expect(result.counters.render).toBeLessThan(result.frames / 2);\n> 65 |   expect(result.counters.diagnostic).toBeLessThan(result.frames / 2);\n     |                                      ^\n  66 |   const diagnostic = await exportDiagnostic(page);\n  67 |   expect(diagnostic.rawInk[0]).toHaveLength(result.samples); expect(diagnostic.timing.samples).toBe(result.samples);\n  68 |   expect(diagnostic.phase).toBe('complete'); expect(diagnostic.rawGestures[0].status).toBe('commit');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                        "column": 38,
+                        "line": 65
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m26\u001b[39m\nReceived:   \u001b[31m28\u001b[39m\n\n  63 |   await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Alif!' })).toBeVisible();\n  64 |   expect(result.counters.render).toBeLessThan(result.frames / 2);\n> 65 |   expect(result.counters.diagnostic).toBeLessThan(result.frames / 2);\n     |                                      ^\n  66 |   const diagnostic = await exportDiagnostic(page);\n  67 |   expect(diagnostic.rawInk[0]).toHaveLength(result.samples); expect(diagnostic.timing.samples).toBe(result.samples);\n  68 |   expect(diagnostic.phase).toBe('complete'); expect(diagnostic.rawGestures[0].status).toBe('commit');\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js:65:38"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:40:34.986Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-frame-0bbb7-alesced-and-release-samples-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-frame-0bbb7-alesced-and-release-samples-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                    "column": 38,
+                    "line": 65
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-95e386ab8581b4c6436e",
+          "file": "low-spec-performance.spec.js",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "long copy ink has bounded continuous paths and preserves the saved endpoints",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30288,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                        "column": 101,
+                        "line": 72
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Salin sendiri/ })\u001b[22m\n\n\n  70 |\n  71 | test('long copy ink has bounded continuous paths and preserves the saved endpoints', async ({ page }) => {\n> 72 |   await openLesson(page, 'Alif', 'play'); await draw(page, (await boardModels(page)).strokes[0]);\n     |                                                                                                  ^\n  73 |   await page.getByRole('button', { name: 'Sekarang, cuba salin sendiri', exact: true }).click();\n  74 |   await expect(page.locator('.trace-board')).toHaveAttribute('data-interaction-policy', 'free-copy');\n  75 |   await expect(page.getByRole('button', { name: 'Simpan untuk guru' })).toBeEnabled();\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js:72:101"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:40:50.422Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-long--f758f-eserves-the-saved-endpoints-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-long--f758f-eserves-the-saved-endpoints-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-df7cdea1a68c3684a2c7",
+          "file": "low-spec-performance.spec.js",
+          "line": 71,
+          "column": 1
+        },
+        {
+          "title": "Duo clock ticks do not rerender either board",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30383,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+                        "column": 113,
+                        "line": 102
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Saya sedia!', exact: true }).nth(1)\u001b[22m\n\n\n  100 |   await page.getByRole('button', { name: 'Duo 1v1', exact: true }).click(); await page.getByRole('button', { name: 'Jom mula', exact: true }).click();\n  101 |   await page.getByRole('button', { name: 'Seterusnya', exact: true }).click(); await page.getByRole('button', { name: 'Uji dua sentuhan' }).click();\n> 102 |   await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();\n      |                                                                                   ^\n  103 |   for (let slot = 0; slot < 2; slot++) await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button', { name: 'Saya sedia!', exact: true }).click();\n  104 |   await page.clock.fastForward(3100); await expect(page.locator('.countdown-overlay')).toHaveCount(0);\n  105 |   await page.clock.runFor(1200); await page.evaluate(() => { window.perfCounters = {}; });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js:102:113"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:21.692Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-Duo-c-eec8f-o-not-rerender-either-board-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\low-spec-performance-Duo-c-eec8f-o-not-rerender-either-board-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f1526beb0cfae86c4943-ca6e0bc4fe88d0638b7b",
+          "file": "low-spec-performance.spec.js",
+          "line": 97,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "play-tracing.spec.js",
+      "file": "play-tracing.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4172,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:37:42.461Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-e744f864e4eef9da99c3",
+          "file": "play-tracing.spec.js",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2945,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:37:46.876Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-a686bce692b9bde7169f",
+          "file": "play-tracing.spec.js",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5062,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:37:49.835Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-2583a1815ac29e9dbc75",
+          "file": "play-tracing.spec.js",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4976,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:37:54.909Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-26ce0c5a5da7c159dd10",
+          "file": "play-tracing.spec.js",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "native pad drag outside does not place a dot; a new contained press can finish",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:37:59.896Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-e74823b45569f6592dfa",
+          "file": "play-tracing.spec.js",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3589,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:38:04.432Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-f884f7c0514ab530a5e4",
+          "file": "play-tracing.spec.js",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 60217,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js",
+                        "column": 69,
+                        "line": 7
+                      },
+                      "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Buka pratonton dewasa' })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"button button-primary\" aria-label=\"Buka pratonton dewasa\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    114 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at helpers\\tracing.js:7\n\n   5 |   await page.goto('/'); await dismissSplash(page);\n   6 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();\n>  7 |   await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();\n     |                                                                     ^\n   8 |   if (mode !== 'play') await selectPractice(page, mode);\n   9 |   await chooseLetter(page, label);\n  10 |   await expect(page.locator('.start-dot')).toBeVisible();\n    at openLesson (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js:7:69)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\play-tracing.spec.js:116:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:38:08.031Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\play-tracing-phone-tablet--25413-egible-cues-and-no-overflow-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\play-tracing-phone-tablet--25413-egible-cues-and-no-overflow-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-67a5bacebaf80ca1f006",
+          "file": "play-tracing.spec.js",
+          "line": 113,
+          "column": 1
+        },
+        {
+          "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9721,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:09.276Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-7d1525e63cf805a722e4",
+          "file": "play-tracing.spec.js",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6323,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:19.241Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-4c9c71b718b89469e93b",
+          "file": "play-tracing.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4762,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:25.578Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-47f4524e729d7b61d9a3",
+          "file": "play-tracing.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4580,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:30.352Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-d8c8d6ee4d55224a6e72",
+          "file": "play-tracing.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:53.364Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-7b4b0a06e1456eefeeb8",
+          "file": "play-tracing.spec.js",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8263,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:05.895Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-301e2e488033276e6f58",
+          "file": "play-tracing.spec.js",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10126,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:14.179Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-0be18c7971e01f0ad179",
+          "file": "play-tracing.spec.js",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11608,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:24.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-18b01e48de93a0bd8dc7",
+          "file": "play-tracing.spec.js",
+          "line": 72,
+          "column": 1
+        },
+        {
+          "title": "native pad drag outside does not place a dot; a new contained press can finish",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9451,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:35.938Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-30a8901337c967e5cc50",
+          "file": "play-tracing.spec.js",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11330,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:45.400Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-92f9a5177330a49b8895",
+          "file": "play-tracing.spec.js",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 60229,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js",
+                        "column": 69,
+                        "line": 7
+                      },
+                      "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Buka pratonton dewasa' })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"button button-primary\" aria-label=\"Buka pratonton dewasa\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    88 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at helpers\\tracing.js:7\n\n   5 |   await page.goto('/'); await dismissSplash(page);\n   6 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();\n>  7 |   await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();\n     |                                                                     ^\n   8 |   if (mode !== 'play') await selectPractice(page, mode);\n   9 |   await chooseLetter(page, label);\n  10 |   await expect(page.locator('.start-dot')).toBeVisible();\n    at openLesson (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js:7:69)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\play-tracing.spec.js:116:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:56.742Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\play-tracing-phone-tablet--25413-egible-cues-and-no-overflow-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\play-tracing-phone-tablet--25413-egible-cues-and-no-overflow-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-f192e0d376ecce2d9d13",
+          "file": "play-tracing.spec.js",
+          "line": 113,
+          "column": 1
+        },
+        {
+          "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11579,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:43:57.815Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-5aca2df3235decfc1dfb",
+          "file": "play-tracing.spec.js",
+          "line": 128,
+          "column": 1
+        },
+        {
+          "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7585,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:44:09.488Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-1349e66f67e1fce81d6a",
+          "file": "play-tracing.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7529,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:44:17.085Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-5fc0a826fad7d7d6f185",
+          "file": "play-tracing.spec.js",
+          "line": 139,
+          "column": 3
+        },
+        {
+          "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8134,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:44:24.624Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ed8764a1b01f6650dd6a-c6f4c366587e1395654c",
+          "file": "play-tracing.spec.js",
+          "line": 139,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "strict-tracing.spec.js",
+      "file": "strict-tracing.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:18.426Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-8390172f6e2a6a3d80b9",
+          "file": "strict-tracing.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:23.840Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-b1e75152a93590e01b7c",
+          "file": "strict-tracing.spec.js",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5297,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:29.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-c3db20297322c3c5e721",
+          "file": "strict-tracing.spec.js",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3467,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:34.337Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-0c90624efc3e974eff2f",
+          "file": "strict-tracing.spec.js",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10349,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    14 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    14 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js:62:44",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js",
+                      "column": 44,
+                      "line": 62
+                    },
+                    "snippet": "  60 |   await expect(page.locator('.gesture-blocked')).toBeVisible(); await page.mouse.up();\n  61 |   await draw(page, [model.dots[0], model.dots[1]]);\n> 62 |   await expect(page.locator('.pupil-ink')).toHaveCount(1);\n     |                                            ^\n  63 |   await expect(page.locator('.validated-dot')).toHaveCount(0);\n  64 |   await expect(page.locator('.trace-board')).toBeVisible();\n  65 |   await page.mouse.click(model.dots[0].x + model.scale * 5, model.dots[0].y);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js",
+                        "column": 44,
+                        "line": 62
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    14 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n\n\n  60 |   await expect(page.locator('.gesture-blocked')).toBeVisible(); await page.mouse.up();\n  61 |   await draw(page, [model.dots[0], model.dots[1]]);\n> 62 |   await expect(page.locator('.pupil-ink')).toHaveCount(1);\n     |                                            ^\n  63 |   await expect(page.locator('.validated-dot')).toHaveCount(0);\n  64 |   await expect(page.locator('.trace-board')).toBeVisible();\n  65 |   await page.mouse.click(model.dots[0].x + model.scale * 5, model.dots[0].y);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js:62:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:37.820Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\strict-tracing-Ta-dot-scri-8a08b-r-leave-trails-or-fill-dots-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\strict-tracing-Ta-dot-scri-8a08b-r-leave-trails-or-fill-dots-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js",
+                    "column": 44,
+                    "line": 62
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-398f89a7f0a6af0146ea",
+          "file": "strict-tracing.spec.js",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11380,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:50.844Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-d7bf60ef02e62739a6af",
+          "file": "strict-tracing.spec.js",
+          "line": 91,
+          "column": 1
+        },
+        {
+          "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9390,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:18.686Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-0f981f8f6bc17a027606",
+          "file": "strict-tracing.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10240,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:28.176Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-fd3fafa52456d2e91b8c",
+          "file": "strict-tracing.spec.js",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:38.427Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-cc49671a9e48415ba3a6",
+          "file": "strict-tracing.spec.js",
+          "line": 22,
+          "column": 3
+        },
+        {
+          "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9707,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:48.600Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-070b0e75b3b7b5c9abe0",
+          "file": "strict-tracing.spec.js",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 15641,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    13 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    13 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js:62:44",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js",
+                      "column": 44,
+                      "line": 62
+                    },
+                    "snippet": "  60 |   await expect(page.locator('.gesture-blocked')).toBeVisible(); await page.mouse.up();\n  61 |   await draw(page, [model.dots[0], model.dots[1]]);\n> 62 |   await expect(page.locator('.pupil-ink-gesture')).toHaveCount(1);\n     |                                            ^\n  63 |   await expect(page.locator('.validated-dot')).toHaveCount(0);\n  64 |   await expect(page.locator('.trace-board')).toBeVisible();\n  65 |   await page.mouse.click(model.dots[0].x + model.scale * 5, model.dots[0].y);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js",
+                        "column": 44,
+                        "line": 62
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    13 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n\n\n  60 |   await expect(page.locator('.gesture-blocked')).toBeVisible(); await page.mouse.up();\n  61 |   await draw(page, [model.dots[0], model.dots[1]]);\n> 62 |   await expect(page.locator('.pupil-ink-gesture')).toHaveCount(1);\n     |                                            ^\n  63 |   await expect(page.locator('.validated-dot')).toHaveCount(0);\n  64 |   await expect(page.locator('.trace-board')).toBeVisible();\n  65 |   await page.mouse.click(model.dots[0].x + model.scale * 5, model.dots[0].y);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js:62:44"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:42:58.323Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\strict-tracing-Ta-dot-scri-8a08b-r-leave-trails-or-fill-dots-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\strict-tracing-Ta-dot-scri-8a08b-r-leave-trails-or-fill-dots-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js",
+                    "column": 44,
+                    "line": 62
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-b9c5ee6bd16a67d351bd",
+          "file": "strict-tracing.spec.js",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 25529,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:43:15.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4d41f512a5671f13412-acbf3bc27046efab5b54",
+          "file": "strict-tracing.spec.js",
+          "line": 91,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tracing-terminal.spec.js",
+      "file": "tracing-terminal.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Alif 94% recovery, held readiness and single release 320x740",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 90294,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js",
+                        "column": 69,
+                        "line": 7
+                      },
+                      "message": "Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Buka pratonton dewasa' })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"button button-primary\" aria-label=\"Buka pratonton dewasa\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    171 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at helpers\\tracing.js:7\n\n   5 |   await page.goto('/'); await dismissSplash(page);\n   6 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();\n>  7 |   await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();\n     |                                                                     ^\n   8 |   if (mode !== 'play') await selectPractice(page, mode);\n   9 |   await chooseLetter(page, label);\n  10 |   await expect(page.locator('.start-dot')).toBeVisible();\n    at openLesson (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js:7:69)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js:34:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:39:34.967Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\tracing-terminal-Alif-94-r-c86f7--and-single-release-320x740-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\tracing-terminal-Alif-94-r-c86f7--and-single-release-320x740-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-d8520fa112756e628625",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4847,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:06.555Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-b01b6f06f7ffed180f0e",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2812,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:11.800Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-6916f8aa5778676fa196",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3033,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:14.625Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-e1b8f7ba5c0f558633b9",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4659,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:17.671Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-5e606148a1018e6ff383",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11833,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:22.341Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-9f4df8b24e54454861c5",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "actual up movement completes; coalesced order and empty fallback are preserved",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3587,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:34.186Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-9e24f12124e4f1b306f5",
+          "file": "tracing-terminal.spec.js",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "native CDP touch recovers the remaining Alif tail",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2606,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:37.783Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-4aabc03c9e29722223e7",
+          "file": "tracing-terminal.spec.js",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4093,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:40.400Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-6407e4ae515c94510cae",
+          "file": "tracing-terminal.spec.js",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "all 37 authored models retain valid play sequences and separate dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 32921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:41:44.507Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-2585ced78b23826dfc86",
+          "file": "tracing-terminal.spec.js",
+          "line": 123,
+          "column": 1
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 320x740",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 90213,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js",
+                        "column": 69,
+                        "line": 7
+                      },
+                      "message": "Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Buka pratonton dewasa' })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"button button-primary\" aria-label=\"Buka pratonton dewasa\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    136 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m        - element is visible, enabled and stable\u001b[22m\n\u001b[2m        - scrolling into view if needed\u001b[22m\n\u001b[2m        - done scrolling\u001b[22m\n\u001b[2m        - <span role=\"status\">Disimpan pada peranti ini.</span> from <footer class=\"teacher-footer\">…</footer> subtree intercepts pointer events\u001b[22m\n\u001b[2m      - retrying click action\u001b[22m\n\u001b[2m        - waiting 500ms\u001b[22m\n\n\n   at helpers\\tracing.js:7\n\n   5 |   await page.goto('/'); await dismissSplash(page);\n   6 |   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();\n>  7 |   await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();\n     |                                                                     ^\n   8 |   if (mode !== 'play') await selectPractice(page, mode);\n   9 |   await chooseLetter(page, label);\n  10 |   await expect(page.locator('.start-dot')).toBeVisible();\n    at openLesson (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js:7:69)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js:34:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:43:40.759Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\tracing-terminal-Alif-94-r-c86f7--and-single-release-320x740-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\low-spec-tablet\\test-results\\tracing-terminal-Alif-94-r-c86f7--and-single-release-320x740-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-d1c7c0ed0f9cd7d122c5",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4316,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:45:11.588Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-a089d977e904c37d0189",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7230,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:45:15.993Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-7d37c8c5423a17d2c9a9",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7102,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:45:23.234Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-1fe6123d899b2034eb86",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16352,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:45:30.350Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-d4722d533550453d0bb9",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "Alif 94% recovery, held readiness and single release 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 69581,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:45:46.717Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-c0074fce2124eabc79f8",
+          "file": "tracing-terminal.spec.js",
+          "line": 32,
+          "column": 3
+        },
+        {
+          "title": "actual up movement completes; coalesced order and empty fallback are preserved",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13734,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:46:56.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-66013a4dda9a3adc77e2",
+          "file": "tracing-terminal.spec.js",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "native CDP touch recovers the remaining Alif tail",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native emulated touch requires Chromium CDP",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js",
+                    "line": 91,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 268,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:47:10.065Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native emulated touch requires Chromium CDP",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js",
+                        "line": 91,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-eb979eb8fa5b8fb682ae",
+          "file": "tracing-terminal.spec.js",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25743,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:47:10.344Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-76a4c641abd11a911f9f",
+          "file": "tracing-terminal.spec.js",
+          "line": 104,
+          "column": 1
+        },
+        {
+          "title": "all 37 authored models retain valid play sequences and separate dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 220485,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T13:47:36.101Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-1313bcf0bce4c2d71f80",
+          "file": "tracing-terminal.spec.js",
+          "line": 123,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-03T13:37:41.798Z",
+    "duration": 815238.201,
+    "expected": 48,
+    "skipped": 1,
+    "unexpected": 13,
+    "flaky": 0
+  }
+}

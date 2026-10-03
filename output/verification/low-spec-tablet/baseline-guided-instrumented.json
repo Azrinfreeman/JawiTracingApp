@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-03T13:34:20.549Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "platform": "win32",
+  "os": "10.0.26200",
+  "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "mode": "guided",
+  "presentation": "full",
+  "input": "frame-paced synthetic touch, four ordered coalesced samples per move, 5 logical-unit spacing, fixed sine jitter",
+  "scope": "Headless software pipeline timing; no physical device latency. Publications observe actual frontier/ink mutations.",
+  "inputs": {
+    "src/tracing/geometry.js": "f8b0f600007001fb656199ad1583c2db71e5c17c0e2938a0ceb611ca1078dce5",
+    "src/tracing/playMatcher.js": "a72831fe63b551bbfc3b63edb0bb0c8a58ee496579c2cfa58344fb430d1b1f6d",
+    "src/tracing/inputController.js": "8ef7c7922ebd9fcc20a2f498c5f1aebf5de6957536c497b1cd4af98cb4a20baa",
+    "src/components/TraceBoard.jsx": "e56f0028f0fb3fab51283f8f0cb745f1ef352c75a2e146a160bbc57922c77805",
+    "src/content/letters.json": "0fd65d9ee03c83736f5e5b0ae1b52c6d1cd19ae38c77eb3f71f53047649382fd",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "scripts/measure-tracing.js": "ce60cc4ed2c8b00f8c87f4b3d32892add79c3818f2348093ef1dd1aff01f7ebd"
+  },
+  "results": [
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "guided-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 7.899999901652336,
+        "maxMs": 0.5999999940395355
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.20000000298023224,
+        "p95": 0.5999999940395355,
+        "max": 1.1000000089406967
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 72,
+        "p50": 16.599999994039536,
+        "p95": 17.799999997019768,
+        "max": 18.099999994039536
+      },
+      "longTaskMs": [
+        51
+      ],
+      "rafWorkMs": {
+        "count": 217,
+        "p50": 0,
+        "p95": 0.29999999701976776,
+        "max": 0.7000000029802322
+      },
+      "attributeWrites": 424,
+      "matrixReads": 73,
+      "pathVertices": 10295,
+      "largestPathRewrite": 284,
+      "renderCount": null,
+      "diagnosticCount": null,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 0.9998721191492174,
+      "outcome": "guidedComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "guided-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 7.599999979138374,
+        "maxMs": 0.7000000029802322
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.20000000298023224,
+        "p95": 0.5,
+        "max": 1.0999999940395355
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.699999999999818,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 72,
+        "p50": 16.599999994039536,
+        "p95": 17.399999991059303,
+        "max": 17.799999997019768
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 217,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.29999999701976776
+      },
+      "attributeWrites": 424,
+      "matrixReads": 73,
+      "pathVertices": 10295,
+      "largestPathRewrite": 284,
+      "renderCount": null,
+      "diagnosticCount": null,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 0.9998721191492174,
+      "outcome": "guidedComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 3840,
+        "height": 2160
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "guided-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 8.199999958276749,
+        "maxMs": 0.5999999940395355
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.20000000298023224,
+        "p95": 0.7000000029802322,
+        "max": 1.6000000089406967
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.700000000000045,
+        "p95": 33.40000000000009,
+        "max": 66.59999999999991
+      },
+      "publicationDelayMs": {
+        "count": 72,
+        "p50": 16.900000005960464,
+        "p95": 33.6000000089407,
+        "max": 61.79999999701977
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 217,
+        "p50": 0,
+        "p95": 0.30000001192092896,
+        "max": 0.7000000029802322
+      },
+      "attributeWrites": 424,
+      "matrixReads": 73,
+      "pathVertices": 10295,
+      "largestPathRewrite": 284,
+      "renderCount": null,
+      "diagnosticCount": null,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 0.9998721191492174,
+      "outcome": "guidedComplete"
+    }
+  ],
+  "servedBuild": {
+    "HtmlSha256": "f12059faf0921d96e91c6ed71577da777135e69ef68b120d979867ed3334d31a",
+    "Script": "assets/index-B-3mpeEM.js",
+    "ScriptSha256": "4349ef3034339c8f86e94371fdcd77d8861b33b77169bcafe41654095da9486e",
+    "Css": "assets/index-CuXt30Tu.css",
+    "CssSha256": "e837577893e2ee5b6368af7c22d0cf486ffd68b6c796596c011030a4cdbbe0e1"
+  },
+  "inputsScope": "Local source at measurement time; executed application is the unchanged 1.0.3 production bundle identified by servedBuild and before-inputs.json."
+}

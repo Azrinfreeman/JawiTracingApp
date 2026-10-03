@@ -1,0 +1,170 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c playwright.fullscreen.config.js fullscreen-layout.spec.js --project=chromium --project=webkit --workers=2 --grep 1280x800|800x1280|3840x2160|wheel, keyboard
+
+Running 20 tests using 2 workers
+
+(node:31592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:33992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/20] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x800
+[2/20] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x800
+[3/20] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 800x1280
+[4/20] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 3840x2160
+[5/20] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1280x800
+[6/20] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 800x1280
+[7/20] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 800x1280
+[8/20] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 3840x2160
+[9/20] [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 3840x2160
+[10/20] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x800
+[11/20] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 800x1280
+[12/20] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 3840x2160
+[13/20] [chromium] › tests\browser\fullscreen-layout.spec.js:83:1 › wheel, keyboard and supported native touch panning cannot scroll game screens
+  1) [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 3840x2160 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Teruskan', exact: true })
+        - locator resolved to <button class="button button-primary splash-continue">…</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is not stable
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+      - element was detached from the DOM, retrying
+
+
+       at helpers\navigation.js:5
+
+      3 | export async function dismissSplash(page) {
+      4 |   const continueButton = page.getByRole('button', { name: 'Teruskan', exact: true });
+    > 5 |   if (await continueButton.isVisible()) await continueButton.click();
+        |                                                              ^
+      6 |   await expect(page.locator('.splash-screen')).toHaveCount(0);
+      7 |   await expect(page.getByRole('button', { name: 'Jom mula', exact: true })).toBeVisible();
+      8 | }
+        at dismissSplash (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\helpers\navigation.js:5:62)
+        at welcome (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:19:51)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:22:46
+
+    Error Context: test-results\fullscreen-layout-fitted-m-609e0--teacher-pages-at-3840x2160-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-fitted-m-609e0--teacher-pages-at-3840x2160-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-fitted-m-609e0--teacher-pages-at-3840x2160-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:29152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[14/20] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1280x800
+[15/20] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 800x1280
+[16/20] [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 3840x2160
+  2) [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 3840x2160 
+
+    Test timeout of 90000ms exceeded.
+
+    Error: locator.click: Test timeout of 90000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Teruskan', exact: true })
+        - locator resolved to <button class="button button-primary splash-continue">…</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is not stable
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+      - element was detached from the DOM, retrying
+
+
+       at helpers\navigation.js:5
+
+      3 | export async function dismissSplash(page) {
+      4 |   const continueButton = page.getByRole('button', { name: 'Teruskan', exact: true });
+    > 5 |   if (await continueButton.isVisible()) await continueButton.click();
+        |                                                              ^
+      6 |   await expect(page.locator('.splash-screen')).toHaveCount(0);
+      7 |   await expect(page.getByRole('button', { name: 'Jom mula', exact: true })).toBeVisible();
+      8 | }
+        at dismissSplash (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\helpers\navigation.js:5:62)
+        at welcome (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:19:51)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:36:69
+
+    Error Context: test-results\fullscreen-layout-all-37-c-99370-and-guides-fit-at-3840x2160-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-all-37-c-99370-and-guides-fit-at-3840x2160-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-all-37-c-99370-and-guides-fit-at-3840x2160-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:29444) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[17/20] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x800
+[18/20] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 800x1280
+[19/20] [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 3840x2160
+  3) [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 3840x2160 
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.click: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('button', { name: 'Teruskan', exact: true })
+        - locator resolved to <button class="button button-primary splash-continue">…</button>
+      - attempting click action
+        - waiting for element to be visible, enabled and stable
+        - element is not stable
+      - retrying click action
+        - waiting for element to be visible, enabled and stable
+      - element was detached from the DOM, retrying
+
+
+       at helpers\navigation.js:5
+
+      3 | export async function dismissSplash(page) {
+      4 |   const continueButton = page.getByRole('button', { name: 'Teruskan', exact: true });
+    > 5 |   if (await continueButton.isVisible()) await continueButton.click();
+        |                                                              ^
+      6 |   await expect(page.locator('.splash-screen')).toHaveCount(0);
+      7 |   await expect(page.getByRole('button', { name: 'Jom mula', exact: true })).toBeVisible();
+      8 | }
+        at dismissSplash (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\helpers\navigation.js:5:62)
+        at welcome (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:19:51)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:59:46
+
+    Error Context: test-results\fullscreen-layout-Duo-has--24414-om-small-space-at-3840x2160-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-Duo-has--24414-om-small-space-at-3840x2160-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-Duo-has--24414-om-small-space-at-3840x2160-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:41448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[20/20] [webkit] › tests\browser\fullscreen-layout.spec.js:83:1 › wheel, keyboard and supported native touch panning cannot scroll game screens
+  3 failed
+    [webkit] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 3840x2160 
+    [webkit] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 3840x2160 
+    [webkit] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 3840x2160 
+  17 passed (4.4m)

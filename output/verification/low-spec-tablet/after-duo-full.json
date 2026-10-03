@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-03T15:13:21.174Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "platform": "win32",
+  "os": "10.0.26200",
+  "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "mode": "duo",
+  "presentation": "full",
+  "input": "frame-paced synthetic touch, four ordered coalesced samples per move, 5 logical-unit spacing, fixed sine jitter",
+  "scope": "Headless software pipeline timing; no physical device latency. Publications observe actual frontier/ink mutations.",
+  "servedBuild": {
+    "/assets/index-D2FnzuJ9.js": "617318a16fd61ce482980b93b144b82666151110575253b14851b9f5bf685866",
+    "/assets/index-CCf4Eyi8.css": "3021cca9d565933280d2bd41ca416b48841034ebb71df63f9d70bffc9ac680f7"
+  },
+  "inputsScope": "Local files at measurement time; servedBuild identifies the executed production bundle.",
+  "inputs": {
+    "src/tracing/geometry.js": "f8b0f600007001fb656199ad1583c2db71e5c17c0e2938a0ceb611ca1078dce5",
+    "src/tracing/playMatcher.js": "a72831fe63b551bbfc3b63edb0bb0c8a58ee496579c2cfa58344fb430d1b1f6d",
+    "src/tracing/inputController.js": "8ef7c7922ebd9fcc20a2f498c5f1aebf5de6957536c497b1cd4af98cb4a20baa",
+    "src/components/TraceBoard.jsx": "1c544ccbd053a0f336195b52dcee5654e5813b880b44a6a3a903b6059b48379f",
+    "src/content/letters.json": "0fd65d9ee03c83736f5e5b0ae1b52c6d1cd19ae38c77eb3f71f53047649382fd",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "scripts/measure-tracing.js": "c469f5a9e6295f2804a9da033d0cb4cc2c596ce022e328150b34f05fe66ee656"
+  },
+  "results": [
+    {
+      "label": "Duo",
+      "revision": null,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 254,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": null,
+      "batchMs": {
+        "count": 68,
+        "p50": 0.4000000059604645,
+        "p95": 1.0999999940395355,
+        "max": 2.2000000029802322
+      },
+      "frameIntervalMs": {
+        "count": 33,
+        "p50": 16.699999999999818,
+        "p95": 16.799999999999272,
+        "max": 33.30000000000018
+      },
+      "publicationDelayMs": {
+        "count": 66,
+        "p50": 15.5,
+        "p95": 16.799999997019768,
+        "max": 17.899999991059303
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 132,
+        "p50": 0,
+        "p95": 0.30000001192092896,
+        "max": 0.5999999940395355
+      },
+      "attributeWrites": 1528,
+      "matrixReads": 68,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 14,
+      "diagnosticCount": null,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": null,
+      "outcome": "two independently validated play completions"
+    },
+    {
+      "label": "Duo",
+      "revision": null,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 254,
+      "profile": "play-touch-standard-v1",
+      "sampleHandler": null,
+      "batchMs": {
+        "count": 68,
+        "p50": 0.4000000059604645,
+        "p95": 1,
+        "max": 1.7000000029802322
+      },
+      "frameIntervalMs": {
+        "count": 33,
+        "p50": 16.699999999999818,
+        "p95": 16.800000000000182,
+        "max": 33.29999999999927
+      },
+      "publicationDelayMs": {
+        "count": 66,
+        "p50": 15.599999994039536,
+        "p95": 17.200000002980232,
+        "max": 18.700000002980232
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 132,
+        "p50": 0,
+        "p95": 0.29999999701976776,
+        "max": 0.9000000059604645
+      },
+      "attributeWrites": 1528,
+      "matrixReads": 68,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 16,
+      "diagnosticCount": null,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": null,
+      "outcome": "two independently validated play completions"
+    }
+  ]
+}

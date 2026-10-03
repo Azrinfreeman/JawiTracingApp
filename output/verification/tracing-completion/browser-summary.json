@@ -1,0 +1,954 @@
+{
+  "date": "2026-10-03T09:43:22.630Z",
+  "build": "index-E1jWQ9Ri.js / index-B_G2-FFu.css",
+  "method": "Latest result per file/project/title; changed-fixture and native-DPR follow-ups replace earlier failures. Main Chromium DPR 1, ordinary WebKit DPR 2; isolated final checks DPR 1.",
+  "reports": [
+    "browser-results.json",
+    "browser-followup.json",
+    "browser-final.json"
+  ],
+  "unique": 134,
+  "passed": 127,
+  "skipped": 7,
+  "unresolved": [],
+  "cases": [
+    {
+      "file": "book-layout.spec.js",
+      "project": "chromium",
+      "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "chromium",
+      "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "chromium",
+      "title": "held tracing and demonstrations cannot turn; interruption cannot strand a pending turn",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "chromium",
+      "title": "copy exit offers save, discard and return without silently losing ink",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "chromium",
+      "title": "filtered contents, keyboard turns and missing animation events keep one destination",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "chromium",
+      "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "chromium",
+      "title": "native touch completion needs a fresh page turn at 768 and DPR 2",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "chromium",
+      "title": "native touch completion needs a fresh page turn at 390 and DPR 3",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "webkit",
+      "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "webkit",
+      "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "webkit",
+      "title": "held tracing and demonstrations cannot turn; interruption cannot strand a pending turn",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "webkit",
+      "title": "copy exit offers save, discard and return without silently losing ink",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "webkit",
+      "title": "filtered contents, keyboard turns and missing animation events keep one destination",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "webkit",
+      "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "webkit",
+      "title": "native touch completion needs a fresh page turn at 768 and DPR 2",
+      "status": "skipped",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "project": "webkit",
+      "title": "native touch completion needs a fresh page turn at 390 and DPR 3",
+      "status": "skipped",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "kaf play: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "ga play: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "kaf guided: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "ga guided: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "kaf precision: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "ga precision: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "Ga equivalent dot pad completes only after its connected body",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "play: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "guided: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "precision: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "kaf: demo uses the connected model, then copying keeps original coordinates and save protection",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "ga: demo uses the connected model, then copying keeps original coordinates and save protection",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "catalogue, help, teacher and audio illustrations agree; revised lessons remain gated",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 390x844",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1024x768",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 768x1024",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1920x1080",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 3840x2160",
+      "status": "passed",
+      "evidence": "browser-followup.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "chromium",
+      "title": "native touch follows the corrected Ga body and upper dot",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "kaf play: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "ga play: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "kaf guided: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "ga guided: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "kaf precision: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "ga precision: continuous body and separate required dot complete the revised preview",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "Ga equivalent dot pad completes only after its connected body",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "play: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "guided: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "precision: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "kaf: demo uses the connected model, then copying keeps original coordinates and save protection",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "ga: demo uses the connected model, then copying keeps original coordinates and save protection",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "catalogue, help, teacher and audio illustrations agree; revised lessons remain gated",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 390x844",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1024x768",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 768x1024",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1920x1080",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "Kaf/Ga complete model, guides, dot and stable completion fit 3840x2160",
+      "status": "passed",
+      "evidence": "browser-followup.json"
+    },
+    {
+      "file": "kaf-ga.spec.js",
+      "project": "webkit",
+      "title": "native touch follows the corrected Ga body and upper dot",
+      "status": "skipped",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "project": "chromium",
+      "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "project": "chromium",
+      "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "project": "chromium",
+      "title": "demonstrations and blank copying have no numbered touch guides",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "project": "chromium",
+      "title": "all 12 initial guides are legible and contained on phone and tablet",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "project": "webkit",
+      "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "project": "webkit",
+      "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "project": "webkit",
+      "title": "demonstrations and blank copying have no numbered touch guides",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "project": "webkit",
+      "title": "all 12 initial guides are legible and contained on phone and tablet",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "native pad drag outside does not place a dot; a new contained press can finish",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "chromium",
+      "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "native pad drag outside does not place a dot; a new contained press can finish",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "diagnostic gesture cap offers continuation and retains the coloured prefix",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "phone, tablet and short landscape keep large controls, legible cues and no overflow",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "idle hint is gentle and reduced-motion reward stays still; replay is deliberate",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "project": "webkit",
+      "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "chromium",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "chromium",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "chromium",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "chromium",
+      "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "chromium",
+      "title": "held dot pad and virtual activation cannot complete during pause or countdown",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "chromium",
+      "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+      "status": "passed",
+      "evidence": "browser-final.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "webkit",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "webkit",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "status": "skipped",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "webkit",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "status": "skipped",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "webkit",
+      "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "webkit",
+      "title": "held dot pad and virtual activation cannot complete during pause or countdown",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "project": "webkit",
+      "title": "native portrait Duo dot controls fit, complete together and appear in teacher history",
+      "status": "skipped",
+      "evidence": "browser-final.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "chromium",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "chromium",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "chromium",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "chromium",
+      "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "chromium",
+      "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "chromium",
+      "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "webkit",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "webkit",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "webkit",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "webkit",
+      "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "webkit",
+      "title": "Ta dot scribbles and cross-target drags never leave trails or fill dots",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "project": "webkit",
+      "title": "accepted jitter is actual raw ink within the displayed corridor on phone and desktop",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "project": "chromium",
+      "title": "native emulated touch at 768 CSS pixels and DPR 2",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "project": "chromium",
+      "title": "native emulated touch at 390 CSS pixels and DPR 3",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "project": "chromium",
+      "title": "native emulated pen preserves pointer type and completes a strict stroke",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "project": "chromium",
+      "title": "play touch preserves colour after an excursion at 768 CSS pixels and DPR 2",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "project": "chromium",
+      "title": "play touch preserves colour after an excursion at 390 CSS pixels and DPR 3",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "project": "chromium",
+      "title": "native emulated pen completes assisted play with its own recorded input type",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "Alif 94% recovery, held readiness and single release 320x740",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "Alif 94% recovery, held readiness and single release 390x844",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "Alif 94% recovery, held readiness and single release 1024x768",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "Alif 94% recovery, held readiness and single release 768x1024",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "Alif 94% recovery, held readiness and single release 1920x1080",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "Alif 94% recovery, held readiness and single release 3840x2160",
+      "status": "passed",
+      "evidence": "browser-followup.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "actual up movement completes; coalesced order and empty fallback are preserved",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "native CDP touch recovers the remaining Alif tail",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "all 37 authored models retain valid play sequences and separate dots",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "Alif 94% recovery, held readiness and single release 320x740",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "Alif 94% recovery, held readiness and single release 390x844",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "Alif 94% recovery, held readiness and single release 1024x768",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "Alif 94% recovery, held readiness and single release 768x1024",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "Alif 94% recovery, held readiness and single release 1920x1080",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "Alif 94% recovery, held readiness and single release 3840x2160",
+      "status": "passed",
+      "evidence": "browser-followup.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "actual up movement completes; coalesced order and empty fallback are preserved",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "native CDP touch recovers the remaining Alif tail",
+      "status": "skipped",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "all 37 authored models retain valid play sequences and separate dots",
+      "status": "passed",
+      "evidence": "browser-results.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "chromium",
+      "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+      "status": "passed",
+      "evidence": "browser-final.json"
+    },
+    {
+      "file": "tracing-terminal.spec.js",
+      "project": "webkit",
+      "title": "non-final Ba, Mim loop and Ga bodies ask for a lift before the next part",
+      "status": "passed",
+      "evidence": "browser-final.json"
+    }
+  ]
+}

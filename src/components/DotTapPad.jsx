@@ -48,6 +48,6 @@ export function DotTapPad({ target, index, total, disabled, onStart, onMove, onE
         e.preventDefault();
         // Screen-reader activation can arrive as a virtual click without a pointer/key pair.
         if (e.detail === 0 && performance.now() > ignoreClickUntil.current && begin(centre(), 'keyboard', 'equivalentPadVirtual', { virtual: true })) finish(centre());
-      }}><span className="dot-pad-symbol" aria-hidden="true">●</span><span>Tambah titik</span></button>
+      }}><span className="dot-pad-symbol" aria-hidden="true">●</span><span>Tambah titik <small>{index}/{total}</small></span></button>
   </div>;
 }

@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-03T10:19:31.3025082Z",
+  "previousVersion": "1.0.1",
+  "previousVersionCode": 2,
+  "version": "1.0.2",
+  "versionCode": 3,
+  "applicationId": "com.hananaacademy.tamanjawi",
+  "sameApplicationId": true,
+  "sameCertificate": true,
+  "certificateSha256": "864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365",
+  "increasedVersionCode": true,
+  "deviceUpgradeTest": "Not run: no connected Android device/emulator."
+}

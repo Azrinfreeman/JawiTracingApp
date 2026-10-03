@@ -19,7 +19,7 @@ npm run dev
 
 Open **http://127.0.0.1:5173**. The Hanana Academy splash automatically continues
 after 1.8 seconds; press **Teruskan** to continue immediately. Select a local
-profile and press **Jom mula** to open all 37 approved lessons. For adult preview,
+profile and press **Jom mula** to open the 35 currently approved lessons. For adult preview,
 open **Ruang guru → Buka pratonton dewasa**.
 
 **Cara bermain → Solo → Latihan santai** is selected by default. Choose
@@ -32,6 +32,14 @@ Choose separate local profiles; competitive results appear in **Ruang guru**.
 See [the implementation](docs/SOLO_DUO_IMPLEMENTATION.md) and
 [verification](docs/SOLO_DUO_VERIFICATION.md).
 
+The game fits its viewport without scrolling. Letter tracing uses one large,
+centred book page with a translucent bottom dock, deliberate page turns and
+saved-copy protection. Use **Paparan penuh** to request browser fullscreen.
+When the viewport cannot safely fit the controls, rotate the device or reduce
+zoom as the fitted guidance suggests. Letter and teacher lists use pages; exports
+still include all retained records. See the [layout plan](docs/FULLSCREEN_GAME_LAYOUT_IMPLEMENTATION.md)
+and [verification](docs/FULLSCREEN_GAME_LAYOUT_VERIFICATION.md).
+
 **Jejak Ceria** is the default preschool activity. Follow the dotted route to
 fill the letter with colour. If a finger wanders, the colour pauses and keeps
 the accepted progress; return to the green marker or lift and touch there again.
@@ -43,17 +51,30 @@ advance to the next stroke or dot. Follow the route through the numbers; lift
 at the end of a stroke or after each dot. See
 [the numbered guide notes](docs/NUMBERED_TRACING_GUIDES.md).
 
+Near the end, a lifted incomplete trace shows an arrow to the saved frontier and
+asks the child to continue to the final number. Once the required tracing is
+accepted, **Sentuh titik …, kemudian angkat jari** asks for one endpoint tap and
+release if the stroke did not finish on the original lift. Ghain still needs its
+separate upper dot afterward. The held cue says **Angkat jari untuk siap** only
+when release can complete the stroke. See [endpoint verification](docs/ENDPOINT_FINISH_DETECTION_VERIFICATION.md).
+Local path searches and
+event-batch coordinate conversion reduce tracing work; see the
+[completion and performance verification](docs/TRACING_COMPLETION_AND_PERFORMANCE_VERIFICATION.md).
+
 For later practice, select **Ruang guru → Jenis latihan → Berpandu** or
 **Kurang panduan**, then open a new lesson. Difficulty choices stay in the
 teacher area. The coloured play result is labelled as assisted practice.
 
-**Teaching readiness:** 37 catalogue entries and tracing models, all approved by
-the project owner on 2 October 2026, with 37 student-ready lessons. The original
-12 models retain revision 1; all 25 additional models are approved at revision 2. See
-[the approval record](docs/CONTENT_APPROVALS.md). 27 supplied alphabet recordings
+**Teaching readiness:** 37 catalogue entries and tracing models, with 35
+student-ready lessons. Kaf revision 2 and Ga revision 3 now share the connected
+body from the supplied reference, with one upper dot for Ga. These corrected
+models await fresh geometry review and are available in adult preview. The
+other 11 original models retain approved revision 1; the other 24 additional
+models retain approved revision 2. See [the correction and review sheet](docs/KAF_GA_SHAPE_CORRECTION_VERIFICATION.md)
+and [historical approvals](docs/CONTENT_APPROVALS.md). 27 supplied alphabet recordings
 and 10 retained synthetic name recordings were all approved by the project owner
 on 2 October 2026. See [the audio approval record](docs/AUDIO_APPROVALS.md).
-Open **Ruang guru → Semakan suara Jawi** to listen to all 37
+Open **Ruang guru → Suara → Semakan suara Jawi** to listen to all 37
 recordings, or press **Dengar** in a pilot lesson. See
 [the current recording review list](docs/AUDIO_REPLACEMENT_REVIEW.md).
 The application never substitutes beeps or speech synthesis for pronunciation.
@@ -62,8 +83,9 @@ The pilot models are Alif, Ba, Ta, Dal, Ra, Sin, Kaf, Lam, Mim, Nun, Wau and Ya.
 Ten further models—Sa, Jim, Ca, Ha (ح), Kha, Zal, Zai, Syin, Sad and Dad—are
 approved at revision 2.
 The final 15 models—Ta marbutah, Ta (ط), Za, Ain, Ghain, Nga, Fa, Pa, Qaf, Ga,
-Va, Ha (ه), Hamzah, Ye and Nya—are approved at revision 2.
-**Jom mula → Huruf tersedia** shows all 37 approved lessons. **Huruf permulaan**
+Va, Ha (ه), Hamzah, Ye and Nya—were approved at revision 2. Ga's corrected
+revision 3 now awaits fresh review.
+**Jom mula → Huruf tersedia** shows the 35 approved lessons. **Huruf permulaan**
 retains the original 12, and **Model tersedia** in adult preview shows all authored
 models. Adult preview includes all 37 models. **Ruang guru → Kandungan & semakan**
 records approvals and provides **Buka** buttons for individual models.
@@ -179,7 +201,10 @@ The screenshot check found no external runtime requests. The web version does
 not include PWA offline caching. The separate signed Android APK bundles the
 game, recordings and artwork for offline use; see [Android release and installation](docs/ANDROID_RELEASE.md).
 Android progress stays in the app's own storage, and teacher exports use its
-native save-file picker. The latest APK is [Taman Jawi 1.0.0](output/releases/Taman-Jawi-1.0.0-release.apk).
+native save-file picker. The latest APK is [Taman Jawi 1.0.5](output/releases/Taman-Jawi-1.0.5-release.apk),
+with native fullscreen, fitted controls and a lightweight Android presentation
+that reduces tracing redraw work, plus reliable endpoint confirmation after
+accepted tracing; see [verification and measured limits](docs/ENDPOINT_FINISH_DETECTION_VERIFICATION.md).
 
 ## Source layout
 

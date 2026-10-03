@@ -1,0 +1,180 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test tests/browser/fullscreen-layout.spec.js --project=chromium --workers=2 --reporter=line --grep menus|completion|Duo
+
+Running 11 tests using 1 worker
+
+
+(node:27044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/11] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740
+  1) [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 18
+
+      Object {
+        "offscreen": Array [],
+    -   "overflow": Array [],
+    +   "overflow": Array [
+    +     Array [
+    +       "DIV",
+    +       "teacher-content",
+    +       300,
+    +       300,
+    +       409,
+    +       435,
+    +     ],
+    +     Array [
+    +       "SECTION",
+    +       "teacher-panel audio-review-panel",
+    +       298,
+    +       298,
+    +       407,
+    +       434,
+    +     ],
+    +   ],
+        "scrollX": 0,
+        "scrollY": 0,
+      }
+
+      14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);
+      15 |   return {overflow,offscreen,scrollX,scrollY};
+    > 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});
+         |                     ^
+      17 | }
+      18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }
+      19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:16:21)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:29:156
+
+    Error Context: test-results\fullscreen-layout-fitted-m-e1454-nd-teacher-pages-at-320x740-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-fitted-m-e1454-nd-teacher-pages-at-320x740-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-fitted-m-e1454-nd-teacher-pages-at-320x740-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:29152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/11] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 390x844
+[3/11] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1024x768
+[4/11] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 768x1024
+[5/11] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720
+  2) [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 10
+
+      Object {
+        "offscreen": Array [],
+    -   "overflow": Array [],
+    +   "overflow": Array [
+    +     Array [
+    +       "MAIN",
+    +       "welcome page-enter",
+    +       1280,
+    +       1280,
+    +       656,
+    +       669,
+    +     ],
+    +   ],
+        "scrollX": 0,
+        "scrollY": 0,
+      }
+
+      14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);
+      15 |   return {overflow,offscreen,scrollX,scrollY};
+    > 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});
+         |                     ^
+      17 | }
+      18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }
+      19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:16:21)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:22:66
+
+    Error Context: test-results\fullscreen-layout-fitted-m-08da7-d-teacher-pages-at-1280x720-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-fitted-m-08da7-d-teacher-pages-at-1280x720-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-fitted-m-08da7-d-teacher-pages-at-1280x720-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:35744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[6/11] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1920x1080
+[7/11] [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board
+  3) [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 10
+
+      Object {
+        "offscreen": Array [],
+    -   "overflow": Array [],
+    +   "overflow": Array [
+    +     Array [
+    +       "DIV",
+    +       "dock-summary",
+    +       708,
+    +       708,
+    +       52,
+    +       58,
+    +     ],
+    +   ],
+        "scrollX": 0,
+        "scrollY": 0,
+      }
+
+      14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);
+      15 |   return {overflow,offscreen,scrollX,scrollY};
+    > 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});
+         |                     ^
+      17 | }
+      18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }
+      19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:16:21)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:50:160
+
+    Error Context: test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:35636) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[8/11] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1024x768
+[9/11] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 768x1024
+[10/11] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x720
+[11/11] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1920x1080
+  3 failed
+    [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740 
+    [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720 
+    [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board 
+  8 passed (28.2s)

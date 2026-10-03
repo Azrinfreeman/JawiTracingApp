@@ -1,0 +1,274 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test tests/browser/fullscreen-layout.spec.js --project=chromium --workers=2 --reporter=line
+
+Running 15 tests using 1 worker
+
+(node:24776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/15] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740
+  1) [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 18
+
+      Object {
+        "offscreen": Array [],
+    -   "overflow": Array [],
+    +   "overflow": Array [
+    +     Array [
+    +       "DIV",
+    +       "teacher-content",
+    +       300,
+    +       300,
+    +       409,
+    +       497,
+    +     ],
+    +     Array [
+    +       "SECTION",
+    +       "teacher-panel",
+    +       298,
+    +       298,
+    +       407,
+    +       496,
+    +     ],
+    +   ],
+        "scrollX": 0,
+        "scrollY": 0,
+      }
+
+      14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);
+      15 |   return {overflow,offscreen,scrollX,scrollY};
+    > 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});
+         |                     ^
+      17 | }
+      18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }
+      19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:16:21)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:28:73
+
+    Error Context: test-results\fullscreen-layout-fitted-m-e1454-nd-teacher-pages-at-320x740-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-fitted-m-e1454-nd-teacher-pages-at-320x740-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-fitted-m-e1454-nd-teacher-pages-at-320x740-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:29144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/15] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 390x844
+[3/15] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1024x768
+[4/15] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 768x1024
+[5/15] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720
+  2) [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 10
+
+      Object {
+        "offscreen": Array [],
+    -   "overflow": Array [],
+    +   "overflow": Array [
+    +     Array [
+    +       "MAIN",
+    +       "welcome page-enter",
+    +       1280,
+    +       1280,
+    +       656,
+    +       687,
+    +     ],
+    +   ],
+        "scrollX": 0,
+        "scrollY": 0,
+      }
+
+      14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);
+      15 |   return {overflow,offscreen,scrollX,scrollY};
+    > 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});
+         |                     ^
+      17 | }
+      18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }
+      19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:16:21)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:22:66
+
+    Error Context: test-results\fullscreen-layout-fitted-m-08da7-d-teacher-pages-at-1280x720-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-fitted-m-08da7-d-teacher-pages-at-1280x720-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-fitted-m-08da7-d-teacher-pages-at-1280x720-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:42068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[6/15] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1920x1080
+[7/15] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1024x768
+[8/15] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 768x1024
+[9/15] [chromium] › tests\browser\fullscreen-layout.spec.js:35:2 › all 37 complete letter envelopes and guides fit at 1920x1080
+[10/15] [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board
+  3) [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 18
+
+      Object {
+        "offscreen": Array [],
+    -   "overflow": Array [],
+    +   "overflow": Array [
+    +     Array [
+    +       "DIV",
+    +       "book-spread  book-play",
+    +       726,
+    +       731,
+    +       930,
+    +       930,
+    +     ],
+    +     Array [
+    +       "DIV",
+    +       "lesson-dock ",
+    +       724,
+    +       730,
+    +       194,
+    +       194,
+    +     ],
+    +   ],
+        "scrollX": 0,
+        "scrollY": 0,
+      }
+
+      14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);
+      15 |   return {overflow,offscreen,scrollX,scrollY};
+    > 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});
+         |                     ^
+      17 | }
+      18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }
+      19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}
+        at fitted (D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:16:21)
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:49:148
+
+    Error Context: test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:9916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[11/15] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1024x768
+  4) [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1024x768 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.arena-space')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('.arena-space') with timeout 5000ms
+      - waiting for locator('.arena-space')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      59 |   await page.setViewportSize({width,height});await welcome(page);await page.getByRole('button',{name:'Duo 1v1',exact:true}).click();await page.getByRole('button',{name:'Jom mula',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Seterusnya',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Uji dua sentuhan'}).click();await fitted(page);await page.getByRole('button',{name:/Pratonton susun atur dewasa/}).click();await frames(page);await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);
+      60 |   const sizes=await page.locator('.trace-stage').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return{width:b.width,height:b.height};}));expect(sizes[0]).toEqual(sizes[1]);expect(Math.min(sizes[0].width,sizes[0].height)).toBeGreaterThanOrEqual(280);expect(await page.locator('.trace-board').first().getAttribute('viewBox')).toBe(await page.locator('.trace-board').last().getAttribute('viewBox'));await shot(page,`${browserName}-${width}-duo`);
+    > 61 |   await page.setViewportSize({width:600,height:650});await expect(page.locator('.arena-space')).toBeVisible();await fitted(page);await page.setViewportSize({width,height});await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);
+         |                                                                                                                                                                                                                        ^
+      62 |  });
+      63 | }
+      64 | test('short viewport and zoom equivalent give fitted space guidance',async({page})=>{await page.setViewportSize({width:640,height:450});await page.goto('/');await page.waitForTimeout(1900);await expect(page.getByRole('dialog',{name:'Besarkan ruang bermain'})).toBeVisible();await fitted(page);await page.setViewportSize({width:1024,height:768});await expect(page.getByRole('button',{name:'Jom mula',exact:true})).toBeVisible();});
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:61:216
+
+    Error Context: test-results\fullscreen-layout-Duo-has--c9e5a-rom-small-space-at-1024x768-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-Duo-has--c9e5a-rom-small-space-at-1024x768-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-Duo-has--c9e5a-rom-small-space-at-1024x768-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:38008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[12/15] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 768x1024
+  5) [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 768x1024 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('.arena-space')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('.arena-space') with timeout 5000ms
+      - waiting for locator('.arena-space')
+        14 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      57 | for(const [width,height] of [[1024,768],[768,1024],[1280,720],[1920,1080]]){
+      58 |  test(`Duo has equal fitted stages and recovers from small space at ${width}x${height}`,async({page,browserName})=>{
+    > 59 |   await page.setViewportSize({width,height});await welcome(page);await page.getByRole('button',{name:'Duo 1v1',exact:true}).click();await page.getByRole('button',{name:'Jom mula',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Seterusnya',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Uji dua sentuhan'}).click();await fitted(page);await page.getByRole('button',{name:/Pratonton susun atur dewasa/}).click();await frames(page);await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^
+      60 |   const sizes=await page.locator('.trace-stage').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return{width:b.width,height:b.height};}));expect(sizes[0]).toEqual(sizes[1]);expect(Math.min(sizes[0].width,sizes[0].height)).toBeGreaterThanOrEqual(280);expect(await page.locator('.trace-board').first().getAttribute('viewBox')).toBe(await page.locator('.trace-board').last().getAttribute('viewBox'));await shot(page,`${browserName}-${width}-duo`);
+      61 |   await page.setViewportSize({width:600,height:650});await expect(page.locator('.arena-space')).toBeVisible();await fitted(page);await page.setViewportSize({width,height});await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);
+      62 |  });
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:59:531
+
+    Error Context: test-results\fullscreen-layout-Duo-has--05298-rom-small-space-at-768x1024-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-Duo-has--05298-rom-small-space-at-768x1024-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-Duo-has--05298-rom-small-space-at-768x1024-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:42048) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[13/15] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x720
+[14/15] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1920x1080
+[15/15] [chromium] › tests\browser\fullscreen-layout.spec.js:64:1 › short viewport and zoom equivalent give fitted space guidance
+  5 failed
+    [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740 
+    [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720 
+    [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board 
+    [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1024x768 
+    [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 768x1024 
+  10 passed (1.1m)

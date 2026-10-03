@@ -1,0 +1,475 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "-c",
+      "playwright.fullscreen.config.js",
+      "fullscreen-layout.spec.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--grep",
+      "demo, completion"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.fullscreen.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/fullscreen-layout/controls.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "fullscreen-layout.spec.js",
+      "file": "fullscreen-layout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "demo, completion and copy tools fit at 320x740",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4690,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"BUTTON\",\u001b[39m\n\u001b[31m+       \"text-button copy-action\",\u001b[39m\n\u001b[31m+       47,\u001b[39m\n\u001b[31m+       54,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"BUTTON\",\u001b[39m\n\u001b[31m+       \"text-button copy-action\",\u001b[39m\n\u001b[31m+       47,\u001b[39m\n\u001b[31m+       54,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:16:21)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:77:116",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                      "column": 21,
+                      "line": 16
+                    },
+                    "snippet": "  14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);\n  15 |   return {overflow,offscreen,scrollX,scrollY};\n> 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});\n     |                     ^\n  17 | }\n  18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }\n  19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                        "column": 21,
+                        "line": 16
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"BUTTON\",\u001b[39m\n\u001b[31m+       \"text-button copy-action\",\u001b[39m\n\u001b[31m+       47,\u001b[39m\n\u001b[31m+       54,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);\n  15 |   return {overflow,offscreen,scrollX,scrollY};\n> 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});\n     |                     ^\n  17 | }\n  18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }\n  19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:16:21)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:77:116"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:20:59.106Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                    "column": 21,
+                    "line": 16
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-ac5e53d04138dc824521",
+          "file": "fullscreen-layout.spec.js",
+          "line": 75,
+          "column": 74
+        },
+        {
+          "title": "demo, completion and copy tools fit at 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4320,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:21:05.072Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-58021f59198b02188835",
+          "file": "fullscreen-layout.spec.js",
+          "line": 75,
+          "column": 74
+        },
+        {
+          "title": "demo, completion and copy tools fit at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4211,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:21:09.660Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-e6376d626966626537d3",
+          "file": "fullscreen-layout.spec.js",
+          "line": 75,
+          "column": 74
+        },
+        {
+          "title": "demo, completion and copy tools fit at 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:21:13.882Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-22bcf8c20a76354b3a77",
+          "file": "fullscreen-layout.spec.js",
+          "line": 75,
+          "column": 74
+        },
+        {
+          "title": "demo, completion and copy tools fit at 320x740",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 5416,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"BUTTON\",\u001b[39m\n\u001b[31m+       \"text-button copy-action\",\u001b[39m\n\u001b[31m+       47,\u001b[39m\n\u001b[31m+       54,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"BUTTON\",\u001b[39m\n\u001b[31m+       \"text-button copy-action\",\u001b[39m\n\u001b[31m+       47,\u001b[39m\n\u001b[31m+       54,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:16:21)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:77:116",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                      "column": 21,
+                      "line": 16
+                    },
+                    "snippet": "  14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);\n  15 |   return {overflow,offscreen,scrollX,scrollY};\n> 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});\n     |                     ^\n  17 | }\n  18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }\n  19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                        "column": 21,
+                        "line": 16
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"BUTTON\",\u001b[39m\n\u001b[31m+       \"text-button copy-action\",\u001b[39m\n\u001b[31m+       47,\u001b[39m\n\u001b[31m+       54,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+       48,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  14 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);\n  15 |   return {overflow,offscreen,scrollX,scrollY};\n> 16 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});\n     |                     ^\n  17 | }\n  18 | async function shot(page,name) { await page.screenshot({path:`${evidence}/${name}.png`,animations:'disabled'}); }\n  19 | async function welcome(page){await page.goto('/');await dismissSplash(page);await page.emulateMedia({reducedMotion:'reduce'});}\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:16:21)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:77:116"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:20:59.106Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\fullscreen-layout-demo-com-806c7-d-copy-tools-fit-at-320x740-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                    "column": 21,
+                    "line": 16
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-fbcbbe72b53d1940ee55",
+          "file": "fullscreen-layout.spec.js",
+          "line": 75,
+          "column": 74
+        },
+        {
+          "title": "demo, completion and copy tools fit at 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:21:05.968Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-d6b7932b7de86f567d2c",
+          "file": "fullscreen-layout.spec.js",
+          "line": 75,
+          "column": 74
+        },
+        {
+          "title": "demo, completion and copy tools fit at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7993,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:21:12.305Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-f432d15979a1c2f3ccd0",
+          "file": "fullscreen-layout.spec.js",
+          "line": 75,
+          "column": 74
+        },
+        {
+          "title": "demo, completion and copy tools fit at 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 15561,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T04:21:20.310Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-b35c5d236d33a8252f10",
+          "file": "fullscreen-layout.spec.js",
+          "line": 75,
+          "column": 74
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-03T04:20:58.470Z",
+    "duration": 37830.835,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

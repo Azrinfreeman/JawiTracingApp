@@ -1,0 +1,8 @@
+/* Cheaper presentation, with identical stage sizes and teaching cues. */
+[data-presentation="light"] .lesson-dock { background: #fffdf5; backdrop-filter: none; }
+[data-presentation="light"] .race-overlay { backdrop-filter: none; }
+[data-presentation="light"] :is(.book-cover, .race-pane, .button, .board-wrap, .match-trophy) { box-shadow: none; filter: none; }
+[data-presentation="light"] :is(.game-mascot *, .flower-burst, .match-trophy, .page-enter, .countdown-overlay > strong, .book-fold) { animation: none; transition: none; }
+[data-presentation="light"] .flower-burst { display: none; }
+[data-presentation="light"] .book-cover { background: #b9d7a9; }
+[data-tracing="true"] :is(.game-mascot *, .flower-burst, .match-trophy) { animation-play-state: paused; }

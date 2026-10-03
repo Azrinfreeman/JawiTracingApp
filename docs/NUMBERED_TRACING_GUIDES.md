@@ -57,7 +57,25 @@ For Ta, the body uses 1–3, followed by separate dots 4 and 5. A short stroke u
 just its start and endpoint to keep its numbers apart.
 
 A brief instruction under the board explains the numbers and when to lift.
-The current waypoint is filled; passed waypoints become softer. Numbers and
+The current waypoint is filled; passed waypoints become softer. In Jejak Ceria,
+the final destination has an outlined dashed badge until validation is ready.
+Then its filled badge and **Angkat jari untuk siap** cue ask for release; an
+unfinished near-end lift shows an arrow to the saved frontier and the destination
+number. A remaining tail stays visible without painting over the number. These
+3 October refinements preserve the number anchors, model approvals and original
+2 October guide approval scope. See [verification](TRACING_COMPLETION_AND_PERFORMANCE_VERIFICATION.md).
+
+The 4 October endpoint correction distinguishes missing tracing from accepted
+work awaiting confirmation. Once the existing coverage and checkpoints are
+earned, the final badge is filled and **Sentuh titik …, kemudian angkat jari**
+asks for a fresh endpoint tap and release. The missing-tail arrow is hidden in
+this state. A held valid contact asks for a lift; Ghain's body then exposes its
+separately numbered upper dot. Cancellation never commits a part, and incomplete
+tracing still shows the saved frontier. This changes Play input policy to
+`play-guided-v2`; anchors, model revisions and the dated approvals above remain
+preserved. See [implementation and verification](ENDPOINT_FINISH_DETECTION_VERIFICATION.md).
+
+Numbers and
 labels scale for phone and tablet layouts. Labels are placed away from the
 writing routes and from each other.
 

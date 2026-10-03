@@ -1,0 +1,12 @@
+{
+  "previousVersion": "1.0.3",
+  "version": "1.0.4",
+  "previousCode": 4,
+  "versionCode": 5,
+  "sameApplicationId": true,
+  "sameCertificate": true,
+  "previousApkUnchanged": true,
+  "deviceUpdateTest": "Unavailable: no connected device.",
+  "certificate1.0.3": "864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365",
+  "certificate1.0.4": "864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365"
+}

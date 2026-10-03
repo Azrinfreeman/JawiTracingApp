@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-03T10:19:04.8735950Z",
+  "baseline": "output/verification/android-release-1.0.1/verified-inputs.json",
+  "unchangedApplicationInputs": 214,
+  "changedApplicationInputs": [],
+  "identicalProductionAssets": 91,
+  "productionJavaScript": "index-E1jWQ9Ri.js",
+  "productionCss": "index-B_G2-FFu.css",
+  "browserChecks": "No new browser run: application/native sources, dependencies, tests and all production assets match the verified 1.0.1 release."
+}

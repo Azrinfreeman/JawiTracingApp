@@ -1,0 +1,47 @@
+{
+  "states": [
+    {
+      "sent": 513,
+      "started": 6902,
+      "frames": 32,
+      "now": 11908,
+      "hidden": false,
+      "focus": true,
+      "chunks": 4
+    },
+    {
+      "sent": 1025,
+      "started": 6902,
+      "frames": 64,
+      "now": 16936,
+      "hidden": false,
+      "focus": true,
+      "chunks": 8
+    },
+    {
+      "sent": 1553,
+      "started": 6902,
+      "frames": 97,
+      "now": 21954,
+      "hidden": false,
+      "focus": true,
+      "chunks": 13
+    },
+    {
+      "sent": 2000,
+      "started": 6902,
+      "frames": 125,
+      "now": 26961,
+      "hidden": false,
+      "focus": true,
+      "chunks": 16
+    }
+  ],
+  "result": {
+    "sent": 2000,
+    "started": 6902,
+    "frames": 125,
+    "duration": 19370,
+    "chunks": 16
+  }
+}

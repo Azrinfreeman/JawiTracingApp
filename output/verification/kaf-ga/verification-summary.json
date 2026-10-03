@@ -1,0 +1,376 @@
+{
+  "date": "2026-10-03",
+  "timezone": "Asia/Kuala_Lumpur",
+  "revisions": {
+    "kaf": 2,
+    "ga": 3
+  },
+  "geometryStatus": "pendingReview",
+  "readyLessons": 35,
+  "unitChecks": {
+    "verified": 92,
+    "initial": "npm test: 89 passed / 1 outdated pool-size expectation failed",
+    "followup": "npm test -- tests/game/match.test.js: 16 passed",
+    "newCases": "npm test -- tests/game/kafGa.test.js: 5 passed (replaces 3 earlier cases, adds 2)"
+  },
+  "build": {
+    "command": "npm run build",
+    "status": "passed",
+    "assets": [
+      "dist/assets/index-CKMiDR1f.css",
+      "dist/assets/index-DHV_yvMX.js"
+    ],
+    "previewAssetHashesMatch": true
+  },
+  "browser": {
+    "totals": {
+      "passed": 49,
+      "skipped": 1,
+      "failed": 0
+    },
+    "tests": [
+      {
+        "project": "chromium",
+        "title": "kaf play: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "ga play: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "kaf guided: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "chromium",
+        "title": "ga guided: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "chromium",
+        "title": "kaf precision: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "chromium",
+        "title": "ga precision: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Ga equivalent dot pad completes only after its connected body",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "play: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "guided: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "precision: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "kaf: demo uses the connected model, then copying keeps original coordinates and save protection",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "chromium",
+        "title": "ga: demo uses the connected model, then copying keeps original coordinates and save protection",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "chromium",
+        "title": "catalogue, help, teacher and audio illustrations agree; revised lessons remain gated",
+        "status": "passed",
+        "report": "browser-display-final.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 390x844",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1024x768",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 768x1024",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1920x1080",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 3840x2160",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "native touch follows the corrected Ga body and upper dot",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "kaf play: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "ga play: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "kaf guided: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "webkit",
+        "title": "ga guided: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "webkit",
+        "title": "kaf precision: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "webkit",
+        "title": "ga precision: continuous body and separate required dot complete the revised preview",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Ga equivalent dot pad completes only after its connected body",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "play: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "guided: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "precision: endpoint, elbow shortcut, reversal and cancellation cannot complete; clean retry succeeds",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "kaf: demo uses the connected model, then copying keeps original coordinates and save protection",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "webkit",
+        "title": "ga: demo uses the connected model, then copying keeps original coordinates and save protection",
+        "status": "passed",
+        "report": "browser-followup.json"
+      },
+      {
+        "project": "webkit",
+        "title": "catalogue, help, teacher and audio illustrations agree; revised lessons remain gated",
+        "status": "passed",
+        "report": "browser-display-final.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 390x844",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1024x768",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 768x1024",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 1920x1080",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Kaf/Ga complete model, guides, dot and stable completion fit 3840x2160",
+        "status": "passed",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "webkit",
+        "title": "native touch follows the corrected Ga body and upper dot",
+        "status": "skipped",
+        "report": "browser-installed.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Duo has equal fitted stages and recovers from small space at 1920x1080",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Duo has equal fitted stages and recovers from small space at 3840x2160",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Duo has equal fitted stages and recovers from small space at 1920x1080",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Duo has equal fitted stages and recovers from small space at 3840x2160",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "chromium",
+        "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "chromium",
+        "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "webkit",
+        "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+        "status": "passed",
+        "report": "browser-regression.json"
+      },
+      {
+        "project": "webkit",
+        "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+        "status": "passed",
+        "report": "browser-regression.json"
+      }
+    ],
+    "reports": [
+      "browser-installed.json",
+      "browser-followup.json",
+      "browser-display-final.json",
+      "browser-regression.json"
+    ],
+    "viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        3840,
+        2160
+      ]
+    ],
+    "dpr": 1,
+    "browserCache": "node_modules/.cache/ms-playwright"
+  },
+  "protectedComparison": "protected-comparison.json",
+  "inputFingerprints": "input-fingerprints.json",
+  "limitations": [
+    "New geometry requires actual reviewer approval before student/scored access",
+    "Physical tablet/smartboard teaching review unavailable",
+    "WebKit native CDP touch case skipped"
+  ],
+  "finalReview": {
+    "draftOtherLettersPreserved": true,
+    "scope": "npm test -- tests/game/kafGa.test.js: 5 passed; npm run build passed",
+    "productionHashesUnchangedFromBrowserTests": true
+  }
+}

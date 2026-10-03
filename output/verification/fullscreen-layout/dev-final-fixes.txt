@@ -1,0 +1,14 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test tests/browser/fullscreen-layout.spec.js --project=chromium --workers=2 --reporter=line --grep 320x740|1280x720|completion
+
+Running 4 tests using 1 worker
+
+
+(node:5460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/4] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 320x740
+[2/4] [chromium] › tests\browser\fullscreen-layout.spec.js:21:2 › fitted menus, catalogue and teacher pages at 1280x720
+[3/4] [chromium] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board
+[4/4] [chromium] › tests\browser\fullscreen-layout.spec.js:58:2 › Duo has equal fitted stages and recovers from small space at 1280x720
+  4 passed (13.2s)

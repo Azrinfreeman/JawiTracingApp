@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { openLesson, boardModels, draw, movePoints } from './helpers/tracing.js';
-import { dismissSplash } from './helpers/navigation.js';
+import { dismissSplash, chooseLetter } from './helpers/navigation.js';
 
 const guide = (page, number) => page.locator(`.trace-number-guide[data-number="${number}"]`);
 
@@ -59,12 +59,13 @@ test('all 12 initial guides are legible and contained on phone and tablet', asyn
   test.setTimeout(120000);
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/'); await dismissSplash(page);
-  await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
+  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).click();
   await page.evaluate(() => document.fonts.ready);
   for (const width of [320, 768]) {
     await page.setViewportSize({ width, height: width === 320 ? 740 : 1024 });
     for (const letter of letters.filter(item => item.pilot)) {
-      await page.getByRole('button', { name: letter.labelMs, exact: true }).click();
+      await chooseLetter(page, letter.labelMs);
       await expect(page.locator('.numbered-trace-guides')).toBeVisible();
       await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       const measurements = await page.locator('.trace-board').evaluate(svg => {
@@ -79,7 +80,7 @@ test('all 12 initial guides are legible and contained on phone and tablet', asyn
       for (const item of measurements) { expect(item.contained, `${width}: ${letter.id}`).toBe(true); if (item.badge) expect(item.width).toBeGreaterThanOrEqual(35.9); }
       expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), letter.id).toBe(false);
       expect(await page.locator('.numbered-trace-guides').evaluate(node => getComputedStyle(node).pointerEvents)).toBe('none');
-      await page.getByRole('button', { name: 'Taman huruf', exact: true }).click();
+      await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click();
     }
   }
 });

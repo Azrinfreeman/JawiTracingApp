@@ -1,0 +1,12 @@
+npm notice run jawi-prasekolah@0.1.0 test
+npm notice run vitest run --reporter=dot
+
+ RUN  v5.0.3 D:/UProject/ProjectAIVibeCode/JawiPrasekolah
+
+···········································································································
+
+ Test Files  12 passed (12)
+      Tests  107 passed (107)
+   Start at  18:15:29
+   Duration  843ms (transform 53%, tests 24%, import 20%, worker 3%)
+

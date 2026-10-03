@@ -9,7 +9,7 @@ describe('alphabet book navigation and completion', () => {
     expect(bookDestination(0, 2, 3)).toBeNull(); expect(bookDestination(0, 1, 0)).toBeNull();
   });
   it('preserves authored order and student eligibility in filtered books', () => {
-    const subset = letters.filter(letter => letter.pilot); expect(eligibleBook(subset).map(letter => letter.id)).toEqual(subset.map(letter => letter.id));
+    const subset = letters.filter(letter => letter.pilot); expect(eligibleBook(subset).map(letter => letter.id)).toEqual(subset.filter(letter => letter.geometry.status === 'approved').map(letter => letter.id));
     const draft = { ...letters[0], geometry: { ...letters[0].geometry, status: 'draft' } };
     expect(eligibleBook([draft])).toHaveLength(0); expect(eligibleBook([draft], true)).toHaveLength(1);
   });

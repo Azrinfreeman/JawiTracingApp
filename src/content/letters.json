@@ -2205,7 +2205,7 @@
     "id": "kaf",
     "glyph": "ک",
     "labelMs": "Kaf",
-    "contentVersion": 1,
+    "contentVersion": 2,
     "viewBox": [
       0,
       0,
@@ -2215,34 +2215,14 @@
     "pilot": true,
     "additional": false,
     "geometry": {
-      "status": "approved",
-      "review": {
-        "revision": 1,
-        "reviewer": "Project owner (Codex user; name not supplied)",
-        "date": "2026-10-02",
-        "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
-        "kind": "projectOwner"
-      },
+      "status": "pendingReview",
       "displayPaths": [
-        "M 780 200 L 780 610 Q 660 710 400 710 Q 190 710 205 535",
-        "M 565 365 L 460 430 L 560 485"
+        "M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536"
       ],
       "strokes": [
         {
           "id": "stroke-1",
-          "path": "M 780 200 L 780 610 Q 660 710 400 710 Q 190 710 205 535",
-          "width": 44,
-          "penLiftPolicy": "continuous",
-          "checkpoints": [
-            0.25,
-            0.5,
-            0.75,
-            0.95
-          ]
-        },
-        {
-          "id": "stroke-2",
-          "path": "M 565 365 L 460 430 L 560 485",
+          "path": "M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536",
           "width": 44,
           "penLiftPolicy": "continuous",
           "checkpoints": [
@@ -2256,8 +2236,7 @@
       "dotTargets": [],
       "validSequences": [
         [
-          "stroke-1",
-          "stroke-2"
+          "stroke-1"
         ]
       ]
     },
@@ -2293,7 +2272,7 @@
     "id": "ga",
     "glyph": "ڬ",
     "labelMs": "Ga",
-    "contentVersion": 2,
+    "contentVersion": 3,
     "viewBox": [
       0,
       0,
@@ -2303,34 +2282,14 @@
     "pilot": false,
     "additional": true,
     "geometry": {
-      "status": "approved",
-      "review": {
-        "revision": 2,
-        "reviewer": "Project owner (Codex user; name not supplied)",
-        "date": "2026-10-02",
-        "reference": "docs/CONTENT_APPROVALS.md#approval-of-final-letter-batch-2026-10-02",
-        "kind": "projectOwner"
-      },
+      "status": "pendingReview",
       "displayPaths": [
-        "M 780 200 L 780 610 Q 660 710 400 710 Q 190 710 205 535",
-        "M 565 365 L 460 430 L 560 485"
+        "M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536"
       ],
       "strokes": [
         {
           "id": "stroke-1",
-          "path": "M 780 200 L 780 610 Q 660 710 400 710 Q 190 710 205 535",
-          "width": 44,
-          "penLiftPolicy": "continuous",
-          "checkpoints": [
-            0.25,
-            0.5,
-            0.75,
-            0.95
-          ]
-        },
-        {
-          "id": "stroke-2",
-          "path": "M 565 365 L 460 430 L 560 485",
+          "path": "M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536",
           "width": 44,
           "penLiftPolicy": "continuous",
           "checkpoints": [
@@ -2344,8 +2303,8 @@
       "dotTargets": [
         {
           "id": "dot-1",
-          "x": 630,
-          "y": 245,
+          "x": 506,
+          "y": 280,
           "visibleRadius": 19,
           "hitRadius": 48,
           "maxTravel": 30,
@@ -2355,7 +2314,6 @@
       "validSequences": [
         [
           "stroke-1",
-          "stroke-2",
           "dot-1"
         ]
       ]

@@ -25,7 +25,7 @@ for(const [width,height,density] of [[768,1024,2],[390,844,3]]) {
     await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:model.dot.x+30,y:model.dot.y,id:1}]});
     await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
     await expect(page.locator('.validated-dot')).toHaveCount(0);
-    await expect(page.locator('.pupil-ink')).toHaveCount(1);
+    await expect(page.locator('.pupil-ink-gesture')).toHaveCount(1);
     await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{...model.dot,id:1}]});
     await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
     await expect(page.getByRole('heading',{name:'Bagus, kamu sudah cuba!'})).toBeVisible();
@@ -65,7 +65,7 @@ for(const [width,height,density] of [[768,1024,2],[390,844,3]]) {
     await page.getByRole('button',{name:'Tambah titik 1 daripada 1'}).tap();
     await expect(page.getByRole('heading',{name:'Kamu sudah ikut huruf Ba!'})).toBeVisible();
     const attempt=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));
-    expect(attempt.pointerType).toBe('touch');expect(attempt.toleranceProfile).toBe('play-touch-standard-v1');
+    expect(attempt.pointerType).toBe('touch');expect(attempt.toleranceProfile).toBe('play-touch-standard-v2');
     expect(attempt.metrics.pauseEpisodes).toBeGreaterThan(0);expect(attempt.metrics.equivalentDotActions).toBe(1);await context.close();
   });
 }
@@ -78,5 +78,5 @@ test('native emulated pen completes assisted play with its own recorded input ty
   await session.send('Input.dispatchMouseEvent',{type:'mouseReleased',...points.at(-1),button:'left',buttons:0,pointerType:'pen'});
   await expect(page.getByRole('heading',{name:'Kamu sudah ikut huruf Alif!'})).toBeVisible();
   const attempt=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));
-  expect(attempt.pointerType).toBe('pen');expect(attempt.toleranceProfile).toBe('play-pen-mouse-standard-v1');
+  expect(attempt.pointerType).toBe('pen');expect(attempt.toleranceProfile).toBe('play-pen-mouse-standard-v2');
 });

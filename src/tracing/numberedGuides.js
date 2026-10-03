@@ -28,7 +28,7 @@ const overlaps = (a, b) => a.x < b.x + b.width && a.x + a.width > b.x && a.y < b
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
 /** Place text beside the routes; numbered touch points stay on the authored path. */
-export function placeNumberedGuides(part, letter, references, scale) {
+export function placeNumberedGuides(part, letter, references, scale, viewport) {
   const radius = Math.max(25, 18 / scale), numberSize = Math.max(26, 16 / scale), labelSize = Math.max(20, 12 / scale);
   const obstacles = Object.values(references).flatMap(reference => reference.vertices.filter((_, i) => i % 6 === 0));
   obstacles.push(...letter.geometry.dotTargets);
@@ -47,8 +47,8 @@ export function placeNumberedGuides(part, letter, references, scale) {
     const gap = radius + 44 + 18 / scale;
     let best;
     for (const multiplier of [1, 1.5, 2]) for (const direction of directions) {
-      const x = clamp(guide.anchor.x + Math.cos(direction) * gap * multiplier, 28 + width / 2, 972 - width / 2);
-      const y = clamp(guide.anchor.y + Math.sin(direction) * gap * multiplier, 100 + height / 2, 870 - height / 2);
+      const x = clamp(guide.anchor.x + Math.cos(direction) * gap * multiplier, (viewport?.x ?? 0) + 28 + width / 2, (viewport ? viewport.x + viewport.width : 1000) - 28 - width / 2);
+      const y = clamp(guide.anchor.y + Math.sin(direction) * gap * multiplier, (viewport?.y ?? 72) + 28 + height / 2, (viewport ? viewport.y + viewport.height - 28 : 870) - height / 2);
       const bounds = { x: x - width / 2, y: y - height / 2, width, height };
       const expanded = { x: bounds.x - 44, y: bounds.y - 44, width: bounds.width + 88, height: bounds.height + 88 };
       const onRoute = obstacles.reduce((count, p) => count + (p.x > expanded.x && p.x < expanded.x + expanded.width && p.y > expanded.y && p.y < expanded.y + expanded.height ? 1 : 0), 0);
@@ -61,9 +61,16 @@ export function placeNumberedGuides(part, letter, references, scale) {
   return placed;
 }
 
-export function guideInstruction(part) {
+export function guideInstruction(part, finish, phase) {
   const [start, middle] = part.points, stop = part.points.at(-1);
+  if (part.kind === 'stroke' && (finish?.nearEnd || finish?.confirmationAvailable)) {
+    if (finish.canFinish) return part.last ? 'Angkat jari untuk siap.' : 'Angkat jari untuk bahagian seterusnya.';
+    if (finish.confirmationAvailable && phase !== 'tracing') return phase === 'paused'
+      ? `Angkat jari, kemudian sentuh titik ${stop.number}.`
+      : `Sentuh titik ${stop.number}, kemudian angkat jari.`;
+    return phase === 'tracing' ? `Ikut hingga hujung ${stop.number}.` : `Sambung dari anak panah hingga ${stop.number}.`;
+  }
   return part.kind === 'dot'
     ? `Sentuh titik ${start.number}, kemudian angkat jari.${part.last ? ' Huruf siap!' : ''}`
-    : `Mula di ${start.number}, ${part.points.length > 2 ? `ikut ${middle.number}, ` : ''}berhenti di ${stop.number}. ${part.last ? 'Huruf siap!' : 'Angkat jari sebelum bahagian seterusnya.'}`;
+    : `Mula di ${start.number}, ${part.points.length > 2 ? `ikut ${middle.number}, ` : ''}berhenti di ${stop.number}. ${part.last ? 'Kemudian angkat jari untuk siap.' : 'Angkat jari sebelum bahagian seterusnya.'}`;
 }

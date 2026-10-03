@@ -1,0 +1,49 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c playwright.fullscreen.config.js fullscreen-layout.spec.js --project=webkit --workers=1 --grep completion|every retained
+
+Running 2 tests using 1 worker
+
+
+(node:25088) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/2] [webkit] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board
+  1) [webkit] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board 
+
+    Error: expect(received).toBeCloseTo(expected, precision)
+
+    Expected: 200
+    Received: 198.9
+
+    Expected precision:    0
+    Expected difference: < 0.5
+    Received difference:   1.0999999999999943
+
+      51 |  await page.getByRole('button',{name:'Sekarang, cuba salin sendiri',exact:true}).click();await expect(page.locator('.copy-board')).toHaveAttribute('viewBox','0 0 1000 1000');await expect(page.getByRole('button',{name:'Cuba lagi',exact:true})).toBeEnabled();await frames(page);
+      52 |  const points=await board.evaluate(svg=>[new DOMPoint(200,200),new DOMPoint(400,400)].map(p=>{const q=p.matrixTransform(svg.getScreenCTM());return{x:q.x,y:q.y};}));await draw(page,points);await page.getByRole('button',{name:'Huruf seterusnya',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Simpan',exact:true}).click();await expect(page.getByRole('heading',{name:'Fa',exact:true})).toBeVisible();
+    > 53 |  const copy=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies[0]);expect(copy.ink[0][0].x).toBeCloseTo(200,0);expect(copy.ink[0][0].y).toBeCloseTo(200,0);
+         |                                                                                                                                    ^
+      54 |  await page.route('**/audio/**',route=>route.abort());await page.getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.getByRole('dialog',{name:'Dengar nama huruf'})).toBeVisible();await fitted(page);await page.keyboard.press('Escape');
+      55 |  await page.setViewportSize({width:1024,height:768});await fitted(page);await expect(board).toBeVisible();
+      56 | });
+        at D:\UProject\ProjectAIVibeCode\JawiPrasekolah\tests\browser\fullscreen-layout.spec.js:53:132
+
+    Error Context: test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-webkit\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\fullscreen-layout-completi-151ba--resize-keep-a-stable-board-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+(node:41372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[2/2] [webkit] › tests\browser\fullscreen-layout.spec.js:66:1 › every retained attempt is paged and export includes the complete store
+  1 failed
+    [webkit] › tests\browser\fullscreen-layout.spec.js:46:1 › completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board 
+  1 passed (43.2s)

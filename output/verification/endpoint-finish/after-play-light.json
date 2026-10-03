@@ -1,0 +1,445 @@
+{
+  "date": "2026-10-03T17:40:27.468Z",
+  "baseURL": "http://127.0.0.1:4173",
+  "platform": "win32",
+  "os": "10.0.26200",
+  "cpu": "AMD Ryzen 7 5700X 8-Core Processor             ",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "mode": "play",
+  "presentation": "light",
+  "input": "frame-paced synthetic touch, four ordered coalesced samples per move, 5 logical-unit spacing, fixed sine jitter",
+  "scope": "Headless software pipeline timing; no physical device latency. Publications observe actual frontier/ink mutations.",
+  "servedBuild": {
+    "/assets/index-CMp2Xdfz.js": "b97caf2c4518d50b12d709ba02e117fd7448949cfbb2f7727127abcc29469175",
+    "/assets/index-CCf4Eyi8.css": "3021cca9d565933280d2bd41ca416b48841034ebb71df63f9d70bffc9ac680f7"
+  },
+  "inputsScope": "Local files at measurement time; servedBuild identifies the executed production bundle.",
+  "inputs": {
+    "src/tracing/geometry.js": "f8b0f600007001fb656199ad1583c2db71e5c17c0e2938a0ceb611ca1078dce5",
+    "src/tracing/playMatcher.js": "8e9ba4ae4f6e41153956ec3771f078ed93197237ef3b483afbab5af704f8a6a5",
+    "src/tracing/inputController.js": "8ef7c7922ebd9fcc20a2f498c5f1aebf5de6957536c497b1cd4af98cb4a20baa",
+    "src/components/TraceBoard.jsx": "104dd816dc1cbebb1b7c330b3be8c958bb2670a101436775f4e87dc5ad522005",
+    "src/content/letters.json": "0fd65d9ee03c83736f5e5b0ae1b52c6d1cd19ae38c77eb3f71f53047649382fd",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "scripts/measure-tracing.js": "8f633d7a5d21735e2603e69a36ef7ab3dad06fa750188537de8ba212965828a2"
+  },
+  "results": [
+    {
+      "label": "Alif",
+      "revision": 1,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 127,
+      "profile": "play-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 127,
+        "totalMs": 6.799999952316284,
+        "maxMs": 0.5
+      },
+      "batchMs": {
+        "count": 34,
+        "p50": 0.4000000059604645,
+        "p95": 1.0999999940395355,
+        "max": 2.0999999940395355
+      },
+      "frameIntervalMs": {
+        "count": 33,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 33,
+        "p50": 16.399999991059303,
+        "p95": 17.5,
+        "max": 17.5
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 100,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.4000000059604645
+      },
+      "attributeWrites": 336,
+      "matrixReads": 34,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 8,
+      "diagnosticCount": 5,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 0.9999999775851038,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "play-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 12.500000074505806,
+        "maxMs": 0.699999988079071
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.3999999910593033,
+        "p95": 0.7000000029802322,
+        "max": 2.800000011920929
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 71,
+        "p50": 16.5,
+        "p95": 17.5,
+        "max": 17.799999997019768
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 217,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.4000000059604645
+      },
+      "attributeWrites": 732,
+      "matrixReads": 73,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 8,
+      "diagnosticCount": 7,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 0.999872117725628,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Mim",
+      "revision": 1,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 188,
+      "profile": "play-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 188,
+        "totalMs": 9.299999952316284,
+        "maxMs": 0.699999988079071
+      },
+      "batchMs": {
+        "count": 51,
+        "p50": 0.3999999910593033,
+        "p95": 0.7000000029802322,
+        "max": 2
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.799999999999955
+      },
+      "publicationDelayMs": {
+        "count": 49,
+        "p50": 16.30000001192093,
+        "p95": 17.5,
+        "max": 17.700000002980232
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 147,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.3999999910593033
+      },
+      "attributeWrites": 513,
+      "matrixReads": 51,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 14,
+      "diagnosticCount": 6,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Nya",
+      "revision": 2,
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 193,
+      "profile": "play-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 193,
+        "totalMs": 9.700000062584877,
+        "maxMs": 0.5
+      },
+      "batchMs": {
+        "count": 50,
+        "p50": 0.4000000059604645,
+        "p95": 0.5,
+        "max": 1.9000000059604645
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.700000000000045
+      },
+      "publicationDelayMs": {
+        "count": 49,
+        "p50": 16.400000005960464,
+        "p95": 17.5,
+        "max": 17.700000002980232
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 148,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.29999999701976776
+      },
+      "attributeWrites": 505,
+      "matrixReads": 50,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 8,
+      "diagnosticCount": 5,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 0.9999999679307202,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Alif",
+      "revision": 1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 127,
+      "profile": "play-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 127,
+        "totalMs": 7.200000017881393,
+        "maxMs": 0.5
+      },
+      "batchMs": {
+        "count": 34,
+        "p50": 0.3999999910593033,
+        "p95": 0.7999999970197678,
+        "max": 2.199999988079071
+      },
+      "frameIntervalMs": {
+        "count": 33,
+        "p50": 16.699999999999932,
+        "p95": 16.700000000000045,
+        "max": 16.800000000000068
+      },
+      "publicationDelayMs": {
+        "count": 33,
+        "p50": 16.400000005960464,
+        "p95": 17.400000005960464,
+        "max": 17.700000002980232
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 100,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.4000000059604645
+      },
+      "attributeWrites": 336,
+      "matrixReads": 34,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 8,
+      "diagnosticCount": 4,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Sin",
+      "revision": 1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 285,
+      "profile": "play-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 285,
+        "totalMs": 12,
+        "maxMs": 0.6000000089406967
+      },
+      "batchMs": {
+        "count": 73,
+        "p50": 0.3999999910593033,
+        "p95": 0.5999999940395355,
+        "max": 1.8999999910593033
+      },
+      "frameIntervalMs": {
+        "count": 72,
+        "p50": 16.700000000000045,
+        "p95": 16.800000000000068,
+        "max": 16.800000000000182
+      },
+      "publicationDelayMs": {
+        "count": 71,
+        "p50": 16.600000008940697,
+        "p95": 17.299999997019768,
+        "max": 17.5
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 217,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.4000000059604645
+      },
+      "attributeWrites": 732,
+      "matrixReads": 73,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 8,
+      "diagnosticCount": 7,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 0.9998721191492174,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Mim",
+      "revision": 1,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 188,
+      "profile": "play-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 188,
+        "totalMs": 8.599999949336052,
+        "maxMs": 0.7000000029802322
+      },
+      "batchMs": {
+        "count": 51,
+        "p50": 0.30000001192092896,
+        "p95": 0.7000000029802322,
+        "max": 2.0999999940395355
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.700000000000045,
+        "p95": 16.700000000000045,
+        "max": 16.700000000000045
+      },
+      "publicationDelayMs": {
+        "count": 49,
+        "p50": 16.5,
+        "p95": 17.599999994039536,
+        "max": 17.900000005960464
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 147,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.30000001192092896
+      },
+      "attributeWrites": 513,
+      "matrixReads": 51,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 14,
+      "diagnosticCount": 6,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 1,
+      "outcome": "playComplete"
+    },
+    {
+      "label": "Nya",
+      "revision": 2,
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "dpr": 1,
+      "foreground": "visible",
+      "samples": 193,
+      "profile": "play-touch-standard-v2",
+      "sampleHandler": {
+        "samples": 193,
+        "totalMs": 9.899999961256981,
+        "maxMs": 0.6000000089406967
+      },
+      "batchMs": {
+        "count": 50,
+        "p50": 0.3999999910593033,
+        "p95": 0.6000000089406967,
+        "max": 2.3999999910593033
+      },
+      "frameIntervalMs": {
+        "count": 49,
+        "p50": 16.699999999999932,
+        "p95": 16.800000000000068,
+        "max": 16.800000000000182
+      },
+      "publicationDelayMs": {
+        "count": 49,
+        "p50": 16.600000008940697,
+        "p95": 17.400000005960464,
+        "max": 17.599999994039536
+      },
+      "longTaskMs": [],
+      "rafWorkMs": {
+        "count": 148,
+        "p50": 0,
+        "p95": 0.20000000298023224,
+        "max": 0.3999999910593033
+      },
+      "attributeWrites": 505,
+      "matrixReads": 50,
+      "pathVertices": 0,
+      "largestPathRewrite": 0,
+      "renderCount": 8,
+      "diagnosticCount": 5,
+      "trustedQueueDelayMs": null,
+      "allocationGc": "unavailable in this headless run",
+      "coverage": 1,
+      "outcome": "playComplete"
+    }
+  ]
+}

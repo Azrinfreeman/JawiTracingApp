@@ -1,0 +1,16 @@
+npm notice run jawi-prasekolah@0.1.0 test
+npm notice run vitest run --reporter=dot
+
+ RUN  v5.0.3 D:/UProject/ProjectAIVibeCode/JawiPrasekolah
+
+···········································································································
+
+ Test Files  12 passed (12)
+      Tests  107 passed (107)
+   Start at  19:23:44
+   Duration  842ms (transform 60%, tests 22%, import 16%, worker 3%)
+
+  Transform  transforming modules took 2.22s · 60% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

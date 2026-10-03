@@ -1,0 +1,38 @@
+npm notice run jawi-prasekolah@0.1.0 npx
+npm notice run playwright test -c playwright.fullscreen.config.js book-layout.spec.js play-tracing.spec.js numbered-guides.spec.js fullscreen-layout.spec.js --project=chromium --project=webkit --workers=2 --grep held tracing|default play pauses|Ta dot drag|Sin: modest|Ba numbers|Mim loop|demonstrations and blank|small-space fullscreen rejection
+
+Running 16 tests using 2 workers
+
+(node:24044) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+(node:16180) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[1/16] [chromium] › tests\browser\book-layout.spec.js:46:1 › held tracing and demonstrations cannot turn; interruption cannot strand a pending turn
+[2/16] [chromium] › tests\browser\fullscreen-layout.spec.js:79:1 › small-space fullscreen rejection stays visible and preserves the current screen
+[3/16] [chromium] › tests\browser\numbered-guides.spec.js:8:1 › Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot
+[4/16] [chromium] › tests\browser\play-tracing.spec.js:21:1 › default play pauses without erasing colour; held-pointer return earns no bridge
+[5/16] [chromium] › tests\browser\numbered-guides.spec.js:28:1 › Mim loop uses one badge at its shared start and stop, then advances to the second stroke
+[6/16] [chromium] › tests\browser\play-tracing.spec.js:72:1 › Ta dot drag keeps body; large pad and held keys commit one target per release
+[7/16] [chromium] › tests\browser\numbered-guides.spec.js:43:1 › demonstrations and blank copying have no numbered touch guides
+[8/16] [chromium] › tests\browser\play-tracing.spec.js:139:3 › Sin: modest hand jitter can follow a complex route without exact centreline input
+(node:42596) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[9/16] [webkit] › tests\browser\book-layout.spec.js:46:1 › held tracing and demonstrations cannot turn; interruption cannot strand a pending turn
+
+(node:10992) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+[10/16] [webkit] › tests\browser\fullscreen-layout.spec.js:79:1 › small-space fullscreen rejection stays visible and preserves the current screen
+[11/16] [webkit] › tests\browser\numbered-guides.spec.js:8:1 › Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot
+[12/16] [webkit] › tests\browser\play-tracing.spec.js:21:1 › default play pauses without erasing colour; held-pointer return earns no bridge
+[13/16] [webkit] › tests\browser\numbered-guides.spec.js:28:1 › Mim loop uses one badge at its shared start and stop, then advances to the second stroke
+[14/16] [webkit] › tests\browser\play-tracing.spec.js:72:1 › Ta dot drag keeps body; large pad and held keys commit one target per release
+[15/16] [webkit] › tests\browser\numbered-guides.spec.js:43:1 › demonstrations and blank copying have no numbered touch guides
+[16/16] [webkit] › tests\browser\play-tracing.spec.js:139:3 › Sin: modest hand jitter can follow a complex route without exact centreline input
+  16 passed (47.8s)

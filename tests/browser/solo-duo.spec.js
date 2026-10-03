@@ -13,7 +13,7 @@ async function setup(page, mode = 'solo') {
   if (mode === 'duo') await page.getByRole('button', { name: 'Duo 1v1', exact: true }).click();
   else await page.getByRole('button', { name: /Cabaran trofi/ }).click();
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await page.getByText('Pilihan guru & penjaga', { exact: true }).click();
+  await page.getByRole('button', { name: 'Seterusnya', exact: true }).click();
   await page.getByLabel('Bilangan pusingan').selectOption('3');
 }
 async function solo(page) { await setup(page); await page.getByRole('button', { name: 'Buka cabaran Solo' }).click(); }
@@ -88,26 +88,27 @@ test('Solo challenge completes, earns a trophy, exports both stores and resets b
   await expect(page.getByRole('heading', { name: 'Bunga dapat trofi!' })).toBeVisible(); await expect(page.locator('.match-trophy')).toBeVisible();
   await page.screenshot({ path: `${evidence}/solo-phone-trophy.png`, fullPage: true, animations: 'disabled' });
   let saved = await records(page); expect(saved.progress.attempts).toHaveLength(3); expect(saved.matches.matches).toHaveLength(1);
-  expect(saved.progress.attempts.every(a => a.sessionType === 'solo' && a.toleranceProfile === 'play-touch-standard-v1')).toBe(true);
+  expect(saved.progress.attempts.every(a => a.sessionType === 'solo' && a.toleranceProfile === 'play-touch-standard-v2')).toBe(true);
   const firstId = saved.matches.matches[0].id, sequence = saved.matches.matches[0].letterIds;
   await page.getByRole('button', { name: 'Main semula', exact: true }).click(); await expect(pane(page, 0)).toBeVisible();
   await page.getByRole('button', { name: 'Keluar', exact: true }).click(); await page.getByRole('button', { name: 'Ya, keluar' }).click();
   saved = await records(page); expect(saved.matches.matches).toHaveLength(2); expect(saved.matches.matches[1].id).not.toBe(firstId); expect(saved.matches.matches[1].letterIds).toEqual(sequence);
   expect(saved.matches.matches[1].status).toBe('abandoned');
   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
-  await expect(page.getByRole('heading', { name: 'Cabaran Solo & Duo' })).toBeVisible();
+  await page.getByRole('tab', {name:'Cabaran',exact:true}).click(); await expect(page.locator('.record-card')).toHaveCount(2);
   const download = page.waitForEvent('download'); await page.getByRole('button', { name: 'Eksport kemajuan' }).click();
   let json = ''; for await (const chunk of await (await download).createReadStream()) json += chunk.toString();
   const data = JSON.parse(json); expect(data.exportVersion).toBe(2); expect(data.progress.attempts).toHaveLength(3); expect(data.matches.matches).toHaveLength(2);
   await page.getByRole('button', { name: 'Padam rekod', exact: true }).click(); await expect(page.getByText(/salinan dan rekod cabaran Solo/)).toBeVisible();
   await page.getByRole('button', { name: 'Ya, padam rekod' }).click(); saved = await records(page); expect(saved.progress.attempts).toHaveLength(0); expect(saved.matches.matches).toHaveLength(0);
 });
-test('shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact', async ({ page }) => {
+test('shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact', async ({ page, browserName }) => {
   await page.setViewportSize({ width: 1024, height: 768 }); await solo(page); await ready(page);
   let model = await boardModels(page), stroke = model.strokes[0];
   await page.mouse.move(stroke[0].x, stroke[0].y); await page.mouse.down(); for (const p of stroke.slice(1, 20)) await page.mouse.move(p.x, p.y);
   await page.setViewportSize({ width: 1000, height: 760 });
   await expect(page.getByRole('heading', { name: 'Rehat sekejap' })).toBeVisible();
+  await page.screenshot({ path: `${evidence}/${browserName}-solo-pause.png`, animations: 'disabled' });
   const progress = await page.locator('.play-fill').getAttribute('data-measured-frontier'), timer = await page.locator('.race-clock').innerText();
   await page.clock.fastForward(50000); expect(await page.locator('.race-clock').innerText()).toBe(timer);
   await page.mouse.up(); await page.getByRole('button', { name: 'Sambung bermain' }).click(); await page.clock.fastForward(3100);
@@ -120,8 +121,9 @@ test('shared pause cancels a held gesture, preserves progress, excludes wait and
 });
 test('touch gate rejects mouse verification; adult preview cannot persist a score or trophy', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 720 }); await setup(page, 'duo');
-  await page.getByLabel('Profil pemain 2').selectOption('Bunga'); await expect(page.getByRole('button', { name: 'Uji dua sentuhan' })).toBeDisabled();
-  await page.getByLabel('Profil pemain 2').selectOption('Daun'); await page.getByRole('button', { name: 'Uji dua sentuhan' }).click();
+  await page.getByRole('button', { name: 'Sebelumnya', exact: true }).click();
+  await page.getByLabel('Profil pemain 2').selectOption('Bunga'); await expect(page.getByRole('button', { name: 'Seterusnya', exact: true })).toBeDisabled();
+  await page.getByLabel('Profil pemain 2').selectOption('Daun'); await page.getByRole('button', { name: 'Seterusnya', exact: true }).click(); await page.getByRole('button', { name: 'Uji dua sentuhan' }).click();
   await page.getByRole('button', { name: 'Uji sentuhan pemain 1' }).click(); await expect(page.getByRole('button', { name: 'Teruskan Duo 1v1' })).toHaveCount(0);
   await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();
   await expect(page.locator('.race-lanes')).toBeVisible();
@@ -135,13 +137,18 @@ for (const [width, height] of [[1024, 768], [768, 1024], [1280, 720], [1920, 108
   test(`Duo fits equal upright boards and controls at ${width}x${height}`, async ({ page }) => {
     await page.setViewportSize({ width, height }); await setup(page, 'duo'); await page.getByRole('button', { name: 'Uji dua sentuhan' }).click(); await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();
     await expect(page.locator('.arena-space')).toHaveCount(0);
+    await page.evaluate(async () => { await document.fonts.ready; await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))); });
     const boards = await page.locator('.board-wrap').evaluateAll(nodes => nodes.map(n => { const b = n.getBoundingClientRect(); return { width: b.width, height: b.height, top: b.top, right: b.right, bottom: b.bottom }; }));
-    expect(boards).toHaveLength(2); expect(boards[0].width).toBeGreaterThanOrEqual(280); expect(boards[0].width).toBe(boards[1].width); expect(Math.abs(boards[0].width - boards[0].height)).toBeLessThan(1);
+    expect(boards).toHaveLength(2); expect(Math.min(boards[0].width, boards[0].height)).toBeGreaterThanOrEqual(280);
+    expect(boards[0].width).toBe(boards[1].width); expect(boards[0].height).toBe(boards[1].height);
     const controls = await page.locator('.race-actions button').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().toJSON()));
     expect(controls.every(b => b.bottom <= height && b.right <= width && b.height >= 48)).toBe(true);
     for (let slot = 0; slot < 2; slot++) {
       const rows = await pane(page, slot).locator('.board-tip, .trace-number-instruction, .play-dot-tools, .race-actions').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().toJSON()));
-      expect(rows.every((row, i) => i === 0 || row.top >= rows[i - 1].bottom - 1)).toBe(true);
+      expect(rows.every(row => row.top >= boards[slot].bottom - 1 && row.bottom <= height && row.left >= 0 && row.right <= width)).toBe(true);
+      for (let i = 0; i < rows.length; i++) for (let j = i + 1; j < rows.length; j++) {
+        expect(rows[i].left < rows[j].right - 1 && rows[j].left < rows[i].right - 1 && rows[i].top < rows[j].bottom - 1 && rows[j].top < rows[i].bottom - 1).toBe(false);
+      }
     }
     await page.screenshot({ path: `${evidence}/duo-${width}x${height}-ready.png`, fullPage: true, animations: 'disabled' });
     await ready(page, 2); await expect(page.locator('.race-lanes')).toBeVisible();
@@ -149,13 +156,13 @@ for (const [width, height] of [[1024, 768], [768, 1024], [1280, 720], [1920, 108
   });
 }
 test('small and short Duo screens offer space guidance before racing; Solo remains usable', async ({ page }) => {
-  await page.setViewportSize({ width: 844, height: 390 }); await setup(page, 'duo'); await page.getByRole('button', { name: 'Uji dua sentuhan' }).click(); await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();
-  await expect(page.getByRole('heading', { name: 'Besarkan ruang bermain' })).toBeVisible(); await expect(page.locator('.race-lanes')).toBeHidden();
+  await page.setViewportSize({ width: 1024, height: 768 }); await setup(page, 'duo'); await page.getByRole('button', { name: 'Uji dua sentuhan' }).click(); await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();
+  await page.setViewportSize({ width: 844, height: 390 }); await expect(page.getByRole('dialog', { name: 'Besarkan ruang bermain' })).toBeVisible();
   await page.screenshot({ path: `${evidence}/duo-short-space-guidance.png`, fullPage: true, animations: 'disabled' });
   await page.setViewportSize({ width: 1024, height: 768 }); await expect(page.locator('.trace-board')).toHaveCount(2);
   await ready(page, 2); await page.setViewportSize({ width: 390, height: 844 }); await expect(page.getByRole('heading', { name: 'Besarkan ruang bermain' })).toBeVisible();
   await page.getByRole('button', { name: 'Kembali memilih Solo' }).click(); await page.getByRole('button', { name: 'Kembali', exact: true }).click();
-  await page.getByRole('button', { name: /Cabaran trofi/ }).click(); await page.getByRole('button', { name: 'Jom mula', exact: true }).click(); await page.getByRole('button', { name: 'Buka cabaran Solo' }).click();
+  await page.getByRole('button', { name: /Cabaran trofi/ }).click(); await page.getByRole('button', { name: 'Jom mula', exact: true }).click(); await page.getByRole('button', { name: 'Seterusnya', exact: true }).click(); await page.getByRole('button', { name: 'Buka cabaran Solo' }).click();
   await expect(page.locator('.trace-board')).toBeVisible(); expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 test('native concurrent Duo finishes both profiles, independent dot pads and one shared trophy', async ({ browser, browserName }) => {
@@ -165,7 +172,12 @@ test('native concurrent Duo finishes both profiles, independent dot pads and one
   await verifiedDuo(page, session);
   const ids = await page.locator('.trace-board pattern').evaluateAll(nodes => nodes.map(n => n.id)); expect(new Set(ids).size).toBe(2);
   for (let i = 0; i < 3; i++) {
-    await ready(page, 2); await bothTouch(page, session); await expect(page.getByRole('heading', { name: `Pusingan ${i + 1} selesai!` })).toBeVisible();
+    await ready(page, 2);
+    await page.screenshot({ path: `${evidence}/duo-native-racing-${i + 1}.png`, animations: 'disabled' });
+    await bothTouch(page, session, async () => {
+      await page.screenshot({ path: `${evidence}/duo-native-dots-${i + 1}.png`, animations: 'disabled' });
+    });
+    await expect(page.getByRole('heading', { name: `Pusingan ${i + 1} selesai!` })).toBeVisible();
     await page.screenshot({ path: `${evidence}/duo-native-round-${i + 1}.png`, fullPage: true, animations: 'disabled' });
     await page.getByRole('button', { name: i === 2 ? 'Lihat keputusan' : 'Pusingan seterusnya' }).click();
   }
@@ -173,7 +185,7 @@ test('native concurrent Duo finishes both profiles, independent dot pads and one
   await page.screenshot({ path: `${evidence}/duo-native-shared-trophy.png`, fullPage: true, animations: 'disabled' });
   const saved = await records(page); expect(saved.progress.attempts).toHaveLength(6); expect(new Set(saved.progress.attempts.map(a => a.id)).size).toBe(6); expect(saved.progress.profile).toBe('Bunga');
   expect(saved.progress.attempts.filter(a => a.profile === 'Bunga')).toHaveLength(3); expect(saved.progress.attempts.filter(a => a.profile === 'Daun')).toHaveLength(3);
-  expect(saved.progress.attempts.every(a => a.pointerType === 'touch' && a.toleranceProfile === 'play-touch-standard-v1')).toBe(true); expect(saved.matches.matches).toHaveLength(1); expect(errors).toEqual([]);
+  expect(saved.progress.attempts.every(a => a.pointerType === 'touch' && a.toleranceProfile === 'play-touch-standard-v2')).toBe(true); expect(saved.matches.matches).toHaveLength(1); expect(errors).toEqual([]);
   await context.close();
 });
 test('captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner', async ({ browser, browserName }) => {
@@ -199,7 +211,7 @@ test('storage failure retains session export and reload never restores a live ma
   await page.addInitScript(() => { Storage.prototype.setItem = () => { throw new Error('Quota exceeded'); }; });
   await page.setViewportSize({ width: 1024, height: 768 }); await solo(page); await ready(page); await completeMouse(page);
   await page.getByRole('button', { name: 'Keluar cabaran' }).click(); await page.getByRole('button', { name: 'Ya, keluar' }).click();
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click(); await expect(page.getByText(/Storan pelayar tidak tersedia/)).toBeVisible();
+  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click(); await expect(page.getByText(/Storan tidak tersedia/)).toBeVisible();
   const pending = page.waitForEvent('download'); await page.getByRole('button', { name: 'Eksport kemajuan' }).click();
   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
   const data = JSON.parse(json); expect(data.progress.attempts).toHaveLength(1); expect(data.matches.matches).toHaveLength(1);
@@ -250,7 +262,12 @@ test('native portrait Duo dot controls fit, complete together and appear in teac
       for (let slot = 0; slot < 2; slot++) {
         const pad = pane(page, slot).getByRole('button', { name: `Tambah titik 1 daripada ${count}` }); await expect(pad).toBeVisible();
         const box = await pad.boundingBox(), guide = await pane(page, slot).locator('.trace-number-instruction').boundingBox(), retry = await pane(page, slot).getByRole('button', { name: 'Cuba lagi' }).boundingBox();
-        expect(box.height).toBeGreaterThanOrEqual(64); expect(box.y).toBeGreaterThanOrEqual(guide.y + guide.height); expect(box.y + box.height).toBeLessThanOrEqual(retry.y); expect(box.y + box.height).toBeLessThanOrEqual(1024);
+        expect(box.height).toBeGreaterThanOrEqual(64); expect(box.y).toBeGreaterThanOrEqual(guide.y + guide.height);
+        // The fitted dock permits the pad and retry beside each other.
+        expect(box.y + box.height <= retry.y || retry.y + retry.height <= box.y || box.x + box.width <= retry.x || retry.x + retry.width <= box.x).toBe(true);
+        const lane = await pane(page, slot).boundingBox();
+        expect(box.x).toBeGreaterThanOrEqual(lane.x); expect(box.x + box.width).toBeLessThanOrEqual(lane.x + lane.width);
+        expect(box.y + box.height).toBeLessThanOrEqual(1024);
       }
       await page.screenshot({ path: `${evidence}/duo-portrait-round-${round + 1}-dots.png`, fullPage: true, animations: 'disabled' });
     });
@@ -259,12 +276,18 @@ test('native portrait Duo dot controls fit, complete together and appear in teac
   }
   await expect(page.getByRole('heading', { name: 'Trofi bersama!' })).toBeVisible(); expect((await records(page)).progress.attempts).toHaveLength(6);
   await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
-  const history = page.locator('.teacher-panel').filter({ has: page.getByRole('heading', { name: 'Cabaran Solo & Duo', exact: true }) });
+  await page.getByRole('tab', { name: 'Cabaran', exact: true }).click();
+  const history = page.locator('.record-card').filter({ hasText: 'Bunga / Daun' });
   await expect(history).toContainText('Bunga / Daun'); await expect(history).toContainText('Selesai'); await history.screenshot({ path: `${evidence}/duo-teacher-history.png`, animations: 'disabled' });
   await context.close();
 });
 for (const [width, height] of [[320, 740], [844, 390]]) test(`Solo has a usable board and completes at ${width}x${height}`, async ({ page }) => {
-  await page.setViewportSize({ width, height }); await solo(page);
+  await page.setViewportSize({ width, height });
+  if (height < 600) {
+    await page.goto('/'); await dismissSplash(page); await expect(page.getByRole('dialog', { name: 'Besarkan ruang bermain' })).toBeVisible();
+    await page.setViewportSize({ width: height, height: width });
+  }
+  await solo(page);
   const box = await page.locator('.board-wrap').boundingBox(); expect(box.width).toBeGreaterThanOrEqual(280);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   for (let round = 0; round < 3; round++) { await ready(page); await completeMouse(page); await expect(page.getByRole('heading', { name: `Pusingan ${round + 1} selesai!` })).toBeVisible(); await page.getByRole('button', { name: round === 2 ? 'Lihat keputusan' : 'Pusingan seterusnya' }).click(); }

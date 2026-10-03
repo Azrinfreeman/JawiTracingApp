@@ -7,7 +7,7 @@ const validAttempt = a => a && ['id','timestamp','profile','letterId','mode','po
   (a.sessionType === undefined || ['solo', 'duo'].includes(a.sessionType)) &&
   (a.matchId === undefined || typeof a.matchId === 'string') &&
   ['roundIndex', 'playerSlot'].every(k => a[k] === undefined || (Number.isInteger(a[k]) && a[k] >= 0)) &&
-  ['blockedGestures','wrongStartGestures','rejectedDotGestures','rollbackCount','pauseEpisodes','resumeCount','ignoredStartGestures','equivalentDotActions','terminalDisplayFillUnits','turnProjectionAllowanceUnits','diagnosticRotations'].every(k => a.metrics[k] === undefined || (finite(a.metrics[k]) && a.metrics[k] >= 0));
+  ['blockedGestures','wrongStartGestures','rejectedDotGestures','rollbackCount','pauseEpisodes','resumeCount','ignoredStartGestures','equivalentDotActions','terminalDisplayFillUnits','turnProjectionAllowanceUnits','diagnosticRotations','endpointConfirmations','releaseAssistances'].every(k => a.metrics[k] === undefined || (finite(a.metrics[k]) && a.metrics[k] >= 0));
 const validCopy = c => c && ['id','timestamp','profile','letterId'].every(k => typeof c[k] === 'string') && Array.isArray(c.ink) && c.ink.length <= 100 &&
   c.ink.every(line => Array.isArray(line) && line.length <= 700 && line.every(p => finite(p.x) && finite(p.y)));
 export function createProgressStore(storage) {

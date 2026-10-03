@@ -1,0 +1,678 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/kaf-ga.spec.js",
+      "--config=playwright.fullscreen.config.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--grep",
+      "guided: continuous|precision: continuous|demo uses|catalogue, help"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.fullscreen.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/kaf-ga/browser-followup.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "kaf-ga.spec.js",
+      "file": "kaf-ga.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "kaf guided: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4293,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:34.431Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-094277d9e1b0c90b9a7a",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga guided: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4252,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:38.836Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-d1044d4759a9a6df352c",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "kaf precision: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4028,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:43.099Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-bb4b330cd70d93b806b7",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga precision: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4037,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:47.137Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-6b368706effc6be0eba7",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "kaf: demo uses the connected model, then copying keeps original coordinates and save protection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5852,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:51.182Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-4a8ff3107b2dad7479dd",
+          "file": "kaf-ga.spec.js",
+          "line": 75,
+          "column": 3
+        },
+        {
+          "title": "ga: demo uses the connected model, then copying keeps original coordinates and save protection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6004,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:57.043Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-4233f86251c6629c0d55",
+          "file": "kaf-ga.spec.js",
+          "line": 75,
+          "column": 3
+        },
+        {
+          "title": "catalogue, help, teacher and audio illustrations agree; revised lessons remain gated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2023,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.letter-help path')\nExpected: \u001b[32m\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"\u001b[39m\nError: strict mode violation: locator('.letter-help path') resolved to 7 elements:\n    1) <path fill=\"none\" stroke-width=\"44\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.letter-help path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.letter-help path')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.letter-help path')\nExpected: \u001b[32m\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"\u001b[39m\nError: strict mode violation: locator('.letter-help path') resolved to 7 elements:\n    1) <path fill=\"none\" stroke-width=\"44\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.letter-help path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.letter-help path')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:141:53",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 53,
+                      "line": 141
+                    },
+                    "snippet": "  139 |     await chooseLetter(page, letter.labelMs);\n  140 |     await page.getByRole('button', { name: 'Kenal huruf dan panduan', exact: true }).click();\n> 141 |     await expect(page.locator('.letter-help path')).toHaveAttribute('d', letter.geometry.strokes[0].path);\n      |                                                     ^\n  142 |     await expect(page.locator('.letter-help circle')).toHaveCount(letter.geometry.dotTargets.length);\n  143 |     await shot(page, `${browserName}-help-${letter.id}`); await page.keyboard.press('Escape');\n  144 |     await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 53,
+                        "line": 141
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.letter-help path')\nExpected: \u001b[32m\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"\u001b[39m\nError: strict mode violation: locator('.letter-help path') resolved to 7 elements:\n    1) <path fill=\"none\" stroke-width=\"44\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.letter-help path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.letter-help path')\u001b[22m\n\n\n  139 |     await chooseLetter(page, letter.labelMs);\n  140 |     await page.getByRole('button', { name: 'Kenal huruf dan panduan', exact: true }).click();\n> 141 |     await expect(page.locator('.letter-help path')).toHaveAttribute('d', letter.geometry.strokes[0].path);\n      |                                                     ^\n  142 |     await expect(page.locator('.letter-help circle')).toHaveCount(letter.geometry.dotTargets.length);\n  143 |     await shot(page, `${browserName}-help-${letter.id}`); await page.keyboard.press('Escape');\n  144 |     await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click();\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:141:53"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:41:03.058Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-catalogue-help-teac-e2a50-evised-lessons-remain-gated-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-catalogue-help-teac-e2a50-evised-lessons-remain-gated-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 53,
+                    "line": 141
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-92966167bcfa10c48b07",
+          "file": "kaf-ga.spec.js",
+          "line": 108,
+          "column": 1
+        },
+        {
+          "title": "kaf guided: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:34.445Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-42a2a51ff75d2316e435",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga guided: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4895,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:39.363Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-109eb3831533d846edb9",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "kaf precision: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4558,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:44.272Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-86cac6f12a384f09e8af",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "ga precision: continuous body and separate required dot complete the revised preview",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4297,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:48.840Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-2b21854c29272ed36580",
+          "file": "kaf-ga.spec.js",
+          "line": 25,
+          "column": 3
+        },
+        {
+          "title": "kaf: demo uses the connected model, then copying keeps original coordinates and save protection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6181,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:53.147Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-f41c3e635db2e07342c0",
+          "file": "kaf-ga.spec.js",
+          "line": 75,
+          "column": 3
+        },
+        {
+          "title": "ga: demo uses the connected model, then copying keeps original coordinates and save protection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6848,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:40:59.338Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-ea6f6a25ffb453fb02f6",
+          "file": "kaf-ga.spec.js",
+          "line": 75,
+          "column": 3
+        },
+        {
+          "title": "catalogue, help, teacher and audio illustrations agree; revised lessons remain gated",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10487,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.letter-help path')\nExpected: \u001b[32m\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"\u001b[39m\nError: strict mode violation: locator('.letter-help path') resolved to 7 elements:\n    1) <path fill=\"none\" stroke-width=\"44\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.letter-help path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.letter-help path')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.letter-help path')\nExpected: \u001b[32m\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"\u001b[39m\nError: strict mode violation: locator('.letter-help path') resolved to 7 elements:\n    1) <path fill=\"none\" stroke-width=\"44\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.letter-help path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.letter-help path')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:141:53",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                      "column": 53,
+                      "line": 141
+                    },
+                    "snippet": "  139 |     await chooseLetter(page, letter.labelMs);\n  140 |     await page.getByRole('button', { name: 'Kenal huruf dan panduan', exact: true }).click();\n> 141 |     await expect(page.locator('.letter-help path')).toHaveAttribute('d', letter.geometry.strokes[0].path);\n      |                                                     ^\n  142 |     await expect(page.locator('.letter-help circle')).toHaveCount(letter.geometry.dotTargets.length);\n  143 |     await shot(page, `${browserName}-help-${letter.id}`); await page.keyboard.press('Escape');\n  144 |     await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                        "column": 53,
+                        "line": 141
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.letter-help path')\nExpected: \u001b[32m\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"\u001b[39m\nError: strict mode violation: locator('.letter-help path') resolved to 7 elements:\n    1) <path fill=\"none\" stroke-width=\"44\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536\"></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.letter-help path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.letter-help path')\u001b[22m\n\n\n  139 |     await chooseLetter(page, letter.labelMs);\n  140 |     await page.getByRole('button', { name: 'Kenal huruf dan panduan', exact: true }).click();\n> 141 |     await expect(page.locator('.letter-help path')).toHaveAttribute('d', letter.geometry.strokes[0].path);\n      |                                                     ^\n  142 |     await expect(page.locator('.letter-help circle')).toHaveCount(letter.geometry.dotTargets.length);\n  143 |     await shot(page, `${browserName}-help-${letter.id}`); await page.keyboard.press('Escape');\n  144 |     await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click();\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js:141:53"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-03T07:41:06.196Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-catalogue-help-teac-e2a50-evised-lessons-remain-gated-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\kaf-ga-catalogue-help-teac-e2a50-evised-lessons-remain-gated-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+                    "column": 53,
+                    "line": 141
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f3bad72c401e119366ca-ec5392ead222e7eccfd7",
+          "file": "kaf-ga.spec.js",
+          "line": 108,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-03T07:40:33.904Z",
+    "duration": 44479.647000000004,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

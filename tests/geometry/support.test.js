@@ -7,13 +7,13 @@ import { traceReducer,initialTraceState } from '../../src/tracing/traceReducer.j
 import { screenToLogical } from '../../src/tracing/geometry.js';
 
 describe('content readiness',()=>{
-  it('includes all 37 models with current geometry/audio approvals and student readiness',()=>{
+  it('includes 37 models with Kaf/Ga corrections gated for fresh geometry review',()=>{
     const result=validateCatalogue(letters); expect(result.errors).toEqual([]);
     expect(letters).toHaveLength(37); expect(letters.filter(l=>l.pilot)).toHaveLength(12);
     expect(letters.filter(l=>l.geometry.strokes.length)).toHaveLength(37);
-    expect(letters.filter(l=>l.geometry.strokes.length && l.geometry.status!=='approved')).toHaveLength(0);
-    expect(result.results.filter(r=>r.ready)).toHaveLength(37);
-    expect(result.results.filter(r=>!r.ready)).toHaveLength(0);
+    expect(letters.filter(l=>l.geometry.status!=='approved').map(l=>l.id)).toEqual(['kaf','ga']);
+    expect(result.results.filter(r=>r.ready)).toHaveLength(35);
+    expect(result.results.filter(r=>!r.ready).map(r=>r.id)).toEqual(['kaf','ga']);
     expect(letters.filter(l=>l.additional)).toHaveLength(6);
   });
   it('rejects fake approval, empty approved models and missing recordings',()=>{
@@ -70,11 +70,12 @@ describe('storage and state',()=>{
     const legacy={id:'legacy-fixture',timestamp:'2026-10-02T00:00:00Z',profile:'Daun',letterId:'ta',mode:'guided',pointerType:'mouse',toleranceProfile:'guided-pen-mouse-standard-v1',metrics:{coverage:1,meanError:0,invalidTravel:10,invalidEvents:1},assistance:0,retries:0};
     const strict={...legacy,id:'strict-fixture',toleranceProfile:'guided-pen-mouse-standard-v2',interactionPolicy:'strict-v2',inkPolicy:'validatedSegments',dotInputPolicy:'validatedTapStamp',metrics:{...legacy.metrics,blockedGestures:1,wrongStartGestures:0,rejectedDotGestures:1,rollbackCount:0}};
     const play={...legacy,id:'play-fixture',mode:'play',outcome:'playComplete',toleranceProfile:'play-pen-mouse-standard-v1',interactionPolicy:'play-guided-v1',inkPolicy:'assistedRouteFill',dotInputPolicy:'validatedTapOrEquivalentPad',displayAssistance:'routeFill',metrics:{...legacy.metrics,pauseEpisodes:1,resumeCount:1,equivalentDotActions:2,terminalDisplayFillUnits:5,diagnosticRotations:0}};
-    const store=createProgressStore(storage);store.addAttempt(legacy);store.addAttempt(strict);store.addAttempt(play);
+    const current={...play,id:'play-v2-fixture',toleranceProfile:'play-pen-mouse-standard-v2',interactionPolicy:'play-guided-v2',metrics:{...play.metrics,endpointConfirmations:1,releaseAssistances:1}};
+    const store=createProgressStore(storage);store.addAttempt(legacy);store.addAttempt(strict);store.addAttempt(play);store.addAttempt(current);
     const records=createProgressStore(storage).read().attempts;
-    expect(records).toEqual([legacy,strict,play]);expect(records[0].interactionPolicy).toBeUndefined();
+    expect(records).toEqual([legacy,strict,play,current]);expect(records[0].interactionPolicy).toBeUndefined();
     expect(JSON.parse(store.export()).attempts[1].dotInputPolicy).toBe('validatedTapStamp');
-    storage.setItem(STORAGE_KEY,JSON.stringify({version:1,profile:'Daun',attempts:[legacy,{...strict,metrics:{...strict.metrics,blockedGestures:'bad'}}],copies:[]}));
+    storage.setItem(STORAGE_KEY,JSON.stringify({version:1,profile:'Daun',attempts:[legacy,{...strict,metrics:{...strict.metrics,blockedGestures:'bad'}},{...current,metrics:{...current.metrics,endpointConfirmations:-1}},{...current,metrics:{...current.metrics,releaseAssistances:'bad'}}],copies:[]}));
     expect(createProgressStore(storage).read().attempts).toEqual([legacy]);
   });
   it('maps equivalent screen coordinates to stable logical positions without DPR scaling',()=>{

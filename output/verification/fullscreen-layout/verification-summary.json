@@ -1,0 +1,1051 @@
+{
+  "recordedAt": "2026-10-03T04:54:50.192Z",
+  "runtime": {
+    "node": "v24.19.0",
+    "platform": "win32",
+    "playwright": "1.63.0",
+    "browserRegistry": [
+      {
+        "name": "chromium",
+        "revision": "1243",
+        "installByDefault": true,
+        "browserVersion": "153.0.8010.12",
+        "title": "Chrome for Testing"
+      },
+      {
+        "name": "webkit",
+        "revision": "2359",
+        "installByDefault": true,
+        "revisionOverrides": {
+          "mac14": "2251",
+          "mac14-arm64": "2251"
+        },
+        "browserVersion": "26.6",
+        "title": "WebKit"
+      }
+    ]
+  },
+  "build": {
+    "css": "index-Bsqr_XpW.css",
+    "js": "index-BXH_CpQi.js",
+    "mainLayoutJs": "index-DuJ_B2dD.js",
+    "isolatedDifference": "Small-space fullscreen rejection message; verified in both browsers after rebuilding."
+  },
+  "reports": {
+    "final-layout.json": {
+      "passed": 42,
+      "skipped": 0,
+      "failed": 0,
+      "startTime": "2026-10-03T04:23:24.384Z",
+      "durationMs": 325077.457
+    },
+    "regression.json": {
+      "passed": 54,
+      "skipped": 4,
+      "failed": 6,
+      "startTime": "2026-10-03T04:31:19.242Z",
+      "durationMs": 245756.23500000002
+    },
+    "regression-followup.json": {
+      "passed": 16,
+      "skipped": 0,
+      "failed": 0,
+      "startTime": "2026-10-03T04:35:58.157Z",
+      "durationMs": 47771.581999999995
+    },
+    "visual-race.json": {
+      "passed": 3,
+      "skipped": 1,
+      "failed": 0,
+      "startTime": "2026-10-03T04:37:21.330Z",
+      "durationMs": 15962.457
+    },
+    "extended.json": {
+      "passed": 17,
+      "skipped": 0,
+      "failed": 3,
+      "startTime": "2026-10-03T04:40:27.334Z",
+      "durationMs": 266660.776
+    },
+    "extended-followup.json": {
+      "passed": 1,
+      "skipped": 0,
+      "failed": 2,
+      "startTime": "2026-10-03T04:45:06.798Z",
+      "durationMs": 149518.152
+    },
+    "extended-4k-native.json": {
+      "passed": 2,
+      "skipped": 0,
+      "failed": 1,
+      "startTime": "2026-10-03T04:49:15.818Z",
+      "durationMs": 113169.038
+    },
+    "4k-envelope-final.json": {
+      "passed": 1,
+      "skipped": 0,
+      "failed": 0,
+      "startTime": "2026-10-03T04:52:43.580Z",
+      "durationMs": 120623.046
+    }
+  },
+  "uniqueCases": {
+    "passed": 130,
+    "skipped": 4,
+    "failed": 0
+  },
+  "browsers": {
+    "chromium": {
+      "passed": 69,
+      "skipped": 0,
+      "failed": 0
+    },
+    "webkit": {
+      "passed": 61,
+      "skipped": 4,
+      "failed": 0
+    }
+  },
+  "protectedFiles": 84,
+  "protectedChanges": [],
+  "cases": [
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 320x740",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 390x844",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1024x768",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 768x1024",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1280x720",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1920x1080",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 390x844",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1024x768",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 768x1024",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1920x1080",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1280x720",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1920x1080",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "short viewport and zoom equivalent give fitted space guidance",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "every retained attempt is paged and export includes the complete store",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 320x740",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 390x844",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 1024x768",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 1920x1080",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 320x740",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 390x844",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1024x768",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 768x1024",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1280x720",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1920x1080",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 390x844",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1024x768",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 768x1024",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1920x1080",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1280x720",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1920x1080",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "short viewport and zoom equivalent give fitted space guidance",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "every retained attempt is paged and export includes the complete store",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 320x740",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 390x844",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 1024x768",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 1920x1080",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "final-layout.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android export hands the complete teacher payload to the document bridge",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android Back preserves unsaved copying, then returns through contents before exit",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android background cancels held writing without erasing accepted colour",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android background resolves one pending page turn and stops a demonstration",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android background pauses the shared Duo clock and Back uses the existing exit confirmation",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android export hands the complete teacher payload to the document bridge",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android Back preserves unsaved copying, then returns through contents before exit",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android background cancels held writing without erasing accepted colour",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android background resolves one pending page turn and stops a demonstration",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "android-platform.spec.js",
+      "title": "Android background pauses the shared Duo clock and Back uses the existing exit confirmation",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "held tracing and demonstrations cannot turn; interruption cannot strand a pending turn",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "copy exit offers save, discard and return without silently losing ink",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "filtered contents, keyboard turns and missing animation events keep one destination",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "native touch completion needs a fresh page turn at 768 and DPR 2",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "native touch completion needs a fresh page turn at 390 and DPR 3",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "held tracing and demonstrations cannot turn; interruption cannot strand a pending turn",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "copy exit offers save, discard and return without silently losing ink",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "filtered contents, keyboard turns and missing animation events keep one destination",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "native touch completion needs a fresh page turn at 768 and DPR 2",
+      "browser": "webkit",
+      "status": "skipped",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "book-layout.spec.js",
+      "title": "native touch completion needs a fresh page turn at 390 and DPR 3",
+      "browser": "webkit",
+      "status": "skipped",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "native pad drag outside does not place a dot; a new contained press can finish",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "default play pauses without erasing colour; held-pointer return earns no bridge",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "wrong down can find the start; endpoint jumps cannot finish the letter",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "lift, resize, capture loss and demonstration preserve accepted play progress",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "Ta dot drag keeps body; large pad and held keys commit one target per release",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "native pad drag outside does not place a dot; a new contained press can finish",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "Sin: modest hand jitter can follow a complex route without exact centreline input",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "Kaf: modest hand jitter can follow a complex route without exact centreline input",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "play-tracing.spec.js",
+      "title": "Mim: modest hand jitter can follow a complex route without exact centreline input",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "visual-race.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "visual-race.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "visual-race.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "browser": "webkit",
+      "status": "skipped",
+      "evidence": "visual-race.json"
+    },
+    {
+      "file": "solo-duo.spec.js",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "browser": "webkit",
+      "status": "skipped",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "strict-tracing.spec.js",
+      "title": "a dirty guided resume preserves earlier clean ink, then requires a clean retry",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "title": "native emulated pen preserves pointer type and completes a strict stroke",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "title": "play touch preserves colour after an excursion at 768 CSS pixels and DPR 2",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "title": "play touch preserves colour after an excursion at 390 CSS pixels and DPR 3",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "touch.spec.js",
+      "title": "native emulated pen completes assisted play with its own recorded input type",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "small-space fullscreen rejection stays visible and preserves the current screen",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "small-space fullscreen rejection stays visible and preserves the current screen",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "title": "demonstrations and blank copying have no numbered touch guides",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "title": "Ba numbers follow the body, stop for a lift, then finish with the separately numbered dot",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "title": "Mim loop uses one badge at its shared start and stop, then advances to the second stroke",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "numbered-guides.spec.js",
+      "title": "demonstrations and blank copying have no numbered touch guides",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "regression-followup.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1280x800",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 800x1280",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 3840x2160",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1280x800",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 800x1280",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 3840x2160",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1280x800",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 800x1280",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 3840x2160",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "wheel, keyboard and supported native touch panning cannot scroll game screens",
+      "browser": "chromium",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1280x800",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 800x1280",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 3840x2160",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended-4k-native.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1280x800",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 800x1280",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 3840x2160",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "4k-envelope-final.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1280x800",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 800x1280",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 3840x2160",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended-4k-native.json"
+    },
+    {
+      "file": "fullscreen-layout.spec.js",
+      "title": "wheel, keyboard and supported native touch panning cannot scroll game screens",
+      "browser": "webkit",
+      "status": "passed",
+      "evidence": "extended.json"
+    }
+  ]
+}

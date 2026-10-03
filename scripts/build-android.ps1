@@ -2,6 +2,12 @@ param([string]$SdkPath, [string]$GradlePath, [switch]$Offline, [switch]$SkipWebB
 $ErrorActionPreference = 'Stop'
 $androidWorkspace = Split-Path $PSScriptRoot -Parent
 $androidProject = Join-Path $androidWorkspace 'android'
+$releaseConfig = Get-Content -LiteralPath (Join-Path $androidProject 'app/build.gradle') -Raw
+$releaseVersion = [regex]::Match($releaseConfig, "versionName\s+'([0-9]+\.[0-9]+\.[0-9]+)'").Groups[1].Value
+if (-not $releaseVersion) { throw 'Android release versionName must use major.minor.patch.' }
+$androidEvidence = Join-Path $androidWorkspace "output/verification/android-release-$releaseVersion"
+$apkPath = Join-Path $androidWorkspace "output/releases/Taman-Jawi-$releaseVersion-release.apk"
+if (Test-Path -LiteralPath $apkPath) { throw "Release already exists: $apkPath. Increase the Android version before producing another release." }
 $androidJdk = $env:JAVA_HOME
 if (-not $SdkPath) {
     $SdkPath = $env:ANDROID_SDK_ROOT
@@ -51,13 +57,12 @@ if (-not (Test-Path -LiteralPath $signingFile)) {
 Push-Location $androidWorkspace
 try {
     if (-not $SkipWebBuild) { npm run build; if ($LASTEXITCODE -ne 0) { throw 'Web build failed.' } }
-    node scripts/sync-android-assets.js; if ($LASTEXITCODE -ne 0) { throw 'Android asset sync failed.' }
+    node scripts/sync-android-assets.js $androidEvidence; if ($LASTEXITCODE -ne 0) { throw 'Android asset sync failed.' }
     $gradleArguments = @('-p', $androidProject, ':app:assembleRelease', ':app:lintRelease', '--no-daemon', '--console=plain')
     if ($Offline) { $gradleArguments += '--offline' }
     & $GradlePath @gradleArguments
     if ($LASTEXITCODE -ne 0) { throw 'Android release build or lint failed.' }
     $releaseDirectory = Join-Path $androidWorkspace 'output\releases'; New-Item -ItemType Directory -Force -Path $releaseDirectory | Out-Null
-    $apkPath = Join-Path $releaseDirectory 'Taman-Jawi-1.0.0-release.apk'
     Copy-Item -LiteralPath (Join-Path $androidProject 'app\build\outputs\apk\release\app-release.apk') -Destination $apkPath
     & (Join-Path $SdkPath 'build-tools\36.0.0\apksigner.bat') verify --verbose --print-certs $apkPath
     if ($LASTEXITCODE -ne 0) { throw 'APK signature verification failed.' }

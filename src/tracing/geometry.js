@@ -26,24 +26,42 @@ export function pointAt(reference, s) {
   return { x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t };
 }
 
-/** Project only within the active arc interval. Never search a whole letter. */
+/** Half-open segment-index range, including both segments at an exact boundary. */
+export function arcSegments(reference, minimum, maximum) {
+  const vertices = reference.vertices;
+  if (minimum > maximum || maximum < 0 || minimum > reference.length) return [1, 1];
+  let low = 1, high = vertices.length;
+  while (low < high) {
+    const middle = (low + high) >> 1;
+    if (vertices[middle].s < minimum) low = middle + 1; else high = middle;
+  }
+  const first = low;
+  low = 0; high = vertices.length;
+  while (low < high) {
+    const middle = (low + high) >> 1;
+    if (vertices[middle].s <= maximum) low = middle + 1; else high = middle;
+  }
+  return [first, Math.min(vertices.length, low + 1)];
+}
+
+export function projectSegment(p, a, b, minimum, maximum) {
+  const span = b.s - a.s;
+  const dx = b.x - a.x, dy = b.y - a.y;
+  const raw = ((p.x - a.x) * dx + (p.y - a.y) * dy) / (span * span);
+  const t = Math.max(Math.max(0, (minimum - a.s) / span), Math.min(Math.min(1, (maximum - a.s) / span), raw));
+  const q = { x: a.x + dx * t, y: a.y + dy * t };
+  return { ...q, error: distance(p, q), s: a.s + t * span };
+}
+
+/** Project only within the active arc interval. Earliest-arc ties stay unchanged. */
 export function projectLocal(p, reference, minimum, maximum) {
   minimum = Math.max(0, minimum);
   maximum = Math.min(reference.length, maximum);
+  const [first, end] = arcSegments(reference, minimum, maximum);
   let best = null;
-  const vertices = reference.vertices;
-  for (let i = 1; i < vertices.length; i++) {
-    const a = vertices[i - 1], b = vertices[i];
-    if (b.s < minimum) continue;
-    if (a.s > maximum) break;
-    const span = b.s - a.s;
-    const dx = b.x - a.x, dy = b.y - a.y;
-    const raw = ((p.x - a.x) * dx + (p.y - a.y) * dy) / (span * span);
-    const t = Math.max(Math.max(0, (minimum - a.s) / span), Math.min(Math.min(1, (maximum - a.s) / span), raw));
-    const q = { x: a.x + dx * t, y: a.y + dy * t };
-    const error = distance(p, q);
-    const s = a.s + t * span;
-    if (!best || error < best.error - 0.00001 || (Math.abs(error - best.error) < 0.00001 && s < best.s)) best = { ...q, error, s };
+  for (let i = first; i < end; i++) {
+    const candidate = projectSegment(p, reference.vertices[i - 1], reference.vertices[i], minimum, maximum);
+    if (!best || candidate.error < best.error - 0.00001 || (Math.abs(candidate.error - best.error) < 0.00001 && candidate.s < best.s)) best = candidate;
   }
   return best;
 }
@@ -56,11 +74,20 @@ export function movementSamples(a, b, spacing = 4) {
   });
 }
 
+/** Fresh per event batch; never retained across layout, scroll or zoom changes. */
+export function screenConverter(svg) {
+  try {
+    const matrix = svg.getScreenCTM();
+    if (!matrix) return () => null;
+    const inverse = matrix.inverse(), point = svg.createSVGPoint();
+    return (clientX, clientY) => {
+      point.x = clientX; point.y = clientY;
+      const logical = point.matrixTransform(inverse);
+      return finitePoint(logical) ? { x: logical.x, y: logical.y } : null;
+    };
+  } catch { return () => null; }
+}
+
 export function screenToLogical(svg, clientX, clientY) {
-  const matrix = svg.getScreenCTM();
-  if (!matrix) return null;
-  const point = svg.createSVGPoint();
-  point.x = clientX; point.y = clientY;
-  const logical = point.matrixTransform(matrix.inverse());
-  return { x: logical.x, y: logical.y };
+  return screenConverter(svg)(clientX, clientY);
 }

@@ -39,6 +39,7 @@ public final class MainActivity extends Activity {
     private View customView;
     private WebChromeClient.CustomViewCallback customViewCallback;
     private boolean exitDialogShowing;
+    private volatile boolean gameFullscreen = true;
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -50,7 +51,11 @@ public final class MainActivity extends Activity {
                 android.window.OnBackInvokedDispatcher.PRIORITY_DEFAULT, this::handleBack);
         webView = new WebView(this);
         webView.setBackgroundColor(Color.rgb(255, 253, 245));
+        webView.setOverScrollMode(View.OVER_SCROLL_NEVER);
         root.addView(webView, new FrameLayout.LayoutParams(-1, -1));
+        webView.addOnLayoutChangeListener((view, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom) -> {
+            if (right - left != oldRight - oldLeft || bottom - top != oldBottom - oldTop) signal("taman-jawi:viewport");
+        });
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);
         settings.setDomStorageEnabled(true);
@@ -59,6 +64,8 @@ public final class MainActivity extends Activity {
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
         settings.setMediaPlaybackRequiresUserGesture(true);
         settings.setBuiltInZoomControls(false);
+        settings.setUseWideViewPort(true);
+        settings.setLoadWithOverviewMode(false);
         settings.setSupportMultipleWindows(false);
         WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG);
         final WebViewAssetLoader loader = new WebViewAssetLoader.Builder()
@@ -106,6 +113,7 @@ public final class MainActivity extends Activity {
             @Override public void onHideCustomView() { leaveFullscreen(); }
         });
         webView.addJavascriptInterface(new LocalBridge(), "TamanJawiAndroid");
+        root.post(() -> showSystemBars(!gameFullscreen));
         webView.loadUrl(START_URL);
     }
 
@@ -116,8 +124,11 @@ public final class MainActivity extends Activity {
         if (Build.VERSION.SDK_INT >= 30) {
             getWindow().setDecorFitsSystemWindows(false);
             root.setOnApplyWindowInsetsListener((view, insets) -> {
-                Insets bars = insets.getInsets(WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout());
-                view.setPadding(bars.left, bars.top, bars.right, bars.bottom); return insets;
+                Insets safe = insets.getInsets(WindowInsets.Type.displayCutout()
+                        | (gameFullscreen || customView != null ? 0 : WindowInsets.Type.systemBars()));
+                Insets keyboard = insets.getInsets(WindowInsets.Type.ime());
+                view.setPadding(safe.left, safe.top, safe.right, Math.max(safe.bottom, keyboard.bottom));
+                return WindowInsets.CONSUMED;
             });
             WindowInsetsController controller = getWindow().getInsetsController();
             if (controller != null) controller.setSystemBarsAppearance(
@@ -133,12 +144,13 @@ public final class MainActivity extends Activity {
             else { controller.setSystemBarsBehavior(WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE); controller.hide(WindowInsets.Type.systemBars()); }
         } else getWindow().getDecorView().setSystemUiVisibility(show ? 0 :
                 View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        root.requestApplyInsets();
     }
     private void leaveFullscreen() {
         if (customView == null) return;
         root.removeView(customView); customView = null;
         if (webView != null) webView.setVisibility(View.VISIBLE);
-        showSystemBars(true);
+        showSystemBars(!gameFullscreen);
         if (customViewCallback != null) { customViewCallback.onCustomViewHidden(); customViewCallback = null; }
     }
     private void signal(String event) {
@@ -151,6 +163,11 @@ public final class MainActivity extends Activity {
     }
     @Override protected void onResume() {
         super.onResume(); if (webView != null) webView.onResume();
+        if (root != null) root.post(() -> showSystemBars(customView == null && !gameFullscreen));
+    }
+    @Override public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus && root != null) showSystemBars(customView == null && !gameFullscreen);
     }
     // API 33+ uses the registered OnBackInvokedCallback; retain this entry for API 26-32.
     @android.annotation.SuppressLint("GestureBackNavigation")
@@ -170,6 +187,15 @@ public final class MainActivity extends Activity {
     private void toast(String text) { Toast.makeText(this, text, Toast.LENGTH_LONG).show(); }
 
     private final class LocalBridge {
+        @JavascriptInterface public boolean isFullscreen() { return gameFullscreen; }
+        @JavascriptInterface public void setFullscreen(boolean fullscreen) {
+            runOnUiThread(() -> {
+                if (webView == null || !START_URL.equals(webView.getUrl())) return;
+                gameFullscreen = fullscreen;
+                showSystemBars(customView == null && !gameFullscreen);
+                signal("taman-jawi:viewport");
+            });
+        }
         @JavascriptInterface public void saveJson(String name, String content) {
             if (content == null || content.length() > 32 * 1024 * 1024
                     || !("taman-jawi-kemajuan.json".equals(name) || "taman-jawi-diagnostik.json".equals(name))) return;
