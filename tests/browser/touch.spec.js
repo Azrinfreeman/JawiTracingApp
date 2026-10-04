@@ -1,11 +1,11 @@
 import { test,expect } from '@playwright/test';
 import { dismissSplash, selectPractice } from './helpers/navigation.js';
-import { openLesson, boardModels } from './helpers/tracing.js';
+import { openLesson, boardModels, openTeacher, showDotHelp } from './helpers/tracing.js';
 for(const [width,height,density] of [[768,1024,2],[390,844,3]]) {
   test(`native emulated touch at ${width} CSS pixels and DPR ${density}`,async({browser})=>{
     const context=await browser.newContext({viewport:{width,height},deviceScaleFactor:density,hasTouch:true,isMobile:true});
     const page=await context.newPage();const session=await context.newCDPSession(page);
-    await page.goto('/');await dismissSplash(page);await page.getByRole('button',{name:'Ruang guru'}).click();
+    await page.goto('/');await dismissSplash(page);await openTeacher(page);
     await page.getByRole('button',{name:'Buka pratonton dewasa'}).click();await selectPractice(page,'guided');await page.getByRole('button',{name:'Ba',exact:true}).click();
     await page.locator('.trace-board').scrollIntoViewIfNeeded();
     const model=await page.locator('.trace-board').evaluate(svg=>{
@@ -62,6 +62,7 @@ for(const [width,height,density] of [[768,1024,2],[390,844,3]]) {
     await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...points[middle-1],id:1}]});
     for(const p of points.slice(middle))await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...p,id:1}]});
     await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+    await showDotHelp(page);
     await page.getByRole('button',{name:'Tambah titik 1 daripada 1'}).tap();
     await expect(page.getByRole('heading',{name:'Kamu sudah ikut huruf Ba!'})).toBeVisible();
     const attempt=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));

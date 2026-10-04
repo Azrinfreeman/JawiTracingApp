@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { dismissSplash } from './helpers/navigation.js';
-import { boardModels, draw, openLesson } from './helpers/tracing.js';
+import { boardModels, draw, openLesson, openTeacher, menuAction } from './helpers/tracing.js';
+import { treatAllModelsAsReady } from './helpers/readyCatalogue.js';
+// Mechanics spec: every authored model is served as student-ready; the real gate is covered elsewhere.
+test.beforeEach(async ({ context }) => { await treatAllModelsAsReady(context); });
 
 const viewports = [[320, 740], [390, 844], [768, 1024], [1280, 900], [844, 390]];
 const noOverflow = page => expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -80,7 +83,7 @@ test('body completion never places celebration over the paper or moves its squar
 
 test('teacher content, confirmations and previews fit narrow screens', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 740 }); await page.emulateMedia({ reducedMotion: 'reduce' });
-  await page.goto('/'); await dismissSplash(page); await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await page.goto('/'); await dismissSplash(page); await openTeacher(page);
   await expect(page.getByLabel('Jenis latihan')).toHaveValue('play'); await noOverflow(page);
   await page.getByRole('button', { name: 'Padam rekod', exact: true }).click();
   await expect(page.getByRole('group', { name: 'Sahkan pemadaman' })).toBeVisible();
@@ -109,6 +112,6 @@ test('a phone completion shows the next-letter action without scrolling', async 
   const box = await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).boundingBox();
   expect(box.height).toBeGreaterThanOrEqual(56); expect(box.y).toBeGreaterThanOrEqual(0);
   expect(box.y + box.height).toBeLessThanOrEqual(740); await noOverflow(page);
-  await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).click();
+  await menuAction(page, 'Huruf seterusnya');
   await expect(page.getByRole('heading', { name: 'Fa', exact: true })).toBeVisible();
 });

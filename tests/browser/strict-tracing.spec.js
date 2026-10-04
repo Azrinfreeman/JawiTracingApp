@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { openLesson, boardModels, draw, movePoints } from './helpers/tracing.js';
+import { openLesson, boardModels, draw, movePoints, openTeacher, menuAction } from './helpers/tracing.js';
 
 test('wrong-start scribbles stay invisible until release and a fresh correct gesture', async ({ page }) => {
   await openLesson(page); const model = await boardModels(page), stroke = model.strokes[0];
@@ -30,7 +30,7 @@ for (const mode of ['guided', 'precision']) {
     await expect(page.locator('.pupil-ink')).toHaveCount(0);
     await movePoints(page, stroke.slice(end - 1)); await page.mouse.up();
     await expect(page.locator('.trace-board')).toBeVisible(); await expect(page.locator('.pupil-ink')).toHaveCount(0);
-    if (mode === 'precision') await page.getByRole('button', { name: 'Cuba lagi', exact: true }).click();
+    if (mode === 'precision') await menuAction(page, 'Cuba lagi');
     await draw(page, (await boardModels(page)).strokes[0]);
     await expect(page.getByRole('heading', { name: 'Bagus, kamu sudah cuba!' })).toBeVisible();
   });
@@ -73,7 +73,7 @@ test('Ta dot scribbles and cross-target drags never leave trails or fill dots', 
   expect(record.dotInputPolicy).toBe('validatedTapStamp'); expect(record.metrics.dotCount).toBe(2);
   expect(record.metrics.rejectedDotGestures).toBe(2);
   expect(record.interactionPolicy).toBe('strict-v2');
-  await page.getByRole('button', { name: 'Ruang guru' }).click();
+  await openTeacher(page);
   await page.getByRole('tab', { name: 'Cubaan', exact: true }).click();
   await expect(page.locator('.record-card').filter({ hasText: 'Bunga · ta' })).toBeVisible();
   await page.getByRole('tab', { name: 'Diagnostik', exact: true }).click();

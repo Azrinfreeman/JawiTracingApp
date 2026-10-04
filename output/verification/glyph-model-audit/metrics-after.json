@@ -1,0 +1,1476 @@
+[
+ {
+  "id": "alif",
+  "label": "Alif",
+  "revision": 1,
+  "geometry": "approved",
+  "fontAspect": 0.15,
+  "modelAspect": 0.09,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 0.7,
+  "strayPct": 0,
+  "uncoveredPct": 2,
+  "worstDotOffset": 0,
+  "shape95": 2,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.6,
+   "weight": 1.67,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.6,
+   "weight": 1.67,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "aspect",
+   "weight"
+  ],
+  "outOfScope": false
+ },
+ {
+  "id": "ba",
+  "label": "Ba",
+  "revision": 1,
+  "geometry": "approved",
+  "fontAspect": 1.07,
+  "modelAspect": 1.43,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 1,
+  "meanDist": 5.7,
+  "strayPct": 42,
+  "uncoveredPct": 43,
+  "worstDotOffset": 7.7,
+  "shape95": 11.4,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.34,
+   "weight": 1.51,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.34,
+   "weight": 1.51,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "mean distance",
+   "stray",
+   "uncovered",
+   "aspect",
+   "shape coverage",
+   "overlap",
+   "weight"
+  ],
+  "outOfScope": false
+ },
+ {
+  "id": "ta",
+  "label": "Ta",
+  "revision": 1,
+  "geometry": "approved",
+  "fontAspect": 1.43,
+  "modelAspect": 1.45,
+  "fontDots": 2,
+  "modelDots": 2,
+  "strokes": 1,
+  "meanDist": 2.1,
+  "strayPct": 0,
+  "uncoveredPct": 18,
+  "worstDotOffset": 11.9,
+  "shape95": 5.9,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.62,
+   "weight": 1.14,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.62,
+   "weight": 1.14,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ta-marbuta",
+  "label": "Ta marbutah",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.52,
+  "modelAspect": 0.56,
+  "fontDots": 2,
+  "modelDots": 2,
+  "strokes": 1,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 5,
+  "worstDotOffset": 5.6,
+  "shape95": 2,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.94
+   ],
+   "iou": 0.75,
+   "weight": 1.23,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.49
+   ],
+   "iou": 0.52,
+   "weight": 1.92,
+   "counterOk": false
+  },
+  "displayWidth": [
+   46
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "sa",
+  "label": "Sa",
+  "revision": 2,
+  "geometry": "approved",
+  "fontAspect": 1.27,
+  "modelAspect": 1.14,
+  "fontDots": 3,
+  "modelDots": 3,
+  "strokes": 1,
+  "meanDist": 2.1,
+  "strayPct": 0,
+  "uncoveredPct": 21,
+  "worstDotOffset": 8.2,
+  "shape95": 10.1,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.61,
+   "weight": 1.02,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.61,
+   "weight": 1.02,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "shape coverage"
+  ],
+  "outOfScope": false
+ },
+ {
+  "id": "jim",
+  "label": "Jim",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.82,
+  "modelAspect": 0.91,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 2,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 7,
+  "worstDotOffset": 1,
+  "shape95": 2.1,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.72,
+   "weight": 1.23,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.58,
+   "weight": 1.71,
+   "counterOk": true
+  },
+  "displayWidth": [
+   54,
+   54
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ca",
+  "label": "Ca",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.82,
+  "modelAspect": 0.91,
+  "fontDots": 3,
+  "modelDots": 3,
+  "strokes": 2,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 7,
+  "worstDotOffset": 1.6,
+  "shape95": 2.1,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.72,
+   "weight": 1.23,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.58,
+   "weight": 1.71,
+   "counterOk": true
+  },
+  "displayWidth": [
+   54,
+   54
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ha-pedat",
+  "label": "Ha (ح)",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.82,
+  "modelAspect": 0.91,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 2,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 7,
+  "worstDotOffset": 0,
+  "shape95": 2.1,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.72,
+   "weight": 1.23,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.58,
+   "weight": 1.71,
+   "counterOk": true
+  },
+  "displayWidth": [
+   54,
+   54
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "kha",
+  "label": "Kha",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.63,
+  "modelAspect": 0.72,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 2,
+  "meanDist": 1.4,
+  "strayPct": 1,
+  "uncoveredPct": 6,
+  "worstDotOffset": 4.4,
+  "shape95": 3,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.65,
+   "weight": 1.22,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.54,
+   "weight": 1.76,
+   "counterOk": true
+  },
+  "displayWidth": [
+   52,
+   52
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "dal",
+  "label": "Dal",
+  "revision": 2,
+  "geometry": "pendingReview",
+  "fontAspect": 0.85,
+  "modelAspect": 0.85,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 1.6,
+  "strayPct": 0,
+  "uncoveredPct": 33,
+  "worstDotOffset": 0,
+  "shape95": 3.2,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.77,
+   "weight": 1.24,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.64,
+   "weight": 1.56,
+   "counterOk": true
+  },
+  "displayWidth": [
+   58
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "zal",
+  "label": "Zal",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.57,
+  "modelAspect": 0.64,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 1,
+  "meanDist": 0.6,
+  "strayPct": 1,
+  "uncoveredPct": 7,
+  "worstDotOffset": 6.3,
+  "shape95": 1.2,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.77,
+   "weight": 1.24,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.56,
+   "weight": 1.78,
+   "counterOk": true
+  },
+  "displayWidth": [
+   52
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ra",
+  "label": "Ra",
+  "revision": 2,
+  "geometry": "pendingReview",
+  "fontAspect": 0.65,
+  "modelAspect": 0.69,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 1.6,
+  "strayPct": 0,
+  "uncoveredPct": 13,
+  "worstDotOffset": 0,
+  "shape95": 2.7,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.73,
+   "weight": 1.2,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.58,
+   "weight": 1.72,
+   "counterOk": true
+  },
+  "displayWidth": [
+   52
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "zai",
+  "label": "Zai",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.48,
+  "modelAspect": 0.56,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 1,
+  "meanDist": 0.7,
+  "strayPct": 2,
+  "uncoveredPct": 1,
+  "worstDotOffset": 5.1,
+  "shape95": 1.4,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.75,
+   "weight": 1.23,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.52,
+   "weight": 1.94,
+   "counterOk": true
+  },
+  "displayWidth": [
+   48
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "sin",
+  "label": "Sin",
+  "revision": 1,
+  "geometry": "approved",
+  "fontAspect": 1.49,
+  "modelAspect": 1.64,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 2.8,
+  "strayPct": 14,
+  "uncoveredPct": 16,
+  "worstDotOffset": 0,
+  "shape95": 8,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.48,
+   "weight": 1.55,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.48,
+   "weight": 1.55,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "shape coverage",
+   "overlap",
+   "weight"
+  ],
+  "outOfScope": false
+ },
+ {
+  "id": "syin",
+  "label": "Syin",
+  "revision": 2,
+  "geometry": "approved",
+  "fontAspect": 1.16,
+  "modelAspect": 1.06,
+  "fontDots": 3,
+  "modelDots": 3,
+  "strokes": 1,
+  "meanDist": 2.6,
+  "strayPct": 5,
+  "uncoveredPct": 19,
+  "worstDotOffset": 7.6,
+  "shape95": 9.2,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.49,
+   "weight": 1.29,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.49,
+   "weight": 1.29,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "shape coverage",
+   "overlap",
+   "weight"
+  ],
+  "outOfScope": false
+ },
+ {
+  "id": "sad",
+  "label": "Sad",
+  "revision": 2,
+  "geometry": "approved",
+  "fontAspect": 1.58,
+  "modelAspect": 1.61,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 2,
+  "meanDist": 1.8,
+  "strayPct": 7,
+  "uncoveredPct": 12,
+  "worstDotOffset": 0,
+  "shape95": 9.6,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.61
+   ],
+   "iou": 0.52,
+   "weight": 1.47,
+   "counterOk": false
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.61
+   ],
+   "iou": 0.52,
+   "weight": 1.47,
+   "counterOk": false
+  },
+  "displayWidth": [
+   76,
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "shape coverage",
+   "counters",
+   "weight"
+  ],
+  "outOfScope": false
+ },
+ {
+  "id": "dad",
+  "label": "Dad",
+  "revision": 2,
+  "geometry": "approved",
+  "fontAspect": 1.15,
+  "modelAspect": 1.33,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 2,
+  "meanDist": 3.9,
+  "strayPct": 38,
+  "uncoveredPct": 31,
+  "worstDotOffset": 13.3,
+  "shape95": 9.4,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.71
+   ],
+   "iou": 0.33,
+   "weight": 1.66,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.71
+   ],
+   "iou": 0.33,
+   "weight": 1.66,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76,
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "mean distance",
+   "stray",
+   "shape coverage",
+   "overlap",
+   "weight"
+  ],
+  "outOfScope": false
+ },
+ {
+  "id": "tho",
+  "label": "Ta (ط)",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 1,
+  "modelAspect": 1,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 2,
+  "meanDist": 1.5,
+  "strayPct": 0,
+  "uncoveredPct": 7,
+  "worstDotOffset": 0,
+  "shape95": 2.8,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.74
+   ],
+   "iou": 0.72,
+   "weight": 1.25,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.54
+   ],
+   "iou": 0.63,
+   "weight": 1.58,
+   "counterOk": false
+  },
+  "displayWidth": [
+   58,
+   58
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "za",
+  "label": "Za",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 1,
+  "modelAspect": 1,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 2,
+  "meanDist": 1.5,
+  "strayPct": 0,
+  "uncoveredPct": 7,
+  "worstDotOffset": 3.8,
+  "shape95": 2.8,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.74
+   ],
+   "iou": 0.72,
+   "weight": 1.25,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.54
+   ],
+   "iou": 0.63,
+   "weight": 1.58,
+   "counterOk": false
+  },
+  "displayWidth": [
+   58,
+   58
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ain",
+  "label": "Ain",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.74,
+  "modelAspect": 0.81,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 2,
+  "meanDist": 0.7,
+  "strayPct": 0,
+  "uncoveredPct": 2,
+  "worstDotOffset": 0,
+  "shape95": 1.7,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.73,
+   "weight": 1.25,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.56,
+   "weight": 1.79,
+   "counterOk": true
+  },
+  "displayWidth": [
+   52,
+   52
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ghain",
+  "label": "Ghain",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.58,
+  "modelAspect": 0.64,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 2,
+  "meanDist": 1,
+  "strayPct": 0,
+  "uncoveredPct": 0,
+  "worstDotOffset": 4,
+  "shape95": 2.4,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.67,
+   "weight": 1.22,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.54,
+   "weight": 1.84,
+   "counterOk": true
+  },
+  "displayWidth": [
+   50,
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "nga",
+  "label": "Nga",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.55,
+  "modelAspect": 0.6,
+  "fontDots": 3,
+  "modelDots": 3,
+  "strokes": 2,
+  "meanDist": 0.5,
+  "strayPct": 0,
+  "uncoveredPct": 0,
+  "worstDotOffset": 2.3,
+  "shape95": 1.3,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.72,
+   "weight": 1.25,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.55,
+   "weight": 1.81,
+   "counterOk": true
+  },
+  "displayWidth": [
+   52,
+   52
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "fa",
+  "label": "Fa",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 1.08,
+  "modelAspect": 1.19,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 2,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 3,
+  "worstDotOffset": 5.2,
+  "shape95": 2.9,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.8
+   ],
+   "iou": 0.74,
+   "weight": 1.24,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.43
+   ],
+   "iou": 0.58,
+   "weight": 1.73,
+   "counterOk": false
+  },
+  "displayWidth": [
+   52,
+   52
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "pa",
+  "label": "Pa",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 1.01,
+  "modelAspect": 1.08,
+  "fontDots": 3,
+  "modelDots": 3,
+  "strokes": 2,
+  "meanDist": 0.8,
+  "strayPct": 0,
+  "uncoveredPct": 1,
+  "worstDotOffset": 3.2,
+  "shape95": 1.7,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.75
+   ],
+   "iou": 0.77,
+   "weight": 1.25,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.42
+   ],
+   "iou": 0.59,
+   "weight": 1.69,
+   "counterOk": false
+  },
+  "displayWidth": [
+   54,
+   54
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "qaf",
+  "label": "Qaf",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.67,
+  "modelAspect": 0.73,
+  "fontDots": 2,
+  "modelDots": 2,
+  "strokes": 2,
+  "meanDist": 1,
+  "strayPct": 0,
+  "uncoveredPct": 2,
+  "worstDotOffset": 4.2,
+  "shape95": 2.1,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.88
+   ],
+   "iou": 0.72,
+   "weight": 1.25,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.5
+   ],
+   "iou": 0.55,
+   "weight": 1.82,
+   "counterOk": false
+  },
+  "displayWidth": [
+   50,
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "kaf",
+  "label": "Kaf",
+  "revision": 2,
+  "geometry": "pendingReview",
+  "fontAspect": 0.97,
+  "modelAspect": 1.46,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 4.5,
+  "strayPct": 25,
+  "uncoveredPct": 47,
+  "worstDotOffset": 0,
+  "shape95": 17.6,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.38,
+   "weight": 1.13,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.38,
+   "weight": 1.13,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "mean distance",
+   "uncovered",
+   "aspect",
+   "shape coverage",
+   "overlap"
+  ],
+  "outOfScope": true
+ },
+ {
+  "id": "ga",
+  "label": "Ga",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.72,
+  "modelAspect": 1.46,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 1,
+  "meanDist": 7.6,
+  "strayPct": 53,
+  "uncoveredPct": 65,
+  "worstDotOffset": 15.8,
+  "shape95": 21.4,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.2,
+   "weight": 1.12,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.2,
+   "weight": 1.12,
+   "counterOk": true
+  },
+  "displayWidth": [
+   76
+  ],
+  "meetsAcceptance": false,
+  "failures": [
+   "mean distance",
+   "stray",
+   "uncovered",
+   "aspect",
+   "shape coverage",
+   "overlap"
+  ],
+  "outOfScope": true
+ },
+ {
+  "id": "lam",
+  "label": "Lam",
+  "revision": 2,
+  "geometry": "pendingReview",
+  "fontAspect": 0.5,
+  "modelAspect": 0.51,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 0.7,
+  "strayPct": 0,
+  "uncoveredPct": 0,
+  "worstDotOffset": 0,
+  "shape95": 1.4,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.75,
+   "weight": 1.21,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.56,
+   "weight": 1.78,
+   "counterOk": true
+  },
+  "displayWidth": [
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "mim",
+  "label": "Mim",
+  "revision": 2,
+  "geometry": "pendingReview",
+  "fontAspect": 0.58,
+  "modelAspect": 0.54,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 2.4,
+  "strayPct": 0,
+  "uncoveredPct": 13,
+  "worstDotOffset": 0,
+  "shape95": 4.3,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.64,
+   "weight": 1.2,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.55,
+   "weight": 1.79,
+   "counterOk": true
+  },
+  "displayWidth": [
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "nun",
+  "label": "Nun",
+  "revision": 2,
+  "geometry": "pendingReview",
+  "fontAspect": 0.74,
+  "modelAspect": 0.84,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 1,
+  "meanDist": 1.2,
+  "strayPct": 2,
+  "uncoveredPct": 4,
+  "worstDotOffset": 5.9,
+  "shape95": 1.8,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.71,
+   "weight": 1.25,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.49,
+   "weight": 2.02,
+   "counterOk": true
+  },
+  "displayWidth": [
+   46
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "wau",
+  "label": "Wau",
+  "revision": 2,
+  "geometry": "pendingReview",
+  "fontAspect": 0.71,
+  "modelAspect": 0.81,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 9,
+  "worstDotOffset": 0,
+  "shape95": 2.2,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.81
+   ],
+   "iou": 0.76,
+   "weight": 1.22,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.45
+   ],
+   "iou": 0.56,
+   "weight": 1.77,
+   "counterOk": false
+  },
+  "displayWidth": [
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "va",
+  "label": "Va",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.52,
+  "modelAspect": 0.61,
+  "fontDots": 1,
+  "modelDots": 1,
+  "strokes": 1,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 2,
+  "worstDotOffset": 5.3,
+  "shape95": 2.4,
+  "fontCounters": 1,
+  "game": {
+   "counters": 1,
+   "ratios": [
+    0.83
+   ],
+   "iou": 0.72,
+   "weight": 1.24,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 1,
+   "ratios": [
+    0.46
+   ],
+   "iou": 0.55,
+   "weight": 1.81,
+   "counterOk": false
+  },
+  "displayWidth": [
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ha",
+  "label": "Ha (ه)",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 1.24,
+  "modelAspect": 1.26,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 1.8,
+  "strayPct": 0,
+  "uncoveredPct": 12,
+  "worstDotOffset": 0,
+  "shape95": 3.6,
+  "fontCounters": 2,
+  "game": {
+   "counters": 2,
+   "ratios": [
+    0.76,
+    0.72
+   ],
+   "iou": 0.76,
+   "weight": 1.12,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 2,
+   "ratios": [
+    0.35,
+    0.28
+   ],
+   "iou": 0.63,
+   "weight": 1.58,
+   "counterOk": false
+  },
+  "displayWidth": [
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "hamzah",
+  "label": "Hamzah",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 1.16,
+  "modelAspect": 1.19,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 2,
+  "meanDist": 2.3,
+  "strayPct": 0,
+  "uncoveredPct": 32,
+  "worstDotOffset": 0,
+  "shape95": 5,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.72,
+   "weight": 1.21,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.55,
+   "weight": 1.83,
+   "counterOk": true
+  },
+  "displayWidth": [
+   50,
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ya",
+  "label": "Ya",
+  "revision": 2,
+  "geometry": "pendingReview",
+  "fontAspect": 0.67,
+  "modelAspect": 0.75,
+  "fontDots": 2,
+  "modelDots": 2,
+  "strokes": 1,
+  "meanDist": 1.2,
+  "strayPct": 0,
+  "uncoveredPct": 3,
+  "worstDotOffset": 4.3,
+  "shape95": 2.6,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.69,
+   "weight": 1.24,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.54,
+   "weight": 1.85,
+   "counterOk": true
+  },
+  "displayWidth": [
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "ye",
+  "label": "Ye",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.86,
+  "modelAspect": 0.95,
+  "fontDots": 0,
+  "modelDots": 0,
+  "strokes": 1,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 7,
+  "worstDotOffset": 0,
+  "shape95": 2.6,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.75,
+   "weight": 1.21,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.56,
+   "weight": 1.8,
+   "counterOk": true
+  },
+  "displayWidth": [
+   50
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ },
+ {
+  "id": "nya",
+  "label": "Nya",
+  "revision": 3,
+  "geometry": "pendingReview",
+  "fontAspect": 0.69,
+  "modelAspect": 0.76,
+  "fontDots": 3,
+  "modelDots": 3,
+  "strokes": 1,
+  "meanDist": 1.1,
+  "strayPct": 0,
+  "uncoveredPct": 2,
+  "worstDotOffset": 3.4,
+  "shape95": 1.7,
+  "fontCounters": 0,
+  "game": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.72,
+   "weight": 1.25,
+   "counterOk": true
+  },
+  "at76": {
+   "counters": 0,
+   "ratios": [],
+   "iou": 0.51,
+   "weight": 1.95,
+   "counterOk": true
+  },
+  "displayWidth": [
+   48
+  ],
+  "meetsAcceptance": true,
+  "failures": [],
+  "outOfScope": false
+ }
+]

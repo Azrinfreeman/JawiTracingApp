@@ -1,0 +1,15 @@
+{
+ "generated": "2026-10-04",
+ "acceptance": {
+  "meanDist": 3.5,
+  "stray": 30,
+  "uncovered": 35,
+  "aspectTolerance": 0.2
+ },
+ "changedLetters": 25,
+ "changedMeetingAcceptance": 25,
+ "changedFailing": [],
+ "unchangedLettersKeepMeasurements": true,
+ "before": "metrics-before-remeasured.json",
+ "after": "metrics-after.json"
+}

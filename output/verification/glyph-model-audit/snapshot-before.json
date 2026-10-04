@@ -1,0 +1,335 @@
+{
+ "taken": "2026-10-04",
+ "entries": {
+  "alif": {
+   "sha256": "1088c61094dbb43b4ca6590439f7d645d7383334c88190316d62683159d01d52",
+   "geometrySha256": "6b3085a722e00229a2b27475b7f019faa5b1a89c2f8728b98c7828903f9c5ff9",
+   "audioSha256": "0e1650a88dda5d4fb59c1dd69b7c814a043135da243b098af79af9c7de6a3758",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "ba": {
+   "sha256": "0aee80a4aaa53a8bbcdc5b58252fb61093a99d56c10fa3a0143133a242236435",
+   "geometrySha256": "c0bf250a8c25f57f12441df1bfc34cdf597da451b0695f6a1022a3241441dd47",
+   "audioSha256": "68c46828508157a3418970fb27361a831a7f333fff14fc1b2c0da29bd547896f",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "ta": {
+   "sha256": "b9b200c0f3d2e151237f24c71cdb3d5093f881ab5a2f5c6f697494aea7922b99",
+   "geometrySha256": "eb1bf348bdd51c30650c03a3c5062d5db0dbe5b321761f0bb7235c1d45c01e56",
+   "audioSha256": "3686f8db18196af99dc834321f4a03fe76dd5d902a7046611d317dc382a43f12",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "ta-marbuta": {
+   "sha256": "1e4796f2485a2cc8a6962cefa708377c1c16820330bee6ff07faa8d08f558657",
+   "geometrySha256": "de63560328c3de401494b105c8eece7aa9c8dc0bae3d0ac06088e3df2ceee547",
+   "audioSha256": "c8ba36042f80588e74d623b1d115c8f2e076039d163f6cc638f0173317f8f22b",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "sa": {
+   "sha256": "8bc55100e3188cdf0b332f98a7236279cf683ecdaf54e8ae61fb65e4bf34d841",
+   "geometrySha256": "2339562b395877c2c9c203150bdcc8b0d4e88605b6371b6b89d5a8c2909c64a5",
+   "audioSha256": "6f5fd96b3318f67e9c209c4d4a1ebe365edea0303a80fe6d37e177b4c9e28520",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "jim": {
+   "sha256": "d203a218875e42c846571576877401c32f878e25db4b61b1f16da351e2e8dfc4",
+   "geometrySha256": "2c6de04bc74b4e804742141071a925a3916d2b7dfab6eb00795d8dfd32f55d6e",
+   "audioSha256": "d44324e200a8c358a5a8a00308de8eb997fd71b6fa512be2da73f1058345d810",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "ca": {
+   "sha256": "138c1e5e9430ea3d491f0756ba8a42ba7f1ea5bbd4b6678d16c1a6912225e01e",
+   "geometrySha256": "af03398695c774c387518b5fc1a6ad7b36ebd56dd9ca714370f0f69ca0a76b07",
+   "audioSha256": "7b3ce2a61b6c9efbfa2508abe355e17563094ebb85206ecd439d04e1be1f1fdd",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "ha-pedat": {
+   "sha256": "958faa00142e8da5271b88a0e2c12481add2a80bff0d4e0a6d274ee469e892e1",
+   "geometrySha256": "450a4873d3e247f454d313dd59f139d92b74da31b41c0526d7ca7565f9e7afc3",
+   "audioSha256": "fe2dd0ccfb6094d25eca8825a2efe35ba481f303854bbb284ad15847fe53f431",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "kha": {
+   "sha256": "b784adf0f2affbb5f182d50ea686360797c7a1f486fc0cdfead2d3613383dd7f",
+   "geometrySha256": "de592a27d84261925afdc9fdf4b94bcdc57c51c5f9ec8b32a2f40ebd67a156fc",
+   "audioSha256": "fdc51cfbfca8d2896398fed4502a826ff6837ebd090c05cd0dcdeca7db03e2b4",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "dal": {
+   "sha256": "6827cab8578ca6d5f356efc30f09be6172bd8c44535f553d4461dea665d118d7",
+   "geometrySha256": "54df668ee8b2e35c3ba8c3362d603689056d6c8eba9dda46a2450a57c403e50b",
+   "audioSha256": "6dc8a1c212644ec90855e1d5925d8708658b4ea0660458c0cc308c3d5ef6a785",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "zal": {
+   "sha256": "72be2d305d16b40056e38e25f75811fe91f16a917137cf5dcba0eee69f6b4eed",
+   "geometrySha256": "4da7ff1ac14571408b867e6678c88a101d175e55bcc8079f059c860c692ffab4",
+   "audioSha256": "83edd4c6c6ab02b1954fd814380aab874fc973ee4c6b427132157781ddfdc33d",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "ra": {
+   "sha256": "aea1dfe4560bddf540720fc7c2d7c6f99f5bae08da73c9707d1de51f7366d540",
+   "geometrySha256": "5f22e170154a4048b971617beb0e3b25a520c592365acf89b4e507842ff015be",
+   "audioSha256": "43a429e405c5239d9156218e8e53dc8c58d5afcfe2b3a3aa9d885d8e121bae91",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "zai": {
+   "sha256": "be4ef879dc2c247fc7e80a6339c389d612d97a3ac89830737a0ba42b2425006c",
+   "geometrySha256": "37bbdb38b174f917da8aa98533a8656219fcc84272fc7deb71b81d3796a90e81",
+   "audioSha256": "b542229fc427c782e7c7e13d25406bf1d70818a6421fde71e43c882515e6ee1e",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "sin": {
+   "sha256": "9e625eac0a77301abaed919b45277b0fded17870ee3124720e3798c48dee8f41",
+   "geometrySha256": "090842e9e004461ccd0d017b87fed3fe1ad549c9835414d058c921f8ad4a25c6",
+   "audioSha256": "cda26b8378f99f2ade1fb3ad163e13422e7c58bf478daeafe1816aa8a837c0b0",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "syin": {
+   "sha256": "8b6d9b8393efbf370c5df4bf5fbfc960e4baa8c0e069d820ac0b27e83f1f8b37",
+   "geometrySha256": "e076e4f4a74260b193f3142a237dd76237a33520f102acf8a9d544a49a364ee4",
+   "audioSha256": "1cfee7aa92f7a7ce9968a423a3bc3f1df71a15c150b8fdec00984804f8d4697a",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "sad": {
+   "sha256": "1a7438ecc506c64db216f7ee54a1fcfc6c91de3638d197bf0ec4dfd93a8e4a34",
+   "geometrySha256": "48ddb1a90752da90d6292df3397da30a598ab0386eca51ec374a100357a44118",
+   "audioSha256": "f82754e6199791f843c1d39ba6d2743d96a7b147ea20df7d13fb76ba0ce731c3",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "dad": {
+   "sha256": "fd60f757631c02b785fd2ba36e3248296afb3b880cb68877781abac782c86c68",
+   "geometrySha256": "6051d29a2eff8c10bc5e8c69a92d274ef5738998a4ed13eb685bac357f24dca1",
+   "audioSha256": "1c4c0eba0a9f0d07d53fb9f77086c4a4e28f6bafab789fa0e83a590ddb36b2cd",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "tho": {
+   "sha256": "d5d54b46a20c556b7082787e19d41cdb84a86d37c5e60e2e6a7dd2c8577b8b38",
+   "geometrySha256": "51384e3a98d85c90000af5a8bf2a6f209f87c5bc26034ac5e9de48ce8376b46d",
+   "audioSha256": "12468a35f284fb4295b45f5f6a9f9d8086f0e475489c42d77b6d201a961922e4",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "za": {
+   "sha256": "7bb686b7c8a8277a7745bc890d46eed07aff513d9a80a47010317444e853d7ec",
+   "geometrySha256": "831ed675b64faa2a1cb3c50aeea7325b2bc2c278c005eeda3fd8f776828094fd",
+   "audioSha256": "efeac0bed63fd3337cfc581acfac31fed070adad7a002a8459e5164e37b84fa4",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "ain": {
+   "sha256": "ad8cb980b1cd63c6304b03e36e6dad16ab8d6a58597e21be8faf6128426277e6",
+   "geometrySha256": "94fd1b373e17a6057afbcd8fd0e6421ffc7402a79bd8d6db9dfbc288ada54002",
+   "audioSha256": "2f22d5344ae2378b7d2446849dabf95b757eb9dcf4ba5cb2440d03bf40328443",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "ghain": {
+   "sha256": "09c63d02717cc0f6010b90b238ee2cbef4a2bd94799956ed03103d34ae5ea351",
+   "geometrySha256": "d9652e1806d5835b8c2ce97d7623f98f0723be722ce0b4c37750284a504f2c58",
+   "audioSha256": "6c751e477ba79cd99c8232be1ce7a10de4bf440c9e54930315fba7128a846437",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "nga": {
+   "sha256": "0182d45dc0842d8822ff21969cf36b3a19fc09fdc46b2c592ec824dd775db035",
+   "geometrySha256": "d37b78951152c0eab48845de3f943d1abd0275cf86fa499deec8fe1dbbfc3080",
+   "audioSha256": "5a5e6dffdcfadb1398f9434e291baff68c25f5971487ef9ff6f1d24b890d704d",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "fa": {
+   "sha256": "3b953faf915235028520a0469368f79386d0bd4a326c72057d759531ddce9598",
+   "geometrySha256": "d1fc6bd768f4fb467470047d9127021e83f80499b0488db3ac9a79ec6efb7ab9",
+   "audioSha256": "38510407066d086ed9a94b4efefeded7866c55fc800e5045de87e09762fb86b2",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "pa": {
+   "sha256": "0ea09dded9fc206b614e51768f6201db2fb4745f279a92a01fe925f27823b2d8",
+   "geometrySha256": "7e84a0897ec646d2cc5350fde6d51864dbe4c63b6f8847f58eadc3ae43ae5a0d",
+   "audioSha256": "5ce2dc13984d3649714a61152c310c9caac9d52515771235e0f144a53155d337",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "qaf": {
+   "sha256": "000044e8559bcebf7c3d7fb93f6fbaea7c1e5c164b7f7297e774e386318e1574",
+   "geometrySha256": "14d91787d2e4fc1246f0100aa718add6f8d154dc34f7c1c5a3140b1f8a044cc7",
+   "audioSha256": "68512591d2f2fffd24ffc4c70ad0bc3f0b005b5e882f12a4e25c9d27a6332748",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "kaf": {
+   "sha256": "f0559fc1cdf2f2f2aa1820e862510ba1cfd9e82d336623a200453b2a3162e50b",
+   "geometrySha256": "8498355ab7f0a63e2889c20faa4aa5ce2766cde13e2158c42cdce397e3e37535",
+   "audioSha256": "59574697a51ccfd8ab46d29c93537dd5e2a997126aced3ee3aa055da22dbb22d",
+   "contentVersion": 2,
+   "status": "pendingReview"
+  },
+  "ga": {
+   "sha256": "01629d087a268dda64ced2b5f457d7d5b81bf925114bbc08ad4243134a13535f",
+   "geometrySha256": "f9276ce7fa3ce7621c7daa5a23acce3d1c9232a30609d386371c20aebaa640ea",
+   "audioSha256": "67678758450785550a770ed43a1399f08ebca670ccf48d53b42619b4de7871f6",
+   "contentVersion": 3,
+   "status": "pendingReview"
+  },
+  "lam": {
+   "sha256": "e29ee46f0381db9919d371973bb7fa380b44905859ba92e8281b66f66c10b56c",
+   "geometrySha256": "9ff470786c7aad1c32d4628c22ed73b48ca21e0b0e8b131cc9b08f88e6082374",
+   "audioSha256": "567111247d7b8e8659e7fac2c6ac1e9a7f2032d4e5ba8c51dce9b1f87c08f092",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "mim": {
+   "sha256": "966e6f1df8de038eeaa9be58eb62ba136e21af82fd3ac382fad18013c32577e1",
+   "geometrySha256": "12dd247b783107d0fb0aa31da1ea1e3bfc760dffddd06c5dfd16fdfb70672975",
+   "audioSha256": "f56f08bc3482c79041dfd8675b604a8cc30d4e8030f247552b6877acbccfca7f",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "nun": {
+   "sha256": "d533d0cfbb697e06d4305b9793b1cbdc575a3546e978140248007629cbfa6cc4",
+   "geometrySha256": "601974447c183b60a2f24a5b8e1d3dbc6b82aa8e33ce7a58168ba93f907ae621",
+   "audioSha256": "36d97c7a05e35f593663a7b78bf289dfbc35d3d2f0405309e5fcb8139a1c34b0",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "wau": {
+   "sha256": "150f8a0b495fac04ea6fab0bbb5f76232698b9fe65b31af676fbb4671d086435",
+   "geometrySha256": "9ce907080f5181d07e202ccf5cf8f1490deb503d57ce3b727ca49de5c23ac7a9",
+   "audioSha256": "b15683976ee32028cc9bbbc4459e032d4aad5ea11c95f947b7bdcc25979a577a",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "va": {
+   "sha256": "f4e059013887338b6275b4ecf8d388426e71b9749072eee5637491fa90906811",
+   "geometrySha256": "364b8b3ff871ed827236501da7b64f0588fa3e36d222a2f0022f49bc77ed18d5",
+   "audioSha256": "0fedf858864f6a1aabc171903339ed5ce90e7b4de410b2f086ba15cef8cba250",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "ha": {
+   "sha256": "a1904193dce08920a75d12e2232c5860f9fd229108073ad7bcdfd18b865a532b",
+   "geometrySha256": "1e7477c393eff997860cb8557b9864ccabbd5bc2bf373f26f39f4ca4cbd03f94",
+   "audioSha256": "20a27a4509c1677281d5ea0771c3e40774cefe7ad6d69d2f623d28895406409d",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "hamzah": {
+   "sha256": "bc566cae43fcf49259984cb7e4bc23bf65cc2045d2212250bec7536d20718558",
+   "geometrySha256": "ae234f54a6f35912e968fa2a049fa5d6ccfd4523f8b9038fafee13edef05b3e8",
+   "audioSha256": "33f765ad0dc196e4072e260d168e4c9d9ee3e54e673164a4700e3f3929b45172",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "ya": {
+   "sha256": "2e1ffee5cc64ffa5fbba5fadf233ad632e34291883639850e4c3dfa468d55510",
+   "geometrySha256": "e6d1908c6ebcd755a54ca62d6e938b2017764aa5098e7ddd679a68534e6729a4",
+   "audioSha256": "c1fd3fe850eb44cae0883e38b1b938db763e3085b2d87ba72540ce7b690b68c3",
+   "contentVersion": 1,
+   "status": "approved"
+  },
+  "ye": {
+   "sha256": "1066b03647fd6d70c1df1bc66ba972fc7021af5c42cad0d86803a247696f9d7a",
+   "geometrySha256": "d9f64288cd0cfc30ce6f2731160f06670e0cd532041d89124b0ed482cf77e1d3",
+   "audioSha256": "9cb5620881d2d01492ae14966ebaf9bf0b8bd060846c19ad73dc064099307785",
+   "contentVersion": 2,
+   "status": "approved"
+  },
+  "nya": {
+   "sha256": "c706cda9057887a1e63696ec5fcb7f381da497c3c29416fab2c30b082339697b",
+   "geometrySha256": "ac83eb3d2d87a22df643078c1bb9bd5ae22d0df6f2d3a98a53f4fbbbd545729f",
+   "audioSha256": "2e16a2ac88c92cabf0164e3b48381086936233ea8e6f10bbb45b485eeba24c2d",
+   "contentVersion": 2,
+   "status": "approved"
+  }
+ },
+ "audioFiles": {
+  "public/audio/letters/ain-name.mp3": "1e565f571b011a0abfc6440f95ac4d8eb5fce3ee1acae6f0c1d72050b8cec14f",
+  "public/audio/letters/alif-name.mp3": "dc8047a95258bbd8a0a960a84ceadafa8818b32b6646b23ab31ca07aa9af08df",
+  "public/audio/letters/alphabet/ain-name-v2.mp3": "7c3974d9768f6747ae0b99df2c991f05b7ac44faad64e2e333937dcc03c87e1b",
+  "public/audio/letters/alphabet/alif-name-v2.mp3": "062b495ec1506ebaf1bb66bbbd1bd0cf3143f69fe1e8c5d0645450fbcaf4d8e4",
+  "public/audio/letters/alphabet/ba-name-v2.mp3": "987d2db9dc79dc348d022a5d6324ae1702e8a4736875113a5d4172f10603cf91",
+  "public/audio/letters/alphabet/dad-name-v2.mp3": "69222ad37d2e7e17910cfe66578f83c239483cd9639c41bdb848d34e45c89ebb",
+  "public/audio/letters/alphabet/dal-name-v2.mp3": "743ca5838453493045fe17d85f2377bb57eebbdbe0b6859f160b36ab8410c921",
+  "public/audio/letters/alphabet/fa-name-v2.mp3": "9650bfd6c8b3a7642a099efcc43705cd31bce7d8eb1ae1948ae6a3ed06ad8f94",
+  "public/audio/letters/alphabet/ghain-name-v2.mp3": "371dba3f910d3118713a6a35bd08aa96d0d24bbc44583dbe1bdb2052b602d188",
+  "public/audio/letters/alphabet/ha-pedat-name-v2.mp3": "70aff1d8e0cdfe0951644a4fb4f8d398db47962e435d75a19890b84347edf074",
+  "public/audio/letters/alphabet/hamzah-name-v2.wav": "9145078ee74a68a71ab028a833170c24d7c139ae659b8fc9abcfc7d167357dd1",
+  "public/audio/letters/alphabet/jim-name-v2.mp3": "e50bb0c1cff95018602e0dd884a1f99c7a2aa48e65d919ad38a687516f6fa4a9",
+  "public/audio/letters/alphabet/kha-name-v2.mp3": "d2ec10e1bf498155442361153ebe04f38d6e161857a4aac09d6cbfdd1f28a3a2",
+  "public/audio/letters/alphabet/lam-name-v2.wav": "2ea37a3cfe0f7ce7c67670717d99f0ee35d5f0d4a3fe38064f25d6fb8a37fd71",
+  "public/audio/letters/alphabet/mim-name-v2.wav": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2",
+  "public/audio/letters/alphabet/nun-name-v2.wav": "6056e86e290d10e576e347e9049d3fc7dc1caeef1fe5d6ca8044b2157d223f5c",
+  "public/audio/letters/alphabet/qaf-name-v2.mp3": "35a6903e672757cb808d22f121b348a572326d8246200ea0b6e90fce4b59b842",
+  "public/audio/letters/alphabet/ra-name-v2.mp3": "3fbc1ca4733dd40e419891248ae6184b149a63903bfe46a3ba21b6147bee2553",
+  "public/audio/letters/alphabet/sa-name-v2.mp3": "ecd13ed9a2d6ef025b117fa5ed9b8aeb3f9c48564fbc3b9d7cacae932bda3ff6",
+  "public/audio/letters/alphabet/sad-name-v2.mp3": "df2c1465abccebc534a738658b4098c62be74c780729b4e03f6e3ceb4769f8ed",
+  "public/audio/letters/alphabet/sin-name-v2.mp3": "58f170c037b8f4229466df9cfb7ecddcf9875706c68cc47255ca3521129e9a3b",
+  "public/audio/letters/alphabet/syin-name-v2.mp3": "d2ecece86ebe31e9dd22595a94eaf265fef04afcf10b75acdd6eb32a306f2dc5",
+  "public/audio/letters/alphabet/ta-name-v2.mp3": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d",
+  "public/audio/letters/alphabet/tho-name-v2.mp3": "781fbf7ed4c2edc5044b002a974c83f45f353361e51ca4604401329c572fe81e",
+  "public/audio/letters/alphabet/wau-name-v2.wav": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298",
+  "public/audio/letters/alphabet/ya-name-v2.wav": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1",
+  "public/audio/letters/alphabet/za-name-v2.mp3": "e5af1f6c308fde0b3347bc1685181251295a8cde7e29ea15a18568d03f6057d3",
+  "public/audio/letters/alphabet/zai-name-v2.mp3": "4e887a969999838cfce6ae60b5c146929650d5aef53c7ecb8934ffd49b09a3eb",
+  "public/audio/letters/alphabet/zal-name-v2.mp3": "0ea67e64c41d8e8414fa4ebc754e71332b1069b4523fe99d4d6aa10f3b575a32",
+  "public/audio/letters/ba-name.mp3": "28c01c3510448e1292b9fce1db71c918becc9f539cb66a9205e79fe5eadb84b3",
+  "public/audio/letters/ca-name.mp3": "f01709e62cd3aeb3da609a3c6b34a07373a8ec529f7a7c86c983214144e2a5b3",
+  "public/audio/letters/dad-name.mp3": "888e59d9cf3f50107819c528cd0b19e926a7f413e6f728ed132006b857b9a5c9",
+  "public/audio/letters/dal-name.mp3": "b1b49c0034d699f57b83eb18632b108bcf2361f1b3bfe03d5ace7e82bdfbd9d4",
+  "public/audio/letters/fa-name.mp3": "161d3f26744bd10e974b9abfdea7481d7ece842061c6536a4599ad4f668b4c81",
+  "public/audio/letters/ga-name.mp3": "862051b6c910b369a1d060720cc6a8ff7ea93190ffa3d189d8712810f8811bed",
+  "public/audio/letters/ghain-name.mp3": "55b69cf8ad44e0f40370a8acd4ea778ae9591fcb87375fb0a6a6ebc7b045ad78",
+  "public/audio/letters/ha-name.mp3": "83bc8720b12d8bfc5f0e66dc5deac6546a3d3817bd5ee43d50e94ca81a4136ed",
+  "public/audio/letters/ha-pedat-name.mp3": "9a3b5e184aeab9bec75d66a973be68e2e8169375c1d678455b574ddec84a8d2f",
+  "public/audio/letters/hamzah-name.mp3": "85e6a3bd09608c05862f47742368dccf9c8dcc28729dc289d38aa71a93e27d81",
+  "public/audio/letters/jim-name.mp3": "1b0d00185718fa97bc3a6b3788b779e228947cac268fb9d92d1839684046aeea",
+  "public/audio/letters/kaf-name.mp3": "2e5ac33e648cdc580caecb63c3fb8ef2afde8ab63daba042f489d2bc990ac308",
+  "public/audio/letters/kha-name.mp3": "a0a7ead28bb8964a68d804edbbd36315d64f60d8986d16233c28d64b69b118ac",
+  "public/audio/letters/lam-name.mp3": "b7057662d624341b6f3233a5d3d9ccfcc8cbad4ea2546026fd3362de7267ef87",
+  "public/audio/letters/mim-name.mp3": "9ab6be394e78a611328f412c20d5441d361f637a626fd7835ea3f0c38a004c35",
+  "public/audio/letters/nga-name.mp3": "93ba5c22db7b8858245af633349eea1e50df6cf2d101fd249b7db25687e0850f",
+  "public/audio/letters/nun-name.mp3": "40956a05c19dcd0d0cdae92260e0ee9628d512288f64a393a6d2566ec0e945c4",
+  "public/audio/letters/nya-name.mp3": "279ee3232eeb27eeb0ee9c77929611d32380e4aa997f596f27444cf8fb57cd56",
+  "public/audio/letters/pa-name.mp3": "7a857dd174d2ee83a6c5aefaa7e2d2c0cb84da6d922e481379597454ede1f55c",
+  "public/audio/letters/qaf-name.mp3": "acfdd44472b10f80987dfd3a52f99f1a0de1d6c8379a842b574c43b82d21f59c",
+  "public/audio/letters/ra-name.mp3": "7eeb860adc28413003e17ee373b6a7354f24d93abc89453e1d5560531a04fdf3",
+  "public/audio/letters/sa-name.mp3": "d4d63be5248d85b8c53e31ece40d5b2d97fc5f7913b4b121e5f9036cc9b43d4e",
+  "public/audio/letters/sad-name.mp3": "b2612e4fff10dcc3b1174bbf120b53c3a9fd053ae06fa7323224c890ef580d32",
+  "public/audio/letters/sin-name.mp3": "19d2fcd0bf6eb01bacaf653a52e3186ebcff1f0f5b931fd88ccbe9b52ca2014b",
+  "public/audio/letters/syin-name.mp3": "a9f15b1db76c6a23c5cf29d766588ff1376bae1848ab2e8b0b385a251c08d8d1",
+  "public/audio/letters/ta-marbuta-name.mp3": "c3d6e0b040ef65215cc3dd52899505ab8e00d1ceb00ebbd44a65a5aec4082773",
+  "public/audio/letters/ta-name.mp3": "ad972577bfa8a42667a6ad7fedebfbc201acc3a8d7e9ebe215588caa7593b1b0",
+  "public/audio/letters/tho-name.mp3": "395ec1d204572040312dd200d6442a287c1b1d117c88e5788420bb5c075694f0",
+  "public/audio/letters/va-name.mp3": "4b8879c9200a0ecfdc119327b9d1a308ab48404095dbb4dba271dfe6f0edd0f0",
+  "public/audio/letters/wau-name.mp3": "01224d7c03edfbbe9b5582008a0168b8067ec5417e2cb26effd57acaccf48bad",
+  "public/audio/letters/ya-name.mp3": "f10741e605476f2420da82fd6add1bed9109f5338ea1c0fb89be85c3e4a59a88",
+  "public/audio/letters/ye-name.mp3": "11130897351163086760089d6112d40b02b7d7aaf3353c4e833132cf476b4b02",
+  "public/audio/letters/za-name.mp3": "9ce5b3817df99a1c299f244749a494e14311575add2bca266ef4935037514fad",
+  "public/audio/letters/zai-name.mp3": "4824e07684cb1c9eb52b7a6b0d74f4f37f87bceb160d8a453b85404131b7c44d",
+  "public/audio/letters/zal-name.mp3": "cf05a82fa42531c01962de44e7d6aa761af5841e959baa1a50fab9c41166572c"
+ },
+ "records": {
+  "docs/CONTENT_APPROVALS.md": "e96bf756cd53c9437bd53e3f1f50daf591e466fb4fbdcb1a7f2df62d24692c8e",
+  "docs/AUDIO_APPROVALS.md": "37f52e882f68b8e93035433af7ef146f78e74bef1d90964fe1a3852f06e3aced",
+  "src/content/letters.json": "0fd65d9ee03c83736f5e5b0ae1b52c6d1cd19ae38c77eb3f71f53047649382fd"
+ }
+}

@@ -19,7 +19,7 @@ npm run dev
 
 Open **http://127.0.0.1:5173**. The Hanana Academy splash automatically continues
 after 1.8 seconds; press **Teruskan** to continue immediately. Select a local
-profile and press **Jom mula** to open the 35 currently approved lessons. For adult preview,
+profile and press **Jom mula** to open the 37 approved lessons. For adult preview,
 open **Ruang guru → Buka pratonton dewasa**.
 
 **Cara bermain → Solo → Latihan santai** is selected by default. Choose
@@ -33,12 +33,16 @@ See [the implementation](docs/SOLO_DUO_IMPLEMENTATION.md) and
 [verification](docs/SOLO_DUO_VERIFICATION.md).
 
 The game fits its viewport without scrolling. Letter tracing uses one large,
-centred book page with a translucent bottom dock, deliberate page turns and
-saved-copy protection. Use **Paparan penuh** to request browser fullscreen.
+centred writing stage with no bottom panel. A corner **Menu** opens tools and
+navigation; deliberate page turns and saved-copy protection remain. Fullscreen
+is requested at game entry and can also be toggled through **Paparan penuh**.
 When the viewport cannot safely fit the controls, rotate the device or reduce
 zoom as the fitted guidance suggests. Letter and teacher lists use pages; exports
-still include all retained records. See the [layout plan](docs/FULLSCREEN_GAME_LAYOUT_IMPLEMENTATION.md)
-and [verification](docs/FULLSCREEN_GAME_LAYOUT_VERIFICATION.md).
+still include all retained records. Completing every stroke and dot plays the
+letter's approved name recording. Quiet original music lowers under speech and
+stops on pause or background; **Menu** has music/mute controls and **Ruang guru**
+has a separate music volume. See the [implementation](docs/FULLSCREEN_TRACING_AUDIO_IMPLEMENTATION.md)
+and [verification](docs/FULLSCREEN_TRACING_AUDIO_VERIFICATION.md).
 
 **Jejak Ceria** is the default preschool activity. Follow the dotted route to
 fill the letter with colour. If a finger wanders, the colour pauses and keeps
@@ -65,13 +69,11 @@ For later practice, select **Ruang guru → Jenis latihan → Berpandu** or
 **Kurang panduan**, then open a new lesson. Difficulty choices stay in the
 teacher area. The coloured play result is labelled as assisted practice.
 
-**Teaching readiness:** 37 catalogue entries and tracing models, with 35
-student-ready lessons. Kaf revision 2 and Ga revision 3 now share the connected
-body from the supplied reference, with one upper dot for Ga. These corrected
-models await fresh geometry review and are available in adult preview. The
-other 11 original models retain approved revision 1; the other 24 additional
-models retain approved revision 2. See [the correction and review sheet](docs/KAF_GA_SHAPE_CORRECTION_VERIFICATION.md)
-and [historical approvals](docs/CONTENT_APPROVALS.md). 27 supplied alphabet recordings
+**Teaching readiness:** 37 catalogue entries and tracing models, all 37 owner-approved and
+student-ready. On 4 October 27 tracing models were redrawn from the catalogue glyph so the game draws the
+letter **Isi kandungan** shows; after testing them the owner approved those and the corrected Kaf and Ga
+(see [the approval record](docs/CONTENT_APPROVALS.md), [the glyph-matched delivery and verification](docs/GLYPH_MATCHED_TRACING_MODELS_VERIFICATION.md)
+and [the Kaf/Ga correction](docs/KAF_GA_SHAPE_CORRECTION_VERIFICATION.md)). 27 supplied alphabet recordings
 and 10 retained synthetic name recordings were all approved by the project owner
 on 2 October 2026. See [the audio approval record](docs/AUDIO_APPROVALS.md).
 Open **Ruang guru → Suara → Semakan suara Jawi** to listen to all 37
@@ -85,7 +87,7 @@ approved at revision 2.
 The final 15 models—Ta marbutah, Ta (ط), Za, Ain, Ghain, Nga, Fa, Pa, Qaf, Ga,
 Va, Ha (ه), Hamzah, Ye and Nya—were approved at revision 2. Ga's corrected
 revision 3 now awaits fresh review.
-**Jom mula → Huruf tersedia** shows the 35 approved lessons. **Huruf permulaan**
+**Jom mula → Huruf tersedia** shows the 37 approved lessons. **Huruf permulaan**
 retains the original 12, and **Model tersedia** in adult preview shows all authored
 models. Adult preview includes all 37 models. **Ruang guru → Kandungan & semakan**
 records approvals and provides **Buka** buttons for individual models.

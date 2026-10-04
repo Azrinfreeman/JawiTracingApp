@@ -1,21 +1,23 @@
 import { test, expect } from '@playwright/test';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { mkdirSync } from 'node:fs';
-import { openLesson, boardModels, draw, movePoints } from './helpers/tracing.js';
+import { openLesson, boardModels, draw, movePoints, openTeacher, menuAction, showDotHelp } from './helpers/tracing.js';
 import { dismissSplash, chooseLetter } from './helpers/navigation.js';
+// Student-ready lessons follow the catalogue, so approvals or revisions never need a count edit here.
+const readyLessons = letters.filter(letter => letter.geometry.status === 'approved' && letter.audio.name.status === 'approved').length;
 
 const evidence = process.env.JAWI_EVIDENCE_DIR || 'output/verification/kaf-ga';
 mkdirSync(evidence, { recursive: true });
 const corrected = letters.filter(letter => ['kaf', 'ga'].includes(letter.id));
 const attempts = page => page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1') || '{"attempts":[]}').attempts);
 const shot = (page, name) => page.screenshot({ path: `${evidence}/${name}.png`, animations: 'disabled' });
-async function retry(page) { await page.getByRole('button', { name: 'Cuba lagi', exact: true }).click(); await expect(page.locator('.start-dot')).toBeVisible(); }
+async function retry(page) { await menuAction(page, 'Cuba lagi'); await expect(page.locator('.start-dot')).toBeVisible(); }
 async function complete(page, letter, pad = false) {
   await draw(page, (await boardModels(page)).strokes[0]);
   if (letter.id === 'ga') {
     expect(await attempts(page)).toHaveLength(0);
     await expect(page.locator('.trace-number-label')).toHaveText(['4 Siap']);
-    if (pad) await page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }).click();
+    if (pad) { await showDotHelp(page); await page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }).click(); }
     else { const dot = (await boardModels(page)).dots[0]; await page.mouse.click(dot.x, dot.y); }
   }
   await expect(page.locator('.book-completed')).toBeVisible();
@@ -32,7 +34,7 @@ for (const mode of ['play', 'guided', 'precision']) for (const letter of correct
     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);
     const record = (await attempts(page)).at(-1);
     expect(record).toMatchObject({ letterId: letter.id, mode, preview: true,
-      contentVersion: letter.contentVersion, geometryStatus: 'pendingReview', audioStatus: 'approved',
+      contentVersion: letter.contentVersion, geometryStatus: letter.geometry.status, audioStatus: 'approved',
       metrics: { dotCount: letter.geometry.dotTargets.length } });
     expect(record.metrics.equivalentDotActions ?? 0).toBe(0);
   });
@@ -74,16 +76,16 @@ for (const mode of ['play', 'guided', 'precision']) {
 for (const letter of corrected) {
   test(`${letter.id}: demo uses the connected model, then copying keeps original coordinates and save protection`, async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'reduce' }); await openLesson(page, letter.labelMs, 'play');
-    await page.getByRole('button', { name: 'Tunjuk cara', exact: true }).click();
+    await menuAction(page, 'Tunjuk cara');
     await expect(page.locator('.numbered-trace-guides')).toHaveCount(0);
     await expect(page.locator('path.demonstration-ink')).toHaveAttribute('d', letter.geometry.strokes[0].path);
-    await expect(page.getByRole('button', { name: 'Tunjuk cara', exact: true })).toBeEnabled();
+    await expect(page.locator('.demonstration-ink')).toHaveCount(0, { timeout: 10000 });
     expect(await attempts(page)).toHaveLength(0);
     await complete(page, letter);
     await page.getByRole('button', { name: 'Sekarang, cuba salin sendiri', exact: true }).click();
     await expect(page.locator('.copy-board')).toHaveAttribute('viewBox', '0 0 1000 1000');
     await expect(page.locator('.numbered-trace-guides')).toHaveCount(0);
-    await expect(page.getByRole('button', { name: 'Cuba lagi', exact: true })).toBeEnabled();
+    await expect(page.getByRole('button', { name: 'Menu permainan', exact: true })).toBeEnabled();
     const points = await page.locator('.copy-board').evaluate(svg => {
       svg.addEventListener('pointerdown', event => {
         const p = new DOMPoint(event.clientX, event.clientY).matrixTransform(svg.getScreenCTM().inverse());
@@ -95,7 +97,7 @@ for (const letter of corrected) {
     });
     await draw(page, points);
     const delivered = JSON.parse(await page.locator('.copy-board').getAttribute('data-delivered-start'));
-    await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click();
+    await menuAction(page, 'Isi kandungan');
     await expect(page.getByRole('dialog', { name: 'Tulisan belum disimpan' })).toBeVisible();
     await page.getByRole('button', { name: 'Simpan', exact: true }).click();
     const copy = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies.at(-1));
@@ -108,21 +110,24 @@ for (const letter of corrected) {
 test('catalogue, help, teacher and audio illustrations agree; revised lessons remain gated', async ({ page, browserName }) => {
   await page.setViewportSize({ width: 1920, height: 1080 });
   await page.goto('/'); await dismissSplash(page); await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await expect(page.locator('.garden-count')).toHaveText('35 huruf untuk dikenali');
+  await expect(page.locator('.garden-count')).toHaveText(`${readyLessons} huruf untuk dikenali`);
   await page.getByRole('button', { name: 'Semua huruf', exact: true }).click();
   for (const letter of corrected) {
-    await expect(page.getByRole('button', { name: `${letter.labelMs}, akan datang`, exact: true })).toBeDisabled();
+    // Gated while unreviewed; open to students once the owner has approved the revision.
+    if (letter.geometry.status === 'approved') await expect(page.getByRole('button', { name: letter.labelMs, exact: true })).toBeEnabled();
+    else await expect(page.getByRole('button', { name: `${letter.labelMs}, akan datang`, exact: true })).toBeDisabled();
   }
   await shot(page, `${browserName}-catalogue`);
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
-  await expect(page.locator('.teacher-content')).toContainText('35 pelajaran sedia');
+  await openTeacher(page);
+  await expect(page.locator('.teacher-content')).toContainText(`${readyLessons} pelajaran sedia`);
   await page.getByRole('tab', { name: 'Huruf', exact: true }).click();
   for (const letter of corrected) {
     const illustration = page.locator(`.record-card svg[data-letter-id="${letter.id}"]`);
     for (let i = 0; i < 20 && !await illustration.isVisible(); i++) await page.getByRole('button', { name: 'Halaman kandungan seterusnya', exact: true }).click();
     await expect(illustration.locator('path')).toHaveAttribute('d', letter.geometry.strokes[0].path);
     await expect(illustration.locator('circle')).toHaveCount(letter.geometry.dotTargets.length);
-    await expect(illustration.locator('xpath=ancestor::article')).toContainText(`Draf · perlu semakan · ${letter.contentVersion}`);
+    if (letter.geometry.status === 'approved') await expect(illustration.locator('xpath=ancestor::article')).not.toContainText('Draf · perlu semakan');
+    else await expect(illustration.locator('xpath=ancestor::article')).toContainText(`Draf · perlu semakan · ${letter.contentVersion}`);
   }
   await shot(page, `${browserName}-teacher-content`);
   await page.getByRole('tab', { name: 'Suara', exact: true }).click();
@@ -137,11 +142,11 @@ test('catalogue, help, teacher and audio illustrations agree; revised lessons re
   await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).click();
   for (const letter of corrected) {
     await chooseLetter(page, letter.labelMs);
-    await page.getByRole('button', { name: 'Kenal huruf dan panduan', exact: true }).click();
+    await menuAction(page, 'Kenal huruf dan panduan');
     await expect(page.locator('.letter-help .letter-model-glyph path')).toHaveAttribute('d', letter.geometry.strokes[0].path);
     await expect(page.locator('.letter-help .letter-model-glyph circle')).toHaveCount(letter.geometry.dotTargets.length);
     await shot(page, `${browserName}-help-${letter.id}`); await page.keyboard.press('Escape');
-    await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click();
+    await menuAction(page, 'Isi kandungan');
   }
 });
 
@@ -150,7 +155,7 @@ for (const [width, height] of [[390, 844], [1024, 768], [768, 1024], [1920, 1080
     test.setTimeout(90000); await page.setViewportSize({ width, height });
     for (const letter of corrected) {
       await openLesson(page, letter.labelMs, 'play');
-      await expect(page.getByRole('button', { name: 'Cuba lagi', exact: true })).toBeEnabled();
+      await expect(page.getByRole('button', { name: 'Menu permainan', exact: true })).toBeEnabled();
       const board = page.locator('.trace-board'), fit = await board.getAttribute('viewBox');
       const contained = () => board.evaluate(svg => {
         const board = svg.getBoundingClientRect();

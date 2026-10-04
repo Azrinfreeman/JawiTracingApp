@@ -54,6 +54,10 @@ describe('round lifecycle', () => {
   test('pause rejects every completion; local retries change only one player; abandoned cannot win', () => {
     let state = racing(); state = act(state, 'RETRY', { slot: 0 }); expect(state.retries).toEqual([1, 0]);
     state = act(state, 'PAUSE'); expect(matchReducer(state, completion(1, 10))).toBe(state);
+    // The tools menu is shown while paused: a retry there resets only the chosen player and keeps the pause.
+    const paused = act(state, 'RETRY', { slot: 1 }); expect(paused.status).toBe('paused'); expect(paused.retries).toEqual([1, 1]);
+    expect(act(act(initialMatch(config), 'READY', { slot: 0 }), 'RETRY', { slot: 0 }).retries).toEqual([0, 0]);
+    state = paused; state = { ...state, retries: [1, 0] };
     expect(act(state, 'RESUME').status).toBe('countdown');
     state = act(state, 'END'); expect(state.awards).toBe(null); expect(act(state, 'NEXT')).toBe(state);
   });
@@ -85,8 +89,9 @@ describe('independent bounded storage', () => {
     unavailable.add(record); expect(unavailable.isAvailable()).toBe(false); expect(unavailable.export().matches).toHaveLength(1); unavailable.reset(); expect(unavailable.read().matches).toEqual([]);
   });
   test('selects one distinct eligible shared sequence and excludes unrevised approvals', () => {
-    expect(eligiblePool(letters, 'pilot')).toHaveLength(11); expect(eligiblePool(letters, 'ready')).toHaveLength(35); expect(eligiblePool(letters, 'additional')).toHaveLength(5);
-    const sequence = selectSequence(eligiblePool(letters, 'pilot'), 5, () => .4); expect(new Set(sequence).size).toBe(5);
+    const approved = letters.filter(letter => letter.geometry.status === 'approved');
+    expect(eligiblePool(letters, 'pilot')).toHaveLength(approved.filter(letter => letter.pilot).length); expect(eligiblePool(letters, 'ready')).toHaveLength(approved.length); expect(eligiblePool(letters, 'additional')).toHaveLength(approved.filter(letter => letter.additional).length);
+    const sequence = selectSequence(eligiblePool(letters, 'ready'), 5, () => .4); expect(new Set(sequence).size).toBe(5);
     const draft = structuredClone(letters[0]); draft.geometry.status = 'draft'; expect(eligiblePool([draft], 'ready')).toEqual([]);
   });
 });

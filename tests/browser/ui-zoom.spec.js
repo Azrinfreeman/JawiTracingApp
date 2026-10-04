@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { dismissSplash } from './helpers/navigation.js';
-import { boardModels, draw } from './helpers/tracing.js';
+import { boardModels, draw, openTeacher, showDotHelp } from './helpers/tracing.js';
+import { treatAllModelsAsReady } from './helpers/readyCatalogue.js';
+// Mechanics spec: every authored model is served as student-ready; the real gate is covered elsewhere.
+test.beforeEach(async ({ context }) => { await treatAllModelsAsReady(context); });
 
 // A 1280 × 900 display at 200% page zoom has 640 × 450 CSS pixels.
 // DPR 2 preserves that physical resolution while testing the responsive reflow.
@@ -17,6 +20,7 @@ test('200% zoom-equivalent reflow keeps navigation, writing and adult controls u
     await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
     await page.getByRole('button', { name: 'Ta', exact: true }).click();
     await draw(page, (await boardModels(page)).strokes[0]);
+    await showDotHelp(page);
     for (let i = 1; i <= 2; i++) {
       const pad = page.getByRole('button', { name: `Tambah titik ${i} daripada 2`, exact: true });
       await pad.scrollIntoViewIfNeeded(); await expect(pad).toBeInViewport(); await pad.click();
@@ -26,7 +30,7 @@ test('200% zoom-equivalent reflow keeps navigation, writing and adult controls u
     await page.getByRole('button', { name: /cuba salin sendiri/ }).click();
     const save = await page.getByRole('button', { name: 'Simpan untuk guru', exact: true }).boundingBox();
     expect(save.height).toBeGreaterThanOrEqual(56); await fits();
-    await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+    await openTeacher(page);
     const preview = await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).boundingBox();
     expect(preview.height).toBeGreaterThanOrEqual(56);
     await expect(page.getByLabel('Jenis latihan')).toHaveValue('play'); await fits();

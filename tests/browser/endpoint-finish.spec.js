@@ -1,7 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
-import { openLesson, boardModels } from './helpers/tracing.js';
+import { openLesson, boardModels, showDotHelp, openTeacher } from './helpers/tracing.js';
 import { dismissSplash } from './helpers/navigation.js';
+import { treatAllModelsAsReady } from './helpers/readyCatalogue.js';
+// Mechanics spec: every authored model is served as student-ready; the real gate is covered elsewhere.
+test.beforeEach(async ({ context }) => { await treatAllModelsAsReady(context); });
 
 const evidence = process.env.JAWI_EVIDENCE_DIR || 'output/verification/endpoint-finish';
 mkdirSync(evidence, { recursive: true });
@@ -36,12 +39,12 @@ async function fits(page) {
   expect(controls).toBe(true);
 }
 for (const preset of ['light', 'full']) for (const [width, height] of [[320, 740], [1024, 768], [768, 1024], [1280, 800]]) {
-  test(`Ghain ${preset} ${width}x${height}: displaced finish accepts one stationary confirmation, then a separate upper dot`, async ({ page, browserName }) => {
+  test(`Nun ${preset} ${width}x${height}: displaced finish accepts one stationary confirmation, then a separate upper dot`, async ({ page, browserName }) => {
     await page.addInitScript(p => localStorage.setItem('taman-jawi.presentation.v1', p), preset);
-    await page.setViewportSize({ width, height }); await openLesson(page, 'Ghain', 'play');
+    await page.setViewportSize({ width, height }); await openLesson(page, 'Nun', 'play');
     const board = page.locator('.trace-board'); await expect(board).toHaveAttribute('data-interaction-policy', 'play-guided-v2');
     await traceBody(board, 'held'); await expect(page.locator('.board-tip')).toHaveText('Angkat jari untuk bahagian seterusnya.');
-    await screenshot(page, `${browserName}-${preset}-${width}-ghain-held`);
+    await screenshot(page, `${browserName}-${preset}-${width}-nun-held`);
     // Recompute coordinates after each capture; the excursion intentionally invalidates readiness.
     await board.evaluate(svg => {
       const path = svg.querySelector('.reference-stroke'), end = path.getPointAtLength(path.getTotalLength());
@@ -52,7 +55,7 @@ for (const preset of ['light', 'full']) for (const [width, height] of [[320, 740
     await expect(page.locator('.trace-number-guide--stop')).toHaveClass(/is-confirmable/);
     await expect(page.locator('.terminal-resume-cue')).toBeHidden(); await expect(page.locator('.terminal-tail')).toBeHidden();
     const measured = Number(await page.locator('.play-fill').getAttribute('data-measured-frontier'));
-    await fits(page); await screenshot(page, `${browserName}-${preset}-${width}-ghain-confirm`);
+    await fits(page); await screenshot(page, `${browserName}-${preset}-${width}-nun-confirm`);
     await endpointContact(board, 'pointerdown'); await expect(page.locator('.board-tip')).toHaveText('Angkat jari untuk bahagian seterusnya.');
     await expect(page.locator('.trace-number-guide--stop')).toHaveClass(/is-ready/);
     await expect(page.getByRole('button', { name: 'Tambah titik 1 daripada 1' })).toHaveCount(0);
@@ -60,24 +63,26 @@ for (const preset of ['light', 'full']) for (const [width, height] of [[320, 740
     await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'dot-1');
     expect(Number(await page.locator('.play-fill').getAttribute('data-measured-frontier'))).toBe(measured);
     await expect(page.locator('.book-completed')).toHaveCount(0); await fits(page);
-    await screenshot(page, `${browserName}-${preset}-${width}-ghain-dot`);
+    await screenshot(page, `${browserName}-${preset}-${width}-nun-dot`);
     // Hit the actual authored upper dot, not only its equivalent support pad.
     const dot = (await boardModels(page)).dots[0]; await page.mouse.click(dot.x, dot.y);
     await expect(page.locator('.book-completed')).toBeVisible();
     const attempts = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts);
-    expect(attempts).toHaveLength(1); expect(attempts[0]).toMatchObject({ letterId: 'ghain', interactionPolicy: 'play-guided-v2', metrics: { endpointConfirmations: 1, releaseAssistances: 0, dotCount: 1 } });
-    await page.getByRole('button', { name: 'Ruang guru', exact: true }).click(); await page.getByRole('tab', { name: 'Diagnostik', exact: true }).click();
+    expect(attempts).toHaveLength(1); expect(attempts[0]).toMatchObject({ letterId: 'nun', interactionPolicy: 'play-guided-v2', metrics: { endpointConfirmations: 1, releaseAssistances: 0, dotCount: 1 } });
+    await openTeacher(page); await page.getByRole('tab', { name: 'Diagnostik', exact: true }).click();
     const pending = page.waitForEvent('download'); await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
     let text = ''; for await (const chunk of await (await pending).createReadStream()) text += chunk;
     const diagnostic = JSON.parse(text); expect(diagnostic.completionMethods).toEqual({ 'stroke-1': 'endpointConfirmation' });
     expect(diagnostic.rawGestures.some(g => g.completionMethod === 'endpointConfirmation' && g.points.length === 2)).toBe(true);
   });
 }
-test('Ghain final-up displacement uses bounded assistance and keeps the upper dot pending', async ({ page }) => {
-  await page.setViewportSize({ width: 1280, height: 800 }); await openLesson(page, 'Ghain', 'play');
+test('Nun final-up displacement uses bounded assistance and keeps the upper dot pending', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 }); await openLesson(page, 'Nun', 'play');
   await traceBody(page.locator('.trace-board'), 'assistance');
-  await expect(page.getByRole('button', { name: 'Tambah titik 1 daripada 1' })).toBeVisible();
+  await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'dot-1');
   await expect(page.locator('.book-completed')).toHaveCount(0);
+  // The equivalent pad is opt-in now: ask for dot help from the menu, then use it.
+  await showDotHelp(page); await expect(page.getByRole('button', { name: 'Tambah titik 1 daripada 1' })).toBeVisible();
   await page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }).click();
   await expect(page.locator('.book-completed')).toBeVisible();
   const record = await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts[0]);
@@ -85,7 +90,7 @@ test('Ghain final-up displacement uses bounded assistance and keeps the upper do
 });
 test('native touch confirms an already traced endpoint without movement', async ({ page, browserName }) => {
   test.skip(browserName !== 'chromium', 'Native touch uses Chromium CDP.');
-  await page.setViewportSize({ width: 1024, height: 768 }); await openLesson(page, 'Ghain', 'play');
+  await page.setViewportSize({ width: 1024, height: 768 }); await openLesson(page, 'Nun', 'play');
   await traceBody(page.locator('.trace-board')); await expect(page.locator('.board-tip')).toHaveText('Sentuh titik 3, kemudian angkat jari.');
   const board = page.locator('.trace-board');
   await board.evaluate(svg => { delete svg.setPointerCapture; delete svg.hasPointerCapture; });
@@ -97,7 +102,7 @@ test('native touch confirms an already traced endpoint without movement', async 
   await expect(page.locator('.board-tip')).toHaveText('Sentuh titik 3, kemudian angkat jari.');
   await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ ...end, id: 1 }] });
   await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
-  await expect(page.getByRole('button', { name: 'Tambah titik 1 daripada 1' })).toBeVisible(); await session.detach();
+  await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'dot-1'); await session.detach();
 });
 test('an endpoint confirmation held past the Solo deadline cannot award completion', async ({ page }) => {
   await page.setViewportSize({ width: 1024, height: 768 });
@@ -106,6 +111,7 @@ test('an endpoint confirmation held past the Solo deadline cannot award completi
   await page.getByRole('button', { name: /Cabaran trofi/ }).click();
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
   await page.getByRole('button', { name: 'Seterusnya', exact: true }).click();
+  await page.getByLabel('Bilangan pusingan').selectOption('3');
   await page.getByRole('button', { name: 'Buka cabaran Solo' }).click();
   await pane(page, 0).getByRole('button', { name: 'Saya sedia!', exact: true }).click(); await page.clock.fastForward(3100);
   const board = pane(page, 0).locator('.trace-board'); await traceBody(board);
@@ -121,13 +127,14 @@ for (const mode of ['solo', 'duo']) test(`${mode}: independent endpoint confirma
   await page.goto('/'); await dismissSplash(page); await page.clock.install();
   await page.getByRole('button', { name: mode === 'duo' ? 'Duo 1v1' : /Cabaran trofi/, exact: mode === 'duo' }).click();
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click(); await page.getByRole('button', { name: 'Seterusnya', exact: true }).click();
+  await page.getByLabel('Bilangan pusingan').selectOption('3');
   if (mode === 'duo') { await page.getByRole('button', { name: 'Uji dua sentuhan' }).click(); await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click(); }
   else await page.getByRole('button', { name: 'Buka cabaran Solo' }).click();
   const count = mode === 'duo' ? 2 : 1;
   const ready = async () => { for (let slot = 0; slot < count; slot++) await pane(page, slot).getByRole('button', { name: 'Saya sedia!', exact: true }).click(); await page.clock.fastForward(3100); };
   await ready();
   for (let slot = 0; slot < count; slot++) await traceBody(pane(page, slot).locator('.trace-board'), 'excursion', 61 + slot);
-  await page.getByRole('button', { name: 'Berhenti', exact: true }).click();
+  await page.getByRole('button', { name: 'Menu permainan', exact: true }).click();
   for (let slot = 0; slot < count; slot++) { const board = pane(page, slot).locator('.trace-board'); await endpointContact(board, 'pointerdown', 61 + slot); await endpointContact(board, 'pointerup', 61 + slot); }
   await expect(page.locator('.round-result')).toHaveCount(0);
   await page.getByRole('button', { name: 'Sambung bermain', exact: true }).click(); await page.clock.fastForward(3100);

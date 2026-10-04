@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { dismissSplash } from './helpers/navigation.js';
-import { boardModels, draw, movePoints } from './helpers/tracing.js';
+import { boardModels, draw, movePoints, openTeacher, menuAction, showDotHelp } from './helpers/tracing.js';
 
 const ids = ['zal', 'zai', 'syin', 'sad', 'dad'];
 const batch = letters.filter(letter => ids.includes(letter.id));
@@ -14,7 +14,7 @@ async function openBatchLesson(page, letter, mode = 'play') {
   if (mode === 'play') {
     await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
   } else {
-    await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+    await openTeacher(page);
     await page.getByLabel('Jenis latihan').selectOption(mode);
     await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).click();
     await page.getByRole('button', { name: 'Model tersedia', exact: true }).click();
@@ -57,7 +57,7 @@ test('all 37 approved lessons are available without authored drafts', async ({ p
   await page.getByRole('button', { name: 'Semua huruf', exact: true }).click();
   await expect(page.locator('.letter-card:disabled')).toHaveCount(0);
   for (const letter of batch) await expect(page.getByRole('button', { name: letter.labelMs, exact: true })).toBeEnabled();
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   await expect(page.locator('.draft-model-card')).toHaveCount(draftCount);
   await expect(page.locator('.teacher-stat-grid > div').nth(1)).toContainText(String(modelCount));
   await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('37');
@@ -76,7 +76,7 @@ test('Sad requires its head loop before the bowl, and shared-point numbers chang
   // Starting at the shared join does not allow a shortcut directly into the bowl.
   await draw(page, model.strokes[1]);
   await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'stroke-1');
-  await page.getByRole('button', { name: 'Cuba lagi', exact: true }).click();
+  await menuAction(page, 'Cuba lagi');
   model = await boardModels(page);
   const head = model.strokes[0], split = Math.ceil(head.length * .65);
   const badge = number => page.locator(`.trace-number-guide[data-number="${number}"] .trace-number-badge`);
@@ -96,13 +96,14 @@ test('student next-letter action includes approved Syin and Sad', async ({ page 
   await openBatchLesson(page, batch.find(letter => letter.id === 'syin'));
   let model = await boardModels(page);
   await draw(page, model.strokes[0]);
+  await showDotHelp(page);
   for (let i = 0; i < 3; i++) await page.getByRole('button', { name: `Tambah titik ${i + 1} daripada 3`, exact: true }).click();
-  await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).click();
+  await menuAction(page, 'Huruf seterusnya');
   await expect(page.getByRole('heading', { name: 'Sad', exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'Taman huruf', exact: true }).click();
   await page.getByRole('button', { name: 'Sin', exact: true }).click();
   model = await boardModels(page); await draw(page, model.strokes[0]);
-  await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).click();
+  await menuAction(page, 'Huruf seterusnya');
   await expect(page.getByRole('heading', { name: 'Syin', exact: true })).toBeVisible();
   expect(await lastRecord(page)).toMatchObject({ letterId: 'sin', preview: false, geometryStatus: 'approved' });
 });
@@ -136,6 +137,7 @@ test('all new stroke and dot guides remain readable and contained at phone and t
       };
       const model = await boardModels(page);
       for (const stroke of model.strokes) { await check(); await draw(page, stroke); }
+      if (model.dots.length) await showDotHelp(page);
       for (const [i] of model.dots.entries()) {
         await check(); await page.getByRole('button', { name: `Tambah titik ${i + 1} daripada ${model.dots.length}`, exact: true }).click();
       }
@@ -157,6 +159,7 @@ for (const width of [320, 768]) test(`Dad completes its loop, bowl and separate 
       await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
     }
     await expect(page.locator('.trace-number-label')).toHaveText(['7 Siap']);
+    await showDotHelp(page);
     await page.getByRole('button', { name: 'Tambah titik 1 daripada 1', exact: true }).tap();
     await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Dad!', exact: true })).toBeVisible();
     expect(await lastRecord(page)).toMatchObject({ pointerType: 'touch', preview: false, geometryStatus: 'approved', metrics: { dotCount: 1, equivalentDotActions: 1 } });

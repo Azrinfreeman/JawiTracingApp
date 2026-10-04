@@ -1,7 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 import { dismissSplash } from './helpers/navigation.js';
-import { boardModels, draw } from './helpers/tracing.js';
+import { boardModels, draw, openTeacher, openMenu } from './helpers/tracing.js';
+import { treatAllModelsAsReady } from './helpers/readyCatalogue.js';
+// Mechanics spec: every authored model is served as student-ready; the real gate is covered elsewhere.
+test.beforeEach(async ({ context }) => { await treatAllModelsAsReady(context); });
 
 test.setTimeout(90000);
 const evidence = process.env.JAWI_EVIDENCE_DIR || 'output/verification/solo-duo'; mkdirSync(evidence, { recursive: true });
@@ -27,7 +30,7 @@ async function ready(page, count = 1, capture) {
 async function completeMouse(page, slot = 0) {
   const board = pane(page, slot).locator('.trace-board'), model = await boardModels(page, board);
   for (const points of model.strokes) await draw(page, points);
-  for (let i = 0; i < model.dots.length; i++) await pane(page, slot).getByRole('button', { name: `Tambah titik ${i + 1} daripada ${model.dots.length}` }).click();
+  for (const dot of model.dots) await page.mouse.click(dot.x, dot.y);
 }
 async function center(button) { const box = await button.boundingBox(); return { x: box.x + box.width / 2, y: box.y + box.height / 2 }; }
 async function touches(session, type, points) { await session.send('Input.dispatchTouchEvent', { type, touchPoints: points }); }
@@ -51,9 +54,7 @@ async function bothTouch(page, session, beforeDots) {
   }
   if (models[0].dots.length && beforeDots) await beforeDots(models[0].dots.length);
   for (let i = 0; i < models[0].dots.length; i++) {
-    const label = `Tambah titik ${i + 1} daripada ${models[0].dots.length}`;
-    const a = await center(pane(page, 0).getByRole('button', { name: label })), b = await center(pane(page, 1).getByRole('button', { name: label }));
-    await touches(session, 'touchStart', [{ ...a, id: 1 }, { ...b, id: 2 }]);
+    await touches(session, 'touchStart', [{ ...models[0].dots[i], id: 1 }, { ...models[1].dots[i], id: 2 }]);
     await touches(session, 'touchEnd', []);
   }
 }
@@ -70,8 +71,8 @@ test('shared book turn keeps both players together and starts the next clock onl
   await expect(page.locator('.race-book .book-fold')).toHaveCount(2); await expect(page.locator('.race-clock')).toContainText('0');
   await expect(page.getByRole('button', { name: 'Saya sedia!', exact: true })).toHaveCount(0);
   await page.screenshot({ path: `${evidence}/duo-shared-book-turn.png`, fullPage: true });
-  await page.clock.runFor(419); await expect(page.locator('.race-toolbar')).toContainText('Pusingan 1/3');
-  await page.clock.runFor(1); await expect(page.locator('.race-toolbar')).toContainText('Pusingan 2/3');
+  await page.clock.runFor(419); await expect(page.locator('.arena-hud-right')).toContainText('Pusingan 1/3');
+  await page.clock.runFor(1); await expect(page.locator('.arena-hud-right')).toContainText('Pusingan 2/3');
   await expect(page.locator('.race-book .book-fold')).toHaveCount(0); await expect(page.locator('.race-clock')).toContainText('90');
   await expect(page.getByRole('button', { name: 'Saya sedia!', exact: true })).toHaveCount(2);
   await expect(page.locator('.countdown-overlay')).toHaveCount(0); expect((await records(page)).progress.attempts).toHaveLength(0);
@@ -91,10 +92,10 @@ test('Solo challenge completes, earns a trophy, exports both stores and resets b
   expect(saved.progress.attempts.every(a => a.sessionType === 'solo' && a.toleranceProfile === 'play-touch-standard-v2')).toBe(true);
   const firstId = saved.matches.matches[0].id, sequence = saved.matches.matches[0].letterIds;
   await page.getByRole('button', { name: 'Main semula', exact: true }).click(); await expect(pane(page, 0)).toBeVisible();
-  await page.getByRole('button', { name: 'Keluar', exact: true }).click(); await page.getByRole('button', { name: 'Ya, keluar' }).click();
+  await openMenu(page); await page.getByRole('button', { name: 'Keluar cabaran', exact: true }).click(); await page.getByRole('button', { name: 'Ya, keluar' }).click();
   saved = await records(page); expect(saved.matches.matches).toHaveLength(2); expect(saved.matches.matches[1].id).not.toBe(firstId); expect(saved.matches.matches[1].letterIds).toEqual(sequence);
   expect(saved.matches.matches[1].status).toBe('abandoned');
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   await page.getByRole('tab', {name:'Cabaran',exact:true}).click(); await expect(page.locator('.record-card')).toHaveCount(2);
   const download = page.waitForEvent('download'); await page.getByRole('button', { name: 'Eksport kemajuan' }).click();
   let json = ''; for await (const chunk of await (await download).createReadStream()) json += chunk.toString();
@@ -134,22 +135,28 @@ test('touch gate rejects mouse verification; adult preview cannot persist a scor
   const saved = await records(page); expect(saved.progress.attempts).toHaveLength(0); expect(saved.matches.matches).toHaveLength(0);
 });
 for (const [width, height] of [[1024, 768], [768, 1024], [1280, 720], [1920, 1080], [1366, 768]]) {
-  test(`Duo fits equal upright boards and controls at ${width}x${height}`, async ({ page }) => {
+  test(`Duo fits equal upright boards with corner controls at ${width}x${height}`, async ({ page }) => {
     await page.setViewportSize({ width, height }); await setup(page, 'duo'); await page.getByRole('button', { name: 'Uji dua sentuhan' }).click(); await page.getByRole('button', { name: /Pratonton susun atur dewasa/ }).click();
     await expect(page.locator('.arena-space')).toHaveCount(0);
     await page.evaluate(async () => { await document.fonts.ready; await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))); });
+    await expect(page.locator('.race-dock, .race-actions, .arena-ready-note, .race-toolbar')).toHaveCount(0);
     const boards = await page.locator('.board-wrap').evaluateAll(nodes => nodes.map(n => { const b = n.getBoundingClientRect(); return { width: b.width, height: b.height, top: b.top, right: b.right, bottom: b.bottom }; }));
     expect(boards).toHaveLength(2); expect(Math.min(boards[0].width, boards[0].height)).toBeGreaterThanOrEqual(280);
-    expect(boards[0].width).toBe(boards[1].width); expect(boards[0].height).toBe(boards[1].height);
-    const controls = await page.locator('.race-actions button').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().toJSON()));
-    expect(controls.every(b => b.bottom <= height && b.right <= width && b.height >= 48)).toBe(true);
-    for (let slot = 0; slot < 2; slot++) {
-      const rows = await pane(page, slot).locator('.board-tip, .trace-number-instruction, .play-dot-tools, .race-actions').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().toJSON()));
-      expect(rows.every(row => row.top >= boards[slot].bottom - 1 && row.bottom <= height && row.left >= 0 && row.right <= width)).toBe(true);
-      for (let i = 0; i < rows.length; i++) for (let j = i + 1; j < rows.length; j++) {
-        expect(rows[i].left < rows[j].right - 1 && rows[j].left < rows[i].right - 1 && rows[i].top < rows[j].bottom - 1 && rows[j].top < rows[i].bottom - 1).toBe(false);
-      }
+    expect(Math.abs(boards[0].width - boards[1].width)).toBeLessThanOrEqual(1); expect(Math.abs(boards[0].height - boards[1].height)).toBeLessThanOrEqual(1);
+    const rects = await page.evaluate(() => {
+      const box = node => { const r = node.getBoundingClientRect(); return { x: r.x, y: r.y, r: r.right, b: r.bottom, w: r.width, h: r.height }; };
+      return { menu: box(document.querySelector('.stage-menu-button')), hud: box(document.querySelector('.arena-hud-right')),
+        badges: [...document.querySelectorAll('.race-badge')].map(box), overlays: [...document.querySelectorAll('.ready-overlay')].map(box),
+        letters: [...document.querySelectorAll('.race-pane')].map(pane => [...pane.querySelectorAll('.reference-stroke, .reference-dot')].filter(n => n.getBoundingClientRect().width).map(box)) };
+    });
+    const touches = (a, b) => a.x < b.r && b.x < a.r && a.y < b.b && b.y < a.b;
+    expect(rects.menu.w).toBeGreaterThanOrEqual(48); expect(rects.menu.h).toBeGreaterThanOrEqual(48);
+    for (const control of [rects.menu, rects.hud, ...rects.badges]) {
+      expect(control.x).toBeGreaterThanOrEqual(0); expect(control.y).toBeGreaterThanOrEqual(0); expect(control.r).toBeLessThanOrEqual(width); expect(control.b).toBeLessThanOrEqual(height);
+      for (const letter of rects.letters) expect(letter.filter(item => touches(item, control))).toHaveLength(0);
     }
+    expect(touches(rects.menu, rects.hud)).toBe(false); expect(rects.overlays).toHaveLength(2);
+    expect(rects.overlays.every(o => o.x >= 0 && o.r <= width && o.b <= height && o.h >= 48)).toBe(true);
     await page.screenshot({ path: `${evidence}/duo-${width}x${height}-ready.png`, fullPage: true, animations: 'disabled' });
     await ready(page, 2); await expect(page.locator('.race-lanes')).toBeVisible();
     await page.screenshot({ path: `${evidence}/duo-${width}x${height}-racing.png`, fullPage: true, animations: 'disabled' });
@@ -160,8 +167,11 @@ test('small and short Duo screens offer space guidance before racing; Solo remai
   await page.setViewportSize({ width: 844, height: 390 }); await expect(page.getByRole('dialog', { name: 'Besarkan ruang bermain' })).toBeVisible();
   await page.screenshot({ path: `${evidence}/duo-short-space-guidance.png`, fullPage: true, animations: 'disabled' });
   await page.setViewportSize({ width: 1024, height: 768 }); await expect(page.locator('.trace-board')).toHaveCount(2);
-  await ready(page, 2); await page.setViewportSize({ width: 390, height: 844 }); await expect(page.getByRole('heading', { name: 'Besarkan ruang bermain' })).toBeVisible();
-  await page.getByRole('button', { name: 'Kembali memilih Solo' }).click(); await page.getByRole('button', { name: 'Kembali', exact: true }).click();
+  await ready(page, 2); await page.setViewportSize({ width: 390, height: 844 });
+  // Without a bottom dock, stacked Duo boards fit a portrait phone; undersized stages still get guidance.
+  await expect(page.locator('.arena-space')).toHaveCount(0); await expect(page.locator('.trace-board')).toHaveCount(2);
+  const squeeze = await page.addStyleTag({ content: '.race-pane { max-height: 240px !important; }' }); await expect(page.getByRole('heading', { name: 'Besarkan ruang bermain' })).toBeVisible();
+  await page.getByRole('button', { name: 'Kembali memilih Solo' }).click(); await squeeze.evaluate(node => node.remove()); await page.getByRole('button', { name: 'Kembali', exact: true }).click();
   await page.getByRole('button', { name: /Cabaran trofi/ }).click(); await page.getByRole('button', { name: 'Jom mula', exact: true }).click(); await page.getByRole('button', { name: 'Seterusnya', exact: true }).click(); await page.getByRole('button', { name: 'Buka cabaran Solo' }).click();
   await expect(page.locator('.trace-board')).toBeVisible(); expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
@@ -201,8 +211,10 @@ test('captured contact cannot cross lanes; extra own-lane contact is ignored; re
   for (let i = 1; i < 20; i++) await touches(session, 'touchMove', [{ ...a.strokes[0][i], id: 1 }, { ...b.strokes[0][i], id: 2 }, { ...a.strokes[0][5], id: 3 }]);
   await touches(session, 'touchEnd', []); await expect(pane(page, 1).locator('.play-fill')).toBeVisible();
   const saved = await pane(page, 1).locator('.play-fill').getAttribute('data-measured-frontier');
-  await pane(page, 0).getByRole('button', { name: 'Cuba lagi' }).click(); await expect(pane(page, 0).locator('.play-fill')).toHaveCount(0); expect(await pane(page, 1).locator('.play-fill').getAttribute('data-measured-frontier')).toBe(saved);
-  await completeMouse(page, 0); await expect(pane(page, 0).getByText('Siap! Tunggu teman.')).toBeVisible(); await expect(pane(page, 1).getByRole('button', { name: 'Cuba lagi' })).toBeEnabled();
+  await openMenu(page); await page.getByRole('dialog', { name: 'Rehat sekejap' }).getByRole('button', { name: 'Cuba lagi · Bunga' }).click();
+  await expect(page.locator('.countdown-overlay')).toBeVisible(); await page.clock.fastForward(3100); await expect(page.locator('.countdown-overlay')).toHaveCount(0);
+  await expect(pane(page, 0).locator('.play-fill')).toHaveCount(0); expect(await pane(page, 1).locator('.play-fill').getAttribute('data-measured-frontier')).toBe(saved);
+  await completeMouse(page, 0); await expect(pane(page, 0).getByText('Siap! Tunggu teman.')).toBeVisible();
   await page.clock.fastForward(91000); await expect(page.getByRole('heading', { name: 'Pusingan 1 selesai!' })).toBeVisible();
   const savedRecords = await records(page); expect(savedRecords.progress.attempts).toHaveLength(1); expect(savedRecords.progress.attempts[0].retries).toBe(1);
   await context.close();
@@ -211,7 +223,7 @@ test('storage failure retains session export and reload never restores a live ma
   await page.addInitScript(() => { Storage.prototype.setItem = () => { throw new Error('Quota exceeded'); }; });
   await page.setViewportSize({ width: 1024, height: 768 }); await solo(page); await ready(page); await completeMouse(page);
   await page.getByRole('button', { name: 'Keluar cabaran' }).click(); await page.getByRole('button', { name: 'Ya, keluar' }).click();
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click(); await expect(page.getByText(/Storan tidak tersedia/)).toBeVisible();
+  await openTeacher(page); await expect(page.getByText(/Storan tidak tersedia/)).toBeVisible();
   const pending = page.waitForEvent('download'); await page.getByRole('button', { name: 'Eksport kemajuan' }).click();
   let json = ''; for await (const chunk of await (await pending).createReadStream()) json += chunk.toString();
   const data = JSON.parse(json); expect(data.progress.attempts).toHaveLength(1); expect(data.matches.matches).toHaveLength(1);
@@ -233,14 +245,19 @@ test('Duo survives insufficient space and visibility pause with both accepted tr
   for (let slot = 0; slot < 2; slot++) { const model = await boardModels(page, pane(page, slot).locator('.trace-board')); await draw(page, model.strokes[0].slice(19)); }
   await expect(page.getByRole('heading', { name: 'Pusingan 1 selesai!' })).toBeVisible();
 });
-test('held dot pad and virtual activation cannot complete during pause or countdown', async ({ page }) => {
+test('held dot pad cannot complete during pause or countdown; help returns only after the shared countdown', async ({ page }) => {
   await page.setViewportSize({ width: 1024, height: 768 }); await solo(page); await ready(page); await completeMouse(page);
   await page.getByRole('button', { name: 'Pusingan seterusnya' }).click(); await ready(page);
   const model = await boardModels(page); for (const stroke of model.strokes) await draw(page, stroke);
-  const pad = page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }); await pad.focus(); await page.keyboard.down('Space');
-  await page.setViewportSize({ width: 1000, height: 760 }); await expect(pad).toBeDisabled();
-  await pad.dispatchEvent('click', { detail: 0 }); await page.keyboard.up('Space'); expect((await records(page)).progress.attempts).toHaveLength(1);
-  await page.getByRole('button', { name: 'Sambung bermain' }).click(); await pad.dispatchEvent('click', { detail: 0 }); expect((await records(page)).progress.attempts).toHaveLength(1);
+  await expect(page.locator('.trace-assistance')).toHaveCount(0);
+  await openMenu(page); await page.getByRole('dialog', { name: 'Rehat sekejap' }).getByRole('button', { name: 'Bantuan titik', exact: true }).click();
+  await expect(page.locator('.countdown-overlay')).toBeVisible(); await expect(page.locator('.trace-assistance')).toHaveCount(0);
+  await page.clock.fastForward(3100); await expect(page.locator('.countdown-overlay')).toHaveCount(0);
+  const pad = page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }); await expect(pad).toBeVisible();
+  await pad.focus(); await page.keyboard.down('Space');
+  await page.setViewportSize({ width: 1000, height: 760 }); await expect(page.getByRole('heading', { name: 'Rehat sekejap' })).toBeVisible();
+  await expect(pad).toHaveCount(0); await page.keyboard.up('Space'); expect((await records(page)).progress.attempts).toHaveLength(1);
+  await page.getByRole('button', { name: 'Sambung bermain' }).click(); await expect(pad).toHaveCount(0); expect((await records(page)).progress.attempts).toHaveLength(1);
   await page.clock.fastForward(3100);
   await expect(page.locator('.countdown-overlay')).toHaveCount(0); await expect(pad).toBeEnabled();
   await pad.focus(); await page.keyboard.press('Space'); await expect(page.getByRole('heading', { name: 'Pusingan 2 selesai!' })).toBeVisible();
@@ -252,22 +269,18 @@ test('fullscreen rejection has a useful fallback and setup pool limits follow el
   await page.getByLabel('Kumpulan huruf').selectOption('additional'); await expect(page.getByLabel('Bilangan pusingan').locator('option[value="10"]')).toHaveAttribute('disabled', '');
   await page.getByLabel('Masa setiap pusingan').selectOption('60000'); await page.getByRole('button', { name: 'Buka cabaran Solo' }).click(); await expect(page.locator('.race-clock')).toContainText('60');
 });
-test('native portrait Duo dot controls fit, complete together and appear in teacher history', async ({ browser, browserName }) => {
+test('native portrait Duo completes together with direct dots and appears in teacher history', async ({ browser, browserName }) => {
   test.skip(browserName !== 'chromium', 'Native simultaneous touch uses Chromium CDP.');
   const context = await browser.newContext({ viewport: { width: 768, height: 1024 }, hasTouch: true }), page = await context.newPage(), session = await context.newCDPSession(page);
   await verifiedDuo(page, session, true);
   for (let round = 0; round < 3; round++) {
     await ready(page, 2, round === 0 ? 'duo-portrait-countdown' : null);
-    await bothTouch(page, session, async count => {
+    await bothTouch(page, session, async () => {
       for (let slot = 0; slot < 2; slot++) {
-        const pad = pane(page, slot).getByRole('button', { name: `Tambah titik 1 daripada ${count}` }); await expect(pad).toBeVisible();
-        const box = await pad.boundingBox(), guide = await pane(page, slot).locator('.trace-number-instruction').boundingBox(), retry = await pane(page, slot).getByRole('button', { name: 'Cuba lagi' }).boundingBox();
-        expect(box.height).toBeGreaterThanOrEqual(64); expect(box.y).toBeGreaterThanOrEqual(guide.y + guide.height);
-        // The fitted dock permits the pad and retry beside each other.
-        expect(box.y + box.height <= retry.y || retry.y + retry.height <= box.y || box.x + box.width <= retry.x || retry.x + retry.width <= box.x).toBe(true);
-        const lane = await pane(page, slot).boundingBox();
-        expect(box.x).toBeGreaterThanOrEqual(lane.x); expect(box.x + box.width).toBeLessThanOrEqual(lane.x + lane.width);
-        expect(box.y + box.height).toBeLessThanOrEqual(1024);
+        const lane = await pane(page, slot).boundingBox(), board = await pane(page, slot).locator('.trace-board').boundingBox();
+        expect(board.x).toBeGreaterThanOrEqual(lane.x - 1); expect(board.x + board.width).toBeLessThanOrEqual(lane.x + lane.width + 1);
+        expect(board.y + board.height).toBeLessThanOrEqual(1024);
+        await expect(pane(page, slot).locator('.trace-assistance')).toHaveCount(0);
       }
       await page.screenshot({ path: `${evidence}/duo-portrait-round-${round + 1}-dots.png`, fullPage: true, animations: 'disabled' });
     });
@@ -275,7 +288,7 @@ test('native portrait Duo dot controls fit, complete together and appear in teac
     await page.getByRole('button', { name: round === 2 ? 'Lihat keputusan' : 'Pusingan seterusnya' }).click();
   }
   await expect(page.getByRole('heading', { name: 'Trofi bersama!' })).toBeVisible(); expect((await records(page)).progress.attempts).toHaveLength(6);
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   await page.getByRole('tab', { name: 'Cabaran', exact: true }).click();
   const history = page.locator('.record-card').filter({ hasText: 'Bunga / Daun' });
   await expect(history).toContainText('Bunga / Daun'); await expect(history).toContainText('Selesai'); await history.screenshot({ path: `${evidence}/duo-teacher-history.png`, animations: 'disabled' });

@@ -21,7 +21,7 @@ export function matchReducer(state, action) {
     case 'PAUSE': return ['racing', 'countdown'].includes(state.status)
       ? { ...state, status: 'paused', pauseCount: state.pauseCount + 1 } : state;
     case 'RESUME': return state.status === 'paused' ? { ...state, status: 'countdown', resuming: true } : state;
-    case 'RETRY': return state.status === 'racing' && Number.isInteger(action.slot) && action.slot >= 0 && action.slot < state.profiles.length && !state.outcomes[action.slot]
+    case 'RETRY': return ['racing', 'paused'].includes(state.status) && Number.isInteger(action.slot) && action.slot >= 0 && action.slot < state.profiles.length && !state.outcomes[action.slot]
       ? { ...state, retries: state.retries.map((n, slot) => n + (slot === action.slot ? 1 : 0)) } : state;
     case 'COMPLETE': {
       if (state.status !== 'racing' || action.matchId !== state.id || action.roundIndex !== state.roundIndex ||

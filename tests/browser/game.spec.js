@@ -1,6 +1,9 @@
 import { test,expect } from '@playwright/test';
 import { dismissSplash, selectPractice } from './helpers/navigation.js';
 import letters from '../../src/content/letters.json' with { type: 'json' };
+import { openMenu, menuAction, openTeacher } from './helpers/tracing.js';
+// Student-ready lessons follow the catalogue, so approvals or revisions never need a count edit here.
+const readyLessons = letters.filter(letter => letter.geometry.status === 'approved' && letter.audio.name.status === 'approved').length;
 
 async function preview(page, letter='Alif', mode='guided') {
   await page.goto('/');
@@ -49,7 +52,7 @@ test('welcome, approved student entry, explicit adult preview, full catalogue an
   await page.goto('/'); await dismissSplash(page); await expect(page.getByRole('heading',{level:1})).toContainText('Jom main di');
   await page.getByRole('button',{name:'Jom mula'}).click();
   await expect(page.getByRole('dialog')).not.toBeVisible();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(readyLessons);
   await selectPractice(page, 'guided');
   await expect(page.locator('.letter-card')).toHaveCount(12);
   await page.getByRole('button',{name:'Semua huruf',exact:true}).click();await expect(page.locator('.letter-card')).toHaveCount(37);
@@ -58,8 +61,10 @@ test('welcome, approved student entry, explicit adult preview, full catalogue an
   await page.getByRole('button',{name:'Huruf permulaan',exact:true}).click();
   await page.route(`**${letters.find(letter=>letter.id==='ba').audio.name.src}`,route=>route.fulfill({status:404,body:''}));
   await page.getByRole('button',{name:'Ba',exact:true}).click();
-  await page.getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.locator('.audio-notice')).toContainText('Audio tidak dapat dimainkan');
-  await page.getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.locator('.audio-notice')).toContainText('cuba semula');
+  await openMenu(page);await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.locator('.audio-notice')).toContainText('Audio tidak dapat dimainkan');
+  await page.getByRole('button',{name:'Dengar sekali lagi',exact:true}).click();await expect(page.locator('.audio-notice')).toContainText('cuba semula');
+  await page.getByRole('dialog',{name:'Dengar nama huruf'}).getByRole('button',{name:'Tutup',exact:true}).click();
+  await page.getByRole('button',{name:'Halaman menu seterusnya'}).click();
   await page.getByRole('button',{name:'Senyapkan audio'}).click();await expect(page.getByRole('button',{name:'Hidupkan audio'})).toHaveAttribute('aria-pressed','true');
   expect(errors).toEqual([]);
 });
@@ -75,7 +80,7 @@ test('native pointer flow requires dots, records progress, then saves actual cop
   await draw(page,[{x:box.x+box.width*.7,y:box.y+box.height*.3},{x:box.x+box.width*.68,y:box.y+box.height*.6},{x:box.x+box.width*.3,y:box.y+box.height*.65}]);
   await page.getByRole('button',{name:'Simpan untuk guru'}).click();
   await expect(page.getByRole('heading',{name:'Terima kasih kerana mencuba!'})).toBeVisible();
-  await page.reload(); await dismissSplash(page); await page.getByRole('button',{name:'Ruang guru'}).click();
+  await page.reload(); await dismissSplash(page); await openTeacher(page);
   await expect(page.locator('.copy-thumbnail')).toHaveCount(1);
   await expect(page.getByRole('row').filter({hasText:'Bunga · ba'})).toBeVisible();
   const downloadPromise=page.waitForEvent('download'); await page.getByRole('button',{name:'Eksport kemajuan'}).click();
@@ -85,8 +90,8 @@ test('native pointer flow requires dots, records progress, then saves actual cop
 test('teleport, reverse and cancellation do not finish; native tracing recovers',async({page})=>{
   await preview(page);let model=await boardModels(page),stroke=model.strokes[0];
   await draw(page,[stroke[0],stroke.at(-1)]);await expect(page.locator('.trace-board')).toBeVisible();
-  await page.getByRole('button',{name:'Cuba lagi'}).click();model=await boardModels(page);stroke=model.strokes[0];await draw(page,stroke.toReversed());
-  await expect(page.locator('.trace-board')).toBeVisible();await page.getByRole('button',{name:'Cuba lagi'}).click();
+  await menuAction(page,'Cuba lagi');model=await boardModels(page);stroke=model.strokes[0];await draw(page,stroke.toReversed());
+  await expect(page.locator('.trace-board')).toBeVisible();await menuAction(page,'Cuba lagi');
   model=await boardModels(page);stroke=model.strokes[0];
   await page.locator('.trace-board').evaluate(svg=>svg.addEventListener('pointerdown',e=>svg.dataset.testPointerId=e.pointerId,{once:true}));
   await page.mouse.move(stroke[0].x,stroke[0].y);await page.mouse.down();for(const p of stroke.slice(1,21)) await page.mouse.move(p.x,p.y);
@@ -97,8 +102,8 @@ test('teleport, reverse and cancellation do not finish; native tracing recovers'
 
 test('demo never updates progress; reduced motion and keyboard navigation work',async({page})=>{
   await page.emulateMedia({reducedMotion:'reduce'});await preview(page,'Ba');
-  await page.getByRole('button',{name:'Lihat cara'}).click();
-  await expect(page.getByRole('button',{name:'Lihat cara'})).toBeEnabled({timeout:10000});
+  await menuAction(page,'Lihat cara');
+  await expect(page.locator('.demonstration-ink').first()).toBeVisible();await expect(page.locator('.demonstration-ink')).toHaveCount(0,{timeout:10000});
   expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')||'{"attempts":[]}').attempts.length)).toBe(0);
   await page.keyboard.press('Tab');expect(await page.evaluate(()=>document.activeElement.tagName)).toBe('BUTTON');
   await complete(page);
@@ -120,28 +125,28 @@ test('second contact, capture loss, dragging outside and orientation interruptio
   await expect(page.locator('.trace-board')).toBeVisible();
   model=await boardModels(page);stroke=model.strokes[0];
   await page.mouse.move(stroke[0].x,stroke[0].y);await page.mouse.down();await page.mouse.move(2,2);await page.mouse.up();
-  await expect(page.locator('.trace-board')).toBeVisible();await page.getByRole('button',{name:'Cuba lagi'}).click();
+  await expect(page.locator('.trace-board')).toBeVisible();await menuAction(page,'Cuba lagi');
   model=await boardModels(page);stroke=model.strokes[0];
   await page.locator('.trace-board').evaluate(svg=>svg.addEventListener('pointerdown',e=>svg.dataset.testPointerId=e.pointerId,{once:true}));
   await page.mouse.move(stroke[0].x,stroke[0].y);await page.mouse.down();for(const p of stroke.slice(1,10)) await page.mouse.move(p.x,p.y);
   await page.locator('.trace-board').evaluate(svg=>svg.releasePointerCapture(Number(svg.dataset.testPointerId)));await page.mouse.up();
-  await expect(page.locator('.trace-board')).toBeVisible();await page.getByRole('button',{name:'Cuba lagi'}).click();await complete(page);
+  await expect(page.locator('.trace-board')).toBeVisible();await menuAction(page,'Cuba lagi');await complete(page);
 });
 
 test('corrupt or unavailable storage stays usable; reset requires a deliberate action',async({page})=>{
   await page.addInitScript(()=>localStorage.setItem('taman-jawi.progress.v1','{broken'));
-  await preview(page);await complete(page);await page.getByRole('button',{name:'Ruang guru'}).click();
+  await preview(page);await complete(page);await menuAction(page,'Ruang guru');
   await page.getByRole('button',{name:'Padam rekod',exact:true}).click();await expect(page.getByRole('group',{name:'Sahkan pemadaman'})).toBeVisible();
   await page.getByRole('button',{name:'Batal',exact:true}).click();await expect(page.getByRole('row').filter({hasText:'Bunga · alif'})).toBeVisible();
   await page.getByRole('button',{name:'Padam rekod',exact:true}).click();await page.getByRole('button',{name:'Ya, padam rekod'}).click();
   await expect(page.getByText('Cubaan yang selesai akan dipaparkan di sini.')).toBeVisible();
   await page.addInitScript(()=>{Storage.prototype.getItem=function(){throw new Error('blocked');};Storage.prototype.setItem=function(){throw new Error('blocked');};});
-  await preview(page);await complete(page);await page.getByRole('button',{name:'Ruang guru'}).click();
+  await preview(page);await complete(page);await menuAction(page,'Ruang guru');
   await expect(page.getByText(/Storan pelayar tidak tersedia/)).toBeVisible();
 });
 
 test('teacher audition uses an actual local WAV; unsupported and denied playback are reported',async({page,browserName})=>{
-  await page.goto('/');await dismissSplash(page);await page.getByRole('button',{name:'Ruang guru'}).click();
+  await page.goto('/');await dismissSplash(page);await openTeacher(page);
   await page.locator('input[type=file]').setInputFiles({name:'engineering-fixture.wav',mimeType:'audio/wav',buffer:waveFixture()});
   await page.getByRole('button',{name:'Mainkan rakaman dipilih'}).click();
   if(browserName === 'webkit' && process.platform === 'win32') {
@@ -174,7 +179,7 @@ test('quota errors preserve newly completed work in the current session',async({
     localStorage.setItem('taman-jawi.progress.v1',JSON.stringify({version:1,profile:'Bunga',attempts:[],copies:[]}));
     Storage.prototype.setItem=function(){throw new DOMException('Full','QuotaExceededError');};
   });
-  await preview(page);await complete(page);await page.getByRole('button',{name:'Ruang guru'}).click();
+  await preview(page);await complete(page);await menuAction(page,'Ruang guru');
   await expect(page.getByRole('row').filter({hasText:'Bunga · alif'})).toBeVisible();
   await expect(page.getByText(/Storan pelayar tidak tersedia/)).toBeVisible();
 });

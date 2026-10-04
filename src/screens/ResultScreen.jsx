@@ -2,15 +2,15 @@ import { Icon } from '../components/Icons.jsx';
 import { AudioControls } from '../components/AudioControls.jsx';
 import { PlayFeedback } from '../components/PlayFeedback.jsx';
 import { LetterModelGlyph } from '../components/LetterModelGlyph.jsx';
-export function ResultScreen({ letter, result, audio, preview, onNext, onAgain, onCopy, onGarden, embedded = false, compact = false, actionsOnly = false, summaryOnly = false }) {
+export function ResultScreen({ letter, result, audio, preview, onNext, onAgain, onCopy, onGarden, embedded = false, compact = false, actionsOnly = false, summaryOnly = false, choicesDisabled = false }) {
   const copied = result.outcome === 'copySaved';
   const playful = result.outcome === 'playComplete';
   if (embedded) return <section className={`${actionsOnly ? 'book-completion-actions' : 'book-completion'} ${compact ? 'compact-completion' : ''}`}>
     {!actionsOnly && <><span className="book-sticker earned"><Icon name={copied ? 'pen' : 'flower'} size={24}/>{copied ? 'Tulisan disimpan' : 'Siap dijejak!'}</span>
     <h2>{playful ? `Kamu sudah ikut huruf ${letter.labelMs}!` : copied ? 'Terima kasih kerana mencuba!' : 'Bagus, kamu sudah cuba!'}</h2>
     <p>{copied ? 'Guru boleh melihat tulisan kamu.' : 'Hebat! Selak apabila kamu sedia.'}</p></>}
-    {!summaryOnly && <><button className="button button-outline" onClick={onAgain}><Icon name="retry" size={18}/>{playful ? 'Main lagi' : 'Ulang huruf'}</button>
-    {!copied && <button className="text-button copy-action" aria-label="Sekarang, cuba salin sendiri" onClick={onCopy}><Icon name="pen" size={16}/>{compact ? 'Salin sendiri' : 'Sekarang, cuba salin sendiri'}</button>}</>}
+    {!summaryOnly && <><button className="button button-outline" disabled={choicesDisabled} onClick={onAgain}><Icon name="retry" size={18}/>{playful ? 'Main lagi' : 'Ulang huruf'}</button>
+    {!copied && <button className="text-button copy-action" aria-label="Sekarang, cuba salin sendiri" disabled={choicesDisabled} onClick={onCopy}><Icon name="pen" size={16}/>{compact ? 'Salin sendiri' : 'Sekarang, cuba salin sendiri'}</button>}</>}
   </section>;
   return <main className={`result-page page-enter ${playful ? 'play-result' : ''}`}><div className="result-card">
     <div className="result-sparkles" aria-hidden="true">✦<span>✿</span>✧</div>

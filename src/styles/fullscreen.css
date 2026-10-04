@@ -71,49 +71,21 @@ body { position: fixed; inset: 0; }
 .book-spread { display: block; flex: 1; height: 100%; min-height: 0; }
 .book-spread::after { display: none; }
 .book-writing.lesson-workspace { width: 100%; height: 100%; min-height: 0; max-width: none; margin: 0; }
-.fitted-trace { height: 100%; width: 100%; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) 148px; }
+.fitted-trace { height: 100%; width: 100%; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr); position: relative; }
 .trace-stage { min-height: 0; min-width: 0; position: relative; display: flex; justify-content: center; align-items: center; }
 .trace-space { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; text-align: center; background: var(--sun-soft); border-radius: 18px; }
 .fitted-trace .board-wrap { width: 100%; height: 100%; min-height: 0; aspect-ratio: auto; border-radius: 18px; box-shadow: none; }
 .fitted-trace .trace-board { width: 100%; height: 100%; aspect-ratio: auto; display: block; }
 .fitted-trace .copy-stage .board-wrap { width: var(--stage-square); height: var(--stage-square); max-width: 100%; max-height: 100%; }
-.lesson-dock { min-height: 0; border: 1px solid #c2ceab; border-radius: 20px; background: rgb(255 253 245 / .88); backdrop-filter: blur(8px); margin-top: 6px; padding: 8px 12px; position: relative; display: grid; grid-template-rows: 52px minmax(0, 1fr); gap: 4px; }
-.dock-summary { display: flex; align-items: center; gap: 16px; min-width: 0; }
-.book-letter-heading { flex: 0 0 130px; margin: 0; padding: 0; gap: 4px; flex-wrap: nowrap; order: 0; }
-.book-letter-heading h1 { margin: 0; font-size: 30px; line-height: 1.1; }
-.book-letter-heading[data-long-name="true"] h1 { font-size: 20px; }
-.book-letter-heading .eyebrow { font-size: 11px; letter-spacing: 0; line-height: 1.25; display: block; }
 .book-sticker.earned { padding: 4px; }
-.dock-cues { min-width: 0; flex: 1; }
 .book-writing .trace-number-instruction { background: transparent; border-radius: 0; padding: 0; margin: 0; font-size: 15px; line-height: 1.25; }
 .trace-number-instruction > span { width: 24px; height: 24px; min-width: 24px; }
 .book-writing .board-tip { padding: 0; margin: 2px 0 0; font-size: 13px; min-height: 0; line-height: 1.2; }
-.dock-controls { min-width: 0; display: flex; align-items: center; gap: 8px; }
-.dock-controls .button, .dock-controls .text-button { min-height: 56px; padding: 8px 10px; font-size: 14px; white-space: nowrap; }
-.dock-controls .book-navigation { display: flex; flex-shrink: 0; gap: 6px; padding: 0; margin: 0; border: 0; }
 .book-navigation .book-next small, .book-page-count { display: none; }
 .book-next > span:first-child { font-size: 20px; }
-.book-tools.board-actions { flex: 1; display: flex; flex-wrap: nowrap; flex-direction: row; margin: 0; gap: 6px; }
-.book-tools .button { flex: 1; }
-.book-tools .compact-completion { display: contents; }
-.book-tools .compact-completion .text-button { flex: 1; }
 .tool-label-narrow { display: none; }
-.dock-controls .audio-group { margin: 0; flex-shrink: 0; }
 .compact-audio { position: relative; }
-.book-writing .play-dot-tools { margin: 0; height: 64px; min-height: 64px; width: 180px; flex: 0 0 180px; display: flex; align-items: center; }
-.dock-controls .play-support-note { font-size: 12px; line-height: 1.3; }
-.dock-controls .dot-tap-pad { width: 100%; min-width: 0; height: 64px; min-height: 64px; padding: 6px; font-size: 13px; gap: 6px; }
-.dock-controls .dot-pad-caption { display: none; }
 .dot-tap-pad small { display: block; }
-.dock-controls .dot-pad-caption { font-size: 13px; }
-.dock-controls .dot-pad-caption small { font-size: 11px; }
-.dock-controls .lesson-feedback { position: absolute; right: 6px; top: 8px; width: 34px; height: 34px; pointer-events: none; overflow: clip; }
-.dock-controls .play-feedback { width: 34px; height: 34px; }
-.book-reward { padding: 0; min-height: 0; }
-.compact-completion { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; }
-.compact-completion h2 { font-size: 16px; margin: 0; }
-.compact-completion p, .compact-completion .book-sticker { display: none; }
-.compact-completion > .button, .compact-completion .copy-action { margin: 0; min-height: 48px; padding: 4px 10px; font-size: 14px; }
 .book-end { flex: 1; min-height: 0; justify-content: center; padding: 12px; gap: 12px; }
 .book-end + .book-navigation { flex-shrink: 0; padding: 8px; margin: 0; }
 .book-end .garden-friends { max-height: 120px; }
@@ -176,31 +148,21 @@ body { position: fixed; inset: 0; }
 .teacher-recording input { max-width: 240px; margin: 0; }
 
 /* Challenges measure the space occupied by each live stage. */
-.match-arena, .match-arena.solo { height: 100%; min-height: 0; overflow: hidden; padding: 8px; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: 56px minmax(0, 1fr) 24px; gap: 6px; }
+.match-arena, .match-arena.solo { height: 100%; min-height: 0; overflow: hidden; padding: 6px; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); gap: 0; position: relative; }
 .race-toolbar { min-height: 0; height: 56px; gap: 8px; flex-wrap: nowrap; }
 .race-toolbar h1 { font-size: 22px; margin: 0; }
 .race-toolbar-actions { width: auto; }
-.race-lanes, .match-arena.solo .race-lanes { grid-row: 2; grid-column: 1; min-height: 0; min-width: 0; margin: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); gap: 8px; }
+.race-lanes, .match-arena.solo .race-lanes { grid-row: 1; grid-column: 1; min-height: 0; min-width: 0; margin: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); gap: 8px; }
 .match-arena.solo .race-lanes { grid-template-columns: minmax(0, 1fr); }
 .match-arena.stacked .race-lanes { grid-template-columns: minmax(0, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); }
-.race-pane { height: 100%; min-height: 0; padding: 6px; display: grid; grid-template-rows: 36px minmax(0, 1fr); }
+.race-pane { height: 100%; min-height: 0; padding: 4px; display: grid; grid-template-rows: minmax(0, 1fr); position: relative; }
 .race-player-heading { height: 36px; }
 .race-player-heading h2 { font-size: 19px; }
 .race-player-heading .profile-portrait { width: 30px; height: 30px; }
-.race-paper, .match-arena.stacked .race-paper { display: block; height: 100%; min-height: 0; }
-.race-paper .fitted-trace { grid-template-rows: minmax(0, 1fr) 122px; }
+.race-paper, .match-arena.stacked .race-paper { display: block; position: relative; height: 100%; min-height: 0; }
 .race-paper .board-wrap, .match-arena.stacked .board-wrap { width: 100%; height: 100%; }
-.race-dock { height: 122px; padding: 6px; display: grid; grid-template-rows: 40px 64px; gap: 4px; border-radius: 16px; background: rgb(255 253 245 / .9); }
-.race-dock .trace-number-instruction, .match-arena.stacked .race-dock .trace-number-instruction { height: auto; margin: 0; padding: 0; font-size: 13px; background: transparent; overflow: visible; }
-.race-dock .board-tip { padding: 0; margin: 0; font-size: 12px; line-height: 1.2; text-align: left; justify-content: start; }
-.race-dock-controls { display: flex; gap: 8px; align-items: center; min-width: 0; }
-.race-dock .play-dot-tools { width: auto; flex: 1; height: 64px; }
-.race-dock .race-actions, .match-arena.stacked .race-actions { width: auto; height: 64px; display: flex; flex-direction: row; flex-shrink: 0; }
-.race-dock .dot-pad-row, .match-arena.stacked .dot-pad-row { flex-direction: row; gap: 6px; }
-.race-dock .dot-tap-pad { min-width: 100px; }
-.arena-ready-note { margin: 0; font-size: 12px; }
-.arena-space { grid-row: 2; grid-column: 1; margin: auto; max-width: 600px; padding: 20px; }
-.race-overlay { position: absolute; inset: 0; padding: 76px 12px 12px; z-index: 20; }
+.arena-space { grid-row: 1; grid-column: 1; margin: auto; max-width: 600px; padding: 20px; }
+.race-overlay { position: absolute; inset: 0; padding: 12px; z-index: 20; }
 .race-dialog { overflow: hidden; padding: 20px; }
 .race-dialog > p { margin: 8px 0 12px; }
 .race-dialog .round-score-grid { margin: 12px 0; }
@@ -245,23 +207,8 @@ body { position: fixed; inset: 0; }
 
 @media (max-width: 1100px) {
   .fullscreen-button span { display: none; }
-  .dock-controls .button, .dock-controls .text-button { font-size: 13px; padding: 6px 8px; }
-  .dock-controls .button svg, .dock-controls .text-button svg { display: none; }
-  .book-tools.board-actions { gap: 4px; }
-  .dock-controls .book-navigation { gap: 4px; }
-  .book-writing .play-dot-tools { width: 150px; flex-basis: 150px; }
 }
 @media (max-width: 900px) {
-  .fitted-trace { grid-template-rows: minmax(0, 1fr) 202px; }
-  .lesson-dock { grid-template-rows: 52px minmax(0, 1fr); padding: 6px 8px; }
-  .dock-controls { display: grid; grid-template-columns: auto minmax(0, 1fr) 150px; grid-template-rows: 56px 64px; gap: 4px 6px; }
-  .dock-controls .book-navigation { grid-column: 1 / 3; grid-row: 1; }
-  .dock-controls .audio-group { grid-column: 3; grid-row: 1; justify-self: stretch; }
-  .dock-controls .audio-group .button { width: 100%; }
-  .book-tools.board-actions { grid-column: 1 / 3; grid-row: 2; }
-  .book-writing .play-dot-tools { grid-column: 3; grid-row: 2; width: 150px; }
-  .compact-completion { gap: 4px; }
-  .compact-completion h2 { display: block; font-size: 14px; }
 }
 @media (max-width: 600px) {
   .preview-banner { flex-basis: 48px; min-height: 48px; padding: 4px 8px; font-size: 11px; }
@@ -288,27 +235,9 @@ body { position: fixed; inset: 0; }
   .lesson-page.book-lesson { padding: 2px 3px 6px; }
   .book-cover { padding: 3px; }
   .book-inner { padding: 2px; }
-  .book-letter-heading { flex-basis: 92px; }
-  .book-letter-heading h1 { font-size: 26px; }
-  .book-letter-heading[data-long-name="true"] h1 { font-size: 14px; }
-  .fitted-trace { grid-template-rows: minmax(0, 1fr) 212px; }
-  .race-paper .fitted-trace { grid-template-rows: minmax(0, 1fr) 122px; }
-  .lesson-dock { grid-template-rows: 60px minmax(0, 1fr); }
-  .book-letter-heading .eyebrow { font-size: 9px; }
-  .dock-summary { gap: 6px; }
   .book-writing .trace-number-instruction { font-size: 12px; }
   .book-writing .board-tip { font-size: 11px; }
-  .dock-controls { grid-template-columns: minmax(0, 1fr) 116px; }
-  .dock-controls .book-navigation { grid-column: 1; gap: 3px; }
-  .dock-controls .audio-group { grid-column: 2; }
-  .book-tools.board-actions { grid-column: 1; }
-  .book-writing .play-dot-tools { grid-column: 2; width: 116px; }
-  .dock-controls .button, .dock-controls .text-button { min-width: 0; font-size: 11px; padding: 4px; }
-  .book-tools .button, .book-tools .text-button { white-space: normal; line-height: 1.25; }
   .book-navigation .book-next > span:first-child, .book-navigation .book-previous > span:last-child { display: none; }
-  .dock-controls .dot-pad-caption { font-size: 11px; }
-  .dock-controls .dot-pad-caption small { display: none; }
-  .compact-completion > .button, .compact-completion .copy-action { font-size: 11px; padding: 4px; }
   .teacher-heading h1 { font-size: 24px; }
   .teacher-tabs { gap: 4px; }
   .teacher-tabs button { flex: 1 0 22%; padding: 4px; font-size: 12px; }
@@ -323,7 +252,6 @@ body { position: fixed; inset: 0; }
   .teacher-footer { flex-direction: column; align-items: stretch; }
   .teacher-footer > div { justify-content: space-between; }
   .teacher-footer .button { padding: 6px 10px; font-size: 13px; }
-  .dock-controls .dot-tap-pad { width: calc(100% - 4px); }
   .detail-fields { gap: 8px; }
   .detail-fields > div { padding: 8px; }
   .detail-fields dd { font-size: 13px; }
@@ -350,7 +278,6 @@ body { position: fixed; inset: 0; }
   .book-navigation .book-next > span:first-child, .book-navigation .book-previous > span:last-child { display: inline-block; }
   .book-navigation .book-next > span:last-child, .book-navigation .book-previous > span:first-child, .tool-label-wide { display: none; }
   .tool-label-narrow { display: inline; }
-  .book-tools .button, .book-tools .text-button { padding: 2px; }
 }
 @media (max-height: 650px) {
   .welcome h1 { font-size: 32px; }
@@ -395,18 +322,100 @@ body { position: fixed; inset: 0; }
 }
 @media (min-width: 1500px) and (min-height: 850px) {
   .site-header { height: 72px; flex-basis: 72px; padding-left: 28px; padding-right: 28px; }
-  .fitted-trace { grid-template-rows: minmax(0, 1fr) 150px; }
-  .dock-controls .button, .dock-controls .text-button { min-height: 64px; font-size: 18px; padding: 10px 18px; }
-  .book-letter-heading { flex-basis: 180px; }
-  .book-letter-heading h1 { font-size: 36px; }
-  .book-letter-heading[data-long-name="true"] h1 { font-size: 26px; }
   .book-writing .trace-number-instruction { font-size: 20px; }
   .book-writing .board-tip { font-size: 16px; }
-  .book-writing .play-dot-tools { width: 230px; flex-basis: 230px; }
-  .dock-controls .dot-pad-caption { font-size: 16px; }
-  .race-paper .fitted-trace { grid-template-rows: minmax(0, 1fr) 134px; }
-  .race-dock { height: 134px; grid-template-rows: 44px 72px; }
-  .race-dock .trace-number-instruction { font-size: 18px; }
-  .race-dock .board-tip { font-size: 15px; }
-  .race-actions .button { min-height: 64px; font-size: 18px; }
+}
+
+/* Tracing is stage-only: the stage owns the whole safe rectangle and tools open on demand. */
+.trace-layout.stage-only { grid-template-rows: minmax(0, 1fr); }
+.app-shell[data-screen="lesson"] .site-header { display: none; }
+.stage-workspace { position: relative; }
+.stage-menu-button { position: absolute; top: 8px; left: 8px; z-index: 6; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 48px; min-height: 48px; padding: 6px 14px; border: 2px solid var(--control-border); border-radius: 16px; background: rgb(255 253 245 / .94); color: var(--primary-hover); font: 700 15px var(--font-body); }
+.stage-menu-button > span:first-child { font-size: 22px; line-height: 1; }
+.stage-menu-button:disabled { opacity: .55; }
+.stage-badge { position: absolute; top: 8px; right: 8px; z-index: 5; max-width: 46%; margin: 0; padding: 4px 12px; flex-wrap: nowrap; justify-content: flex-start; gap: 8px; border: 1px solid #c2ceab; border-radius: 16px; background: rgb(255 253 245 / .9); pointer-events: none; }
+.stage-badge h1 { margin: 0; font-size: 26px; line-height: 1.1; }
+.stage-badge[data-long-name="true"] h1 { font-size: 18px; }
+.stage-badge .eyebrow { display: block; font-size: 10px; letter-spacing: 0; line-height: 1.25; }
+.stage-badge .book-sticker.earned { padding: 3px; }
+.stage-save { position: absolute; right: 12px; bottom: 12px; z-index: 6; min-height: 56px; }
+.trace-announcements.stage-cue { position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 5; width: max-content; max-width: min(88%, 440px); padding: 6px 14px; border: 2px solid #c2ceab; border-radius: 16px; background: rgb(255 253 245 / .95); pointer-events: none; }
+.trace-announcements.stage-cue .board-tip { min-height: 0; padding: 0; margin: 0; font-size: 15px; line-height: 1.3; }
+.trace-recovery { position: absolute; left: 50%; bottom: 70px; transform: translateX(-50%); z-index: 6; }
+.trace-recovery .play-dot-tools { min-height: 0; }
+.trace-assistance { position: absolute; right: 12px; bottom: 12px; z-index: 6; width: min(250px, 62%); padding: 6px; border: 2px solid #c2ceab; border-radius: 20px; background: rgb(255 253 245 / .96); }
+.trace-assistance .play-dot-tools { min-height: 0; height: auto; }
+.trace-assistance .dot-pad-caption { display: none; }
+.trace-assistance .dot-tap-pad { width: 100%; min-width: 0; height: 64px; min-height: 64px; padding: 6px; font-size: 14px; }
+.trace-assistance .dot-tap-pad small { display: inline; }
+
+.completion-overlay { position: absolute; inset: 0; z-index: 8; display: grid; place-items: center; padding: 56px 12px 12px; pointer-events: none; }
+.completion-sparkles { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); }
+.completion-card { pointer-events: auto; width: min(92%, 440px); max-height: 100%; overflow: hidden; display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 14px 16px; text-align: center; border: 3px solid #c2ceab; border-radius: 24px; background: rgb(255 253 245 / .95); box-shadow: var(--shadow-panel); }
+.completion-card .book-completion { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.completion-card h2 { margin: 0; font-size: 22px; }
+.completion-card p { margin: 0; font-size: 14px; }
+.completion-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; }
+.completion-actions > *, .completion-actions .book-completion-actions { flex: 1 1 140px; }
+.completion-actions .book-completion-actions { display: contents; }
+.completion-actions .button, .completion-actions .text-button { min-height: 56px; width: 100%; }
+.completion-actions .compact-audio { display: contents; }
+
+.tracing-menu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; align-content: start; }
+.tracing-menu-grid .button, .tracing-menu-grid .audio-group, .tracing-menu-grid .audio-group .button { width: 100%; min-height: 56px; margin: 0; }
+.tracing-menu-pages { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; }
+.menu-notice { margin: 8px 0 0; font-size: 13px; }
+.fit-dialog-content:has(.tracing-menu-grid) { display: flex; flex-direction: column; justify-content: space-between; }
+
+.arena-hud { position: absolute; top: 12px; z-index: 12; display: flex; align-items: center; gap: 8px; }
+.arena-hud-left { left: 12px; }
+.arena-hud-right { right: 12px; padding: 4px 10px; border: 1px solid #c2ceab; border-radius: 16px; background: rgb(255 253 245 / .92); }
+.arena-hud .stage-menu-button { position: static; }
+.arena-round { font-size: 14px; white-space: nowrap; }
+.arena-round small { font-size: 12px; }
+.stage-arena .race-clock { display: flex; align-items: baseline; gap: 3px; min-width: 0; padding: 2px 10px; font-size: 22px; }
+.stage-arena .race-clock small { display: inline; }
+.arena-round-short { display: none; font-weight: 700; }
+.race-badge { position: absolute; left: 10px; bottom: 10px; z-index: 5; height: auto; display: flex; align-items: center; gap: 10px; padding: 4px 12px; border: 2px solid var(--player-color); border-radius: 18px; background: rgb(255 253 245 / .92); pointer-events: none; }
+.race-badge h2 { font-size: 17px; }
+.race-badge .race-total { display: flex; align-items: baseline; gap: 4px; font-size: 20px; }
+.race-badge .race-total small { font-size: 11px; }
+.race-paper .race-lane-status { position: absolute; right: 10px; bottom: 10px; z-index: 5; max-width: 52%; margin: 0; padding: 6px 12px; border-radius: 16px; background: rgb(255 253 245 / .95); border: 2px solid #c2ceab; font-size: 14px; }
+.ready-overlay { position: absolute; left: 50%; bottom: 12%; transform: translateX(-50%); z-index: 8; width: min(92%, 380px); display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 12px; text-align: center; border: 3px solid #c2ceab; border-radius: 22px; background: rgb(255 253 245 / .95); box-shadow: var(--shadow-panel); }
+.ready-overlay p { margin: 0; font-size: 14px; }
+.ready-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; }
+.ready-actions .button { flex: 1 1 130px; min-height: 52px; }
+.music-setting { grid-column: 1 / -1; display: flex; align-items: center; gap: 12px; min-height: 48px; }
+.music-setting input[type="range"] { flex: 1; min-width: 0; }
+.music-switch { display: flex; align-items: center; gap: 8px; min-height: 48px; white-space: nowrap; font-weight: 600; }
+.music-switch input { width: 24px; height: 24px; }
+
+@media (max-width: 480px) {
+  .stage-menu-label { display: none; }
+  .stage-menu-button { padding: 6px; }
+  .stage-badge h1 { font-size: 21px; }
+  .arena-round-full { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .arena-round-short { display: inline; }
+  .race-badge h2 small { display: none; }
+}
+@media (max-height: 560px) {
+  .completion-sparkles { display: none; }
+  .completion-overlay { padding-top: 12px; }
+  .completion-card p { display: none; }
+  .completion-card .book-sticker { display: none; }
+  .ready-overlay { bottom: 6px; padding: 6px 10px; }
+  .ready-overlay p { display: none; }
+}
+@media (min-width: 1500px) and (min-height: 850px) {
+  .stage-menu-button { min-height: 64px; font-size: 18px; }
+  .stage-badge h1 { font-size: 34px; }
+  .completion-card { width: min(60%, 560px); }
+  .completion-card h2 { font-size: 30px; }
+  .completion-actions .button, .completion-actions .text-button { min-height: 64px; font-size: 18px; }
+}
+@media (max-width: 600px) and (max-height: 650px) {
+  .teacher-page .teacher-panel { padding: 4px; gap: 2px; }
+  .teacher-page .teacher-panel > h2 + p { display: none; }
+  .teacher-heading h1 { font-size: 20px; white-space: nowrap; }
+  .teacher-heading .text-button { font-size: 13px; padding: 4px; }
 }

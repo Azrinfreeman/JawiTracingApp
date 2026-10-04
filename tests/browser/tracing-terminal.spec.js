@@ -1,8 +1,11 @@
 import { test, expect } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 import letters from '../../src/content/letters.json' with { type: 'json' };
-import { openLesson, boardModels, draw, movePoints } from './helpers/tracing.js';
+import { openLesson, boardModels, draw, movePoints, menuAction, showDotHelp } from './helpers/tracing.js';
 import { chooseLetter } from './helpers/navigation.js';
+import { treatAllModelsAsReady } from './helpers/readyCatalogue.js';
+// Mechanics spec: every authored model is served as student-ready; the real gate is covered elsewhere.
+test.beforeEach(async ({ context }) => { await treatAllModelsAsReady(context); });
 
 const evidence = process.env.JAWI_EVIDENCE_DIR || 'output/verification/tracing-completion';
 mkdirSync(evidence, { recursive: true });
@@ -101,9 +104,9 @@ test('native CDP touch recovers the remaining Alif tail', async ({ page, browser
   await expect(complete(page)).toBeVisible(); expect(await attempts(page)).toHaveLength(1);
 });
 
-test('non-final Ba, Mim loop and Ga bodies ask for a lift before the next part', async ({ page, browserName }) => {
+test('non-final Ba, Qaf head loop and Ga bodies ask for a lift before the next part', async ({ page, browserName }) => {
   test.setTimeout(90000); await page.setViewportSize({ width: 768, height: 1024 });
-  for (const label of ['Ba', 'Mim', 'Ga']) {
+  for (const label of ['Ba', 'Qaf', 'Ga']) {
     await openLesson(page, label, 'play');
     // Exact touch fixture: native mouse rounding can legitimately cross 95%.
     await preciseGesture(page, await exactPoints(page, Array.from({ length: 95 }, (_, i) => i / 100)));
@@ -114,7 +117,7 @@ test('non-final Ba, Mim loop and Ga bodies ask for a lift before the next part',
     await expect(page.locator('.board-tip')).toHaveText('Angkat jari untuk bahagian seterusnya.');
     await page.screenshot({ path: `${evidence}/${browserName}-${label}-ready.png`, animations: 'disabled' });
     await page.locator('.trace-board').evaluate((svg, p) => svg.dispatchEvent(new PointerEvent('pointerup', { pointerId: 27, pointerType: 'touch', clientX: p.x, clientY: p.y })), points.at(-1));
-    await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', label === 'Mim' ? 'stroke-2' : 'dot-1');
+    await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', label === 'Qaf' ? 'stroke-2' : 'dot-1');
     await expect(complete(page)).toHaveCount(0);
     await page.screenshot({ path: `${evidence}/${browserName}-${label}-next-part.png`, animations: 'disabled' });
   }
@@ -124,7 +127,7 @@ test('all 37 authored models retain valid play sequences and separate dots', asy
   test.setTimeout(360000); await page.setViewportSize({ width: 1024, height: 768 });
   await openLesson(page, 'Alif', 'play');
   for (const [index, letter] of letters.entries()) {
-    if (index) { await page.getByRole('button', { name: 'Isi kandungan', exact: true }).click(); await chooseLetter(page, letter.labelMs); }
+    if (index) { await menuAction(page, 'Isi kandungan'); await chooseLetter(page, letter.labelMs); }
     await page.locator('.trace-board').evaluate(async (svg, strokes) => {
       svg.setPointerCapture = () => {}; svg.hasPointerCapture = () => false;
       const send = (type, p) => svg.dispatchEvent(new PointerEvent(type, { bubbles: true, pointerId: 41, pointerType: 'pen', clientX: p.x, clientY: p.y }));
@@ -139,6 +142,7 @@ test('all 37 authored models retain valid play sequences and separate dots', asy
     }, (await boardModels(page)).strokes);
     if (letter.geometry.dotTargets.length) {
       await expect(complete(page)).toHaveCount(0);
+      await showDotHelp(page);
       for (let i = 0; i < letter.geometry.dotTargets.length; i++) await page.getByRole('button', { name: `Tambah titik ${i + 1} daripada ${letter.geometry.dotTargets.length}` }).click();
     }
     await expect(complete(page), letter.id).toBeVisible();

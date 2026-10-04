@@ -34,6 +34,11 @@ export function placeNumberedGuides(part, letter, references, scale, viewport) {
   obstacles.push(...letter.geometry.dotTargets);
   // Keep labels clear of the board's reward leaf and its flower animation.
   const rewardCorner = { x: 1000 - 90 / scale, y: 1000 - 90 / scale, width: 90 / scale, height: 90 / scale };
+  // ...and of the stage Menu button (top left) and letter badge (top right), which sit on the board.
+  const stageControls = viewport ? [
+    { x: viewport.x, y: viewport.y, width: 96 / scale, height: 96 / scale },
+    { x: viewport.x + viewport.width - 176 / scale, y: viewport.y, width: 176 / scale, height: 84 / scale },
+  ] : [];
   const placed = [];
   for (const guide of part.points) {
     const label = `${guide.number} ${guide.label}`;
@@ -52,7 +57,7 @@ export function placeNumberedGuides(part, letter, references, scale, viewport) {
       const bounds = { x: x - width / 2, y: y - height / 2, width, height };
       const expanded = { x: bounds.x - 44, y: bounds.y - 44, width: bounds.width + 88, height: bounds.height + 88 };
       const onRoute = obstacles.reduce((count, p) => count + (p.x > expanded.x && p.x < expanded.x + expanded.width && p.y > expanded.y && p.y < expanded.y + expanded.height ? 1 : 0), 0);
-      const collisions = placed.filter(p => overlaps(bounds, { x: p.bounds.x - 16, y: p.bounds.y - 16, width: p.bounds.width + 32, height: p.bounds.height + 32 })).length + (overlaps(bounds, rewardCorner) ? 1 : 0);
+      const collisions = placed.filter(p => overlaps(bounds, { x: p.bounds.x - 16, y: p.bounds.y - 16, width: p.bounds.width + 32, height: p.bounds.height + 32 })).length + (overlaps(bounds, rewardCorner) ? 1 : 0) + stageControls.filter(control => overlaps(bounds, control)).length;
       const score = collisions * 1e6 + onRoute * 1e3 + Math.hypot(x - guide.anchor.x, y - guide.anchor.y);
       if (!best || score < best.score) best = { ...guide, x, y, bounds, radius, numberSize, labelSize, score };
     }

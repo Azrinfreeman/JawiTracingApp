@@ -1,3 +1,4 @@
+import { playFillWidth } from '../content/displayWidth.js';
 import { pointAt } from './geometry.js';
 
 const NS = 'http://www.w3.org/2000/svg';
@@ -77,7 +78,7 @@ export function createLiveRenderer(groups, letter, references, isPlay, isCopy, l
         const filled = view.completed.includes(stroke.id) ? length : measured;
         let node = fills.get(stroke.id);
         if (filled > 0 && !node) {
-          node = make(groups.fill, 'path', { class: 'play-fill', d: stroke.path, 'stroke-width': 60, 'stroke-dasharray': `${length} ${length}` }); fills.set(stroke.id, node);
+          node = make(groups.fill, 'path', { class: 'play-fill', d: stroke.path, 'stroke-width': playFillWidth(stroke), 'stroke-dasharray': `${length} ${length}` }); fills.set(stroke.id, node);
         }
         if (node) attrs(node, { 'stroke-dashoffset': length - filled, 'data-measured-frontier': measured, 'data-display-frontier': filled });
       }

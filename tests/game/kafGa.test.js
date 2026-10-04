@@ -24,18 +24,20 @@ describe('reference-matched Kaf/Ga revisions', () => {
     expect(kaf.geometry.validSequences).toEqual([['stroke-1']]);
     expect(ga.geometry.validSequences).toEqual([['stroke-1', 'dot-1']]);
   });
-  it('keeps both revised models in adult review and out of student and challenge pools', () => {
+  it('keeps both revised models gated until approved, then lets them join student and challenge pools', () => {
+    const approved = letter => letter.geometry.status === 'approved';
     for (const letter of corrected) {
-      expect(validateLetter(letter)).toMatchObject({ valid: true, ready: false });
-      expect(letter.geometry.status).toBe('pendingReview');
-      expect(letter.geometry.review).toBeUndefined();
+      expect(validateLetter(letter)).toMatchObject({ valid: true, ready: approved(letter) });
+      if (approved(letter)) expect(letter.geometry.review.revision).toBe(letter.contentVersion);
+      else { expect(letter.geometry.status).toBe('pendingReview'); expect(letter.geometry.review).toBeUndefined(); }
       expect(letter.audio.name.status).toBe('approved');
     }
     expect(corrected.map(letter => letter.contentVersion)).toEqual([2, 3]);
-    expect(eligibleBook(corrected)).toEqual([]);
+    expect(eligibleBook(corrected)).toEqual(corrected.filter(approved));
     expect(eligibleBook(corrected, true)).toEqual(corrected);
-    expect(eligiblePool(letters, 'ready').map(letter => letter.id)).not.toEqual(expect.arrayContaining(['kaf', 'ga']));
-    expect(eligiblePool(letters, 'ready')).toHaveLength(35);
+    const ready = eligiblePool(letters, 'ready').map(letter => letter.id);
+    for (const letter of corrected) expect(ready.includes(letter.id)).toBe(approved(letter));
+    expect(ready).toHaveLength(letters.filter(letter => letter.geometry.status === 'approved').length);
   });
   it('retains old attempts and copies with their original revisions without earning new stickers', () => {
     const attempts = corrected.map(letter => ({ id: 'old-' + letter.id, timestamp: '2026-10-02T00:00:00Z',
@@ -65,7 +67,9 @@ describe('reference-matched Kaf/Ga revisions', () => {
       expect((model.match(/<circle /g) || []).length).toBe(letter.geometry.dotTargets.length);
       expect(markup).not.toContain(letter.glyph);
     }
-    const review = renderToStaticMarkup(createElement(DraftModelReview, { letters: corrected }));
+    // The draft review lists unreviewed models, so show it the revisions as they were before approval.
+    const unreviewed = corrected.map(letter => ({ ...letter, geometry: { ...letter.geometry, status: 'pendingReview' } }));
+    const review = renderToStaticMarkup(createElement(DraftModelReview, { letters: unreviewed }));
     for (const letter of corrected) {
       expect(review).toContain(`data-letter-id="${letter.id}"`);
       expect(review).not.toContain(letter.glyph);

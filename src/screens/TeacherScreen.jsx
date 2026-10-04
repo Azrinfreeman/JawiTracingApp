@@ -21,7 +21,7 @@ const help = [
   ['Pratonton', 'Pratonton dewasa menguji fungsi permainan. Tiada kelulusan kandungan dibuat melalui butang ini.'],
   ['Storan', 'Kemajuan kekal dalam pelayar ini dan tidak disegerakkan. Salinan dihadkan kepada 12 hasil terkini; cabaran kepada 50 rekod terkini. Eksport merangkumi semua rekod disimpan.']
 ];
-export function TeacherScreen({ letters, progress, store, matchStore, audio, diagnostic, preview, practiceMode, onPracticeMode, adjustment, onAdjustment, onPreview, onRefresh, onBack, onLetter, volume, onVolume, presentation, onPresentation }) {
+export function TeacherScreen({ letters, progress, store, matchStore, audio, diagnostic, preview, practiceMode, onPracticeMode, adjustment, onAdjustment, onPreview, onRefresh, onBack, onLetter, volume, onVolume, musicEnabled, musicVolume, onMusic, presentation, onPresentation }) {
   const matches = matchStore.read().matches;
   const [tab, setTab] = useState('settings'), [detail, setDetail] = useState(null), [resetConfirm, setResetConfirm] = useState(false);
   const [notice, setNotice] = useState(''), [recording, setRecording] = useState(null), objectUrl = useRef(null);
@@ -48,7 +48,8 @@ export function TeacherScreen({ letters, progress, store, matchStore, audio, dia
         <label htmlFor="practice-mode"><span>Jenis latihan</span><select id="practice-mode" value={practiceMode} onChange={e => onPracticeMode(e.target.value)}><option value="play">Jejak Ceria · dengan bantuan</option><option value="guided">Berpandu · jejak terkawal</option><option value="precision">Kurang panduan · jejak terkawal</option></select></label>
         <label htmlFor="adjustment"><span>Toleransi latihan berpandu</span><select id="adjustment" value={adjustment} onChange={e => onAdjustment(e.target.value)}><option value="standard">Standard pembangunan</option><option value="support">Bantuan tambahan (+8 unit)</option></select></label>
         <label htmlFor="presentation"><span>Paparan permainan</span><select id="presentation" value={presentation} onChange={e => onPresentation(e.target.value)}><option value="light">Paparan ringan</option><option value="full">Paparan penuh</option></select></label>
-        <label htmlFor="volume"><span>Kelantangan audio</span><input id="volume" type="range" min="0" max="1" step="0.1" value={volume} onChange={e => onVolume(Number(e.target.value))}/></label></div>
+        <label htmlFor="volume"><span>Kelantangan audio</span><input id="volume" type="range" min="0" max="1" step="0.1" value={volume} onChange={e => onVolume(Number(e.target.value))}/></label>
+        <div className="music-setting"><label className="music-switch" htmlFor="music-enabled"><input id="music-enabled" type="checkbox" checked={musicEnabled} onChange={e => onMusic({ enabled: e.target.checked })}/><span>Muzik latar</span></label><input id="music-volume" aria-label="Kelantangan muzik latar" type="range" min="0" max="0.5" step="0.05" value={musicVolume} disabled={!musicEnabled} onChange={e => onMusic({ volume: Number(e.target.value) })}/></div></div>
         <div className="teacher-settings-actions"><button className="button button-primary" aria-label="Buka pratonton dewasa" onClick={onPreview}><Icon name="pen"/>Pratonton dewasa</button><button className="button button-outline" aria-label="Tentang latihan & rekod" onClick={() => inspect('Panduan guru & penjaga', help)}>Panduan</button></div>
 
       </section>}

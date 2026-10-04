@@ -1,0 +1,794 @@
+[
+ {
+  "id": "ta-marbuta",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ca",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha-pedat",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "kha",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "tho",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "fa",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "pa",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "qaf",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "wau",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "va",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "hamzah",
+  "viewport": "320x600",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ta-marbuta",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ca",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha-pedat",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "kha",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "tho",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "fa",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "pa",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "qaf",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "wau",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "va",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "hamzah",
+  "viewport": "390x844",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ta-marbuta",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ca",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha-pedat",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "kha",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "tho",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "fa",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "pa",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "qaf",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "wau",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "va",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "hamzah",
+  "viewport": "768x1024",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ta-marbuta",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ca",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha-pedat",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "kha",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "tho",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "fa",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "pa",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "qaf",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "wau",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "va",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "hamzah",
+  "viewport": "1024x768",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ta-marbuta",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ca",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha-pedat",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "kha",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "tho",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "fa",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "pa",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "qaf",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "wau",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "va",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "hamzah",
+  "viewport": "1920x1080",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ta-marbuta",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ca",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha-pedat",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "kha",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "tho",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "fa",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "pa",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "qaf",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "wau",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "va",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "ha",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ },
+ {
+  "id": "hamzah",
+  "viewport": "3840x2160",
+  "pageErrors": [],
+  "menuOverlapsLetter": false,
+  "letterInsideBoard": true,
+  "pageScroll": {
+   "x": false,
+   "y": false
+  }
+ }
+]

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { dismissSplash } from './helpers/navigation.js';
-import { boardModels, draw, movePoints } from './helpers/tracing.js';
+import { boardModels, draw, movePoints, openTeacher, menuAction, showDotHelp } from './helpers/tracing.js';
 
 const ids = ['ta-marbuta', 'tho', 'za', 'ain', 'ghain', 'nga', 'fa', 'pa', 'qaf', 'ga', 'va', 'ha', 'hamzah', 'ye', 'nya'];
 const batch = letters.filter(letter => ids.includes(letter.id));
@@ -11,7 +11,7 @@ const attemptCount = page => page.evaluate(() => JSON.parse(localStorage.getItem
 async function openBatchLesson(page, letter, mode = 'play', adultPreview = mode !== 'play') {
   await page.goto('/'); await dismissSplash(page);
   if (adultPreview) {
-    await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+    await openTeacher(page);
     await page.getByLabel('Jenis latihan').selectOption(mode);
     await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).click();
     await page.getByRole('button', { name: 'Model tersedia', exact: true }).click();
@@ -55,7 +55,7 @@ test('all 37 models are student-ready and teacher review has no authored drafts'
   await expect(page.locator('.letter-card')).toHaveCount(37);
   await expect(page.locator('.letter-card:disabled')).toHaveCount(0);
   for (const letter of batch) await expect(page.getByRole('button', { name: letter.labelMs, exact: true })).toBeEnabled();
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   await expect(page.locator('.draft-model-card')).toHaveCount(0);
   await expect(page.locator('.teacher-stat-grid > div').nth(1)).toContainText('37');
   await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('37');
@@ -74,7 +74,7 @@ test('Qaf requires the complete closed head, then its bowl, then both separate d
   let model = await boardModels(page);
   await draw(page, model.strokes[1]);
   await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'stroke-1');
-  await page.getByRole('button', { name: 'Cuba lagi', exact: true }).click();
+  await menuAction(page, 'Cuba lagi');
   model = await boardModels(page);
   const head = model.strokes[0], split = Math.ceil(head.length * .65);
   const badge = number => page.locator(`.trace-number-guide[data-number="${number}"] .trace-number-badge`);
@@ -86,6 +86,7 @@ test('Qaf requires the complete closed head, then its bowl, then both separate d
   await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'stroke-2');
   await draw(page, (await boardModels(page)).strokes[1]);
   await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'dot-1');
+  await showDotHelp(page);
   await page.getByRole('button', { name: 'Tambah titik 1 daripada 2', exact: true }).click();
   expect(await attemptCount(page)).toBe(0);
   await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'dot-2');
@@ -96,13 +97,14 @@ test('Qaf requires the complete closed head, then its bowl, then both separate d
 test('student book includes Ye and Nya and closes after Nya without wrapping', async ({ page }) => {
   await openBatchLesson(page, batch.find(letter => letter.id === 'nya'));
   await draw(page, (await boardModels(page)).strokes[0]);
+  await showDotHelp(page);
   for (let i = 1; i <= 3; i++) await page.getByRole('button', { name: `Tambah titik ${i} daripada 3`, exact: true }).click();
-  await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).click();
+  await menuAction(page, 'Huruf seterusnya');
   await expect(page.getByRole('heading', { name: 'Hebat, sampai halaman terakhir!', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Huruf seterusnya', exact: true })).toBeDisabled();
   await openBatchLesson(page, batch.find(letter => letter.id === 'ye'));
   await draw(page, (await boardModels(page)).strokes[0]);
-  await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).click();
+  await menuAction(page, 'Huruf seterusnya');
   await expect(page.getByRole('heading', { name: 'Nya', exact: true })).toBeVisible();
   await expect(page.locator('.lesson-pilot')).not.toContainText('Draf');
   await expect(page.locator('.preview-banner')).toHaveCount(0);
@@ -139,6 +141,7 @@ for (const width of [320, 768]) test(`all 15 final-batch stroke and dot stages f
       expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
     };
     for (const [i] of letter.geometry.strokes.entries()) { await check(); await draw(page, (await boardModels(page)).strokes[i]); }
+    if (letter.geometry.dotTargets.length) await showDotHelp(page);
     for (const [i] of letter.geometry.dotTargets.entries()) {
       await check(); await page.getByRole('button', { name: `Tambah titik ${i + 1} daripada ${letter.geometry.dotTargets.length}`, exact: true }).click();
     }

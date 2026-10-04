@@ -1,19 +1,22 @@
 import { describe,it,expect,vi } from 'vitest';
 import letters from '../../src/content/letters.json';
 import { validateCatalogue,validateLetter } from '../../src/content/validateContent.js';
+import { GLYPH_MATCHED_IDS } from '../fixtures/glyphMatched.js';
 import { createProgressStore,STORAGE_KEY } from '../../src/storage/progressStore.js';
 import { createAudioManager } from '../../src/audio/audioManager.js';
 import { traceReducer,initialTraceState } from '../../src/tracing/traceReducer.js';
 import { screenToLogical } from '../../src/tracing/geometry.js';
 
 describe('content readiness',()=>{
-  it('includes 37 models with Kaf/Ga corrections gated for fresh geometry review',()=>{
+  it('includes 37 models with revised models gated for fresh geometry review',()=>{
     const result=validateCatalogue(letters); expect(result.errors).toEqual([]);
     expect(letters).toHaveLength(37); expect(letters.filter(l=>l.pilot)).toHaveLength(12);
     expect(letters.filter(l=>l.geometry.strokes.length)).toHaveLength(37);
-    expect(letters.filter(l=>l.geometry.status!=='approved').map(l=>l.id)).toEqual(['kaf','ga']);
-    expect(result.results.filter(r=>r.ready)).toHaveLength(35);
-    expect(result.results.filter(r=>!r.ready).map(r=>r.id)).toEqual(['kaf','ga']);
+    // Kaf/Ga and the glyph-matched redraws may await review; nothing else may leave the approved pool.
+    const pending=letters.filter(l=>l.geometry.status!=='approved').map(l=>l.id);
+    expect(pending.every(id=>['kaf','ga',...GLYPH_MATCHED_IDS].includes(id))).toBe(true);
+    expect(result.results.filter(r=>r.ready)).toHaveLength(37-pending.length);
+    expect(result.results.filter(r=>!r.ready).map(r=>r.id)).toEqual(pending);
     expect(letters.filter(l=>l.additional)).toHaveLength(6);
   });
   it('rejects fake approval, empty approved models and missing recordings',()=>{

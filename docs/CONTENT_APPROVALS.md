@@ -9,6 +9,34 @@ now meet the application readiness check.
 The inventory and checks below describe the earlier model-approval stage; see
 [AUDIO_REPLACEMENT_REVIEW.md](AUDIO_REPLACEMENT_REVIEW.md) for the current audio status.
 
+## Approval of glyph-matched models 2026-10-04
+
+After testing the redrawn tracing models in the running app, the project owner wrote
+**“okay it works, I approve all the alphabet”**. This approves the 29 geometry revisions that were
+awaiting review, exactly as they stood at that moment: the 27 models redrawn on 2026-10-04 from the
+catalogue glyph (see [delivery and verification](GLYPH_MATCHED_TRACING_MODELS_VERIFICATION.md) and its
+review sheet), plus Kaf revision 2 and Ga revision 3 from the
+[earlier correction](KAF_GA_SHAPE_CORRECTION_VERIFICATION.md). Approval covers each model's paths, dot
+placement, movement order (including the proposed writing sequences and pen lifts), guide width and
+numbered guidance at the revisions below. Ha (ه) was approved in the single-stroke order the owner drew.
+
+| Letters | IDs | Approved revision |
+| --- | --- | --- |
+| Ta marbutah, Zal, Zai, Ain, Ghain, Qaf, Va, Ha (ه), Hamzah, Ye, Nya, Jim, Ca, Ha (ح), Kha, Ta (ط), Za, Nga, Fa, Pa | ta-marbuta, zal, zai, ain, ghain, qaf, va, ha, hamzah, ye, nya, jim, ca, ha-pedat, kha, tho, za, nga, fa, pa | 3 |
+| Ra, Lam, Mim, Nun, Wau, Ya, Dal | ra, lam, mim, nun, wau, ya, dal | 2 |
+| Kaf | kaf | 2 |
+| Ga | ga | 3 |
+
+Reviewer is recorded as **Project owner (Codex user; name not supplied)** and the approval date is
+2026-10-04, using the project's Asia/Kuala_Lumpur date. Each model's `geometry.review` records this
+reference, its current revision and `kind: projectOwner`. The approval changed only status and review
+metadata: no path, dot, sequence, tolerance, guide width, recording or content version changed, and the
+earlier revision-2 approvals above remain as historical records of earlier revisions.
+
+This records the user's actual approval. No named Jawi teacher, qualification, external teaching
+assessment, physical-device pupil review or KPM endorsement was supplied or inferred. All 37 recordings
+were already approved at their current revisions, so all 37 lessons now meet the readiness check.
+
 ## Approval of final letter batch 2026-10-02
 
 The project owner explicitly wrote **“approve”** after being shown all 15 final

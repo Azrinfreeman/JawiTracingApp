@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { openLesson, boardModels, draw, movePoints } from './helpers/tracing.js';
+import { openLesson, boardModels, draw, movePoints, openTeacher, menuAction, showDotHelp, openMenu } from './helpers/tracing.js';
 
 const fill = page => page.locator('.play-fill').first();
 const amount = async page => {
@@ -10,7 +10,7 @@ const amount = async page => {
 const completeHeading = (page, letter) => page.getByRole('heading', { name: `Kamu sudah ikut huruf ${letter}!` });
 async function record(page) { return page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1)); }
 async function diagnostic(page) {
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   await page.getByRole('tab', { name: 'Diagnostik', exact: true }).click();
   const pending = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
@@ -55,8 +55,8 @@ test('lift, resize, capture loss and demonstration preserve accepted play progre
   await page.emulateMedia({ reducedMotion: 'reduce' }); await openLesson(page, 'Alif', 'play');
   let { strokes: [stroke] } = await boardModels(page); const stop = 16;
   await draw(page, stroke.slice(0, stop)); const saved = await amount(page);
-  await page.getByRole('button', { name: 'Tunjuk cara', exact: true }).click();
-  await expect(page.getByRole('button', { name: 'Tunjuk cara', exact: true })).toBeEnabled(); expect(await amount(page)).toBe(saved);
+  await menuAction(page, 'Tunjuk cara');
+  await expect(page.locator('.demonstration-ink')).toHaveCount(0, { timeout: 10000 }); expect(await amount(page)).toBe(saved);
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1') || '{"attempts":[]}').attempts.length)).toBe(0);
   ({ strokes: [stroke] } = await boardModels(page));
   await page.locator('.trace-board').evaluate(svg => svg.addEventListener('pointerdown', e => svg.dataset.contact = e.pointerId));
@@ -73,6 +73,7 @@ test('Ta dot drag keeps body; large pad and held keys commit one target per rele
   await openLesson(page, 'Ta', 'play'); const { strokes: [stroke], dots } = await boardModels(page);
   await draw(page, stroke); const saved = await amount(page);
   await draw(page, dots); await expect(page.locator('.validated-dot')).toHaveCount(0); expect(await amount(page)).toBe(saved);
+  await showDotHelp(page);
   let pad = page.getByRole('button', { name: 'Tambah titik 1 daripada 2' });
   const bounds = await pad.boundingBox(); expect(bounds.width).toBeGreaterThanOrEqual(48); expect(bounds.height).toBeGreaterThanOrEqual(64);
   await pad.scrollIntoViewIfNeeded(); await pad.focus();
@@ -93,7 +94,7 @@ test('Ta dot drag keeps body; large pad and held keys commit one target per rele
 });
 
 test('native pad drag outside does not place a dot; a new contained press can finish', async ({ page }) => {
-  await openLesson(page, 'Ba', 'play'); await draw(page, (await boardModels(page)).strokes[0]);
+  await openLesson(page, 'Ba', 'play'); await draw(page, (await boardModels(page)).strokes[0]); await showDotHelp(page);
   const pad = page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }); await pad.scrollIntoViewIfNeeded();
   const box = await pad.boundingBox(), p = { x: box.x + box.width / 2, y: box.y + box.height / 2 };
   await page.mouse.move(p.x, p.y); await page.mouse.down(); await page.mouse.move(p.x, box.y - 40); await page.mouse.move(p.x, p.y); await page.mouse.up();
@@ -115,12 +116,16 @@ test('phone, tablet and short landscape keep large controls, legible cues and no
   for (const [width, height] of [[320, 740], [390, 844], [768, 1024], [1280, 900], [844, 600]]) {
     await page.setViewportSize({ width, height }); await openLesson(page, 'Ba', 'play');
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const menuButton = await page.getByRole('button', { name: 'Menu permainan', exact: true }).boundingBox();
+    expect(menuButton.width).toBeGreaterThanOrEqual(48); expect(menuButton.height).toBeGreaterThanOrEqual(48);
+    await openMenu(page);
     for (const label of ['Dengar', 'Tunjuk cara', 'Cuba lagi']) {
-      const box = await page.getByRole('button', { name: label, exact: true }).boundingBox();
+      const box = await page.getByRole('dialog', { name: 'Menu permainan' }).getByRole('button', { name: label, exact: true }).boundingBox();
       expect(box.width).toBeGreaterThanOrEqual(48); expect(box.height).toBeGreaterThanOrEqual(48);
     }
+    await page.getByRole('button', { name: 'Tutup', exact: true }).click();
     const size = await page.locator('.start-dot').evaluate(node => node.getBoundingClientRect().width); expect(size).toBeGreaterThanOrEqual(47.9);
-    await draw(page, (await boardModels(page)).strokes[0]); await page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }).click();
+    await draw(page, (await boardModels(page)).strokes[0]); await showDotHelp(page); await page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }).click();
     await expect(completeHeading(page, 'Ba')).toBeVisible();
   }
 });
@@ -129,8 +134,8 @@ test('idle hint is gentle and reduced-motion reward stays still; replay is delib
   await page.emulateMedia({ reducedMotion: 'reduce' }); await openLesson(page, 'Ba', 'play');
   await expect(page.locator('.play-needs-help')).toBeVisible({ timeout: 6500 }); await expect(fill(page)).toHaveCount(0);
   await draw(page, (await boardModels(page)).strokes[0]);
-  expect(await page.locator('.leaf-friend').evaluate(node => getComputedStyle(node).animationName)).toBe('none');
-  await page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }).click(); await expect(completeHeading(page, 'Ba')).toBeVisible();
+  await showDotHelp(page); await page.getByRole('button', { name: 'Tambah titik 1 daripada 1' }).click();
+  expect(await page.locator('.leaf-friend').evaluate(node => getComputedStyle(node).animationName)).toBe('none'); await expect(completeHeading(page, 'Ba')).toBeVisible();
   await page.waitForTimeout(1200); await expect(completeHeading(page, 'Ba')).toBeVisible();
   await page.getByRole('button', { name: 'Main lagi', exact: true }).click(); await expect(fill(page)).toHaveCount(0);
 });

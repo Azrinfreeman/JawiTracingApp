@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { dismissSplash } from './helpers/navigation.js';
-import { boardModels, draw } from './helpers/tracing.js';
+import { boardModels, draw, openTeacher, menuAction, showDotHelp } from './helpers/tracing.js';
 
 const batchIds = ['sa', 'jim', 'ca', 'ha-pedat', 'kha'];
 const batch = letters.filter(letter => batchIds.includes(letter.id));
@@ -14,7 +14,7 @@ async function openBatchLesson(page, letter, mode = 'play') {
   if (mode === 'play') {
     await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
   } else {
-    await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+    await openTeacher(page);
     await page.getByLabel('Jenis latihan').selectOption(mode);
     await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).click();
     await page.getByRole('button', { name: 'Model tersedia', exact: true }).click();
@@ -57,7 +57,7 @@ test('all 37 approved models appear in student entry and adult preview', async (
   await page.getByRole('button', { name: 'Semua huruf', exact: true }).click();
   await expect(page.locator('.letter-card:disabled')).toHaveCount(0);
   for (const letter of batch) await expect(page.getByRole('button', { name: letter.labelMs, exact: true })).toBeEnabled();
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   await expect(page.locator('.draft-model-card')).toHaveCount(draftCount);
   await expect(page.locator('.teacher-stat-grid > div').nth(1)).toContainText(String(modelCount));
   await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('37');
@@ -77,8 +77,9 @@ test('student next-letter action continues from approved Sa to Jim', async ({ pa
   await openBatchLesson(page, batch.find(l => l.id === 'sa'));
   const model = await boardModels(page);
   await draw(page, model.strokes[0]);
+  await showDotHelp(page);
   for (let i = 0; i < model.dots.length; i++) await page.getByRole('button', { name: `Tambah titik ${i + 1} daripada 3`, exact: true }).click();
-  await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).click();
+  await menuAction(page, 'Huruf seterusnya');
   await expect(page.getByRole('heading', { name: 'Jim', exact: true })).toBeVisible();
   await expect(page.locator('.lesson-pilot')).not.toContainText('Draf');
   await expect(page.locator('.preview-banner')).toHaveCount(0);
@@ -107,6 +108,7 @@ test('every new body and dot has readable contained guide labels on phone and ta
       };
       await check();
       await draw(page, (await boardModels(page)).strokes[0]);
+      if (letter.geometry.dotTargets.length) await showDotHelp(page);
       for (const [i] of letter.geometry.dotTargets.entries()) {
         await check();
         await page.getByRole('button', { name: `Tambah titik ${i + 1} daripada ${letter.geometry.dotTargets.length}`, exact: true }).click();
@@ -125,6 +127,7 @@ for (const width of [320, 768]) test(`Ca completes with native touch at ${width}
     await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ ...points[0], id: 1 }] });
     for (const point of points.slice(1)) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ ...point, id: 1 }] });
     await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await showDotHelp(page);
     for (let i = 0; i < 3; i++) await page.getByRole('button', { name: `Tambah titik ${i + 1} daripada 3`, exact: true }).tap();
     await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Ca!', exact: true })).toBeVisible();
     expect(await record(page)).toMatchObject({ pointerType: 'touch', preview: false, geometryStatus: 'approved', metrics: { dotCount: 3, equivalentDotActions: 3 } });

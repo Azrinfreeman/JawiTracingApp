@@ -10,6 +10,11 @@ export async function dismissSplash(page) {
     }
   }
   await expect(page.locator('.splash-screen')).toHaveCount(0);
+  // Entering a game requests browser fullscreen. In automation that really changes the window state and makes later
+  // viewport changes fail, so neutralise only the native request; a test's own stub is left alone.
+  await page.evaluate(() => {
+    if (/\[native code\]/.test(Function.prototype.toString.call(document.documentElement.requestFullscreen))) Element.prototype.requestFullscreen = () => Promise.resolve();
+  });
   if (await page.getByRole('dialog', { name: 'Besarkan ruang bermain' }).isVisible()) return;
   await expect(page.getByRole('button', { name: 'Jom mula', exact: true })).toBeVisible();
 }

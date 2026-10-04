@@ -1,8 +1,9 @@
 # Teaching content review
 
-Status: 35 student-ready lessons as of 2026-10-03. Kaf revision 2 and Ga
-revision 3 have corrected connected bodies and await fresh geometry review.
-Both can be traced in adult preview. See [the correction review sheet and
+Status: 37 student-ready lessons as of 2026-10-04. The project owner approved the 27 tracing
+models redrawn from the catalogue glyph that day, with Kaf revision 2 and Ga revision 3, after testing
+them in the app ([approval record](CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04),
+[review sheet and verification](GLYPH_MATCHED_TRACING_MODELS_VERIFICATION.md)). See [the correction review sheet and
 verification](KAF_GA_SHAPE_CORRECTION_VERIFICATION.md).
 The project owner approved the earlier 12 pilot models and 25 additional
 revision-2 models on 2026-10-02; those historical approvals are preserved in
@@ -29,17 +30,17 @@ behavioural tests of the tracing engine.
 | Final handwriting batch | 15 | 14 approved at revision 2; corrected Ga revision 3 pending review |
 | Letter-name recordings | 37 | 27 supplied MP3/WAV recordings and 10 retained synthetic MP3s; approved by project owner |
 | Pronunciation examples | As selected by educator | Not yet specified/recorded |
-| Current geometry approvals | 35 | Eleven revision-1 models and 24 revision-2 models; project-owner approval |
+| Current geometry approvals | 37 | Every model at its current revision; project-owner approval (29 of them on 2026-10-04) |
 | Audio approvals | 37 | Project-owner approval of current recording revisions |
-| Student-ready lessons | 35 | Current model and required audio approvals match their revisions |
+| Student-ready lessons | 37 | Current model and required audio approvals match their revisions |
 | Numbered tracing guidance | All 37 authored models | Sequential movement and dot cues; Kaf/Ga reviewed through adult preview |
 
-Approved models: alif, ba, ta, ta-marbuta, sa, jim, ca, ha-pedat, kha, dal, zal,
-ra, zai, sin, syin, sad, dad, tho, za, ain, ghain, nga, fa, pa, qaf,
-lam, mim, nun, wau, va, ha, hamzah, ya, ye, nya.
+All 37 models are approved at their current revisions. The earlier 2026-10-02 approvals of 27
+of them were for previous revisions and are historical; the redrawn revisions (and Kaf and Ga) were
+approved on 2026-10-04.
 
 The approval source is the user's explicit message, not a fabricated teacher
-identity. All 37 name recordings are approved at their current revisions; all 35
+identity. All 37 name recordings are approved at their current revisions; all 37
 approved models are student-ready in the app. See the
 [additional model notes](LETTER_BATCH_1_REVIEW.md).
 The second batch is also available to students; see

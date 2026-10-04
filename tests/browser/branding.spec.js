@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { dismissSplash } from './helpers/navigation.js';
+import { menuAction, openTeacher } from './helpers/tracing.js';
 
 const logoRoute = '**/branding/hanana-academy-logo.png';
 const clockStart = new Date('2026-10-02T00:00:00Z');
@@ -47,7 +48,7 @@ test('fresh launch displays the unchanged local logo and automatically continues
 test('manual continue cleans up its deadline and navigation never replays the splash', async ({ page }) => {
   await pauseClock(page); await page.goto('/');
   await dismissSplash(page); await welcomeFocused(page);
-  await page.getByRole('button', { name: 'Ruang guru' }).click();
+  await openTeacher(page);
   await page.clock.runFor(3000);
   await expect(page.locator('.teacher-page')).toBeVisible();
   await expect(page.locator('.splash-screen')).toHaveCount(0);
@@ -59,9 +60,9 @@ test('manual continue cleans up its deadline and navigation never replays the sp
   await page.clock.runFor(32);
   await page.getByRole('button', { name: 'Alif', exact: true }).click();
   await expect(page.locator('.trace-board')).toBeVisible();
-  await page.getByRole('button', { name: 'Cuba lagi' }).click();
+  await page.clock.runFor(100); await menuAction(page, 'Cuba lagi');
   await expect(page.locator('.splash-screen')).toHaveCount(0);
-  await expect(page.locator('.site-footer .company-brand')).toBeVisible();
+  await page.clock.runFor(100); await menuAction(page, 'Isi kandungan'); await expect(page.locator('.letter-grid-host')).toBeVisible();
   await page.getByRole('button', { name: 'Taman Jawi, halaman utama' }).click();
   await page.clock.runFor(32);
   await page.getByRole('group', { name: 'Profil tempatan' }).getByRole('button', { name: /Daun/ }).click();

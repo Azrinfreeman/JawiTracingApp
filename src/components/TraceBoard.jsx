@@ -1,4 +1,5 @@
 import { forwardRef, memo, useEffect, useLayoutEffect, useId, useImperativeHandle, useMemo, useRef, useState } from 'react';
+import { playGuideWidth } from '../content/displayWidth.js';
 import { createMatcher } from '../tracing/matcher.js';
 import { createPlayMatcher } from '../tracing/playMatcher.js';
 import { DotTapPad } from './DotTapPad.jsx';
@@ -20,13 +21,13 @@ const ReferenceModel = memo(function ReferenceModel({ letter, mode, isPlay, pend
   return <g aria-hidden="true">
     {letter.geometry.strokes.map(stroke => <g key={stroke.id}>
       {mode === 'guided' && <path d={stroke.path} className="trace-corridor" strokeWidth={(radius + 7.5) * 2}/>}
-      <path d={stroke.path} className={`reference-stroke ${mode === 'precision' ? 'light-guide' : ''} ${isPlay && stroke.id === pendingId ? 'play-active-route' : ''}`} strokeWidth={isPlay ? 76 : stroke.width}/>
+      <path d={stroke.path} className={`reference-stroke ${mode === 'precision' ? 'light-guide' : ''} ${isPlay && stroke.id === pendingId ? 'play-active-route' : ''}`} strokeWidth={isPlay ? playGuideWidth(stroke) : stroke.width}/>
       {mode === 'guided' && <path d={stroke.path} className="direction-guide"/>}
     </g>)}
     {letter.geometry.dotTargets.map(dot => <circle key={dot.id} cx={dot.x} cy={dot.y} r={dot.visibleRadius} className="reference-dot"/>)}
   </g>;
 });
-export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activity, attempt, demo, adjustment, onDemoEnd, onComplete, onDiagnostic, enabled = true, profileOverride, onValidated, now = performance.now.bind(performance), compact = false, fitted = false, renderSupport }, ref) {
+export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activity, attempt, demo, adjustment, onDemoEnd, onComplete, onDiagnostic, enabled = true, profileOverride, onValidated, now = performance.now.bind(performance), compact = false, fitted = false, stageOnly = false, dotAssistance = false, renderSupport }, ref) {
   globalThis.__JAWI_TRACE_PERF__?.('render');
   const patternId = useId().replace(/:/g, '');
   const enabledRef = useRef(enabled); enabledRef.current = enabled;
@@ -316,7 +317,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
       : <span className="play-support-note">Perlahan pun boleh. Kita cuba bersama.</span>}
   </div>;
   const reward = isPlay && !compact && !lightweight && <div className="lesson-feedback" aria-hidden="true">{state?.completed?.length > 0 && <PlayFeedback key={state.completed.length}/>}</div>;
-  return <div className={`trace-layout ${fitted ? 'fitted-trace' : ''}`}>
+  return <div className={`trace-layout ${fitted ? 'fitted-trace' : ''} ${stageOnly ? 'stage-only' : ''} ${dotAssistance ? 'dot-assistance-enabled' : ''}`}>
   {!compact && !fitted && <div className="board-heading"><span className="board-corner"><span className="tiny-dot"/>{isCopy ? 'RUANG MENULIS' : demo ? 'LIHAT CARA MENULIS' : isPlay ? 'JEJAK CERIA' : mode === 'precision' ? 'KURANG PANDUAN' : 'BERPANDU'}</span><span className="board-tool-hint">Jari · Pen · Tetikus</span></div>}
   <div ref={stageRef} className={`trace-stage ${isCopy ? 'copy-stage' : ''}`} style={{ '--stage-square': `${Math.min(stageSize.width, stageSize.height)}px` }}>
   {smallStage && <aside className="trace-space" role="status">Putar peranti atau kurangkan zum untuk ruang jejak yang lebih besar.</aside>}
@@ -337,6 +338,6 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
     </svg>
   </div>
   </div>
-  {renderSupport ? renderSupport({ status, instruction, dots, reward }) : <div className="trace-support">{status}{instruction}{dots}{reward}</div>}
+  {renderSupport ? renderSupport({ status, instruction, dots, reward, pendingDot, inkLimit: Boolean(state?.inkLimit), blocked: Boolean(!isCopy && state?.blocked), complete: state?.phase === 'complete', paused: state?.phase === 'paused' }) : <div className="trace-support">{status}{instruction}{dots}{reward}</div>}
   </div>;
 });

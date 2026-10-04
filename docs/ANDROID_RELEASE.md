@@ -1,6 +1,44 @@
 # Taman Jawi Android release
 
-## Latest release — 1.0.5
+## Latest release — 1.0.6
+
+Built and verified on **4 October 2026**, Asia/Kuala_Lumpur, at the user's request, after the owner
+approved all 37 models.
+
+| Item | Value |
+| --- | --- |
+| File | [Taman-Jawi-1.0.6-release.apk](../output/releases/Taman-Jawi-1.0.6-release.apk) |
+| Version | 1.0.6, version code 7 |
+| Application ID | `com.hananaacademy.tamanjawi` |
+| Size | 7,016,865 bytes, approximately 7.0 MB |
+| Android compatibility | Android 8.0+; minimum API 26, target API 36 |
+| Signing | Preserved RSA 3072 release identity; verified APK v2 signature |
+| Certificate SHA-256 | `864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365` (same as 1.0.0–1.0.5) |
+| APK SHA-256 | `d7e5f9d74bed8e191d488e893b511cb3d4c6bf4783ee2088195781c4382b3935` |
+| Checksum file | [SHA-256 sidecar](../output/releases/Taman-Jawi-1.0.6-release.apk.sha256) |
+
+Contents: the glyph-matched tracing models and per-letter guide widths (see
+[the delivery and verification](GLYPH_MATCHED_TRACING_MODELS_VERIFICATION.md)), with all 37 models and
+recordings approved, so every lesson is available to pupils. The package also carries the
+**uncommitted fullscreen tracing, completion-voice and background-music work** (including
+`audio/music/taman-kawan-v1.mp3`), which joined the assets at this sync. That work is still only partly
+verified and its music loop has not been auditioned or approved; see [PROJECT_STATE.md](PROJECT_STATE.md).
+
+The checked web build passed (37 valid models, 37 student-ready lessons) and 92 assets were synchronized.
+The first offline Gradle run hit the recorded Windows cache-rename failure; the completed project-local
+cache directory was finalized by renaming it and the retry (`-Offline -SkipWebBuild`) assembled, linted
+and signed the release. Lint: zero errors, four existing warnings. `verify-android-release.ps1` confirmed
+the signature, ZIP alignment, package identity, version 1.0.6/code 7, API levels, non-debuggable flag, no
+permissions, checksum and that all **92 packaged assets / 37 recordings** match the web build. Version code
+rises from 6 to 7 with the same application ID and certificate; earlier APKs and checksums are preserved.
+
+Evidence: [APK inspection](../output/verification/android-release-1.0.6/apk-verification.json), the
+[first build log](../output/verification/android-release-1.0.6/android-build.log) and the
+[successful retry](../output/verification/android-release-1.0.6/android-build-retry.log). No Android
+device or emulator is connected: installation, native WebView drawing and audio, the new fullscreen menu
+and music, and saved-data retention on update remain **unverified on a device**.
+
+## Historical release — 1.0.5
 
 Built and verified on **4 October 2026**, Asia/Kuala_Lumpur, after authorisation
 of the endpoint finish implementation.

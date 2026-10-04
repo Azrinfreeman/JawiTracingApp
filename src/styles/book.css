@@ -31,9 +31,6 @@
 .book-writing .lesson-feedback { height: 36px; }
 .book-writing .play-feedback { width: 36px; height: 36px; }
 .book-completed .book-writing .play-dot-tools { display: none; }
-.book-tools.board-actions { grid-row: 3; display: flex; flex-wrap: wrap; margin: 0; gap: 8px; }
-.book-tools .button { min-height: 48px; }
-.book-tools .button-primary { min-height: 56px; }
 .book-reward { grid-row: 4; padding: 4px 0; }
 .book-reward > p { font-size: 14px; color: var(--text-muted); margin-top: 8px; }
 .book-sticker { display: inline-flex; align-items: center; gap: 8px; border-radius: 24px; padding: 7px 12px; font-size: 14px; color: var(--text-muted); border: 1px dashed var(--control-border); background: var(--sun-soft); }
@@ -75,8 +72,6 @@
   .book-letter-heading .audio-group .button { min-height: 56px; padding: 10px 18px; font-size: 16px; }
   .book-reference-glyph { display: grid; place-items: center; height: 140px; background: var(--sun-soft); border: 2px solid #ded6b6; border-radius: 24px; font-size: 104px; line-height: 1.3; }
   .book-reward { min-height: 100px; }
-  .book-tools.board-actions { flex-direction: row; }
-  .book-tools .button { flex: 1; min-height: 56px; padding: 8px; font-size: 14px; }
   .book-friend { display: flex; align-items: center; gap: 8px; margin-top: auto; font-size: 14px; color: var(--text-muted); }
   .book-friend .game-mascot { width: 64px; height: 64px; }
 }
@@ -89,7 +84,6 @@
   .book-writing.lesson-workspace { order: 2; }
   .book-navigation { order: 3; }
   .book-reward { order: 4; }
-  .book-tools.board-actions { order: 5; }
   .book-reference > .audio-notice { order: 6; }
   .book-completed .book-writing .lesson-feedback { display: none; }
   .book-topline { gap: 4px; margin: 0 4px 4px; }

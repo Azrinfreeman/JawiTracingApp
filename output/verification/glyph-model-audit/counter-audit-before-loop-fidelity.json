@@ -1,0 +1,355 @@
+[
+ {
+  "id": "alif",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ba",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 46,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ta",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 46,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ta-marbuta",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [
+   12033
+  ],
+  "modelCountersAtWidth44": [
+   10826
+  ],
+  "modelCountersAtWidth76": [
+   5534
+  ]
+ },
+ {
+  "id": "sa",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 46,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "jim",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ca",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ha-pedat",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "kha",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "dal",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 47,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "zal",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 47,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ra",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "zai",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "sin",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 44,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "syin",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 44,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "sad",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [
+   21624
+  ],
+  "modelCountersAtWidth44": [
+   25612
+  ],
+  "modelCountersAtWidth76": [
+   16461
+  ]
+ },
+ {
+  "id": "dad",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [
+   21624
+  ],
+  "modelCountersAtWidth44": [
+   25612
+  ],
+  "modelCountersAtWidth76": [
+   16461
+  ]
+ },
+ {
+  "id": "tho",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 44,
+  "fontCounters": [
+   21883
+  ],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "za",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 44,
+  "fontCounters": [
+   21883
+  ],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ain",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 43,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ghain",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 43,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "nga",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 43,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "fa",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [
+   9215
+  ],
+  "modelCountersAtWidth44": [
+   13791
+  ],
+  "modelCountersAtWidth76": [
+   7926
+  ]
+ },
+ {
+  "id": "pa",
+  "status": "approved",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [
+   9215
+  ],
+  "modelCountersAtWidth44": [
+   13791
+  ],
+  "modelCountersAtWidth76": [
+   7926
+  ]
+ },
+ {
+  "id": "qaf",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [
+   11536
+  ],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "kaf",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 45,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ga",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 40,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "lam",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "mim",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 46,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "nun",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "wau",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 38,
+  "fontCounters": [
+   11608
+  ],
+  "modelCountersAtWidth44": [
+   10809
+  ],
+  "modelCountersAtWidth76": [
+   5520
+  ]
+ },
+ {
+  "id": "va",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 38,
+  "fontCounters": [
+   11608
+  ],
+  "modelCountersAtWidth44": [
+   10803
+  ],
+  "modelCountersAtWidth76": [
+   5526
+  ]
+ },
+ {
+  "id": "ha",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 44,
+  "fontCounters": [
+   8109,
+   7921
+  ],
+  "modelCountersAtWidth44": [
+   7846,
+   7537
+  ],
+  "modelCountersAtWidth76": [
+   2966,
+   2499
+  ]
+ },
+ {
+  "id": "hamzah",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 40,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ya",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "ye",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ },
+ {
+  "id": "nya",
+  "status": "pendingReview",
+  "fontStrokeThicknessMedian": 42,
+  "fontCounters": [],
+  "modelCountersAtWidth44": [],
+  "modelCountersAtWidth76": []
+ }
+]

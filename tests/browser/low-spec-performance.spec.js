@@ -1,7 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
-import { openLesson, boardModels, draw } from './helpers/tracing.js';
+import { openLesson, boardModels, draw, openTeacher } from './helpers/tracing.js';
 import { dismissSplash } from './helpers/navigation.js';
+import { treatAllModelsAsReady } from './helpers/readyCatalogue.js';
+// Mechanics spec: every authored model is served as student-ready; the real gate is covered elsewhere.
+test.beforeEach(async ({ context }) => { await treatAllModelsAsReady(context); });
 
 const evidence = process.env.JAWI_EVIDENCE_DIR || 'output/verification/low-spec-tablet';
 mkdirSync(evidence, { recursive: true });
@@ -10,7 +13,7 @@ const instrument = async page => page.addInitScript(() => {
   window.__JAWI_TRACE_PERF__ = type => { window.perfCounters[type] = (window.perfCounters[type] || 0) + 1; };
 });
 async function exportDiagnostic(page) {
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   await page.getByRole('tab', { name: 'Diagnostik', exact: true }).click();
   const pending = page.waitForEvent('download'); await page.getByRole('button', { name: 'Eksport jejak sesi ini' }).click();
   let text = ''; for await (const chunk of await (await pending).createReadStream()) text += chunk;
@@ -22,23 +25,23 @@ test('native lightweight default and adult override persist without changing ful
   for (const [width, height] of [[320, 600], [360, 640], [768, 1024]]) {
     await page.setViewportSize({ width, height }); await page.goto('/'); await dismissSplash(page);
     await expect(page.locator('html')).toHaveAttribute('data-presentation', 'light');
-    await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+    await openTeacher(page);
     await expect(page.getByLabel('Paparan permainan')).toHaveValue('light');
     const visible = await page.locator('.teacher-settings-grid label, .teacher-settings-actions button').evaluateAll(nodes => nodes.every(node => { const b = node.getBoundingClientRect(); return b.top >= 0 && b.bottom <= innerHeight && b.left >= 0 && b.right <= innerWidth; }));
     expect(visible).toBe(true);
     await page.screenshot({ path: `${evidence}/${browserName}-light-settings-${width}.png` });
     await page.getByRole('button', { name: 'Buka pratonton dewasa' }).click();
     const { chooseLetter } = await import('./helpers/navigation.js'); await chooseLetter(page, 'Alif');
-    await expect(page.locator('.lesson-dock')).toHaveCSS('backdrop-filter', 'none');
+    await expect(page.locator('.lesson-dock')).toHaveCount(0);
     await expect(page.locator('.play-trail circle')).toHaveCount(0);
     await expect(page.locator('.start-dot')).toBeVisible(); await expect(page.locator('.trace-number-guide')).not.toHaveCount(0);
     expect(await page.evaluate(() => document.scrollingElement.scrollHeight <= innerHeight + 1)).toBe(true);
     await page.screenshot({ path: `${evidence}/${browserName}-light-lesson-${width}.png` });
   }
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   await page.getByLabel('Paparan permainan').selectOption('full'); await page.reload(); await dismissSplash(page);
   await expect(page.locator('html')).toHaveAttribute('data-presentation', 'full');
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click(); await expect(page.getByLabel('Paparan permainan')).toHaveValue('full');
+  await openTeacher(page); await expect(page.getByLabel('Paparan permainan')).toHaveValue('full');
   expect(await page.evaluate(() => localStorage.getItem('taman-jawi.progress.v1'))).toBeNull();
 });
 

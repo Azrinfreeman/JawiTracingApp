@@ -1,10 +1,13 @@
 import { test, expect } from '@playwright/test';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { dismissSplash } from './helpers/navigation.js';
+import { openTeacher } from './helpers/tracing.js';
+// Student-ready lessons follow the catalogue, so approvals or revisions never need a count edit here.
+const readyLessons = letters.filter(letter => letter.geometry.status === 'approved' && letter.audio.name.status === 'approved').length;
 
 async function teacher(page) {
   await page.goto('/'); await dismissSplash(page);
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
 }
 async function observeAudio(page) {
   await page.addInitScript(() => {
@@ -48,7 +51,7 @@ test('all 37 active local recordings decode to non-silent audio; approved lesson
   await test.info().attach('decoded-audio.json', { body: JSON.stringify(decoded, null, 2), contentType: 'application/json' });
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
   await expect(page.getByRole('dialog')).not.toBeVisible();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(readyLessons);
 });
 
 test('teacher can listen, replay, mute and change letters without stale audio or changing approval', async ({ page, browserName }) => {
@@ -75,7 +78,7 @@ test('teacher can listen, replay, mute and change letters without stale audio or
   await page.getByLabel('Huruf untuk semakan suara').selectOption('nya');
   await panel.getByRole('button', { name: 'Rakaman seterusnya', exact: true }).click();
   await expect(page.getByLabel('Huruf untuk semakan suara')).toHaveValue('alif');
-  await expect(page.locator('.teacher-stat-grid')).toContainText('37pelajaran sedia untuk murid');
+  await expect(page.locator('.teacher-stat-grid')).toContainText(`${readyLessons}pelajaran sedia untuk murid`);
   await expect(page.getByRole('cell', { name: 'Diluluskan', exact: true })).toHaveCount(37);
   await page.setViewportSize({ width: 390, height: 844 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
@@ -90,7 +93,7 @@ test('preschool preview plays its own local letter recording and stops it on nav
   await expect(page.locator('.audio-notice')).toHaveText('Dengar dan sebut semula.');
   expect(await page.evaluate(src => window.__reviewAudio.at(-1).src.endsWith(src), letters.find(letter => letter.id === 'ba').audio.name.src)).toBe(true);
   await expect.poll(() => page.evaluate(() => window.__reviewAudio.at(-1)?.currentTime ?? 0)).toBeGreaterThan(0);
-  await page.getByRole('button', { name: 'Ruang guru', exact: true }).click();
+  await openTeacher(page);
   expect(await page.evaluate(() => window.__reviewAudio.at(-1).paused)).toBe(true);
 });
 
@@ -110,7 +113,7 @@ test('review list, approval labels and mobile layout work even when the runtime 
   const panel = page.locator('.audio-review-panel');
   await expect(page.getByLabel('Huruf untuk semakan suara').locator('option')).toHaveCount(37);
   await expect(page.getByRole('cell', { name: 'Diluluskan', exact: true })).toHaveCount(37);
-  await expect(page.locator('.teacher-stat-grid')).toContainText('37pelajaran sedia untuk murid');
+  await expect(page.locator('.teacher-stat-grid')).toContainText(`${readyLessons}pelajaran sedia untuk murid`);
   await page.getByLabel('Huruf untuk semakan suara').selectOption('ha-pedat');
   await expect(panel.locator('.audio-review-transcript')).toContainText('Nama disebut: Ha');
   await expect(panel.locator('.audio-review-transcript strong')).toHaveText('Ha');

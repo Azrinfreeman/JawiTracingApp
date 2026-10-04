@@ -38,6 +38,7 @@ export function validateLetter(letter) {
   for (const stroke of strokes) {
     if (!validPath(stroke.path)) errors.push('Unsafe or discontinuous path');
     if (!finite(stroke.width) || stroke.width <= 0 || !['continuous', 'resume'].includes(stroke.penLiftPolicy)) errors.push('Invalid stroke policy');
+    if (stroke.displayWidth !== undefined && (!finite(stroke.displayWidth) || stroke.displayWidth < 30 || stroke.displayWidth > 76)) errors.push('Invalid display width');
     if (!Array.isArray(stroke.checkpoints) || stroke.checkpoints.some(p => !finite(p) || p <= 0 || p > 1)) errors.push('Invalid checkpoints');
   }
   for (const dot of dots) {

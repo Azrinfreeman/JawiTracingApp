@@ -54,7 +54,6 @@
 .race-actions { grid-row: 5; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; }
 .race-actions .button { min-height: 48px; padding: 8px 12px; font-size: 14px; }
 .race-lane-status { font-size: 14px; font-weight: 600; text-align: center; color: var(--player-color); }
-.arena-ready-note { margin: 4px 0; font-size: 13px; text-align: center; }
 .match-arena.stacked .race-lanes { grid-template-columns: minmax(0, 1fr); }
 .match-arena.stacked .race-paper { grid-template-columns: var(--board-size) minmax(0, 1fr); grid-template-rows: 40px 56px 84px minmax(104px, 1fr); height: var(--board-size); gap: 8px 16px; align-items: center; }
 .match-arena.stacked .board-wrap { grid-column: 1; grid-row: 1 / 5; }
