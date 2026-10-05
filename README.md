@@ -1,19 +1,40 @@
 # Taman Jawi
 
-A local React + Vite game for recognising Jawi letters and practising writing with
-mouse, touch or pen. The interface is in Bahasa Melayu. It uses native SVG,
-Pointer Events and a separate JavaScript tracing validator.
+A Bahasa Melayu preschool learning game for recognising Jawi letters and
+practising writing with mouse, touch or pen. Built with React + Vite, native SVG,
+Pointer Events and separate JavaScript tracing validators, it runs locally in a
+browser or as a bundled Android app.
+
+## Project at a glance
+
+| Area | What the project demonstrates |
+| --- | --- |
+| Teaching content | 37 Jawi letter models and name recordings, with revision-matched owner approval records |
+| Interaction | Assisted preschool tracing, stricter practice modes, separate dot taps, demonstrations and free copying |
+| Game modes | Relaxed Solo practice, timed trophy challenges and two-player Duo on one shared screen |
+| Engineering | Input matching separate from React views, SVG geometry, bounded local persistence and a native Android wrapper |
+| Delivery | Web source and a tracked signed Android APK; no hosted website or app-store release |
+
+**Current status:** all 37 lessons meet the catalogue's owner-approval readiness
+gate. This records project-owner review, not an external teacher assessment or
+KPM endorsement. APK **1.0.7** is the latest tracked package. The newer
+right-to-left catalogue is in the web source but is not included in that APK.
+Physical-device verification remains pending, and several browser specs have
+stale catalogue/model expectations. See [current project state](docs/PROJECT_STATE.md)
+and [this documentation review](docs/PORTFOLIO_REVIEW.md).
 
 Contributor guidance: [AGENTS.md](AGENTS.md), with a compact
 [current project state](docs/PROJECT_STATE.md) and
 [verification guide](docs/VERIFICATION_GUIDE.md) for avoiding redundant work.
 
-Source repository: [Azrinfreeman/JawiPrasekolah](https://github.com/Azrinfreeman/JawiPrasekolah) (private).
+Source repository: [Azrinfreeman/JawiPrasekolah](https://github.com/Azrinfreeman/JawiPrasekolah).
 
 ## Try it locally
 
 ```sh
-npm install
+git clone https://github.com/Azrinfreeman/JawiPrasekolah.git
+cd JawiPrasekolah
+npm ci
 npm run dev
 ```
 
@@ -57,10 +78,12 @@ at the end of a stroke or after each dot. See
 
 Near the end, a lifted incomplete trace shows an arrow to the saved frontier and
 asks the child to continue to the final number. Once the required tracing is
-accepted, **Sentuh titik …, kemudian angkat jari** asks for one endpoint tap and
-release if the stroke did not finish on the original lift. Ghain still needs its
-separate upper dot afterward. The held cue says **Angkat jari untuk siap** only
-when release can complete the stroke. See [endpoint verification](docs/ENDPOINT_FINISH_DETECTION_VERIFICATION.md).
+accepted, an endpoint tap and release remains a recovery option. With the current
+preschool matcher, a stroke that has reached the end with sufficient coverage and
+all checkpoints can also complete if the finger then leaves the route or lifts
+away from the endpoint; a cancelled touch never completes it. Ghain still needs
+its separate upper dot afterward. See the [current stroke-end verification](docs/STROKE_END_STALL_VERIFICATION.md)
+and [earlier endpoint verification](docs/ENDPOINT_FINISH_DETECTION_VERIFICATION.md).
 Local path searches and
 event-batch coordinate conversion reduce tracing work; see the
 [completion and performance verification](docs/TRACING_COMPLETION_AND_PERFORMANCE_VERIFICATION.md).
@@ -81,12 +104,12 @@ recordings, or press **Dengar** in a pilot lesson. See
 [the current recording review list](docs/AUDIO_REPLACEMENT_REVIEW.md).
 The application never substitutes beeps or speech synthesis for pronunciation.
 
-The pilot models are Alif, Ba, Ta, Dal, Ra, Sin, Kaf, Lam, Mim, Nun, Wau and Ya.
-Ten further models—Sa, Jim, Ca, Ha (ح), Kha, Zal, Zai, Syin, Sad and Dad—are
-approved at revision 2.
-The final 15 models—Ta marbutah, Ta (ط), Za, Ain, Ghain, Nga, Fa, Pa, Qaf, Ga,
-Va, Ha (ه), Hamzah, Ye and Nya—were approved at revision 2. Ga's corrected
-revision 3 now awaits fresh review.
+The original pilot models are Alif, Ba, Ta, Dal, Ra, Sin, Kaf, Lam, Mim, Nun,
+Wau and Ya. Later batches completed the 37-letter catalogue. Current revisions
+include the glyph-matched models approved on 4 October, Kaf revision 2 and Ga
+revision 3; Ga no longer awaits review. The batch notes below describe their
+earlier delivery stages; use the [approval record](docs/CONTENT_APPROVALS.md) and
+catalogue for current revision status.
 **Jom mula → Huruf tersedia** shows the 37 approved lessons. **Huruf permulaan**
 retains the original 12, and **Model tersedia** in adult preview shows all authored
 models. Adult preview includes all 37 models. **Ruang guru → Kandungan & semakan**
@@ -152,8 +175,8 @@ node scripts/verify-draft-audio.js # check 37 active recordings, playback and re
 node scripts/verify-letter-batch-2-approval.js # five approved student lessons, preserved content and responsive captures on 4173
 ```
 
-Development used Node 24.19.0. Vite currently requires Node 20.19+ or 22.12+;
-check the installed package's engine requirements when upgrading. Commit/use
+Development used Node 24.19.0. Use the package's engine requirements when
+selecting another Node version or upgrading dependencies. Commit/use
 `package-lock.json` for repeatable installs. Git tracks source, teaching assets,
 the signed APK and lightweight verification records. Build caches, temporary files,
 screenshots and Android signing keys stay local.
@@ -203,10 +226,14 @@ The screenshot check found no external runtime requests. The web version does
 not include PWA offline caching. The separate signed Android APK bundles the
 game, recordings and artwork for offline use; see [Android release and installation](docs/ANDROID_RELEASE.md).
 Android progress stays in the app's own storage, and teacher exports use its
-native save-file picker. The latest APK is [Taman Jawi 1.0.5](output/releases/Taman-Jawi-1.0.5-release.apk),
-with native fullscreen, fitted controls and a lightweight Android presentation
-that reduces tracing redraw work, plus reliable endpoint confirmation after
-accepted tracing; see [verification and measured limits](docs/ENDPOINT_FINISH_DETECTION_VERIFICATION.md).
+native save-file picker. The latest tracked APK is
+[Taman Jawi 1.0.7](output/releases/Taman-Jawi-1.0.7-release.apk)
+([SHA-256 checksum](output/releases/Taman-Jawi-1.0.7-release.apk.sha256)),
+for Android 8.0+ (version code 8). It adds stroke-end stall fixes and reduced
+tracing redraw work. Performance measurements came from a throttled desktop
+simulation, not a physical tablet. The right-to-left catalogue was implemented
+after packaging and requires a future APK build. See [release evidence and device limits](docs/ANDROID_RELEASE.md)
+and [tracing latency verification](docs/TRACING_INPUT_LATENCY_VERIFICATION.md).
 
 ## Source layout
 
@@ -219,7 +246,9 @@ losing accepted play progress. Legacy, strict and play summaries remain readable
 under storage version 1.
 `src/content/` owns the catalogue and readiness gate. `src/audio/` owns playback
 lifecycle. `src/storage/` owns bounded persistence. Screens do not award tracing
-success; the matcher commits completion only on a validated pointer-up.
+success; matchers commit completion from validated input. Preschool stroke-end
+completion may occur when an eligible gesture leaves the route, while separate
+dots still require their own valid tap and release.
 
 Primary technical references: [React](https://react.dev/learn),
 [Vite](https://vite.dev/guide/), [Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events),
