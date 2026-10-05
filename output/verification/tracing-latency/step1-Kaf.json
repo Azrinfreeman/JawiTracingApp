@@ -1,0 +1,34 @@
+{
+  "letter": "Kaf",
+  "tag": "step1",
+  "cpuRate": 6,
+  "frames": 115,
+  "frameMs": {
+    "p50": 16.7,
+    "p95": 33.3,
+    "max": 33.4
+  },
+  "handlerMs": {
+    "p50": 1.8,
+    "p95": 3.1,
+    "max": 7.6
+  },
+  "longTasks": {
+    "count": 2,
+    "totalMs": 347
+  },
+  "traceMs": {
+    "Paint": 144.7,
+    "PaintImage": 0,
+    "Layerize": 101,
+    "UpdateLayer": 5.8,
+    "Layout": 55.5,
+    "UpdateLayoutTree": 123.9,
+    "RasterTask": 162.3,
+    "ImageDecodeTask": 0,
+    "FunctionCall": 714.3,
+    "EventDispatch": 233.6,
+    "RunTask": 3218.1,
+    "Commit": 54.7
+  }
+}

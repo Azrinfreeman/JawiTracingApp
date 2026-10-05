@@ -21,7 +21,9 @@ async function traceBody(board, ending = 'excursion', pointerId = 61) {
     for (let s = 4; s < length; s += 4) { send('pointermove', path.getPointAtLength(s)); if (s % 96 === 0) await new Promise(requestAnimationFrame); }
     const end = path.getPointAtLength(length); send('pointermove', end);
     if (ending === 'held') return;
-    if (ending === 'excursion') { const far = { x: end.x + 180, y: end.y - 60 }; send('pointermove', far); send('pointerup', far); }
+    // Reaching the end then leaving the route finishes the stroke, so the confirmation path is exercised by a cancelled contact.
+    if (ending === 'excursion') { const far = { x: end.x + 180, y: end.y - 60 }; send('pointercancel', far); }
+    if (ending === 'leave') { const far = { x: end.x + 180, y: end.y - 60 }; send('pointermove', far); send('pointerup', far); }
     if (ending === 'assistance') { send('pointermove', { x: end.x + 43, y: end.y - 21 }); send('pointerup', { x: end.x + 82, y: end.y - 53 }); }
   }, { ending, pointerId });
 }
@@ -45,11 +47,11 @@ for (const preset of ['light', 'full']) for (const [width, height] of [[320, 740
     const board = page.locator('.trace-board'); await expect(board).toHaveAttribute('data-interaction-policy', 'play-guided-v2');
     await traceBody(board, 'held'); await expect(page.locator('.board-tip')).toHaveText('Angkat jari untuk bahagian seterusnya.');
     await screenshot(page, `${browserName}-${preset}-${width}-nun-held`);
-    // Recompute coordinates after each capture; the excursion intentionally invalidates readiness.
+    // Recompute coordinates after each capture; a cancelled contact leaves the earned stroke waiting for its endpoint touch.
     await board.evaluate(svg => {
       const path = svg.querySelector('.reference-stroke'), end = path.getPointAtLength(path.getTotalLength());
       const p = new DOMPoint(end.x + 180, end.y - 60).matrixTransform(svg.getScreenCTM());
-      for (const type of ['pointermove', 'pointerup']) svg.dispatchEvent(new PointerEvent(type, { bubbles: true, pointerId: 61, pointerType: 'touch', clientX: p.x, clientY: p.y }));
+      for (const type of ['pointercancel']) svg.dispatchEvent(new PointerEvent(type, { bubbles: true, pointerId: 61, pointerType: 'touch', clientX: p.x, clientY: p.y }));
     });
     await expect(page.locator('.board-tip')).toHaveText('Sentuh titik 3, kemudian angkat jari.');
     await expect(page.locator('.trace-number-guide--stop')).toHaveClass(/is-confirmable/);
@@ -76,6 +78,25 @@ for (const preset of ['light', 'full']) for (const [width, height] of [[320, 740
     expect(diagnostic.rawGestures.some(g => g.completionMethod === 'endpointConfirmation' && g.points.length === 2)).toBe(true);
   });
 }
+test('Nun: leaving the route after reaching the end advances without a tap, held or lifted', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 }); await openLesson(page, 'Nun', 'play');
+  const board = page.locator('.trace-board');
+  await traceBody(board, 'held');
+  await board.evaluate(svg => { // A fast flick away from the end while the finger is still down.
+    const path = svg.querySelector('.reference-stroke'), end = path.getPointAtLength(path.getTotalLength());
+    const p = new DOMPoint(end.x + 260, end.y - 90).matrixTransform(svg.getScreenCTM());
+    svg.dispatchEvent(new PointerEvent('pointermove', { bubbles: true, pointerId: 61, pointerType: 'touch', clientX: p.x, clientY: p.y }));
+  });
+  await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'dot-1');
+  await board.evaluate(svg => svg.dispatchEvent(new PointerEvent('pointerup', { bubbles: true, pointerId: 61, pointerType: 'touch', clientX: 5, clientY: 5 })));
+  await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'dot-1');
+});
+test('Nun: lifting far from the end after reaching it advances without a tap', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 }); await openLesson(page, 'Nun', 'play');
+  await traceBody(page.locator('.trace-board'), 'leave');
+  await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id', 'dot-1');
+  await expect(page.locator('.board-tip')).not.toHaveText('Sentuh titik 3, kemudian angkat jari.');
+});
 test('Nun final-up displacement uses bounded assistance and keeps the upper dot pending', async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 800 }); await openLesson(page, 'Nun', 'play');
   await traceBody(page.locator('.trace-board'), 'assistance');

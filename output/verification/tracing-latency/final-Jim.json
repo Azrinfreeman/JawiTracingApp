@@ -1,0 +1,34 @@
+{
+  "letter": "Jim",
+  "tag": "final",
+  "cpuRate": 6,
+  "frames": 119,
+  "frameMs": {
+    "p50": 16.7,
+    "p95": 33.4,
+    "max": 66.7
+  },
+  "handlerMs": {
+    "p50": 2.2,
+    "p95": 3.2,
+    "max": 6.1
+  },
+  "longTasks": {
+    "count": 4,
+    "totalMs": 358
+  },
+  "traceMs": {
+    "Paint": 188,
+    "PaintImage": 0,
+    "Layerize": 110.2,
+    "UpdateLayer": 8.2,
+    "Layout": 80.9,
+    "UpdateLayoutTree": 160.5,
+    "RasterTask": 171.8,
+    "ImageDecodeTask": 0,
+    "FunctionCall": 930.3,
+    "EventDispatch": 285.2,
+    "RunTask": 3409.3,
+    "Commit": 62.5
+  }
+}

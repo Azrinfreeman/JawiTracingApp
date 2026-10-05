@@ -7,7 +7,7 @@ export function getProfile(mode = 'guided', pointerType = 'mouse', adjustment = 
     coverage: 0.95, backwardJitter: 18, acquisitionArc: 20, turnAllowance: 18,
     maxRawGap: 80, maxAdvance: 90, advanceRatio: 1.8, projectionTie: 3,
     dotRadius: touch ? 48 : 36, dotTravel: touch ? 40 : 24,
-    finishReleaseSlack: touch ? 36 : 18, finishReleaseTravel: touch ? 60 : 30,
+    finishReleaseSlack: touch ? 36 : 18, finishReleaseTravel: touch ? 60 : 30, finishOvershoot: touch ? 120 : 60,
     padTravel: 24, maxSamples: 18000,
   });
   const precision = mode === 'precision';

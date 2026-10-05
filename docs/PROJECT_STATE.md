@@ -1,6 +1,6 @@
 # Current project state
 
-Confirmed: **4 October 2026**, Asia/Kuala_Lumpur. This is a dated summary;
+Confirmed: **5 October 2026** (saved 6 October), Asia/Kuala_Lumpur. Earlier items below are dated where they were checked. This is a dated summary;
 verify changing facts against [the catalogue](../src/content/letters.json) and
 [its validator](../src/content/validateContent.js).
 
@@ -8,6 +8,24 @@ verify changing facts against [the catalogue](../src/content/letters.json) and
   On 4 October the owner approved the 29 revisions that had awaited review (27 redrawn models plus Kaf
   revision 2 and Ga revision 3); see [the approval record](CONTENT_APPROVALS.md). All 37 name recordings
   are approved: 27 supplied files and 10 retained synthetic recordings.
+- **Tracing and catalogue polish (5 October, release 1.0.7):**
+  - *Stroke-end stall:* once a stroke gesture has reached its end (95% coverage, all checkpoints, finger within the end
+    radius) the stroke is complete. Leaving the route (flick, drift, off the board) commits it immediately and a lift
+    anywhere commits it; a cancelled touch never does, and the endpoint touch remains the recovery for that case. Applies
+    to all 37 letters (52 strokes simulated). See [the verification](STROKE_END_STALL_VERIFICATION.md).
+  - *Latency on weak tablets:* the accepted fill is drawn in 48-unit pieces, one screen matrix per touch, and no
+    diagnostic snapshots mid-gesture. Measured only in a throttled desktop simulation (6x CPU, Android lightweight
+    mode): raster work down about 4x to 10x, handler time more than halved. See
+    [the verification](TRACING_INPUT_LATENCY_VERIFICATION.md). **Not confirmed on a physical tablet.**
+  - *Right-to-left catalogue:* the letter grid reads Alif top-right, leftwards, with a mirrored pager; DOM order is
+    unchanged. See [the verification](RTL_LETTER_CATALOGUE_VERIFICATION.md). The in-lesson page turn is unchanged.
+  - *Release:* [Taman-Jawi-1.0.7-release.apk](../output/releases/Taman-Jawi-1.0.7-release.apk), version code 8, same
+    signing identity; it does **not** include the right-to-left catalogue (made after the build). See
+    [ANDROID_RELEASE.md](ANDROID_RELEASE.md).
+  - *Known failing browser specs, unrelated to this work (fail identically without it):* `game` (6),
+    `letter-batch-1/2/3` (82) and `book-layout` (1) hold stale expectations after the catalogue/model changes (for
+    example 37 vs 14 ready letters, Jim `4 Siap` vs `7 Siap`, Sin after Sa). They need updating or retiring.
+    Unit tests: 162 pass.
 - **Student entry:** Solo / Latihan santai → Jom mula → Buku Jawi Saya contents / Huruf tersedia. Huruf permulaan retains the
   original 12 pilot models. Jejak Ceria is the preschool default.
 - **Fullscreen tracing, completion voice and music (4 October, verified locally):**

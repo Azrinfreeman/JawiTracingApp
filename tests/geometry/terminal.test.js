@@ -48,13 +48,16 @@ describe('finish readiness and terminal recovery', () => {
     held(checkpoints, .96); expect(checkpoints.snapshot().finish.canFinish).toBe(false);
     const outside = setup(); held(outside, .96); outside.move({ x: 159, y: point(.96).y });
     expect(outside.snapshot().finish.canFinish).toBe(false);
-    expect(outside.end({ x: 159, y: point(.96).y }).outcome).toBeNull();
+    // The finger reached the end first, so drifting a little past it before lifting still finishes.
+    expect(outside.end({ x: 159, y: point(.96).y }).outcome).toBe('playComplete');
     const dot = setup({ dots: [{ x: 300, y: 400, visibleRadius: 19 }] });
     held(dot, .96); expect(dot.end(point(.96))).toMatchObject({ phase: 'awaitingMark', completed: ['body'], outcome: null });
   });
   it('paused and exhausted input cannot report readiness', () => {
     const e = setup(); held(e, .96); e.move({ x: 240, y: 868 });
-    expect(e.snapshot().finish.canFinish).toBe(false);
+    expect(e.snapshot().completed).toEqual(['body']); // Reached the end first, so leaving the route cannot undo it.
+    const early = setup(); held(early, .5); early.move({ x: 240, y: 500 });
+    expect(early.snapshot().finish.canFinish).toBe(false); expect(early.snapshot().completed).toEqual([]);
     const f = fixture(lineReference), limited = createPlayMatcher(f.letter, f.references, { ...profile, maxSamples: 1 });
     limited.start(point(0)); limited.move(point(.01)); limited.move(point(.02));
     expect(limited.snapshot().finish.canFinish).toBe(false);
@@ -64,7 +67,7 @@ describe('finish readiness and terminal recovery', () => {
     for (const fraction of [.95, 1]) {
       const f = fixture(lineReference), e = createPlayMatcher(f.letter, f.references, getProfile('play', pointer));
       held(e, fraction); const measured = e.snapshot().progress.body;
-      e.move({ x: 250, y: 900 }); e.end({ x: 250, y: 900 });
+      e.cancel();
       expect(e.snapshot().finish).toMatchObject({ confirmationAvailable: true, canFinish: false });
       expect(e.start(point(1)).finish).toMatchObject({ confirmationActive: true, canFinish: true });
       expect(e.snapshot().completed).toEqual([]);
@@ -95,8 +98,8 @@ describe('finish readiness and terminal recovery', () => {
   it('confirmation stays rejected after an excursion, excess travel or cancellation and needs a fresh down', () => {
     for (const action of ['excursion', 'travel', 'cancel', 'invalid']) {
       const e = setup(); held(e, 1); e.cancel(); e.start(point(1));
-      if (action === 'excursion') { e.move({ x: 165, y: 900 }); e.move(point(1)); }
-      if (action === 'travel') { e.move({ x: 121, y: 900 }); e.move(point(1)); }
+      if (action === 'excursion') { e.move({ x: 300, y: 900 }); e.move(point(1)); }
+      if (action === 'travel') { e.move({ x: 190, y: 900 }); e.move(point(1)); }
       if (action === 'cancel') e.cancel();
       if (action === 'invalid') e.move({ x: NaN, y: 900 });
       expect(e.end(point(1)).outcome).toBeNull(); expect(e.snapshot().metrics.endpointConfirmations).toBe(0);
@@ -105,7 +108,7 @@ describe('finish readiness and terminal recovery', () => {
   });
 
   it('confirmation respects endpoint/travel boundaries and never creates tracing travel', () => {
-    for (const [travel, succeeds] of [[40, true], [40.01, false]]) {
+    for (const [travel, succeeds] of [[100, true], [100.01, false]]) {
       const e = setup(); held(e, 1); e.cancel(); const before = e.snapshot().metrics.validTravel;
       e.start(point(1)); const result = e.end({ x: 100 + travel, y: 900 });
       expect(result.outcome === 'playComplete').toBe(succeeds); expect(result.metrics.validTravel).toBe(before);
@@ -123,42 +126,29 @@ describe('finish readiness and terminal recovery', () => {
     e.rotateDiagnostics(); e.start(point(1)); expect(e.end(point(1)).outcome).toBe('playComplete');
   });
 
-  it('assists only bounded release-only displacement from an immediately ready contact', () => {
-    const e = setup(); held(e, 1); e.move({ x: 143, y: 900 });
-    expect(e.snapshot().finish.canFinish).toBe(true);
-    const result = e.end({ x: 198, y: 900 });
-    expect(result.outcome).toBe('playComplete'); expect(result.metrics.releaseAssistances).toBe(1);
-    expect(result.completionMethods.body).toBe('releaseAssistance'); expect(result.progress.body).toBe(800);
-    for (const [x, expected] of [[200, true], [200.01, false]]) {
-      const b = setup(); held(b, 1); b.move({ x: 140, y: 900 });
-      expect(b.end({ x, y: 900 }).outcome === 'playComplete').toBe(expected);
+  it('finishes on release wherever the finger is after the end was reached', () => {
+    for (const [x, y] of [[198, 900], [300, 900], [100, 1300], [-400, 900]]) {
+      const e = setup(); held(e, 1); e.move({ x: 143, y: 900 });
+      const result = e.end({ x, y });
+      expect(result.outcome).toBe('playComplete'); expect(result.metrics.releaseAssistances).toBe(1);
+      expect(result.completionMethods.body).toBe('releaseAssistance'); expect(result.progress.body).toBe(800);
     }
-    const near = setup(); held(near, 1); near.move({ x: 141, y: 900 });
-    expect(near.end({ x: 201, y: 900 }).outcome).toBeNull(); // Inside travel bound, outside endpoint slack.
   });
 
-  it('release assistance cannot rescue reversal, prior pause, incomplete work or a failed confirmation', () => {
-    const reverse = setup(); held(reverse, 1); expect(reverse.end(point(.96)).outcome).toBeNull();
-    const paused = setup(); held(paused, 1); paused.move({ x: 182, y: 847 });
-    expect(paused.end({ x: 182, y: 847 }).outcome).toBeNull();
+  it('release cannot rescue early drift, incomplete work or a failed confirmation', () => {
+    const early = setup(); held(early, .5); early.move({ x: 182, y: 500 });
+    expect(early.end({ x: 182, y: 500 }).outcome).toBeNull();
     const incomplete = setup(); held(incomplete, .94);
     expect(incomplete.end({ x: 140, y: point(.94).y }).outcome).toBeNull();
     const tap = setup(); held(tap, 1); tap.cancel(); tap.start({ x: 143, y: 879 });
-    expect(tap.end({ x: 182, y: 847 }).outcome).toBeNull();
+    expect(tap.end({ x: 230, y: 847 }).outcome).toBeNull();
   });
 
-  it.each(['pen', 'mouse'])('bounds final release assistance for %s independently of touch', pointer => {
-    const make = () => { const f = fixture(lineReference); return createPlayMatcher(f.letter, f.references, getProfile('play', pointer)); };
-    for (const [offset, succeeds] of [[66, true], [66.01, false]]) {
-      const e = make(); held(e, 1); e.move({ x: 136, y: 900 });
-      expect(e.snapshot().finish.canFinish).toBe(true);
-      const result = e.end({ x: 100 + offset, y: 900 });
-      expect(result.outcome === 'playComplete').toBe(succeeds);
-      expect(result.metrics.releaseAssistances).toBe(succeeds ? 1 : 0);
-      expect(result.progress.body).toBe(800);
-    }
-    const travel = make(); held(travel, 1); travel.move({ x: 135, y: 900 });
-    expect(travel.end({ x: 166, y: 900 }).outcome).toBeNull(); // Inside endpoint slack, beyond 30-unit release travel.
+  it.each(['pen', 'mouse'])('finishes on release anywhere after the end for %s', pointer => {
+    const f = fixture(lineReference), e = createPlayMatcher(f.letter, f.references, getProfile('play', pointer));
+    held(e, 1); e.move({ x: 136, y: 900 });
+    const result = e.end({ x: 400, y: 900 });
+    expect(result.outcome).toBe('playComplete'); expect(result.metrics.releaseAssistances).toBe(1); expect(result.progress.body).toBe(800);
   });
 
   it('endpoint confirmation advances only the stroke and still requires the separate dot', () => {
@@ -168,5 +158,38 @@ describe('finish readiness and terminal recovery', () => {
     expect(body.pending).toEqual(['dot-0']); expect(body.outcome).toBeNull();
     e.start({ x: 300, y: 400 }); expect(e.end({ x: 300, y: 400 }).outcome).toBe('playComplete');
     expect(e.snapshot().metrics.dotCount).toBe(1); expect(e.snapshot().metrics.endpointConfirmations).toBe(1);
+  });
+
+  describe('leaving the route after the end', () => {
+    const past = d => ({ x: 100 + d, y: 900 });
+    const overshoot = (e, d) => { held(e, 1); for (const k of [20, 40, 60, 80, d]) e.move(past(k)); return past(d); };
+    it('finishes as soon as the finger drifts off the route, without waiting for a lift', () => {
+      const e = setup(); overshoot(e, 90);
+      expect(e.snapshot().phase).toBe('complete'); expect(e.snapshot().completionMethods.body).toBe('releaseAssistance');
+      expect(e.end(past(90)).inputDecision.action).toBe('none'); expect(e.snapshot().completed).toEqual(['body']);
+    });
+    it('finishes on a fast flick far away and on a lift far away', () => {
+      const flick = setup(); held(flick, 1); flick.move({ x: 400, y: 900 });
+      expect(flick.snapshot().phase).toBe('complete');
+      const far = setup(); overshoot(far, 400); expect(far.snapshot().phase).toBe('complete');
+    });
+    it('does not finish below coverage even if the finger drifts away', () => {
+      const e = setup(); held(e, .5); for (const k of [20, 40, 60, 80]) e.move({ x: 100 + k, y: 500 });
+      expect(e.end({ x: 180, y: 500 }).inputDecision.action).toBe('partial');
+    });
+    it('a dragged endpoint touch commits after a cancelled gesture', () => {
+      const e = setup(); held(e, .96); e.cancel(); e.start(point(1));
+      for (const k of [10, 20, 30, 45, 55]) e.move({ x: 100 + k, y: 900 });
+      expect(e.end({ x: 155, y: 900 }).outcome).toBe('playComplete');
+    });
+    it('an endpoint touch dragged far away does not commit', () => {
+      const e = setup(); held(e, .96); e.cancel(); e.start(point(1));
+      for (const k of [30, 90, 150, 220]) e.move({ x: 100 + k, y: 900 });
+      expect(e.end({ x: 320, y: 900 }).inputDecision.action).not.toBe('commit');
+    });
+    it('a cancelled gesture never finishes by itself', () => {
+      const e = setup(); held(e, 1); e.cancel();
+      expect(e.snapshot().completed).toEqual([]);
+    });
   });
 });

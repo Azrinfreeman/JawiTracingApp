@@ -167,7 +167,8 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
         previousControl = key;
         setState({ ...engine.snapshot(), ...(inkLimit ? { inkLimit: true, feedback: next.feedback } : {}) });
       }
-      if (callbacks.current.onDiagnostic && (final || next.phase === 'complete' || performance.now() - lastDiagnostic >= 250)) diagnostic({ ...engine.snapshot(), ...(inkLimit ? { inkLimit: true, feedback: next.feedback } : {}) });
+      // Periodic snapshots would copy engine state mid-gesture; release, completion and cancel still emit.
+      if (callbacks.current.onDiagnostic && (final || next.phase === 'complete' || (!rawGesture && performance.now() - lastDiagnostic >= 250))) diagnostic({ ...engine.snapshot(), ...(inkLimit ? { inkLimit: true, feedback: next.feedback } : {}) });
       if (next.phase === 'complete' && !reported && !inkLimit) {
         reported = true; callbacks.current.onComplete?.({ ...engine.snapshot(), pointerType, inputSources: [...inputSources], timing });
       }

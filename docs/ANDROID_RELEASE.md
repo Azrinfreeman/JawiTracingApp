@@ -1,6 +1,40 @@
 # Taman Jawi Android release
 
-## Latest release — 1.0.6
+## Latest release — 1.0.7
+
+Built and verified on **5 October 2026**, Asia/Kuala_Lumpur, at the user's request.
+
+| Item | Value |
+| --- | --- |
+| File | [Taman-Jawi-1.0.7-release.apk](../output/releases/Taman-Jawi-1.0.7-release.apk) |
+| Version | 1.0.7, version code 8 |
+| Application ID | `com.hananaacademy.tamanjawi` |
+| Size | 7,017,389 bytes, approximately 7.0 MB |
+| Android compatibility | Android 8.0+; minimum API 26, target API 36 |
+| Signing | Preserved RSA 3072 release identity; verified APK v2 signature |
+| Certificate SHA-256 | `864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365` (same as 1.0.0–1.0.6) |
+| APK SHA-256 | `3a84b28893f06d4271197ee31105a94e9923031a96906de9a8d97d2bba9c0ec3` |
+| Checksum file | [SHA-256 sidecar](../output/releases/Taman-Jawi-1.0.7-release.apk.sha256) |
+
+Contents: the tracing fixes since 1.0.6, with no content, geometry or audio change.
+- A stroke that has reached its end now counts as done even if the pointer then leaves the route (fast flick, drift or
+  lift far away); a cancelled touch never counts. See [the stall verification](STROKE_END_STALL_VERIFICATION.md).
+- Lower tracing latency on weak tablets: the accepted fill is drawn in short pieces, one screen matrix per touch, and no
+  mid-gesture diagnostic snapshots. See [the latency verification](TRACING_INPUT_LATENCY_VERIFICATION.md); the figures
+  there are from a throttled desktop simulation, not a tablet.
+
+The checked web build passed and 92 assets were synchronized. The first Gradle run hit the recorded Windows
+cache-rename failure ("Could not move temporary workspace"); renaming was denied this time, so the completed temporary
+`groovy-dsl` cache directory was finalized by copying it to the expected name, and the `-Offline -SkipWebBuild` retry
+assembled, linted and signed the release. `verify-android-release.ps1` confirmed signature, alignment, package identity,
+version 1.0.7/code 8, API levels and checksum, and that all 92 packaged assets match the web build.
+
+Evidence: [APK inspection](../output/verification/android-release-1.0.7/apk-verification.json) and the build logs in
+the same folder. No Android device or emulator is connected: installation, native WebView drawing and the tracing
+changes on a physical tablet remain **unverified on a device**. Several browser specs (`game`, `letter-batch-1/2/3`) fail
+with and without these changes because their expectations are stale; they were not changed.
+
+## Historical release — 1.0.6
 
 Built and verified on **4 October 2026**, Asia/Kuala_Lumpur, at the user's request, after the owner
 approved all 37 models.

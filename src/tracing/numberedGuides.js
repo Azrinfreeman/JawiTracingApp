@@ -69,7 +69,7 @@ export function placeNumberedGuides(part, letter, references, scale, viewport) {
 export function guideInstruction(part, finish, phase) {
   const [start, middle] = part.points, stop = part.points.at(-1);
   if (part.kind === 'stroke' && (finish?.nearEnd || finish?.confirmationAvailable)) {
-    if (finish.canFinish) return part.last ? 'Angkat jari untuk siap.' : 'Angkat jari untuk bahagian seterusnya.';
+    if (finish.liftReady ?? finish.canFinish) return part.last ? 'Angkat jari untuk siap.' : 'Angkat jari untuk bahagian seterusnya.';
     if (finish.confirmationAvailable && phase !== 'tracing') return phase === 'paused'
       ? `Angkat jari, kemudian sentuh titik ${stop.number}.`
       : `Sentuh titik ${stop.number}, kemudian angkat jari.`;

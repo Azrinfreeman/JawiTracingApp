@@ -26,11 +26,14 @@ export function createPlayMatcher(letter, references, profile, { compact = false
     const checkpointsSatisfied = (strokes.get(id).checkpoints || [.25, .5, .75, .95]).every(f => frontier >= f * ref.length - .01);
     const coverageSatisfied = frontier >= profile.coverage * ref.length;
     const confirmationAvailable = pending().includes(id) && acceptedTravel[id] > 0 && coverageSatisfied && checkpointsSatisfied && !exhausted;
+    const reach = profile.endRadius + (gesture?.confirmation ? profile.finishReleaseSlack : 0);
+    const canFinish = Boolean(gesture?.id === id && !gesture.paused && confirmationAvailable && (gesture.confirmation || gesture.validTravel > 0) &&
+      finitePoint(gesture.raw) && distance(gesture.raw, pointAt(ref, ref.length)) <= reach);
+    // A finger that reached the end and then drifted past it can still lift to finish.
+    const liftReady = canFinish || Boolean(gesture?.id === id && gesture.reachedEnd && gesture.paused && confirmationAvailable);
     return { partId: id, frontier, remainingArc, checkpointsSatisfied, coverageSatisfied,
       confirmationAvailable, confirmationActive: Boolean(gesture?.confirmation),
-      nearEnd: remainingArc <= profile.startRadius,
-      canFinish: Boolean(gesture?.id === id && !gesture.paused && confirmationAvailable && (gesture.confirmation || gesture.validTravel > 0) &&
-        finitePoint(gesture.raw) && distance(gesture.raw, pointAt(ref, ref.length)) <= profile.endRadius) };
+      nearEnd: remainingArc <= profile.startRadius, canFinish, liftReady };
   }
   const waiting = () => {
     phase = dots.has(pending()[0]) ? 'awaitingMark' : 'awaitingStart';
@@ -40,7 +43,7 @@ export function createPlayMatcher(letter, references, profile, { compact = false
   function snapshot() {
     const covered = Object.entries(progress).reduce((n, [id, s]) => n + s, 0);
     const finish = finishStatus();
-    const cue = phase === 'tracing' && finish?.nearEnd ? finish.canFinish ? 'Angkat jari untuk siap.' : 'Ikut hingga hujung.' : feedback;
+    const cue = (phase === 'tracing' || finish?.liftReady) && finish?.nearEnd ? finish.liftReady ? 'Angkat jari untuk siap.' : 'Ikut hingga hujung.' : feedback;
     return { phase, feedback: cue, finish, pending: pending(), completed: [...completed],
       active: active?.id || null, gestureActive: Boolean(active), blocked: false,
       progress: { ...progress }, profile: { ...profile }, exhausted,
@@ -59,8 +62,21 @@ export function createPlayMatcher(letter, references, profile, { compact = false
     inputSource: gesture?.inputSource ?? null, confirmation: Boolean(gesture?.confirmation),
     acceptedRawPoints: [], mark: null, ...extra,
   } });
+  // Once the finger has reached the end with coverage and checkpoints met, the stroke is done.
+  // Where the finger goes afterwards (a flick, a slow drift, off the board) cannot undo it.
+  const driftReasons = new Set(['corridor', 'rawGap', 'backward', 'advanceGap']);
+  function finishAfterEnd(gesture) {
+    if (!gesture || gesture.kind !== 'stroke' || gesture.confirmation || !gesture.reachedEnd || exhausted) return false;
+    return Boolean(finishStatus(gesture)?.confirmationAvailable);
+  }
   function pause(reason, travel = 0, error = 0) {
     if (!active) return response();
+    if (driftReasons.has(reason) && finishAfterEnd(active)) {
+      const current = active, ref = references[current.id];
+      active = null; completionMethods[current.id] = 'releaseAssistance';
+      metrics.releaseAssistances++; metrics.terminalDisplayFillUnits += ref.length - progress[current.id];
+      commit(current.id); return response('commit', current, { completionMethod: 'releaseAssistance' });
+    }
     if (!active.paused) { metrics.pauseEpisodes++; metrics.invalidEvents++; }
     active.paused = true; active.last = null; active.reason = reason;
     metrics.invalidTravel += travel; metrics.maxError = Math.max(metrics.maxError, error);
@@ -135,7 +151,7 @@ export function createPlayMatcher(letter, references, profile, { compact = false
     if (active.confirmation) {
       if (active.paused) { metrics.invalidTravel += travel; return response('pause'); }
       const ref = references[active.id];
-      if (distance(p, pointAt(ref, ref.length)) > profile.endRadius || active.travel > profile.dotTravel)
+      if (distance(p, pointAt(ref, ref.length)) > profile.endRadius + profile.finishOvershoot || active.travel > profile.endRadius * 2)
         return pause('confirmationDrag', travel);
       return response(); // Confirmation never adds measured tracing travel or coverage.
     }
@@ -225,6 +241,7 @@ export function createPlayMatcher(letter, references, profile, { compact = false
     acceptedTravel[active.id] += travel;
     metrics.validTravel += travel; metrics.errorIntegral += errorIntegral;
     metrics.maxError = Math.max(metrics.maxError, maxError);
+    if (!active.reachedEnd && temporary >= profile.coverage * ref.length && finishStatus(active).canFinish) active.reachedEnd = true;
     return response('advance', active, { frontier: temporary });
   }
   function commit(id) {
@@ -239,9 +256,12 @@ export function createPlayMatcher(letter, references, profile, { compact = false
     const before = finishStatus(), beforeRaw = active.raw;
     const mayAssist = active.kind === 'stroke' && !active.confirmation && before?.canFinish;
     const previousSource = Math.max(progress[active.id] || 0, active.projectionS || 0);
-    move(p); const current = active, ready = finishStatus(current)?.canFinish;
+    const moved = move(p);
+    if (moved.inputDecision.action === 'commit') return moved; // The finish was reached and the finger then left the route.
+    const current = active, ready = finishStatus(current)?.canFinish;
     let assisted = false;
-    if (!ready && mayAssist && !exhausted && (!current.paused || current.reason === 'corridor')) {
+    if (!ready && finishAfterEnd(current)) assisted = true;
+    else if (!ready && mayAssist && !exhausted && (!current.paused || current.reason === 'corridor')) {
       const ref = references[current.id];
       // Search behind the terminal contact far enough to detect a real reversal.
       const projection = projectLocal(p, ref, Math.max(0, previousSource - profile.maxRawGap), ref.length);
@@ -284,7 +304,7 @@ export function createPlayMatcher(letter, references, profile, { compact = false
   }
   function view() {
     const finish = finishStatus();
-    return { phase, feedback: phase === 'tracing' && finish?.nearEnd ? finish.canFinish ? 'Angkat jari untuk siap.' : 'Ikut hingga hujung.' : feedback,
+    return { phase, feedback: (phase === 'tracing' || finish?.liftReady) && finish?.nearEnd ? finish.liftReady ? 'Angkat jari untuk siap.' : 'Ikut hingga hujung.' : feedback,
       finish, pending: pending(), completed, progress, profile, exhausted, blocked: false,
       metrics: { dotCount: completed.filter(id => dots.has(id)).length } };
   }

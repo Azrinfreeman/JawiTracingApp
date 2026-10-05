@@ -55,7 +55,7 @@ body { position: fixed; inset: 0; }
 .segmented button { min-height: 48px; padding: 6px 10px; }
 .letter-grid-host { flex: 1; min-height: 0; min-width: 0; }
 .letter-grid { height: 100%; display: grid; grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr)); grid-template-rows: repeat(var(--grid-rows), minmax(0, 1fr)); align-content: start; gap: 12px; padding: 0 0 6px; }
-.letter-card { min-height: 0; padding: 6px 10px; display: flex; flex-direction: column; justify-content: center; border-radius: 22px; }
+.letter-card { direction: ltr; min-height: 0; padding: 6px 10px; display: flex; flex-direction: column; justify-content: center; border-radius: 22px; }
 .letter-card .card-glyph { flex: 1; min-height: 32px; height: auto; max-height: 100px; margin: 3px 0; font-size: clamp(30px, 3.3vh, 44px); line-height: 1.5; display: grid; place-items: center; }
 .letter-card .card-top { height: 24px; }
 .letter-card .station-number { height: 24px; min-width: 24px; font-size: 11px; }
@@ -232,6 +232,7 @@ body { position: fixed; inset: 0; }
   .garden-heading p { font-size: 12px; }
   .screen-pager { gap: 8px; }
   .screen-pager .button { padding: 6px 10px; font-size: 13px; }
+  .garden-page .screen-pager .button { white-space: nowrap; }
   .lesson-page.book-lesson { padding: 2px 3px 6px; }
   .book-cover { padding: 3px; }
   .book-inner { padding: 2px; }

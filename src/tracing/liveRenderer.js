@@ -2,6 +2,15 @@ import { playFillWidth } from '../content/displayWidth.js';
 import { pointAt } from './geometry.js';
 
 const NS = 'http://www.w3.org/2000/svg';
+// Accepted progress is drawn as short fixed pieces. A frame then repaints one small
+// region instead of re-dashing and re-rasterising the whole wide stroke.
+const PIECE = 48;
+const polyline = (ref, from, to) => {
+  const points = [pointAt(ref, from)];
+  for (const v of ref.vertices) if (v.s > from && v.s < to) points.push(v);
+  points.push(pointAt(ref, to));
+  return points.map((p, i) => `${i ? 'L' : 'M'}${+p.x.toFixed(2)} ${+p.y.toFixed(2)}`).join('');
+};
 export function controlKey(view, references) {
   const id = view.pending[0], ref = references[id], fraction = ref ? (view.progress[id] || 0) / ref.length : 0;
   // All numbered-guide transitions, including shared start/end badge visibility.
@@ -74,13 +83,26 @@ export function createLiveRenderer(groups, letter, references, isPlay, isCopy, l
         if (shown) { const p = pointAt(ref, arc); attrs(node, { cx: p.x, cy: p.y }); }
       });
       if (isPlay) for (const stroke of letter.geometry.strokes) {
-        const length = references[stroke.id].length, measured = view.progress[stroke.id] || 0;
+        const ref = references[stroke.id], length = ref.length, measured = view.progress[stroke.id] || 0;
         const filled = view.completed.includes(stroke.id) ? length : measured;
-        let node = fills.get(stroke.id);
-        if (filled > 0 && !node) {
-          node = make(groups.fill, 'path', { class: 'play-fill', d: stroke.path, 'stroke-width': playFillWidth(stroke), 'stroke-dasharray': `${length} ${length}` }); fills.set(stroke.id, node);
+        let fill = fills.get(stroke.id);
+        if (filled > 0 && !fill) {
+          const group = make(groups.fill, 'g', { class: 'play-fill', 'stroke-width': playFillWidth(stroke) });
+          const count = Math.max(1, Math.ceil(length / PIECE));
+          const pieces = Array.from({ length: count }, (_, i) => make(group, 'path', { display: 'none' }));
+          fill = { group, pieces, shown: 0 }; fills.set(stroke.id, fill);
         }
-        if (node) attrs(node, { 'stroke-dashoffset': length - filled, 'data-measured-frontier': measured, 'data-display-frontier': filled });
+        if (!fill) continue;
+        attrs(fill.group, { 'data-measured-frontier': measured, 'data-display-frontier': filled });
+        const count = fill.pieces.length, last = Math.min(count - 1, Math.floor(filled / PIECE));
+        // Only pieces between the previous and current frontier can have changed.
+        for (let i = Math.min(fill.shown, last); i <= Math.max(fill.shown, last); i++) {
+          const from = i * PIECE, to = Math.min(length, from + PIECE), node = fill.pieces[i];
+          if (filled >= to) attrs(node, { display: 'inline', d: polyline(ref, from, to) });
+          else if (filled - from > .5) attrs(node, { display: 'inline', d: polyline(ref, from, filled) });
+          else attrs(node, { display: 'none' });
+        }
+        fill.shown = last;
       }
     },
     clear() { Object.values(groups).forEach(group => group.replaceChildren()); },

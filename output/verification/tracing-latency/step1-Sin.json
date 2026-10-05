@@ -1,0 +1,34 @@
+{
+  "letter": "Sin",
+  "tag": "step1",
+  "cpuRate": 6,
+  "frames": 157,
+  "frameMs": {
+    "p50": 16.7,
+    "p95": 16.8,
+    "max": 50
+  },
+  "handlerMs": {
+    "p50": 2,
+    "p95": 3.4,
+    "max": 11
+  },
+  "longTasks": {
+    "count": 2,
+    "totalMs": 708
+  },
+  "traceMs": {
+    "Paint": 221.4,
+    "PaintImage": 0,
+    "Layerize": 133.7,
+    "UpdateLayer": 7.5,
+    "Layout": 65.8,
+    "UpdateLayoutTree": 167.2,
+    "RasterTask": 196.5,
+    "ImageDecodeTask": 0,
+    "FunctionCall": 911.3,
+    "EventDispatch": 335.7,
+    "RunTask": 4713.1,
+    "Commit": 77.2
+  }
+}
