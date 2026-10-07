@@ -1,0 +1,1163 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/fullscreen-tracing-audio.spec.js",
+      "tests/browser/fa-pa-directions.spec.js",
+      "tests/browser/four-letter-outlines.spec.js",
+      "--grep",
+      "menu replaces|full letter is announced|music is one|Solo: readiness|Duo: the first|Duo menu|practice at (320x600|768x1024|1920x1080)|play (320|768)|four outlines fit and badges stay beside the letter (320x600|1920x1080)",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=line,json",
+      "--output=output/verification/inline-letter-audio/test-regression"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/inline-letter-audio/test-regression",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/inline-letter-audio/test-regression",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/inline-letter-audio/test-regression",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fa-pa-directions.spec.js",
+      "file": "fa-pa-directions.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "fa play 320: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9848,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:18.843Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-ade51733aec1fa473f0e",
+          "file": "fa-pa-directions.spec.js",
+          "line": 35,
+          "column": 2
+        },
+        {
+          "title": "fa play 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:28.820Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-b07295e85fbc22183b57",
+          "file": "fa-pa-directions.spec.js",
+          "line": 35,
+          "column": 2
+        },
+        {
+          "title": "pa play 320: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:37.884Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-ec017d3d6f68b3d13ce7",
+          "file": "fa-pa-directions.spec.js",
+          "line": 35,
+          "column": 2
+        },
+        {
+          "title": "pa play 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9260,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:47.365Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-56464262a84d634674aa",
+          "file": "fa-pa-directions.spec.js",
+          "line": 35,
+          "column": 2
+        },
+        {
+          "title": "fa play 320: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10592,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:57.890Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-28a71da3de3284df4085",
+          "file": "fa-pa-directions.spec.js",
+          "line": 35,
+          "column": 2
+        },
+        {
+          "title": "fa play 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:08.634Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-15f33f62ebd0be1ff329",
+          "file": "fa-pa-directions.spec.js",
+          "line": 35,
+          "column": 2
+        },
+        {
+          "title": "pa play 320: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9451,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:25.501Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-829e0181714b9094c0c8",
+          "file": "fa-pa-directions.spec.js",
+          "line": 35,
+          "column": 2
+        },
+        {
+          "title": "pa play 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15121,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:34.962Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-61f4a0d2c2bc573b8a54",
+          "file": "fa-pa-directions.spec.js",
+          "line": 35,
+          "column": 2
+        }
+      ]
+    },
+    {
+      "title": "four-letter-outlines.spec.js",
+      "file": "four-letter-outlines.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "four outlines fit and badges stay beside the letter 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4018,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:18.843Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-173c2e12c185b9745a4d",
+          "file": "four-letter-outlines.spec.js",
+          "line": 42,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4284,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:22.990Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-42f76810e9f1c0b3cd0b",
+          "file": "four-letter-outlines.spec.js",
+          "line": 42,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9836,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:18.017Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-b5727af8c4b0584405b0",
+          "file": "four-letter-outlines.spec.js",
+          "line": 42,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 38273,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:27.968Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-936cd6122f06c3df0075",
+          "file": "four-letter-outlines.spec.js",
+          "line": 42,
+          "column": 74
+        }
+      ]
+    },
+    {
+      "title": "fullscreen-tracing-audio.spec.js",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "practice at 320x600 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 957,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:27.311Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-9cf3975159a97fecfdba",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 28,
+          "column": 3
+        },
+        {
+          "title": "practice at 768x1024 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:28.280Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-e16d25e8ef9a6aeeb8a0",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 28,
+          "column": 3
+        },
+        {
+          "title": "practice at 1920x1080 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:29.240Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-1d4fe638935e85eafb15",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 28,
+          "column": 3
+        },
+        {
+          "title": "menu replaces the toolbar: every action is reachable and closing keeps accepted progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8876,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:30.475Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-26a03f15c7ac725c2249",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "the full letter is announced once, after the last required dot, with its approved recording",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6730,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:39.363Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-8e829c7d8142689329ba",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "music is one quiet local loop that ducks under the voice, obeys mute and survives leaving only by stopping",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7283,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:46.109Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-b224df5b58fe1ff46e00",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 153,
+          "column": 1
+        },
+        {
+          "title": "Solo: readiness is an overlay, the letter is announced once at completion and replay is on the result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3942,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:53.405Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-480055723b1231ef6805",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 235,
+          "column": 1
+        },
+        {
+          "title": "Duo: the first accepted letter starts one shared announcement; the second finish neither restarts nor cuts it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11540,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:18:57.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-5ced85e5f495c7ecbdb9",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 252,
+          "column": 1
+        },
+        {
+          "title": "Duo menu pauses both lanes, retries one lane, and dot help appears only in the chosen lane after the shared countdown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7378,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:08.918Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-43a7fe5b0fa2f325098a",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 271,
+          "column": 1
+        },
+        {
+          "title": "practice at 320x600 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1934,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:50.117Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-819a13e846ee195984cf",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 28,
+          "column": 3
+        },
+        {
+          "title": "practice at 768x1024 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4380,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:52.062Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-a5ba06e04c03d6da1ca4",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 28,
+          "column": 3
+        },
+        {
+          "title": "practice at 1920x1080 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10376,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:19:56.451Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-c73eef5457096297b9e3",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 28,
+          "column": 3
+        },
+        {
+          "title": "menu replaces the toolbar: every action is reachable and closing keeps accepted progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10887,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:20:06.837Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-29a61125e8edc5c9c395",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 54,
+          "column": 1
+        },
+        {
+          "title": "the full letter is announced once, after the last required dot, with its approved recording",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8989,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:20:17.734Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-44cc2904505116d6bcb1",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 81,
+          "column": 1
+        },
+        {
+          "title": "music is one quiet local loop that ducks under the voice, obeys mute and survives leaving only by stopping",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10453,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:20:26.733Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-fad5296f84a62b1c53f6",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 153,
+          "column": 1
+        },
+        {
+          "title": "Solo: readiness is an overlay, the letter is announced once at completion and replay is on the result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6766,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:20:37.196Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-2d1d5b7461c6858b0d20",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 235,
+          "column": 1
+        },
+        {
+          "title": "Duo: the first accepted letter starts one shared announcement; the second finish neither restarts nor cuts it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10829,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:20:43.973Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-d6699722fcfef1c0dc80",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 252,
+          "column": 1
+        },
+        {
+          "title": "Duo menu pauses both lanes, retries one lane, and dot help appears only in the chosen lane after the shared countdown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15646,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:20:54.813Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-934fca2f56074b16dd5f",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 271,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T03:18:18.182Z",
+    "duration": 172715.427,
+    "expected": 30,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

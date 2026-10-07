@@ -2,6 +2,7 @@ import { Icon } from '../components/Icons.jsx';
 import { AudioControls } from '../components/AudioControls.jsx';
 import { PlayFeedback } from '../components/PlayFeedback.jsx';
 import { LetterModelGlyph } from '../components/LetterModelGlyph.jsx';
+import {outlineAppearance} from '../tracing/outlineAppearance.js';
 export function ResultScreen({ letter, result, audio, preview, onNext, onAgain, onCopy, onGarden, embedded = false, compact = false, actionsOnly = false, summaryOnly = false, choicesDisabled = false }) {
   const copied = result.outcome === 'copySaved';
   const playful = result.outcome === 'playComplete';
@@ -14,7 +15,7 @@ export function ResultScreen({ letter, result, audio, preview, onNext, onAgain, 
   </section>;
   return <main className={`result-page page-enter ${playful ? 'play-result' : ''}`}><div className="result-card">
     <div className="result-sparkles" aria-hidden="true">✦<span>✿</span>✧</div>
-    <div className="result-visual">{playful && <PlayFeedback complete/>}<div className="result-glyph jawi" dir="rtl" lang="ms-Arab">{playful ? <svg viewBox="0 0 1000 1000" className="play-completed-letter" role="img" aria-label={`Huruf ${letter.labelMs} berwarna dengan bantuan`}>{letter.geometry.strokes.map(s => <path key={s.id} d={s.path} strokeWidth="60"/>)}{letter.geometry.dotTargets.map(d => <circle key={d.id} cx={d.x} cy={d.y} r={d.visibleRadius}/>)}</svg> : <LetterModelGlyph letter={letter}/>}<span className="result-check"><Icon name={copied ? 'pen' : 'check'} size={24}/></span></div></div>
+    <div className="result-visual">{playful && <PlayFeedback complete/>}<div className="result-glyph jawi" dir="rtl" lang="ms-Arab">{playful && outlineAppearance(letter) ? <LetterModelGlyph letter={letter} model className="outline-result"/> : playful ? <svg viewBox="0 0 1000 1000" className="play-completed-letter" role="img" aria-label={`Huruf ${letter.labelMs} berwarna dengan bantuan`}>{letter.geometry.strokes.map(s => <path key={s.id} d={s.path} strokeWidth="60"/>)}{letter.geometry.dotTargets.map(d => <circle key={d.id} cx={d.x} cy={d.y} r={d.visibleRadius}/>)}</svg> : <LetterModelGlyph letter={letter}/>}<span className="result-check"><Icon name={copied ? 'pen' : 'check'} size={24}/></span></div></div>
     <span className="eyebrow">{playful ? 'DENGAN BANTUAN' : copied ? 'HASIL TULISAN DISIMPAN' : result.outcome === 'precisionComplete' ? 'SIAP DENGAN PANDUAN RINGAN' : 'SIAP DENGAN PANDUAN'}</span>
     <h1>{playful ? `Kamu sudah ikut huruf ${letter.labelMs}!` : copied ? 'Terima kasih kerana mencuba!' : 'Bagus, kamu sudah cuba!'}</h1>
     <p>{playful ? `Semua bahagian huruf ${letter.labelMs}${letter.geometry.dotTargets.length ? ' dan titiknya' : ''} sudah kamu ikut bersama panduan.` : copied ? 'Guru boleh melihat tulisan kamu di ruang guru.' : `Semua bahagian huruf ${letter.labelMs} sudah dijejak${letter.geometry.dotTargets.length ? ', dan titik yang diperlukan sudah disentuh' : ''}.`}</p>

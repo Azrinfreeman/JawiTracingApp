@@ -1,0 +1,197 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/ain-family-outlines.spec.js",
+      "--grep",
+      "outlines match",
+      "--project=webkit",
+      "--workers=1",
+      "--reporter=line,json",
+      "--output=output/verification/ain-family-outlines/test-font"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ain-family-outlines/test-font",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ain-family-outlines/test-font",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ain-family-outlines/test-font",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ain-family-outlines.spec.js",
+      "file": "ain-family-outlines.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "outlines match the actual catalogue font using one uniform transform",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4976,
+                  "error": {
+                    "message": "Error: ghain\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0.985\u001b[39m\nReceived:   \u001b[31m0.06683824085988949\u001b[39m",
+                    "stack": "Error: ghain\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0.985\u001b[39m\nReceived:   \u001b[31m0.06683824085988949\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-outlines.spec.js:93:56",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-outlines.spec.js",
+                      "column": 56,
+                      "line": 93
+                    },
+                    "snippet": "  91 |   await page.screenshot({path:`${root}/${browserName}-catalogue-before-corrected.png`,animations:'disabled'});\n  92 |   console.log('Uniform catalogue silhouette IoU',JSON.stringify(result));\n> 93 |   for(const score of result)expect(score.iou,score.id).toBeGreaterThan(.985);\n     |                                                        ^\n  94 | });\n  95 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-outlines.spec.js",
+                        "column": 56,
+                        "line": 93
+                      },
+                      "message": "Error: ghain\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0.985\u001b[39m\nReceived:   \u001b[31m0.06683824085988949\u001b[39m\n\n  91 |   await page.screenshot({path:`${root}/${browserName}-catalogue-before-corrected.png`,animations:'disabled'});\n  92 |   console.log('Uniform catalogue silhouette IoU',JSON.stringify(result));\n> 93 |   for(const score of result)expect(score.iou,score.id).toBeGreaterThan(.985);\n     |                                                        ^\n  94 | });\n  95 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-outlines.spec.js:93:56"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "Uniform catalogue silhouette IoU [{\"id\":\"ain\",\"iou\":0.9918632855567806},{\"id\":\"ghain\",\"iou\":0.06683824085988949},{\"id\":\"nga\",\"iou\":0.057030432833590675}]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T04:01:39.141Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-font\\ain-family-outlines-outlin-c5f25-using-one-uniform-transform-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-font\\ain-family-outlines-outlin-c5f25-using-one-uniform-transform-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-outlines.spec.js",
+                    "column": 56,
+                    "line": 93
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "18aa2bed06dad2f67afa-f3cdd15cf5633998502c",
+          "file": "ain-family-outlines.spec.js",
+          "line": 67,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T04:01:38.352Z",
+    "duration": 6288.117,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

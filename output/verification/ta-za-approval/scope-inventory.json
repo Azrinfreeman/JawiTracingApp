@@ -1,0 +1,17 @@
+{
+  "ainFamilyReviewCandidates": [],
+  "faPaReviewCandidates": [],
+  "fourLetterReviewCandidates": [],
+  "sinSyinTailReviewCandidates": [],
+  "taZaStemReviewCandidates": [
+    {
+      "id": "tho",
+      "revision": 6
+    },
+    {
+      "id": "za",
+      "revision": 6
+    }
+  ],
+  "videoReviewCandidates": []
+}

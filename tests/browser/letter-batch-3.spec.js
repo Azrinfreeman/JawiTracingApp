@@ -3,7 +3,7 @@ import letters from '../../src/content/letters.json' with { type: 'json' };
 import { dismissSplash } from './helpers/navigation.js';
 import { boardModels, draw, movePoints, openTeacher, menuAction, showDotHelp } from './helpers/tracing.js';
 
-const ids = ['ta-marbuta', 'tho', 'za', 'ain', 'ghain', 'nga', 'fa', 'pa', 'qaf', 'ga', 'va', 'ha', 'hamzah', 'ye', 'nya'];
+const ids = ['ta-marbuta', 'tho', 'za', 'ain', 'ghain', 'nga', 'fa', 'pa', 'qaf', 'ga', 'va', 'ha', 'hamzah', 'nya'];
 const batch = letters.filter(letter => ids.includes(letter.id));
 const lastRecord = page => page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));
 const attemptCount = page => page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.progress.v1') || '{"attempts":[]}').attempts.length);
@@ -17,7 +17,7 @@ async function openBatchLesson(page, letter, mode = 'play', adultPreview = mode 
     await page.getByRole('button', { name: 'Model tersedia', exact: true }).click();
   } else await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
   await page.getByRole('button', { name: letter.labelMs, exact: true }).click();
-  if (adultPreview) await expect(page.locator('.preview-banner')).toContainText('37 model huruf');
+  if (adultPreview) await expect(page.locator('.preview-banner')).toContainText('36 model huruf');
   else await expect(page.locator('.preview-banner')).toHaveCount(0);
   await expect(page.locator('.lesson-pilot')).not.toContainText('Draf');
   await expect(page.locator('.start-dot')).toBeVisible();
@@ -47,26 +47,26 @@ for (const mode of ['play', 'guided', 'precision']) for (const letter of batch) 
   });
 }
 
-test('all 37 models are student-ready and teacher review has no authored drafts', async ({ page }) => {
+test('all 36 models are student-ready and teacher review has no authored drafts', async ({ page }) => {
   await page.goto('/'); await dismissSplash(page);
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
   await page.getByRole('button', { name: 'Semua huruf', exact: true }).click();
-  await expect(page.locator('.letter-card')).toHaveCount(37);
+  await expect(page.locator('.letter-card')).toHaveCount(36);
   await expect(page.locator('.letter-card:disabled')).toHaveCount(0);
   for (const letter of batch) await expect(page.getByRole('button', { name: letter.labelMs, exact: true })).toBeEnabled();
   await openTeacher(page);
   await expect(page.locator('.draft-model-card')).toHaveCount(0);
-  await expect(page.locator('.teacher-stat-grid > div').nth(1)).toContainText('37');
-  await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('37');
-  await expect(page.locator('.status-chip.approved')).toHaveCount(37);
+  await expect(page.locator('.teacher-stat-grid > div').nth(1)).toContainText('36');
+  await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('36');
+  await expect(page.locator('.status-chip.approved')).toHaveCount(36);
   await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).click();
   await page.getByRole('button', { name: 'Model tersedia', exact: true }).click();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
   await expect(page.locator('.card-caption').filter({ hasText: 'Draf · perlu semakan' })).toHaveCount(0);
   await page.getByRole('button', { name: 'Tamatkan pratonton', exact: true }).click();
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
 });
 
 test('Qaf requires the complete closed head, then its bowl, then both separate dots', async ({ page }) => {
@@ -94,7 +94,7 @@ test('Qaf requires the complete closed head, then its bowl, then both separate d
   expect((await lastRecord(page)).metrics.dotCount).toBe(2);
 });
 
-test('student book includes Ye and Nya and closes after Nya without wrapping', async ({ page }) => {
+test('student book goes directly from Ya to Nya and closes after Nya without wrapping', async ({ page }) => {
   await openBatchLesson(page, batch.find(letter => letter.id === 'nya'));
   await draw(page, (await boardModels(page)).strokes[0]);
   await showDotHelp(page);
@@ -102,13 +102,14 @@ test('student book includes Ye and Nya and closes after Nya without wrapping', a
   await menuAction(page, 'Huruf seterusnya');
   await expect(page.getByRole('heading', { name: 'Hebat, sampai halaman terakhir!', exact: true })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Huruf seterusnya', exact: true })).toBeDisabled();
-  await openBatchLesson(page, batch.find(letter => letter.id === 'ye'));
+  await openBatchLesson(page, letters.find(letter => letter.id === 'ya'));
   await draw(page, (await boardModels(page)).strokes[0]);
+  for (const dot of (await boardModels(page)).dots) await page.mouse.click(dot.x, dot.y);
   await menuAction(page, 'Huruf seterusnya');
   await expect(page.getByRole('heading', { name: 'Nya', exact: true })).toBeVisible();
   await expect(page.locator('.lesson-pilot')).not.toContainText('Draf');
   await expect(page.locator('.preview-banner')).toHaveCount(0);
-  expect(await lastRecord(page)).toMatchObject({ letterId: 'ye', preview: false, geometryStatus: 'approved', contentVersion: 2 });
+  expect(await lastRecord(page)).toMatchObject({ letterId: 'ya', preview: false, geometryStatus: 'approved', contentVersion: 2 });
 });
 
 for (const width of [320, 768]) test(`all 15 final-batch stroke and dot stages fit the ${width} layout`, async ({ page }) => {

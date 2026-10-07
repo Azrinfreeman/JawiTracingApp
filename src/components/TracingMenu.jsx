@@ -22,9 +22,11 @@ export function TracingMenu({ title = 'Menu permainan', children, sound, onClose
 }
 
 /** Stage-only presentation: announcements stay available, only recovery cues and opted-in dot help are drawn. */
-export function StageSupport({ status, instruction, dots, pendingDot, inkLimit, blocked, paused, assistance }) {
+export function StageSupport({ status, instruction, dots, pendingDot, inkLimit, blocked, paused, assistance, cue, showCue }) {
   return <>
-    <div className={`trace-announcements ${blocked || inkLimit || paused ? 'stage-cue' : 'visually-hidden'}`}>{status}</div>
+    <div className={`trace-announcements ${showCue || blocked || inkLimit || paused ? 'stage-cue' : 'visually-hidden'}`}>
+      {showCue ? <p className="writing-cue board-tip" role="status">{cue}</p> : status}
+    </div>
     <div className="visually-hidden">{instruction}</div>
     {inkLimit ? <div className="trace-recovery">{dots}</div>
       : assistance && pendingDot && <div className="trace-assistance">{dots}</div>}

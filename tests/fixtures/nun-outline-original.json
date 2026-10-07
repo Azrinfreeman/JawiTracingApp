@@ -1,0 +1,83 @@
+{
+  "id": "nun",
+  "glyph": "ن",
+  "labelMs": "Nun",
+  "contentVersion": 2,
+  "viewBox": [
+    0,
+    0,
+    1000,
+    1000
+  ],
+  "pilot": true,
+  "additional": false,
+  "geometry": {
+    "status": "approved",
+    "review": {
+      "revision": 2,
+      "reviewer": "Project owner (Codex user; name not supplied)",
+      "date": "2026-10-04",
+      "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+      "kind": "projectOwner"
+    },
+    "displayPaths": [
+      "M 617.4 413 C 617.4 430.9 604.2 447.7 605.8 466.9 C 610 520.9 653.6 575.5 613 625.3 C 511.3 749.9 295 712.9 366.6 518.6"
+    ],
+    "strokes": [
+      {
+        "id": "stroke-1",
+        "path": "M 617.4 413 C 617.4 430.9 604.2 447.7 605.8 466.9 C 610 520.9 653.6 575.5 613 625.3 C 511.3 749.9 295 712.9 366.6 518.6",
+        "width": 44,
+        "penLiftPolicy": "continuous",
+        "checkpoints": [
+          0.25,
+          0.5,
+          0.75,
+          0.95
+        ],
+        "displayWidth": 46
+      }
+    ],
+    "dotTargets": [
+      {
+        "id": "dot-1",
+        "x": 472,
+        "y": 355,
+        "visibleRadius": 19,
+        "hitRadius": 48,
+        "maxTravel": 30,
+        "policy": "tap"
+      }
+    ],
+    "validSequences": [
+      [
+        "stroke-1",
+        "dot-1"
+      ]
+    ]
+  },
+  "audio": {
+    "name": {
+      "src": "/audio/letters/alphabet/nun-name-v2.wav",
+      "transcriptMs": "Nun",
+      "version": 2,
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+      "origin": {
+        "kind": "userProvided",
+        "source": "voices/alphabet/23_nun.wav",
+        "sha256": "6056e86e290d10e576e347e9049d3fc7dc1caeef1fe5d6ca8044b2157d223f5c",
+        "importedAt": "2026-10-02T02:39:02.335Z",
+        "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+      }
+    },
+    "pronunciationExamples": []
+  }
+}

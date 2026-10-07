@@ -56,7 +56,7 @@ test('manual continue cleans up its deadline and navigation never replays the sp
   await page.clock.runFor(32);
   await page.getByRole('button', { name: 'Jom mula' }).click();
   await expect(page.getByRole('dialog')).not.toBeVisible();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
   await page.clock.runFor(32);
   await page.getByRole('button', { name: 'Alif', exact: true }).click();
   await expect(page.locator('.trace-board')).toBeVisible();

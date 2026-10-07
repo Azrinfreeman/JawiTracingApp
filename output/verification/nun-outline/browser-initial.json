@@ -1,0 +1,874 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/nun-outline.spec.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=line,json"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "nun-outline.spec.js",
+      "file": "nun-outline.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Nun play: exact outline, partial reveal, dot-last gate and preview save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3787,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:38.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-07890d44189866567872",
+          "file": "nun-outline.spec.js",
+          "line": 32,
+          "column": 49
+        },
+        {
+          "title": "Nun guided: exact outline, partial reveal, dot-last gate and preview save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3585,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:42.150Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-2b2095cd49e7980907b2",
+          "file": "nun-outline.spec.js",
+          "line": 32,
+          "column": 49
+        },
+        {
+          "title": "Nun precision: exact outline, partial reveal, dot-last gate and preview save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3471,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:45.743Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-bf8a49ed7c95476c7a48",
+          "file": "nun-outline.spec.js",
+          "line": 32,
+          "column": 49
+        },
+        {
+          "title": "Nun review fit 768: catalogue comparison and numbering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 997,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:49.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-7b2cdd8d07bae70a00dd",
+          "file": "nun-outline.spec.js",
+          "line": 46,
+          "column": 52
+        },
+        {
+          "title": "Nun review fit 1280: catalogue comparison and numbering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1083,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:50.230Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-c62065e15093f561261c",
+          "file": "nun-outline.spec.js",
+          "line": 46,
+          "column": 52
+        },
+        {
+          "title": "Nun outline demonstration preserves earned drawing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5875,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:51.323Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-8f434275c2762870e40e",
+          "file": "nun-outline.spec.js",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "Nun normal students retain approved revision 2 until review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 930,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:57.206Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-cc8b169e002bd488cc70",
+          "file": "nun-outline.spec.js",
+          "line": 55,
+          "column": 1
+        },
+        {
+          "title": "Nun solo: reviewed outline in unscored independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6337,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js:68:134",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                      "column": 134,
+                      "line": 68
+                    },
+                    "snippet": "  66 |   if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');\n  67 |  }\n> 68 |  await expect(page.locator('.round-result')).toBeVisible();const saved=await page.evaluate(()=>window.outlineAttempts);expect(saved).toHaveLength(count);\n     |                                                                                                                                      ^\n  69 |  for(const record of saved)expect(record).toEqual({letterId:'nun',contentVersion:3,geometryStatus:'pendingReview',unscored:true});\n  70 | });\n  71 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                        "column": 134,
+                        "line": 68
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  66 |   if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');\n  67 |  }\n> 68 |  await expect(page.locator('.round-result')).toBeVisible();const saved=await page.evaluate(()=>window.outlineAttempts);expect(saved).toHaveLength(count);\n     |                                                                                                                                      ^\n  69 |  for(const record of saved)expect(record).toEqual({letterId:'nun',contentVersion:3,geometryStatus:'pendingReview',unscored:true});\n  70 | });\n  71 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js:68:134"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:58.145Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\nun-outline-Nun-solo-revie-c2522--unscored-independent-lanes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\nun-outline-Nun-solo-revie-c2522--unscored-independent-lanes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                    "column": 134,
+                    "line": 68
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-bb0eb7915ebe1b816fc9",
+          "file": "nun-outline.spec.js",
+          "line": 60,
+          "column": 34
+        },
+        {
+          "title": "Nun duo: reviewed outline in unscored independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8962,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js:68:134",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                      "column": 134,
+                      "line": 68
+                    },
+                    "snippet": "  66 |   if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');\n  67 |  }\n> 68 |  await expect(page.locator('.round-result')).toBeVisible();const saved=await page.evaluate(()=>window.outlineAttempts);expect(saved).toHaveLength(count);\n     |                                                                                                                                      ^\n  69 |  for(const record of saved)expect(record).toEqual({letterId:'nun',contentVersion:3,geometryStatus:'pendingReview',unscored:true});\n  70 | });\n  71 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                        "column": 134,
+                        "line": 68
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  66 |   if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');\n  67 |  }\n> 68 |  await expect(page.locator('.round-result')).toBeVisible();const saved=await page.evaluate(()=>window.outlineAttempts);expect(saved).toHaveLength(count);\n     |                                                                                                                                      ^\n  69 |  for(const record of saved)expect(record).toEqual({letterId:'nun',contentVersion:3,geometryStatus:'pendingReview',unscored:true});\n  70 | });\n  71 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js:68:134"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:43:05.608Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\nun-outline-Nun-duo-review-832fe--unscored-independent-lanes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\nun-outline-Nun-duo-review-832fe--unscored-independent-lanes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                    "column": 134,
+                    "line": 68
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-d138a5f22b55faab1b9c",
+          "file": "nun-outline.spec.js",
+          "line": 60,
+          "column": 34
+        },
+        {
+          "title": "Nun play: exact outline, partial reveal, dot-last gate and preview save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5495,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:38.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-c4610df4f3ae6c1bb437",
+          "file": "nun-outline.spec.js",
+          "line": 32,
+          "column": 49
+        },
+        {
+          "title": "Nun guided: exact outline, partial reveal, dot-last gate and preview save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:43.839Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-9821096db49158a23070",
+          "file": "nun-outline.spec.js",
+          "line": 32,
+          "column": 49
+        },
+        {
+          "title": "Nun precision: exact outline, partial reveal, dot-last gate and preview save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8526,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:42:53.073Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-df5c00e498941dd93976",
+          "file": "nun-outline.spec.js",
+          "line": 32,
+          "column": 49
+        },
+        {
+          "title": "Nun review fit 768: catalogue comparison and numbering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5288,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:43:01.609Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-769331e687ab8c742395",
+          "file": "nun-outline.spec.js",
+          "line": 46,
+          "column": 52
+        },
+        {
+          "title": "Nun review fit 1280: catalogue comparison and numbering",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4704,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:43:06.908Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-815bd6a00f73705ab8c5",
+          "file": "nun-outline.spec.js",
+          "line": 46,
+          "column": 52
+        },
+        {
+          "title": "Nun outline demonstration preserves earned drawing",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9893,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:43:11.623Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-058aa9c26e5d35a006de",
+          "file": "nun-outline.spec.js",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "Nun normal students retain approved revision 2 until review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4016,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:43:21.531Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-4169ca90d5ecbb64269b",
+          "file": "nun-outline.spec.js",
+          "line": 55,
+          "column": 1
+        },
+        {
+          "title": "Nun solo: reviewed outline in unscored independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 6067,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js:68:134",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                      "column": 134,
+                      "line": 68
+                    },
+                    "snippet": "  66 |   if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');\n  67 |  }\n> 68 |  await expect(page.locator('.round-result')).toBeVisible();const saved=await page.evaluate(()=>window.outlineAttempts);expect(saved).toHaveLength(count);\n     |                                                                                                                                      ^\n  69 |  for(const record of saved)expect(record).toEqual({letterId:'nun',contentVersion:3,geometryStatus:'pendingReview',unscored:true});\n  70 | });\n  71 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                        "column": 134,
+                        "line": 68
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  66 |   if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');\n  67 |  }\n> 68 |  await expect(page.locator('.round-result')).toBeVisible();const saved=await page.evaluate(()=>window.outlineAttempts);expect(saved).toHaveLength(count);\n     |                                                                                                                                      ^\n  69 |  for(const record of saved)expect(record).toEqual({letterId:'nun',contentVersion:3,geometryStatus:'pendingReview',unscored:true});\n  70 | });\n  71 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js:68:134"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:43:25.559Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\nun-outline-Nun-solo-revie-c2522--unscored-independent-lanes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\nun-outline-Nun-solo-revie-c2522--unscored-independent-lanes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                    "column": 134,
+                    "line": 68
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-89830b5f5292525b5c52",
+          "file": "nun-outline.spec.js",
+          "line": 60,
+          "column": 34
+        },
+        {
+          "title": "Nun duo: reviewed outline in unscored independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9486,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js:68:134",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                      "column": 134,
+                      "line": 68
+                    },
+                    "snippet": "  66 |   if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');\n  67 |  }\n> 68 |  await expect(page.locator('.round-result')).toBeVisible();const saved=await page.evaluate(()=>window.outlineAttempts);expect(saved).toHaveLength(count);\n     |                                                                                                                                      ^\n  69 |  for(const record of saved)expect(record).toEqual({letterId:'nun',contentVersion:3,geometryStatus:'pendingReview',unscored:true});\n  70 | });\n  71 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                        "column": 134,
+                        "line": 68
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  66 |   if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');\n  67 |  }\n> 68 |  await expect(page.locator('.round-result')).toBeVisible();const saved=await page.evaluate(()=>window.outlineAttempts);expect(saved).toHaveLength(count);\n     |                                                                                                                                      ^\n  69 |  for(const record of saved)expect(record).toEqual({letterId:'nun',contentVersion:3,geometryStatus:'pendingReview',unscored:true});\n  70 | });\n  71 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js:68:134"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T16:43:32.323Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\nun-outline-Nun-duo-review-832fe--unscored-independent-lanes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\nun-outline-Nun-duo-review-832fe--unscored-independent-lanes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+                    "column": 134,
+                    "line": 68
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0fa708efaeeb135afdeb-54be7ab27baf1afb4193",
+          "file": "nun-outline.spec.js",
+          "line": 60,
+          "column": 34
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T16:42:37.646Z",
+    "duration": 64602.43,
+    "expected": 14,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

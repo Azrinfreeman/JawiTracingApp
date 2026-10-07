@@ -1,6 +1,8 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './helpers/localTest.js';
 import { mkdirSync } from 'node:fs';
 import { dismissSplash } from './helpers/navigation.js';
+import { instrument, voices } from './helpers/audio.js';
 import { openLesson, boardModels, draw, openMenu, menuAction, tapDots } from './helpers/tracing.js';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 
@@ -10,37 +12,6 @@ const MUSIC = '/audio/music/taman-kawan-v1.mp3';
 const ALIF_NAME = '/audio/letters/alphabet/alif-name-v2.mp3';
 const pane = (page, slot) => page.locator(`[data-player-slot="${slot}"]`);
 
-/** Replaces media playback with a recorder so lifecycle, ordering and mix levels can be asserted exactly. */
-async function instrument(page, { failVoice = false, voiceMs = 900 } = {}) {
-  await page.addInitScript(({ failVoice: fail, voiceMs: duration }) => {
-    const media = window.__media = { plays: [], elements: [], fullscreen: 0, voicePauses: 0 };
-    Object.defineProperty(HTMLMediaElement.prototype, 'paused', { configurable: true, get() { return !this.__playing; } });
-    HTMLMediaElement.prototype.play = function () {
-      const src = this.getAttribute('src') || '', music = src.includes('/audio/music/');
-      if (fail && !music) return Promise.reject(new DOMException('blocked', 'NotAllowedError'));
-      this.__playing = true; media.plays.push({ src, music, volume: this.volume, muted: this.muted });
-      if (!music) setTimeout(() => { if (this.__playing) { this.__playing = false; this.onended?.(); } }, duration);
-      return Promise.resolve();
-    };
-    HTMLMediaElement.prototype.pause = function () { if (this.__playing && !(this.getAttribute('src') || '').includes('/audio/music/')) media.voicePauses++; this.__playing = false; };
-    HTMLMediaElement.prototype.load = function () {};
-    const NativeAudio = window.Audio;
-    window.Audio = function () {
-      const element = new NativeAudio();
-      // Fake lifecycle tests must not also invoke Windows WebKit's unsupported native MP3 decoder.
-      // Separate checks below exercise the actual packaged media in a supported runtime.
-      let src = '';
-      Object.defineProperty(element, 'src', { configurable: true, get: () => src, set: value => { src = value; } });
-      const get = element.getAttribute.bind(element), remove = element.removeAttribute.bind(element);
-      element.getAttribute = name => name === 'src' ? src : get(name);
-      element.removeAttribute = name => { if (name === 'src') src = ''; else remove(name); };
-      media.elements.push(element); return element;
-    };
-    window.Audio.prototype = NativeAudio.prototype;
-    Element.prototype.requestFullscreen = function () { media.fullscreen++; return Promise.resolve(); };
-  }, { failVoice, voiceMs });
-}
-const voices = async page => (await page.evaluate(() => window.__media.plays)).filter(play => !play.music);
 const musicState = page => page.evaluate(() => { const e = window.__media.elements.find(el => (el.getAttribute('src') || '').includes('/audio/music/')); return e ? { playing: !e.paused, volume: e.volume, loop: e.loop } : null; });
 const musicPlayingAt = (page, level) => expect.poll(async () => { const state = await musicState(page); return state?.playing && Math.abs(state.volume - level) < .012; }, { timeout: 5000 }).toBe(true);
 const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
@@ -87,10 +58,12 @@ test('menu replaces the toolbar: every action is reachable and closing keeps acc
   await expect(page.locator('.validated-dot')).toHaveCount(0);
   const before = Number(await page.locator('.play-fill').first().getAttribute('data-measured-frontier'));
   await openMenu(page);
-  for (const name of ['Dengar', 'Tunjuk cara', 'Cuba lagi', 'Kenal huruf dan panduan', 'Huruf seterusnya', 'Huruf sebelumnya', 'Isi kandungan', 'Bantuan titik']) {
-    await expect(page.getByRole('dialog', { name: 'Menu permainan' }).getByRole('button', { name, exact: true })).toBeVisible();
+  for (const name of ['Tunjuk cara', 'Tunjuk bahagian ini', 'Cuba lagi', 'Kenal huruf dan panduan', 'Huruf seterusnya', 'Huruf sebelumnya', 'Isi kandungan', 'Bantuan titik']) {
+    const dialog=page.getByRole('dialog',{name:'Menu permainan'}), item=dialog.getByRole('button',{name,exact:true});
+    if (!(await item.isVisible())) await page.getByRole('button',{name:'Halaman menu seterusnya'}).click();
+    await expect(item).toBeVisible();
   }
-  await page.getByRole('button', { name: 'Halaman menu seterusnya' }).click();
+  if (!(await page.getByRole('button', {name:'Muzik mati',exact:true}).isVisible())) await page.getByRole('button', { name: 'Halaman menu seterusnya' }).click();
   for (const name of ['Muzik mati', 'Senyapkan audio', 'Paparan penuh']) await expect(page.getByRole('button', { name, exact: true })).toBeVisible();
   await page.screenshot({ path: `${evidence}/${browserName}-menu-page-2.png`, animations: 'disabled' });
   await page.getByRole('button', { name: 'Tutup', exact: true }).click();
@@ -149,6 +122,21 @@ test('blocked voice never blocks completion; replay recovers from a fresh gestur
   await expect(page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).first()).toBeEnabled();
 });
 
+test('late voice failure is reported and a successful replay clears the recovery notice', async ({page})=>{
+  test.setTimeout(30000);
+  await instrument(page,{voiceMs:60000});await openLesson(page,'Alif','play');
+  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toBeVisible();
+  await expect.poll(async()=>(await voices(page)).length).toBe(1);
+  await page.evaluate(()=>{
+    const player=window.__media.elements.find(el=>!(el.getAttribute('src')||'').includes('/audio/music/')&&el.__playing);
+    Object.defineProperty(player,'error',{configurable:true,value:{code:4}});player.__playing=false;player.onerror();
+  });
+  await expect(page.locator('.book-completed')).toContainText('Rakaman tidak dapat dimainkan pada peranti ini.');
+  await page.getByRole('button',{name:'Dengar',exact:true}).click();
+  await expect.poll(async()=>(await voices(page)).length).toBe(2);
+  await expect(page.locator('.book-completed')).not.toContainText('Rakaman tidak dapat dimainkan');
+});
+
 test('saving a freehand copy never announces the letter', async ({ page }) => {
   await page.setViewportSize({ width: 1024, height: 768 }); await instrument(page);
   await openLesson(page, 'Alif', 'play'); await draw(page, (await boardModels(page)).strokes[0]);
@@ -176,7 +164,8 @@ test('music is one quiet local loop that ducks under the voice, obeys mute and s
   await menuAction(page, 'Muzik mati');
   await expect.poll(async () => (await musicState(page)).playing).toBe(false);
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.music.v1')))).toMatchObject({ version: 1, enabled: false });
-  await menuAction(page, 'Dengar');
+  await page.getByRole('dialog', { name: 'Menu permainan' }).getByRole('button', { name: 'Tutup', exact: true }).click();
+  await page.locator('.completion-actions').getByRole('button', { name: 'Dengar', exact: true }).click();
   await expect.poll(async () => (await voices(page)).length).toBe(2);
   await menuAction(page, 'Muzik hidup'); await musicPlayingAt(page, .15);
   // Master mute silences both channels.

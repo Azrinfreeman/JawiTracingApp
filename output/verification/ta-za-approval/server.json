@@ -1,0 +1,9 @@
+{
+  "url": "http://127.0.0.1:5173/src/content/letters.json",
+  "status": 200,
+  "exactCatalogue": true,
+  "revisions": {
+    "tho": 6,
+    "za": 6
+  }
+}

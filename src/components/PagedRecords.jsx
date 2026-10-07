@@ -3,9 +3,9 @@ import { useViewportLayout } from './useViewportLayout.js';
 import { Pager } from './Pager.jsx';
 import { gridCapacity } from '../game/screenLayout.js';
 
-export function PagedRecords({ items, render, empty, tall = false, label = 'Halaman rekod' }) {
+export function PagedRecords({ items, render, empty, tall = false, label = 'Halaman rekod', pageSize }) {
   const host = useRef(null), size = useViewportLayout(host), [anchor, setAnchor] = useState(0);
-  const grid = gridCapacity(size.width, size.height, size.width < 600 ? 250 : 310, tall ? 240 : 146);
+  const grid = pageSize === 1 ? {columns:1,rows:1,capacity:1} : gridCapacity(size.width, size.height, size.width < 600 ? 250 : 310, tall ? 240 : 146);
   const count = Math.max(1, Math.ceil(items.length / grid.capacity));
   const page = Math.min(count - 1, Math.floor(anchor / grid.capacity));
   return <div className="record-list"><div ref={host} className="record-grid-host">

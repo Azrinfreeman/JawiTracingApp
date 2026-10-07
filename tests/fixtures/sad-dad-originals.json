@@ -1,0 +1,183 @@
+[
+  {
+    "id": "sad",
+    "glyph": "ص",
+    "labelMs": "Sad",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-second-additional-batch-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 565 510 C 590 350 750 280 830 365 C 940 505 705 535 565 510",
+        "M 565 510 Q 530 530 535 415 C 565 660 420 755 305 730 Q 155 700 185 550"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 565 510 C 590 350 750 280 830 365 C 940 505 705 535 565 510",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 565 510 Q 530 530 535 415 C 565 660 420 755 305 730 Q 155 700 185 550",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/sad-name-v2.mp3",
+        "transcriptMs": "Sad",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/13_sod.mp3",
+          "sha256": "df2c1465abccebc534a738658b4098c62be74c780729b4e03f6e3ceb4769f8ed",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "dad",
+    "glyph": "ض",
+    "labelMs": "Dad",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-second-additional-batch-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 565 510 C 590 350 750 280 830 365 C 940 505 705 535 565 510",
+        "M 565 510 Q 530 530 535 415 C 565 660 420 755 305 730 Q 155 700 185 550"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 565 510 C 590 350 750 280 830 365 C 940 505 705 535 565 510",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 565 510 Q 530 530 535 415 C 565 660 420 755 305 730 Q 155 700 185 550",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 735,
+          "y": 230,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/dad-name-v2.mp3",
+        "transcriptMs": "Dad",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/14_dod.mp3",
+          "sha256": "69222ad37d2e7e17910cfe66578f83c239483cd9639c41bdb848d34e45c89ebb",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  }
+]

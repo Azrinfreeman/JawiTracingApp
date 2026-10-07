@@ -1,5 +1,28 @@
 # Supplied alphabet recordings — review list
 
+Current: **7 October 2026**. **30 supplied recordings and 6 retained synthetic
+recordings; all 36 active recordings approved for the game**. Ye has been
+removed from the active catalogue; its old recording and approval remain
+historical. Va now uses the complete first
+supplied [revision-2 utterance](../public/audio/letters/alphabet/va-name-v2.wav)
+under the owner's fallback authorisation; see [Va checks](VA_AUDIO_CORRECTION.md).
+Nga uses
+[the complete supplied revision-2 utterance](../public/audio/letters/alphabet/nga-name-v2.wav)
+as requested by the owner; see [Nga method and checks](NGA_AUDIO_CORRECTION.md).
+Ga continues to use
+[the complete supplied revision-7 utterance](../public/audio/letters/alphabet/ga-name-v7.wav)
+under the owner's conditional fallback authorisation; see
+[Ga method and checks](GA_AUDIO_REVIEW.md). The 36 other entries and all previous
+recording files remained unchanged by the Nga correction. At that preceding
+stage all 37 lessons were ready; the current catalogue has 36 after removing Ye.
+
+Va audio 2 supersedes the retained synthetic Va-1 entry in the historical table
+below. Its source and every prior released recording remain intact.
+
+The following sections preserve the **2 October import/approval stage**,
+including its original inventory, Ga/Nga files and verification totals. The
+Ga revision-7 and Nga revision-2 overrides above supersede those historical entries.
+
 Updated: 2 October 2026. **27 recordings replaced; 10 recordings retained; all 37 approved by the project owner.**
 See [the subsequent approval record](AUDIO_APPROVALS.md). The import engineering
 checks below describe the replacement stage before that approval.

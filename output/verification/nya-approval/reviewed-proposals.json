@@ -1,0 +1,211 @@
+[
+  {
+    "original": {
+      "id": "nya",
+      "glyph": "ڽ",
+      "labelMs": "Nya",
+      "contentVersion": 3,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": true,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 3,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-04",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 617.4 345.8 C 617.4 363.7 604.2 380.5 605.8 399.7 C 610 453.7 653.6 508.3 613 558.1 C 511.3 682.8 295 645.7 366.6 451.4"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 617.4 345.8 C 617.4 363.7 604.2 380.5 605.8 399.7 C 610 453.7 653.6 508.3 613 558.1 C 511.3 682.8 295 645.7 366.6 451.4",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "displayWidth": 48
+          }
+        ],
+        "dotTargets": [
+          {
+            "id": "dot-1",
+            "x": 524,
+            "y": 297,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          },
+          {
+            "id": "dot-2",
+            "x": 429,
+            "y": 306,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          },
+          {
+            "id": "dot-3",
+            "x": 476,
+            "y": 248,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          }
+        ],
+        "validSequences": [
+          [
+            "stroke-1",
+            "dot-1",
+            "dot-2",
+            "dot-3"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/nya-name.mp3",
+          "transcriptMs": "Nya",
+          "version": 1,
+          "status": "approved",
+          "review": {
+            "revision": 1,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    "candidate": {
+      "id": "nya",
+      "glyph": "ڽ",
+      "labelMs": "Nya",
+      "contentVersion": 4,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": true,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [
+          "M 608.34011 417 C 618.34592 465.29744 649.26781 513.61386 613 558.1 C 511.3 682.8 295 645.7 366.6 451.4"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 608.34011 417 C 618.34592 465.29744 649.26781 513.61386 613 558.1 C 511.3 682.8 295 645.7 366.6 451.4",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "displayWidth": 48
+          }
+        ],
+        "dotTargets": [
+          {
+            "id": "dot-1",
+            "x": 524,
+            "y": 297,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          },
+          {
+            "id": "dot-2",
+            "x": 429,
+            "y": 306,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          },
+          {
+            "id": "dot-3",
+            "x": 476,
+            "y": 248,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          }
+        ],
+        "validSequences": [
+          [
+            "stroke-1",
+            "dot-1",
+            "dot-2",
+            "dot-3"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/nya-name.mp3",
+          "transcriptMs": "Nya",
+          "version": 1,
+          "status": "approved",
+          "review": {
+            "revision": 1,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    "note": "Hujung kanan atas dipendekkan hingga garisan yang ditanda. Lengkung mangkuk dan tiga titik dikekalkan. Mula pada hujung baharu, ikut mangkuk, kemudian sentuh tiga titik."
+  }
+]

@@ -1,6 +1,55 @@
 # Taman Jawi Android release
 
-## Latest release — 1.0.7
+## Latest release — 1.0.8
+
+Built and verified **7 October 2026**, Asia/Kuala_Lumpur, after the owner approved
+Sad/Dad and requested a new release APK.
+
+| Item | Value |
+| --- | --- |
+| File | [Taman-Jawi-1.0.8-release.apk](../output/releases/Taman-Jawi-1.0.8-release.apk) |
+| Version | 1.0.8, version code 9 |
+| Application ID | `com.hananaacademy.tamanjawi` |
+| Size | 7,439,815 bytes, approximately 7.4 MB |
+| Android compatibility | Android 8.0+; minimum API 26, target API 36 |
+| Signing | Existing RSA 3072 release identity; verified APK v2 signature |
+| Certificate SHA-256 | `864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365` |
+| APK SHA-256 | `c78a0db76601b98d0c0c5344d037dc654256137aea5a057118ddd54b9de1771f` |
+| Checksum | [SHA-256 sidecar](../output/releases/Taman-Jawi-1.0.8-release.apk.sha256) |
+
+This offline package includes the current **36 approved letters**, Sad 3 and Dad 3
+catalogue shapes, all earlier approved shape/order corrections, the current
+Ga/Nga/Va recordings, direct Dengar control, delayed completion panel and Ye
+removal. It includes the right-to-left catalogue that postdated 1.0.7. Jejak Ceria
+and Android lightweight presentation remain defaults. Earlier APKs are preserved.
+
+Checked production build, **249 unit cases in 39 files** (including repaired
+historical assertions) and **30 Chromium/WebKit cases** passed. Browser scope is
+approved Sad/Dad in three modes, movements and dot, saved revision/reload,
+demonstration, scored Solo/Duo lanes and nine expired review scopes. Previously
+verified fixes were preserved; this is not a new all-letter native-device review.
+
+Release assembly and lint passed: zero errors, four existing warnings. The first
+attempt hit the sandbox’s local Gradle connection restriction; the outside-sandbox
+retry hit the documented Windows immutable-cache rename problem. Only that
+completed project-local cache was copied to its expected final location. Retry2
+succeeded. Signing key was preserved, never replaced or copied into the APK.
+
+Signature, ZIP alignment, package/version/API metadata, non-debuggable flag, no
+permissions, checksum and **all 103 packaged assets** match the current web build.
+All 36 active name recordings are bundled. The certificate matches 1.0.7, allowing
+an update signed with the same identity. Device-level progress retention has not
+been tested.
+
+Evidence: [APK inspection](../output/verification/android-release-1.0.8/apk-verification.json),
+build/lint/asset reports in the same directory and
+[approved content verification](SAD_DAD_TRACE_APPEARANCE_APPROVAL.md).
+
+ADB reported **no connected device or emulator**. Installation, native WebView
+tracing/audio and saved-data retention on update remain unverified on a device.
+No store publication, deployment or installation was requested.
+
+## Historical release — 1.0.7
 
 Built and verified on **5 October 2026**, Asia/Kuala_Lumpur, at the user's request.
 

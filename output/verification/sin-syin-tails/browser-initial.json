@@ -1,0 +1,1698 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/sin-syin-tails.spec.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=line,json"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "sin-syin-tails.spec.js",
+      "file": "sin-syin-tails.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "sin play: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7384,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:14.517Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-2b41902bb697cfe65de0",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "sin guided: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5879,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:22.775Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-75dd445596a2f2f8cebc",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "sin precision: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5893,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:28.667Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-8a08256421717a8f1654",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "syin play: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:34.573Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-61df5a89aeb5de72be17",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "syin guided: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6220,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:41.711Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-228e04546ca1f79abdb7",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "syin precision: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6142,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:47.942Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-c7f04336e9ae75d26753",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "sin: demonstration follows the higher tail without completing the pupil's attempt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5833,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:54.094Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-28f698699a8288deb64e",
+          "file": "sin-syin-tails.spec.js",
+          "line": 78,
+          "column": 35
+        },
+        {
+          "title": "syin: demonstration follows the higher tail without completing the pupil's attempt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9498,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:59.935Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-150245fd0716e1b94c1f",
+          "file": "sin-syin-tails.spec.js",
+          "line": 78,
+          "column": 35
+        },
+        {
+          "title": "tail review 320: before/after, versions and clear controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1267,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:09.444Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-f093c9ec84d0c7db4764",
+          "file": "sin-syin-tails.spec.js",
+          "line": 90,
+          "column": 51
+        },
+        {
+          "title": "tail review 768: before/after, versions and clear controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1320,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:10.722Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-a929fc9498f9ace438b0",
+          "file": "sin-syin-tails.spec.js",
+          "line": 90,
+          "column": 51
+        },
+        {
+          "title": "sin: actual before/after board and desktop guide placement",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2794,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m80.90713522637304 127.06660341088327 1169.6526951353633 719.9316265695855\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m116.1149668103476 119.78613607859532 1240.0684651148358 727.2130094292171\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m80.90713522637304 127.06660341088327 1169.6526951353633 719.9316265695855\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m116.1149668103476 119.78613607859532 1240.0684651148358 727.2130094292171\u001b[27m\"\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:116:70",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 70,
+                      "line": 116
+                    },
+                    "snippet": "  114 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-before-board.png`});\n  115 |   await openCandidate(page,candidate.labelMs);await capture(page,`${browserName}-${candidate.id}-desktop-after`);\n> 116 |   expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(viewBox);\n      |                                                                      ^\n  117 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-after-board.png`});\n  118 | });\n  119 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 70,
+                        "line": 116
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m80.90713522637304 127.06660341088327 1169.6526951353633 719.9316265695855\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m116.1149668103476 119.78613607859532 1240.0684651148358 727.2130094292171\u001b[27m\"\u001b[39m\n\n  114 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-before-board.png`});\n  115 |   await openCandidate(page,candidate.labelMs);await capture(page,`${browserName}-${candidate.id}-desktop-after`);\n> 116 |   expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(viewBox);\n      |                                                                      ^\n  117 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-after-board.png`});\n  118 | });\n  119 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:116:70"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:12.053Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-actual--3aaca-and-desktop-guide-placement-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-actual--3aaca-and-desktop-guide-placement-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 70,
+                    "line": 116
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-34ec14fe6b0b40671551",
+          "file": "sin-syin-tails.spec.js",
+          "line": 108,
+          "column": 44
+        },
+        {
+          "title": "syin: actual before/after board and desktop guide placement",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3828,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m184.9402421966313 -1 1377.7189090758798 847.9982299804688\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m219.0992894448525 -1 1446.0371103838456 847.9991455078125\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m184.9402421966313 -1 1377.7189090758798 847.9982299804688\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m219.0992894448525 -1 1446.0371103838456 847.9991455078125\u001b[27m\"\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:116:70",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 70,
+                      "line": 116
+                    },
+                    "snippet": "  114 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-before-board.png`});\n  115 |   await openCandidate(page,candidate.labelMs);await capture(page,`${browserName}-${candidate.id}-desktop-after`);\n> 116 |   expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(viewBox);\n      |                                                                      ^\n  117 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-after-board.png`});\n  118 | });\n  119 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 70,
+                        "line": 116
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m184.9402421966313 -1 1377.7189090758798 847.9982299804688\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m219.0992894448525 -1 1446.0371103838456 847.9991455078125\u001b[27m\"\u001b[39m\n\n  114 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-before-board.png`});\n  115 |   await openCandidate(page,candidate.labelMs);await capture(page,`${browserName}-${candidate.id}-desktop-after`);\n> 116 |   expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(viewBox);\n      |                                                                      ^\n  117 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-after-board.png`});\n  118 | });\n  119 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:116:70"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:16.442Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-actual-ec2cc-and-desktop-guide-placement-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-actual-ec2cc-and-desktop-guide-placement-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 70,
+                    "line": 116
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-e0dbb4bc44110a09940c",
+          "file": "sin-syin-tails.spec.js",
+          "line": 108,
+          "column": 44
+        },
+        {
+          "title": "the 37 approved student letters keep their original shapes and readiness",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10225,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:23.272Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-c52de04ef692c757471e",
+          "file": "sin-syin-tails.spec.js",
+          "line": 120,
+          "column": 1
+        },
+        {
+          "title": "sin solo: unscored tail preview completes every lane",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9225,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 81,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 81,
+                        "line": 145
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:33.617Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-solo-un-9ebb9-review-completes-every-lane-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-solo-un-9ebb9-review-completes-every-lane-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 81,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-86c97e5dec9adf842b04",
+          "file": "sin-syin-tails.spec.js",
+          "line": 130,
+          "column": 68
+        },
+        {
+          "title": "sin duo: unscored tail preview completes every lane",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 14677,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 81,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 81,
+                        "line": 145
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:44.092Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-duo-uns-a4984-review-completes-every-lane-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-duo-uns-a4984-review-completes-every-lane-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 81,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-2b6a05b4e8f61ba04768",
+          "file": "sin-syin-tails.spec.js",
+          "line": 130,
+          "column": 68
+        },
+        {
+          "title": "syin solo: unscored tail preview completes every lane",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9174,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 81,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 81,
+                        "line": 145
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:01:01.997Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-solo-u-13d0e-review-completes-every-lane-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-solo-u-13d0e-review-completes-every-lane-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 81,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-acaa8c18e6b57f17610b",
+          "file": "sin-syin-tails.spec.js",
+          "line": 130,
+          "column": 68
+        },
+        {
+          "title": "syin duo: unscored tail preview completes every lane",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 14522,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 81,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 81,
+                        "line": 145
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:01:12.530Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-duo-un-7ad8f-review-completes-every-lane-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-duo-un-7ad8f-review-completes-every-lane-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 81,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-f6a748a9eb646680a5c9",
+          "file": "sin-syin-tails.spec.js",
+          "line": 130,
+          "column": 68
+        },
+        {
+          "title": "sin play: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9103,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:14.517Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-09d77f493754ed4e7802",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "sin guided: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9489,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:23.813Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-3052726269e2afa2add7",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "sin precision: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10605,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:33.314Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-d1d5d3e6a1f03e07a569",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "syin play: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:43.932Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-0462025ea87c8013af6c",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "syin guided: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9845,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T10:59:53.310Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-d88b58e8dd2242dddd4f",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "syin precision: raised finish, whole body and correct dot gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10919,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:03.167Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-92fd5a54cfcb76279378",
+          "file": "sin-syin-tails.spec.js",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "sin: demonstration follows the higher tail without completing the pupil's attempt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9041,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:14.097Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-d3f281cb01fd6d557292",
+          "file": "sin-syin-tails.spec.js",
+          "line": 78,
+          "column": 35
+        },
+        {
+          "title": "syin: demonstration follows the higher tail without completing the pupil's attempt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12648,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:23.148Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-2f707b62ddbaa77538c0",
+          "file": "sin-syin-tails.spec.js",
+          "line": 78,
+          "column": 35
+        },
+        {
+          "title": "tail review 320: before/after, versions and clear controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:35.807Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-aada1ec2d9a5169b8439",
+          "file": "sin-syin-tails.spec.js",
+          "line": 90,
+          "column": 51
+        },
+        {
+          "title": "tail review 768: before/after, versions and clear controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4059,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:38.042Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-b9b7bc4310181ea456bf",
+          "file": "sin-syin-tails.spec.js",
+          "line": 90,
+          "column": 51
+        },
+        {
+          "title": "sin: actual before/after board and desktop guide placement",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 11422,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m80.90665849751849 127.06670199132493\u001b[27m 11\u001b[7m6\u001b[27m9.\u001b[7m6517416776542 719.9310397078938\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m116.11414548944072\u001b[27m 119.\u001b[7m78630591555185 1240.066822473022 727.2120461352295\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m80.90665849751849 127.06670199132493\u001b[27m 11\u001b[7m6\u001b[27m9.\u001b[7m6517416776542 719.9310397078938\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m116.11414548944072\u001b[27m 119.\u001b[7m78630591555185 1240.066822473022 727.2120461352295\u001b[27m\"\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:116:70",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 70,
+                      "line": 116
+                    },
+                    "snippet": "  114 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-before-board.png`});\n  115 |   await openCandidate(page,candidate.labelMs);await capture(page,`${browserName}-${candidate.id}-desktop-after`);\n> 116 |   expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(viewBox);\n      |                                                                      ^\n  117 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-after-board.png`});\n  118 | });\n  119 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 70,
+                        "line": 116
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m80.90665849751849 127.06670199132493\u001b[27m 11\u001b[7m6\u001b[27m9.\u001b[7m6517416776542 719.9310397078938\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m116.11414548944072\u001b[27m 119.\u001b[7m78630591555185 1240.066822473022 727.2120461352295\u001b[27m\"\u001b[39m\n\n  114 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-before-board.png`});\n  115 |   await openCandidate(page,candidate.labelMs);await capture(page,`${browserName}-${candidate.id}-desktop-after`);\n> 116 |   expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(viewBox);\n      |                                                                      ^\n  117 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-after-board.png`});\n  118 | });\n  119 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:116:70"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:42.111Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-actual--3aaca-and-desktop-guide-placement-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-actual--3aaca-and-desktop-guide-placement-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 70,
+                    "line": 116
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-5767bb23eccc295b1414",
+          "file": "sin-syin-tails.spec.js",
+          "line": 108,
+          "column": 44
+        },
+        {
+          "title": "syin: actual before/after board and desktop guide placement",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 12881,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m184.9398455482143 -1 1377.7181157790458 847.9977416992188\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m219.09861292983544 -1 1446.0357573538115 847.9983520507812\u001b[27m\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m184.9398455482143 -1 1377.7181157790458 847.9977416992188\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m219.09861292983544 -1 1446.0357573538115 847.9983520507812\u001b[27m\"\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:116:70",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 70,
+                      "line": 116
+                    },
+                    "snippet": "  114 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-before-board.png`});\n  115 |   await openCandidate(page,candidate.labelMs);await capture(page,`${browserName}-${candidate.id}-desktop-after`);\n> 116 |   expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(viewBox);\n      |                                                                      ^\n  117 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-after-board.png`});\n  118 | });\n  119 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 70,
+                        "line": 116
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"-\u001b[7m184.9398455482143 -1 1377.7181157790458 847.9977416992188\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"-\u001b[7m219.09861292983544 -1 1446.0357573538115 847.9983520507812\u001b[27m\"\u001b[39m\n\n  114 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-before-board.png`});\n  115 |   await openCandidate(page,candidate.labelMs);await capture(page,`${browserName}-${candidate.id}-desktop-after`);\n> 116 |   expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(viewBox);\n      |                                                                      ^\n  117 |   await page.locator('.trace-board').screenshot({path:`${root}/${browserName}-${candidate.id}-after-board.png`});\n  118 | });\n  119 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:116:70"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:00:54.720Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-actual-ec2cc-and-desktop-guide-placement-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-actual-ec2cc-and-desktop-guide-placement-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 70,
+                    "line": 116
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-8712a4b2b820996a5993",
+          "file": "sin-syin-tails.spec.js",
+          "line": 108,
+          "column": 44
+        },
+        {
+          "title": "the 37 approved student letters keep their original shapes and readiness",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7434,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:01:08.790Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-91ae8c014cca2c27c13b",
+          "file": "sin-syin-tails.spec.js",
+          "line": 120,
+          "column": 1
+        },
+        {
+          "title": "sin solo: unscored tail preview completes every lane",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 8520,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 81,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 81,
+                        "line": 145
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:01:16.314Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-solo-un-9ebb9-review-completes-every-lane-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-solo-un-9ebb9-review-completes-every-lane-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 81,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-c72e035ccec71283638d",
+          "file": "sin-syin-tails.spec.js",
+          "line": 130,
+          "column": 68
+        },
+        {
+          "title": "sin duo: unscored tail preview completes every lane",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 13395,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 81,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 81,
+                        "line": 145
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:01:25.731Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-duo-uns-a4984-review-completes-every-lane-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-sin-duo-uns-a4984-review-completes-every-lane-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 81,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-dd7018b6607ffe445ca8",
+          "file": "sin-syin-tails.spec.js",
+          "line": 130,
+          "column": 68
+        },
+        {
+          "title": "syin solo: unscored tail preview completes every lane",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8598,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 81,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 81,
+                        "line": 145
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m1\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:01:40.043Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-solo-u-13d0e-review-completes-every-lane-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-solo-u-13d0e-review-completes-every-lane-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 81,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-28fc0e0ea0ec6d05bb65",
+          "file": "sin-syin-tails.spec.js",
+          "line": 130,
+          "column": 68
+        },
+        {
+          "title": "syin duo: unscored tail preview completes every lane",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13494,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                      "column": 81,
+                      "line": 145
+                    },
+                    "snippet": "  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                        "column": 81,
+                        "line": 145
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m0\u001b[39m\nReceived array:  \u001b[31m[]\u001b[39m\n\n  143 |   }\n  144 |   await expect(page.locator('.round-result')).toBeVisible();\n> 145 |   const results=await page.evaluate(()=>window.outlineAttempts);expect(results).toHaveLength(count);\n      |                                                                                 ^\n  146 |   for(const result of results)expect(result).toMatchObject({letterId:candidate.id,contentVersion:candidate.contentVersion,geometryStatus:'pendingReview',unscored:true});\n  147 | });\n  148 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js:145:81"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T11:01:49.561Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-duo-un-7ad8f-review-completes-every-lane-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\sin-syin-tails-syin-duo-un-7ad8f-review-completes-every-lane-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+                    "column": 81,
+                    "line": 145
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5bb10ddee2fabc00eb5f-bd07feda15166db2eac6",
+          "file": "sin-syin-tails.spec.js",
+          "line": 130,
+          "column": 68
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T10:59:13.727Z",
+    "duration": 169886.78600000002,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}

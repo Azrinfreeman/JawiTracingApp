@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { prepareReferences } from '../tracing/prepareReference.js';
 import { fitTraceViewport } from '../game/screenLayout.js';
 import '../styles/letter-model.css';
+import {outlineAppearance,outlinePath,outlineIllustrationParts} from '../tracing/outlineAppearance.js';
 
 export const usesModelGlyph = letter => ['kaf', 'ga'].includes(letter.id);
 
@@ -11,9 +12,9 @@ function ModelIllustration({ letter, className }) {
   const fit = fitTraceViewport(letter, references, 1, 1);
   return <svg className={`letter-model-glyph ${className}`} viewBox={`${fit.x} ${fit.y} ${fit.width} ${fit.height}`}
     role="img" aria-label={`Huruf ${letter.labelMs}`} focusable="false" data-letter-id={letter.id} data-content-version={letter.contentVersion}>
-    {letter.geometry.strokes.map(stroke => <path key={stroke.id} d={stroke.path} fill="none" stroke="currentColor"
+    {outlineAppearance(letter) ? outlineIllustrationParts(letter).map(part=><path key={part.id} d={outlinePath(part)} fill="currentColor" fillRule="evenodd"/>) : <>{letter.geometry.strokes.map(stroke => <path key={stroke.id} d={stroke.path} fill="none" stroke="currentColor"
       strokeWidth={stroke.width} strokeLinecap="round" strokeLinejoin="round"/>)}
-    {letter.geometry.dotTargets.map(dot => <circle key={dot.id} cx={dot.x} cy={dot.y} r={dot.visibleRadius} fill="currentColor"/>)}
+    {letter.geometry.dotTargets.map(dot => <circle key={dot.id} cx={dot.x} cy={dot.y} r={dot.visibleRadius} fill="currentColor"/>)}</>}
   </svg>;
 }
 

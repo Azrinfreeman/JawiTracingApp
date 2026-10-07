@@ -83,6 +83,13 @@ export default function App() {
   }, [showSplash, screen, selected, audio]);
   useEffect(() => () => audio.stop(), [audio]);
   useEffect(() => {
+    if (screen !== 'lesson') return;
+    audio.preload(selected.audio.name, {preview});
+    const unlock = () => { audio.prime(selected.audio.name, {preview}); };
+    document.addEventListener('pointerdown', unlock, true);
+    return () => document.removeEventListener('pointerdown', unlock, true);
+  }, [audio, screen, selected, preview]);
+  useEffect(() => {
     if (!gate) return;
     const previous = document.activeElement;
     const dialog = gateRef.current; dialog?.querySelector('button')?.focus();

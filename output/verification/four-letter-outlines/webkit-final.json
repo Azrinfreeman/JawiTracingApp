@@ -1,0 +1,1436 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/four-letter-outlines.spec.js",
+      "tests/browser/outline-matches.spec.js",
+      "--project=webkit",
+      "--workers=1",
+      "--reporter=line,json",
+      "--output=tmp/outline-webkit-final"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tmp/outline-webkit-final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tmp/outline-webkit-final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tmp/outline-webkit-final",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "four-letter-outlines.spec.js",
+      "file": "four-letter-outlines.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Dal play: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7513,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:48:32.422Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-d2606b5b615fdcd3bced",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Zal play: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:48:40.098Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-0cdd1a093a7e3d6cf5dc",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Ra play: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9353,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:48:48.501Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-db17c2106f189ab112e9",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Zai play: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9860,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:48:57.867Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-e29ce51528661f7a6b4f",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Dal guided: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7829,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:49:07.743Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-863856e598541dbfba91",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Zal guided: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8063,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:49:15.584Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-88efb7373dcf46914bdf",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Ra guided: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7908,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:49:23.661Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-79116757f7d3a73f4d1a",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Zai guided: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8553,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:49:31.579Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-268a5823b828c5f28ad9",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Dal precision: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7176,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:49:40.145Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-87a27d9d756a51d418bc",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Zal precision: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:49:47.334Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-e0d3c49db9d101db1ba4",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Ra precision: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8076,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:49:55.603Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-fc33d948b7c37fa141af",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "Zai precision: outline, route, dot gate and saved candidate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10076,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:50:03.691Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-e37794fbd64f6bf08f5c",
+          "file": "four-letter-outlines.spec.js",
+          "line": 17,
+          "column": 72
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10420,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:50:13.779Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-b5727af8c4b0584405b0",
+          "file": "four-letter-outlines.spec.js",
+          "line": 38,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:50:24.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-dda76303a1d9a473dd8e",
+          "file": "four-letter-outlines.spec.js",
+          "line": 38,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16011,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:50:40.586Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-e150053f8e2c0837d85c",
+          "file": "four-letter-outlines.spec.js",
+          "line": 38,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 35107,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:50:56.618Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-936cd6122f06c3df0075",
+          "file": "four-letter-outlines.spec.js",
+          "line": 38,
+          "column": 74
+        },
+        {
+          "title": "Dal: touch contact, cancellation, wrong start and fresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native emulated touch uses Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                    "line": 66,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 270,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:51:31.739Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native emulated touch uses Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                        "line": 66,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-6e7b0558042cedb3bf85",
+          "file": "four-letter-outlines.spec.js",
+          "line": 65,
+          "column": 59
+        },
+        {
+          "title": "Zal: touch contact, cancellation, wrong start and fresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native emulated touch uses Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                    "line": 66,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 259,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:51:32.023Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native emulated touch uses Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                        "line": 66,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-3cfbfba791ad02c3b1f8",
+          "file": "four-letter-outlines.spec.js",
+          "line": 65,
+          "column": 59
+        },
+        {
+          "title": "Ra: touch contact, cancellation, wrong start and fresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native emulated touch uses Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                    "line": 66,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 265,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:51:32.294Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native emulated touch uses Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                        "line": 66,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-18eb1e2750f9bc9cc203",
+          "file": "four-letter-outlines.spec.js",
+          "line": 65,
+          "column": 59
+        },
+        {
+          "title": "Zai: touch contact, cancellation, wrong start and fresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native emulated touch uses Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                    "line": 66,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 283,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:51:32.572Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native emulated touch uses Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                        "line": 66,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-652dea8d792cf781c57c",
+          "file": "four-letter-outlines.spec.js",
+          "line": 65,
+          "column": 59
+        },
+        {
+          "title": "Dal: pen contact, cancellation, wrong start and fresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23000,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:51:32.868Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-55b5283b364ff955dae7",
+          "file": "four-letter-outlines.spec.js",
+          "line": 65,
+          "column": 59
+        },
+        {
+          "title": "Zal: pen contact, cancellation, wrong start and fresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23151,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:51:55.880Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-2879e35a7e9f88fce971",
+          "file": "four-letter-outlines.spec.js",
+          "line": 65,
+          "column": 59
+        },
+        {
+          "title": "Ra: pen contact, cancellation, wrong start and fresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:52:19.042Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-e0ebdd49f75d2a08553b",
+          "file": "four-letter-outlines.spec.js",
+          "line": 65,
+          "column": 59
+        },
+        {
+          "title": "Zai: pen contact, cancellation, wrong start and fresh recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26413,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:52:45.249Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-70825712d8ae841a29ce",
+          "file": "four-letter-outlines.spec.js",
+          "line": 65,
+          "column": 59
+        },
+        {
+          "title": "outline section and full demonstrations preserve earned progress; dot button uses the diamond",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18672,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:53:11.675Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-03a2222202f786916837",
+          "file": "four-letter-outlines.spec.js",
+          "line": 90,
+          "column": 1
+        },
+        {
+          "title": "lightweight outline tracing keeps controls bounded and copy ink remains freehand",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 30399,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    13 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    13 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js:117:70",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                      "column": 70,
+                      "line": 117
+                    },
+                    "snippet": "  115 |     const matrix=svg.getScreenCTM();return [{x:300,y:400},{x:340,y:460},{x:440,y:410}].map(p=>{const q=new DOMPoint(p.x,p.y).matrixTransform(matrix);return {x:q.x,y:q.y};});\n  116 |   });\n> 117 |   await draw(page,freehand);await expect(page.locator('.pupil-ink')).toHaveCount(1);await page.getByRole('button',{name:'Simpan untuk guru'}).click();\n      |                                                                      ^\n  118 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies.at(-1).ink[0]);\n  119 |   expect(saved[0]).toEqual({x:300,y:400});expect(saved.at(-1)).toEqual({x:440,y:410});\n  120 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                        "column": 70,
+                        "line": 117
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.pupil-ink')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" locator('.pupil-ink') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.pupil-ink')\u001b[22m\n\u001b[2m    13 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  115 |     const matrix=svg.getScreenCTM();return [{x:300,y:400},{x:340,y:460},{x:440,y:410}].map(p=>{const q=new DOMPoint(p.x,p.y).matrixTransform(matrix);return {x:q.x,y:q.y};});\n  116 |   });\n> 117 |   await draw(page,freehand);await expect(page.locator('.pupil-ink')).toHaveCount(1);await page.getByRole('button',{name:'Simpan untuk guru'}).click();\n      |                                                                      ^\n  118 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies.at(-1).ink[0]);\n  119 |   expect(saved[0]).toEqual({x:300,y:400});expect(saved.at(-1)).toEqual({x:440,y:410});\n  120 | });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js:117:70"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:53:30.360Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tmp\\outline-webkit-final\\four-letter-outlines-light-a2e3b-d-copy-ink-remains-freehand-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tmp\\outline-webkit-final\\four-letter-outlines-light-a2e3b-d-copy-ink-remains-freehand-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+                    "column": 70,
+                    "line": 117
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-eff3a05797d8782a846c",
+          "file": "four-letter-outlines.spec.js",
+          "line": 101,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "outline-matches.spec.js",
+      "file": "outline-matches.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "solo dal: adult candidate outlines and independent lanes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6566,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:54:42.487Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-803186e1e8f458fd5b64",
+          "file": "outline-matches.spec.js",
+          "line": 14,
+          "column": 75
+        },
+        {
+          "title": "solo zal: adult candidate outlines and independent lanes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5858,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:54:49.144Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-852c3ed53c35b9860a80",
+          "file": "outline-matches.spec.js",
+          "line": 14,
+          "column": 75
+        },
+        {
+          "title": "solo ra: adult candidate outlines and independent lanes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6927,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:54:55.014Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-9d301302863fcecf5be1",
+          "file": "outline-matches.spec.js",
+          "line": 14,
+          "column": 75
+        },
+        {
+          "title": "solo zai: adult candidate outlines and independent lanes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6635,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:55:01.951Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-0aa34d0e94900cf5fb5b",
+          "file": "outline-matches.spec.js",
+          "line": 14,
+          "column": 75
+        },
+        {
+          "title": "duo dal: adult candidate outlines and independent lanes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:55:08.597Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-2fdd45a9038455334936",
+          "file": "outline-matches.spec.js",
+          "line": 14,
+          "column": 75
+        },
+        {
+          "title": "duo zal: adult candidate outlines and independent lanes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8809,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:55:17.735Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-2b408c0df700e288aebb",
+          "file": "outline-matches.spec.js",
+          "line": 14,
+          "column": 75
+        },
+        {
+          "title": "duo ra: adult candidate outlines and independent lanes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9556,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:55:26.556Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-61873bc5c8b89ede9c86",
+          "file": "outline-matches.spec.js",
+          "line": 14,
+          "column": 75
+        },
+        {
+          "title": "duo zai: adult candidate outlines and independent lanes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9689,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:55:36.125Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-85f3b86afb035a27db44",
+          "file": "outline-matches.spec.js",
+          "line": 14,
+          "column": 75
+        },
+        {
+          "title": "authored standalone result uses the same outline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 704,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-05T22:55:45.825Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "754718cdcc786f4a9641-f23b8946775be252f820",
+          "file": "outline-matches.spec.js",
+          "line": 28,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-05T22:48:31.834Z",
+    "duration": 434887.40400000004,
+    "expected": 30,
+    "skipped": 4,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

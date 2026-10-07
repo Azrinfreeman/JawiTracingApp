@@ -18,7 +18,7 @@ async function observeAudio(page) {
   });
 }
 
-test('all 37 active local recordings decode to non-silent audio; approved lessons open for students', async ({ page }) => {
+test('all 36 active local recordings decode to non-silent audio; approved lessons open for students', async ({ page }) => {
   await page.goto('/'); await dismissSplash(page);
   test.skip(!await page.evaluate(() => typeof AudioContext !== 'undefined'), 'This runtime has no AudioContext; decode verification runs in Chromium.');
   const sources = letters.map(letter => ({ id: letter.id, src: letter.audio.name.src }));
@@ -40,7 +40,7 @@ test('all 37 active local recordings decode to non-silent audio; approved lesson
       return results;
     } finally { await context.close(); }
   }, sources);
-  expect(decoded).toHaveLength(37);
+  expect(decoded).toHaveLength(36);
   for (const file of decoded) {
     expect(file.bytes, file.id).toBeGreaterThan(1000);
     expect(file.duration, file.id).toBeGreaterThan(.3);
@@ -58,7 +58,7 @@ test('teacher can listen, replay, mute and change letters without stale audio or
   test.skip(process.platform === 'win32' && browserName === 'webkit', 'Observed Windows WebKit MP3 playback rejects with NotSupportedError; feedback is checked separately.');
   await observeAudio(page); await teacher(page);
   const panel = page.locator('.audio-review-panel');
-  await expect(panel).toContainText('37 rakaman nama huruf tersedia');
+  await expect(panel).toContainText('36 rakaman nama huruf tersedia');
   await panel.getByRole('button', { name: 'Dengar rakaman Alif', exact: true }).click();
   await expect(panel.getByRole('status')).toContainText('Rakaman Alif dimainkan');
   await expect.poll(() => page.evaluate(() => window.__reviewAudio.at(-1)?.currentTime ?? 0)).toBeGreaterThan(0);
@@ -79,7 +79,7 @@ test('teacher can listen, replay, mute and change letters without stale audio or
   await panel.getByRole('button', { name: 'Rakaman seterusnya', exact: true }).click();
   await expect(page.getByLabel('Huruf untuk semakan suara')).toHaveValue('alif');
   await expect(page.locator('.teacher-stat-grid')).toContainText(`${readyLessons}pelajaran sedia untuk murid`);
-  await expect(page.getByRole('cell', { name: 'Diluluskan', exact: true })).toHaveCount(37);
+  await expect(page.getByRole('cell', { name: 'Diluluskan', exact: true })).toHaveCount(36);
   await page.setViewportSize({ width: 390, height: 844 });
   expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
 });
@@ -111,8 +111,8 @@ test('a missing audio file reports failure and never substitutes another letter'
 test('review list, approval labels and mobile layout work even when the runtime lacks MP3 support', async ({ page, browserName }) => {
   await teacher(page);
   const panel = page.locator('.audio-review-panel');
-  await expect(page.getByLabel('Huruf untuk semakan suara').locator('option')).toHaveCount(37);
-  await expect(page.getByRole('cell', { name: 'Diluluskan', exact: true })).toHaveCount(37);
+  await expect(page.getByLabel('Huruf untuk semakan suara').locator('option')).toHaveCount(36);
+  await expect(page.getByRole('cell', { name: 'Diluluskan', exact: true })).toHaveCount(36);
   await expect(page.locator('.teacher-stat-grid')).toContainText(`${readyLessons}pelajaran sedia untuk murid`);
   await page.getByLabel('Huruf untuk semakan suara').selectOption('ha-pedat');
   await expect(panel.locator('.audio-review-transcript')).toContainText('Nama disebut: Ha');

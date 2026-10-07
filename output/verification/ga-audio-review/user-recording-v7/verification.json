@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-06",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "src": "/audio/letters/review/ga-name-v7-user-recording.wav",
+  "sha256": "bce006203bf9f9297679c4defcfd260777b4646682f1372744e6d37006bcc3c1",
+  "metrics": {
+    "duration": 1.05,
+    "sampleRate": 48000,
+    "rms": 0.07037375617889345,
+    "peak": 0.6918274164199829,
+    "clippedFraction": 0
+  },
+  "playback": {
+    "starts": 2,
+    "ended": 2
+  },
+  "catalogueAndAll37ActiveRecordingsPreserved": true,
+  "pronunciationReviewed": false,
+  "scope": "Isolated revision-7 candidate decode, signal integrity and native Chromium play/replay; no pronunciation approval or student replacement.",
+  "server": {
+    "url": "http://127.0.0.1:5173/audio/letters/review/ga-name-v7-user-recording.wav",
+    "status": 200,
+    "contentType": "audio/wav",
+    "bytes": 50444
+  },
+  "hashes": {
+    "src/content/letters.json": "16a82ae539d7755ba132bf619aff11468264076aad543c15de758a2c0175884c",
+    "public/audio/letters/review/ga-name-v7-user-recording.wav": "bce006203bf9f9297679c4defcfd260777b4646682f1372744e6d37006bcc3c1",
+    "scripts/prepare-user-ga.mjs": "b5887206e645b4f0bc5e23b5bbc3c6788c9d977f8324f592eed0f4c9262694bb",
+    "scripts/extract-user-ga.py": "7b253f678359a2f4dc5dd9fcd51b9fc3b780440733e52c2dc7bf3ca5bdb083cd",
+    "scripts/verify-ga-audio-review.mjs": "6666aa5bbe233a94775de0796a1c352ac2cab3abf8669efb20d265b2931c3117",
+    "output/verification/ga-audio-review/user-recording-v7/before-catalogue.json": "16a82ae539d7755ba132bf619aff11468264076aad543c15de758a2c0175884c",
+    "output/verification/ga-audio-review/user-recording-v7/source-user.m4a": "96bf46a7d94f19d67eb7e59e41652ed185b39116a2ee8e2445c6a8161426c3d0",
+    "output/verification/ga-audio-review/user-recording-v7/source-user.wav": "884074fa7e641ff1878c5bcecba7faff20d8f34dc734a0db968784f6dd371c5b",
+    "output/verification/ga-audio-review/user-recording-v7/source-generation.json": "e2bdfc48b83bee9fd6f8630f4c04660129e2b15daccf94b9d8967620e3e52752",
+    "output/verification/ga-audio-review/user-recording-v7/generation.json": "fdcd3f6de520bc0c2222db4d22c40bba41839bfa4dcf06077d358696e0265406"
+  }
+}

@@ -8,6 +8,8 @@ import { usePageTurn } from '../components/usePageTurn.js';
 import { toggleFullscreen } from '../platform/fullscreen.js';
 import { MatchClockDisplay } from '../components/MatchClockDisplay.jsx';
 import { MenuButton, TracingMenu } from '../components/TracingMenu.jsx';
+import { voiceMessage } from '../audio/audioManager.js';
+import { Icon } from '../components/Icons.jsx';
 
 export function MatchScreen({ config, letters, audio, music, sound, onAttempt, onFinish, onExit }) {
   const [state, setState] = useState(() => initialMatch(config)), current = useRef(state);
@@ -15,6 +17,20 @@ export function MatchScreen({ config, letters, audio, music, sound, onAttempt, o
   const [countdown, setCountdown] = useState(3), [fits, setFits] = useState(true);
   const [demo, setDemo] = useState(null), [exitConfirm, setExitConfirm] = useState(false), [notice, setNotice] = useState('');
   const [readyMenu, setReadyMenu] = useState(false), [assist, setAssist] = useState(null), announced = useRef(-1);
+  const [voiceNote, setVoiceNote] = useState('');
+  const [sectionDemoSlot, setSectionDemoSlot] = useState(null);
+  useEffect(() => {
+    setVoiceNote('');
+    const recording = letters.find(item => item.id === state.letterIds[state.roundIndex]).audio.name;
+    audio.preload(recording, {preview:Boolean(config.unscored)});
+    const prime = () => { audio.prime(recording, {preview:Boolean(config.unscored)}); };
+    document.addEventListener('pointerdown', prime, true);
+    const unsubscribe = audio.subscribeResult(event => {
+      const active = letters.find(item => item.id === current.current.letterIds[current.current.roundIndex]);
+      if (event.src === active?.audio.name.src && event.reason !== 'obsolete') setVoiceNote(voiceMessage(event));
+    });
+    return () => { unsubscribe(); document.removeEventListener('pointerdown', prime, true); };
+  }, [audio, letters, state.roundIndex]);
   const closeNotice = useCallback(() => setNotice(''), []);
   const saved = useRef(false), callbacks = useRef({ onAttempt, onFinish, onExit }); callbacks.current = { onAttempt, onFinish, onExit };
   const arena = useRef(null);
@@ -32,7 +48,7 @@ export function MatchScreen({ config, letters, audio, music, sound, onAttempt, o
     if (action.type === 'START' && next.status === 'racing') clock.resume();
     setState(next); return next;
   }, [audio, clock]);
-  const pause = useCallback(() => transition({ type: 'PAUSE' }), [transition]);
+  const pause = useCallback(() => { setSectionDemoSlot(null); boards.current.forEach(board=>board?.cancel()); return transition({ type: 'PAUSE' }); }, [transition]);
   const resume = useCallback(() => transition({ type: 'RESUME' }), [transition]);
   const closeReadyMenu = useCallback(() => setReadyMenu(false), []);
   const askExit = useCallback(() => setExitConfirm(true), []);
@@ -127,15 +143,16 @@ export function MatchScreen({ config, letters, audio, music, sound, onAttempt, o
   async function hearLetter() {
     const played = await audio.play(letter.audio.name, { preview: Boolean(config.unscored) });
     if (played.reason === 'obsolete') return;
-    setNotice(played.ok ? '' : 'Audio tidak dapat dimainkan. Cuba lagi.');
+    setVoiceNote(voiceMessage(played));
   }
   const letter = letters.find(l => l.id === state.letterIds[state.roundIndex]);
   const totals = state.profiles.map((_, slot) => state.rounds.reduce((sum, round) => sum + round.players[slot].total, 0)
     + (state.rounds.length <= state.roundIndex ? state.outcomes[slot]?.total || 0 : 0));
-  const menuOpen = layout.fits && !exitConfirm && (state.status === 'paused' || readyMenu);
+  const menuOpen = layout.fits && !exitConfirm && sectionDemoSlot === null && (state.status === 'paused' || readyMenu);
   const dotLane = slot => letter.geometry.dotTargets.length > 0 && !state.outcomes[slot];
   const assistSlot = assist?.roundIndex === state.roundIndex ? assist.slot : null;
   function openMenu() {
+    if (sectionDemoSlot !== null) { boards.current[sectionDemoSlot]?.cancel(); setSectionDemoSlot(null); return; }
     if (['racing', 'countdown'].includes(state.status)) pause();
     else if (state.status === 'ready') setReadyMenu(true);
   }
@@ -143,21 +160,22 @@ export function MatchScreen({ config, letters, audio, music, sound, onAttempt, o
   const assistLane = slot => { setAssist({ roundIndex: state.roundIndex, slot }); resume(); };
   return <main ref={arena} className={`match-arena stage-arena ${config.mode} ${layout.stacked ? 'stacked' : 'side-by-side'}`}>
     <h1 className="visually-hidden">{config.mode === 'duo' ? 'Duo 1v1' : 'Cabaran Solo'}</h1>
-    <div className="arena-hud arena-hud-left"><MenuButton disabled={exitConfirm || !layout.fits || Boolean(pageTurn.turn) || !['ready', 'racing', 'countdown'].includes(state.status)} onClick={openMenu}/></div>
-    <div className="arena-hud arena-hud-right"><span className="arena-round"><span className="arena-round-full">Pusingan {state.roundIndex + 1}/{state.letterIds.length} · <strong>{letter.labelMs}</strong>{config.unscored && <small> · Pratonton · tanpa markah</small>}</span><span className="arena-round-short" aria-hidden="true">{state.roundIndex + 1}/{state.letterIds.length}</span></span>
+    <div className="arena-hud arena-hud-left"><MenuButton disabled={exitConfirm || !layout.fits || Boolean(pageTurn.turn) || (!['ready', 'racing', 'countdown'].includes(state.status) && sectionDemoSlot === null)} onClick={openMenu}/></div>
+    <div className="arena-hud arena-hud-right"><div className="arena-letter-audio"><span className="arena-round"><span className="arena-round-full">Pusingan {state.roundIndex + 1}/{state.letterIds.length} · <strong>{letter.labelMs}</strong>{config.unscored && <small> · Pratonton · tanpa markah</small>}</span><span className="arena-round-short" aria-hidden="true">{state.roundIndex + 1}/{state.letterIds.length} · {letter.labelMs}</span></span>
+      <button className="button button-soft stage-hear-button" aria-label={`Dengar nama ${letter.labelMs}`} disabled={!layout.fits || Boolean(pageTurn.turn) || exitConfirm || menuOpen || !['ready', 'racing'].includes(state.status)} onClick={hearLetter}><Icon name="sound" size={18}/>Dengar</button></div>
       <MatchClockDisplay clock={clock} limitMs={state.limitMs} status={state.status} roundIndex={state.roundIndex}/></div>
-    <div className="race-lanes" aria-hidden={!layout.fits} style={!layout.fits ? { visibility: 'hidden' } : undefined}>{state.profiles.map((profile, slot) => <RaceTracePane key={`${state.roundIndex}:${slot}`} ref={board => { boards.current[slot] = board; }} turn={pageTurn.turn} onTurnEnd={pageTurn.finish} slot={slot} profile={profile} letter={letter} state={state.status} total={config.unscored ? '—' : totals[slot]} outcome={state.outcomes[slot]} ready={state.ready[slot]} retry={state.retries[slot]} demo={demo === slot} enabled={!pageTurn.turn && layout.fits && state.status === 'racing' && !state.outcomes[slot]} assistance={assistSlot === slot && state.status === 'racing'} onReady={() => { if (!layout.fits) return; setDemo(null); transition({ type: 'READY', slot }); }} onDemo={() => setDemo(slot)} onDemoEnd={() => setDemo(null)} onValidated={snapshot => complete(slot, snapshot, state.roundIndex)}/>)}</div>
+    <div className="race-lanes" aria-hidden={!layout.fits} style={!layout.fits ? { visibility: 'hidden' } : undefined}>{state.profiles.map((profile, slot) => <RaceTracePane key={`${state.roundIndex}:${slot}`} ref={board => { boards.current[slot] = board; }} turn={pageTurn.turn} onTurnEnd={pageTurn.finish} slot={slot} profile={profile} letter={letter} state={state.status} total={config.unscored ? '—' : totals[slot]} outcome={state.outcomes[slot]} ready={state.ready[slot]} retry={state.retries[slot]} demo={demo === slot} enabled={!pageTurn.turn && layout.fits && state.status === 'racing' && !state.outcomes[slot]} assistance={assistSlot === slot && state.status === 'racing'} onReady={() => { if (!layout.fits) return; setDemo(null); transition({ type: 'READY', slot }); }} onDemo={() => setDemo(slot)} onDemoEnd={() => { setDemo(null); setSectionDemoSlot(null); }} onValidated={snapshot => complete(slot, snapshot, state.roundIndex)}/>)}</div>
+    {voiceNote && <p className="match-voice-note" role="status">{voiceNote}</p>}
     {!layout.fits && <section className="arena-space"><h2>Besarkan ruang bermain</h2><p>Setiap pemain perlukan ruang jejak yang selesa. Putar peranti atau buka paparan penuh.</p><button className="button button-primary" onClick={fullscreen}>Paparan penuh</button><button className="button button-soft" onClick={() => transition({ type: 'END', exitToSolo: true })}>Kembali memilih Solo</button></section>}
     {layout.fits && state.status === 'countdown' && <div className="race-overlay countdown-overlay" role="status"><strong>{countdown}</strong><p>{state.resuming ? 'Sambung bersama…' : 'Bersedia…'}</p></div>}
     {menuOpen && state.status === 'paused' && <TracingMenu title="Rehat sekejap" sound={sound} onClose={resume} onBack={askExit}>
       <button className="button button-primary" onClick={resume}>Sambung bermain</button>
       <button className="button button-soft" onClick={() => setExitConfirm(true)}>Keluar cabaran</button>
-      <button className="button button-soft" aria-label={`Dengar nama ${letter.labelMs}`} onClick={hearLetter}>Dengar</button>
       {state.profiles.map((profile, slot) => !state.outcomes[slot] && <button key={`retry${slot}`} className="button button-outline" onClick={() => retryLane(slot)}>{state.profiles.length > 1 ? `Cuba lagi · ${profile}` : 'Cuba lagi'}</button>)}
+      {state.profiles.map((profile, slot) => !state.outcomes[slot] && <button key={`demo${slot}`} className="button button-soft" onClick={() => { setSectionDemoSlot(slot); boards.current[slot]?.demonstrateSection(); }}>{state.profiles.length > 1 ? `Tunjuk bahagian ini · ${profile}` : 'Tunjuk bahagian ini'}</button>)}
       {state.profiles.map((profile, slot) => dotLane(slot) && <button key={`assist${slot}`} className="button button-soft" onClick={() => assistLane(slot)}>{state.profiles.length > 1 ? `Bantuan titik · ${profile}` : 'Bantuan titik'}</button>)}
     </TracingMenu>}
     {menuOpen && state.status === 'ready' && <TracingMenu sound={sound} onClose={closeReadyMenu} onBack={() => { setReadyMenu(false); setExitConfirm(true); }}>
-      <button className="button button-soft" aria-label={`Dengar nama ${letter.labelMs}`} onClick={hearLetter}>Dengar</button>
       <button className="button button-soft" onClick={() => { setReadyMenu(false); setExitConfirm(true); }}>Keluar cabaran</button>
     </TracingMenu>}
     {state.status === 'roundResult' && !pageTurn.turn && !exitConfirm && <div className="race-overlay"><section className="race-dialog round-result" role="dialog" aria-modal="true" aria-labelledby="round-title"><h2 id="round-title">Pusingan {state.roundIndex + 1} selesai!</h2><p>{letter.labelMs} · Kita sudah mencuba bersama.</p><div className="round-score-grid">{state.outcomes.map((outcome, slot) => <div key={slot} className={`player-${slot}`}><h3>{state.profiles[slot]}</h3><strong>{config.unscored ? '—' : outcome.total}<small>markah</small></strong><p>{outcome.outcome === 'playComplete' ? `Siap ${(outcome.elapsedMs / 1000).toFixed(1)} saat` : 'Masa tamat'}</p>{!config.unscored && <small>{outcome.base} siap + {outcome.bonus} masa</small>}</div>)}</div><button className="button button-primary" onClick={nextRound}>{state.roundIndex + 1 === state.letterIds.length ? 'Lihat keputusan' : 'Pusingan seterusnya'}</button><button className="button button-soft" aria-label={`Dengar nama ${letter.labelMs}`} onClick={hearLetter}>Dengar</button><button className="button button-soft" onClick={() => setExitConfirm(true)}>Keluar cabaran</button></section></div>}

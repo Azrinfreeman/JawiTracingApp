@@ -1,0 +1,10 @@
+{
+  "url": "http://127.0.0.1:5173/src/content/letters.json",
+  "status": 200,
+  "exactCatalogue": true,
+  "letterId": "nun",
+  "geometryRevision": 3,
+  "geometryStatus": "approved",
+  "audioRevision": 2,
+  "appearance": "catalogueOutline"
+}

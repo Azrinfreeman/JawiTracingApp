@@ -17,7 +17,7 @@ test('200% zoom-equivalent reflow keeps navigation, writing and adult controls u
     await expect(page.locator('.welcome-note')).toContainText('Buku Jawi Saya');
     await page.getByRole('button', { name: 'Bintang', exact: true }).click();
     await page.getByRole('button', { name: 'Jom mula', exact: true }).click(); await fits();
-    await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+    await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
     await page.getByRole('button', { name: 'Ta', exact: true }).click();
     await draw(page, (await boardModels(page)).strokes[0]);
     await showDotHelp(page);

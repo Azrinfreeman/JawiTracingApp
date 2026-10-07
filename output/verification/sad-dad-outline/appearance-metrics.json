@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sad",
+    "routeInsideInk": 1,
+    "outlineInkOverlap": 0.9964171170065447,
+    "revealPieceOverlap": 0.9948678406997588,
+    "revision": 3,
+    "sourceSha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c"
+  },
+  {
+    "id": "dad",
+    "routeInsideInk": 1,
+    "outlineInkOverlap": 0.9963824193469791,
+    "revealPieceOverlap": 0.9949858376254316,
+    "revision": 3,
+    "sourceSha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c"
+  }
+]

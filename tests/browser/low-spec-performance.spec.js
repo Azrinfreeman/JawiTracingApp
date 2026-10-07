@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './helpers/localTest.js';
 import { mkdirSync } from 'node:fs';
 import { openLesson, boardModels, draw, openTeacher } from './helpers/tracing.js';
 import { dismissSplash } from './helpers/navigation.js';

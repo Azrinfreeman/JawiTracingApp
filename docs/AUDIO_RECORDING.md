@@ -1,13 +1,34 @@
 # Recording and pronunciation guide
 
-37 letter-name recordings are connected: 27 supplied files from voices/alphabet
-(21 MP3 and 6 WAV) and 10 retained synthetic MP3s. All 37 were approved by the
-project owner on 2 October 2026; see [the approval record](AUDIO_APPROVALS.md).
+36 letter-name recordings are connected: 30 supplied recordings (27 from
+voices/alphabet and the owner's Ga/Nga/Va recordings; 21 MP3 and 9 WAV) and 6 retained
+synthetic MP3s. Ye was removed from the game on 7 October; its old MP3
+and historical approval remain preserved. The owner approved the original mixed set on 2 October 2026
+and authorised the Ga fallback on 6 October and supplied the Nga correction on
+7 October, with the Va fallback authorised on 7 October; see [the approval record](AUDIO_APPROVALS.md).
 They play in student lessons, adult preview and Ruang guru → Semakan suara Jawi.
 See [the current audio review list](AUDIO_REPLACEMENT_REVIEW.md) for
 mapping, files and review priorities. Pronunciation examples are not yet included.
 The supplied WAV recordings are teaching assets; silent WAV fixtures used by
 engineering tests remain separate.
+
+Ga correction (6 October 2026): after rejecting earlier synthetic attempts,
+the owner supplied a reference and authorised direct use if guided synthesis
+failed. The guided attempt remained materially different; the game now uses
+the complete supplied utterance as audio revision 7. Speech samples, pitch,
+pacing and ending are preserved; see [the sample and checks](GA_AUDIO_REVIEW.md).
+
+Nga correction (7 October 2026): the owner supplied Recording (5).m4a and
+requested that Nga match its pronunciation rather than separate letter names.
+The game uses the complete first utterance as audio revision 2, preserving its
+speech samples and full ending. Nga geometry revision 4 is unchanged. See
+[method and checks](NGA_AUDIO_CORRECTION.md).
+
+Va correction (7 October 2026): the owner supplied Recording (6).m4a after
+authorising comparison and direct fallback. The guided match could not be
+confidently established, so Va audio 2 uses the complete first supplied utterance,
+preserving pitch, pacing, speech samples and ending without fades. Geometry
+revision 3 is unchanged. See [method and checks](VA_AUDIO_CORRECTION.md).
 
 ## Record distinct assets
 

@@ -50,24 +50,24 @@ for (const mode of ['play', 'guided', 'precision']) for (const letter of batch) 
   });
 }
 
-test('all 37 approved lessons are available without authored drafts', async ({ page }) => {
+test('all 36 approved lessons are available without authored drafts', async ({ page }) => {
   await page.goto('/'); await dismissSplash(page);
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
   await page.getByRole('button', { name: 'Semua huruf', exact: true }).click();
   await expect(page.locator('.letter-card:disabled')).toHaveCount(0);
   for (const letter of batch) await expect(page.getByRole('button', { name: letter.labelMs, exact: true })).toBeEnabled();
   await openTeacher(page);
   await expect(page.locator('.draft-model-card')).toHaveCount(draftCount);
   await expect(page.locator('.teacher-stat-grid > div').nth(1)).toContainText(String(modelCount));
-  await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('37');
+  await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('36');
   await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).click();
   await page.getByRole('button', { name: 'Model tersedia', exact: true }).click();
   await expect(page.locator('.letter-card:enabled')).toHaveCount(modelCount);
   await expect(page.locator('.card-caption').filter({ hasText: 'Draf · perlu semakan' })).toHaveCount(draftCount);
   await page.getByRole('button', { name: 'Tamatkan pratonton', exact: true }).click();
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
 });
 
 test('Sad requires its head loop before the bowl, and shared-point numbers change after the loop and lift', async ({ page }) => {

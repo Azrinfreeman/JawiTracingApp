@@ -1,0 +1,170 @@
+{
+  "description": "14 unchanged initial cases plus 4 repaired unscored preview cases. No application changes during repair.",
+  "passed": 18,
+  "failed": 0,
+  "skipped": 0,
+  "cases": [
+    {
+      "key": "chromium: Nun play: exact outline, partial reveal, dot-last gate and preview save",
+      "project": "chromium",
+      "title": "Nun play: exact outline, partial reveal, dot-last gate and preview save",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: Nun guided: exact outline, partial reveal, dot-last gate and preview save",
+      "project": "chromium",
+      "title": "Nun guided: exact outline, partial reveal, dot-last gate and preview save",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: Nun precision: exact outline, partial reveal, dot-last gate and preview save",
+      "project": "chromium",
+      "title": "Nun precision: exact outline, partial reveal, dot-last gate and preview save",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: Nun review fit 768: catalogue comparison and numbering",
+      "project": "chromium",
+      "title": "Nun review fit 768: catalogue comparison and numbering",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: Nun review fit 1280: catalogue comparison and numbering",
+      "project": "chromium",
+      "title": "Nun review fit 1280: catalogue comparison and numbering",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: Nun outline demonstration preserves earned drawing",
+      "project": "chromium",
+      "title": "Nun outline demonstration preserves earned drawing",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: Nun normal students retain approved revision 2 until review",
+      "project": "chromium",
+      "title": "Nun normal students retain approved revision 2 until review",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun play: exact outline, partial reveal, dot-last gate and preview save",
+      "project": "webkit",
+      "title": "Nun play: exact outline, partial reveal, dot-last gate and preview save",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun guided: exact outline, partial reveal, dot-last gate and preview save",
+      "project": "webkit",
+      "title": "Nun guided: exact outline, partial reveal, dot-last gate and preview save",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun precision: exact outline, partial reveal, dot-last gate and preview save",
+      "project": "webkit",
+      "title": "Nun precision: exact outline, partial reveal, dot-last gate and preview save",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun review fit 768: catalogue comparison and numbering",
+      "project": "webkit",
+      "title": "Nun review fit 768: catalogue comparison and numbering",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun review fit 1280: catalogue comparison and numbering",
+      "project": "webkit",
+      "title": "Nun review fit 1280: catalogue comparison and numbering",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun outline demonstration preserves earned drawing",
+      "project": "webkit",
+      "title": "Nun outline demonstration preserves earned drawing",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun normal students retain approved revision 2 until review",
+      "project": "webkit",
+      "title": "Nun normal students retain approved revision 2 until review",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: Nun solo: reviewed outline in unscored independent lanes",
+      "project": "chromium",
+      "title": "Nun solo: reviewed outline in unscored independent lanes",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: Nun duo: reviewed outline in unscored independent lanes",
+      "project": "chromium",
+      "title": "Nun duo: reviewed outline in unscored independent lanes",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun solo: reviewed outline in unscored independent lanes",
+      "project": "webkit",
+      "title": "Nun solo: reviewed outline in unscored independent lanes",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: Nun duo: reviewed outline in unscored independent lanes",
+      "project": "webkit",
+      "title": "Nun duo: reviewed outline in unscored independent lanes",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    }
+  ]
+}

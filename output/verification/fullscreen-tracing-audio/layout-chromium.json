@@ -1,0 +1,884 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/fullscreen-layout.spec.js",
+      "--config=playwright.tracing.config.js",
+      "--project=chromium",
+      "--workers=2",
+      "--fully-parallel",
+      "--global-timeout=480000",
+      "-g",
+      "(fitted menus|all 37).*(320x600|390x844|768x1024|1024x768|1280x800|1920x1080|3840x2160)|Duo has equal.*(768x1024|1024x768)|completion, dots|demo, completion.*(390x844|1024x768)|small-space fullscreen"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.tracing.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 480000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fullscreen-tracing-audio/layout-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fullscreen-tracing-audio/layout-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/fullscreen-tracing-audio/layout-chromium.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "fullscreen-layout.spec.js",
+      "file": "fullscreen-layout.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "fitted menus, catalogue and teacher pages at 320x600",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1552,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 18\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"DIV\",\u001b[39m\n\u001b[31m+       \"teacher-content\",\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       285,\u001b[39m\n\u001b[31m+       295,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"SECTION\",\u001b[39m\n\u001b[31m+       \"teacher-panel\",\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       283,\u001b[39m\n\u001b[31m+       294,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 18\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"DIV\",\u001b[39m\n\u001b[31m+       \"teacher-content\",\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       285,\u001b[39m\n\u001b[31m+       295,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"SECTION\",\u001b[39m\n\u001b[31m+       \"teacher-panel\",\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       283,\u001b[39m\n\u001b[31m+       294,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:17:21)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:34:27",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                      "column": 21,
+                      "line": 17
+                    },
+                    "snippet": "  15 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);\n  16 |   return {overflow,offscreen,scrollX,scrollY};\n> 17 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});\n     |                     ^\n  18 | }\n  19 | async function shot(page,name) {\n  20 |  // Windows WebKit can stall after native 4K capture; retain all DOM/fit checks."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                        "column": 21,
+                        "line": 17
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 18\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"offscreen\": Array [],\u001b[22m\n\u001b[32m-   \"overflow\": Array [],\u001b[39m\n\u001b[31m+   \"overflow\": Array [\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"DIV\",\u001b[39m\n\u001b[31m+       \"teacher-content\",\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       300,\u001b[39m\n\u001b[31m+       285,\u001b[39m\n\u001b[31m+       295,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     Array [\u001b[39m\n\u001b[31m+       \"SECTION\",\u001b[39m\n\u001b[31m+       \"teacher-panel\",\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       298,\u001b[39m\n\u001b[31m+       283,\u001b[39m\n\u001b[31m+       294,\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   ],\u001b[39m\n\u001b[2m    \"scrollX\": 0,\u001b[22m\n\u001b[2m    \"scrollY\": 0,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  15 |   const offscreen=[...document.querySelectorAll('button,select,input')].filter(visible).filter(e=>{const r=e.getBoundingClientRect();return r.left< -1||r.top< -1||r.right>innerWidth+1||r.bottom>innerHeight+1;}).map(e=>e.getAttribute('aria-label')||e.textContent);\n  16 |   return {overflow,offscreen,scrollX,scrollY};\n> 17 |  }); expect(result).toEqual({overflow:[],offscreen:[],scrollX:0,scrollY:0});\n     |                     ^\n  18 | }\n  19 | async function shot(page,name) {\n  20 |  // Windows WebKit can stall after native 4K capture; retain all DOM/fit checks.\n    at fitted (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:17:21)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:34:27"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:21.580Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\layout-chromium\\fullscreen-layout-fitted-m-7c867-nd-teacher-pages-at-320x600-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\layout-chromium\\fullscreen-layout-fitted-m-7c867-nd-teacher-pages-at-320x600-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                    "column": 21,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-332608c2068c407d478c",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:21.566Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-04755524bec46b88df6b",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1928,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:24.151Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-afafd3c2311f76bf7499",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1874,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:24.221Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-34dfab66a94f26836e90",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2079,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:26.105Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-9f9716a70116212b6052",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 1280x800",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1837,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:26.313Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-eb3066d310f159d778f0",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "fitted menus, catalogue and teacher pages at 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4318,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:28.163Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-3d7f695b8b1afd585a95",
+          "file": "fullscreen-layout.spec.js",
+          "line": 26,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8059,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:28.197Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-f05ab00c7f32bf03bd2a",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7806,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:32.491Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-6eeb8aa5c89bde58cb7f",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8031,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:36.265Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-4de255ee9f601986058d",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8275,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:40.309Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-769ab636fc7245405fd1",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8961,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:44.308Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-2ede97aa21bcdfee9db1",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 1280x800",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8465,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:48.595Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-b681fccee61ada31a77c",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "all 37 complete letter envelopes and guides fit at 3840x2160",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 18655,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:53.280Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-fddbcf7844186ffd19f1",
+          "file": "fullscreen-layout.spec.js",
+          "line": 41,
+          "column": 2
+        },
+        {
+          "title": "completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5905,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:58:57.075Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-8f4cc17ac44754e27f60",
+          "file": "fullscreen-layout.spec.js",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30187,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                        "column": 366,
+                        "line": 66
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Uji dua sentuhan' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"button button-primary\">Uji dua sentuhan</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  64 | for(const [width,height] of [[1024,768],[768,1024],[1280,720],[1920,1080],[1280,800],[800,1280],[3840,2160]]){\n  65 |  test(`Duo has equal fitted stages and recovers from small space at ${width}x${height}`,async({page,browserName})=>{\n> 66 |   await page.setViewportSize({width,height});await welcome(page);await page.getByRole('button',{name:'Duo 1v1',exact:true}).click();await page.getByRole('button',{name:'Jom mula',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Seterusnya',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Uji dua sentuhan'}).click();await fitted(page);await page.getByRole('button',{name:/Pratonton susun atur dewasa/}).click();await frames(page);await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);\n     |                                                                                                                                                                                                                                                                                                                                                                              ^\n  67 |   const sizes=await page.locator('.trace-stage').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return{width:b.width,height:b.height};}));expect(sizes[0]).toEqual(sizes[1]);expect(Math.min(sizes[0].width,sizes[0].height)).toBeGreaterThanOrEqual(280);expect(await page.locator('.trace-board').first().getAttribute('viewBox')).toBe(await page.locator('.trace-board').last().getAttribute('viewBox'));await shot(page,`${browserName}-${width}-duo`);\n  68 |   const squeeze=await page.addStyleTag({content:'.race-pane { max-height: 240px !important; }'});await expect(page.locator('.arena-space')).toBeVisible();await fitted(page);await squeeze.evaluate(node=>node.remove());await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);\n  69 |  });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:66:366"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:59:02.994Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\layout-chromium\\fullscreen-layout-Duo-has--c9e5a-rom-small-space-at-1024x768-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\layout-chromium\\fullscreen-layout-Duo-has--c9e5a-rom-small-space-at-1024x768-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-344ba490719471c67239",
+          "file": "fullscreen-layout.spec.js",
+          "line": 65,
+          "column": 2
+        },
+        {
+          "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 30192,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+                        "column": 366,
+                        "line": 66
+                      },
+                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Uji dua sentuhan' })\u001b[22m\n\u001b[2m    - locator resolved to <button disabled class=\"button button-primary\">Uji dua sentuhan</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    57 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n  64 | for(const [width,height] of [[1024,768],[768,1024],[1280,720],[1920,1080],[1280,800],[800,1280],[3840,2160]]){\n  65 |  test(`Duo has equal fitted stages and recovers from small space at ${width}x${height}`,async({page,browserName})=>{\n> 66 |   await page.setViewportSize({width,height});await welcome(page);await page.getByRole('button',{name:'Duo 1v1',exact:true}).click();await page.getByRole('button',{name:'Jom mula',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Seterusnya',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Uji dua sentuhan'}).click();await fitted(page);await page.getByRole('button',{name:/Pratonton susun atur dewasa/}).click();await frames(page);await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);\n     |                                                                                                                                                                                                                                                                                                                                                                              ^\n  67 |   const sizes=await page.locator('.trace-stage').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return{width:b.width,height:b.height};}));expect(sizes[0]).toEqual(sizes[1]);expect(Math.min(sizes[0].width,sizes[0].height)).toBeGreaterThanOrEqual(280);expect(await page.locator('.trace-board').first().getAttribute('viewBox')).toBe(await page.locator('.trace-board').last().getAttribute('viewBox'));await shot(page,`${browserName}-${width}-duo`);\n  68 |   const squeeze=await page.addStyleTag({content:'.race-pane { max-height: 240px !important; }'});await expect(page.locator('.arena-space')).toBeVisible();await fitted(page);await squeeze.evaluate(node=>node.remove());await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);\n  69 |  });\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js:66:366"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:59:11.948Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\layout-chromium\\fullscreen-layout-Duo-has--05298-rom-small-space-at-768x1024-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\layout-chromium\\fullscreen-layout-Duo-has--05298-rom-small-space-at-768x1024-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-afd869fe602823cf905a",
+          "file": "fullscreen-layout.spec.js",
+          "line": 65,
+          "column": 2
+        },
+        {
+          "title": "demo, completion and copy tools fit at 390x844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5430,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:59:35.244Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-58021f59198b02188835",
+          "file": "fullscreen-layout.spec.js",
+          "line": 82,
+          "column": 74
+        },
+        {
+          "title": "demo, completion and copy tools fit at 1024x768",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5074,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:59:40.904Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-e6376d626966626537d3",
+          "file": "fullscreen-layout.spec.js",
+          "line": 82,
+          "column": 74
+        },
+        {
+          "title": "small-space fullscreen rejection stays visible and preserves the current screen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2846,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:59:43.018Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b4a7e56fb4c4d07431f8-3ab28edd9e5dfbc83c19",
+          "file": "fullscreen-layout.spec.js",
+          "line": 86,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T09:58:20.886Z",
+    "duration": 88315.72600000001,
+    "expected": 17,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

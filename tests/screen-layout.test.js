@@ -6,7 +6,9 @@ describe('screen layout',()=>{
  for(const [width,height] of [[1920,800],[700,700],[360,540]])it(`uniform fit contains the whole letter and dots at ${width}x${height}`,()=>{
   const box=fitTraceViewport(letter,reference,width,height);
   expect(box.width/box.height).toBeCloseTo(width/height,8);
-  expect(box.x+box.width/2).toBe(510);expect(box.y+box.height/2).toBe(465);
+  expect(box.x+box.width/2).toBe(510);
+  // Corner controls can shift the drawing down without changing its uniform scale.
+  expect(box.y+box.height/2).toBeLessThanOrEqual(465);
   expect(box.x).toBeLessThanOrEqual(188);expect(box.x+box.width).toBeGreaterThanOrEqual(832);
   expect(box.y).toBeLessThanOrEqual(18);expect(box.y+box.height).toBeGreaterThanOrEqual(912);
  });

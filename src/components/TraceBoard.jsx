@@ -14,10 +14,20 @@ import { useViewportLayout } from './useViewportLayout.js';
 import { fitTraceViewport } from '../game/screenLayout.js';
 import { createLiveRenderer, controlKey } from '../tracing/liveRenderer.js';
 import { createInkPath } from '../tracing/inkPath.js';
+import { demonstrationPlan, stageInstruction } from '../tracing/teachingCues.js';
+import { outlineAppearance, outlinePart, outlinePath, outlineIllustrationParts, createOutlineReveal } from '../tracing/outlineAppearance.js';
 import { isLightweightPresentation, setTracingContact } from '../platform/presentation.js';
 
 const NS = 'http://www.w3.org/2000/svg';
 const ReferenceModel = memo(function ReferenceModel({ letter, mode, isPlay, pendingId, radius }) {
+  if(outlineAppearance(letter)) return <g aria-hidden="true" className="outline-reference">
+    {outlineIllustrationParts(letter).map(part=><path key={part.id} d={outlinePath(part)} className="reference-outline" fillRule="evenodd" data-part-id={part.id}/>)}
+    {letter.geometry.strokes.map(stroke=><g key={stroke.id}>
+      <path d={stroke.path} className="reference-stroke outline-route" opacity="0" strokeWidth={stroke.width}/>
+      {mode==='guided'&&<path d={stroke.path} className="direction-guide outline-direction"/>}
+    </g>)}
+    {letter.geometry.dotTargets.map(dot=><circle key={dot.id} cx={dot.x} cy={dot.y} r={dot.visibleRadius} className="reference-dot" opacity="0"/>)}
+  </g>;
   return <g aria-hidden="true">
     {letter.geometry.strokes.map(stroke => <g key={stroke.id}>
       {mode === 'guided' && <path d={stroke.path} className="trace-corridor" strokeWidth={(radius + 7.5) * 2}/>}
@@ -27,9 +37,11 @@ const ReferenceModel = memo(function ReferenceModel({ letter, mode, isPlay, pend
     {letter.geometry.dotTargets.map(dot => <circle key={dot.id} cx={dot.x} cy={dot.y} r={dot.visibleRadius} className="reference-dot"/>)}
   </g>;
 });
-export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activity, attempt, demo, adjustment, onDemoEnd, onComplete, onDiagnostic, enabled = true, profileOverride, onValidated, now = performance.now.bind(performance), compact = false, fitted = false, stageOnly = false, dotAssistance = false, renderSupport }, ref) {
+export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activity, attempt, demo: requestedDemo, adjustment, onDemoEnd, onComplete, onDiagnostic, enabled = true, profileOverride, onValidated, now = performance.now.bind(performance), compact = false, fitted = false, stageOnly = false, dotAssistance = false, renderSupport }, ref) {
   globalThis.__JAWI_TRACE_PERF__?.('render');
   const patternId = useId().replace(/:/g, '');
+  const [sectionDemo, setSectionDemo] = useState(false), [demoCue, setDemoCue] = useState('');
+  const demo = requestedDemo || sectionDemo;
   const enabledRef = useRef(enabled); enabledRef.current = enabled;
   const svgRef = useRef(null), inkRef = useRef(null), demoRef = useRef(null);
   const fillRef = useRef(null), trailRef = useRef(null), cursorRef = useRef(null), tailRef = useRef(null), resumeRef = useRef(null);
@@ -41,7 +53,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
   const isCopy = activity === 'copy', isPlay = mode === 'play' && !isCopy;
   const demoReset = isPlay ? false : demo;
   const inkData = useRef([]), callbacks = useRef({ onComplete, onDemoEnd, onDiagnostic, onValidated, now });
-  callbacks.current = { onComplete, onDemoEnd, onDiagnostic, onValidated, now };
+  callbacks.current = { onComplete, onDemoEnd: () => { setSectionDemo(false); onDemoEnd?.(); }, onDiagnostic, onValidated, now };
   const [state, setState] = useState(null);
   const [references, setReferences] = useState({});
   const [hint, setHint] = useState(false), [scale, setScale] = useState(1);
@@ -52,7 +64,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
   const viewBox = `${presentation.x} ${presentation.y} ${presentation.width} ${presentation.height}`;
   liveContext.current = { scale, presentation, demo };
   useLayoutEffect(() => { if (liveView.current) renderer.current?.paint(liveView.current, liveContext.current); });
-  useImperativeHandle(ref, () => ({ cancel: () => inputRef.current?.cancel(), isBusy: () => demoActive.current || Boolean(inputRef.current?.isBusy()), exportDiagnostic: () => inputRef.current?.diagnostic(), exportInk: () => inkData.current.map(line => line.map(p => ({ x: Math.round(p.x * 10) / 10, y: Math.round(p.y * 10) / 10 }))) }), []);
+  useImperativeHandle(ref, () => ({ cancel: () => { inputRef.current?.cancel(); setSectionDemo(false); }, demonstrateSection: () => { inputRef.current?.cancel(); setSectionDemo(true); }, isBusy: () => demoActive.current || Boolean(inputRef.current?.isBusy()), exportDiagnostic: () => inputRef.current?.diagnostic(), exportInk: () => inkData.current.map(line => line.map(p => ({ x: Math.round(p.x * 10) / 10, y: Math.round(p.y * 10) / 10 }))) }), []);
   useEffect(() => { if (!enabled) inputRef.current?.cancel(); }, [enabled]);
 
   useEffect(() => {
@@ -114,10 +126,11 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
         if (!previous || previous.x !== p.x || previous.y !== p.y) { record.points.push(p); dirty.add(record); }
       }
       if (decision.mark) {
-        const node = document.createElementNS(NS, 'circle');
+        const appearance=!isCopy&&outlinePart(letter,decision.partId);
+        const node = document.createElementNS(NS, appearance?'path':'circle');
         node.setAttribute('class', isPlay ? 'validated-dot play-dot' : 'validated-dot');
-        node.setAttribute('cx', decision.mark.x); node.setAttribute('cy', decision.mark.y);
-        node.setAttribute('r', decision.mark.radius);
+        if(appearance){node.setAttribute('d',outlinePath(appearance));node.setAttribute('fill-rule','evenodd');node.classList.add('outline-dot');}
+        else{node.setAttribute('cx', decision.mark.x); node.setAttribute('cy', decision.mark.y);node.setAttribute('r', decision.mark.radius);}
         group.append(node);
         records.set(decision.gestureId, { node, partId: decision.partId, points: [], mark: decision.mark });
       }
@@ -138,7 +151,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
     const diagnostic = next => {
       if (!callbacks.current.onDiagnostic || activity === 'copy') return null;
       next ||= engine.snapshot();
-      const value = { ...next, timing, rawInk: rawGestures.map(g => g.points),
+      const value = { ...next, timing, environment: { build:import.meta.env.VITE_BUILD_ID || 'local-source', letterId:letter.id, contentVersion:letter.contentVersion, viewport:{width:innerWidth,height:innerHeight,devicePixelRatio}, presentation:lightweight ? 'lightweight' : 'standard', userAgent:navigator.userAgent }, rawInk: rawGestures.map(g => g.points),
         rawGestures, visibleInk: [...records.values()].filter(r => !r.mark).map(r => ({ partId: r.partId, points: r.points })),
         assistedMarks: [...records.values()].filter(r => r.mark).map(r => r.mark),
         ...(isPlay ? { assistedFill: letter.geometry.strokes.map(stroke => ({ partId: stroke.id,
@@ -162,7 +175,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
       }
       if (inkLimit) { next.inkLimit = true; next.feedback = isPlay ? 'Sambung di sini.' : 'Papan penuh. Tekan Cuba lagi.'; }
       liveView.current = next; drawing.paint(next, liveContext.current);
-      const key = controlKey(next, prepared);
+      const key = controlKey(next, prepared, letter);
       if (key !== previousControl) {
         previousControl = key;
         setState({ ...engine.snapshot(), ...(inkLimit ? { inkLimit: true, feedback: next.feedback } : {}) });
@@ -180,7 +193,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
         inputSources.add(type);
         if (!pointerType) { pointerType = type; engine = makeEngine(type); }
         rawGesture = { gestureId: ++rawGestureId, partId: null, kind: activity === 'copy' ? 'copy' : null,
-          status: 'active', pointerType: type, points: [] };
+          status: 'active', pointerType: type, coordinateSpace:'boardLogical', downTime:p.time, points: [] };
         rawGestures.push(rawGesture);
         setTracingContact(contact, true);
         if (!captureRaw(p)) return;
@@ -195,6 +208,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
         else decide(engine.move(p));
       },
       end(p) {
+        if (rawGesture) rawGesture.upTime = p.time;
         if (captureRaw(p)) {
           if (activity === 'copy') { dirty.add(records.get(rawGesture.gestureId)); rawGesture.status = 'ended'; }
           else decide(engine.end(p));
@@ -203,9 +217,9 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
         diagnosticDue = true;
         setTracingContact(contact, false);
       },
-      cancel() {
+      cancel(reason) {
         if (activity !== 'copy') decide(engine.cancel());
-        if (rawGesture) rawGesture.status = 'cancel';
+        if (rawGesture) { rawGesture.status = 'cancel'; rawGesture.cancelReason = reason || 'application'; }
         rawGesture = null;
         diagnosticDue = true;
         setTracingContact(contact, false);
@@ -259,11 +273,20 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
     const group = demoRef.current;
     group.replaceChildren();
     const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const sequence = letter.geometry.validSequences[0];
-    const parts = sequence.map(id => {
+    const schedule = demonstrationPlan(letter, references, state?.pending?.[0], state?.progress || {}, sectionDemo);
+    const parts = [...new Set(schedule.map(step => step.id))].map(id => {
       const stroke = letter.geometry.strokes.find(s => s.id === id);
       const dot = letter.geometry.dotTargets.find(d => d.id === id);
+      const appearance=outlinePart(letter,id);
+      if(appearance&&stroke){
+        const reveal=createOutlineReveal(group,appearance,references[id],'demonstration-ink outline-demonstration',undefined,letter.geometry.appearance.bodyContours);
+        return {id,node:reveal.group,stroke,reveal};
+      }
       const node = document.createElementNS(NS, stroke ? 'path' : 'circle');
+      if(appearance&&dot){
+        const shape=document.createElementNS(NS,'path');shape.setAttribute('d',outlinePath(appearance));shape.setAttribute('class','demonstration-ink outline-dot');shape.setAttribute('opacity','0');group.append(shape);
+        return {id,node:shape,stroke};
+      }
       node.setAttribute('class', 'demonstration-ink');
       if (stroke) {
         node.setAttribute('d', stroke.path);
@@ -271,34 +294,41 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
         node.setAttribute('stroke-dashoffset', references[id].length);
       } else { node.setAttribute('cx', dot.x); node.setAttribute('cy', dot.y); node.setAttribute('r', dot.visibleRadius); node.setAttribute('opacity', '0'); }
       group.append(node);
-      return { id, node, stroke, duration: stroke ? Math.max(1000, Math.min(2100, references[id].length * 2)) : 500 };
+      return { id, node, stroke };
     });
     const marker = document.createElementNS(NS, 'circle');
     marker.setAttribute('class', 'demo-marker'); marker.setAttribute('r', '20'); group.append(marker);
-    let frame, start = performance.now(), timeout;
-    if (reduced) {
-      parts.forEach(part => { part.node.setAttribute('stroke-dashoffset', '0'); part.node.setAttribute('opacity', '1'); });
-      marker.setAttribute('opacity', '0');
-      timeout = setTimeout(() => callbacks.current.onDemoEnd(), 1400);
-    } else {
-      const tick = now => {
-        let elapsed = now - start, current = null;
-        for (const part of parts) {
-          const fraction = Math.max(0, Math.min(1, elapsed / part.duration));
-          if (part.stroke) part.node.setAttribute('stroke-dashoffset', references[part.id].length * (1 - fraction));
-          else part.node.setAttribute('opacity', fraction >= 0.3 ? '1' : '0');
-          if (elapsed >= 0 && elapsed < part.duration) current = { part, fraction };
-          elapsed -= part.duration;
-        }
-        if (current?.part.stroke) {
-          const p = pointAt(references[current.part.id], references[current.part.id].length * current.fraction);
-          marker.setAttribute('cx', p.x); marker.setAttribute('cy', p.y); marker.setAttribute('opacity', '1');
-        } else marker.setAttribute('opacity', '0');
-        if (elapsed >= 0) { timeout = setTimeout(() => callbacks.current.onDemoEnd(), 500); return; }
-        frame = requestAnimationFrame(tick);
-      };
+    let frame, start = performance.now(), timeout, lastStep = -1;
+    const tick = now => {
+      let elapsed = now-start, current = null;
+      for (const [index, step] of schedule.entries()) {
+        const duration = reduced ? 700 : step.duration;
+        if (elapsed < 0) break;
+        const part = parts.find(p => p.id === step.id);
+        const fraction = reduced ? 1 : Math.min(1, elapsed/duration);
+        const arc = step.from + (step.to-step.from)*fraction;
+        if (part.reveal)part.reveal.paint(arc,arc>=references[part.id].length);
+        else if (part.stroke) part.node.setAttribute('stroke-dashoffset', references[part.id].length-arc);
+        else part.node.setAttribute('opacity', fraction >= .3 ? '1' : '0');
+        if (elapsed < duration + step.pause) current = {part, arc, index, lifted:elapsed >= duration};
+        elapsed -= duration + step.pause;
+      }
+      if (current?.part.stroke && !current.lifted && !reduced) {
+        const p = pointAt(references[current.part.id], current.arc);
+        marker.setAttribute('cx', p.x); marker.setAttribute('cy', p.y); marker.setAttribute('opacity', '1');
+      } else marker.setAttribute('opacity', '0');
+      const stepKey = current ? `${current.index}:${current.lifted}` : 'end';
+      if (stepKey !== lastStep) {
+        lastStep = stepKey;
+        const part = current && numberedGuidePlan(letter, references).find(p => p.id === current.part.id);
+        const next = current && schedule[current.index+1];
+        setDemoCue(current?.lifted && next && next.id !== current.part.id ? 'Angkat pen. Perhatikan titik mula seterusnya.'
+          : part ? stageInstruction(letter, part, {phase:'tracing',progress:{[part.id]:current.arc},completed:[]}) : 'Perhatikan arah gerakan.');
+      }
+      if (elapsed >= 0) { timeout = setTimeout(() => callbacks.current.onDemoEnd(), 500); return; }
       frame = requestAnimationFrame(tick);
-    }
+    };
+    frame = requestAnimationFrame(tick);
     return () => { cancelAnimationFrame(frame); clearTimeout(timeout); group.replaceChildren(); };
   }, [demo, references, letter]);
 
@@ -309,6 +339,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
   const finishMessage = isPlay && guidePart?.kind === 'stroke' && (state?.finish?.nearEnd || state?.finish?.confirmationAvailable)
     ? guideInstruction(guidePart, state.finish, state.phase)
     : null;
+  const cue = demo ? demoCue || 'Perhatikan titik mula dan arah gerakan.' : state && stageInstruction(letter, guidePart, state, finishMessage);
   const status = <div className={`board-tip ${!isCopy && state?.blocked ? 'is-blocked' : ''}`} role="status"><span className="tip-indicator"/>{isCopy ? state?.inkLimit ? 'Papan penuh. Simpan hasil atau cuba semula.' : 'Lihat contoh. Cuba tulis dengan cara sendiri.' : demo ? 'Perhatikan titik mula dan arah gerakan.' : finishMessage || state?.feedback || 'Mula pada bulatan hijau.'}</div>;
   const instruction = guidePart && <p className="trace-number-instruction" aria-live="polite"><span aria-hidden="true">{guidePart.points[0].number}</span>{guideInstruction(guidePart, isPlay ? state?.finish : null, state?.phase)}</p>;
   const dots = isPlay && <div className="play-dot-tools">
@@ -323,7 +354,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
   <div ref={stageRef} className={`trace-stage ${isCopy ? 'copy-stage' : ''}`} style={{ '--stage-square': `${Math.min(stageSize.width, stageSize.height)}px` }}>
   {smallStage && <aside className="trace-space" role="status">Putar peranti atau kurangkan zum untuk ruang jejak yang lebih besar.</aside>}
   <div style={smallStage ? { visibility: 'hidden' } : undefined} className={`board-wrap ${isPlay ? 'play-board' : ''} ${isPlay && (hint || state?.phase === 'paused') ? 'play-needs-help' : ''} ${!isCopy && state?.blocked ? 'gesture-blocked' : ''}`}>
-    <svg ref={svgRef} className={`trace-board ${isCopy ? 'copy-board' : ''}`} data-interaction-policy={isCopy ? 'free-copy' : state?.profile?.interactionPolicy} data-tolerance-profile={state?.profile?.id} data-phase={state?.phase} viewBox={viewBox} preserveAspectRatio="xMidYMid meet" role="img" aria-label={`Ruang ${isCopy ? 'salinan' : 'jejak'} huruf ${letter.labelMs}. Gunakan jari, pen atau tetikus.`}>
+    <svg ref={svgRef} className={`trace-board ${isCopy ? 'copy-board' : ''}`} data-demo={demo ? sectionDemo ? 'section' : 'full' : 'none'} data-interaction-policy={isCopy ? 'free-copy' : state?.profile?.interactionPolicy} data-tolerance-profile={state?.profile?.id} data-phase={state?.phase} viewBox={viewBox} preserveAspectRatio="xMidYMid meet" role="img" aria-label={`Ruang ${isCopy ? 'salinan' : 'jejak'} huruf ${letter.labelMs}. Gunakan jari, pen atau tetikus.`}>
       <defs><pattern id={patternId} width="50" height="50" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1.8" className="paper-dot"/></pattern></defs>
       <rect x={presentation.x} y={presentation.y} width={presentation.width} height={presentation.height} fill={`url(#${patternId})`}/>
       <path d="M80 700H920" className="baseline"/>
@@ -339,6 +370,6 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
     </svg>
   </div>
   </div>
-  {renderSupport ? renderSupport({ status, instruction, dots, reward, pendingDot, inkLimit: Boolean(state?.inkLimit), blocked: Boolean(!isCopy && state?.blocked), complete: state?.phase === 'complete', paused: state?.phase === 'paused' }) : <div className="trace-support">{status}{instruction}{dots}{reward}</div>}
+  {renderSupport ? renderSupport({ status, instruction, dots, reward, pendingDot, cue, showCue:Boolean(isPlay && (enabled || demo) && cue && state?.phase !== 'complete'), inkLimit: Boolean(state?.inkLimit), blocked: Boolean(!isCopy && state?.blocked), complete: state?.phase === 'complete', paused: state?.phase === 'paused' }) : <div className="trace-support">{status}{instruction}{dots}{reward}</div>}
   </div>;
 });

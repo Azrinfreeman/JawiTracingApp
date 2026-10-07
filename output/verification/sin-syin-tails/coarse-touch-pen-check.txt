@@ -1,0 +1,16 @@
+// Executed as stdin with: node --input-type=module - (workspace cwd)
+import {readFileSync} from 'node:fs';
+import {sinSyinTailReviewCandidates} from './src/content/reviewCandidates.js';
+import {samplePath} from './scripts/lib/glyph-geometry.mjs';
+import {makeReference,pointAt} from './src/tracing/geometry.js';
+import {createPlayMatcher} from './src/tracing/playMatcher.js';
+import {getProfile} from './src/tracing/profiles.js';
+const proposals=sinSyinTailReviewCandidates(JSON.parse(readFileSync('src/content/letters.json'))),failed=[];
+let checked=0;
+for(const {candidate:letter}of proposals)for(const type of ['touch','pen'])for(const spacing of [8,24,40]){
+ const ref=makeReference(samplePath(letter.geometry.strokes[0].path,2)),engine=createPlayMatcher(letter,{'stroke-1':ref},getProfile('play',type));
+ engine.start(pointAt(ref,0));for(let s=spacing;s<ref.length;s+=spacing)engine.move(pointAt(ref,s));engine.move(pointAt(ref,ref.length));engine.end(pointAt(ref,ref.length));
+ for(const dot of letter.geometry.dotTargets){engine.start(dot);engine.end(dot);}
+ checked++;if(engine.snapshot().phase!=='complete')failed.push({id:letter.id,type,spacing,phase:engine.snapshot().phase});
+}
+console.log(JSON.stringify({checked,failed}));

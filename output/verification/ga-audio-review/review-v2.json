@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Asia/Kuala_Lumpur",
+  "revision": 2,
+  "src": "/audio/letters/review/ga-name-v2-gaa.mp3",
+  "sha256": "81bab81c0c98b246d5c18fd322725d8ae7cd4663fd38ec8edea8b4eaf6280753",
+  "outcome": "rejected",
+  "reviewer": "Project owner (Codex user; name not supplied)",
+  "quote": "nope, it sounds \"ga-aaa\" which is wrong, it should be \"gaar\" or \"gaaa\""
+}

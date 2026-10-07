@@ -35,7 +35,7 @@ test('welcome profiles and catalogue stay readable with two, four or six columns
       await expect(page.locator('.teacher-label-short')).toBeVisible();
     }
     await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-    await expect(page.locator('.letter-card:enabled')).toHaveCount(37); await noOverflow(page);
+    await expect(page.locator('.letter-card:enabled')).toHaveCount(36); await noOverflow(page);
     const columns = await page.locator('.letter-grid').evaluate(node => getComputedStyle(node).gridTemplateColumns.split(' ').length);
     expect(columns).toBe(width <= 700 ? 2 : width < 1280 ? 4 : 6);
     expect(await page.locator('.card-caption').first().evaluate(node => parseFloat(getComputedStyle(node).fontSize))).toBeGreaterThanOrEqual(14);
@@ -90,7 +90,7 @@ test('teacher content, confirmations and previews fit narrow screens', async ({ 
   await page.getByRole('button', { name: 'Batal', exact: true }).click();
   await expect(page.getByRole('group', { name: 'Sahkan pemadaman' })).toHaveCount(0);
   const content = page.getByRole('heading', { name: 'Kandungan & semakan', exact: true }).locator('..');
-  await content.scrollIntoViewIfNeeded(); await expect(content.locator('tbody tr')).toHaveCount(37);
+  await content.scrollIntoViewIfNeeded(); await expect(content.locator('tbody tr')).toHaveCount(36);
   const scroll = await content.locator('.table-scroll').evaluate(node => ({ scroll: node.scrollWidth, width: node.clientWidth }));
   expect(scroll.scroll).toBeGreaterThan(scroll.width); await noOverflow(page);
   await page.getByLabel('Jenis latihan').selectOption('precision');

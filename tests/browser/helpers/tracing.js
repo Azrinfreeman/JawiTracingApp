@@ -40,15 +40,16 @@ export async function openMenu(page) {
   await page.getByRole('button', { name: 'Menu permainan', exact: true }).click();
   await expect(page.getByRole('dialog', { name: /Menu permainan|Rehat sekejap/ })).toBeVisible();
 }
-export async function menuAction(page, name) {
+async function findMenuAction(page, name) {
   await openMenu(page);
   const dialog = page.getByRole('dialog', { name: /Menu permainan|Rehat sekejap/ });
   const button = dialog.getByRole('button', { name, exact: true }), more = dialog.getByRole('button', { name: 'Halaman menu seterusnya' });
   const previous = dialog.getByRole('button', { name: 'Halaman menu sebelumnya' });
   for (let i = 0; i < 3 && !(await button.isVisible()) && await previous.isVisible() && await previous.isEnabled(); i++) await previous.click();
   for (let i = 0; i < 3 && !(await button.isVisible()); i++) { if (!(await more.isVisible()) || !(await more.isEnabled())) break; await more.click(); }
-  await button.click();
+  return button;
 }
+export async function menuAction(page, name) { await (await findMenuAction(page,name)).click(); }
 /** Direct taps on the authored dots are the primary input path. */
 export async function tapDots(page, board = page.locator('.trace-board')) {
   const { dots } = await boardModels(page, board);
@@ -56,10 +57,10 @@ export async function tapDots(page, board = page.locator('.trace-board')) {
 }
 /** Opts in to the on-demand dot-pad popover for the rest of the attempt; safe to call when it is already on. */
 export async function showDotHelp(page) {
-  await openMenu(page);
+  const button = await findMenuAction(page,/^(Sembunyi bantuan titik|Bantuan titik)$/);
   const dialog = page.getByRole('dialog', { name: /Menu permainan|Rehat sekejap/ });
-  if (await dialog.getByRole('button', { name: 'Sembunyi bantuan titik', exact: true }).isVisible()) { await dialog.getByRole('button', { name: 'Tutup', exact: true }).click(); return; }
-  await dialog.getByRole('button', { name: 'Bantuan titik', exact: true }).click();
+  if ((await button.textContent()).trim() === 'Sembunyi bantuan titik') { await dialog.getByRole('button', { name: 'Tutup', exact: true }).click(); return; }
+  await button.click();
 }
 /** Opens the teacher area from the header, or from the tracing menu while a lesson hides the header. */
 export async function openTeacher(page) {

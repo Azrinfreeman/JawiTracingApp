@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './helpers/localTest.js';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { openLesson, boardModels, draw, movePoints, openTeacher, menuAction } from './helpers/tracing.js';
 import { dismissSplash, chooseLetter } from './helpers/navigation.js';
@@ -16,9 +17,11 @@ test('Ba numbers follow the body, stop for a lift, then finish with the separate
   // Start by touching the visible 1, rather than an invisible reference coordinate.
   await page.mouse.move(badge.x + badge.width / 2, badge.y + badge.height / 2);
   await page.mouse.down(); await movePoints(page, stroke.slice(1, 15));
-  await expect(guide(page, 2)).toHaveClass(/is-current/);
+  // A halfway landmark is not the next direction immediately after starting.
+  await expect(page.locator('.writing-cue')).toContainText('Ikut');
+  await expect(guide(page, 2)).not.toHaveClass(/is-current/);
   await movePoints(page, stroke.slice(15)); await page.mouse.up();
-  await expect(page.locator('.trace-number-label')).toHaveText(['4 Siap']);
+  await expect(page.locator('.trace-number-label')).toHaveText(['4 Titik akhir']);
   await expect(page.locator('.trace-number-instruction')).toContainText('Sentuh titik 4');
   await expect(page.locator('.trace-board')).toBeVisible();
   const dot = await guide(page, 4).locator('.trace-number-badge').boundingBox();
@@ -32,7 +35,7 @@ test('Qaf head loop uses one badge at its shared start and stop, then advances t
   await openLesson(page, 'Qaf', 'play');
   await expect(guide(page, 1).locator('.trace-number-badge')).toHaveCount(1);
   await expect(guide(page, 3).locator('.trace-number-badge')).toHaveCount(0);
-  const { strokes } = await boardModels(page), split = Math.ceil(strokes[0].length * .65);
+  const { strokes } = await boardModels(page), split = Math.ceil(strokes[0].length * .9);
   await page.mouse.move(strokes[0][0].x, strokes[0][0].y); await page.mouse.down();
   await movePoints(page, strokes[0].slice(1, split));
   await expect(guide(page, 1).locator('.trace-number-badge')).toHaveCount(0);

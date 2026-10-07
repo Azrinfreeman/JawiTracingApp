@@ -12,7 +12,8 @@ export async function rasterGlyphs(glyphs, fontSize = 600) {
   const browser = await chromium.launch();
   try {
     const page = await browser.newPage();
-    await page.setContent('<canvas id="c" width="1800" height="1800"></canvas>');
+    const canvasSize = Math.max(1800, fontSize * 2);
+    await page.setContent(`<canvas id="c" width="${canvasSize}" height="${canvasSize}"></canvas>`);
     const font = readFileSync(fontFile).toString('base64');
     const rendered = await page.evaluate(async ({ font, glyphs, fontSize }) => {
       const bytes = Uint8Array.from(atob(font), c => c.charCodeAt(0));
@@ -22,23 +23,24 @@ export async function rasterGlyphs(glyphs, fontSize = 600) {
       const canvas = document.getElementById('c'), ctx = canvas.getContext('2d', { willReadFrequently: true });
       const out = {};
       for (const glyph of glyphs) {
-        ctx.clearRect(0, 0, 1800, 1800);
+        const size = canvas.width;
+        ctx.clearRect(0, 0, size, size);
         ctx.fillStyle = '#000';
         ctx.font = `${fontSize}px RefNaskh`;
         ctx.direction = 'rtl';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'alphabetic';
-        ctx.fillText(glyph, 900, 1100);
-        const { data } = ctx.getImageData(0, 0, 1800, 1800);
-        let x0 = 1800, y0 = 1800, x1 = -1, y1 = -1;
-        for (let y = 0; y < 1800; y++) for (let x = 0; x < 1800; x++) if (data[(y * 1800 + x) * 4 + 3] > 127) {
+        ctx.fillText(glyph, size / 2, fontSize <= 600 ? 1100 : fontSize * 1.5);
+        const { data } = ctx.getImageData(0, 0, size, size);
+        let x0 = size, y0 = size, x1 = -1, y1 = -1;
+        for (let y = 0; y < size; y++) for (let x = 0; x < size; x++) if (data[(y * size + x) * 4 + 3] > 127) {
           if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y;
         }
         const pad = 6, w = x1 - x0 + 1 + pad * 2, h = y1 - y0 + 1 + pad * 2;
         const mask = new Uint8Array(w * h);
         for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
           const sx = x + x0 - pad, sy = y + y0 - pad;
-          if (sx >= 0 && sy >= 0 && sx < 1800 && sy < 1800 && data[(sy * 1800 + sx) * 4 + 3] > 127) mask[y * w + x] = 1;
+          if (sx >= 0 && sy >= 0 && sx < size && sy < size && data[(sy * size + sx) * 4 + 3] > 127) mask[y * w + x] = 1;
         }
         let binary = '';
         for (let i = 0; i < mask.length; i += 8192) binary += String.fromCharCode(...mask.subarray(i, i + 8192));

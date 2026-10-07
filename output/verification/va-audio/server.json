@@ -1,0 +1,14 @@
+{
+  "geometryRevision": 3,
+  "exactCatalogue": true,
+  "status": 200,
+  "audioRevision": 2,
+  "audio": {
+    "sha256": "fb20da4d695f0f1f6928a645f9d1278abe38fa06ed58b74642e9508a9cfc0446",
+    "status": 200,
+    "contentType": [
+      "audio/wav"
+    ],
+    "bytes": 52844
+  }
+}

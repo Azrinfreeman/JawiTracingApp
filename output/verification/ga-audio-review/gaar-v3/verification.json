@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-06",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "src": "/audio/letters/review/ga-name-v3-gaar.mp3",
+  "sha256": "4567a559681ae287a53d29be62c3bc4ecee34eb7f253e5c0cf62c1e9b8ce1780",
+  "metrics": {
+    "duration": 2.184,
+    "sampleRate": 48000,
+    "rms": 0.07306424012902889,
+    "peak": 0.5953137874603271,
+    "clippedFraction": 0
+  },
+  "playback": {
+    "starts": 2,
+    "ended": 2
+  },
+  "catalogueAndAll37ActiveRecordingsPreserved": true,
+  "pronunciationReviewed": false,
+  "scope": "Isolated revision-3 candidate decode, signal integrity and native Chromium play/replay; no pronunciation approval or student replacement.",
+  "server": {
+    "url": "http://127.0.0.1:5173/audio/letters/review/ga-name-v3-gaar.mp3",
+    "status": 200,
+    "contentType": "audio/mpeg",
+    "bytes": 13104
+  },
+  "hashes": {
+    "src/content/letters.json": "16a82ae539d7755ba132bf619aff11468264076aad543c15de758a2c0175884c",
+    "public/audio/letters/review/ga-name-v3-gaar.mp3": "4567a559681ae287a53d29be62c3bc4ecee34eb7f253e5c0cf62c1e9b8ce1780",
+    "public/audio/letters/review/ga-name-v2-gaa.mp3": "81bab81c0c98b246d5c18fd322725d8ae7cd4663fd38ec8edea8b4eaf6280753",
+    "scripts/generate-ga-review.py": "efcdd8759ba0fc036270c7d732e7990ecc6ed341b9fc935034049709864cf7f2",
+    "scripts/verify-ga-audio-review.mjs": "307c999e631995509d6e11a8acba58f40eaa25ce8767f78dffaf27477e6f5576",
+    "output/verification/ga-audio-review/gaar-v3/before-catalogue.json": "16a82ae539d7755ba132bf619aff11468264076aad543c15de758a2c0175884c",
+    "output/verification/ga-audio-review/gaar-v3/generation.json": "78586cac4ea205a549802eeaac915d2dc04ab2d0dfcf18aa57e9b34e04201462",
+    "output/verification/ga-audio-review/review-v2.json": "128f2942c2fe5ae952ad01b1eb7471050e4b7198f75597fc0ddbd0635be32884"
+  }
+}

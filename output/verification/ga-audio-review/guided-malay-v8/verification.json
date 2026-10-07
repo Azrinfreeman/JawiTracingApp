@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-06",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "src": "/audio/letters/review/ga-name-v8-guided-malay.wav",
+  "sha256": "675fcf176150cfa79d3cf673b8edf4ee848bd6b02b81cf6760a06252c86be020",
+  "metrics": {
+    "duration": 0.675,
+    "sampleRate": 48000,
+    "rms": 0.0413345854084487,
+    "peak": 0.4334180951118469,
+    "clippedFraction": 0
+  },
+  "playback": {
+    "starts": 2,
+    "ended": 2
+  },
+  "catalogueAndAll37ActiveRecordingsPreserved": true,
+  "pronunciationReviewed": false,
+  "scope": "Isolated revision-8 candidate decode, signal integrity and native Chromium play/replay; no pronunciation approval or student replacement."
+}

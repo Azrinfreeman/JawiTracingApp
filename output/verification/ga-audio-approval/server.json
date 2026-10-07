@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-06",
+  "url": "http://127.0.0.1:5173/",
+  "catalogueStatus": 200,
+  "gaSrc": "/audio/letters/alphabet/ga-name-v7.wav",
+  "gaAudioVersion": 7,
+  "gaContentVersion": 3,
+  "gaAudioStatus": "approved",
+  "audioStatus": 200,
+  "contentType": "audio/wav",
+  "bytes": 50444,
+  "sha256": "bce006203bf9f9297679c4defcfd260777b4646682f1372744e6d37006bcc3c1"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "ye",
+  "glyph": "ى",
+  "labelMs": "Ye",
+  "contentVersion": 3,
+  "viewBox": [
+    0,
+    0,
+    1000,
+    1000
+  ],
+  "pilot": false,
+  "additional": false,
+  "geometry": {
+    "status": "approved",
+    "review": {
+      "revision": 3,
+      "reviewer": "Project owner (Codex user; name not supplied)",
+      "date": "2026-10-04",
+      "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+      "kind": "projectOwner"
+    },
+    "displayPaths": [
+      "M 650.3 382.2 C 577.1 316.3 483.7 455.3 492.5 503.2 C 504.1 565.7 715.9 537.8 627.2 624.2 C 555.9 693.6 350.2 756.4 338.1 602.2 C 335.9 574.5 340 548.6 351.1 524.1"
+    ],
+    "strokes": [
+      {
+        "id": "stroke-1",
+        "path": "M 650.3 382.2 C 577.1 316.3 483.7 455.3 492.5 503.2 C 504.1 565.7 715.9 537.8 627.2 624.2 C 555.9 693.6 350.2 756.4 338.1 602.2 C 335.9 574.5 340 548.6 351.1 524.1",
+        "width": 44,
+        "penLiftPolicy": "continuous",
+        "checkpoints": [
+          0.25,
+          0.5,
+          0.75,
+          0.95
+        ],
+        "displayWidth": 50
+      }
+    ],
+    "dotTargets": [],
+    "validSequences": [
+      [
+        "stroke-1"
+      ]
+    ]
+  },
+  "audio": {
+    "name": {
+      "src": "/audio/letters/ye-name.mp3",
+      "transcriptMs": "Ye",
+      "version": 1,
+      "status": "approved",
+      "review": {
+        "revision": 1,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+      "synthesis": {
+        "provider": "Microsoft Edge online speech synthesis",
+        "client": "edge-tts 7.2.8",
+        "voice": "ms-MY-YasminNeural",
+        "locale": "ms-MY",
+        "rate": "-15%",
+        "pitch": "+0Hz",
+        "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+        "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+      }
+    },
+    "pronunciationExamples": []
+  }
+}

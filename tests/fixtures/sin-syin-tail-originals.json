@@ -1,0 +1,175 @@
+[
+  {
+    "id": "sin",
+    "glyph": "س",
+    "labelMs": "Sin",
+    "contentVersion": 1,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 1,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 550"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 550",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/sin-name-v2.mp3",
+        "transcriptMs": "Sin",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/12_1sin.mp3",
+          "sha256": "58f170c037b8f4229466df9cfb7ecddcf9875706c68cc47255ca3521129e9a3b",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "syin",
+    "glyph": "ش",
+    "labelMs": "Syin",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-second-additional-batch-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 550"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 550",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 760,
+          "y": 250,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 620,
+          "y": 250,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-3",
+          "x": 690,
+          "y": 130,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1",
+          "dot-2",
+          "dot-3"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/syin-name-v2.mp3",
+        "transcriptMs": "Syin",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/12_2syin.mp3",
+          "sha256": "d2ecece86ebe31e9dd22595a94eaf265fef04afcf10b75acdd6eb32a306f2dc5",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  }
+]

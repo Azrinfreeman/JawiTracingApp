@@ -1,0 +1,118 @@
+{
+  "passed": 26,
+  "failed": 0,
+  "skipped": 0,
+  "retainedPassed": 13,
+  "rechecked": 13,
+  "reports": [
+    "output/verification/ain-family-outlines/browser-regression.json",
+    "output/verification/ain-family-outlines/browser-matches-final.json",
+    "output/verification/ain-family-outlines/browser-teacher-final.json"
+  ],
+  "cases": [
+    {
+      "key": "chromium: solo ain: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: solo ghain: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: solo nga: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: duo ain: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: duo ghain: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: duo nga: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: ain: authored result retains the whole catalogue silhouette",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: ghain: authored result retains the whole catalogue silhouette",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: nga: authored result retains the whole catalogue silhouette",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: solo ain: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: solo ghain: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: solo nga: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: duo ain: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: duo ghain: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: duo nga: unscored two-part outline preview and independent lanes",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: ain: authored result retains the whole catalogue silhouette",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: ghain: authored result retains the whole catalogue silhouette",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: nga: authored result retains the whole catalogue silhouette",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: four outlines fit and badges stay beside the letter 320x600",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: four outlines fit and badges stay beside the letter 1920x1080",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: four outlines fit and badges stay beside the letter 320x600",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: four outlines fit and badges stay beside the letter 1920x1080",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: four approved teacher entries and no obsolete proposals 320x600",
+      "status": "expected"
+    },
+    {
+      "key": "chromium: four approved teacher entries and no obsolete proposals 768x1024",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: four approved teacher entries and no obsolete proposals 320x600",
+      "status": "expected"
+    },
+    {
+      "key": "webkit: four approved teacher entries and no obsolete proposals 768x1024",
+      "status": "expected"
+    }
+  ]
+}

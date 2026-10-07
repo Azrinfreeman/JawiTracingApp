@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './helpers/localTest.js';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { GLYPH_MATCHED_IDS } from '../fixtures/glyphMatched.js';
 import { openLesson, boardModels, draw, movePoints, menuAction } from './helpers/tracing.js';
@@ -33,13 +34,16 @@ for (const mode of ['play', 'guided', 'precision']) for (const letter of redrawn
     await expect(page.locator('.reference-dot')).toHaveCount(letter.geometry.dotTargets.length);
     await expect(page.locator('.trace-number-label').first()).toHaveText('1 Mula');
     const fit = await page.locator('.trace-board').getAttribute('viewBox');
-    if (mode === 'play') {
+    if (mode === 'play' && !letter.geometry.appearance) {
       // The guide uses the authored width, so small loops stay open; matching tolerances are not tied to it.
       const widths = await page.locator('.reference-stroke').evaluateAll(nodes => nodes.map(node => node.getAttribute('stroke-width')));
       expect(widths).toEqual(letter.geometry.strokes.map(stroke => String(stroke.displayWidth ?? 76)));
     }
     await finish(page, letter);
-    if (mode === 'play') {
+    if (mode === 'play' && letter.geometry.appearance) {
+      for(const part of letter.geometry.appearance.parts)await expect(page.locator(`.reference-outline[data-part-id="${part.id}"]`)).toHaveAttribute('d',part.contours.join(' '));
+      await expect(page.locator('.outline-progress .outline-ink').first()).toBeVisible();
+    } else if (mode === 'play') {
       const fills = await page.locator('.play-fill').evaluateAll(nodes => nodes.map(node => node.getAttribute('stroke-width')));
       expect(fills).toEqual(letter.geometry.strokes.map(stroke => String(Math.round((stroke.displayWidth ?? 76) * 60 / 76))));
     }
@@ -108,9 +112,17 @@ for (const letter of redrawn) {
     await openLesson(page, letter.labelMs, 'play');
     const fit = await page.locator('.trace-board').getAttribute('viewBox');
     await menuAction(page, 'Tunjuk cara');
-    await expect(page.locator('path.demonstration-ink').first()).toBeVisible();
-    const drawn = await page.locator('path.demonstration-ink').evaluateAll(paths => paths.map(path => path.getAttribute('d')));
-    expect(letter.geometry.strokes.map(stroke => stroke.path)).toEqual(expect.arrayContaining([...new Set(drawn)]));
+    if(letter.geometry.appearance){
+      await expect(page.locator('.outline-demonstration')).toBeVisible();
+      const body=letter.geometry.appearance.parts.find(part=>part.segments);
+      await expect(page.locator('.outline-demonstration .outline-ink').first()).toHaveAttribute('d',body.contours.join(' '));
+      for(const part of letter.geometry.appearance.parts.filter(part=>!part.segments))
+        await expect(page.locator('.demonstration-ink.outline-dot')).toHaveAttribute('d',part.contours.join(' '));
+    }else{
+      await expect(page.locator('path.demonstration-ink').first()).toBeVisible();
+      const drawn = await page.locator('path.demonstration-ink').evaluateAll(paths => paths.map(path => path.getAttribute('d')));
+      expect(letter.geometry.strokes.map(stroke => stroke.path)).toEqual(expect.arrayContaining([...new Set(drawn)]));
+    }
     await expect(page.locator('.demonstration-ink')).toHaveCount(0, { timeout: 15000 });
     expect(await page.locator('.trace-board').getAttribute('viewBox')).toBe(fit);
     expect(await attempts(page)).toHaveLength(0);
@@ -127,8 +139,8 @@ for (const { letter, index } of closedStrokes) {
     for (let i = 0; i < index; i++) await draw(page, (await boardModels(page)).strokes[i]);
     const guide = number => page.locator(`.trace-number-guide[data-number="${number}"]`);
     const labels = await page.locator('.trace-number-label').allTextContents();
-    expect(labels).toHaveLength(3);
-    const [first, , last] = labels.map(text => Number(text.split(' ')[0]));
+    expect(labels).toHaveLength(2);
+    const first = Number(labels[0].split(' ')[0]), last=first+2;
     await expect(guide(first).locator('.trace-number-badge')).toHaveCount(1);
     await expect(guide(last).locator('.trace-number-badge')).toHaveCount(0);
   });

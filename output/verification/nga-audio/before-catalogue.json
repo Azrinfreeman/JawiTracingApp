@@ -1,0 +1,4467 @@
+[
+  {
+    "id": "alif",
+    "glyph": "ا",
+    "labelMs": "Alif",
+    "contentVersion": 1,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 1,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 510 175 Q 498 445 520 795"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 510 175 Q 498 445 520 795",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/alif-name-v2.mp3",
+        "transcriptMs": "Alif",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/01_aliff.mp3",
+          "sha256": "062b495ec1506ebaf1bb66bbbd1bd0cf3143f69fe1e8c5d0645450fbcaf4d8e4",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ba",
+    "glyph": "ب",
+    "labelMs": "Ba",
+    "contentVersion": 1,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 1,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 500,
+          "y": 810,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/ba-name-v2.mp3",
+        "transcriptMs": "Ba",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/02_ba.mp3",
+          "sha256": "987d2db9dc79dc348d022a5d6324ae1702e8a4736875113a5d4172f10603cf91",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ta",
+    "glyph": "ت",
+    "labelMs": "Ta",
+    "contentVersion": 1,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 1,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 430,
+          "y": 300,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 570,
+          "y": 300,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1",
+          "dot-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/ta-name-v2.mp3",
+        "transcriptMs": "Ta",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/03_ta.mp3",
+          "sha256": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ta-marbuta",
+    "glyph": "ة",
+    "labelMs": "Ta marbutah",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-all-current-semakan-video-proposals-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 505.1 469 C 499.9 495.3 408.5 544.2 434.4 619.7 C 455.5 681.4 551.5 662.9 579 617.5 C 613.3 560.8 545.5 495.9 505.1 469"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 505.1 469 C 499.9 495.3 408.5 544.2 434.4 619.7 C 455.5 681.4 551.5 662.9 579 617.5 C 613.3 560.8 545.5 495.9 505.1 469",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 46
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 543,
+          "y": 336,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 444,
+          "y": 346,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1",
+          "dot-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/ta-marbuta-name.mp3",
+        "transcriptMs": "Ta marbutah",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "sa",
+    "glyph": "ث",
+    "labelMs": "Sa",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-first-additional-batch-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 790 405 C 790 640 700 700 495 700 C 300 700 190 650 195 445",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 570,
+          "y": 300,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 430,
+          "y": 300,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-3",
+          "x": 500,
+          "y": 180,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1",
+          "dot-2",
+          "dot-3"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/sa-name-v2.mp3",
+        "transcriptMs": "Sa",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/04_sa.mp3",
+          "sha256": "ecd13ed9a2d6ef025b117fa5ed9b8aeb3f9c48564fbc3b9d7cacae932bda3ff6",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "jim",
+    "glyph": "ج",
+    "labelMs": "Jim",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-all-current-semakan-video-proposals-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 710.9 365 C 695.1 365 681.3 380.8 665.8 384.5 C 640.7 390.4 606 388.1 580.3 386.5 C 569.3 385.8 564.6 371.3 554.7 367 C 514.2 349.5 384.3 316.7 377.6 387",
+        "M 571.2 389.3 C 571.2 408.9 456.3 451.8 416.2 524.6 C 396.8 559.6 394.1 600.6 404.2 639 C 440.8 778.2 637.3 711.2 721.9 695.1"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 710.9 365 C 695.1 365 681.3 380.8 665.8 384.5 C 640.7 390.4 606 388.1 580.3 386.5 C 569.3 385.8 564.6 371.3 554.7 367 C 514.2 349.5 384.3 316.7 377.6 387",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 54
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 571.2 389.3 C 571.2 408.9 456.3 451.8 416.2 524.6 C 396.8 559.6 394.1 600.6 404.2 639 C 440.8 778.2 637.3 711.2 721.9 695.1",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 54
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 565,
+          "y": 570,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/jim-name-v2.mp3",
+        "transcriptMs": "Jim",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/05_jin.mp3",
+          "sha256": "e50bb0c1cff95018602e0dd884a1f99c7a2aa48e65d919ad38a687516f6fa4a9",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ca",
+    "glyph": "چ",
+    "labelMs": "Ca",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": true,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 377.6 387 C 384.3 316.7 514.2 349.5 554.7 367 C 564.6 371.3 569.3 385.8 580.3 386.5 C 606 388.1 640.7 390.4 665.8 384.5 C 681.3 380.8 695.1 365 710.9 365",
+        "M 571.2 389.3 C 571.2 408.9 456.3 451.8 416.2 524.6 C 396.8 559.6 394.1 600.6 404.2 639 C 440.8 778.2 637.3 711.2 721.9 695.1"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 377.6 387 C 384.3 316.7 514.2 349.5 554.7 367 C 564.6 371.3 569.3 385.8 580.3 386.5 C 606 388.1 640.7 390.4 665.8 384.5 C 681.3 380.8 695.1 365 710.9 365",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 54
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 571.2 389.3 C 571.2 408.9 456.3 451.8 416.2 524.6 C 396.8 559.6 394.1 600.6 404.2 639 C 440.8 778.2 637.3 711.2 721.9 695.1",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 54
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 613,
+          "y": 552,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 519,
+          "y": 561,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-3",
+          "x": 567,
+          "y": 611,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1",
+          "dot-2",
+          "dot-3"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/ca-name.mp3",
+        "transcriptMs": "Ca",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ha-pedat",
+    "glyph": "ح",
+    "labelMs": "Ha (ح)",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 377.6 387 C 384.3 316.7 514.2 349.5 554.7 367 C 564.6 371.3 569.3 385.8 580.3 386.5 C 606 388.1 640.7 390.4 665.8 384.5 C 681.3 380.8 695.1 365 710.9 365",
+        "M 571.2 389.3 C 571.2 408.9 456.3 451.8 416.2 524.6 C 396.8 559.6 394.1 600.6 404.2 639 C 440.8 778.2 637.3 711.2 721.9 695.1"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 377.6 387 C 384.3 316.7 514.2 349.5 554.7 367 C 564.6 371.3 569.3 385.8 580.3 386.5 C 606 388.1 640.7 390.4 665.8 384.5 C 681.3 380.8 695.1 365 710.9 365",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 54
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 571.2 389.3 C 571.2 408.9 456.3 451.8 416.2 524.6 C 396.8 559.6 394.1 600.6 404.2 639 C 440.8 778.2 637.3 711.2 721.9 695.1",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 54
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/ha-pedat-name-v2.mp3",
+        "transcriptMs": "Ha",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/06_ha.mp3",
+          "sha256": "70aff1d8e0cdfe0951644a4fb4f8d398db47962e435d75a19890b84347edf074",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "kha",
+    "glyph": "خ",
+    "labelMs": "Kha",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 377.6 387.5 C 384.3 317.2 514.2 350 554.7 367.5 C 564.6 371.8 569.3 386.3 580.3 387 C 606 388.6 640.7 390.9 665.8 385 C 681.3 381.3 695.1 365.5 710.9 365.5",
+        "M 571.2 389.7 C 571.2 409.3 456.3 452.3 416.2 525 C 396.8 560.1 394.1 601 404.2 639.4 C 440.8 778.7 637.3 711.6 721.9 695.5"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 377.6 387.5 C 384.3 317.2 514.2 350 554.7 367.5 C 564.6 371.8 569.3 386.3 580.3 387 C 606 388.6 640.7 390.9 665.8 385 C 681.3 381.3 695.1 365.5 710.9 365.5",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 571.2 389.7 C 571.2 409.3 456.3 452.3 416.2 525 C 396.8 560.1 394.1 601 404.2 639.4 C 440.8 778.7 637.3 711.6 721.9 695.5",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 542,
+          "y": 229,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/kha-name-v2.mp3",
+        "transcriptMs": "Kha",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/07_hor.mp3",
+          "sha256": "d2ec10e1bf498155442361153ebe04f38d6e161857a4aac09d6cbfdd1f28a3a2",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "dal",
+    "glyph": "د",
+    "labelMs": "Dal",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-four-letter-outlines-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 553.5 321 C 553.5 333.3 545.2 345.2 546.3 358.5 C 550.1 406.5 603.2 445 601.9 494.9 C 599.9 569.7 459.2 556.3 413.8 532.3"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 553.5 321 C 553.5 333.3 545.2 345.2 546.3 358.5 C 550.1 406.5 603.2 445 601.9 494.9 C 599.9 569.7 459.2 556.3 413.8 532.3",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ],
+      "appearance": {
+        "baseRevision": 2,
+        "kind": "catalogueOutline",
+        "source": {
+          "font": "@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2",
+          "sha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c",
+          "glyph": "د",
+          "weight": 400,
+          "method": "highResolutionInkContours",
+          "fontSize": 2400,
+          "scale": 0.275,
+          "center": [
+            510,
+            447
+          ],
+          "maxContourError": 0.34375
+        },
+        "bounds": {
+          "x": 398.488,
+          "y": 315.688,
+          "width": 223.025,
+          "height": 262.625
+        },
+        "parts": [
+          {
+            "id": "stroke-1",
+            "contours": [
+              "M555.788 315.688 L556.337 315.688 L556.888 316.788 L562.112 330.262 L576.962 364.913 L589.063 390.762 L598.138 412.212 L601.163 417.988 L608.587 435.038 L617.663 459.512 L620.688 472.712 L621.513 479.863 L621.513 489.212 L620.413 496.637 L618.212 505.712 L613.813 519.188 L608.862 531.288 L597.862 552.737 L585.212 558.788 L570.362 564.563 L556.063 568.962 L538.462 573.087 L521.413 575.837 L505.188 577.487 L488.688 578.313 L470.262 578.313 L456.512 577.487 L442.212 575.563 L430.663 572.813 L421.587 569.513 L415.262 566.212 L408.387 560.987 L403.712 555.487 L400.137 548.063 L398.488 539.538 L398.762 529.362 L399.863 522.212 L401.512 516.438 L405.087 508.738 L410.313 501.863 L422.962 510.663 L432.863 515.888 L442.212 519.737 L452.663 523.038 L461.188 524.962 L471.363 526.612 L482.913 527.712 L498.313 528.263 L512.612 527.987 L533.513 526.337 L551.938 523.587 L565.688 520.837 L579.163 517.538 L589.888 514.237 L580.813 491.137 L569.263 466.938 L568.712 466.663 L563.487 456.212 L545.063 423.762 L530.763 396.262 L526.087 384.988 L523.063 373.438 L521.962 364.363 L522.237 352.262 L523.888 344.288 L527.462 336.038 L531.587 330.262 L538.188 324.212 L545.337 319.813 Z"
+            ],
+            "bounds": {
+              "x": 398.488,
+              "y": 315.688,
+              "width": 223.025,
+              "height": 262.625
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M555.788 315.688 L556.337 315.688 L556.888 316.788 L562.112 330.262 L575.862 362.163 L549.737 367.387 L538.737 370.137 L523.063 373.438 L521.962 364.363 L521.962 354.738 L523.888 344.288 L525.263 340.438 L528.288 334.663 L531.587 330.262 L535.438 326.413 L544.788 320.087 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M574.487 362.163 L576.138 362.163 L576.962 364.913 L591.538 396.813 L546.987 424.038 L545.612 424.587 L543.962 421.012 L537.087 408.913 L528.563 391.313 L524.987 381.688 L523.337 373.438 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M591.263 396.813 L592.638 398.738 L598.138 412.212 L603.638 423.488 L611.612 443.288 L595.388 451.262 L594.563 451.262 L581.913 457.863 L581.087 457.863 L568.987 464.188 L567.612 464.462 L567.337 463.363 L549.737 432.288 L547.263 427.063 L546.712 426.788 L545.888 424.313 L549.737 422.387 L550.837 421.288 L558.813 416.887 L559.913 415.788 L567.888 411.387 L568.987 410.288 L575.587 406.712 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M611.063 443.288 L611.888 443.288 L617.663 459.512 L620.962 474.637 L621.513 479.863 L621.513 489.212 L619.313 501.313 L584.663 497.462 L583.013 497.188 L583.013 496.637 L576.962 482.613 L567.888 464.462 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M583.288 497.188 L619.313 501.313 L613.813 519.188 L607.487 534.313 L597.862 552.737 L592.913 554.938 L587.688 557.688 L586.587 557.413 L566.237 520.837 L566.788 520.288 L579.163 517.538 L589.888 514.237 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M565.688 520.563 L566.237 520.563 L567.337 522.212 L586.862 557.962 L578.612 561.538 L565.413 566.212 L545.612 571.438 L532.413 574.188 L531.862 573.638 L527.188 526.888 L543.688 524.962 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M524.987 526.888 L527.188 526.888 L527.462 527.712 L532.138 574.188 L508.488 577.212 L485.387 578.313 L478.788 578.313 L484.012 527.712 L501.337 528.263 L512.612 527.987 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M441.387 519.188 L448.813 521.938 L459.813 524.688 L471.363 526.612 L484.012 527.712 L478.788 578.313 L468.337 578.038 L456.512 577.487 L445.512 576.112 L432.587 573.362 L425.438 570.888 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 406.4821025772266,
+                "contours": [
+                  "M410.313 501.863 L422.962 510.663 L432.863 515.888 L441.387 519.188 L426.262 567.587 L425.163 570.888 L417.188 567.313 L410.587 562.913 L407.012 559.612 L403.712 555.487 L402.063 552.737 L399.587 546.413 L398.488 539.538 L398.488 533.212 L399.863 522.212 L401.512 516.438 L405.087 508.738 Z"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/dal-name-v2.mp3",
+        "transcriptMs": "Dal",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/08_da.mp3",
+          "sha256": "743ca5838453493045fe17d85f2377bb57eebbdbe0b6859f160b36ab8410c921",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "zal",
+    "glyph": "ذ",
+    "labelMs": "Zal",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-four-letter-outlines-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 553.5 329.5 C 553.5 341.8 545.2 353.6 546.3 366.9 C 550.1 414.9 603.2 453.4 601.9 503.3 C 599.9 578.1 459.2 564.8 413.8 540.7"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 553.5 329.5 C 553.5 341.8 545.2 353.6 546.3 366.9 C 550.1 414.9 603.2 453.4 601.9 503.3 C 599.9 578.1 459.2 564.8 413.8 540.7",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 518,
+          "y": 238,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1"
+        ]
+      ],
+      "appearance": {
+        "baseRevision": 3,
+        "kind": "catalogueOutline",
+        "source": {
+          "font": "@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2",
+          "sha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c",
+          "glyph": "ذ",
+          "weight": 400,
+          "method": "highResolutionInkContours",
+          "fontSize": 2400,
+          "scale": 0.275,
+          "center": [
+            510,
+            390
+          ],
+          "maxContourError": 0.34375
+        },
+        "bounds": {
+          "x": 398.488,
+          "y": 193.1,
+          "width": 223.025,
+          "height": 393.8
+        },
+        "parts": [
+          {
+            "id": "stroke-1",
+            "contours": [
+              "M555.788 324.275 L556.337 324.275 L556.888 325.375 L562.112 338.85 L576.962 373.5 L589.063 399.35 L598.138 420.8 L601.163 426.575 L608.587 443.625 L617.663 468.1 L620.688 481.3 L621.513 488.45 L621.513 497.8 L620.413 505.225 L618.212 514.3 L613.813 527.775 L608.862 539.875 L597.862 561.325 L585.212 567.375 L570.362 573.15 L556.063 577.55 L538.462 581.675 L521.413 584.425 L505.188 586.075 L488.688 586.9 L470.262 586.9 L456.512 586.075 L442.212 584.15 L430.663 581.4 L421.587 578.1 L415.262 574.8 L408.387 569.575 L403.712 564.075 L400.137 556.65 L398.488 548.125 L398.762 537.95 L399.863 530.8 L401.512 525.025 L405.087 517.325 L410.313 510.45 L422.962 519.25 L432.863 524.475 L442.212 528.325 L452.663 531.625 L461.188 533.55 L471.363 535.2 L482.913 536.3 L498.313 536.85 L512.612 536.575 L533.513 534.925 L551.938 532.175 L565.688 529.425 L579.163 526.125 L589.888 522.825 L580.813 499.725 L569.263 475.525 L568.712 475.25 L563.487 464.8 L545.063 432.35 L530.763 404.85 L526.087 393.575 L523.063 382.025 L521.962 372.95 L522.237 360.85 L523.888 352.875 L527.462 344.625 L531.587 338.85 L538.188 332.8 L545.337 328.4 Z"
+            ],
+            "bounds": {
+              "x": 398.488,
+              "y": 324.275,
+              "width": 223.025,
+              "height": 262.625
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M555.788 324.275 L556.337 324.275 L556.888 325.375 L562.112 338.85 L575.862 370.475 L538.462 378.45 L523.063 382.025 L521.962 372.95 L521.962 363.325 L523.888 352.875 L525.263 349.025 L528.288 343.25 L531.587 338.85 L535.438 335 L544.788 328.675 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M575.038 370.475 L576.138 370.75 L576.962 373.5 L591.538 405.4 L548.913 430.975 L546.438 432.9 L545.612 433.175 L543.688 429.325 L537.638 417.775 L537.087 417.5 L528.563 399.9 L524.987 390.275 L523.337 382.025 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M591.263 405.4 L592.638 407.325 L598.138 420.8 L603.638 432.075 L611.612 451.6 L568.163 473.05 L567.612 473.05 L567.337 471.95 L549.737 440.875 L547.263 435.65 L546.712 435.375 L545.888 432.9 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M611.337 451.6 L611.888 451.875 L613.813 456.825 L617.663 468.1 L620.962 483.225 L621.513 488.45 L621.513 497.8 L619.313 509.9 L583.013 505.775 L583.013 504.95 L574.763 486.525 L567.888 473.05 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M583.288 505.775 L619.313 509.9 L613.813 527.775 L607.487 542.9 L597.862 561.325 L592.913 563.525 L587.688 566.275 L586.587 566 L566.237 529.425 L566.788 528.875 L579.163 526.125 L589.888 522.825 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M565.688 529.15 L566.237 529.15 L567.337 530.8 L586.862 566.55 L578.612 570.125 L565.413 574.8 L545.612 580.025 L531.862 582.775 L527.188 535.475 L543.688 533.55 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M524.987 535.475 L527.188 535.475 L527.462 537.125 L531.862 582.775 L508.488 585.8 L485.113 586.9 L478.788 586.9 L483.738 536.3 L501.337 536.85 L512.612 536.575 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M441.113 527.775 L448.813 530.525 L458.438 533 L471.363 535.2 L483.738 536.3 L478.788 586.9 L468.063 586.625 L459.813 586.35 L447.163 584.975 L438.087 583.325 L425.163 579.475 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 406.41695099859567,
+                "contours": [
+                  "M410.313 510.45 L422.962 519.25 L432.863 524.475 L441.113 527.775 L426.262 576.175 L425.438 578.925 L424.337 579.2 L417.188 575.9 L410.587 571.5 L407.012 568.2 L403.712 564.075 L402.063 561.325 L399.587 555 L398.488 548.125 L398.488 541.8 L399.863 530.8 L401.512 525.025 L405.087 517.325 Z"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dot-1",
+            "contours": [
+              "M518.388 193.1 L546.438 221.7 L546.987 221.7 L551.663 226.65 L552.212 226.65 L562.112 236 L549.737 252.225 L539.288 263.5 L539.288 264.05 L535.712 267.35 L535.712 267.9 L531.587 271.75 L531.587 272.3 L521.688 281.925 L520.038 284.125 L517.837 282.475 L504.913 272.575 L493.363 262.125 L492.813 262.125 L476.587 246.175 L472.462 240.95 L494.188 219.225 L494.188 218.675 L499.962 213.175 L499.962 212.625 L504.637 208.225 L504.637 207.675 L508.762 203.825 L508.762 203.275 Z"
+            ],
+            "bounds": {
+              "x": 472.462,
+              "y": 193.1,
+              "width": 89.65,
+              "height": 91.025
+            }
+          }
+        ]
+      }
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/zal-name-v2.mp3",
+        "transcriptMs": "Zal",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/09_dzal.mp3",
+          "sha256": "0ea67e64c41d8e8414fa4ebc754e71332b1069b4523fe99d4d6aa10f3b575a32",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ra",
+    "glyph": "ر",
+    "labelMs": "Ra",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-four-letter-outlines-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 583.4 393.1 C 537.7 461.6 671.5 533.2 595.4 653.8 C 579 679.8 554.5 702.3 525.1 712.3 C 481.7 727.2 446.6 698.3 410.7 707.7"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 583.4 393.1 C 537.7 461.6 671.5 533.2 595.4 653.8 C 579 679.8 554.5 702.3 525.1 712.3 C 481.7 727.2 446.6 698.3 410.7 707.7",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ],
+      "appearance": {
+        "baseRevision": 2,
+        "kind": "catalogueOutline",
+        "source": {
+          "font": "@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2",
+          "sha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c",
+          "glyph": "ر",
+          "weight": 400,
+          "method": "highResolutionInkContours",
+          "fontSize": 2400,
+          "scale": 0.275,
+          "center": [
+            519,
+            568
+          ],
+          "maxContourError": 0.34375
+        },
+        "bounds": {
+          "x": 401.85,
+          "y": 388.15,
+          "width": 234.3,
+          "height": 359.7
+        },
+        "parts": [
+          {
+            "id": "stroke-1",
+            "contours": [
+              "M585.55 388.15 L586.1 388.15 L586.375 388.975 L588.85 398.875 L595.175 417.85 L610.3 457.725 L624.325 497.875 L630.375 518.775 L632.85 529.225 L634.775 539.95 L635.875 549.85 L636.15 567.725 L635.6 578.725 L633.675 596.325 L631.2 610.35 L626.525 628.775 L622.125 641.975 L616.9 654.9 L609.475 670.025 L601.225 683.775 L593.525 694.5 L586.1 702.75 L586.1 703.3 L571.525 717.325 L563 723.925 L549.25 732.45 L533.025 739.875 L517.625 744.55 L503.325 747.025 L489.575 747.85 L481.325 747.3 L472.25 745.375 L453.275 738.775 L438.975 732.45 L423.3 724.475 L412.85 718.425 L411.75 717.325 L410.65 717.05 L401.85 711 L410.375 689 L429.35 692.3 L452.45 695.325 L464 696.15 L481.6 696.15 L497.275 694.5 L508 692.3 L524.225 687.075 L536.05 681.575 L544.575 676.625 L545.125 675.8 L553.925 670.025 L562.45 662.325 L563 662.325 L570.7 654.625 L570.7 654.075 L573.175 651.875 L573.175 651.325 L578.675 645.275 L585.55 635.925 L596.825 616.95 L605.9 597.15 L611.675 580.375 L596.825 549.025 L586.925 531.7 L582.525 522.9 L581.975 522.625 L575.925 510.525 L575.375 510.25 L558.05 474.775 L553.375 462.95 L550.625 454.15 L548.15 442.325 L547.6 435.175 L547.875 428.85 L548.975 422.25 L551.45 415.375 L555.025 409.6 L560.525 403.825 L561.075 403.825 L566.3 399.15 L574.825 393.65 Z"
+            ],
+            "bounds": {
+              "x": 401.85,
+              "y": 388.15,
+              "width": 234.3,
+              "height": 359.7
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M585.55 388.15 L586.1 388.15 L589.95 402.45 L600.95 433.8 L560.8 442.05 L550.075 444.25 L548.425 443.975 L547.6 435.175 L547.875 428.85 L548.975 422.25 L551.45 415.375 L556.4 407.95 L562.725 401.9 L572.075 395.3 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M600.125 433.8 L601.225 433.8 L601.5 434.35 L615.525 473.125 L568.225 494.85 L567.4 494.575 L566.575 492.375 L559.15 477.25 L553.375 462.95 L550.625 454.15 L548.7 444.25 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M614.975 473.125 L615.8 473.125 L624.325 497.875 L630.925 521.25 L589.675 535.275 L588.85 535 L587.2 531.7 L580.05 519.05 L578.4 515.2 L577.85 514.925 L567.675 494.85 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M630.375 521.25 L630.925 521.25 L631.2 522.075 L632.85 529.225 L635.6 546.825 L636.15 554.25 L636.15 567.725 L635.6 574.875 L609.2 575.15 L604.8 565.25 L596.825 549.025 L596.275 548.75 L594.625 544.9 L589.125 535.275 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M627.35 574.875 L635.6 574.875 L635.6 578.725 L632.575 603.2 L630.1 615.3 L626.8 627.675 L608.925 621.35 L597.375 617.225 L596.825 616.4 L603.975 601.825 L611.675 581.2 L609.2 575.15 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M596.55 616.95 L626.525 627.675 L623.225 638.95 L615.525 657.925 L606.175 675.8 L605.35 676.9 L603.7 675.8 L572.625 652.425 L578.675 645.275 L585.55 635.925 L592.425 624.925 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M572.35 652.425 L595.725 669.475 L605.35 677.175 L598.2 688.175 L589.675 699.175 L575.65 713.75 L571.8 716.775 L570.15 718.425 L568.775 718.975 L541 678.55 L549.8 673.05 L558.325 666.45 L562.45 662.325 L563 662.325 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M540.725 678.55 L542.375 680.2 L544.025 683.225 L544.85 683.775 L547.05 687.625 L547.875 688.175 L569.05 719.25 L562.175 724.475 L549.25 732.45 L537.15 738.225 L530.55 740.425 L523.95 742.9 L514.6 745.1 L506.9 692.3 L514.875 690.375 L524.225 687.075 L536.05 681.575 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 432,
+                "contours": [
+                  "M506.625 692.3 L514.6 745.1 L503.325 747.025 L487.65 747.85 L479.4 747.025 L468.125 744 L456.3 739.875 L466.2 696.15 L481.6 696.15 L488.75 695.6 L500.3 693.95 Z"
+                ]
+              },
+              {
+                "from": 432,
+                "to": 480,
+                "contours": [
+                  "M412.3 689.275 L440.9 693.95 L452.45 695.325 L466.2 696.15 L458.225 731.625 L456.575 739.05 L456.3 739.6 L455.475 739.6 L438.975 732.45 L418.075 721.45 L417.525 720.35 Z"
+                ]
+              },
+              {
+                "from": 480,
+                "to": 484.68823160726447,
+                "contours": [
+                  "M410.375 689 L412.3 689.275 L417.8 721.175 L412.575 717.875 L410.65 717.05 L401.85 711 Z"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/ra-name-v2.mp3",
+        "transcriptMs": "Ra",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/10_raw.mp3",
+          "sha256": "3fbc1ca4733dd40e419891248ae6184b149a63903bfe46a3ba21b6147bee2553",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "zai",
+    "glyph": "ز",
+    "labelMs": "Zai",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-four-letter-outlines-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 583.4 380.5 C 537.7 449 671.5 520.6 595.4 641.2 C 579 667.2 554.5 689.6 525.1 699.7 C 481.7 714.5 446.6 685.7 410.7 695.1"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 583.4 380.5 C 537.7 449 671.5 520.6 595.4 641.2 C 579 667.2 554.5 689.6 525.1 699.7 C 481.7 714.5 446.6 685.7 410.7 695.1",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 48
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 547,
+          "y": 293,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1"
+        ]
+      ],
+      "appearance": {
+        "baseRevision": 3,
+        "kind": "catalogueOutline",
+        "source": {
+          "font": "@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2",
+          "sha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c",
+          "glyph": "ز",
+          "weight": 400,
+          "method": "highResolutionInkContours",
+          "fontSize": 2400,
+          "scale": 0.275,
+          "center": [
+            519,
+            491
+          ],
+          "maxContourError": 0.34375
+        },
+        "bounds": {
+          "x": 401.85,
+          "y": 246.8,
+          "width": 234.3,
+          "height": 488.4
+        },
+        "parts": [
+          {
+            "id": "stroke-1",
+            "contours": [
+              "M585.55 375.5 L586.1 375.5 L586.375 376.325 L588.85 386.225 L595.175 405.2 L610.3 445.075 L624.325 485.225 L630.375 506.125 L632.85 516.575 L634.775 527.3 L635.875 537.2 L636.15 555.075 L635.6 566.075 L633.675 583.675 L631.2 597.7 L626.525 616.125 L622.125 629.325 L616.9 642.25 L609.475 657.375 L601.225 671.125 L593.525 681.85 L586.1 690.1 L586.1 690.65 L571.525 704.675 L563 711.275 L549.25 719.8 L533.025 727.225 L517.625 731.9 L503.325 734.375 L489.575 735.2 L481.325 734.65 L472.25 732.725 L453.275 726.125 L438.975 719.8 L423.3 711.825 L412.85 705.775 L411.75 704.675 L410.65 704.4 L401.85 698.35 L410.375 676.35 L429.35 679.65 L452.45 682.675 L464 683.5 L481.6 683.5 L497.275 681.85 L508 679.65 L524.225 674.425 L536.05 668.925 L544.575 663.975 L545.125 663.15 L553.925 657.375 L562.45 649.675 L563 649.675 L570.7 641.975 L570.7 641.425 L573.175 639.225 L573.175 638.675 L578.675 632.625 L585.55 623.275 L596.825 604.3 L605.9 584.5 L611.675 567.725 L596.825 536.375 L586.925 519.05 L582.525 510.25 L581.975 509.975 L575.925 497.875 L575.375 497.6 L558.05 462.125 L553.375 450.3 L550.625 441.5 L548.15 429.675 L547.6 422.525 L547.875 416.2 L548.975 409.6 L551.45 402.725 L555.025 396.95 L560.525 391.175 L561.075 391.175 L566.3 386.5 L574.825 381 Z"
+            ],
+            "bounds": {
+              "x": 401.85,
+              "y": 375.5,
+              "width": 234.3,
+              "height": 359.7
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M585.55 375.5 L586.1 375.5 L589.95 389.8 L600.95 421.15 L560.525 429.4 L548.975 431.875 L548.425 431.325 L547.6 422.525 L547.875 416.2 L548.975 409.6 L551.45 402.725 L556.4 395.3 L562.725 389.25 L572.075 382.65 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M600.4 421.15 L601.225 421.15 L601.5 421.7 L615.525 460.475 L569.05 481.925 L567.675 482.2 L566.3 479.725 L558.05 462.125 L553.375 450.3 L550.625 441.5 L548.7 431.875 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M614.975 460.475 L615.8 460.475 L624.325 485.225 L630.925 508.6 L589.95 522.625 L588.85 522.35 L587.2 519.05 L580.05 506.4 L578.4 502.55 L577.85 502.275 L567.675 482.2 L602.05 466.8 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M630.65 508.6 L633.4 519.325 L635.6 534.175 L636.15 541.6 L636.15 555.075 L635.6 562.225 L609.2 562.775 L604.8 552.6 L596.825 536.375 L596.275 536.1 L594.625 532.25 L589.125 522.625 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M631.75 562.225 L635.6 562.225 L635.05 572.4 L631.75 594.95 L626.8 615.025 L625.7 615.025 L605.9 607.6 L597.375 604.575 L596.825 603.75 L603.975 589.175 L611.675 568.55 L609.475 562.775 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M596.55 604.3 L626.525 615.025 L623.225 626.3 L615.525 645.275 L606.175 663.15 L605.35 664.25 L603.7 663.15 L572.625 639.775 L578.675 632.625 L585.55 623.275 L592.425 612.275 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M572.35 639.775 L603.15 662.875 L604.525 663.425 L605.35 664.525 L598.2 675.525 L589.675 686.525 L575.65 701.1 L571.8 704.125 L569.325 706.325 L568.5 706.05 L566.85 703.025 L566.025 702.475 L564.375 699.45 L563.55 698.9 L561.9 695.875 L561.075 695.325 L541 665.9 L549.8 660.4 L558.325 653.8 L562.45 649.675 L563 649.675 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M540.725 665.9 L543.475 669.2 L545.675 673.05 L546.5 673.6 L548.15 676.625 L548.975 677.175 L569.05 706.6 L562.175 711.825 L549.25 719.8 L537.15 725.575 L530.55 727.775 L520.925 731.075 L515.15 732.45 L514.325 731.9 L506.9 679.65 L514.875 677.725 L524.225 674.425 L536.05 668.925 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 432,
+                "contours": [
+                  "M506.625 679.65 L514.6 732.45 L503.325 734.375 L487.65 735.2 L479.4 734.375 L468.125 731.35 L456.3 727.225 L465.925 683.775 L481.6 683.5 L491.5 682.675 L500.3 681.3 Z"
+                ]
+              },
+              {
+                "from": 432,
+                "to": 480,
+                "contours": [
+                  "M412.3 676.625 L440.9 681.3 L452.45 682.675 L466.2 683.5 L458.225 718.975 L456.575 726.4 L456.3 726.95 L455.475 726.95 L438.975 719.8 L418.075 708.8 L417.25 706.325 Z"
+                ]
+              },
+              {
+                "from": 480,
+                "to": 484.66078974048855,
+                "contours": [
+                  "M410.375 676.35 L412.3 676.625 L417.8 708.525 L412.575 705.225 L410.65 704.4 L401.85 698.35 Z"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dot-1",
+            "contours": [
+              "M547.325 246.8 L550.075 249 L550.075 249.55 L568.775 268.25 L568.775 268.8 L569.325 268.8 L582.8 282.275 L583.35 282.275 L588.85 287.775 L589.4 287.775 L591.05 289.975 L578.125 306.75 L566.85 318.85 L566.85 319.4 L563 322.975 L563 323.525 L557.225 329.025 L557.225 329.575 L548.975 337.825 L546.775 336.175 L534.675 326.825 L526.15 319.125 L525.6 319.125 L523.675 316.925 L523.125 316.925 L520.65 314.175 L520.1 314.175 L508.55 302.9 L508.55 302.35 L504.425 298.5 L501.4 294.65 L526.425 269.625 L526.425 269.075 L535.775 259.725 L535.775 259.175 L539.9 255.325 L539.9 254.775 L543.2 251.75 L543.2 251.2 Z"
+            ],
+            "bounds": {
+              "x": 501.4,
+              "y": 246.8,
+              "width": 89.65,
+              "height": 91.025
+            }
+          }
+        ]
+      }
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/zai-name-v2.mp3",
+        "transcriptMs": "Zai",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/11_zai.mp3",
+          "sha256": "4e887a969999838cfce6ae60b5c146929650d5aef53c7ecb8934ffd49b09a3eb",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "sin",
+    "glyph": "س",
+    "labelMs": "Sin",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-sin-and-syin-tails-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 510"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 510",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/sin-name-v2.mp3",
+        "transcriptMs": "Sin",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/12_1sin.mp3",
+          "sha256": "58f170c037b8f4229466df9cfb7ecddcf9875706c68cc47255ca3521129e9a3b",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "syin",
+    "glyph": "ش",
+    "labelMs": "Syin",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-sin-and-syin-tails-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 510"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 825 360 Q 820 520 750 520 Q 680 520 685 390 Q 685 530 605 535 Q 530 535 535 415 Q 550 735 330 735 Q 165 735 185 510",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 760,
+          "y": 250,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 620,
+          "y": 250,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-3",
+          "x": 690,
+          "y": 130,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1",
+          "dot-2",
+          "dot-3"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/syin-name-v2.mp3",
+        "transcriptMs": "Syin",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/12_2syin.mp3",
+          "sha256": "d2ecece86ebe31e9dd22595a94eaf265fef04afcf10b75acdd6eb32a306f2dc5",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "sad",
+    "glyph": "ص",
+    "labelMs": "Sad",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-second-additional-batch-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 565 510 C 590 350 750 280 830 365 C 940 505 705 535 565 510",
+        "M 565 510 Q 530 530 535 415 C 565 660 420 755 305 730 Q 155 700 185 550"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 565 510 C 590 350 750 280 830 365 C 940 505 705 535 565 510",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 565 510 Q 530 530 535 415 C 565 660 420 755 305 730 Q 155 700 185 550",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/sad-name-v2.mp3",
+        "transcriptMs": "Sad",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/13_sod.mp3",
+          "sha256": "df2c1465abccebc534a738658b4098c62be74c780729b4e03f6e3ceb4769f8ed",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "dad",
+    "glyph": "ض",
+    "labelMs": "Dad",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-second-additional-batch-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 565 510 C 590 350 750 280 830 365 C 940 505 705 535 565 510",
+        "M 565 510 Q 530 530 535 415 C 565 660 420 755 305 730 Q 155 700 185 550"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 565 510 C 590 350 750 280 830 365 C 940 505 705 535 565 510",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 565 510 Q 530 530 535 415 C 565 660 420 755 305 730 Q 155 700 185 550",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 735,
+          "y": 230,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/dad-name-v2.mp3",
+        "transcriptMs": "Dad",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/14_dod.mp3",
+          "sha256": "69222ad37d2e7e17910cfe66578f83c239483cd9639c41bdb848d34e45c89ebb",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "tho",
+    "glyph": "ط",
+    "labelMs": "Ta (ط)",
+    "contentVersion": 6,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 6,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-07",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-ta-and-za-original-curves-2026-10-07",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 405.2 517.8 C 411.8 513.3 420.4 512.6 427.2 507.7 C 471.4 476.3 510.4 427.1 571.3 432 C 612.9 435.2 697.2 495.2 660.6 543.1 C 605.9 614.7 450.1 621.4 368.9 606.4 C 337.4 600.7 322.9 573.4 310 575",
+        "M 387.6 194.4 C 339 267.1 403.7 442.3 401.4 523.3 C 400.8 545.2 365.9 579.5 357.9 603.6"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 405.2 517.8 C 411.8 513.3 420.4 512.6 427.2 507.7 C 471.4 476.3 510.4 427.1 571.3 432 C 612.9 435.2 697.2 495.2 660.6 543.1 C 605.9 614.7 450.1 621.4 368.9 606.4 C 337.4 600.7 322.9 573.4 310 575",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 387.6 194.4 C 339 267.1 403.7 442.3 401.4 523.3 C 400.8 545.2 365.9 579.5 357.9 603.6",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/tho-name-v2.mp3",
+        "transcriptMs": "Ta",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/15_tor.mp3",
+          "sha256": "781fbf7ed4c2edc5044b002a974c83f45f353361e51ca4604401329c572fe81e",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "za",
+    "glyph": "ظ",
+    "labelMs": "Za",
+    "contentVersion": 6,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 6,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-07",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-ta-and-za-original-curves-2026-10-07",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 405.2 517.8 C 411.8 513.3 420.4 512.6 427.2 507.7 C 471.4 476.3 510.4 427.1 571.3 432 C 612.9 435.2 697.2 495.2 660.6 543.1 C 605.9 614.7 450.1 621.4 368.9 606.4 C 337.4 600.7 322.9 573.4 310 575",
+        "M 387.6 194.4 C 339 267.1 403.7 442.3 401.4 523.3 C 400.8 545.2 365.9 579.5 357.9 603.6"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 405.2 517.8 C 411.8 513.3 420.4 512.6 427.2 507.7 C 471.4 476.3 510.4 427.1 571.3 432 C 612.9 435.2 697.2 495.2 660.6 543.1 C 605.9 614.7 450.1 621.4 368.9 606.4 C 337.4 600.7 322.9 573.4 310 575",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 387.6 194.4 C 339 267.1 403.7 442.3 401.4 523.3 C 400.8 545.2 365.9 579.5 357.9 603.6",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 552,
+          "y": 297,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/za-name-v2.mp3",
+        "transcriptMs": "Za",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/16_zor.mp3",
+          "sha256": "e5af1f6c308fde0b3347bc1685181251295a8cde7e29ea15a18568d03f6057d3",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ain",
+    "glyph": "ع",
+    "labelMs": "Ain",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-ain-ghain-and-nga-outlines-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 551.5 357.1 C 420.5 287.3 325.2 422.5 437.1 487.2 C 449.5 494.4 467.4 504.9 482.3 504.5 C 534.6 503 580.2 467.2 624.1 444",
+        "M 477.8 530 C 457 550 435 570 423.9 585.9 C 395.7 636.9 401.8 705.8 451.4 740.9 C 534.7 800.2 642.3 762 729.7 737.7"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 551.5 357.1 C 420.5 287.3 325.2 422.5 437.1 487.2 C 449.5 494.4 467.4 504.9 482.3 504.5 C 534.6 503 580.2 467.2 624.1 444",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 477.8 530 C 457 550 435 570 423.9 585.9 C 395.7 636.9 401.8 705.8 451.4 740.9 C 534.7 800.2 642.3 762 729.7 737.7",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2"
+        ]
+      ],
+      "appearance": {
+        "baseRevision": 3,
+        "kind": "catalogueOutline",
+        "source": {
+          "font": "@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2",
+          "sha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c",
+          "glyph": "ع",
+          "weight": 400,
+          "method": "highResolutionInkContours",
+          "fontSize": 2400,
+          "scale": 0.275,
+          "center": [
+            552,
+            554
+          ],
+          "maxContourError": 0.34375
+        },
+        "bounds": {
+          "x": 368.575,
+          "y": 306.5,
+          "width": 366.85,
+          "height": 495
+        },
+        "bodyContours": [
+          "M472.8 306.5 L484.9 307.05 L495.075 308.7 L507.175 312.275 L516.525 316.4 L528.35 323.275 L541 331.8 L562.175 348.025 L564.375 349.95 L564.375 350.775 L553.375 371.4 L531.1 365.075 L510.475 360.95 L492.6 359.3 L478.025 359.85 L463.725 361.775 L444.75 366.45 L427.975 372.5 L406.25 382.95 L406.25 390.65 L407.625 401.65 L409.825 410.725 L413.125 419.8 L418.075 429.425 L422.475 436.025 L426.875 441.525 L429.625 444 L429.625 444.55 L436.225 450.875 L444.2 457.2 L452.175 462.425 L466.75 469.85 L475 473.15 L487.1 477 L497 479.475 L508.825 481.4 L515.975 476.725 L527.525 470.125 L530.825 468.75 L531.1 468.2 L561.35 453.35 L590.775 441.25 L622.675 430.25 L624.05 429.975 L627.075 434.925 L629.275 439.875 L630.925 445.925 L631.2 453.075 L630.65 457.2 L629.275 462.15 L626.8 467.375 L624.05 471.225 L619.65 475.9 L611.675 482.225 L603.15 487.45 L592.975 492.675 L574.825 500.65 L546.775 511.925 L515.7 527.05 L496.45 538.05 L484.625 545.75 L465.1 560.875 L449.975 575.45 L449.975 576 L444.2 582.05 L438.15 590.025 L436.5 593.05 L435.675 593.6 L429.9 604.325 L423.575 620 L420.825 630.725 L419.45 641.175 L419.45 656.025 L420.55 665.65 L423.025 676.375 L426.325 685.45 L431.55 695.35 L439.525 706.075 L446.95 713.5 L456.025 720.65 L466.75 727.25 L477.2 732.2 L490.95 737.15 L503.05 740.45 L518.725 743.475 L533.85 745.4 L556.4 746.775 L584.725 746.775 L615.525 745.4 L635.875 743.75 L654.575 741.825 L679.875 738.25 L705.175 733.575 L728.275 728.35 L735.425 750.9 L711.775 763.275 L710.95 763.275 L705.45 766.3 L690.875 772.9 L663.375 783.625 L637.8 791.6 L613.875 797.1 L593.525 800.125 L576.2 801.5 L548.7 801.225 L525.6 798.75 L504.425 794.35 L484.9 788.025 L476.375 784.45 L465.375 778.95 L451.625 770.425 L438.425 759.975 L425.225 746.225 L419.725 739.075 L413.95 730.275 L407.075 717.075 L402.675 705.8 L399.375 694.25 L396.9 681.05 L395.525 665.1 L395.525 653.825 L396.35 639.8 L398.825 622.75 L402.675 606.8 L406.25 595.8 L411.75 582.325 L415.875 574.625 L416.15 573.25 L424.125 559.5 L431 549.325 L438.15 539.975 L448.875 527.6 L443.1 525.95 L434.85 522.65 L424.125 517.15 L415.875 511.925 L405.7 504.225 L397.725 496.525 L397.175 496.525 L385.625 483.325 L377.1 470.125 L374.35 464.35 L371.325 455.825 L369.95 450.325 L368.575 440.15 L368.575 427.5 L369.4 418.975 L371.05 409.625 L373.8 399.175 L376.825 390.375 L382.6 376.9 L391.95 360.125 L400.475 348.025 L406.525 341.425 L406.525 340.875 L415.05 332.35 L415.6 332.35 L421.925 326.575 L423.575 325.75 L429.075 321.075 L439.525 314.75 L446.95 311.45 L456.85 308.425 L464.55 307.05 Z"
+        ],
+        "parts": [
+          {
+            "id": "stroke-1",
+            "contours": [
+              "M472.8 306.5 L484.9 307.05 L495.075 308.7 L507.175 312.275 L516.525 316.4 L528.35 323.275 L541 331.8 L562.175 348.025 L564.375 349.95 L564.375 350.775 L553.375 371.4 L531.1 365.075 L510.475 360.95 L492.6 359.3 L478.025 359.85 L463.725 361.775 L444.75 366.45 L427.975 372.5 L406.25 382.95 L406.25 390.65 L407.9 403.025 L409.825 410.725 L414.5 422.825 L418.9 430.8 L425.5 439.875 L433.2 448.125 L433.75 448.125 L439.525 453.625 L452.175 462.425 L470.05 471.225 L490.125 477.825 L503.875 480.85 L508.825 481.4 L515.975 476.725 L527.525 470.125 L530.825 468.75 L531.1 468.2 L561.35 453.35 L590.775 441.25 L622.675 430.25 L624.05 429.975 L627.075 434.925 L629.275 439.875 L630.925 445.925 L631.2 453.075 L629.825 460.5 L626.8 467.375 L624.05 471.225 L619.65 475.9 L610.025 483.325 L592.975 492.675 L540.725 514.675 L522.025 523.75 L521.75 524.3 L515.7 527.05 L507.725 531.725 L500.025 525.4 L494.8 522.1 L485.725 518.25 L479.4 517.15 L471.15 517.425 L457.675 520.725 L438.15 524.025 L422.75 516.325 L415.875 511.925 L405.7 504.225 L397.725 496.525 L397.175 496.525 L391.95 491.025 L382.875 479.475 L376 467.925 L371.325 455.825 L369.95 450.325 L368.575 440.15 L368.575 427.5 L369.4 418.975 L371.05 409.625 L375.725 393.4 L382.6 376.9 L391.95 360.125 L401.575 346.65 L406.525 341.425 L406.525 340.875 L415.05 332.35 L415.6 332.35 L419.175 328.775 L429.075 321.075 L436.5 316.4 L444.2 312.55 L456.85 308.425 L464.55 307.05 Z"
+            ],
+            "bounds": {
+              "x": 368.575,
+              "y": 306.5,
+              "width": 262.625,
+              "height": 225.225
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M512.4 314.75 L522.025 319.425 L534.675 327.4 L535.225 328.225 L541 331.8 L551.725 339.775 L564.375 349.95 L564.1 351.325 L563.55 351.6 L553.65 370.575 L553.1 371.4 L540.725 367.55 L522.575 363.15 L510.475 360.95 L502.5 360.125 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M472.8 306.5 L484.9 307.05 L495.075 308.7 L504.7 311.45 L512.4 314.475 L505.8 343.625 L502.775 359.575 L502.5 360.125 L501.675 360.125 L490.95 359.3 L475 360.125 L463.175 362.05 L453.275 309.525 L462.625 307.325 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M452.725 309.525 L453.55 309.8 L463.175 362.05 L454.65 363.7 L444.75 366.45 L432.1 370.85 L427.425 373.05 L426.6 372.775 L421.375 365.9 L410.925 353.525 L408.725 350.225 L407.35 349.125 L406.25 347.2 L404.875 346.1 L403.775 344.175 L415.05 332.35 L415.6 332.35 L419.175 328.775 L429.075 321.075 L441.175 313.925 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M403.5 344.45 L404.875 345.55 L424.125 369.75 L425.5 370.85 L426.875 373.325 L418.625 376.625 L406.25 382.95 L406.525 393.95 L408.175 403.575 L402.4 401.925 L376.275 395.05 L375.45 394.775 L375.45 394.225 L380.675 381.025 L386.725 368.925 L395.8 354.35 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M375.45 394.775 L407.075 403.025 L408.45 404.125 L409.825 410.725 L413.125 419.8 L416.975 427.5 L420.275 432.725 L418.9 433 L399.375 442.9 L372.425 456.925 L371.6 456.65 L369.95 450.325 L368.85 442.9 L368.575 427.5 L369.4 418.975 L371.05 409.625 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M419.725 432.725 L420.55 432.725 L423.3 437.125 L426.875 440.975 L426.875 441.525 L429.625 444 L429.625 444.55 L436.225 450.875 L443.65 456.65 L412.025 501.475 L411.2 502.025 L408.725 506.15 L405.7 504.225 L401.575 500.375 L391.95 491.025 L382.875 479.475 L376 467.925 L372.7 460.225 L371.875 456.925 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M443.375 456.65 L456.025 464.625 L466.75 469.85 L477.2 473.975 L474.175 483.6 L464.825 518.8 L459.05 520.45 L441.725 523.475 L438.15 524.025 L426.6 518.525 L415.875 511.925 L408.45 506.15 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M477.2 473.7 L490.125 477.825 L503.875 480.85 L508.825 481.4 L511.025 480.025 L523.4 523.2 L512.125 528.975 L509.375 530.9 L507.45 531.725 L504.7 528.975 L497.55 523.75 L490.4 519.9 L485.725 518.25 L479.4 517.15 L473.35 517.15 L464.55 519.075 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 432,
+                "contours": [
+                  "M548.975 459.125 L549.525 459.125 L550.9 462.425 L551.45 462.7 L571.8 501.75 L551.725 509.725 L536.05 516.875 L530.55 519.9 L529.725 519.9 L523.675 523.2 L523.125 522.65 L511.025 479.75 L527.525 470.125 Z"
+                ]
+              },
+              {
+                "from": 432,
+                "to": 480,
+                "contours": [
+                  "M592.425 440.7 L593.525 441.25 L615.525 479.2 L610.025 483.325 L600.125 489.1 L589.4 494.325 L572.35 501.475 L571.8 501.75 L570.975 500.375 L566.3 490.75 L565.75 490.475 L556.4 472.05 L550.9 462.425 L549.525 458.85 L568.225 450.325 Z"
+                ]
+              },
+              {
+                "from": 480,
+                "to": 505.1807717573957,
+                "contours": [
+                  "M623.775 429.975 L628.45 437.675 L630.925 445.925 L631.2 453.075 L629.275 462.15 L625.15 469.85 L622.4 472.6 L622.4 473.15 L615.8 479.2 L614.7 478.1 L610.025 469.575 L592.975 440.7 L602.875 436.85 Z"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "stroke-2",
+            "contours": [
+              "M473.35 517.15 L481.875 517.425 L490.4 519.9 L500.025 525.4 L507.45 531.725 L492.05 540.8 L475.275 552.625 L465.65 560.875 L465.1 560.875 L460.7 565.275 L460.15 565.275 L449.975 575.45 L449.975 576 L444.2 582.05 L435.675 593.6 L429.9 604.325 L425.5 614.5 L421.65 626.875 L419.725 638.15 L419.175 648.6 L420.55 665.65 L423.025 676.375 L426.325 685.45 L431.55 695.35 L439.525 706.075 L446.95 713.5 L456.025 720.65 L466.75 727.25 L479.95 733.3 L493.7 737.975 L506.9 741.275 L524.5 744.3 L540.45 745.95 L556.4 746.775 L584.725 746.775 L615.525 745.4 L641.925 743.2 L681.525 737.975 L705.175 733.575 L728.275 728.35 L735.425 750.9 L714.525 761.9 L690.875 772.9 L668.05 781.975 L646.6 789.125 L625.7 794.625 L605.9 798.475 L585.275 800.95 L576.2 801.5 L554.2 801.5 L535.775 800.125 L516.25 797.1 L499.475 792.975 L482.15 786.925 L465.375 778.95 L451.625 770.425 L438.425 759.975 L428.8 750.35 L428.8 749.8 L425.225 746.225 L419.725 739.075 L413.95 730.275 L410.1 722.575 L409.55 722.3 L404.05 709.65 L399.375 694.25 L396.9 681.05 L395.525 665.1 L395.525 653.825 L396.35 639.8 L398.825 622.75 L402.675 606.8 L406.25 595.8 L411.75 582.325 L415.875 574.625 L416.15 573.25 L424.125 559.5 L431 549.325 L442 535.3 L448.875 527.875 L438.7 524.025 L452.175 521.825 Z"
+            ],
+            "bounds": {
+              "x": 395.525,
+              "y": 517.15,
+              "width": 339.9,
+              "height": 284.35
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M473.35 517.15 L481.875 517.425 L490.4 519.9 L500.025 525.4 L507.45 531.725 L492.05 540.8 L480.775 548.5 L465.1 560.875 L453.55 571.875 L452.725 572.7 L430.45 550.975 L431 549.325 L435.95 542.725 L448.875 527.875 L438.7 524.025 L452.175 521.825 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M430.175 550.7 L433.475 554 L434.025 554 L448.05 568.3 L448.6 568.3 L452.725 572.425 L452.725 572.975 L445.85 580.125 L439.525 588.1 L432.1 599.925 L429.075 606.8 L428.25 606.8 L405.425 598.275 L409.825 586.725 L416.15 573.25 L424.125 559.5 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M405.425 598.55 L428.8 607.075 L425.5 614.5 L421.65 626.875 L419.725 638.15 L419.45 649.425 L395.8 649.15 L396.35 639.8 L398.825 622.75 L401.85 609.825 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M395.8 649.15 L419.45 649.425 L419.725 659.325 L421.65 671.15 L424.675 681.325 L429.075 690.4 L428.25 691.225 L420.825 693.975 L401.575 701.95 L398.825 691.775 L396.35 676.65 L395.525 665.1 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M428.8 690.675 L434.3 699.475 L439.525 706.075 L446.95 713.5 L456.025 720.375 L456.025 720.925 L453.825 722.85 L453.825 723.4 L435.95 743.2 L432.1 748.15 L430.175 749.8 L430.175 750.35 L429.625 750.9 L429.075 750.625 L419.725 739.075 L411.75 726.425 L405.425 713.225 L401.575 702.225 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M456.025 720.65 L462.9 725.05 L472.25 730 L483.525 734.675 L493.425 737.7 L475 783.35 L469.5 780.875 L462.9 777.575 L449.7 769.05 L440.625 761.9 L438.975 759.975 L438.425 759.975 L429.625 751.175 L430.175 749.8 L432.1 748.15 L432.1 747.6 L434.025 745.95 L434.025 745.4 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M493.425 737.7 L503.05 740.45 L512.4 742.375 L534.125 745.4 L527.8 798.75 L517.075 797.1 L509.925 795.725 L496.725 792.15 L484.9 788.025 L474.725 783.625 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M534.125 745.4 L556.4 746.775 L577.025 746.775 L581.425 800.95 L574.825 801.5 L548.7 801.225 L527.525 799.025 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 432,
+                "contours": [
+                  "M619.1 744.85 L622.675 745.125 L632.3 792.975 L609.2 797.925 L589.675 800.4 L581.425 800.95 L581.15 799.85 L577.025 746.775 L600.95 746.225 Z"
+                ]
+              },
+              {
+                "from": 432,
+                "to": 480,
+                "contours": [
+                  "M669.15 739.625 L669.975 741 L679.6 777.575 L657.875 785.55 L632.85 792.7 L632.025 792.425 L631.75 791.325 L622.4 744.575 L644.675 742.925 Z"
+                ]
+              },
+              {
+                "from": 480,
+                "to": 528,
+                "contours": [
+                  "M715.625 731.1 L716.725 731.1 L717 731.65 L723.875 756.95 L711.775 763.275 L710.95 763.275 L705.45 766.3 L690.875 772.9 L680.15 777.3 L679.325 777.025 L679.05 775.925 L669.425 739.625 L690.875 736.325 Z"
+                ]
+              },
+              {
+                "from": 528,
+                "to": 538.7045411647308,
+                "contours": [
+                  "M727.45 728.35 L728.275 728.35 L735.425 750.9 L724.425 756.675 L723.875 756.95 L716.725 730.825 Z"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/ain-name-v2.mp3",
+        "transcriptMs": "Ain",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/17_ain.mp3",
+          "sha256": "7c3974d9768f6747ae0b99df2c991f05b7ac44faad64e2e333937dcc03c87e1b",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ghain",
+    "glyph": "غ",
+    "labelMs": "Ghain",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-ain-ghain-and-nga-outlines-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 551.5 362.9 C 420.5 293 325.2 428.3 437.1 493 C 449.5 500.2 467.4 510.7 482.3 510.3 C 534.6 508.8 580.2 473 624.1 449.8",
+        "M 477.8 535.8 C 457 555.8 435 575.8 423.9 591.7 C 395.7 642.6 401.8 711.5 451.4 746.7 C 534.7 805.9 642.3 767.7 729.7 743.5"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 551.5 362.9 C 420.5 293 325.2 428.3 437.1 493 C 449.5 500.2 467.4 510.7 482.3 510.3 C 534.6 508.8 580.2 473 624.1 449.8",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 477.8 535.8 C 457 555.8 435 575.8 423.9 591.7 C 395.7 642.6 401.8 711.5 451.4 746.7 C 534.7 805.9 642.3 767.7 729.7 743.5",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 468,
+          "y": 220,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1"
+        ]
+      ],
+      "appearance": {
+        "baseRevision": 3,
+        "kind": "catalogueOutline",
+        "source": {
+          "font": "@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2",
+          "sha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c",
+          "glyph": "غ",
+          "weight": 400,
+          "method": "highResolutionInkContours",
+          "fontSize": 2400,
+          "scale": 0.275,
+          "center": [
+            552,
+            491
+          ],
+          "maxContourError": 0.34375
+        },
+        "bounds": {
+          "x": 368.575,
+          "y": 174.612,
+          "width": 366.85,
+          "height": 632.775
+        },
+        "bodyContours": [
+          "M472.8 312.387 L484.9 312.938 L495.075 314.587 L507.175 318.163 L516.525 322.288 L528.35 329.163 L541 337.688 L562.175 353.913 L564.375 355.837 L564.375 356.663 L553.375 377.288 L531.1 370.962 L510.475 366.837 L492.6 365.188 L478.025 365.737 L463.725 367.663 L444.75 372.337 L427.975 378.387 L406.25 388.837 L406.25 396.538 L407.625 407.538 L409.825 416.613 L413.125 425.688 L418.075 435.313 L422.475 441.913 L426.875 447.413 L429.625 449.887 L429.625 450.438 L436.225 456.762 L444.2 463.087 L452.175 468.313 L466.75 475.738 L475 479.038 L487.1 482.887 L497 485.363 L508.825 487.288 L515.975 482.613 L527.525 476.012 L530.825 474.637 L531.1 474.087 L561.35 459.238 L590.775 447.137 L622.675 436.137 L624.05 435.863 L627.075 440.813 L629.275 445.762 L630.925 451.813 L631.2 458.962 L630.65 463.087 L629.275 468.038 L626.8 473.262 L624.05 477.113 L619.65 481.788 L611.675 488.113 L603.15 493.337 L592.975 498.563 L574.825 506.538 L546.775 517.813 L515.7 532.938 L496.45 543.938 L484.625 551.638 L465.1 566.763 L449.975 581.337 L449.975 581.888 L444.2 587.938 L438.15 595.913 L436.5 598.938 L435.675 599.487 L429.9 610.212 L423.575 625.888 L420.825 636.612 L419.45 647.063 L419.45 661.913 L420.55 671.538 L423.025 682.263 L426.325 691.337 L431.55 701.237 L439.525 711.962 L446.95 719.388 L456.025 726.538 L466.75 733.138 L477.2 738.088 L490.95 743.038 L503.05 746.338 L518.725 749.362 L533.85 751.288 L556.4 752.663 L584.725 752.663 L615.525 751.288 L635.875 749.638 L654.575 747.713 L679.875 744.138 L705.175 739.463 L728.275 734.237 L735.425 756.788 L711.775 769.163 L710.95 769.163 L705.45 772.188 L690.875 778.788 L663.375 789.513 L637.8 797.487 L613.875 802.987 L593.525 806.013 L576.2 807.388 L548.7 807.112 L525.6 804.638 L504.425 800.237 L484.9 793.913 L476.375 790.338 L465.375 784.838 L451.625 776.313 L438.425 765.862 L425.225 752.112 L419.725 744.963 L413.95 736.163 L407.075 722.962 L402.675 711.688 L399.375 700.138 L396.9 686.938 L395.525 670.987 L395.525 659.712 L396.35 645.688 L398.825 628.638 L402.675 612.688 L406.25 601.688 L411.75 588.212 L415.875 580.513 L416.15 579.138 L424.125 565.388 L431 555.212 L438.15 545.862 L448.875 533.487 L443.1 531.837 L434.85 528.538 L424.125 523.038 L415.875 517.813 L405.7 510.113 L397.725 502.413 L397.175 502.413 L385.625 489.212 L377.1 476.012 L374.35 470.238 L371.325 461.712 L369.95 456.212 L368.575 446.038 L368.575 433.387 L369.4 424.863 L371.05 415.512 L373.8 405.063 L376.825 396.262 L382.6 382.788 L391.95 366.012 L400.475 353.913 L406.525 347.313 L406.525 346.762 L415.05 338.237 L415.6 338.237 L421.925 332.462 L423.575 331.637 L429.075 326.962 L439.525 320.637 L446.95 317.337 L456.85 314.313 L464.55 312.938 Z"
+        ],
+        "parts": [
+          {
+            "id": "stroke-1",
+            "contours": [
+              "M472.8 312.387 L484.9 312.938 L495.075 314.587 L507.175 318.163 L516.525 322.288 L528.35 329.163 L541 337.688 L562.175 353.913 L564.375 355.837 L564.375 356.663 L553.375 377.288 L531.1 370.962 L510.475 366.837 L492.6 365.188 L478.025 365.737 L463.725 367.663 L444.75 372.337 L427.975 378.387 L406.25 388.837 L406.25 396.538 L407.9 408.913 L409.825 416.613 L414.5 428.712 L418.9 436.688 L425.5 445.762 L433.2 454.012 L433.75 454.012 L439.525 459.512 L452.175 468.313 L470.05 477.113 L490.125 483.712 L503.875 486.738 L508.825 487.288 L515.975 482.613 L527.525 476.012 L530.825 474.637 L531.1 474.087 L561.35 459.238 L590.775 447.137 L611.675 439.712 L622.675 436.413 L624.05 435.863 L628.45 443.563 L630.925 451.813 L631.2 458.962 L629.825 466.387 L626.8 473.262 L624.05 477.113 L619.65 481.788 L610.025 489.212 L592.975 498.563 L540.725 520.563 L522.025 529.638 L521.75 530.188 L515.7 532.938 L508.275 537.337 L507.175 537.337 L505.8 535.688 L499.75 531.013 L493.975 527.438 L486 524.138 L480.5 523.038 L470.6 523.313 L454.65 527.163 L438.15 529.913 L422.75 522.212 L415.875 517.813 L405.7 510.113 L397.725 502.413 L397.175 502.413 L391.95 496.913 L382.875 485.363 L376 473.813 L371.325 461.712 L369.95 456.212 L368.575 446.038 L368.575 433.387 L369.4 424.863 L371.05 415.512 L375.725 399.288 L382.6 382.788 L391.95 366.012 L401.575 352.538 L406.525 347.313 L406.525 346.762 L415.05 338.237 L415.6 338.237 L419.175 334.663 L429.075 326.962 L436.5 322.288 L444.2 318.438 L456.85 314.313 L464.55 312.938 Z"
+            ],
+            "bounds": {
+              "x": 368.575,
+              "y": 312.387,
+              "width": 262.625,
+              "height": 224.95
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M512.4 320.637 L522.025 325.313 L534.675 333.288 L535.225 334.112 L541 337.688 L551.725 345.663 L564.375 355.837 L564.1 357.212 L563.55 357.487 L553.65 376.462 L553.1 377.288 L540.725 373.438 L522.575 369.038 L510.475 366.837 L502.5 366.012 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M472.8 312.387 L484.9 312.938 L495.075 314.587 L504.7 317.337 L512.4 320.362 L502.5 366.012 L491.225 365.188 L475 366.012 L463.175 367.938 L453.55 317.063 L453.55 315.137 L462.625 313.212 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M452.725 315.413 L453.55 315.413 L463.175 367.938 L454.65 369.587 L444.75 372.337 L432.1 376.738 L427.425 378.938 L421.375 371.788 L403.775 350.063 L415.05 338.237 L415.6 338.237 L419.175 334.663 L429.075 326.962 L441.175 319.813 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M403.5 350.337 L404.05 350.337 L405.7 352.262 L407.9 355.563 L409.275 356.663 L410.375 358.587 L411.75 359.688 L427.15 378.938 L418.625 382.512 L406.25 388.837 L406.525 399.837 L408.175 409.188 L402.4 407.813 L375.725 400.663 L375.45 400.113 L380.675 386.913 L386.725 374.813 L395.8 360.237 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M375.45 400.387 L408.175 409.188 L409.825 416.613 L413.125 425.688 L416.975 433.387 L420 437.788 L420 438.613 L399.1 448.788 L374.625 461.163 L373.8 461.988 L372.15 462.813 L371.6 462.538 L369.95 456.212 L368.85 448.788 L368.575 433.387 L369.4 424.863 L371.05 415.512 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M420 438.337 L429.625 450.438 L436.225 456.762 L443.65 462.538 L430.175 480.962 L426.325 487.012 L425.5 487.563 L421.65 493.613 L420.825 494.163 L416.975 500.212 L416.15 500.762 L412.3 506.813 L411.475 507.363 L409 511.488 L408.175 512.038 L401.3 506.262 L391.95 496.913 L382.875 485.363 L376 473.813 L372.7 466.113 L371.875 462.813 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M443.375 462.538 L456.025 470.512 L466.75 475.738 L477.2 479.863 L474.175 489.212 L464.55 524.962 L441.725 529.362 L438.15 529.913 L426.6 524.413 L415.875 517.813 L408.45 512.313 L408.45 511.762 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M477.2 479.587 L490.125 483.712 L503.875 486.738 L508.825 487.288 L511.025 485.913 L523.4 529.087 L509.65 536.513 L508.275 537.337 L507.175 537.337 L504.15 534.313 L497.275 529.362 L491.225 526.063 L486 524.138 L480.5 523.038 L472.525 523.038 L464.55 524.688 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 432,
+                "contours": [
+                  "M548.975 465.012 L549.525 465.012 L550.9 468.313 L551.45 468.587 L571.8 507.637 L551.725 515.612 L536.05 522.763 L530.55 525.788 L529.725 525.788 L523.675 529.087 L523.125 528.538 L511.025 485.637 L527.525 476.012 Z"
+                ]
+              },
+              {
+                "from": 432,
+                "to": 480,
+                "contours": [
+                  "M592.425 446.587 L593.525 447.137 L594.075 448.788 L596.275 451.813 L596.825 453.462 L615.525 485.087 L610.025 489.212 L600.125 494.988 L589.4 500.212 L572.35 507.363 L571.8 507.637 L570.975 506.262 L551.45 468.587 L550.9 468.313 L549.525 464.738 L568.225 456.212 Z"
+                ]
+              },
+              {
+                "from": 480,
+                "to": 505.2293901900318,
+                "contours": [
+                  "M623.775 435.863 L628.45 443.563 L630.925 451.813 L631.2 458.962 L629.275 468.038 L625.15 475.738 L622.4 478.488 L622.4 479.038 L615.8 485.087 L614.975 484.538 L610.025 475.462 L592.975 446.587 L602.875 442.738 Z"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "stroke-2",
+            "contours": [
+              "M472.525 523.038 L480.5 523.038 L489.3 525.237 L499.75 531.013 L507.725 537.612 L492.05 546.688 L475.275 558.513 L465.65 566.763 L465.1 566.763 L460.7 571.163 L460.15 571.163 L449.975 581.337 L449.975 581.888 L444.2 587.938 L435.675 599.487 L429.9 610.212 L425.5 620.388 L421.65 632.763 L419.725 644.038 L419.175 654.487 L420.55 671.538 L423.025 682.263 L426.325 691.337 L431.55 701.237 L439.525 711.962 L446.95 719.388 L456.025 726.538 L466.75 733.138 L479.95 739.188 L493.7 743.862 L506.9 747.163 L524.5 750.188 L540.45 751.838 L556.4 752.663 L584.725 752.663 L615.525 751.288 L641.925 749.088 L681.525 743.862 L705.175 739.463 L728.275 734.237 L735.425 756.788 L715.075 767.513 L690.875 778.788 L668.05 787.862 L646.6 795.013 L625.7 800.513 L605.9 804.362 L585.275 806.838 L576.2 807.388 L554.2 807.388 L535.775 806.013 L516.25 802.987 L499.475 798.862 L482.15 792.813 L465.375 784.838 L451.625 776.313 L438.425 765.862 L428.8 756.237 L428.8 755.688 L425.225 752.112 L419.725 744.963 L413.95 736.163 L410.1 728.462 L409.55 728.188 L404.05 715.538 L399.375 700.138 L396.9 686.938 L395.525 670.987 L395.525 659.712 L396.35 645.688 L398.825 628.638 L402.675 612.688 L406.25 601.688 L411.75 588.212 L415.875 580.513 L416.15 579.138 L424.125 565.388 L431 555.212 L442 541.188 L448.875 533.763 L438.7 530.188 L438.425 529.638 L454.65 527.163 Z"
+            ],
+            "bounds": {
+              "x": 395.525,
+              "y": 523.038,
+              "width": 339.9,
+              "height": 284.35
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M472.525 523.038 L480.5 523.038 L489.3 525.237 L499.75 531.013 L507.725 537.612 L496.45 543.938 L480.775 554.388 L465.1 566.763 L454.1 577.487 L452.725 578.587 L430.45 556.587 L431 555.212 L438.15 545.862 L448.875 533.763 L438.7 530.188 L438.425 529.638 L454.65 527.163 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M430.175 556.587 L430.725 556.587 L443.375 569.513 L443.925 569.513 L452.725 578.313 L452.725 578.862 L445.85 586.013 L439.525 593.987 L436.5 598.938 L435.675 599.487 L433.75 603.612 L432.1 605.813 L429.075 612.688 L428.525 612.688 L405.7 604.438 L405.7 603.337 L409.825 592.612 L416.15 579.138 L424.125 565.388 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M405.425 604.163 L428.8 612.962 L425.5 620.388 L421.65 632.763 L419.725 644.038 L419.45 655.038 L395.8 655.038 L396.35 645.688 L398.825 628.638 L401.85 615.712 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M395.8 655.038 L419.45 655.038 L419.725 665.212 L421.65 677.038 L424.675 687.212 L429.075 696.288 L427.425 697.388 L420.825 699.862 L401.575 707.837 L398.825 697.663 L396.35 682.538 L395.525 670.987 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M428.525 696.563 L429.35 696.837 L434.3 705.362 L439.525 711.962 L446.95 719.388 L456.025 726.263 L451.625 731.763 L449.7 733.413 L449.7 733.962 L443.65 740.288 L443.65 740.838 L433.475 751.838 L433.475 752.388 L431.275 754.313 L431.275 754.862 L429.075 756.513 L419.725 744.963 L411.75 732.313 L405.425 719.112 L401.575 708.112 L401.85 707.563 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M455.75 726.538 L456.575 726.538 L462.9 730.938 L472.25 735.888 L483.525 740.563 L493.425 743.588 L475 789.237 L469.5 786.763 L462.9 783.463 L449.7 774.938 L440.625 767.788 L438.975 765.862 L438.425 765.862 L429.35 756.788 L453.55 729.563 L453.55 729.013 L455.75 727.087 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M493.425 743.588 L503.05 746.338 L512.4 748.263 L534.125 751.288 L527.8 804.913 L517.35 802.987 L509.925 801.612 L496.725 798.038 L484.9 793.913 L474.725 789.513 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M534.125 751.288 L556.4 752.663 L577.025 752.663 L581.425 806.838 L575.1 807.388 L548.7 807.112 L527.8 804.913 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 432,
+                "contours": [
+                  "M619.1 750.737 L622.675 750.737 L632.3 798.862 L609.2 803.813 L589.675 806.288 L581.425 806.838 L577.025 752.663 L600.95 752.112 Z"
+                ]
+              },
+              {
+                "from": 432,
+                "to": 480,
+                "contours": [
+                  "M669.15 745.513 L669.7 745.513 L679.6 783.463 L657.875 791.438 L632.85 798.588 L632.025 798.038 L622.4 750.463 L644.675 748.813 Z"
+                ]
+              },
+              {
+                "from": 480,
+                "to": 528,
+                "contours": [
+                  "M715.625 736.987 L716.725 736.987 L717.275 738.088 L724.15 762.838 L711.775 769.163 L710.95 769.163 L705.45 772.188 L690.875 778.788 L680.15 783.188 L679.6 783.188 L679.325 782.088 L669.7 745.513 L690.875 742.213 Z"
+                ]
+              },
+              {
+                "from": 528,
+                "to": 538.6478710286922,
+                "contours": [
+                  "M727.45 734.237 L728.275 734.237 L735.425 756.788 L724.7 762.563 L723.875 762.563 L716.725 736.712 Z"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dot-1",
+            "contours": [
+              "M468.675 174.612 L496.725 203.212 L497.275 203.212 L501.95 208.162 L502.5 208.162 L512.4 217.512 L500.025 233.737 L489.575 245.012 L489.575 245.562 L486 248.862 L486 249.412 L481.875 253.262 L481.875 253.812 L471.975 263.438 L470.325 265.637 L468.125 263.987 L455.2 254.087 L443.65 243.637 L443.1 243.637 L426.875 227.688 L422.75 222.462 L444.475 200.737 L444.475 200.188 L450.25 194.688 L450.25 194.137 L454.925 189.737 L454.925 189.188 L459.05 185.337 L459.05 184.787 Z"
+            ],
+            "bounds": {
+              "x": 422.75,
+              "y": 174.612,
+              "width": 89.65,
+              "height": 91.025
+            }
+          }
+        ]
+      }
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/ghain-name-v2.mp3",
+        "transcriptMs": "Ghain",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/18_ghain.mp3",
+          "sha256": "371dba3f910d3118713a6a35bd08aa96d0d24bbc44583dbe1bdb2052b602d188",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "nga",
+    "glyph": "ڠ",
+    "labelMs": "Nga",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": true,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-ain-ghain-and-nga-outlines-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 551.5 333.3 C 420.5 263.4 325.2 398.7 437.1 463.4 C 449.5 470.6 467.4 481.1 482.3 480.7 C 534.6 479.2 580.2 443.4 624.1 420.2",
+        "M 477.8 506.2 C 457 526.2 435 546.2 423.9 562.1 C 395.7 613 401.8 681.9 451.4 717.1 C 534.7 776.3 642.3 738.1 729.7 713.9"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 551.5 333.3 C 420.5 263.4 325.2 398.7 437.1 463.4 C 449.5 470.6 467.4 481.1 482.3 480.7 C 534.6 479.2 580.2 443.4 624.1 420.2",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 477.8 506.2 C 457 526.2 435 546.2 423.9 562.1 C 395.7 613 401.8 681.9 451.4 717.1 C 534.7 776.3 642.3 738.1 729.7 713.9",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 519,
+          "y": 199,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 425,
+          "y": 207,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-3",
+          "x": 472,
+          "y": 149,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1",
+          "dot-2",
+          "dot-3"
+        ]
+      ],
+      "appearance": {
+        "baseRevision": 3,
+        "kind": "catalogueOutline",
+        "source": {
+          "font": "@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2",
+          "sha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c",
+          "glyph": "ڠ",
+          "weight": 400,
+          "method": "highResolutionInkContours",
+          "fontSize": 2400,
+          "scale": 0.275,
+          "center": [
+            552,
+            446
+          ],
+          "maxContourError": 0.34375
+        },
+        "bounds": {
+          "x": 368.575,
+          "y": 114.487,
+          "width": 366.85,
+          "height": 663.025
+        },
+        "bodyContours": [
+          "M472.8 282.512 L484.9 283.063 L495.075 284.712 L507.175 288.288 L516.525 292.413 L528.35 299.288 L541 307.813 L562.175 324.038 L564.375 325.962 L564.375 326.788 L553.375 347.413 L531.1 341.087 L510.475 336.962 L492.6 335.313 L478.025 335.863 L463.725 337.788 L444.75 342.462 L427.975 348.512 L406.25 358.962 L406.25 366.663 L407.625 377.663 L409.825 386.738 L413.125 395.813 L418.075 405.438 L422.475 412.038 L426.875 417.538 L429.625 420.012 L429.625 420.563 L436.225 426.887 L444.2 433.212 L452.175 438.438 L466.75 445.863 L475 449.163 L487.1 453.012 L497 455.488 L508.825 457.413 L515.975 452.738 L527.525 446.137 L530.825 444.762 L531.1 444.212 L561.35 429.363 L590.775 417.262 L622.675 406.262 L624.05 405.988 L627.075 410.938 L629.275 415.887 L630.925 421.938 L631.2 429.087 L630.65 433.212 L629.275 438.163 L626.8 443.387 L624.05 447.238 L619.65 451.913 L611.675 458.238 L603.15 463.462 L592.975 468.688 L574.825 476.663 L546.775 487.938 L515.7 503.063 L496.45 514.063 L484.625 521.763 L465.1 536.888 L449.975 551.462 L449.975 552.013 L444.2 558.063 L438.15 566.038 L436.5 569.063 L435.675 569.612 L429.9 580.337 L423.575 596.013 L420.825 606.737 L419.45 617.188 L419.45 632.038 L420.55 641.663 L423.025 652.388 L426.325 661.462 L431.55 671.362 L439.525 682.087 L446.95 689.513 L456.025 696.663 L466.75 703.263 L477.2 708.213 L490.95 713.163 L503.05 716.463 L518.725 719.487 L533.85 721.413 L556.4 722.788 L584.725 722.788 L615.525 721.413 L635.875 719.763 L654.575 717.838 L679.875 714.263 L705.175 709.588 L728.275 704.362 L735.425 726.913 L711.775 739.288 L710.95 739.288 L705.45 742.313 L690.875 748.913 L663.375 759.638 L637.8 767.612 L613.875 773.112 L593.525 776.138 L576.2 777.513 L548.7 777.237 L525.6 774.763 L504.425 770.362 L484.9 764.038 L476.375 760.463 L465.375 754.963 L451.625 746.438 L438.425 735.987 L425.225 722.237 L419.725 715.088 L413.95 706.288 L407.075 693.088 L402.675 681.813 L399.375 670.263 L396.9 657.063 L395.525 641.112 L395.525 629.837 L396.35 615.813 L398.825 598.763 L402.675 582.813 L406.25 571.813 L411.75 558.337 L415.875 550.638 L416.15 549.263 L424.125 535.513 L431 525.337 L438.15 515.987 L448.875 503.613 L443.1 501.962 L434.85 498.663 L424.125 493.163 L415.875 487.938 L405.7 480.238 L397.725 472.538 L397.175 472.538 L385.625 459.337 L377.1 446.137 L374.35 440.363 L371.325 431.837 L369.95 426.337 L368.575 416.163 L368.575 403.512 L369.4 394.988 L371.05 385.637 L373.8 375.188 L376.825 366.387 L382.6 352.913 L391.95 336.137 L400.475 324.038 L406.525 317.438 L406.525 316.887 L415.05 308.362 L415.6 308.362 L421.925 302.587 L423.575 301.762 L429.075 297.087 L439.525 290.762 L446.95 287.462 L456.85 284.438 L464.55 283.063 Z"
+        ],
+        "parts": [
+          {
+            "id": "stroke-1",
+            "contours": [
+              "M472.8 282.512 L484.9 283.063 L495.075 284.712 L507.175 288.288 L516.525 292.413 L528.35 299.288 L541 307.813 L562.175 324.038 L564.375 325.962 L564.375 326.788 L553.375 347.413 L531.1 341.087 L510.475 336.962 L492.6 335.313 L478.025 335.863 L463.725 337.788 L444.75 342.462 L427.975 348.512 L406.25 358.962 L406.25 366.663 L407.9 379.038 L409.825 386.738 L414.5 398.837 L418.9 406.813 L425.5 415.887 L433.2 424.137 L433.75 424.137 L439.525 429.637 L452.175 438.438 L470.05 447.238 L490.125 453.837 L503.875 456.863 L508.825 457.413 L515.975 452.738 L527.525 446.137 L530.825 444.762 L531.1 444.212 L561.35 429.363 L590.775 417.262 L611.675 409.837 L622.675 406.538 L624.05 405.988 L628.45 413.688 L630.925 421.938 L631.2 429.087 L629.825 436.512 L626.8 443.387 L624.05 447.238 L619.65 451.913 L610.025 459.337 L592.975 468.688 L540.725 490.688 L522.025 499.762 L521.75 500.313 L515.7 503.063 L507.725 507.738 L499.75 501.413 L493.975 497.837 L486 494.538 L480.5 493.438 L470.6 493.712 L454.65 497.563 L438.15 500.038 L422.75 492.337 L415.875 487.938 L405.7 480.238 L397.725 472.538 L397.175 472.538 L391.95 467.038 L382.875 455.488 L376 443.938 L371.325 431.837 L369.95 426.337 L368.575 416.163 L368.575 403.512 L369.4 394.988 L371.05 385.637 L375.725 369.413 L382.6 352.913 L391.95 336.137 L401.575 322.663 L406.525 317.438 L406.525 316.887 L415.05 308.362 L415.6 308.362 L419.175 304.788 L429.075 297.087 L436.5 292.413 L444.2 288.563 L456.85 284.438 L464.55 283.063 Z"
+            ],
+            "bounds": {
+              "x": 368.575,
+              "y": 282.512,
+              "width": 262.625,
+              "height": 225.225
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M512.4 290.762 L522.025 295.438 L534.675 303.413 L535.225 304.237 L541 307.813 L551.725 315.788 L564.375 325.962 L564.1 327.337 L563.55 327.613 L553.65 346.587 L553.1 347.413 L540.725 343.563 L522.575 339.163 L510.475 336.962 L502.5 336.137 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M472.8 282.512 L484.9 283.063 L495.075 284.712 L504.7 287.462 L512.4 290.487 L505.525 321.012 L502.775 335.587 L502.5 336.137 L501.675 336.137 L490.95 335.313 L475 336.137 L463.725 338.063 L462.9 337.512 L453.275 285.538 L462.625 283.337 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M452.725 285.538 L453.55 285.813 L463.175 338.063 L454.65 339.712 L444.75 342.462 L432.1 346.863 L427.425 349.063 L426.05 348.238 L421.375 341.913 L420 340.813 L411.75 330.087 L404.325 321.563 L403.775 320.188 L415.05 308.362 L415.6 308.362 L419.175 304.788 L429.075 297.087 L441.175 289.938 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M403.5 320.462 L415.325 334.488 L417.525 337.788 L418.9 338.887 L420 340.813 L421.375 341.913 L423.575 345.212 L424.95 346.313 L426.875 349.337 L418.625 352.637 L406.25 358.962 L406.525 369.962 L408.175 379.587 L402.4 377.938 L375.725 371.063 L375.45 370.238 L380.675 357.038 L386.725 344.938 L395.8 330.363 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M375.45 370.788 L407.625 379.313 L408.45 380.137 L409.825 386.738 L413.125 395.813 L416.975 403.512 L420.275 408.738 L399.375 419.188 L372.15 433.212 L371.6 432.663 L369.95 426.337 L368.85 418.913 L368.575 403.512 L369.4 394.988 L371.05 385.637 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M420 408.738 L420.55 408.738 L423.3 413.137 L426.875 416.988 L426.875 417.538 L429.625 420.012 L429.625 420.563 L436.225 426.887 L443.65 432.387 L443.65 432.938 L430.175 451.363 L426.325 457.413 L425.5 457.962 L421.65 464.012 L420.825 464.563 L416.975 470.613 L416.15 471.163 L412.3 477.212 L411.475 477.762 L409 481.887 L408.175 482.163 L401.3 476.387 L391.95 467.038 L382.875 455.488 L376 443.938 L371.875 433.212 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M443.65 432.663 L456.025 440.637 L466.75 445.863 L476.65 449.438 L477.2 450.262 L474.175 459.613 L464.55 495.363 L441.725 499.762 L438.15 500.038 L426.6 494.538 L415.875 487.938 L408.45 482.163 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M477.2 449.712 L490.125 453.837 L503.875 456.863 L508.825 457.413 L509.65 456.587 L511.025 456.313 L523.4 499.212 L512.125 504.988 L509.375 506.913 L507.175 507.738 L504.15 504.712 L497.275 499.762 L491.225 496.462 L486 494.538 L480.5 493.438 L472.525 493.438 L464.55 495.087 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 432,
+                "contours": [
+                  "M548.975 435.137 L551.45 438.988 L553.65 443.938 L554.2 444.212 L571.8 477.762 L551.725 485.738 L530.275 495.913 L523.675 499.212 L523.125 498.938 L510.75 456.038 L527.525 446.137 Z"
+                ]
+              },
+              {
+                "from": 432,
+                "to": 480,
+                "contours": [
+                  "M592.425 416.712 L593.525 417.538 L604.525 437.063 L614.425 453.288 L615.25 455.488 L610.025 459.337 L600.125 465.113 L589.4 470.337 L572.075 477.762 L570.975 476.663 L549.25 435.137 L568.225 426.337 Z"
+                ]
+              },
+              {
+                "from": 480,
+                "to": 505.2293901900319,
+                "contours": [
+                  "M623.775 405.988 L628.45 413.688 L630.925 421.938 L631.2 429.087 L629.275 438.163 L625.15 445.863 L622.4 448.613 L622.4 449.163 L615.8 455.212 L614.975 454.938 L614.425 453.288 L609.75 445.863 L592.975 416.712 L602.875 412.863 Z"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "stroke-2",
+            "contours": [
+              "M472.525 493.438 L480.5 493.438 L489.3 495.637 L499.75 501.413 L505.8 506.087 L507.175 508.012 L492.05 516.813 L475.275 528.638 L465.65 536.888 L465.1 536.888 L460.7 541.288 L460.15 541.288 L449.975 551.462 L449.975 552.013 L444.2 558.063 L435.675 569.612 L429.9 580.337 L425.5 590.513 L421.65 602.888 L419.725 614.163 L419.175 624.612 L420.55 641.663 L423.025 652.388 L426.325 661.462 L431.55 671.362 L439.525 682.087 L446.95 689.513 L456.025 696.663 L466.75 703.263 L479.95 709.313 L493.7 713.987 L506.9 717.288 L524.5 720.313 L540.45 721.963 L556.4 722.788 L584.725 722.788 L615.525 721.413 L641.925 719.213 L681.525 713.987 L705.175 709.588 L728.275 704.362 L735.425 726.913 L714.8 737.638 L690.875 748.913 L668.05 757.987 L646.6 765.138 L625.7 770.638 L605.9 774.487 L585.275 776.963 L576.2 777.513 L554.2 777.513 L535.775 776.138 L516.25 773.112 L499.475 768.987 L482.15 762.938 L465.375 754.963 L451.625 746.438 L438.425 735.987 L428.8 726.362 L428.8 725.813 L425.225 722.237 L419.725 715.088 L413.95 706.288 L410.1 698.588 L409.55 698.313 L404.05 685.663 L399.375 670.263 L396.9 657.063 L395.525 641.112 L395.525 629.837 L396.35 615.813 L398.825 598.763 L402.675 582.813 L406.25 571.813 L411.75 558.337 L415.875 550.638 L416.15 549.263 L424.125 535.513 L431 525.337 L442 511.313 L448.875 503.887 L438.7 500.038 L454.65 497.563 Z"
+            ],
+            "bounds": {
+              "x": 395.525,
+              "y": 493.438,
+              "width": 339.9,
+              "height": 284.075
+            },
+            "segments": [
+              {
+                "from": 0,
+                "to": 48,
+                "contours": [
+                  "M472.525 493.438 L480.5 493.438 L489.3 495.637 L499.75 501.413 L505.8 506.087 L507.175 508.012 L496.45 514.063 L480.775 524.513 L465.1 536.888 L453.825 547.612 L452.45 548.712 L430.45 526.987 L431 525.337 L435.95 518.737 L448.875 503.887 L438.7 500.038 L454.65 497.563 Z"
+                ]
+              },
+              {
+                "from": 48,
+                "to": 96,
+                "contours": [
+                  "M430.175 526.712 L452.725 548.987 L445.85 556.138 L439.525 564.112 L432.1 575.938 L428.8 583.362 L428.25 583.087 L405.7 574.837 L405.425 574.288 L409.825 562.737 L416.15 549.263 L424.125 535.513 Z"
+                ]
+              },
+              {
+                "from": 96,
+                "to": 144,
+                "contours": [
+                  "M405.425 574.563 L428.525 583.087 L423.575 596.013 L421.65 602.888 L419.725 614.163 L419.175 625.438 L395.8 625.438 L396.35 615.813 L398.825 598.763 L401.85 585.837 Z"
+                ]
+              },
+              {
+                "from": 144,
+                "to": 192,
+                "contours": [
+                  "M395.8 625.438 L419.45 625.438 L419.725 635.337 L421.65 647.163 L424.675 657.337 L429.075 666.413 L429.075 666.962 L427.425 667.788 L420.825 670.263 L401.575 678.237 L398.825 667.788 L396.35 652.663 L395.525 641.112 Z"
+                ]
+              },
+              {
+                "from": 192,
+                "to": 240,
+                "contours": [
+                  "M428.525 666.962 L429.35 666.962 L434.3 675.487 L439.525 682.087 L446.95 689.513 L456.025 696.388 L455.75 697.487 L453.55 699.413 L449.7 704.362 L429.35 726.913 L419.725 715.088 L413.95 706.288 L407.075 693.088 L401.85 679.063 L401.85 677.962 Z"
+                ]
+              },
+              {
+                "from": 240,
+                "to": 288,
+                "contours": [
+                  "M456.025 696.663 L462.9 701.063 L472.25 706.013 L483.525 710.688 L493.425 713.713 L475 759.638 L469.775 756.888 L462.9 753.588 L449.7 745.063 L440.625 737.913 L438.975 735.987 L438.425 735.987 L429.625 727.188 L431.275 724.713 L433.475 722.788 L433.475 722.237 L443.65 711.237 L443.65 710.688 L445.575 709.038 L445.575 708.487 L449.7 704.362 L449.7 703.813 L451.625 702.163 Z"
+                ]
+              },
+              {
+                "from": 288,
+                "to": 336,
+                "contours": [
+                  "M493.425 713.713 L503.05 716.463 L512.4 718.388 L534.4 721.413 L527.8 775.038 L517.625 773.388 L496.725 768.163 L484.9 764.038 L475 759.638 Z"
+                ]
+              },
+              {
+                "from": 336,
+                "to": 384,
+                "contours": [
+                  "M534.4 721.413 L556.4 722.788 L577.025 722.788 L581.425 776.963 L574.825 777.513 L548.7 777.237 L527.8 775.038 Z"
+                ]
+              },
+              {
+                "from": 384,
+                "to": 432,
+                "contours": [
+                  "M619.1 720.862 L622.675 721.138 L632.3 768.987 L609.2 773.938 L589.675 776.413 L581.425 776.963 L577.025 722.788 L600.95 722.237 Z"
+                ]
+              },
+              {
+                "from": 432,
+                "to": 480,
+                "contours": [
+                  "M669.15 715.638 L669.7 715.913 L679.6 753.588 L657.875 761.563 L632.85 768.713 L632.025 768.438 L622.4 720.588 L644.675 718.938 Z"
+                ]
+              },
+              {
+                "from": 480,
+                "to": 528,
+                "contours": [
+                  "M715.625 707.112 L716.725 707.112 L717.275 708.487 L723.875 732.963 L711.775 739.288 L710.95 739.288 L705.45 742.313 L690.875 748.913 L680.15 753.313 L679.325 753.038 L679.05 751.938 L669.425 715.638 L690.875 712.338 Z"
+                ]
+              },
+              {
+                "from": 528,
+                "to": 538.6478710286921,
+                "contours": [
+                  "M727.45 704.362 L728.275 704.362 L735.425 726.913 L724.425 732.688 L723.875 732.963 L716.725 706.838 Z"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dot-1",
+            "contours": [
+              "M519.275 161.512 L519.825 161.512 L555.85 197.812 L542.925 214.587 L536.05 222.012 L536.05 222.562 L520.925 237.412 L519.825 237.687 L518.725 236.862 L508 227.237 L507.45 227.237 L505.525 225.037 L504.975 225.037 L499.2 219.262 L498.65 219.262 L488.2 209.087 L488.2 208.537 L481.6 202.212 L481.325 201.387 L500.025 183.237 L500.025 182.688 L509.65 172.787 L509.65 172.237 L511.85 170.313 L511.85 169.762 L514.05 167.837 L514.05 167.287 Z"
+            ],
+            "bounds": {
+              "x": 481.325,
+              "y": 161.512,
+              "width": 74.525,
+              "height": 76.175
+            }
+          },
+          {
+            "id": "dot-2",
+            "contours": [
+              "M424.95 170.037 L425.5 170.037 L428.525 173.887 L461.525 206.062 L451.625 219.537 L442.55 229.712 L442.55 230.262 L439.525 233.012 L439.525 233.562 L426.6 246.487 L424.95 245.112 L414.5 236.862 L408.45 231.087 L407.9 231.087 L387 210.462 L387 209.912 L390.025 206.887 L390.575 206.887 L405.425 191.762 L405.425 191.212 L409 187.912 L409 187.362 L412.025 184.612 L412.025 184.063 L415.05 181.313 L415.05 180.762 Z"
+            ],
+            "bounds": {
+              "x": 387,
+              "y": 170.037,
+              "width": 74.525,
+              "height": 76.45
+            }
+          },
+          {
+            "id": "dot-3",
+            "contours": [
+              "M471.15 114.487 L477.75 121.912 L477.75 122.462 L479.95 124.387 L479.95 124.938 L484.075 128.787 L484.075 129.337 L496.45 141.438 L497 141.438 L500.025 144.737 L500.575 144.737 L503.325 147.762 L507.45 151.063 L507.45 151.887 L502.225 157.112 L502.225 157.662 L489.025 170.862 L488.475 170.862 L486 173.612 L485.45 173.612 L483.8 175.537 L483.25 175.537 L476.1 181.862 L473.9 183.512 L473.075 183.512 L465.375 178.563 L456.025 171.137 L454.65 169.487 L454.1 169.487 L444.75 160.688 L444.75 160.137 L436.5 151.612 L436.5 151.063 L457.675 129.887 L457.675 129.337 L464.55 122.462 L464.55 121.912 L466.75 119.987 Z"
+            ],
+            "bounds": {
+              "x": 436.5,
+              "y": 114.487,
+              "width": 70.95,
+              "height": 69.3
+            }
+          }
+        ]
+      }
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/nga-name.mp3",
+        "transcriptMs": "Nga",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "fa",
+    "glyph": "ف",
+    "labelMs": "Fa",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-fa-and-pa-directions-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 714.3 508 C 704.4 508.9 694.5 509.7 684.6 510.6 C 653.9 520.3 623.2 537 590 527.4 C 539.4 512.8 543.5 449.8 567.5 413.4 C 578.1 397.2 596.4 387.6 615.3 384.6 C 695.7 371.9 700.3 492.6 714.3 508",
+        "M 714.3 508 C 719 515.1 718.4 529.2 719.3 537.7 C 724.2 584 701.5 598.4 660.4 612.5 C 554.2 648.8 208.1 700.9 278.7 489.3"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 714.3 508 C 704.4 508.9 694.5 509.7 684.6 510.6 C 653.9 520.3 623.2 537 590 527.4 C 539.4 512.8 543.5 449.8 567.5 413.4 C 578.1 397.2 596.4 387.6 615.3 384.6 C 695.7 371.9 700.3 492.6 714.3 508",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 714.3 508 C 719 515.1 718.4 529.2 719.3 537.7 C 724.2 584 701.5 598.4 660.4 612.5 C 554.2 648.8 208.1 700.9 278.7 489.3",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 52
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 616,
+          "y": 270,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/fa-name-v2.mp3",
+        "transcriptMs": "Fa",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/19_faa.mp3",
+          "sha256": "9650bfd6c8b3a7642a099efcc43705cd31bce7d8eb1ae1948ae6a3ed06ad8f94",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "pa",
+    "glyph": "ڤ",
+    "labelMs": "Pa",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": true,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-fa-and-pa-directions-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 714.3 485.8 C 704.4 486.7 694.5 487.6 684.6 488.5 C 653.9 498.2 623.2 514.9 590 505.3 C 539.4 490.6 543.5 427.7 567.5 391.2 C 578.1 375.1 596.4 365.4 615.3 362.4 C 695.7 349.7 700.3 470.4 714.3 485.8",
+        "M 714.3 485.8 C 719 493 718.4 507.1 719.3 515.5 C 724.2 561.9 701.5 576.2 660.4 590.3 C 554.2 626.6 208.1 678.7 278.7 467.1"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 714.3 485.8 C 704.4 486.7 694.5 487.6 684.6 488.5 C 653.9 498.2 623.2 514.9 590 505.3 C 539.4 490.6 543.5 427.7 567.5 391.2 C 578.1 375.1 596.4 365.4 615.3 362.4 C 695.7 349.7 700.3 470.4 714.3 485.8",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 54
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 714.3 485.8 C 719 493 718.4 507.1 719.3 515.5 C 724.2 561.9 701.5 576.2 660.4 590.3 C 554.2 626.6 208.1 678.7 278.7 467.1",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 54
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 668,
+          "y": 258,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 574,
+          "y": 267,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-3",
+          "x": 620,
+          "y": 208,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1",
+          "dot-2",
+          "dot-3"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/pa-name.mp3",
+        "transcriptMs": "Pa",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "qaf",
+    "glyph": "ق",
+    "labelMs": "Qaf",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 642.9 535.8 C 634.5 544.1 623.6 543.9 613.2 548.1 C 541.2 576.5 437.6 574.3 474.4 466.5 C 519.9 333.7 642.9 440.9 642.9 535.8",
+        "M 642.9 536.9 C 663 550.3 644.7 639.7 632.6 656.8 C 580.7 729.9 393.7 789.9 346 683.2 C 327.6 642.2 346.4 607.2 343.7 566.6"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 642.9 535.8 C 634.5 544.1 623.6 543.9 613.2 548.1 C 541.2 576.5 437.6 574.3 474.4 466.5 C 519.9 333.7 642.9 440.9 642.9 535.8",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 642.9 536.9 C 663 550.3 644.7 639.7 632.6 656.8 C 580.7 729.9 393.7 789.9 346 683.2 C 327.6 642.2 346.4 607.2 343.7 566.6",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 590,
+          "y": 294,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 491,
+          "y": 303,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1",
+          "dot-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/qaf-name-v2.mp3",
+        "transcriptMs": "Qaf",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/20_kof.mp3",
+          "sha256": "35a6903e672757cb808d22f121b348a572326d8246200ea0b6e90fce4b59b842",
+          "importedAt": "2026-10-02T02:42:04.632Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "kaf",
+    "glyph": "ک",
+    "labelMs": "Kaf",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/kaf-name.mp3",
+        "transcriptMs": "Kaf",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ga",
+    "glyph": "ڬ",
+    "labelMs": "Ga",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": true,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 800 280 L 550 398 L 616 580 C 600 645 457 676 338 679 C 212 682 173 653 212 536",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ]
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 506,
+          "y": 280,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/ga-name-v7.wav",
+        "transcriptMs": "Ga",
+        "version": 7,
+        "status": "approved",
+        "review": {
+          "revision": 7,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-06",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-of-ga-recording-fallback-2026-10-06",
+          "kind": "projectOwner"
+        },
+        "permission": "Project owner authorised using Recording (4).m4a as a pronunciation guide and, if the guided synthesis failed, using this recording in the game in Codex on 2026-10-06. The complete prepared first utterance is used as that fallback.",
+        "origin": {
+          "kind": "userProvided",
+          "reference": "User attachment Recording (4).m4a; docs/GA_AUDIO_REVIEW.md",
+          "speaker": "User-supplied speaker; identity not assessed",
+          "sha256": "96bf46a7d94f19d67eb7e59e41652ed185b39116a2ee8e2445c6a8161426c3d0",
+          "recordingSha256": "bce006203bf9f9297679c4defcfd260777b4646682f1372744e6d37006bcc3c1",
+          "processing": {
+            "sourceStartSeconds": 1,
+            "sourceEndSeconds": 2.05,
+            "fadeMs": 5,
+            "speechRegionStartApprox": 1.12,
+            "speechRegionEndApprox": 1.8,
+            "method": "Whole first utterance with surrounding silence. Pitch, rate, gain and speech samples unmodified; fades affect near-silent edges only."
+          }
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "lam",
+    "glyph": "ل",
+    "labelMs": "Lam",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 566.2 161.5 C 544 183.6 554.2 261.1 558 290.2 C 566.6 355.4 615.6 610.2 590.6 655.4 C 526.2 771.9 271.3 802.6 334 564.1"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 566.2 161.5 C 544 183.6 554.2 261.1 558 290.2 C 566.6 355.4 615.6 610.2 590.6 655.4 C 526.2 771.9 271.3 802.6 334 564.1",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/lam-name-v2.wav",
+        "transcriptMs": "Lam",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/21_lam.wav",
+          "sha256": "2ea37a3cfe0f7ce7c67670717d99f0ee35d5f0d4a3fe38064f25d6fb8a37fd71",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "mim",
+    "glyph": "م",
+    "labelMs": "Mim",
+    "contentVersion": 5,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 5,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-all-current-semakan-video-proposals-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 449.2238 542.170763 C 451.27625 526.9395 454.325 513.39 459.5 499.8 C 472.7 465.4 518.6 419.5 558.5 443.6 C 580.2 456.8 595.4 481.7 609.9 502 C 617.6 512.9 630.2 524.1 634 537.2 C 637 547.4 633.3 556.7 633.3 566.9 C 622.9 582.4 482.9 569.9 444.1 608.7 C 437 611.1 435.5 624.4 435.2 630.7 C 432.4 683.2 451.4 736.5 452.7 789.1 C 453.3 808.9 436.4 823.9 436.4 843"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 449.2238 542.170763 C 451.27625 526.9395 454.325 513.39 459.5 499.8 C 472.7 465.4 518.6 419.5 558.5 443.6 C 580.2 456.8 595.4 481.7 609.9 502 C 617.6 512.9 630.2 524.1 634 537.2 C 637 547.4 633.3 556.7 633.3 566.9 C 622.9 582.4 482.9 569.9 444.1 608.7 C 437 611.1 435.5 624.4 435.2 630.7 C 432.4 683.2 451.4 736.5 452.7 789.1 C 453.3 808.9 436.4 823.9 436.4 843",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/mim-name-v2.wav",
+        "transcriptMs": "Mim",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/22_mim.wav",
+          "sha256": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "nun",
+    "glyph": "ن",
+    "labelMs": "Nun",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 617.4 413 C 617.4 430.9 604.2 447.7 605.8 466.9 C 610 520.9 653.6 575.5 613 625.3 C 511.3 749.9 295 712.9 366.6 518.6"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 617.4 413 C 617.4 430.9 604.2 447.7 605.8 466.9 C 610 520.9 653.6 575.5 613 625.3 C 511.3 749.9 295 712.9 366.6 518.6",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 46
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 472,
+          "y": 355,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/nun-name-v2.wav",
+        "transcriptMs": "Nun",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/23_nun.wav",
+          "sha256": "6056e86e290d10e576e347e9049d3fc7dc1caeef1fe5d6ca8044b2157d223f5c",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "wau",
+    "glyph": "و",
+    "labelMs": "Wau",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 620.9 579.1 C 620.9 418.7 458.3 395.1 454.6 537.3 C 451.6 648.3 592.5 583.6 612.1 582.6 C 618.5 582.2 623.4 585.7 623.9 592.3 C 626 618.6 612 647.5 598.8 669.3 C 543 761.4 479.6 737.3 394.3 718.8"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 620.9 579.1 C 620.9 418.7 458.3 395.1 454.6 537.3 C 451.6 648.3 592.5 583.6 612.1 582.6 C 618.5 582.2 623.4 585.7 623.9 592.3 C 626 618.6 612 647.5 598.8 669.3 C 543 761.4 479.6 737.3 394.3 718.8",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/wau-name-v2.wav",
+        "transcriptMs": "Wau",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/24_wau.wav",
+          "sha256": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "va",
+    "glyph": "ۏ",
+    "labelMs": "Va",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": true,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 620.9 568.6 C 620.9 408.2 458.3 384.5 454.6 526.8 C 451.6 637.7 592.5 573.1 612.1 572 C 618.5 571.7 623.4 575.2 623.9 581.8 C 626 608 612 636.9 598.8 658.8 C 543 750.9 479.6 726.8 394.3 708.3"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 620.9 568.6 C 620.9 408.2 458.3 384.5 454.6 526.8 C 451.6 637.7 592.5 573.1 612.1 572 C 618.5 571.7 623.4 575.2 623.9 581.8 C 626 608 612 636.9 598.8 658.8 C 543 750.9 479.6 726.8 394.3 708.3",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 528,
+          "y": 315,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/va-name.mp3",
+        "transcriptMs": "Va",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ha",
+    "glyph": "ه",
+    "labelMs": "Ha (ه)",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 501.3 409.5 C 508.8 420.9 544.8 460.9 548.3 467 C 571.5 507.2 568 565.7 543.3 603.2 C 537.5 612.1 533.4 630.9 521.3 632.9 C 514.3 634.1 497.4 635.2 491 631.9 C 483.4 627.9 480.6 614.7 474.5 608.4 C 433.3 565.9 417.5 534.7 464.1 485.5 C 553.7 390.8 690.8 542.7 664.3 651.6 C 656.3 684.5 606.9 667.8 586 662.3 C 566.8 657.3 528 634.4 517.8 633 C 474.6 627.3 469.4 682 327.5 645"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 501.3 409.5 C 508.8 420.9 544.8 460.9 548.3 467 C 571.5 507.2 568 565.7 543.3 603.2 C 537.5 612.1 533.4 630.9 521.3 632.9 C 514.3 634.1 497.4 635.2 491 631.9 C 483.4 627.9 480.6 614.7 474.5 608.4 C 433.3 565.9 417.5 534.7 464.1 485.5 C 553.7 390.8 690.8 542.7 664.3 651.6 C 656.3 684.5 606.9 667.8 586 662.3 C 566.8 657.3 528 634.4 517.8 633 C 474.6 627.3 469.4 682 327.5 645",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/ha-name.mp3",
+        "transcriptMs": "Ha",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "hamzah",
+    "glyph": "ء",
+    "labelMs": "Hamzah",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-06",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-all-current-semakan-video-proposals-2026-10-06",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 566.8 437.2 C 562.7 426.6 567 412.8 559.9 403.5 C 527.6 360.9 451.8 412.3 442.7 450.4 C 437.6 472.2 470.9 519.2 491 524.3 C 520 531.8 596.5 517.2 621.8 502.1 C 596.5 517.2 520 531.8 491 524.3 L 486.5 524.1 C 480.5 526.1 475.4 535.1 468.9 538.1 C 450.4 546.6 426.9 553.8 408.4 560.4"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 566.8 437.2 C 562.7 426.6 567 412.8 559.9 403.5 C 527.6 360.9 451.8 412.3 442.7 450.4 C 437.6 472.2 470.9 519.2 491 524.3 C 520 531.8 596.5 517.2 621.8 502.1 C 596.5 517.2 520 531.8 491 524.3 L 486.5 524.1 C 480.5 526.1 475.4 535.1 468.9 538.1 C 450.4 546.6 426.9 553.8 408.4 560.4",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/hamzah-name-v2.wav",
+        "transcriptMs": "Hamzah",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/25_hamzah.wav",
+          "sha256": "9145078ee74a68a71ab028a833170c24d7c139ae659b8fc9abcfc7d167357dd1",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ya",
+    "glyph": "ي",
+    "labelMs": "Ya",
+    "contentVersion": 2,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 650.3 390.5 C 577.1 324.6 483.7 463.6 492.5 511.5 C 504.1 574 715.9 546.1 627.2 632.5 C 555.9 701.9 350.2 764.7 338.1 610.5 C 335.9 582.8 340 556.9 351.1 532.4"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 650.3 390.5 C 577.1 324.6 483.7 463.6 492.5 511.5 C 504.1 574 715.9 546.1 627.2 632.5 C 555.9 701.9 350.2 764.7 338.1 610.5 C 335.9 582.8 340 556.9 351.1 532.4",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 411,
+          "y": 807,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 510,
+          "y": 797,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1",
+          "dot-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/ya-name-v2.wav",
+        "transcriptMs": "Ya",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/26_ya.wav",
+          "sha256": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "ye",
+    "glyph": "ى",
+    "labelMs": "Ye",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 650.3 382.2 C 577.1 316.3 483.7 455.3 492.5 503.2 C 504.1 565.7 715.9 537.8 627.2 624.2 C 555.9 693.6 350.2 756.4 338.1 602.2 C 335.9 574.5 340 548.6 351.1 524.1"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 650.3 382.2 C 577.1 316.3 483.7 455.3 492.5 503.2 C 504.1 565.7 715.9 537.8 627.2 624.2 C 555.9 693.6 350.2 756.4 338.1 602.2 C 335.9 574.5 340 548.6 351.1 524.1",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/ye-name.mp3",
+        "transcriptMs": "Ye",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "nya",
+    "glyph": "ڽ",
+    "labelMs": "Nya",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": true,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-04",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 617.4 345.8 C 617.4 363.7 604.2 380.5 605.8 399.7 C 610 453.7 653.6 508.3 613 558.1 C 511.3 682.8 295 645.7 366.6 451.4"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 617.4 345.8 C 617.4 363.7 604.2 380.5 605.8 399.7 C 610 453.7 653.6 508.3 613 558.1 C 511.3 682.8 295 645.7 366.6 451.4",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 48
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 524,
+          "y": 297,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-2",
+          "x": 429,
+          "y": 306,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        },
+        {
+          "id": "dot-3",
+          "x": 476,
+          "y": 248,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1",
+          "dot-2",
+          "dot-3"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/nya-name.mp3",
+        "transcriptMs": "Nya",
+        "version": 1,
+        "status": "approved",
+        "review": {
+          "revision": 1,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+        "synthesis": {
+          "provider": "Microsoft Edge online speech synthesis",
+          "client": "edge-tts 7.2.8",
+          "voice": "ms-MY-YasminNeural",
+          "locale": "ms-MY",
+          "rate": "-15%",
+          "pitch": "+0Hz",
+          "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+          "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  }
+]

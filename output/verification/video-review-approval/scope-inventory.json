@@ -1,0 +1,24 @@
+{
+  "ainFamilyReviewCandidates": [],
+  "faPaReviewCandidates": [],
+  "fourLetterReviewCandidates": [],
+  "sinSyinTailReviewCandidates": [],
+  "videoReviewCandidates": [
+    {
+      "id": "mim",
+      "revision": 5
+    },
+    {
+      "id": "ta-marbuta",
+      "revision": 4
+    },
+    {
+      "id": "hamzah",
+      "revision": 4
+    },
+    {
+      "id": "jim",
+      "revision": 4
+    }
+  ]
+}

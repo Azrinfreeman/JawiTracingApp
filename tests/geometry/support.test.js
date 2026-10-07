@@ -8,14 +8,14 @@ import { traceReducer,initialTraceState } from '../../src/tracing/traceReducer.j
 import { screenToLogical } from '../../src/tracing/geometry.js';
 
 describe('content readiness',()=>{
-  it('includes 37 models with revised models gated for fresh geometry review',()=>{
+  it('includes 36 models after removing Ye, with revised models gated for fresh geometry review',()=>{
     const result=validateCatalogue(letters); expect(result.errors).toEqual([]);
-    expect(letters).toHaveLength(37); expect(letters.filter(l=>l.pilot)).toHaveLength(12);
-    expect(letters.filter(l=>l.geometry.strokes.length)).toHaveLength(37);
+    expect(letters).toHaveLength(36); expect(letters.filter(l=>l.pilot)).toHaveLength(12);
+    expect(letters.filter(l=>l.geometry.strokes.length)).toHaveLength(36);
     // Kaf/Ga and the glyph-matched redraws may await review; nothing else may leave the approved pool.
     const pending=letters.filter(l=>l.geometry.status!=='approved').map(l=>l.id);
     expect(pending.every(id=>['kaf','ga',...GLYPH_MATCHED_IDS].includes(id))).toBe(true);
-    expect(result.results.filter(r=>r.ready)).toHaveLength(37-pending.length);
+    expect(result.results.filter(r=>r.ready)).toHaveLength(36-pending.length);
     expect(result.results.filter(r=>!r.ready).map(r=>r.id)).toEqual(pending);
     expect(letters.filter(l=>l.additional)).toHaveLength(6);
   });
@@ -102,7 +102,7 @@ describe('audio lifecycle',()=>{
     const manager=createAudioManager(()=>element); const recording={src:'/audio/alif.mp3',status:'approved'};
     expect((await manager.play(recording)).reason).toBe('blocked');
     manager.setMuted(true); manager.setVolume(.3);
-    expect(await manager.play(recording)).toEqual({ok:true}); expect(element.muted).toBe(true); expect(element.volume).toBe(.3);
+    expect(await manager.play(recording)).toEqual({ok:true,reason:'muted'}); expect(element.muted).toBe(true); expect(element.volume).toBe(.3);
     manager.stop(); expect(element.pause).toHaveBeenCalled();
   });
   it('allows a pending synthetic recording only in adult preview without approving it',async()=>{

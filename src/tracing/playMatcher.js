@@ -7,6 +7,11 @@ export function createPlayMatcher(letter, references, profile, { compact = false
   const progress = Object.fromEntries([...strokes.keys()].map(id => [id, 0]));
   const sourceProgress = { ...progress };
   const turnAllowance = { ...progress };
+  const tightTurns = Object.fromEntries(Object.entries(references).map(([id,ref])=>[id,ref.vertices.filter(p=>{
+    const a=pointAt(ref,Math.max(0,p.s-3)),b=pointAt(ref,Math.min(ref.length,p.s+3));
+    const incoming={x:p.x-a.x,y:p.y-a.y},outgoing={x:b.x-p.x,y:b.y-p.y};
+    return incoming.x*outgoing.x+incoming.y*outgoing.y < -.5*Math.hypot(incoming.x,incoming.y)*Math.hypot(outgoing.x,outgoing.y);
+  })]));
   const acceptedTravel = { ...progress }, completionMethods = {};
   let sequences = letter.geometry.validSequences.map(s => [...s]);
   let completed = [], active = null, gestureId = 0, bufferSamples = 0, exhausted = false;
@@ -44,7 +49,7 @@ export function createPlayMatcher(letter, references, profile, { compact = false
     const covered = Object.entries(progress).reduce((n, [id, s]) => n + s, 0);
     const finish = finishStatus();
     const cue = (phase === 'tracing' || finish?.liftReady) && finish?.nearEnd ? finish.liftReady ? 'Angkat jari untuk siap.' : 'Ikut hingga hujung.' : feedback;
-    return { phase, feedback: cue, finish, pending: pending(), completed: [...completed],
+    return { phase, feedback: cue, reason: active?.reason || null, finish, pending: pending(), completed: [...completed],
       active: active?.id || null, gestureActive: Boolean(active), blocked: false,
       progress: { ...progress }, profile: { ...profile }, exhausted,
       interactionPolicy: profile.interactionPolicy, inkPolicy: 'assistedRouteFill',
@@ -172,8 +177,19 @@ export function createPlayMatcher(letter, references, profile, { compact = false
     const sourceFrontier = Math.max(frontier, active.projectionS);
     const behind = projectLocal(p, ref, Math.max(0, sourceFrontier - profile.maxRawGap), sourceFrontier);
     if (behind?.error <= profile.radius && behind.s < sourceFrontier - profile.backwardJitter) {
-      const ahead = projectLocal(p, ref, sourceFrontier, Math.min(ref.length, sourceFrontier + profile.maxAdvance));
-      if (!ahead || behind.error + profile.projectionTie < ahead.error) {
+      const upper = Math.min(ref.length, sourceFrontier + profile.maxAdvance);
+      const ahead = projectLocal(p, ref, sourceFrontier, upper);
+      const before = ahead && pointAt(ref, Math.max(sourceFrontier, ahead.s-3));
+      const after = ahead && pointAt(ref, Math.min(ref.length, ahead.s+3));
+      // Beside a hairpin the incoming branch can be closer than the forward
+      // return branch. Require a real, direction-consistent local projection;
+      // this exemption earns no credit and leaves the bounded walk below intact.
+      const forwardTurn = ahead && ahead.s > sourceFrontier && ahead.s < upper-.01 &&
+        ahead.s-sourceFrontier <= travel*profile.advanceRatio+profile.backwardJitter &&
+        (p.x-active.last.x)*(after.x-before.x)+(p.y-active.last.y)*(after.y-before.y) > 0 &&
+        tightTurns[active.id].some(turn=>turn.s >= sourceFrontier-profile.maxRawGap && turn.s <= ahead.s &&
+          (sourceFrontier>turn.s || distance(active.last,turn)<=profile.backwardJitter));
+      if (!forwardTurn && (!ahead || behind.error + profile.projectionTie < ahead.error)) {
         metrics.backwardTravel += travel; return pause('backward', travel, behind.error);
       }
     }
@@ -209,7 +225,9 @@ export function createPlayMatcher(letter, references, profile, { compact = false
         let genuineTurn = false;
         const turnSteps = Math.max(1, Math.ceil(((motion?.s || source)-source)/3));
         if (motion && motion.s < upper - .01 && motion.error <= profile.radius &&
-          motion.s-source <= step*profile.advanceRatio+profile.backwardJitter &&
+          // The enclosing real input covers the turn; its synthetic 3-unit
+          // samples can fall between near-overlapping branches at the apex.
+          motion.s-source <= travel*profile.advanceRatio+profile.backwardJitter &&
           Array.from({length:turnSteps+1},(_,i)=>pointAt(ref,source+(motion.s-source)*i/turnSteps)).every(q=>distance(q,sample)<=profile.radius)) {
           projection=motion; genuineTurn=true;
         } else if (!local || local.error > profile.radius || local.error > projection.error + profile.projectionTie) {
@@ -304,7 +322,7 @@ export function createPlayMatcher(letter, references, profile, { compact = false
   }
   function view() {
     const finish = finishStatus();
-    return { phase, feedback: (phase === 'tracing' || finish?.liftReady) && finish?.nearEnd ? finish.liftReady ? 'Angkat jari untuk siap.' : 'Ikut hingga hujung.' : feedback,
+    return { phase, reason: active?.reason || null, feedback: (phase === 'tracing' || finish?.liftReady) && finish?.nearEnd ? finish.liftReady ? 'Angkat jari untuk siap.' : 'Ikut hingga hujung.' : feedback,
       finish, pending: pending(), completed, progress, profile, exhausted, blocked: false,
       metrics: { dotCount: completed.filter(id => dots.has(id)).length } };
   }

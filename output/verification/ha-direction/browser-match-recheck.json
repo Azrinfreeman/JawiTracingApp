@@ -1,0 +1,397 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/ha-direction.spec.js",
+      "--grep",
+      "solo|duo",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=json"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ha-direction.spec.js",
+      "file": "ha-direction.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Ha solo preview: independent unscored photo routes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8410,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js:60:116",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                      "column": 116,
+                      "line": 60
+                    },
+                    "snippet": "  58 |  await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n  59 |  for(let slot=0;slot<count;slot++){const board=page.locator('.trace-board').nth(slot);await expect(board.locator('.reference-stroke')).toHaveAttribute('d',candidate.geometry.strokes[0].path);await draw(page,(await boardModels(page,board)).strokes[0]);await expect(board).toHaveAttribute('data-phase','complete');if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');}\n> 60 |  await expect(page.locator('.round-result')).toBeVisible();expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:'ha',contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                                                                                    ^\n  61 | });\n  62 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                        "column": 116,
+                        "line": 60
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  58 |  await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n  59 |  for(let slot=0;slot<count;slot++){const board=page.locator('.trace-board').nth(slot);await expect(board.locator('.reference-stroke')).toHaveAttribute('d',candidate.geometry.strokes[0].path);await draw(page,(await boardModels(page,board)).strokes[0]);await expect(board).toHaveAttribute('data-phase','complete');if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');}\n> 60 |  await expect(page.locator('.round-result')).toBeVisible();expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:'ha',contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                                                                                    ^\n  61 | });\n  62 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js:60:116"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T17:07:13.205Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ha-direction-Ha-solo-previ-7da3f-ndent-unscored-photo-routes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ha-direction-Ha-solo-previ-7da3f-ndent-unscored-photo-routes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                    "column": 116,
+                    "line": 60
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fe3392c01ac1c188e004-429a6930c081f6cd6f72",
+          "file": "ha-direction.spec.js",
+          "line": 55,
+          "column": 34
+        },
+        {
+          "title": "Ha duo preview: independent unscored photo routes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12142,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js:60:116",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                      "column": 116,
+                      "line": 60
+                    },
+                    "snippet": "  58 |  await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n  59 |  for(let slot=0;slot<count;slot++){const board=page.locator('.trace-board').nth(slot);await expect(board.locator('.reference-stroke')).toHaveAttribute('d',candidate.geometry.strokes[0].path);await draw(page,(await boardModels(page,board)).strokes[0]);await expect(board).toHaveAttribute('data-phase','complete');if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');}\n> 60 |  await expect(page.locator('.round-result')).toBeVisible();expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:'ha',contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                                                                                    ^\n  61 | });\n  62 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                        "column": 116,
+                        "line": 60
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  58 |  await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n  59 |  for(let slot=0;slot<count;slot++){const board=page.locator('.trace-board').nth(slot);await expect(board.locator('.reference-stroke')).toHaveAttribute('d',candidate.geometry.strokes[0].path);await draw(page,(await boardModels(page,board)).strokes[0]);await expect(board).toHaveAttribute('data-phase','complete');if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');}\n> 60 |  await expect(page.locator('.round-result')).toBeVisible();expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:'ha',contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                                                                                    ^\n  61 | });\n  62 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js:60:116"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T17:07:22.858Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ha-direction-Ha-duo-previe-a69ba-ndent-unscored-photo-routes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ha-direction-Ha-duo-previe-a69ba-ndent-unscored-photo-routes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                    "column": 116,
+                    "line": 60
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fe3392c01ac1c188e004-63fa587fcbd09d8c1d2c",
+          "file": "ha-direction.spec.js",
+          "line": 55,
+          "column": 34
+        },
+        {
+          "title": "Ha solo preview: independent unscored photo routes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 9256,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js:60:116",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                      "column": 116,
+                      "line": 60
+                    },
+                    "snippet": "  58 |  await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n  59 |  for(let slot=0;slot<count;slot++){const board=page.locator('.trace-board').nth(slot);await expect(board.locator('.reference-stroke')).toHaveAttribute('d',candidate.geometry.strokes[0].path);await draw(page,(await boardModels(page,board)).strokes[0]);await expect(board).toHaveAttribute('data-phase','complete');if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');}\n> 60 |  await expect(page.locator('.round-result')).toBeVisible();expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:'ha',contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                                                                                    ^\n  61 | });\n  62 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                        "column": 116,
+                        "line": 60
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  58 |  await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n  59 |  for(let slot=0;slot<count;slot++){const board=page.locator('.trace-board').nth(slot);await expect(board.locator('.reference-stroke')).toHaveAttribute('d',candidate.geometry.strokes[0].path);await draw(page,(await boardModels(page,board)).strokes[0]);await expect(board).toHaveAttribute('data-phase','complete');if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');}\n> 60 |  await expect(page.locator('.round-result')).toBeVisible();expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:'ha',contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                                                                                    ^\n  61 | });\n  62 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js:60:116"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T17:07:13.205Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ha-direction-Ha-solo-previ-7da3f-ndent-unscored-photo-routes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ha-direction-Ha-solo-previ-7da3f-ndent-unscored-photo-routes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                    "column": 116,
+                    "line": 60
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fe3392c01ac1c188e004-3861bc08533ebe8549de",
+          "file": "ha-direction.spec.js",
+          "line": 55,
+          "column": 34
+        },
+        {
+          "title": "Ha duo preview: independent unscored photo routes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 11757,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js:60:116",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                      "column": 116,
+                      "line": 60
+                    },
+                    "snippet": "  58 |  await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n  59 |  for(let slot=0;slot<count;slot++){const board=page.locator('.trace-board').nth(slot);await expect(board.locator('.reference-stroke')).toHaveAttribute('d',candidate.geometry.strokes[0].path);await draw(page,(await boardModels(page,board)).strokes[0]);await expect(board).toHaveAttribute('data-phase','complete');if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');}\n> 60 |  await expect(page.locator('.round-result')).toBeVisible();expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:'ha',contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                                                                                    ^\n  61 | });\n  62 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                        "column": 116,
+                        "line": 60
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ha\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  58 |  await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n  59 |  for(let slot=0;slot<count;slot++){const board=page.locator('.trace-board').nth(slot);await expect(board.locator('.reference-stroke')).toHaveAttribute('d',candidate.geometry.strokes[0].path);await draw(page,(await boardModels(page,board)).strokes[0]);await expect(board).toHaveAttribute('data-phase','complete');if(slot===0&&count===2)await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','awaitingStart');}\n> 60 |  await expect(page.locator('.round-result')).toBeVisible();expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:'ha',contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                                                                                    ^\n  61 | });\n  62 |\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js:60:116"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T17:07:23.369Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ha-direction-Ha-duo-previe-a69ba-ndent-unscored-photo-routes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ha-direction-Ha-duo-previe-a69ba-ndent-unscored-photo-routes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+                    "column": 116,
+                    "line": 60
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fe3392c01ac1c188e004-d2ac93f7cd44b0e68708",
+          "file": "ha-direction.spec.js",
+          "line": 55,
+          "column": 34
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T17:07:12.464Z",
+    "duration": 23631.305,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

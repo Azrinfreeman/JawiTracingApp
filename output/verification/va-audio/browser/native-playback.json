@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-07",
+  "browserName": "chromium",
+  "src": "/audio/letters/alphabet/va-name-v2.wav",
+  "metrics": {
+    "sha256": "fb20da4d695f0f1f6928a645f9d1278abe38fa06ed58b74642e9508a9cfc0446",
+    "duration": 1.1,
+    "clipped": 0,
+    "rms": 0.08318458350888149
+  },
+  "playback": {
+    "starts": 2,
+    "ended": 2
+  }
+}

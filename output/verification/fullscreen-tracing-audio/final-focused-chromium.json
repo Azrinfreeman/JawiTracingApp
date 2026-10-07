@@ -1,0 +1,798 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/fullscreen-tracing-audio.spec.js",
+      "--config=playwright.tracing.config.js",
+      "--project=chromium",
+      "--workers=2",
+      "--global-timeout=240000"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.tracing.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 240000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fullscreen-tracing-audio/final-focused-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fullscreen-tracing-audio/final-focused-chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/fullscreen-tracing-audio/final-focused-chromium.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "fullscreen-tracing-audio.spec.js",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "practice at 320x600 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:12.558Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-9cf3975159a97fecfdba",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 390x844 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 733,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:13.609Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-b979c669d2b3fd620492",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 768x1024 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 769,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:14.352Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-e16d25e8ef9a6aeeb8a0",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 1024x768 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 765,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:15.132Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-491698659c50776699e6",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 1280x800 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 814,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:15.908Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-fd8e0077da4a35c42e5a",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 1920x1080 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1012,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:16.731Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-1d4fe638935e85eafb15",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 3840x2160 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1890,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:17.751Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-b5a26b11b1df6c380d98",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "menu replaces the toolbar: every action is reachable and closing keeps accepted progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7440,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:19.651Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-26a03f15c7ac725c2249",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "the full letter is announced once, after the last required dot, with its approved recording",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7500,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:27.104Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-8e829c7d8142689329ba",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "a finished body with a dot still to place stays silent until the dot is placed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4596,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:34.616Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-232a1fdb5de7e8985cf8",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 122,
+          "column": 1
+        },
+        {
+          "title": "blocked voice never blocks completion; replay recovers from a fresh gesture",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3476,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:39.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-2a33d6f6e98d14945310",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 133,
+          "column": 1
+        },
+        {
+          "title": "saving a freehand copy never announces the letter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4283,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:42.710Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-02cc3915fba64d8dd7de",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 142,
+          "column": 1
+        },
+        {
+          "title": "music is one quiet local loop that ducks under the voice, obeys mute and survives leaving only by stopping",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6987,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:47.003Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-b224df5b58fe1ff46e00",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 155,
+          "column": 1
+        },
+        {
+          "title": "music stops for background, hidden pages and leaving the game, and honours a saved preference",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2463,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:54.001Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-be392d7bc786cc87d67d",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 180,
+          "column": 1
+        },
+        {
+          "title": "browser fullscreen is requested once from the game-entry gesture, not on every page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1655,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:56.476Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-ae9e34fce00842c6eee6",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 206,
+          "column": 1
+        },
+        {
+          "title": "Solo: readiness is an overlay, the letter is announced once at completion and replay is on the result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3574,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:48:58.144Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-480055723b1231ef6805",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 236,
+          "column": 1
+        },
+        {
+          "title": "Duo: the first accepted letter starts one shared announcement; the second finish neither restarts nor cuts it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4999,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:49:01.731Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-5ced85e5f495c7ecbdb9",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 253,
+          "column": 1
+        },
+        {
+          "title": "Duo menu pauses both lanes, retries one lane, and dot help appears only in the chosen lane after the shared countdown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1178,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:49:06.743Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-43a7fe5b0fa2f325098a",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 272,
+          "column": 1
+        },
+        {
+          "title": "the packaged music and existing MP3/WAV letter names decode to non-silent audio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 439,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:49:07.933Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "actual-decoded-audio.json",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJzcmMiOiAiL2F1ZGlvL211c2ljL3RhbWFuLWthd2FuLXYxLm1wMyIsCiAgICAiZHVyYXRpb24iOiA1Ny42MzYsCiAgICAiY2hhbm5lbHMiOiAyLAogICAgInJhdGUiOiA0ODAwMCwKICAgICJybXMiOiAwLjEzNzkzMTM4NTIyNDg0MTQsCiAgICAicGVhayI6IDAuNjIyMzcyNjI3MjU4MzAwOCwKICAgICJib3VuZGFyeURpZmZlcmVuY2UiOiAwLjAwMTAyMjA0NTQxOTA3Njg1NTgKICB9LAogIHsKICAgICJzcmMiOiAiL2F1ZGlvL2xldHRlcnMvYWxwaGFiZXQvYWxpZi1uYW1lLXYyLm1wMyIsCiAgICAiZHVyYXRpb24iOiAwLjk0MDM5NTgzMzMzMzMzMzMsCiAgICAiY2hhbm5lbHMiOiAyLAogICAgInJhdGUiOiA0ODAwMCwKICAgICJybXMiOiAwLjA3MTczMTg0NDUyODEwMTI5LAogICAgInBlYWsiOiAwLjQwMjY4NjcxNTEyNjAzNzYsCiAgICAiYm91bmRhcnlEaWZmZXJlbmNlIjogMS4yNDcwNzc1NDQ5ODk5NzA4ZS0xNAogIH0sCiAgewogICAgInNyYyI6ICIvYXVkaW8vbGV0dGVycy9hbHBoYWJldC9sYW0tbmFtZS12Mi53YXYiLAogICAgImR1cmF0aW9uIjogMC44NzUyMjkxNjY2NjY2NjY2LAogICAgImNoYW5uZWxzIjogMiwKICAgICJyYXRlIjogNDgwMDAsCiAgICAicm1zIjogMC4wNzE3NTM5NTA5MjkxODI1LAogICAgInBlYWsiOiAwLjQ1MDQ2MDU4Mjk3MTU3MjksCiAgICAiYm91bmRhcnlEaWZmZXJlbmNlIjogMC4wMDExODE0MjU5OTIzOTk0NTQxCiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-a71523bd7494b500e255",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 292,
+          "column": 1
+        },
+        {
+          "title": "actual Chromium playback starts the music and completion voice from game interactions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2817,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:49:08.384Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-9a520c497d1fe2ae8cae",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 312,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T09:48:11.946Z",
+    "duration": 60490.496,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

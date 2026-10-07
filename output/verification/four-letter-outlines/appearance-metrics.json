@@ -1,0 +1,30 @@
+[
+  {
+    "id": "dal",
+    "outlineInkOverlap": 0.9963565065103175,
+    "revealPieceOverlap": 0.9943511857180922,
+    "revision": 3,
+    "sourceSha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c"
+  },
+  {
+    "id": "zal",
+    "outlineInkOverlap": 0.9963138510506468,
+    "revealPieceOverlap": 0.9951737525216001,
+    "revision": 4,
+    "sourceSha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c"
+  },
+  {
+    "id": "ra",
+    "outlineInkOverlap": 0.995944016613308,
+    "revealPieceOverlap": 0.9932529842569633,
+    "revision": 3,
+    "sourceSha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c"
+  },
+  {
+    "id": "zai",
+    "outlineInkOverlap": 0.9956675880302848,
+    "revealPieceOverlap": 0.9935845914862483,
+    "revision": 4,
+    "sourceSha256": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c"
+  }
+]

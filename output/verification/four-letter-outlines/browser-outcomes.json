@@ -1,0 +1,698 @@
+{
+  "build": "four-letter-outline-20261006",
+  "finalAssets": [
+    "index-CZKgW3xL.js",
+    "index-DSx9W6Tg.css"
+  ],
+  "reports": [
+    "chromium-final.json",
+    "webkit-final.json",
+    "affected-final.json",
+    "copying-final.json",
+    "markers-layout-final.json",
+    "markers-behaviour-final.json",
+    "review-final.json"
+  ],
+  "totals": {
+    "chromium": {
+      "passed": 44,
+      "skipped": 0,
+      "unresolved": 0
+    },
+    "webkit": {
+      "passed": 34,
+      "skipped": 4,
+      "unresolved": 0
+    }
+  },
+  "finalBuildTotals": {
+    "chromium": {
+      "passed": 37,
+      "skipped": 0,
+      "unresolved": 0
+    },
+    "webkit": {
+      "passed": 33,
+      "skipped": 4,
+      "unresolved": 0
+    }
+  },
+  "cases": [
+    {
+      "browser": "chromium",
+      "file": "fix-video.spec.js",
+      "title": "adult comparisons 320x600 are paged and proposals stay out of student lessons",
+      "status": "expected",
+      "evidence": "affected-final.json",
+      "testedOnFinalBuild": false
+    },
+    {
+      "browser": "chromium",
+      "file": "fix-video.spec.js",
+      "title": "adult comparisons 320x740 are paged and proposals stay out of student lessons",
+      "status": "expected",
+      "evidence": "chromium-final.json",
+      "testedOnFinalBuild": false
+    },
+    {
+      "browser": "chromium",
+      "file": "fix-video.spec.js",
+      "title": "adult comparisons 1366x768 are paged and proposals stay out of student lessons",
+      "status": "expected",
+      "evidence": "chromium-final.json",
+      "testedOnFinalBuild": false
+    },
+    {
+      "browser": "chromium",
+      "file": "fix-video.spec.js",
+      "title": "all 37 current letters complete with unchanged approved revisions",
+      "status": "expected",
+      "evidence": "chromium-final.json",
+      "testedOnFinalBuild": false
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal play: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal play: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra play: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai play: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal guided: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal guided: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra guided: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai guided: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal precision: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal precision: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra precision: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai precision: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "four outlines fit and badges stay beside the letter 320x600",
+      "status": "expected",
+      "evidence": "markers-layout-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "four outlines fit and badges stay beside the letter 768x1024",
+      "status": "expected",
+      "evidence": "markers-layout-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "four outlines fit and badges stay beside the letter 1024x768",
+      "status": "expected",
+      "evidence": "markers-layout-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "four outlines fit and badges stay beside the letter 1920x1080",
+      "status": "expected",
+      "evidence": "markers-layout-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal: touch contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal: touch contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra: touch contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai: touch contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal: pen contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal: pen contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra: pen contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai: pen contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "outline section and full demonstrations preserve earned progress; dot button uses the diamond",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "four-letter-outlines.spec.js",
+      "title": "lightweight outline tracing keeps controls bounded and copy ink remains freehand",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "solo dal: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "solo zal: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "solo ra: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "solo zai: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "duo dal: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "duo zal: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "duo ra: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "duo zai: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-matches.spec.js",
+      "title": "authored standalone result uses the same outline",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "wrong-start scribbles stay invisible until release and a fresh correct gesture",
+      "status": "expected",
+      "evidence": "chromium-final.json",
+      "testedOnFinalBuild": false
+    },
+    {
+      "browser": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "guided: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "expected",
+      "evidence": "chromium-final.json",
+      "testedOnFinalBuild": false
+    },
+    {
+      "browser": "chromium",
+      "file": "strict-tracing.spec.js",
+      "title": "precision: excursion removes provisional ink and held-pointer re-entry cannot commit",
+      "status": "expected",
+      "evidence": "chromium-final.json",
+      "testedOnFinalBuild": false
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal play: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal play: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra play: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai play: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal guided: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal guided: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra guided: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai guided: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal precision: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal precision: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra precision: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai precision: outline, route, dot gate and saved candidate",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "four outlines fit and badges stay beside the letter 320x600",
+      "status": "expected",
+      "evidence": "markers-layout-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "four outlines fit and badges stay beside the letter 768x1024",
+      "status": "expected",
+      "evidence": "markers-layout-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "four outlines fit and badges stay beside the letter 1024x768",
+      "status": "expected",
+      "evidence": "markers-layout-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "four outlines fit and badges stay beside the letter 1920x1080",
+      "status": "expected",
+      "evidence": "markers-layout-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal: touch contact, cancellation, wrong start and fresh recovery",
+      "status": "skipped",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal: touch contact, cancellation, wrong start and fresh recovery",
+      "status": "skipped",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra: touch contact, cancellation, wrong start and fresh recovery",
+      "status": "skipped",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai: touch contact, cancellation, wrong start and fresh recovery",
+      "status": "skipped",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Dal: pen contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zal: pen contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Ra: pen contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "Zai: pen contact, cancellation, wrong start and fresh recovery",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "outline section and full demonstrations preserve earned progress; dot button uses the diamond",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "four-letter-outlines.spec.js",
+      "title": "lightweight outline tracing keeps controls bounded and copy ink remains freehand",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "solo dal: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "solo zal: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "solo ra: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "solo zai: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "duo dal: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "duo zal: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "duo ra: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "duo zai: adult candidate outlines and independent lanes",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-matches.spec.js",
+      "title": "authored standalone result uses the same outline",
+      "status": "expected",
+      "evidence": "markers-behaviour-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "fix-video.spec.js",
+      "title": "adult comparisons 320x600 are paged and proposals stay out of student lessons",
+      "status": "expected",
+      "evidence": "affected-final.json",
+      "testedOnFinalBuild": false
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-review.spec.js",
+      "title": "four catalogue comparisons remain readable 320x600",
+      "status": "expected",
+      "evidence": "review-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "chromium",
+      "file": "outline-review.spec.js",
+      "title": "four catalogue comparisons remain readable 768x1024",
+      "status": "expected",
+      "evidence": "review-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-review.spec.js",
+      "title": "four catalogue comparisons remain readable 320x600",
+      "status": "expected",
+      "evidence": "review-final.json",
+      "testedOnFinalBuild": true
+    },
+    {
+      "browser": "webkit",
+      "file": "outline-review.spec.js",
+      "title": "four catalogue comparisons remain readable 768x1024",
+      "status": "expected",
+      "evidence": "review-final.json",
+      "testedOnFinalBuild": true
+    }
+  ]
+}

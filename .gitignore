@@ -28,9 +28,19 @@ output/verification/**/*.ps1
 output/verification/**/*.py
 
 # Local bug recordings supplied for diagnosis.
+/fix/
 /problem.mp4
 /problem2.mp4
 /problems.mp4
+
+# Task-local test caches and generated preview/audio artifacts.
+output/verification/**/temp/
+output/verification/**/test-harness.js
+output/verification/**/*.wav
+output/verification/**/*.mp3
+output/verification/**/*.m4a
+output/verification/**/*.ogg
+scripts/_tmp_*
 !output/verification/android-release/gradle-build.log
 !output/verification/android-release/gradle-wrapper.log
 

@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:5173/src/content/letters.json",
+  "status": 200,
+  "exactCatalogue": true,
+  "letterId": "nga",
+  "geometryRevision": 4,
+  "audioRevision": 2,
+  "audio": {
+    "src": "/audio/letters/alphabet/nga-name-v2.wav",
+    "status": 200,
+    "contentType": "audio/wav",
+    "bytes": 48044,
+    "sha256": "12207db99c7d5bd306c0b1e3ac5f6b5c6e9d8ab8958dca1d20a95a82106a3f22"
+  }
+}

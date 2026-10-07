@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-07",
+  "letterId": "nga",
+  "version": 2,
+  "transcriptMs": "Nga",
+  "src": "/audio/letters/alphabet/nga-name-v2.wav",
+  "bytes": 48044,
+  "sha256": "12207db99c7d5bd306c0b1e3ac5f6b5c6e9d8ab8958dca1d20a95a82106a3f22",
+  "duration": 1,
+  "rate": 24000,
+  "editing": {
+    "sourceStartSeconds": 0.7,
+    "sourceEndSeconds": 1.7,
+    "fadeMs": 5,
+    "speechRegionStartApprox": 0.84,
+    "speechRegionEndApprox": 1.64,
+    "method": "Complete first supplied utterance, with surrounding silence retained. Pitch, rate, gain and speech samples unchanged; fades affect near-silent edges only."
+  },
+  "sourceSha256": "e13f158301eaa892b0d4aed6ce66b2becca06524b89f7e6e7edea2a32d36efb6",
+  "quote": "for this voice alphabet, the spelling is wrong, it's not n-g, it's nga. Like my recording, can you do it?",
+  "scope": "Direct use of the supplied target pronunciation to replace the Nga synthetic recording. No synthetic pronunciation assessment or named teacher review inferred.",
+  "reviewer": "Project owner (Codex user; name not supplied)"
+}

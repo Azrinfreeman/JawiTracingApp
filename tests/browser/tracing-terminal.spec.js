@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './helpers/localTest.js';
 import { mkdirSync } from 'node:fs';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { openLesson, boardModels, draw, movePoints, menuAction, showDotHelp } from './helpers/tracing.js';
@@ -123,7 +124,7 @@ test('non-final Ba, Qaf head loop and Ga bodies ask for a lift before the next p
   }
 });
 
-test('all 37 authored models retain valid play sequences and separate dots', async ({ page }) => {
+test('all 36 authored models retain valid play sequences and separate dots', async ({ page }) => {
   test.setTimeout(360000); await page.setViewportSize({ width: 1024, height: 768 });
   await openLesson(page, 'Alif', 'play');
   for (const [index, letter] of letters.entries()) {

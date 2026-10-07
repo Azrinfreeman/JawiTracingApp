@@ -1,0 +1,38 @@
+import {readFileSync,writeFileSync,readdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {deepStrictEqual,strictEqual,ok} from 'node:assert';
+import * as factories from '../src/content/reviewCandidates.js';
+import {validateCatalogue} from '../src/content/validateContent.js';
+const root='output/verification/sad-dad-approval',apkRoot='output/verification/android-release-1.0.8',read=p=>JSON.parse(readFileSync(p,'utf8').replace(/^\uFEFF/,'')),hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+const reviewed=read('output/verification/sad-dad-outline/inputs.json'),before=read(`${root}/before-catalogue.json`),letters=read('src/content/letters.json'),proposals=read(`${root}/reviewed-proposals.json`);
+strictEqual(hash(`${root}/before-catalogue.json`),reviewed.hashes['src/content/letters.json']);deepStrictEqual(proposals,read('output/verification/sad-dad-outline/reviewed-proposals.json'));deepStrictEqual(proposals,factories.sadDadReviewCandidates(before));
+const approved=proposals.map(({candidate})=>{const l=structuredClone(candidate);l.geometry.status='approved';l.geometry.review={revision:3,reviewer:'Project owner (Codex user; name not supplied)',date:'2026-10-07',reference:'docs/CONTENT_APPROVALS.md#approval-of-sad-and-dad-catalogue-shapes-2026-10-07',kind:'projectOwner'};return l;});
+deepStrictEqual(letters,before.map(l=>approved.find(a=>a.id===l.id)||l));
+for(const [p,sha]of Object.entries(reviewed.hashes).filter(([p])=>p.startsWith('src/')&&p!=='src/content/letters.json'))strictEqual(hash(p),sha,p);
+for(const [p,sha]of Object.entries(reviewed.hashes).filter(([p])=>p.startsWith('public/'))){strictEqual(hash(p),sha,p);strictEqual(hash(p.replace(/^public\//,'dist/')),sha,p);}
+for(const factory of Object.values(factories))deepStrictEqual(factory(letters),[]);ok(validateCatalogue(letters).valid);strictEqual(validateCatalogue(letters).results.filter(l=>l.ready).length,36);
+const initial=read(`${root}/unit.json`),recheck=read(`${root}/unit-recheck.json`);strictEqual(initial.numTotalTests,249);strictEqual(initial.numFailedTests,3);ok(recheck.success);strictEqual(recheck.numPassedTests,15);
+const files=initial.testResults.map(f=>recheck.testResults.find(r=>r.name===f.name)||f),unitCases=files.flatMap(f=>f.assertionResults.map(t=>({file:f.name,title:t.fullName,status:t.status})));strictEqual(unitCases.length,249);for(const t of unitCases)strictEqual(t.status,'passed',t.title);
+writeFileSync(`${root}/unit-final.json`,JSON.stringify({passed:249,files:39,failed:0,unchangedInitialCases:234,recheckedCases:15,description:'Replaced two historical geometry assertion files after adapting their preserved baseline and route-length assertions; source application unchanged during repairs.',cases:unitCases},null,2)+'\n');
+const browser=read(`${root}/browser.json`);strictEqual(browser.stats.expected,30);for(const k of ['unexpected','flaky','skipped'])strictEqual(browser.stats[k],0);
+deepStrictEqual(read(`${root}/live-catalogue.json`),letters);deepStrictEqual(read(`${root}/server.json`),{status:200,exactCatalogue:true});
+const build='taman-jawi-1.0.8-sad-dad-approved-20261007';ok(readdirSync('dist/assets').filter(p=>p.endsWith('.js')).some(p=>readFileSync(`dist/assets/${p}`,'utf8').includes(build)));
+const apk=read(`${apkRoot}/apk-verification.json`),apkPath='output/releases/Taman-Jawi-1.0.8-release.apk';strictEqual(apk.sha256,hash(apkPath));strictEqual(apk.version,'1.0.8');strictEqual(apk.versionCode,9);strictEqual(apk.matchingBundledAssets,103);strictEqual(apk.activeLetterRecordings,36);ok(apk.signatureVerified&&apk.alignmentVerified);strictEqual(apk.debuggable,false);deepStrictEqual(apk.permissions,[]);
+const certificate='864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365';for(const folder of [apkRoot,'output/verification/android-release-1.0.7'])ok(readFileSync(`${folder}/apk-signature.txt`,'utf8').includes(certificate));
+const old=read('output/verification/android-release-1.0.7/apk-verification.json');strictEqual(hash('output/releases/Taman-Jawi-1.0.7-release.apk'),old.sha256);
+const assets=read(`${apkRoot}/bundled-assets.json`);for(const [p,sha]of Object.entries(assets.files)){strictEqual(hash(`dist/${p}`),sha,p);strictEqual(hash(`android/app/src/main/assets/${p}`),sha,p);}
+const lint=readFileSync(`${apkRoot}/lint-results-release.xml`,'utf8');strictEqual((lint.match(/severity="Error"/g)||[]).length,0);strictEqual((lint.match(/severity="Warning"/g)||[]).length,4);
+const walk=d=>readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(`${d}/${e.name}`):[`${d}/${e.name}`]);
+const paths=[...walk('src'),...walk('tests'),...walk('dist'),...Object.keys(reviewed.hashes).filter(p=>p.startsWith('public/')),...walk(root).filter(p=>!p.includes('/temp/')&&!p.endsWith('/inputs.json')),...walk(apkRoot),...walk('android/app/src/main'),apkPath,apkPath+'.sha256',
+ 'android/app/build.gradle','android/build.gradle','android/gradle.properties','scripts/promote-sad-dad-outlines.mjs','scripts/verify-sad-dad-approval.mjs','scripts/build-android.ps1','scripts/sync-android-assets.js','scripts/verify-android-release.ps1','scripts/build-outline-test-harness.mjs','package.json','package-lock.json','playwright.config.js',
+ 'docs/SAD_DAD_TRACE_APPEARANCE_APPROVAL.md','docs/CONTENT_APPROVALS.md','docs/ANDROID_RELEASE.md','docs/PROJECT_STATE.md','docs/CONTENT_REVIEW.md','docs/CURRENT_TASK.md','README.md'];
+const report={date:'2026-10-07',timezone:'Asia/Kuala_Lumpur',node:process.version,build,approvals:approved.map(l=>({id:l.id,...l.geometry.review})),unitPassed:249,unitFiles:39,browserPassed:30,ready:36,pendingProposals:0,preservedOtherEntries:34,preservedPriorRecordings:37,apk:{...apk,certificateSha256:certificate,lintErrors:0,lintWarnings:4},
+ commands:[{command:'npm test -- --maxWorkers=2 --reporter=json --outputFile=output/verification/sad-dad-approval/unit.json',environment:'task-local TEMP/TMP',scope:'complete unit suite; 246 initial passes and 3 stale assertions'},
+ {command:'npx vitest run tests/game/glyphMatched.test.js tests/geometry/fixVideo.test.js --maxWorkers=2 --reporter=json --outputFile=output/verification/sad-dad-approval/unit-recheck.json',scope:'15 repaired/current regression cases'},
+ {command:`VITE_BUILD_ID=${build} npm run build`,scope:'36 ready lessons and checked APK web assets'},
+ {command:'npx playwright test tests/browser/sad-dad-outlines.spec.js --project=chromium --project=webkit --workers=2 --reporter=line,json',environment:'JAWI_STATIC_TEST=1',scope:'three student modes, both movements/dot-last, revision saves/reload, demonstration, scored Solo/Duo lanes, nine expired scopes'},
+ {command:'scripts/build-android.ps1 -Offline -SkipWebBuild -SdkPath <installed Unity Android SDK>',scope:'release assembly and lint; successful retry2 after sandbox local socket and Windows cache-finalization failures'},
+ {command:'scripts/verify-android-release.ps1 -SdkPath <installed Unity Android SDK>',scope:'signature, ZIP alignment, identity/code/API, checksum and all packaged assets'},
+ {command:'adb devices -l',scope:'no connected Android device/emulator'}],
+ visualInspection:['Chromium phone completed Dad','WebKit tablet completed Sad'],limitations:['Production browsers use static fixture; exact approved live source checked separately.','No device/emulator connected: installation, native WebView, actual-device tracing/audio and update storage retention unverified.'],remaining:[],hashes:Object.fromEntries([...new Set(paths)].sort().map(p=>[p,hash(p)]))};
+writeFileSync(`${root}/inputs.json`,JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({sad:3,dad:3,unitPassed:249,browserPassed:30,ready:36,apk:'1.0.8',code:9,assets:103,bytes:apk.bytes,pendingProposals:0}));

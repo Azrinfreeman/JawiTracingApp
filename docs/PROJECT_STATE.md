@@ -1,13 +1,233 @@
 # Current project state
 
-Confirmed: **5 October 2026** (saved 6 October), Asia/Kuala_Lumpur. Earlier items below are dated where they were checked. This is a dated summary;
+Confirmed: **7 October 2026**, Asia/Kuala_Lumpur. Earlier items below are dated where they were checked. This is a dated summary;
 verify changing facts against [the catalogue](../src/content/letters.json) and
 [its validator](../src/content/validateContent.js).
 
-- **Inventory:** 37 letters and authored models; **all 37 are owner-approved and student-ready**.
+- **Inventory:** 36 letters and authored models; **all 36 are owner-approved and student-ready**.
   On 4 October the owner approved the 29 revisions that had awaited review (27 redrawn models plus Kaf
-  revision 2 and Ga revision 3); see [the approval record](CONTENT_APPROVALS.md). All 37 name recordings
-  are approved: 27 supplied files and 10 retained synthetic recordings.
+  revision 2 and Ga revision 3); see [the approval record](CONTENT_APPROVALS.md). All 36 active name recordings
+  are approved: 30 supplied files and 6 retained synthetic recordings. Ye's
+  historical entry, recordings and saves remain preserved.
+- **Sad / Dad shapes approved and APK 1.0.8 (7 October):** the owner approved
+  both pictured revision-3 catalogue shapes and requested a new release APK.
+  Exact reviewed contours/routes/dot are now active in normal lessons and scored
+  challenges. Other 34 entries and 37 prior recordings are preserved; all nine
+  review scopes are empty. **249 checks in 39 files** and **30 Chromium/WebKit
+  cases** pass. Signed [APK 1.0.8](../output/releases/Taman-Jawi-1.0.8-release.apk),
+  code 9, preserves the release certificate; assembly/lint, signature, alignment,
+  checksum and all 103 assets passed. No device is connected; native runtime
+  remains untested. See [approval verification](SAD_DAD_TRACE_APPEARANCE_APPROVAL.md)
+  and [release](ANDROID_RELEASE.md).
+- **Nya shorter tip approved (7 October):** the owner replied “aprrove” to
+  the pictured Nya-4 approval question. Normal lessons and challenges now use
+  the exact reviewed shorter upper-right tip, retained bowl and three dots.
+  Other 35 entries and all recordings stay exact; all eight review scopes were
+  empty at that approval stage. **243 checks in 37 files**, checked build and **18 Chromium/WebKit cases**
+  pass; the existing server serves approved Nya 4. See [student verification](NYA_TIP_APPROVAL.md) and the preserved
+  [preceding review](NYA_TIP_REVIEW.md).
+- **Hamzah straight tail / Ye removal (7 October):** the owner approved the
+  pictured correction and requested removal of Ye. Hamzah 5 now has a straight
+  lower diagonal without the dent; its upper curves and audio remain intact.
+  Ya turns directly to Nya. **238 checks in 35 files**, checked build and **20
+  Chromium/WebKit browser cases** pass. Other 35 entries and 37 previous audio
+  files remain exact; the existing server serves this 36-letter catalogue.
+  See [implementation and verification](HAMZAH_STRAIGHT_TAIL_AND_YE_REMOVAL.md).
+- **Ha photo order approved (7 October):** the owner replied “proceed” to the
+  pictured Ha-4 approval question. Normal lessons and challenges now follow
+  top tip → outer right loop → left loop upward → inner downstroke → left tail,
+  continuously. Exact reviewed shape, five cues, audio and other entries are
+  preserved; all seven review scopes are empty. **232 unit checks in 33 files**,
+  checked build and **16 Chromium/WebKit cases** pass, with two expected skips
+  for Chromium-only input emulation. See [approval verification](HA_TRACE_ORDER_APPROVAL.md)
+  and the preserved [preceding review](HA_TRACE_ORDER_REVIEW.md).
+- **Va voice correction (7 October):** the owner supplied Recording (6).m4a and
+  authorised comparison with direct fallback if a guided match could not be
+  achieved. Va audio 2 now uses its complete first utterance, preserving decoded
+  speech/ending/pitch/pacing without fades. Geometry 3, all 36 other entries and
+  every prior recording remain exact; Ha 4 stays active. **235 unit checks in
+  34 files**, checked build and **15 browser cases** pass, including two native
+  Chromium plays through the full ending. See [verification](VA_AUDIO_CORRECTION.md).
+- **Nun catalogue shape approved (7 October):** the owner replied “approve” to
+  the pictured Nun-3 approval question. Normal lessons and challenges now use
+  that exact reviewed catalogue-font bowl, tapered ends and diamond dot. Routes,
+  direction, dot-last sequence, touch targets and audio remain intact. All 36
+  other entries and all 37 recordings/metadata are unchanged; all 37 lessons
+  remain ready. All six scopes were empty at that approval stage; the later
+  Ha-4 proposal above is now also approved. **224 distinct unit checks in
+  31 files**, checked build and **18 Chromium/WebKit cases** pass. The existing
+  server serves the exact approved catalogue. See
+  [promotion verification](NUN_TRACE_APPEARANCE_APPROVAL.md) and the preserved
+  [preceding review](NUN_TRACE_APPEARANCE_REVIEW.md).
+- **Nga pronunciation correction (7 October):** the owner supplied Recording
+  (5).m4a and requested “Nga” rather than “n-g”. **Nga audio 2** uses the complete
+  first supplied utterance directly, with its speech samples and ending intact.
+  Nga geometry/content revision 4 and its approval are unchanged. All 36 other
+  entries and every previous recording remain exact; all 37 lessons remain
+  ready. See [preparation and verification](NGA_AUDIO_CORRECTION.md).
+- **Ta/Za original loop approved (7 October):** the owner replied “proceed” to
+  the pictured approval question for **Ta 6 and Za 6**. Normal lessons and
+  challenges now use those exact reviewed models. The original-3 head/loop and
+  stem are translated left by 60 units without reshaping. Tail number 3 stays
+  fixed through a shortened final approach; Za's dot follows the head. All 35
+  other entries and all 37 recordings/metadata remain exact. All six review
+  scopes were empty at that approval stage; the later Nun proposal is now also
+  approved above. All 37 lessons remain ready. **215 unit checks in 28 files**,
+  checked build and **28 Chromium/WebKit cases** pass. The existing server serves
+  the exact approved catalogue. See [promotion verification](TA_ZA_APPROVAL.md)
+  and the preserved [preceding review](TA_ZA_ORIGINAL_CURVE_REVIEW.md).
+- **Ta/Za smooth head (7 October, preceding review):** the owner rejected the flat
+  dent in proposal 4. **Ta 5 and Za 5** replace that shoulder with a single smooth
+  rising curve, tangent to the retained outer loop. Shifted stems, joined feet,
+  tails, dots and writing order stay intact. **213 unit checks**, checked build
+  (37 ready) and **24 Chromium/WebKit cases** pass. All approved catalogue entries
+  and recordings remain exact; review under Semakan video → **Batang Ta dan Za**
+  before student promotion at that stage; these candidates are superseded by
+  revision 6 above. See [preceding review](TA_ZA_SMOOTH_JOIN_REVIEW.md).
+- **Ta/Za stems (6 October, preceding review):** **Ta 4 and Za 4** adult previews
+  move the tall stroke left toward tail number 3. A short head connector keeps
+  the loop joined; the stem foot ends on the existing tail. Original loop/tail
+  curves, top height, dots, sequence and all audio are preserved. Review under
+  Semakan video → **Batang Ta dan Za** was used for review. These candidates were
+  superseded by the smooth revision-5 models above. **212 unit checks**, checked build (37
+  ready) and **24 Chromium/WebKit cases** pass for the final connected models.
+  See [review](TA_ZA_STEM_REVIEW.md).
+- **Earlier Semakan video proposals approved (6 October):** the owner wrote
+  “approve all tthe alphabets in semakan video”. The exact reviewed **Mim 5,
+  Ta marbutah 4, Hamzah 4 and Jim 4** now appear in normal practice and challenges.
+  The five categories reviewed at that stage have no remaining proposals. The
+  later Ta/Za scope is now also resolved by the approval above. Mim keeps its tiny
+  left head opening and connected tail; rejected Mim 4 remains historical.
+  Other 33 entries and all 37 recordings/metadata are preserved. **208 unit
+  checks**, checked build (37 ready) and **52 distinct Chromium/WebKit cases**
+  pass. Practice modes, saves, demonstrations, review scopes and Solo/Duo outcomes
+  are verified; the existing server serves the exact catalogue. See
+  [promotion verification](VIDEO_REVIEW_APPROVAL.md) and the preserved
+  [preceding Mim comparison](MIM_HEAD_OPENING_REVIEW.md).
+- **Completion panel pause (6 October):** every tracing lesson leaves the
+  finished letter unobscured for **1.5 seconds** before opening the completion
+  panel. Saves and letter sound remain immediate; retry/navigation cancel the
+  pending panel. Copy saves retain their previous behaviour. **203 unit checks**,
+  checked build (37 ready) and **30 distinct browser checks** pass, with two
+  expected WebKit skips for Chromium-only emulated touch. All practice modes,
+  completion timing, save-once, cancellation, copy flow, student revisits and
+  phone/tablet/desktop fit are checked. A stale Sa → Sin test expectation was
+  corrected to the current Sa → Jim catalogue sequence; its two affected cases
+  were rechecked, preserving prior evidence. All catalogue entries and recordings
+  remain exact. See [verification](COMPLETION_PANEL_DELAY.md).
+- **Sin/Syin tails approved (6 October):** the owner replied **“approved”** to
+  the pictured before/after approval question. **Sin 2 and Syin 3 now appear in
+  regular student lessons**, using the exact reviewed 40-unit tip lift and
+  unchanged curves, writing order, dots and audio. All 35 other entries and 37
+  recordings are preserved, including Ga audio 7. Obsolete tail cards expire;
+  the four independent video proposals remain. **203 unit checks**, the checked
+  build (37 ready lessons) and **32 Chromium/WebKit browser checks** pass. Student
+  access, all three modes, completion revisions/persistence, demonstrations,
+  phone/tablet/desktop guides and scored Solo/Duo lanes are checked. The existing
+  server serves the exact approved catalogue with HTTP 200. See
+  [promotion verification](SIN_SYIN_TAIL_APPROVAL.md) and the preserved
+  [preceding review evidence](SIN_SYIN_TAIL_REVIEW.md).
+- **Ga pronunciation correction (6 October):** the owner authorised a guided
+  synthesis attempt followed by direct recording fallback if unsuccessful.
+  Guided revision 8 remained materially different in approximate pitch/word
+  length. The owner's later request to continue produced revision 9 with closer
+  timing but a different sampled pitch contour; the authorised fallback remains:
+  **audio revision 7 uses the complete supplied utterance**. See
+  [the follow-up and unchanged verification inputs](GA_AUDIO_GUIDED_FOLLOWUP.md).
+  Speech samples, pitch/rate/gain and natural ending are preserved. Ga geometry
+  revision 3, all 36 other entries and 37 original recording files are unchanged.
+  **198 unit checks in 23 files**, checked build (37 ready lessons) and **21
+  distinct browser cases** pass, with one known native WebKit codec skip.
+  Chromium decodes and plays/replays the whole 1.05-second clip; WebKit controlled
+  lesson/replay/mute/navigation checks pass. Three practice modes, completion
+  revisions, phone/tablet, teacher review and Solo/Duo selection are checked.
+  One browser fixture timing failure was corrected and its two affected cases
+  rerun successfully; original evidence is retained. The existing server serves
+  the exact recording with HTTP 200. See [Ga method and verification](GA_AUDIO_REVIEW.md).
+- **Ain/Ghain/Nga outline approval (6 October):** the owner replied **“proceed”**
+  to the explicit question approving replacement with the corrected catalogue
+  outlines. **Ain 4, Ghain 4 and Nga 4 now appear in the regular student game**,
+  with the direct thin neck and exact reviewed font silhouette. The head → lift
+  → bowl → dots order stays intact. All 34 unrelated entries and 37 recordings
+  are preserved; four independent older video proposals remain. **195 distinct
+  unit checks**, the checked build (37 ready lessons) and **44 Chromium/WebKit
+  checks** pass, with no unresolved failures or skips. Student saved revision
+  isolation, all practice modes, phone/tablet/desktop layouts, teacher status,
+  Solo/Duo scoring callbacks and whole authored results are checked. The running
+  server serves the three approved outlines with HTTP 200. See
+  [student promotion verification](AIN_FAMILY_TRACE_APPEARANCE_APPROVAL.md).
+- **Ain-family appearance review (6 October, preceding approval):** three separate
+  revision-4 catalogue outlines were implemented as adult previews. At that
+  stage, the approved catalogue and 37 recordings were unchanged and seven older
+  video proposals remained. **194 unit checks**, the checked build and **55
+  distinct browser checks** passed, with one native WebKit font-canvas skip.
+  The preceding [review evidence](AIN_FAMILY_TRACE_APPEARANCE_REVIEW.md) is retained.
+- **Direct alphabet sound (6 October):** **Dengar** now sits beneath the current
+  letter name for all 37 letters in practice/copying and the shared Solo/Duo
+  heading. Menu keeps the other controls; completion replay remains available.
+  Taller-heading clearance prevents Lam's phone start-number overlap without
+  changing authored geometry. The catalogue and all 37 recordings are preserved.
+  **188 unit checks**, the checked build (37 ready lessons) and **55 Chromium/WebKit
+  browser cases** pass, with one documented native-WebKit audio skip. Every letter's
+  selected sound and clear heading is checked on phone/tablet, plus desktop,
+  keyboard, mute, copying, failure recovery and tracing/completion regressions.
+  See [direct sound verification](INLINE_LETTER_AUDIO_VERIFICATION.md).
+- **Fa/Pa direction approval (6 October):** the owner wrote **“approve”** to the
+  explicit request for **Fa 4 and Pa 4**. Their exact reviewed paths and cues are
+  promoted into student lessons; obsolete direction proposals disappear. The
+  other 35 entries (including Qaf and the four outline models), all audio and
+  seven older proposals are preserved. **188 unit checks**, the checked build
+  (37 ready lessons) and **24 Chromium/WebKit cases** pass, with no failures or
+  skips. Student access, all three modes, saved approved revisions, dots,
+  demonstrations and phone/tablet layouts are verified. See
+  [approval verification](FA_PA_DIRECTION_APPROVAL.md). No new APK.
+- **Fa/Pa direction correction (6 October, preceding review stage):** the owner confirmed
+  Qaf's left-first departure and head → lift → tail → dots sequence. Two isolated
+  adult candidates, **Fa 4 and Pa 4**, remove the upward starting turn and add
+  explicit head/tail cues in Jejak Ceria. Review at Ruang guru → Huruf → Semakan
+  video → **Arah Fa dan Pa**. The 37-entry approved catalogue (including Qaf),
+  all recordings and seven older proposals are preserved. **186 unit checks**,
+  the checked build and **36 Chromium/WebKit cases** pass, with no unresolved
+  failures or skips. See [the review and verification](FA_PA_DIRECTION_REVIEW.md)
+  for that stage's browser evidence. Student Fa/Pa still used revision 3 at
+  this stage; the later approval above promotes the exact new models.
+- **Four-letter approval (6 October):** the owner replied **“yes I approve”** to the explicit request
+  for Dal 3, Zal 4, Ra 3 and Zai 4. The exact reviewed outline models are now promoted into student
+  lessons with matching owner review records; the four obsolete proposals disappear. All other
+  33 entries, audio metadata and 37 recordings, and the seven earlier video proposals are preserved.
+  **181 unit tests**, the checked build (37 ready lessons) and **86 Chromium/WebKit cases**
+  pass (4 CDP-only WebKit touch skips); student access, saved approved revisions, all three modes,
+  four-viewport guides, demos/copying, teacher status and Solo/Duo scoring callbacks are checked.
+  See
+  [approval verification](FOUR_LETTER_TRACE_APPEARANCE_APPROVAL.md) for current student/browser
+  checks, before/after comparisons, fingerprints and limits. No new APK.
+- **Four-letter appearance implementation (6 October, preceding approval):** Dal, Zal, Ra and Zai had isolated adult proposals
+  using the catalogue font's outline, including tapered ends and diamond dots. Jejak Ceria
+  reveals accepted outline ink; references, demonstrations and authored results share the shape.
+  Detached badges/labels leave the letter visible. **Dal 3, Zal 4, Ra 3 and Zai 4 awaited explicit
+  content review** in Ruang guru → Huruf → Semakan video → **Bentuk Isi kandungan** at this stage.
+  The approved student catalogue and all 37 recordings are preserved; the seven video proposals
+  retain their separate review. **179 unit tests**, the checked production build and **70 final-bundle
+  Chromium/WebKit cases** pass (4 CDP-only WebKit touch skips), including tracing in three modes,
+  Solo/Duo, copying, demonstrations and phone/tablet/desktop guide/review layouts.
+  See [delivery and verification](FOUR_LETTER_TRACE_APPEARANCE_VERIFICATION.md)
+  for the browser scopes, comparison captures, input fingerprints and limits. No promotion or new APK.
+- **Video implementation (6 October, preceding review stage):** implemented after the owner's “proceed”: Sad/Dad hairpin acceptance,
+  nearby start/stop badge separation, visible section/recovery/lift/dot-count cues, readonly section demonstrations,
+  paused Duo examples, gesture/build diagnostics, and audio preparation/replay/late-failure recovery.
+  The catalogue remains byte-identical to Git HEAD, with **37 approved student models and 37 approved name recordings**.
+  **175 unit tests** and the checked production build pass; **352/352** current/proposed touch/pen spacing journeys complete.
+  **81 distinct Chromium cases + 11 WebKit cases** pass, with 18 affected Chromium layout rechecks;
+  real browser scopes and inspected viewports are in [verification](FIX_VIDEO_VERIFICATION.md).
+  At that stage, seven adult proposals (Mim, Ta marbutah, Ain, Ghain, Nga, Hamzah and Jim) awaited review;
+  use Ruang guru → Huruf → Semakan video. See [the comparison and review record](FIX_VIDEO_CONTENT_REVIEW.md).
+  Physical-display touch/pen and audible playback remain unverified. No new APK, deployment or version-control publication.
+- **Video review (6 October, analysis only):** all 23 clips in `fix/` were visually reviewed at one-second intervals;
+  sound and spoken commentary were not verified. A current-source input-spacing audit completed 292 of 296 journeys:
+  Sad and Dad stall at the second-stroke hairpin with 32-unit centerline samples in touch and pen profiles (`advanceGap`).
+  Ta marbutah's nearby start/stop badges overlap. Loop/branch guidance, lift-and-return instructions and selected
+  teaching shapes/orders need review; several filmed waits are normal pending-dot/readiness states. See
+  [the timestamped findings and limits](FIX_VIDEO_REVIEW.md). No app code, geometry, audio or approvals changed.
 - **Tracing and catalogue polish (5 October, release 1.0.7):**
   - *Stroke-end stall:* once a stroke gesture has reached its end (95% coverage, all checkpoints, finger within the end
     radius) the stroke is complete. Leaving the route (flick, drift, off the board) commits it immediately and a lift
@@ -232,19 +452,25 @@ verify changing facts against [the catalogue](../src/content/letters.json) and
   repository on `main`, following the user's commit/push request. Signing keys,
   local SDK configuration, caches, temporary files and generated screenshots stay
   local. No website deployment or app-store publication was requested.
-  The current project save (4 October) includes the fullscreen layout, Kaf/Ga correction,
-  tablet performance work, endpoint finish fix, fullscreen tracing/voice/music work, the approved
-  glyph-matched models and releases through 1.0.6. Large generated screenshots (the fullscreen
-  verification captures and the glyph-audit capture folder) stay local; the audit's metrics,
-  sheets and capture measurements are tracked.
+  The current project save (7 October) includes the video fixes, approved letter
+  shape/order revisions through Sad 3 and Dad 3, Ga/Nga/Va audio corrections,
+  direct Dengar button, delayed completion panel, Ye removal and signed release
+  1.0.8/code 9. The verification record has 249 current unit passes and 30 affected
+  Chromium/WebKit passes, with release signature/alignment/checksum and 103
+  packaged assets verified. Current evidence: output/verification/sad-dad-approval/inputs.json
+  and output/verification/android-release-1.0.8/apk-verification.json. Supplied
+  videos in fix/, screenshots, generated test harnesses, audio work files and test
+  caches stay local. Source, approved playback assets, APK/checksum, authoring tools,
+  tests and lightweight review/verification records are saved.
 - **Recorded Windows limits:** Firefox launch failed with `spawn UNKNOWN`;
   WebKit rejected the tested WAV fixture. Reconsider when runtime/device changes.
   No physical pupil/device assessment is recorded.
-- **Next application tasks:** (1) finish verifying the fullscreen tracing/voice/music work above, then
-  audition the music and review it on devices; (2) install release 1.0.6 on a physical tablet and run native device review; (3) decide whether the
-  eight earlier-approved letters should also get the loop and weight treatment, and whether to add the
-  exact-outline silhouette; (4) a teacher review and physical pupil/device review of all 37 models remain
-  pending, as no teacher assessment has been supplied.
+- **Next application tasks:** validate installation/update, native WebView tracing
+  and audible playback on the actual Android device, including saved-data retention.
+  No connected device/emulator was available for 1.0.8. A teacher review and
+  physical pupil/device review of the current 36 letters remain pending; no teacher
+  assessment has been supplied. All current owner geometry/audio approvals are
+  complete, and no implementation or APK packaging step remains from this request.
 
 Refresh this summary when facts change; retain dated evidence in its original
 scope. Read [verification guidance](VERIFICATION_GUIDE.md) when selecting checks.

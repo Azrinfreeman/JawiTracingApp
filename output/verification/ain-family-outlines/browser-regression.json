@@ -1,0 +1,1475 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/ain-family-matches.spec.js",
+      "tests/browser/outline-review.spec.js",
+      "tests/browser/four-letter-outlines.spec.js",
+      "--grep",
+      "unscored two-part|authored result retains|four approved teacher|four outlines fit and badges stay beside the letter (320x600|1920x1080)",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=line,json",
+      "--output=output/verification/ain-family-outlines/test-regression"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ain-family-outlines/test-regression",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ain-family-outlines/test-regression",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ain-family-outlines/test-regression",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ain-family-matches.spec.js",
+      "file": "ain-family-matches.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "solo ain: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9797,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:25.228Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-ai-5972e-eview-and-independent-lanes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-ai-5972e-eview-and-independent-lanes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-f71eb6867a1564870825",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "solo ghain: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10076,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:37.525Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-gh-e73e8-eview-and-independent-lanes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-gh-e73e8-eview-and-independent-lanes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-b080e609ba025d8fa2ac",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "solo nga: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8507,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:49.246Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-ng-4359e-eview-and-independent-lanes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-ng-4359e-eview-and-independent-lanes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-c15d1cb44361a16f3dc9",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "duo ain: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12713,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:59.356Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-ain-e159c-eview-and-independent-lanes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-ain-e159c-eview-and-independent-lanes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-1048a09f7ffbd6ea36ad",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "duo ghain: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13945,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:14.819Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-gha-c1c53-eview-and-independent-lanes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-gha-c1c53-eview-and-independent-lanes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-5bb74506d1d152b34bfc",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "duo nga: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15888,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:33.147Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-nga-e5cc8-eview-and-independent-lanes-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-nga-e5cc8-eview-and-independent-lanes-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-e7cfecd9b8dee12518f9",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "ain: authored result retains the whole catalogue silhouette",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 651,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:53.007Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-43748ac123cc3ce9b72a",
+          "file": "ain-family-matches.spec.js",
+          "line": 27,
+          "column": 39
+        },
+        {
+          "title": "ghain: authored result retains the whole catalogue silhouette",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 585,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:53.875Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-65bad71be2eab59b7581",
+          "file": "ain-family-matches.spec.js",
+          "line": 27,
+          "column": 39
+        },
+        {
+          "title": "nga: authored result retains the whole catalogue silhouette",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 556,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:54.476Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-3db82dffb9201fbaee74",
+          "file": "ain-family-matches.spec.js",
+          "line": 27,
+          "column": 39
+        },
+        {
+          "title": "solo ain: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10218,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:41.076Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-ai-5972e-eview-and-independent-lanes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-ai-5972e-eview-and-independent-lanes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-12c7528beacd90a20816",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "solo ghain: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 12631,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:52.852Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-gh-e73e8-eview-and-independent-lanes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-gh-e73e8-eview-and-independent-lanes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-1a1b189b3aafbc439d2e",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "solo nga: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10602,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 8\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:06.903Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-ng-4359e-eview-and-independent-lanes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-solo-ng-4359e-eview-and-independent-lanes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-bd51f551a9868bede7a8",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "duo ain: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 39179,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:19.050Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-ain-e159c-eview-and-independent-lanes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-ain-e159c-eview-and-independent-lanes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-36f8dc8176930ed9daba",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "duo ghain: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 79170,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"ghain\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |   }\n  23 |   await expect(page.locator('.round-result')).toBeVisible();\n> 24 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual(Array.from({length:count},()=>({letterId:id,contentVersion:4,geometryStatus:'pendingReview',unscored:true})));\n     |                                                           ^\n  25 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n  26 | });\n  27 | for(const id of ['ain','ghain','nga'])test(`${id}: authored result retains the whole catalogue silhouette`,async({page})=>{\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:59.823Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-gha-c1c53-eview-and-independent-lanes-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-gha-c1c53-eview-and-independent-lanes-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-a091aecb41d31854b51f",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "duo nga: unscored two-part outline preview and independent lanes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 74959,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                      "column": 59,
+                      "line": 24
+                    },
+                    "snippet": "  22 |     if(mode==='duo'&&slot===0){await expect(page.locator('[data-player-slot=\"0\"] .race-lane-status')).toContainText('Siap');await expect(page.locator('.trace-board').nth(1).locator('.outline-progress')).toHaveCount(0);}\n  23 |   }\n> 24 |   await expect(page.locator('.round-result')).toBeVisible();\n     |                                                           ^\n  25 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual([]);\n  26 |   for(const text of await page.locator('.round-score-grid strong').allTextContents())expect(text).toContain('—');\n  27 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                        "column": 59,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 14\u001b[39m\n\u001b[31m+ Received  +  1\u001b[39m\n\n\u001b[32m- Array [\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m-   Object {\u001b[39m\n\u001b[32m-     \"contentVersion\": 4,\u001b[39m\n\u001b[32m-     \"geometryStatus\": \"pendingReview\",\u001b[39m\n\u001b[32m-     \"letterId\": \"nga\",\u001b[39m\n\u001b[32m-     \"unscored\": true,\u001b[39m\n\u001b[32m-   },\u001b[39m\n\u001b[32m- ]\u001b[39m\n\u001b[31m+ Array []\u001b[39m\n\n  22 |     if(mode==='duo'&&slot===0){await expect(page.locator('[data-player-slot=\"0\"] .race-lane-status')).toContainText('Siap');await expect(page.locator('.trace-board').nth(1).locator('.outline-progress')).toHaveCount(0);}\n  23 |   }\n> 24 |   await expect(page.locator('.round-result')).toBeVisible();\n     |                                                           ^\n  25 |   expect(await page.evaluate(()=>window.outlineAttempts)).toEqual([]);\n  26 |   for(const text of await page.locator('.round-score-grid strong').allTextContents())expect(text).toContain('—');\n  27 |   const clips=await page.locator('clipPath').evaluateAll(nodes=>nodes.map(n=>n.id));expect(new Set(clips).size).toBe(clips.length);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js:24:59"
+                    },
+                    {
+                      "message": "Error: browserContext._wrapApiCall: file data stream has unexpected number of bytes"
+                    },
+                    {
+                      "message": "Error: End of central directory record signature not found. Either not a zip file, or file is truncated."
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:51:21.108Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\ain-family-matches-duo-nga-e5cc8-eview-and-independent-lanes-webkit\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+                    "column": 59,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-9e6fea964d3b3806d20c",
+          "file": "ain-family-matches.spec.js",
+          "line": 12,
+          "column": 72
+        },
+        {
+          "title": "ain: authored result retains the whole catalogue silhouette",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1174,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:52:37.008Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-8ea64000fda6bb600f1c",
+          "file": "ain-family-matches.spec.js",
+          "line": 27,
+          "column": 39
+        },
+        {
+          "title": "ghain: authored result retains the whole catalogue silhouette",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 994,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:52:38.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-3d2cbfc97c83036c415d",
+          "file": "ain-family-matches.spec.js",
+          "line": 27,
+          "column": 39
+        },
+        {
+          "title": "nga: authored result retains the whole catalogue silhouette",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 888,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:52:39.328Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99a6b07b906b07ce27bb-9b2b615d9c9233f936d8",
+          "file": "ain-family-matches.spec.js",
+          "line": 27,
+          "column": 39
+        }
+      ]
+    },
+    {
+      "title": "four-letter-outlines.spec.js",
+      "file": "four-letter-outlines.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "four outlines fit and badges stay beside the letter 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5296,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:25.246Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-173c2e12c185b9745a4d",
+          "file": "four-letter-outlines.spec.js",
+          "line": 42,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5317,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:31.269Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-42f76810e9f1c0b3cd0b",
+          "file": "four-letter-outlines.spec.js",
+          "line": 42,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14315,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:49:56.862Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-b5727af8c4b0584405b0",
+          "file": "four-letter-outlines.spec.js",
+          "line": 42,
+          "column": 74
+        },
+        {
+          "title": "four outlines fit and badges stay beside the letter 1920x1080",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 64010,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:50:11.294Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e4a26ed64ed31ab1c63-936cd6122f06c3df0075",
+          "file": "four-letter-outlines.spec.js",
+          "line": 42,
+          "column": 74
+        }
+      ]
+    },
+    {
+      "title": "outline-review.spec.js",
+      "file": "outline-review.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "four approved teacher entries and no obsolete proposals 320x600",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1853,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:36.654Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a62326675a535f5b1016-4fd76525013fe3485dce",
+          "file": "outline-review.spec.js",
+          "line": 7,
+          "column": 51
+        },
+        {
+          "title": "four approved teacher entries and no obsolete proposals 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1192,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:48:38.520Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a62326675a535f5b1016-790223dc6c7d814b1cef",
+          "file": "outline-review.spec.js",
+          "line": 7,
+          "column": 51
+        },
+        {
+          "title": "four approved teacher entries and no obsolete proposals 320x600",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 45442,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 45000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 45000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 45000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\outline-review.spec.js",
+                        "column": 65,
+                        "line": 10
+                      },
+                      "message": "Error: locator.click: Test timeout of 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Ruang guru', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <button class=\"header-teacher\" aria-label=\"Ruang guru\">…</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n   8 |   test.setTimeout(45000);\n   9 |   await page.setViewportSize({width,height});await page.goto('/');await dismissSplash(page);\n> 10 |   await page.getByRole('button',{name:'Ruang guru',exact:true}).click();\n     |                                                                 ^\n  11 |   await page.getByRole('tab',{name:'Huruf',exact:true}).click();\n  12 |   await page.evaluate(()=>document.fonts.ready);\n  13 |   await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\outline-review.spec.js:10:65"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:51:15.348Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\outline-review-four-approv-ae53b--obsolete-proposals-320x600-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ain-family-outlines\\test-regression\\outline-review-four-approv-ae53b--obsolete-proposals-320x600-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a62326675a535f5b1016-b7c4d7ffc0b87cd8380b",
+          "file": "outline-review.spec.js",
+          "line": 7,
+          "column": 51
+        },
+        {
+          "title": "four approved teacher entries and no obsolete proposals 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11635,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T06:52:02.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a62326675a535f5b1016-5a3a9bc763f73c8ca322",
+          "file": "outline-review.spec.js",
+          "line": 7,
+          "column": 51
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T06:48:24.167Z",
+    "duration": 259426.28399999999,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 13,
+    "flaky": 0
+  }
+}

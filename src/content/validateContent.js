@@ -22,6 +22,30 @@ function validPath(path) {
 const reviewMatches = (review, revision) => review && review.revision === revision &&
   ['reviewer', 'date', 'reference'].every(key => typeof review[key] === 'string' && review[key].trim()) &&
   /^\d{4}-\d{2}-\d{2}$/.test(review.date);
+const validBounds = b => b && [b.x,b.y,b.width,b.height].every(finite) && b.width>0 && b.height>0 &&
+  b.x>=0 && b.y>=0 && b.x+b.width<=1000 && b.y+b.height<=1000;
+const validContours = paths => Array.isArray(paths) && paths.length>0 && paths.length<=32 &&
+  paths.every(path=>validPath(path) && /[Zz]\s*$/.test(path) && !/[HhVvCcSsQqTtAa]/.test(path) &&
+    (path.match(/[-+]?(?:\d*\.?\d+)(?:[eE][-+]?\d+)?/g)||[]).every(n=>Number(n)>=0&&Number(n)<=1000));
+function validAppearance(appearance,letter,strokes,dots) {
+  if(appearance.kind!=='catalogueOutline' || appearance.baseRevision!==letter.contentVersion-1 || !validBounds(appearance.bounds))return false;
+  const source=appearance.source;
+  if(!source || source.glyph!==letter.glyph || source.weight!==400 || !/^[a-f0-9]{64}$/.test(source.sha256||'') ||
+    source.font!=='@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2' ||
+    source.method!=='highResolutionInkContours' || !finite(source.scale) || source.scale<=0 ||
+    !Number.isInteger(source.fontSize) || source.fontSize<600 || !finite(source.maxContourError) || source.maxContourError<0 || source.maxContourError>.5 ||
+    !Array.isArray(source.center) || source.center.length!==2 || !source.center.every(finite))return false;
+  const parts=appearance.parts,ids=[...strokes,...dots].map(p=>p.id);
+  if(appearance.bodyContours!==undefined && !validContours(appearance.bodyContours))return false;
+  if(!Array.isArray(parts) || parts.length!==ids.length || new Set(parts.map(p=>p.id)).size!==ids.length)return false;
+  return parts.every(part=>{
+    if(!ids.includes(part.id) || !validBounds(part.bounds) || !validContours(part.contours))return false;
+    if(!strokes.some(s=>s.id===part.id))return part.segments===undefined;
+    return Array.isArray(part.segments) && part.segments.length>0 && part.segments.length<=100 &&
+      part.segments.every((s,i)=>finite(s.from)&&finite(s.to)&&s.to>s.from&&validContours(s.contours)&&
+        (i===0?s.from===0:Math.abs(s.from-part.segments[i-1].to)<.01));
+  });
+}
 
 export function validateLetter(letter) {
   const errors = [];
@@ -50,6 +74,7 @@ export function validateLetter(letter) {
     if (!Array.isArray(sequence) || sequence.length !== ids.length || new Set(sequence).size !== ids.length || sequence.some(id => !ids.includes(id))) errors.push('Invalid sequence references');
   }
   if (geometry?.status === 'approved' && (!strokes.length || !reviewMatches(geometry.review, letter.contentVersion))) errors.push('Unreviewed/empty approved geometry');
+  if (geometry?.appearance !== undefined && !validAppearance(geometry.appearance,letter,strokes,dots)) errors.push('Invalid outline appearance');
   const audio = letter.audio?.name;
   const recordings = [audio, ...(letter.audio?.pronunciationExamples || [])];
   for (const recording of recordings) {

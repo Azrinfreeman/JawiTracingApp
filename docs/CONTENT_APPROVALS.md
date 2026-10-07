@@ -1,5 +1,68 @@
 # Content approval record
 
+## Approval of Nya shorter tip 2026-10-07
+
+The project owner (Codex user; name not supplied) replied **“aprrove”** to
+**“Approve the shorter Nya 4 on the right for normal lessons?”**, after viewing
+the original/revised comparison. This approves the exact reviewed **Nya 4**
+geometry: shorter upper-right starting tip, unchanged remaining curve/bowl,
+three dots and dot-last sequence. Audio remains independently approved at
+revision 1. Promotion changes only geometry status/review; no reshaping or
+teacher assessment is inferred.
+
+See [student verification](NYA_TIP_APPROVAL.md) and the preserved
+[preceding review](NYA_TIP_REVIEW.md).
+
+## Approval of Hamzah straight tail 2026-10-07
+
+The project owner (Codex user; name not supplied) marked the lower dent in
+Hamzah 4 and approved the described straight diagonal correction with
+“approve and pplease remove remove ye, it's should not exist”.
+Approval scope: **Hamzah geometry 5**, straight lower run from 2 to 3,
+upper curves retained, and removal of Ye from the active catalogue. Audio
+remains revision 2. This records the owner's approval of the specified edit;
+no later owner audition or teacher assessment is claimed.
+
+See [implementation and verification](HAMZAH_STRAIGHT_TAIL_AND_YE_REMOVAL.md).
+
+
+## Approval of Ha photo order 2026-10-07
+
+The owner replied **“proceed”** to the pictured question **“Approve Ha 4 for the
+normal game?”**, followed by a separate request to correct Va audio. This approves
+the exact reviewed Ha (ه) geometry revision **4**: top tip downward, outer right
+loop to the lower crossing, left loop upward to the upper crossing, inner stroke
+downward, then left tail, as one continuous movement with no dots. Reviewed path,
+start/finish, style, checkpoints and five teaching sections are preserved; only
+review status/metadata change during promotion. Ha audio revision 1 is unchanged.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date: **2026-10-07**,
+Asia/Kuala_Lumpur. Manifest reference:
+`docs/CONTENT_APPROVALS.md#approval-of-ha-photo-order-2026-10-07`.
+All other approved entries and recordings are preserved at this stage. No named
+teacher assessment was supplied or inferred. See [approval verification](HA_TRACE_ORDER_APPROVAL.md)
+and the preserved [preceding review](HA_TRACE_ORDER_REVIEW.md).
+
+## Approval of Nun catalogue outline 2026-10-07
+
+The owner replied **“approve”** to **“Approve Nun 3 for the normal game?”**
+after seeing the actual catalogue-font/Nun-3 comparison. This approves that
+exact revision-3 model: font bowl, tapered ends and diamond dot, retaining the
+original route, direction, dot-last sequence and touch targets.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-07**, Asia/Kuala_Lumpur. Geometry review matches revision 3, this
+section and kind projectOwner. No named teacher assessment is inferred.
+
+The exact reviewed model is promoted without changing contours, routes, dots,
+order, audio or revision number. All 36 other entries and all 37 recordings/
+audio metadata remain unchanged. The pending Nun card expires through its
+existing revision gate; all six review scopes are empty and all 37 lessons
+remain student-ready. Old attempts stay stored; previous revisions and adult
+previews do not complete current approved Nun 3. See
+[promotion verification](NUN_TRACE_APPEARANCE_APPROVAL.md) and the preserved
+[preceding review](NUN_TRACE_APPEARANCE_REVIEW.md).
+
 Subsequent updates: the user authorised synthetic audio generation after this
 model approval, then requested supplied alphabet recordings replace matching
 entries. The active set now contains 27 supplied MP3/WAV recordings and 10
@@ -8,6 +71,149 @@ recordings; see [AUDIO_APPROVALS.md](AUDIO_APPROVALS.md). All 37 implemented les
 now meet the application readiness check.
 The inventory and checks below describe the earlier model-approval stage; see
 [AUDIO_REPLACEMENT_REVIEW.md](AUDIO_REPLACEMENT_REVIEW.md) for the current audio status.
+
+## Approval of Ta and Za original curves 2026-10-07
+
+The owner replied **“proceed”** to the explicit question **“Approve Ta 6 and Za 6
+for the normal game?”**, after seeing both original-3/revision-6 comparisons.
+This approves those exact two pictured models, including the original head/loop
+shape translated left, closer stem, fixed tail finish and aligned Za dot.
+Earlier proposals 4 and 5 are superseded and are not part of this approval.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-07**, Asia/Kuala_Lumpur. Matching geometry reviews record revision 6,
+this section and kind projectOwner. No teacher assessment is inferred.
+
+The reviewed candidates are promoted without changing geometry, dots/order,
+audio or revision numbers. All 35 other entries and all 37 recordings/metadata
+are retained. Current Ta/Za proposals expire through their existing revision
+gate. All six review scopes are empty and all 37 letters stay student-ready.
+Old attempts remain stored; prior revisions and adult previews do not complete
+these approved versions. See [promotion verification](TA_ZA_APPROVAL.md) and
+the preserved [preceding review](TA_ZA_ORIGINAL_CURVE_REVIEW.md).
+
+## Approval of all current Semakan video proposals 2026-10-06
+
+The project owner wrote **“approve all tthe alphabets in semakan video”**.
+The current screen contains **Mim 5, Ta marbutah 4, Hamzah 4 and Jim 4** under
+Langkah video; all other review scopes are empty because their corrections were
+already approved. This approval covers these exact four current candidates.
+It excludes the rejected detached-tail Mim 4 and obsolete earlier proposals.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-06**, Asia/Kuala_Lumpur. Each geometry review records its matching
+revision, this section and kind projectOwner. No teacher assessment is invented.
+
+The four reviewed models are promoted without geometry edits or another version
+increment. Mim retains its tiny left head opening and connected tail; Ta marbutah
+retains its closed loop and two dots; Hamzah retains the continuous reviewed
+return path; Jim retains head → lift → bowl → dot. All 33 unrelated catalogue
+entries and all 37 audio recordings/metadata remain unchanged. The current
+Semakan video proposals expire through their existing revision gates; all 37
+letters stay student-ready. Old attempts remain saved and are not credited as
+completion of newer revisions; adult previews do not count as student completion.
+See [promotion verification](VIDEO_REVIEW_APPROVAL.md) and the preserved
+[Mim opening review](MIM_HEAD_OPENING_REVIEW.md).
+
+## Approval of Sin and Syin tails 2026-10-06
+
+The project owner replied **“approved”** to **“Approve these pictured shapes for
+the normal game?”** after the actual Sin/Syin before-and-after comparison.
+This approves the exact pictured **Sin revision 2 and Syin revision 3**:
+left finish (185,550) → (185,510), below the adjacent peak by 95 logical units.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-06**, Asia/Kuala_Lumpur. Matching geometry reviews record each revision,
+this section and kind projectOwner. No teacher assessment is inferred.
+
+The reviewed paths are promoted without further edits or another version bump.
+Movement order, dots and audio are identical to the reviewed candidates. The other
+35 entries, all 37 recordings and four independent video proposals are preserved.
+Obsolete tail proposals expire against the approved revisions. Prior attempts
+remain stored, but old revisions and adult previews do not complete the new models.
+See [promotion verification](SIN_SYIN_TAIL_APPROVAL.md) and the
+[preceding review](SIN_SYIN_TAIL_REVIEW.md).
+
+## Approval of Ain, Ghain and Nga outlines 2026-10-06
+
+The project owner replied **“proceed”** to the explicit question **“Do you
+approve replacing Ain, Ghain and Nga in the game with those corrected
+outlines?”**, after seeing the catalogue/original/corrected comparison. This
+approves the identified **Ain 4, Ghain 4 and Nga 4 catalogue outlines** for
+student lessons.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-06**, Asia/Kuala_Lumpur. Each matching geometry review records this
+section, revision 4 and kind projectOwner. No teacher assessment is invented.
+
+The exact reviewed outlines are promoted without further geometry edits or
+another version increment. The catalogue silhouette, direct thin neck,
+head → lift → bowl → dots sequence and dot actions are preserved from those
+candidates. Relative to the reviewed candidates, only approval metadata changes.
+The other 34 entries and all audio metadata/37 recordings remain unchanged.
+The superseded Ain-family outline cards and older continuous-stroke alternatives
+expire against the new base revision; the four other video alternatives remain
+unchanged and outside this approval scope.
+
+See [student promotion verification](AIN_FAMILY_TRACE_APPEARANCE_APPROVAL.md)
+and [the preceding review](AIN_FAMILY_TRACE_APPEARANCE_REVIEW.md). This records
+owner approval, without claiming physical-device or pupil review.
+
+## Approval of Fa and Pa directions 2026-10-06
+
+The project owner wrote **“approve”** in response to the explicit request to
+approve **Fa revision 4 and Pa revision 4** for student lessons, following the
+review versions, running-game review route and verification results.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-06**, Asia/Kuala_Lumpur. Each matching `geometry.review` references
+this section and records `kind: projectOwner`.
+
+This approves the exact reviewed left-first departure, head loop → lift → tail
+→ dots sequence and revision-specific cues. Fa retains one dot; Pa retains
+three. Promotion changes only their geometry status/review records relative to
+the reviewed candidates, without another version increment or path edit.
+The other 35 entries (including Qaf and the four approved outline models), all
+audio metadata/37 recordings and seven earlier video proposals are preserved.
+The two obsolete direction proposals disappear. Older revision-3 attempts
+remain stored and do not complete revision 4; adult previews do not count as
+student completions.
+
+This records owner approval, without inventing a teacher assessment or a
+physical-device review. See [approval verification](FA_PA_DIRECTION_APPROVAL.md)
+and [the preceding review stage](FA_PA_DIRECTION_REVIEW.md).
+
+## Approval of four-letter outlines 2026-10-06
+
+The project owner explicitly wrote **“yes I approve”** in response to the request
+to approve **Dal 3, Zal 4, Ra 3 and Zai 4** for student lessons, after receiving
+the implementation, running-game review route and verification results.
+
+| Letter | ID | Approved revision |
+| --- | --- | ---: |
+| Dal (د) | dal | 3 |
+| Zal (ذ) | zal | 4 |
+| Ra (ر) | ra | 3 |
+| Zai (ز) | zai | 4 |
+
+Reviewer: **Project owner (Codex user; name not supplied)**.
+Date: **2026-10-06**, Asia/Kuala_Lumpur. Each `geometry.review` matches the
+identified revision, references this section and records `kind: projectOwner`.
+This approves the four catalogue-matched outlines and their reviewed tracing
+presentation, including tapered ends, diamond dots and detached number guidance.
+The exact reviewed revisions are promoted without further geometry edits or
+another version increment. Paths, checkpoints, directions, pen-lift policies,
+dot hit areas and movement order retain their reviewed values.
+
+The other 33 catalogue entries, all audio metadata/approval records, all 37
+recording files and the seven earlier video proposals are preserved. All 37
+lessons remain student-ready; these four now use the approved outline appearance.
+Older saved attempts retain their original revisions and are not credited as
+completion of the newer model. The four obsolete pending comparison cards disappear.
+
+This records project-owner approval, without inferring a named teacher assessment
+or physical-device/pupil review. See [approval verification](FOUR_LETTER_TRACE_APPEARANCE_APPROVAL.md)
+and the preceding [implementation verification](FOUR_LETTER_TRACE_APPEARANCE_VERIFICATION.md).
 
 ## Approval of glyph-matched models 2026-10-04
 

@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Asia/Kuala_Lumpur",
+  "reviewer": "Project owner (Codex user; name not supplied)",
+  "quote": "make it as a guide, if the guide still failed then use mine",
+  "scope": "Use the supplied Recording (4).m4a as the synthesis guide first; use its prepared complete first utterance as the game fallback if guidance is unsuccessful.",
+  "selectedRevision": 7,
+  "selectedSrc": "/audio/letters/alphabet/ga-name-v7.wav",
+  "selectedSha256": "bce006203bf9f9297679c4defcfd260777b4646682f1372744e6d37006bcc3c1",
+  "guidedAttemptRevision": 8,
+  "comparison": {
+    "method": "40-ms autocorrelation frames, 65-220 Hz search; approximate engineering measurements, not a pronunciation assessment.",
+    "referencePitchFramesHz": [
+      102.13,
+      123.08,
+      125,
+      134.83,
+      130.43,
+      115.94,
+      94.49,
+      94.49,
+      93.39
+    ],
+    "guidedPitchFramesHz": [
+      110.6,
+      98.36,
+      88.24,
+      76.92,
+      72.73
+    ],
+    "referenceMedianPitchHz": 115.94,
+    "guidedMedianPitchHz": 88.24,
+    "referenceActiveRegionApproxSeconds": [
+      1.12,
+      1.8
+    ],
+    "guidedActiveRegionApproxSeconds": [
+      0.84,
+      1.24
+    ],
+    "pronunciationReviewed": false,
+    "ownerRejectedThisAttempt": false,
+    "selection": "Use the conditionally authorised original recording. Guided output remains materially different in approximate pitch and word length; faithful pronunciation/tone cannot be established by these measurements.",
+    "authorisation": "Project owner: make it as a guide, if the guide still failed then use mine",
+    "fallbackRevision": 7
+  },
+  "syntheticPronunciationApproved": false,
+  "teacherAssessmentInferred": false
+}

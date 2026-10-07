@@ -1,0 +1,151 @@
+{
+  "passed": 16,
+  "skipped": 2,
+  "failed": 0,
+  "cases": [
+    {
+      "title": "Ha preview play 320: photo order, crossings and isolated completion",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha preview guided 768: photo order, crossings and isolated completion",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha preview precision 1280: photo order, crossings and isolated completion",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha demonstration follows all five phases without earning or replacing progress",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha student catalogue keeps its existing approved revision and audio",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha solo preview: independent unscored photo routes",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha duo preview: independent unscored photo routes",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha preview play 320: photo order, crossings and isolated completion",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha preview guided 768: photo order, crossings and isolated completion",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha preview precision 1280: photo order, crossings and isolated completion",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha demonstration follows all five phases without earning or replacing progress",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha student catalogue keeps its existing approved revision and audio",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha solo preview: independent unscored photo routes",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha duo preview: independent unscored photo routes",
+      "project": "webkit",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha native emulated touch: photo route across both joins",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha native emulated pen: photo route across both joins",
+      "project": "chromium",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Ha native emulated touch: photo route across both joins",
+      "project": "webkit",
+      "status": "skipped",
+      "results": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "Ha native emulated pen: photo route across both joins",
+      "project": "webkit",
+      "status": "skipped",
+      "results": [
+        "skipped"
+      ]
+    }
+  ]
+}

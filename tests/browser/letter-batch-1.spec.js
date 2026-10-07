@@ -48,10 +48,10 @@ for (const mode of ['play', 'guided', 'precision']) for (const letter of batch) 
   });
 }
 
-test('all 37 approved models appear in student entry and adult preview', async ({ page }) => {
+test('all 36 approved models appear in student entry and adult preview', async ({ page }) => {
   await page.goto('/'); await dismissSplash(page);
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
   await expect(page.getByRole('button', { name: 'Huruf tersedia', exact: true })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByRole('button', { name: 'Model tersedia', exact: true })).toHaveCount(0);
   await page.getByRole('button', { name: 'Semua huruf', exact: true }).click();
@@ -60,7 +60,7 @@ test('all 37 approved models appear in student entry and adult preview', async (
   await openTeacher(page);
   await expect(page.locator('.draft-model-card')).toHaveCount(draftCount);
   await expect(page.locator('.teacher-stat-grid > div').nth(1)).toContainText(String(modelCount));
-  await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('37');
+  await expect(page.locator('.teacher-stat-grid > div').nth(2)).toContainText('36');
   await page.getByRole('button', { name: 'Buka pratonton dewasa', exact: true }).click();
   await page.getByRole('button', { name: 'Model tersedia', exact: true }).click();
   await expect(page.locator('.letter-card')).toHaveCount(modelCount);
@@ -68,7 +68,7 @@ test('all 37 approved models appear in student entry and adult preview', async (
   await expect(page.locator('.card-caption').filter({ hasText: 'Draf · perlu semakan' })).toHaveCount(draftCount);
   await page.getByRole('button', { name: 'Tamatkan pratonton', exact: true }).click();
   await page.getByRole('button', { name: 'Jom mula', exact: true }).click();
-  await expect(page.locator('.letter-card:enabled')).toHaveCount(37);
+  await expect(page.locator('.letter-card:enabled')).toHaveCount(36);
   await page.getByRole('button', { name: 'Huruf permulaan', exact: true }).click();
   await expect(page.locator('.letter-card:enabled')).toHaveCount(12);
 });

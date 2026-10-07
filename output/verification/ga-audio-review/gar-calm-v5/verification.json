@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-06",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "src": "/audio/letters/review/ga-name-v5-gar-calm.mp3",
+  "sha256": "8c6d33318791ef5e44796c5c9f0dc308cf776689f15d82201d4e4dd93bda5bdd",
+  "metrics": {
+    "duration": 1.872,
+    "sampleRate": 48000,
+    "rms": 0.04856400792495118,
+    "peak": 0.5296449065208435,
+    "clippedFraction": 0
+  },
+  "playback": {
+    "starts": 2,
+    "ended": 2
+  },
+  "catalogueAndAll37ActiveRecordingsPreserved": true,
+  "pronunciationReviewed": false,
+  "scope": "Isolated revision-5 candidate decode, signal integrity and native Chromium play/replay; no pronunciation approval or student replacement.",
+  "server": {
+    "url": "http://127.0.0.1:5173/audio/letters/review/ga-name-v5-gar-calm.mp3",
+    "status": 200,
+    "contentType": "audio/mpeg",
+    "bytes": 11232
+  },
+  "previousCandidateComparison": {
+    "revision": 4,
+    "rms": 0.057587035806928075,
+    "currentRms": 0.04856400792495118,
+    "ratio": 0.8433149448388283,
+    "scope": "Signal level comparison only; owner must assess normal tone and pronunciation."
+  },
+  "hashes": {
+    "src/content/letters.json": "16a82ae539d7755ba132bf619aff11468264076aad543c15de758a2c0175884c",
+    "public/audio/letters/review/ga-name-v5-gar-calm.mp3": "8c6d33318791ef5e44796c5c9f0dc308cf776689f15d82201d4e4dd93bda5bdd",
+    "scripts/generate-ga-review.py": "5b05f606ee81cfef3c9f06772d20afc6b4ec2df296e4b9885d690c6dc9b912b2",
+    "scripts/verify-ga-audio-review.mjs": "43af88d63d4d5f871885b9bc8e732abeac2a5334cafae8d73481a29c24eb29c3",
+    "output/verification/ga-audio-review/gar-calm-v5/before-catalogue.json": "16a82ae539d7755ba132bf619aff11468264076aad543c15de758a2c0175884c",
+    "output/verification/ga-audio-review/gar-calm-v5/generation.json": "df538a7f3d904c833416e05d713464ece61138360ce19f6a983398ccb9c904ca",
+    "output/verification/ga-audio-review/review-v4.json": "c0c7c962ec9b9d454bc31becc5a2916ea4cf457f557969d186223aadcb95cf95"
+  }
+}

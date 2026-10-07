@@ -1,0 +1,8 @@
+{
+  "date": "2026-10-06",
+  "command": "node --input-type=module -",
+  "script": "output/verification/sin-syin-tails/coarse-touch-pen-check.txt",
+  "scope": "Actual candidate paths, touch and pen play profiles, 8/24/40-unit movement spacing, complete body and every dot; simulated matcher inputs, not physical-device testing.",
+  "checked": 12,
+  "failed": []
+}

@@ -38,7 +38,7 @@ for (const [width,height] of [[320,600],[360,640],[320,740],[390,844],[1024,768]
  });
 }
 for(const [width,height] of [[320,600],[360,640],[390,844],[1024,768],[768,1024],[1920,1080],[1280,800],[800,1280],[3840,2160]]) {
- test(`all 37 complete letter envelopes and guides fit at ${width}x${height}`,async({page,browserName})=>{
+ test(`all 36 complete letter envelopes and guides fit at ${width}x${height}`,async({page,browserName})=>{
   test.setTimeout(width >= 1900 ? 300000 : 120000);await page.setViewportSize({width,height});await welcome(page);await selectPractice(page,'play');await chooseLetter(page,'Alif');
   for(let i=0;i<letters.length;i++){
    await expect(page.getByRole('heading',{name:letters[i].labelMs,exact:true})).toBeVisible();await fitted(page);

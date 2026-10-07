@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-06",
+  "browserName": "chromium",
+  "src": "/audio/letters/alphabet/ga-name-v7.wav",
+  "metrics": {
+    "sha256": "bce006203bf9f9297679c4defcfd260777b4646682f1372744e6d37006bcc3c1",
+    "duration": 1.05,
+    "clipped": 0
+  },
+  "playback": {
+    "starts": 2,
+    "ended": 2
+  }
+}

@@ -1,0 +1,1358 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/ta-za-stems.spec.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=line,json"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ta-za-stems.spec.js",
+      "file": "ta-za-stems.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "tho play: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10193,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:43:34.668Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-play-close-bd279-and-preview-only-completion-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-play-close-bd279-and-preview-only-completion-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-0fc8194da480e921e2f1",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "tho guided: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9759,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:43:47.291Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-guided-clo-ea7e7-and-preview-only-completion-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-guided-clo-ea7e7-and-preview-only-completion-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-7f11d98e25bdbb836f6a",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "tho precision: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9845,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:43:58.406Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-precision--32c6f-and-preview-only-completion-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-precision--32c6f-and-preview-only-completion-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-82907d79dd2e0ffd36f5",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "za play: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9688,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:09.712Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-play-closer-971fc-and-preview-only-completion-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-play-closer-971fc-and-preview-only-completion-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-53f75f58049c80b5b609",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "za guided: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9763,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:20.950Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-guided-clos-6b2f2-and-preview-only-completion-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-guided-clos-6b2f2-and-preview-only-completion-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-caec9814a6df2083e507",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "za precision: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9863,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:32.311Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-precision-c-56bc6-and-preview-only-completion-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-precision-c-56bc6-and-preview-only-completion-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-0d782771f2c07e5f3eeb",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "tho: shifted stem demonstration preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7042,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:43.879Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-7ea0e1bd8f6c63a9fcd7",
+          "file": "ta-za-stems.spec.js",
+          "line": 47,
+          "column": 35
+        },
+        {
+          "title": "za: shifted stem demonstration preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6740,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:51.078Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-91e81d1725904224b977",
+          "file": "ta-za-stems.spec.js",
+          "line": 47,
+          "column": 35
+        },
+        {
+          "title": "review 320: both current comparisons retain shapes and pending revisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1415,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:57.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-2cff2fe96f486018c879",
+          "file": "ta-za-stems.spec.js",
+          "line": 54,
+          "column": 51
+        },
+        {
+          "title": "review 1280: both current comparisons retain shapes and pending revisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1606,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:59.263Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-56720c16c6ed608e9716",
+          "file": "ta-za-stems.spec.js",
+          "line": 54,
+          "column": 51
+        },
+        {
+          "title": "tho: normal students retain approved revision 3 while new shape awaits review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1427,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:45:00.883Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-03650990c9e5c71fc074",
+          "file": "ta-za-stems.spec.js",
+          "line": 64,
+          "column": 34
+        },
+        {
+          "title": "za: normal students retain approved revision 3 while new shape awaits review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1409,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:45:02.330Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-4b12d5aea8e935f09da5",
+          "file": "ta-za-stems.spec.js",
+          "line": 64,
+          "column": 34
+        },
+        {
+          "title": "tho play: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10460,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:43:34.683Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-play-close-bd279-and-preview-only-completion-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-play-close-bd279-and-preview-only-completion-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-2a978768a16897c108fa",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "tho guided: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 12898,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:43:46.906Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-guided-clo-ea7e7-and-preview-only-completion-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-guided-clo-ea7e7-and-preview-only-completion-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-382076c7411eb0e5b042",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "tho precision: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 12350,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  await expect(page.locator('.trace-number-guide[data-number=\"4\"]')).toHaveAttribute('data-anchor-x','387.6');\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:01.442Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-precision--32c6f-and-preview-only-completion-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-tho-precision--32c6f-and-preview-only-completion-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-d2cd0d97681dffa65a78",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "za play: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10170,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    14 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:15.106Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-play-closer-971fc-and-preview-only-completion-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-play-closer-971fc-and-preview-only-completion-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-00f6d13fd172650ea547",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "za guided: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 13015,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:26.466Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-guided-clos-6b2f2-and-preview-only-completion-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-guided-clos-6b2f2-and-preview-only-completion-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-0c111dc6102d5339d3df",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "za precision: closer stem, two movements and preview-only completion",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 13368,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                      "column": 69,
+                      "line": 38
+                    },
+                    "snippet": "  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                        "column": 69,
+                        "line": 38
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-number-guide[data-number=\"4\"]')\nExpected: \u001b[32m\"387.6\"\u001b[39m\nReceived: \u001b[31m\"387.6\u001b[7m000061035156\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-number-guide[data-number=\"4\"]') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-number-guide[data-number=\"4\"]')\u001b[22m\n\u001b[2m    13 × locator resolved to <g data-number=\"4\" data-kind=\"start\" data-anchor-x=\"387.6000061035156\" data-anchor-y=\"194.39999389648438\" class=\"trace-number-guide trace-number-guide--start is-current\">…</g>\u001b[22m\n\u001b[2m       - unexpected value \"387.6000061035156\"\u001b[22m\n\n\n  36 |  await expect(page.locator('.trace-number-guide[data-number=\"3\"]')).toHaveAttribute('data-anchor-x','310');\n  37 |  await draw(page,(await boardModels(page)).strokes[0]);await expect(page.locator('.book-completed')).toHaveCount(0);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','stroke-2');\n> 38 |  expect(+(await page.locator('.trace-number-guide[data-number=\"4\"]').getAttribute('data-anchor-x'))).toBeCloseTo(387.6,3);\n     |                                                                     ^\n  39 |  await capture(page,`${browserName}-${candidate.id}-${mode}-stem`);\n  40 |  await draw(page,(await boardModels(page)).strokes[1]);\n  41 |  if(candidate.geometry.dotTargets.length){await expect(page.locator('.book-completed')).toHaveCount(0);expect(await attempts(page)).toHaveLength(0);await tapDots(page);}\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js:38:69"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:40.691Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-precision-c-56bc6-and-preview-only-completion-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\ta-za-stems-za-precision-c-56bc6-and-preview-only-completion-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+                    "column": 69,
+                    "line": 38
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-edc3f774d36e3ec7d961",
+          "file": "ta-za-stems.spec.js",
+          "line": 33,
+          "column": 83
+        },
+        {
+          "title": "tho: shifted stem demonstration preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12682,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:44:55.433Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-425fb290197191f37dfc",
+          "file": "ta-za-stems.spec.js",
+          "line": 47,
+          "column": 35
+        },
+        {
+          "title": "za: shifted stem demonstration preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:45:08.253Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-8d23514b62f312f89dca",
+          "file": "ta-za-stems.spec.js",
+          "line": 47,
+          "column": 35
+        },
+        {
+          "title": "review 320: both current comparisons retain shapes and pending revisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:45:19.461Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-b8fe318f4c8083302977",
+          "file": "ta-za-stems.spec.js",
+          "line": 54,
+          "column": 51
+        },
+        {
+          "title": "review 1280: both current comparisons retain shapes and pending revisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4755,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:45:21.978Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-43134460d7b523267932",
+          "file": "ta-za-stems.spec.js",
+          "line": 54,
+          "column": 51
+        },
+        {
+          "title": "tho: normal students retain approved revision 3 while new shape awaits review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5672,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:45:26.745Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-27637fcc76922e88806e",
+          "file": "ta-za-stems.spec.js",
+          "line": 64,
+          "column": 34
+        },
+        {
+          "title": "za: normal students retain approved revision 3 while new shape awaits review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5385,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T15:45:32.431Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "626715753495cb7c6b82-41573dbc4eb85eaf2290",
+          "file": "ta-za-stems.spec.js",
+          "line": 64,
+          "column": 34
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T15:43:33.837Z",
+    "duration": 124128.993,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-06",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.12",
+  "src": "/audio/letters/review/ga-name-v6-garden-context.wav",
+  "sha256": "561b73605083295441a1c655052204d8e3f5e65c0634c26588f2abec65cde2d5",
+  "metrics": {
+    "duration": 0.515,
+    "sampleRate": 48000,
+    "rms": 0.06602491196629057,
+    "peak": 0.3032897114753723,
+    "clippedFraction": 0
+  },
+  "playback": {
+    "starts": 2,
+    "ended": 2
+  },
+  "catalogueAndAll37ActiveRecordingsPreserved": true,
+  "pronunciationReviewed": false,
+  "scope": "Isolated revision-6 candidate decode, signal integrity and native Chromium play/replay; no pronunciation approval or student replacement.",
+  "server": {
+    "url": "http://127.0.0.1:5173/audio/letters/review/ga-name-v6-garden-context.wav",
+    "status": 200,
+    "contentType": "audio/wav",
+    "bytes": 24764
+  },
+  "hashes": {
+    "src/content/letters.json": "16a82ae539d7755ba132bf619aff11468264076aad543c15de758a2c0175884c",
+    "public/audio/letters/review/ga-name-v6-garden-context.wav": "561b73605083295441a1c655052204d8e3f5e65c0634c26588f2abec65cde2d5",
+    "scripts/generate-ga-context.py": "502ec6a26177dc877573c105ad99985f66c69a288b543383c8ed21072bda12e4",
+    "scripts/author-ga-context.mjs": "02e3dccfb73a28404317d00c29f43ec7a9289c5b68bc8e5cc5985d1cb3693714",
+    "scripts/extract-ga-context.py": "300dec4462c13cfb57cb2d9c95473d3c996b6c60d4cb9087127c94ffe16819e8",
+    "scripts/verify-ga-audio-review.mjs": "2821eb8c15db25e04db4b45664ab6d2b0dc0f0b8ebc7c87a42da2deab8617878",
+    "output/verification/ga-audio-review/garden-context-v6/before-catalogue.json": "16a82ae539d7755ba132bf619aff11468264076aad543c15de758a2c0175884c",
+    "output/verification/ga-audio-review/garden-context-v6/source-generation.json": "be6bbf839638e66634d03c0a4597338bf30baf56d49a8b3db7f6a4134133b0c2",
+    "output/verification/ga-audio-review/garden-context-v6/generation.json": "ca2e3fe28c934895e7baa584cfd60da2101f39b46070a9e8a6ff3cc916f09770",
+    "output/verification/ga-audio-review/garden-context-v6/source-garden.mp3": "9e2896ccafb17aa6443992b8ab5dac3e0c6f5a4afb2b4e912fbfc0f32c283b34",
+    "output/verification/ga-audio-review/garden-context-v6/source-garden.wav": "6d780bb6955696e5f003c7a053e7b39b700e2818cb0b890175e0bbf2b44a1203",
+    "output/verification/ga-audio-review/garden-context-v6/boundaries.jsonl": "26c6bebb624ca657b5114ad1e8da3aa4e586a0c73921c57be6a0a16491cbebc9",
+    "output/verification/ga-audio-review/review-v5.json": "5e1734db3897628552ed07c612713c412e7c3d69522185474ae37f11608040d1"
+  }
+}

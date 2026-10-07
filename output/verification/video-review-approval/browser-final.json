@@ -1,0 +1,426 @@
+{
+  "description": "Combined distinct-case evidence: 48 unchanged initial cases plus 4 repaired review-screen cases; not a second full-suite run.",
+  "initial": "browser-initial.json",
+  "recheck": "browser-review-recheck.json",
+  "passed": 52,
+  "failed": 0,
+  "skipped": 0,
+  "cases": [
+    {
+      "key": "chromium: ta-marbuta play: approved whole letter, every dot and saved current revision",
+      "title": "ta-marbuta play: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: ta-marbuta guided: approved whole letter, every dot and saved current revision",
+      "title": "ta-marbuta guided: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: ta-marbuta precision: approved whole letter, every dot and saved current revision",
+      "title": "ta-marbuta precision: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: jim play: approved whole letter, every dot and saved current revision",
+      "title": "jim play: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: jim guided: approved whole letter, every dot and saved current revision",
+      "title": "jim guided: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: jim precision: approved whole letter, every dot and saved current revision",
+      "title": "jim precision: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: mim play: approved whole letter, every dot and saved current revision",
+      "title": "mim play: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: mim guided: approved whole letter, every dot and saved current revision",
+      "title": "mim guided: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: mim precision: approved whole letter, every dot and saved current revision",
+      "title": "mim precision: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: hamzah play: approved whole letter, every dot and saved current revision",
+      "title": "hamzah play: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: hamzah guided: approved whole letter, every dot and saved current revision",
+      "title": "hamzah guided: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: hamzah precision: approved whole letter, every dot and saved current revision",
+      "title": "hamzah precision: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: ta-marbuta: approved demonstration preserves earned progress",
+      "title": "ta-marbuta: approved demonstration preserves earned progress",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: jim: approved demonstration preserves earned progress",
+      "title": "jim: approved demonstration preserves earned progress",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: mim: approved demonstration preserves earned progress",
+      "title": "mim: approved demonstration preserves earned progress",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: hamzah: approved demonstration preserves earned progress",
+      "title": "hamzah: approved demonstration preserves earned progress",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: ta-marbuta solo: approved scored lanes complete independently",
+      "title": "ta-marbuta solo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: ta-marbuta duo: approved scored lanes complete independently",
+      "title": "ta-marbuta duo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: jim solo: approved scored lanes complete independently",
+      "title": "jim solo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: jim duo: approved scored lanes complete independently",
+      "title": "jim duo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: mim solo: approved scored lanes complete independently",
+      "title": "mim solo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: mim duo: approved scored lanes complete independently",
+      "title": "mim duo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: hamzah solo: approved scored lanes complete independently",
+      "title": "hamzah solo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: hamzah duo: approved scored lanes complete independently",
+      "title": "hamzah duo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: ta-marbuta play: approved whole letter, every dot and saved current revision",
+      "title": "ta-marbuta play: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: ta-marbuta guided: approved whole letter, every dot and saved current revision",
+      "title": "ta-marbuta guided: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: ta-marbuta precision: approved whole letter, every dot and saved current revision",
+      "title": "ta-marbuta precision: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: jim play: approved whole letter, every dot and saved current revision",
+      "title": "jim play: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: jim guided: approved whole letter, every dot and saved current revision",
+      "title": "jim guided: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: jim precision: approved whole letter, every dot and saved current revision",
+      "title": "jim precision: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: mim play: approved whole letter, every dot and saved current revision",
+      "title": "mim play: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: mim guided: approved whole letter, every dot and saved current revision",
+      "title": "mim guided: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: mim precision: approved whole letter, every dot and saved current revision",
+      "title": "mim precision: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: hamzah play: approved whole letter, every dot and saved current revision",
+      "title": "hamzah play: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: hamzah guided: approved whole letter, every dot and saved current revision",
+      "title": "hamzah guided: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: hamzah precision: approved whole letter, every dot and saved current revision",
+      "title": "hamzah precision: approved whole letter, every dot and saved current revision",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: ta-marbuta: approved demonstration preserves earned progress",
+      "title": "ta-marbuta: approved demonstration preserves earned progress",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: jim: approved demonstration preserves earned progress",
+      "title": "jim: approved demonstration preserves earned progress",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: mim: approved demonstration preserves earned progress",
+      "title": "mim: approved demonstration preserves earned progress",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: hamzah: approved demonstration preserves earned progress",
+      "title": "hamzah: approved demonstration preserves earned progress",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: ta-marbuta solo: approved scored lanes complete independently",
+      "title": "ta-marbuta solo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: ta-marbuta duo: approved scored lanes complete independently",
+      "title": "ta-marbuta duo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: jim solo: approved scored lanes complete independently",
+      "title": "jim solo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: jim duo: approved scored lanes complete independently",
+      "title": "jim duo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: mim solo: approved scored lanes complete independently",
+      "title": "mim solo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: mim duo: approved scored lanes complete independently",
+      "title": "mim duo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: hamzah solo: approved scored lanes complete independently",
+      "title": "hamzah solo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: hamzah duo: approved scored lanes complete independently",
+      "title": "hamzah duo: approved scored lanes complete independently",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: review 320: all matching approvals and no current proposals in any category",
+      "title": "review 320: all matching approvals and no current proposals in any category",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "chromium: review 768: all matching approvals and no current proposals in any category",
+      "title": "review 768: all matching approvals and no current proposals in any category",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: review 320: all matching approvals and no current proposals in any category",
+      "title": "review 320: all matching approvals and no current proposals in any category",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "key": "webkit: review 768: all matching approvals and no current proposals in any category",
+      "title": "review 768: all matching approvals and no current proposals in any category",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    }
+  ]
+}

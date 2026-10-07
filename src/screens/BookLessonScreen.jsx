@@ -12,6 +12,7 @@ import { FitDialog } from '../components/FitDialog.jsx';
 import { LetterModelGlyph } from '../components/LetterModelGlyph.jsx';
 import { MenuButton, StageSupport, TracingMenu } from '../components/TracingMenu.jsx';
 import { PlayFeedback } from '../components/PlayFeedback.jsx';
+import { voiceMessage } from '../audio/audioManager.js';
 
 const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, preview, adjustment, initialMode, initialActivity, disabled, savedComplete, pageNumber, nav, onTeacher, onComplete, onCopy, onActivity, onDiagnostic }, ref) {
   const [lesson, dispatch] = useReducer(traceReducer, { ...initialTraceState, mode: initialMode, activity: initialActivity });
@@ -24,6 +25,9 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
   const closeHelp = useCallback(() => setHelp(false), []);
   const closeNotice = useCallback(() => setNotice(''), []);
   const closeMenu = useCallback(() => setMenu(false), []);
+  useEffect(() => audio.subscribeResult(event => {
+    if (event.src === letter.audio.name.src && event.reason !== 'obsolete') setVoiceNote(voiceMessage(event));
+  }), [audio, letter]);
   useEffect(() => {
     const pause = () => { board.current?.cancel(); audio.stop(); if (lesson.demo) dispatch({ type: 'DEMO_END' }); };
     window.addEventListener('taman-jawi:pause', pause);
@@ -33,12 +37,12 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
     let second; const first = requestAnimationFrame(() => { second = requestAnimationFrame(() => setSettling(false)); });
     return () => { cancelAnimationFrame(first); cancelAnimationFrame(second); };
   }, []);
-  // The completion choices appear only after the final release has fully ended.
+  // Leave the finished tracing unobscured before showing its completion panel.
   useEffect(() => {
     if (!result) { setChoices(false); return; }
-    const timer = setTimeout(() => setChoices(true), 700);
+    const timer = setTimeout(() => setChoices(true), lesson.activity === 'copy' ? 700 : 1500);
     return () => clearTimeout(timer);
-  }, [result]);
+  }, [result, lesson.activity]);
   function saveCopy(force = false) {
     if (reported.current || (disabled && !force) || board.current?.isBusy()) return false;
     const ink = board.current.exportInk();
@@ -55,7 +59,7 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
   async function announce() {
     const played = await audio.play(letter.audio.name, { preview });
     if (played.reason === 'obsolete') return;
-    setVoiceNote(played.ok ? '' : 'Tekan Dengar untuk mendengar nama huruf.');
+    setVoiceNote(voiceMessage(played));
   }
   function finish(snapshot) {
     if (reported.current) return;
@@ -74,15 +78,18 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
       <TraceBoard ref={board} fitted stageOnly dotAssistance={assist && isPlay} letter={letter} mode={lesson.mode} activity={lesson.activity} attempt={lesson.attempt} demo={lesson.demo} adjustment={adjustment} enabled={!disabled && !settling && !result && !help && !menu} onDemoEnd={() => dispatch({ type: 'DEMO_END' })} onComplete={finish} onDiagnostic={onDiagnostic}
         renderSupport={support => <StageSupport {...support} assistance={assist && isPlay}/>}/>
       <MenuButton disabled={disabled || settling} onClick={openMenu}/>
-      <div className="stage-badge book-letter-heading" data-long-name={letter.labelMs.length > 7}><div className="play-letter-name"><span className="eyebrow">{pageNumber} · {label}</span><h1>{letter.labelMs}</h1></div>{savedComplete && <span className="book-sticker earned" aria-label="Siap dijejak"><Icon name="flower" size={22}/></span>}</div>
+      <div className="stage-badge book-letter-heading" data-long-name={letter.labelMs.length > 7}>
+        <div className="stage-letter-title"><div className="play-letter-name"><span className="eyebrow">{pageNumber} · {label}</span><h1>{letter.labelMs}</h1></div>{savedComplete && <span className="book-sticker earned" aria-label="Siap dijejak"><Icon name="flower" size={22}/></span>}</div>
+        <AudioControls key={letter.id} compact label="Dengar" ariaLabel={`Dengar nama ${letter.labelMs}`} disabled={disabled || settling || Boolean(result) || help || menu || lesson.demo} onAction={() => board.current?.cancel()} letter={letter} audio={audio} preview={preview}/>
+      </div>
       {copyMode && !result && <button className="button button-primary stage-save" disabled={disabled || settling} onClick={() => saveCopy()}><Icon name="check" size={18}/>Simpan untuk guru</button>}
-      {result && <div className="completion-overlay">
+      {result && (copyMode || choices) && <div className="completion-overlay">
         <span className="completion-sparkles" aria-hidden="true"><PlayFeedback complete/></span>
         <div className="completion-card book-reward" role="group" aria-label="Huruf siap" aria-live="polite">
           <ResultScreen embedded letter={letter} result={result} summaryOnly onAgain={retry} onCopy={() => onActivity(true)}/>
           {voiceNote && <p className="audio-notice" role="status">{voiceNote}</p>}
           <div className="completion-actions">
-            <AudioControls key={letter.id} compact disabled={!choices} letter={letter} audio={audio} preview={preview} label="Dengar"/>
+            <AudioControls key={letter.id} compact disabled={!choices} letter={letter} audio={audio} preview={preview} label="Dengar" onResult={played => { if (played.reason !== 'obsolete') setVoiceNote(voiceMessage(played)); }}/>
             <ResultScreen embedded actionsOnly letter={letter} result={result} choicesDisabled={!choices} onAgain={retry} onCopy={() => onActivity(true)}/>
             <button className="button button-primary" aria-label="Huruf seterusnya" disabled={!choices || disabled} onClick={nav.onNext}>Huruf seterusnya</button>
           </div>
@@ -90,8 +97,8 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
       </div>}
     </section>
     {menu && <TracingMenu sound={sound} onClose={closeMenu}>
-      <AudioControls key={letter.id} compact disabled={disabled || settling} onAction={() => board.current?.cancel()} letter={letter} audio={audio} preview={preview} label="Dengar"/>
       {!result && !copyMode && <button className="button button-soft" disabled={disabled || settling || lesson.demo} onClick={act(() => { if (!board.current?.isBusy()) dispatch({ type: 'DEMO' }); })}><Icon name="play" size={18}/>{isPlay ? 'Tunjuk cara' : 'Lihat cara'}</button>}
+      {isPlay && !result && <button className="button button-soft" disabled={disabled || settling || lesson.demo} onClick={act(() => board.current?.demonstrateSection())}>Tunjuk bahagian ini</button>}
       <button className="button button-outline" disabled={disabled || settling} onClick={retry}><Icon name="retry" size={18}/>Cuba lagi</button>
       <button className="button button-outline" aria-label="Kenal huruf dan panduan" disabled={disabled || settling} onClick={act(() => { board.current?.cancel(); audio.stop(); dispatch({ type: 'DEMO_END' }); setHelp(true); })}>Panduan</button>
       <button className="button button-primary" aria-label="Huruf seterusnya" disabled={nav.disabled} onClick={act(nav.onNext)}>Huruf seterusnya</button>

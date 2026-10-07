@@ -2,3 +2,20 @@
 .card-glyph .letter-model-glyph { display: block; width: 100%; height: 100%; }
 .result-glyph > .letter-model-glyph { width: 85%; height: 85%; }
 .draft-model-card > .letter-model-glyph { width: 100%; height: 110px; }
+.reference-outline { fill: var(--trace-route); stroke: none; }
+.outline-progress .outline-ink { fill: var(--trace-accepted); stroke: var(--trace-accepted); stroke-width: .4; stroke-linejoin: round; }
+.outline-progress[data-whole-body="true"] .outline-ink { stroke-width: 1; }
+.outline-demonstration[data-whole-body="true"] .outline-ink { stroke: var(--primary); stroke-width: 1; stroke-linejoin: round; }
+.outline-demonstration .outline-ink, .demonstration-ink.outline-dot { fill: var(--primary); stroke: none; }
+.validated-dot.outline-dot { stroke: none; }
+.outline-direction { opacity: .6; }
+.outline-target { fill: none; stroke: currentColor; stroke-width: 2; }
+.review-scope { width: 100%; min-height: 40px; padding: 4px 12px; flex-shrink: 0; }
+.comparison-catalogue { display: inline-block; font-size: 40px; margin-left: 12px; vertical-align: middle; line-height: 1; }
+.outline-result { color: var(--trace-accepted); }
+@media(max-width:600px) and (max-height:650px) {
+  .video-model-review { gap: 2px; }
+  .model-comparison-pair > div { gap: 2px; }
+  .video-model-review h2 { display: none; }
+  .comparison-catalogue { font-size: 30px; margin-left: 6px; }
+}

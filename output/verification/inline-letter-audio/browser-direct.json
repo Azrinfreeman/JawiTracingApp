@@ -1,0 +1,1099 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/inline-letter-audio.spec.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=line,json",
+      "--output=output/verification/inline-letter-audio/test-direct"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/inline-letter-audio/test-direct",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/inline-letter-audio/test-direct",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/inline-letter-audio/test-direct",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "inline-letter-audio.spec.js",
+      "file": "inline-letter-audio.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all 37 letters: direct current sound and clear badge 320x600",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 17372,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"below\": true,\u001b[22m\n\u001b[32m-   \"clear\": true,\u001b[39m\n\u001b[31m+   \"clear\": false,\u001b[39m\n\u001b[2m    \"inside\": true,\u001b[22m\n\u001b[2m    \"scroll\": true,\u001b[22m\n\u001b[2m    \"touch\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"below\": true,\u001b[22m\n\u001b[32m-   \"clear\": true,\u001b[39m\n\u001b[31m+   \"clear\": false,\u001b[39m\n\u001b[2m    \"inside\": true,\u001b[22m\n\u001b[2m    \"scroll\": true,\u001b[22m\n\u001b[2m    \"touch\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at layout (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:19:20)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:26:49",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                      "column": 20,
+                      "line": 19
+                    },
+                    "snippet": "  17 |     return {below:b.top>=h.bottom,touch:b.width>=48&&b.height>=48,inside:b.left>=0&&b.right<=innerWidth&&b.bottom<=innerHeight,\n  18 |       clear:labels.every(n=>!overlap(n.getBoundingClientRect(),container)),scroll:document.documentElement.scrollWidth<=innerWidth};\n> 19 |   });expect(state).toEqual({below:true,touch:true,inside:true,clear:true,scroll:true});\n     |                    ^\n  20 | }\n  21 | for(const [width,height]of [[320,600],[768,1024]])test(`all 37 letters: direct current sound and clear badge ${width}x${height}`,async({page,browserName})=>{\n  22 |   test.setTimeout(240000);await page.setViewportSize({width,height});await instrument(page);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                        "column": 20,
+                        "line": 19
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"below\": true,\u001b[22m\n\u001b[32m-   \"clear\": true,\u001b[39m\n\u001b[31m+   \"clear\": false,\u001b[39m\n\u001b[2m    \"inside\": true,\u001b[22m\n\u001b[2m    \"scroll\": true,\u001b[22m\n\u001b[2m    \"touch\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  17 |     return {below:b.top>=h.bottom,touch:b.width>=48&&b.height>=48,inside:b.left>=0&&b.right<=innerWidth&&b.bottom<=innerHeight,\n  18 |       clear:labels.every(n=>!overlap(n.getBoundingClientRect(),container)),scroll:document.documentElement.scrollWidth<=innerWidth};\n> 19 |   });expect(state).toEqual({below:true,touch:true,inside:true,clear:true,scroll:true});\n     |                    ^\n  20 | }\n  21 | for(const [width,height]of [[320,600],[768,1024]])test(`all 37 letters: direct current sound and clear badge ${width}x${height}`,async({page,browserName})=>{\n  22 |   test.setTimeout(240000);await page.setViewportSize({width,height});await instrument(page);\n    at layout (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:19:20)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:26:49"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:08:23.317Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\inline-letter-audio\\test-direct\\inline-letter-audio-all-37-d64a8-und-and-clear-badge-320x600-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\inline-letter-audio\\test-direct\\inline-letter-audio-all-37-d64a8-und-and-clear-badge-320x600-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                    "column": 20,
+                    "line": 19
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-5d89193fb2ba4c8d161a",
+          "file": "inline-letter-audio.spec.js",
+          "line": 21,
+          "column": 51
+        },
+        {
+          "title": "all 37 letters: direct current sound and clear badge 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18934,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:08:42.318Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-bcb564671dd218cef8cf",
+          "file": "inline-letter-audio.spec.js",
+          "line": 21,
+          "column": 51
+        },
+        {
+          "title": "keyboard replay preserves partial tracing, switches with the page and obeys mute",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2129,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[{\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": true, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[{\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": true, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:44:60",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                      "column": 60,
+                      "line": 44
+                    },
+                    "snippet": "  42 |   expect(await voices(page)).toHaveLength(2);expect(await page.locator('.play-fill').first().getAttribute('data-measured-frontier')).toBe(frontier);\n  43 |   await menuAction(page,'Senyapkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();\n> 44 |   await stageHear(page).click();expect(await voices(page)).toHaveLength(2);\n     |                                                            ^\n  45 |   await menuAction(page,'Hidupkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();\n  46 |   await menuAction(page,'Huruf seterusnya');await expect(stageHear(page)).toHaveAccessibleName('Dengar nama Pa');await stageHear(page).click();\n  47 |   expect((await voices(page)).at(-1).src).toBe(letters.find(l=>l.id==='pa').audio.name.src);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                        "column": 60,
+                        "line": 44
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[{\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": true, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}]\u001b[39m\n\n  42 |   expect(await voices(page)).toHaveLength(2);expect(await page.locator('.play-fill').first().getAttribute('data-measured-frontier')).toBe(frontier);\n  43 |   await menuAction(page,'Senyapkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();\n> 44 |   await stageHear(page).click();expect(await voices(page)).toHaveLength(2);\n     |                                                            ^\n  45 |   await menuAction(page,'Hidupkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();\n  46 |   await menuAction(page,'Huruf seterusnya');await expect(stageHear(page)).toHaveAccessibleName('Dengar nama Pa');await stageHear(page).click();\n  47 |   expect((await voices(page)).at(-1).src).toBe(letters.find(l=>l.id==='pa').audio.name.src);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:44:60"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:01.372Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\inline-letter-audio\\test-direct\\inline-letter-audio-keyboa-2f72f-ith-the-page-and-obeys-mute-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\inline-letter-audio\\test-direct\\inline-letter-audio-keyboa-2f72f-ith-the-page-and-obeys-mute-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                    "column": 60,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-e224954b7261264c68ff",
+          "file": "inline-letter-audio.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "guided: direct sound is available without recording a completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3836,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:04.807Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-fac5334c131535636102",
+          "file": "inline-letter-audio.spec.js",
+          "line": 49,
+          "column": 42
+        },
+        {
+          "title": "precision: direct sound is available without recording a completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1135,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:08.766Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-41481d58f7426de39667",
+          "file": "inline-letter-audio.spec.js",
+          "line": 49,
+          "column": 42
+        },
+        {
+          "title": "copying retains the direct sound button and its freehand ink",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3744,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:09.916Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-a6bd338aa2941b838856",
+          "file": "inline-letter-audio.spec.js",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "a failed direct playback has the existing recovery dialog",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 903,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:13.672Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-9ee0522976ac8b187e3a",
+          "file": "inline-letter-audio.spec.js",
+          "line": 60,
+          "column": 1
+        },
+        {
+          "title": "solo: sound beneath the current letter during readiness and racing 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 858,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:14.585Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-7bcc86cd873f71fd80cc",
+          "file": "inline-letter-audio.spec.js",
+          "line": 66,
+          "column": 84
+        },
+        {
+          "title": "solo: sound beneath the current letter during readiness and racing 1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 974,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:15.456Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-3d90a15e1c993b33fef5",
+          "file": "inline-letter-audio.spec.js",
+          "line": 66,
+          "column": 84
+        },
+        {
+          "title": "duo: sound beneath the current letter during readiness and racing 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:16.442Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-db014f7fcc984f975a85",
+          "file": "inline-letter-audio.spec.js",
+          "line": 66,
+          "column": 84
+        },
+        {
+          "title": "duo: sound beneath the current letter during readiness and racing 1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1043,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:17.472Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-ea49131c520079693020",
+          "file": "inline-letter-audio.spec.js",
+          "line": 66,
+          "column": 84
+        },
+        {
+          "title": "actual Chromium direct playback starts the selected recording",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 943,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:18.527Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-d476acd094a88d13441c",
+          "file": "inline-letter-audio.spec.js",
+          "line": 84,
+          "column": 1
+        },
+        {
+          "title": "all 37 letters: direct current sound and clear badge 320x600",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 50327,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"below\": true,\u001b[22m\n\u001b[32m-   \"clear\": true,\u001b[39m\n\u001b[31m+   \"clear\": false,\u001b[39m\n\u001b[2m    \"inside\": true,\u001b[22m\n\u001b[2m    \"scroll\": true,\u001b[22m\n\u001b[2m    \"touch\": true,\u001b[22m\n\u001b[2m  }\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"below\": true,\u001b[22m\n\u001b[32m-   \"clear\": true,\u001b[39m\n\u001b[31m+   \"clear\": false,\u001b[39m\n\u001b[2m    \"inside\": true,\u001b[22m\n\u001b[2m    \"scroll\": true,\u001b[22m\n\u001b[2m    \"touch\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n    at layout (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:19:20)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:26:49",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                      "column": 20,
+                      "line": 19
+                    },
+                    "snippet": "  17 |     return {below:b.top>=h.bottom,touch:b.width>=48&&b.height>=48,inside:b.left>=0&&b.right<=innerWidth&&b.bottom<=innerHeight,\n  18 |       clear:labels.every(n=>!overlap(n.getBoundingClientRect(),container)),scroll:document.documentElement.scrollWidth<=innerWidth};\n> 19 |   });expect(state).toEqual({below:true,touch:true,inside:true,clear:true,scroll:true});\n     |                    ^\n  20 | }\n  21 | for(const [width,height]of [[320,600],[768,1024]])test(`all 37 letters: direct current sound and clear badge ${width}x${height}`,async({page,browserName})=>{\n  22 |   test.setTimeout(240000);await page.setViewportSize({width,height});await instrument(page);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                        "column": 20,
+                        "line": 19
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Object {\u001b[22m\n\u001b[2m    \"below\": true,\u001b[22m\n\u001b[32m-   \"clear\": true,\u001b[39m\n\u001b[31m+   \"clear\": false,\u001b[39m\n\u001b[2m    \"inside\": true,\u001b[22m\n\u001b[2m    \"scroll\": true,\u001b[22m\n\u001b[2m    \"touch\": true,\u001b[22m\n\u001b[2m  }\u001b[22m\n\n  17 |     return {below:b.top>=h.bottom,touch:b.width>=48&&b.height>=48,inside:b.left>=0&&b.right<=innerWidth&&b.bottom<=innerHeight,\n  18 |       clear:labels.every(n=>!overlap(n.getBoundingClientRect(),container)),scroll:document.documentElement.scrollWidth<=innerWidth};\n> 19 |   });expect(state).toEqual({below:true,touch:true,inside:true,clear:true,scroll:true});\n     |                    ^\n  20 | }\n  21 | for(const [width,height]of [[320,600],[768,1024]])test(`all 37 letters: direct current sound and clear badge ${width}x${height}`,async({page,browserName})=>{\n  22 |   test.setTimeout(240000);await page.setViewportSize({width,height});await instrument(page);\n    at layout (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:19:20)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:26:49"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:08:23.317Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\inline-letter-audio\\test-direct\\inline-letter-audio-all-37-d64a8-und-and-clear-badge-320x600-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\inline-letter-audio\\test-direct\\inline-letter-audio-all-37-d64a8-und-and-clear-badge-320x600-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                    "column": 20,
+                    "line": 19
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-342ddc1057bbbc7a6128",
+          "file": "inline-letter-audio.spec.js",
+          "line": 21,
+          "column": 51
+        },
+        {
+          "title": "all 37 letters: direct current sound and clear badge 768x1024",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 102781,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:09:15.226Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-46e005570c977ece0814",
+          "file": "inline-letter-audio.spec.js",
+          "line": 21,
+          "column": 51
+        },
+        {
+          "title": "keyboard replay preserves partial tracing, switches with the page and obeys mute",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 6783,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[{\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": true, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[{\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": true, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}]\u001b[39m\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:44:60",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                      "column": 60,
+                      "line": 44
+                    },
+                    "snippet": "  42 |   expect(await voices(page)).toHaveLength(2);expect(await page.locator('.play-fill').first().getAttribute('data-measured-frontier')).toBe(frontier);\n  43 |   await menuAction(page,'Senyapkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();\n> 44 |   await stageHear(page).click();expect(await voices(page)).toHaveLength(2);\n     |                                                            ^\n  45 |   await menuAction(page,'Hidupkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();\n  46 |   await menuAction(page,'Huruf seterusnya');await expect(stageHear(page)).toHaveAccessibleName('Dengar nama Pa');await stageHear(page).click();\n  47 |   expect((await voices(page)).at(-1).src).toBe(letters.find(l=>l.id==='pa').audio.name.src);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                        "column": 60,
+                        "line": 44
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m2\u001b[39m\nReceived length: \u001b[31m3\u001b[39m\nReceived array:  \u001b[31m[{\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": false, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}, {\"music\": false, \"muted\": true, \"prime\": false, \"src\": \"/audio/letters/alphabet/fa-name-v2.mp3\", \"volume\": 0.8}]\u001b[39m\n\n  42 |   expect(await voices(page)).toHaveLength(2);expect(await page.locator('.play-fill').first().getAttribute('data-measured-frontier')).toBe(frontier);\n  43 |   await menuAction(page,'Senyapkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();\n> 44 |   await stageHear(page).click();expect(await voices(page)).toHaveLength(2);\n     |                                                            ^\n  45 |   await menuAction(page,'Hidupkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();\n  46 |   await menuAction(page,'Huruf seterusnya');await expect(stageHear(page)).toHaveAccessibleName('Dengar nama Pa');await stageHear(page).click();\n  47 |   expect((await voices(page)).at(-1).src).toBe(letters.find(l=>l.id==='pa').audio.name.src);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js:44:60"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:10:58.096Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\inline-letter-audio\\test-direct\\inline-letter-audio-keyboa-2f72f-ith-the-page-and-obeys-mute-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\inline-letter-audio\\test-direct\\inline-letter-audio-keyboa-2f72f-ith-the-page-and-obeys-mute-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                    "column": 60,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-d1730603b23b1f83f890",
+          "file": "inline-letter-audio.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "guided: direct sound is available without recording a completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4305,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:05.653Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-43fd032d02d94cc38896",
+          "file": "inline-letter-audio.spec.js",
+          "line": 49,
+          "column": 42
+        },
+        {
+          "title": "precision: direct sound is available without recording a completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4418,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:10.033Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-9ab016cd08a4f4ecd92d",
+          "file": "inline-letter-audio.spec.js",
+          "line": 49,
+          "column": 42
+        },
+        {
+          "title": "copying retains the direct sound button and its freehand ink",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9042,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:14.459Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-e2da202f14aefd87b204",
+          "file": "inline-letter-audio.spec.js",
+          "line": 53,
+          "column": 1
+        },
+        {
+          "title": "a failed direct playback has the existing recovery dialog",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4595,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:23.510Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-de886d929f2e48498383",
+          "file": "inline-letter-audio.spec.js",
+          "line": 60,
+          "column": 1
+        },
+        {
+          "title": "solo: sound beneath the current letter during readiness and racing 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2641,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:28.116Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-0e2fc1353a8294373c72",
+          "file": "inline-letter-audio.spec.js",
+          "line": 66,
+          "column": 84
+        },
+        {
+          "title": "solo: sound beneath the current letter during readiness and racing 1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5973,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:30.768Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-b544176df6332f03f7e4",
+          "file": "inline-letter-audio.spec.js",
+          "line": 66,
+          "column": 84
+        },
+        {
+          "title": "duo: sound beneath the current letter during readiness and racing 390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3485,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:36.757Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-5073509893964ae78281",
+          "file": "inline-letter-audio.spec.js",
+          "line": 66,
+          "column": 84
+        },
+        {
+          "title": "duo: sound beneath the current letter during readiness and racing 1280",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6465,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:40.261Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-d8b51b4bb5b65ad9d62e",
+          "file": "inline-letter-audio.spec.js",
+          "line": 66,
+          "column": 84
+        },
+        {
+          "title": "actual Chromium direct playback starts the selected recording",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Recorded Windows WebKit native codec limitation; controlled playback checks cover its UI.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                    "line": 85,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 194,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T03:11:46.736Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Recorded Windows WebKit native codec limitation; controlled playback checks cover its UI.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+                        "line": 85,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "c6f2b2c9bc368bdfd824-87333814e102fd095323",
+          "file": "inline-letter-audio.spec.js",
+          "line": 84,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T03:08:22.742Z",
+    "duration": 204780.78,
+    "expected": 19,
+    "skipped": 1,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,4470 @@
+{
+  "checks": 296,
+  "failures": [
+    {
+      "letter": "sad",
+      "type": "touch",
+      "interval": 32,
+      "phase": "awaitingStart",
+      "progress": {
+        "stroke-1": 776.6320284782661,
+        "stroke-2": 103.96099027256038
+      },
+      "pending": [
+        "stroke-2"
+      ]
+    },
+    {
+      "letter": "sad",
+      "type": "pen",
+      "interval": 32,
+      "phase": "awaitingStart",
+      "progress": {
+        "stroke-1": 776.6320284782661,
+        "stroke-2": 103.96099027256038
+      },
+      "pending": [
+        "stroke-2"
+      ]
+    },
+    {
+      "letter": "dad",
+      "type": "touch",
+      "interval": 32,
+      "phase": "awaitingStart",
+      "progress": {
+        "stroke-1": 776.6320284782661,
+        "stroke-2": 103.96099027256038
+      },
+      "pending": [
+        "stroke-2"
+      ]
+    },
+    {
+      "letter": "dad",
+      "type": "pen",
+      "interval": 32,
+      "phase": "awaitingStart",
+      "progress": {
+        "stroke-1": 776.6320284782661,
+        "stroke-2": 103.96099027256038
+      },
+      "pending": [
+        "stroke-2"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "alif",
+      "revision": 1,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 510,
+                "y": 175
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 506.85939209689934,
+                "y": 485.11712709975876
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 520,
+                "y": 795
+              }
+            }
+          ],
+          "length": 620.3708629407246
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ba",
+      "revision": 1,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 790,
+                "y": 405
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 509.6817223955295,
+                "y": 699.8925157940389
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 195,
+                "y": 445
+              }
+            }
+          ],
+          "length": 951.6130120418088
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Siap",
+              "anchor": {
+                "x": 500,
+                "y": 810
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ta",
+      "revision": 1,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 790,
+                "y": 405
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 509.6817223955295,
+                "y": 699.8925157940389
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 195,
+                "y": 445
+              }
+            }
+          ],
+          "length": 951.6130120418088
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Titik",
+              "anchor": {
+                "x": 430,
+                "y": 300
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 5,
+              "label": "Siap",
+              "anchor": {
+                "x": 570,
+                "y": 300
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ta-marbuta",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 487.5,
+                "y": 440.3999938964844
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 493.1306498339212,
+                "y": 659.093132121804
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 505.1000061035156,
+                "y": 469
+              }
+            }
+          ],
+          "length": 563.2051720694685
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Titik",
+              "anchor": {
+                "x": 543,
+                "y": 336
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 5,
+              "label": "Siap",
+              "anchor": {
+                "x": 444,
+                "y": 346
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [
+        {
+          "part": "stroke-1",
+          "numbers": [
+            1,
+            3
+          ],
+          "distance": 33.58155094638898
+        }
+      ],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "sa",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 790,
+                "y": 405
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 509.6817223955295,
+                "y": 699.8925157940389
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 195,
+                "y": 445
+              }
+            }
+          ],
+          "length": 951.6130120418088
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Titik",
+              "anchor": {
+                "x": 570,
+                "y": 300
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 5,
+              "label": "Titik",
+              "anchor": {
+                "x": 430,
+                "y": 300
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-3",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 6,
+              "label": "Siap",
+              "anchor": {
+                "x": 500,
+                "y": 180
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "jim",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 377.6000061035156,
+                "y": 387
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 539.0886620662598,
+                "y": 361.0720958431172
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 710.9000244140625,
+                "y": 365
+              }
+            }
+          ],
+          "length": 369.9611129373881
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 571.2000122070312,
+                "y": 389.29998779296875
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 409.5274545607804,
+                "y": 655.1932744084297
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 721.9000244140625,
+                "y": 695.0999755859375
+              }
+            }
+          ],
+          "length": 686.5553703894625
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Siap",
+              "anchor": {
+                "x": 565,
+                "y": 570
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 141.79768269398167
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ca",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 377.6000061035156,
+                "y": 387
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 539.0886620662598,
+                "y": 361.0720958431172
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 710.9000244140625,
+                "y": 365
+              }
+            }
+          ],
+          "length": 369.9611129373881
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 571.2000122070312,
+                "y": 389.29998779296875
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 409.5274545607804,
+                "y": 655.1932744084297
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 721.9000244140625,
+                "y": 695.0999755859375
+              }
+            }
+          ],
+          "length": 686.5553703894625
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Titik",
+              "anchor": {
+                "x": 613,
+                "y": 552
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 8,
+              "label": "Titik",
+              "anchor": {
+                "x": 519,
+                "y": 561
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-3",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 9,
+              "label": "Siap",
+              "anchor": {
+                "x": 567,
+                "y": 611
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 141.79768269398167
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ha-pedat",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 377.6000061035156,
+                "y": 387
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 539.0886620662598,
+                "y": 361.0720958431172
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 710.9000244140625,
+                "y": 365
+              }
+            }
+          ],
+          "length": 369.9611129373881
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 571.2000122070312,
+                "y": 389.29998779296875
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 409.5274545607804,
+                "y": 655.1932744084297
+              }
+            },
+            {
+              "n": 6,
+              "label": "Siap",
+              "anchor": {
+                "x": 721.9000244140625,
+                "y": 695.0999755859375
+              }
+            }
+          ],
+          "length": 686.5553703894625
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 141.79768269398167
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "kha",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 377.6000061035156,
+                "y": 387.5
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 539.0886620662598,
+                "y": 361.5720958431172
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 710.9000244140625,
+                "y": 365.5
+              }
+            }
+          ],
+          "length": 369.9611129373881
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 571.2000122070312,
+                "y": 389.70001220703125
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 409.5334213059116,
+                "y": 655.6194279005148
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 721.9000244140625,
+                "y": 695.5
+              }
+            }
+          ],
+          "length": 686.5845072556075
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Siap",
+              "anchor": {
+                "x": 542,
+                "y": 229
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 141.7805840073497
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "dal",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 553.5,
+                "y": 321
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 599.2221385618998,
+                "y": 510.23311186119946
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 413.79998779296875,
+                "y": 532.2999877929688
+              }
+            }
+          ],
+          "length": 406.48020729433523
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "zal",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 553.5,
+                "y": 329.5
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 599.2014810953152,
+                "y": 518.6940287039636
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 413.79998779296875,
+                "y": 540.7000122070312
+              }
+            }
+          ],
+          "length": 406.4149469023101
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Siap",
+              "anchor": {
+                "x": 518,
+                "y": 238
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ra",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 583.4000244140625,
+                "y": 393.1000061035156
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 610.395495884349,
+                "y": 624.3290589468152
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 410.70001220703125,
+                "y": 707.7000122070312
+              }
+            }
+          ],
+          "length": 484.6867601273408
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "zai",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 583.4000244140625,
+                "y": 380.5
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 610.4004452296297,
+                "y": 611.7162517668785
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 410.70001220703125,
+                "y": 695.0999755859375
+              }
+            }
+          ],
+          "length": 484.6593149618365
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Siap",
+              "anchor": {
+                "x": 547,
+                "y": 293
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "sin",
+      "revision": 1,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 825,
+                "y": 360
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 535.307240015361,
+                "y": 422.1564379867887
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 185,
+                "y": 550
+              }
+            }
+          ],
+          "length": 1411.580260457004
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "syin",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 825,
+                "y": 360
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 535.307240015361,
+                "y": 422.1564379867887
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 185,
+                "y": 550
+              }
+            }
+          ],
+          "length": 1411.580260457004
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Titik",
+              "anchor": {
+                "x": 760,
+                "y": 250
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 5,
+              "label": "Titik",
+              "anchor": {
+                "x": 620,
+                "y": 250
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-3",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 6,
+              "label": "Siap",
+              "anchor": {
+                "x": 690,
+                "y": 130
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "sad",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 565,
+                "y": 510
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 839.3318267193652,
+                "y": 377.8346235853298
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 565,
+                "y": 510
+              }
+            }
+          ],
+          "length": 776.6320284782661
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 565,
+                "y": 510
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 458.0808066863963,
+                "y": 689.6135152674051
+              }
+            },
+            {
+              "n": 6,
+              "label": "Siap",
+              "anchor": {
+                "x": 185,
+                "y": 550
+              }
+            }
+          ],
+          "length": 824.9281532119116
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 0
+        }
+      ],
+      "closeBadges": [
+        {
+          "part": "stroke-1",
+          "numbers": [
+            1,
+            3
+          ],
+          "distance": 0
+        }
+      ],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "awaitingStart",
+          "pauseEpisodes": 1
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "awaitingStart",
+          "pauseEpisodes": 1
+        }
+      ]
+    },
+    {
+      "id": "dad",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 565,
+                "y": 510
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 839.3318267193652,
+                "y": 377.8346235853298
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 565,
+                "y": 510
+              }
+            }
+          ],
+          "length": 776.6320284782661
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 565,
+                "y": 510
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 458.0808066863963,
+                "y": 689.6135152674051
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 185,
+                "y": 550
+              }
+            }
+          ],
+          "length": 824.9281532119116
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Siap",
+              "anchor": {
+                "x": 735,
+                "y": 230
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 0
+        }
+      ],
+      "closeBadges": [
+        {
+          "part": "stroke-1",
+          "numbers": [
+            1,
+            3
+          ],
+          "distance": 0
+        }
+      ],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "awaitingStart",
+          "pauseEpisodes": 2
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "awaitingStart",
+          "pauseEpisodes": 2
+        }
+      ]
+    },
+    {
+      "id": "tho",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 465.20001220703125,
+                "y": 517.7999877929688
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 693.1646004827551,
+                "y": 568.785171495716
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 310,
+                "y": 575
+              }
+            }
+          ],
+          "length": 791.6622120694744
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 447.6000061035156,
+                "y": 194.39999389648438
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 445.3266885101877,
+                "y": 403.3360790909244
+              }
+            },
+            {
+              "n": 6,
+              "label": "Siap",
+              "anchor": {
+                "x": 417.8999938964844,
+                "y": 603.5999755859375
+              }
+            }
+          ],
+          "length": 426.5539609242843
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 404.7099286225674
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "za",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 465.20001220703125,
+                "y": 517.7999877929688
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 693.1646004827551,
+                "y": 568.785171495716
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 310,
+                "y": 575
+              }
+            }
+          ],
+          "length": 791.6622120694744
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 447.6000061035156,
+                "y": 194.39999389648438
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 445.3266885101877,
+                "y": 403.3360790909244
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 417.8999938964844,
+                "y": 603.5999755859375
+              }
+            }
+          ],
+          "length": 426.5539609242843
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Siap",
+              "anchor": {
+                "x": 612,
+                "y": 297
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 404.7099286225674
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ain",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 551.5,
+                "y": 357.1000061035156
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 401.36576341025653,
+                "y": 455.99991906167685
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 624.0999755859375,
+                "y": 444
+              }
+            }
+          ],
+          "length": 505.1874951738305
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 477.79998779296875,
+                "y": 505.6000061035156
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 459.23925448218756,
+                "y": 746.151795120613
+              }
+            },
+            {
+              "n": 6,
+              "label": "Siap",
+              "anchor": {
+                "x": 729.7000122070312,
+                "y": 737.7000122070312
+              }
+            }
+          ],
+          "length": 558.7030431622879
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 158.7395577043604
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ghain",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 551.5,
+                "y": 362.8999938964844
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 401.3538065141338,
+                "y": 461.77789203572
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 624.0999755859375,
+                "y": 449.79998779296875
+              }
+            }
+          ],
+          "length": 505.2361290883939
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 477.79998779296875,
+                "y": 511.3999938964844
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 459.2248622808454,
+                "y": 751.9335872896655
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 729.7000122070312,
+                "y": 743.5
+              }
+            }
+          ],
+          "length": 558.6607656930219
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Siap",
+              "anchor": {
+                "x": 468,
+                "y": 220
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 158.7395577043604
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "nga",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 551.5,
+                "y": 333.29998779296875
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 401.3538204894801,
+                "y": 432.1778840953148
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 624.0999755859375,
+                "y": 420.20001220703125
+              }
+            }
+          ],
+          "length": 505.2361351834743
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 477.79998779296875,
+                "y": 481.79998779296875
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 459.224798189996,
+                "y": 722.3336892296226
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 729.7000122070312,
+                "y": 713.9000244140625
+              }
+            }
+          ],
+          "length": 558.6607111454716
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Titik",
+              "anchor": {
+                "x": 519,
+                "y": 199
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 8,
+              "label": "Titik",
+              "anchor": {
+                "x": 425,
+                "y": 207
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-3",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 9,
+              "label": "Siap",
+              "anchor": {
+                "x": 472,
+                "y": 149
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 158.73954586180122
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "fa",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 714.2999877929688,
+                "y": 508
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 559.764908689658,
+                "y": 427.5684164074941
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 714.2999877929688,
+                "y": 508
+              }
+            }
+          ],
+          "length": 497.54238846869447
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 714.2999877929688,
+                "y": 508
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 481.61320742999,
+                "y": 644.8892564219917
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 278.70001220703125,
+                "y": 489.29998779296875
+              }
+            }
+          ],
+          "length": 637.6991583243571
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Siap",
+              "anchor": {
+                "x": 616,
+                "y": 270
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 0
+        }
+      ],
+      "closeBadges": [
+        {
+          "part": "stroke-1",
+          "numbers": [
+            1,
+            3
+          ],
+          "distance": 0
+        }
+      ],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "pa",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 714.2999877929688,
+                "y": 485.79998779296875
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 559.7547371858568,
+                "y": 405.41924481109857
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 714.2999877929688,
+                "y": 485.79998779296875
+              }
+            }
+          ],
+          "length": 497.60702139703477
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 714.2999877929688,
+                "y": 485.79998779296875
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 481.6203596738343,
+                "y": 622.6889079513087
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 278.70001220703125,
+                "y": 467.1000061035156
+              }
+            }
+          ],
+          "length": 637.7134664747621
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Titik",
+              "anchor": {
+                "x": 668,
+                "y": 258
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 8,
+              "label": "Titik",
+              "anchor": {
+                "x": 574,
+                "y": 267
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-3",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 9,
+              "label": "Siap",
+              "anchor": {
+                "x": 620,
+                "y": 208
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 0
+        }
+      ],
+      "closeBadges": [
+        {
+          "part": "stroke-1",
+          "numbers": [
+            1,
+            3
+          ],
+          "distance": 0
+        }
+      ],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "qaf",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 642.9000244140625,
+                "y": 535.7999877929688
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 478.57678022067427,
+                "y": 455.48882915463975
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 642.9000244140625,
+                "y": 535.7999877929688
+              }
+            }
+          ],
+          "length": 532.2917918984098
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 642.9000244140625,
+                "y": 536.9000244140625
+              }
+            },
+            {
+              "n": 5,
+              "label": "Ikut",
+              "anchor": {
+                "x": 493.5185521994779,
+                "y": 736.2944141412581
+              }
+            },
+            {
+              "n": 6,
+              "label": "Henti",
+              "anchor": {
+                "x": 343.70001220703125,
+                "y": 566.5999755859375
+              }
+            }
+          ],
+          "length": 576.9514649628481
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 7,
+              "label": "Titik",
+              "anchor": {
+                "x": 590,
+                "y": 294
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 8,
+              "label": "Siap",
+              "anchor": {
+                "x": 491,
+                "y": 303
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 1.10003662109375
+        }
+      ],
+      "closeBadges": [
+        {
+          "part": "stroke-1",
+          "numbers": [
+            1,
+            3
+          ],
+          "distance": 0
+        }
+      ],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "kaf",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 800,
+                "y": 280
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 589.7488624591053,
+                "y": 617.1210975416797
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 212,
+                "y": 536
+              }
+            }
+          ],
+          "length": 1031.4719113919612
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ga",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 800,
+                "y": 280
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 589.7488624591053,
+                "y": 617.1210975416797
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 212,
+                "y": 536
+              }
+            }
+          ],
+          "length": 1031.4719113919612
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Siap",
+              "anchor": {
+                "x": 506,
+                "y": 280
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "lam",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 566.2000122070312,
+                "y": 161.5
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 597.1824665731465,
+                "y": 623.2830738687187
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 334,
+                "y": 564.0999755859375
+              }
+            }
+          ],
+          "length": 935.401362243559
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "mim",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 459.5,
+                "y": 499.79998779296875
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 555.5516653664317,
+                "y": 578.5301432777313
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 436.3999938964844,
+                "y": 843
+              }
+            }
+          ],
+          "length": 717.4795517970674
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "nun",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 617.4000244140625,
+                "y": 413
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 534.5270503260822,
+                "y": 683.7077011903045
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 366.6000061035156,
+                "y": 518.5999755859375
+              }
+            }
+          ],
+          "length": 639.623854813774
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Siap",
+              "anchor": {
+                "x": 472,
+                "y": 355
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "wau",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 620.9000244140625,
+                "y": 579.0999755859375
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 522.1704473713742,
+                "y": 602.0972477965174
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 394.29998779296875,
+                "y": 718.7999877929688
+              }
+            }
+          ],
+          "length": 848.0443091464516
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "va",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 620.9000244140625,
+                "y": 568.5999755859375
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 522.1733810905226,
+                "y": 591.5471741637052
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 394.29998779296875,
+                "y": 708.2999877929688
+              }
+            }
+          ],
+          "length": 848.0992757370236
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Siap",
+              "anchor": {
+                "x": 528,
+                "y": 315
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ha",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 501.29998779296875,
+                "y": 409.5
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 573.0092665811858,
+                "y": 467.3197016074307
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 327.5,
+                "y": 645
+              }
+            }
+          ],
+          "length": 1156.0447070824948
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "hamzah",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 566.7999877929688,
+                "y": 437.20001220703125
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 445.69376970848015,
+                "y": 471.5766370392111
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 621.7999877929688,
+                "y": 502.1000061035156
+              }
+            }
+          ],
+          "length": 411.4404230410567
+        },
+        {
+          "id": "stroke-2",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Mula",
+              "anchor": {
+                "x": 486.5,
+                "y": 524.0999755859375
+              }
+            },
+            {
+              "n": 5,
+              "label": "Siap",
+              "anchor": {
+                "x": 408.3999938964844,
+                "y": 560.4000244140625
+              }
+            }
+          ],
+          "length": 87.14786882759931
+        }
+      ],
+      "transitions": [
+        {
+          "next": "stroke-2",
+          "gap": 137.07693224611128
+        }
+      ],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ya",
+      "revision": 2,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 650.2999877929688,
+                "y": 390.5
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 637.528750062466,
+                "y": 621.3389156678647
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 351.1000061035156,
+                "y": 532.4000244140625
+              }
+            }
+          ],
+          "length": 913.7060539246112
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Titik",
+              "anchor": {
+                "x": 411,
+                "y": 807
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 5,
+              "label": "Siap",
+              "anchor": {
+                "x": 510,
+                "y": 797
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "ye",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 650.2999877929688,
+                "y": 382.20001220703125
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 637.5287142208626,
+                "y": 613.0389649884174
+              }
+            },
+            {
+              "n": 3,
+              "label": "Siap",
+              "anchor": {
+                "x": 351.1000061035156,
+                "y": 524.0999755859375
+              }
+            }
+          ],
+          "length": 913.7062258236402
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    },
+    {
+      "id": "nya",
+      "revision": 3,
+      "parts": [
+        {
+          "id": "stroke-1",
+          "kind": "stroke",
+          "numbers": [
+            {
+              "n": 1,
+              "label": "Mula",
+              "anchor": {
+                "x": 617.4000244140625,
+                "y": 345.79998779296875
+              }
+            },
+            {
+              "n": 2,
+              "label": "Ikut",
+              "anchor": {
+                "x": 534.5241340359613,
+                "y": 616.5487850639909
+              }
+            },
+            {
+              "n": 3,
+              "label": "Henti",
+              "anchor": {
+                "x": 366.6000061035156,
+                "y": 451.3999938964844
+              }
+            }
+          ],
+          "length": 639.6802734240563
+        },
+        {
+          "id": "dot-1",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 4,
+              "label": "Titik",
+              "anchor": {
+                "x": 524,
+                "y": 297
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-2",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 5,
+              "label": "Titik",
+              "anchor": {
+                "x": 429,
+                "y": 306
+              }
+            }
+          ]
+        },
+        {
+          "id": "dot-3",
+          "kind": "dot",
+          "numbers": [
+            {
+              "n": 6,
+              "label": "Siap",
+              "anchor": {
+                "x": 476,
+                "y": 248
+              }
+            }
+          ]
+        }
+      ],
+      "transitions": [],
+      "closeBadges": [],
+      "trials": [
+        {
+          "type": "touch",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "touch",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 2,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 8,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 16,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        },
+        {
+          "type": "pen",
+          "interval": 32,
+          "phase": "complete",
+          "pauseEpisodes": 0
+        }
+      ]
+    }
+  ]
+}

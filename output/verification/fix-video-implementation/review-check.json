@@ -1,0 +1,97 @@
+{
+  "models": [
+    {
+      "id": "mim",
+      "label": "Play original",
+      "paths": 1,
+      "dots": 0
+    },
+    {
+      "id": "mim",
+      "label": "Play proposal",
+      "paths": 1,
+      "dots": 0
+    },
+    {
+      "id": "ta-marbuta",
+      "label": "Play original",
+      "paths": 1,
+      "dots": 2
+    },
+    {
+      "id": "ta-marbuta",
+      "label": "Play proposal",
+      "paths": 1,
+      "dots": 2
+    },
+    {
+      "id": "ain",
+      "label": "Play original",
+      "paths": 2,
+      "dots": 0
+    },
+    {
+      "id": "ain",
+      "label": "Play proposal",
+      "paths": 1,
+      "dots": 0
+    },
+    {
+      "id": "ghain",
+      "label": "Play original",
+      "paths": 2,
+      "dots": 1
+    },
+    {
+      "id": "ghain",
+      "label": "Play proposal",
+      "paths": 1,
+      "dots": 1
+    },
+    {
+      "id": "nga",
+      "label": "Play original",
+      "paths": 2,
+      "dots": 3
+    },
+    {
+      "id": "nga",
+      "label": "Play proposal",
+      "paths": 1,
+      "dots": 3
+    },
+    {
+      "id": "hamzah",
+      "label": "Play original",
+      "paths": 2,
+      "dots": 0
+    },
+    {
+      "id": "hamzah",
+      "label": "Play proposal",
+      "paths": 1,
+      "dots": 0
+    },
+    {
+      "id": "jim",
+      "label": "Play original",
+      "paths": 2,
+      "dots": 1
+    },
+    {
+      "id": "jim",
+      "label": "Play proposal",
+      "paths": 2,
+      "dots": 1
+    }
+  ],
+  "errors": [],
+  "viewport": [
+    1366,
+    1100
+  ],
+  "phone": [
+    320,
+    740
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "va",
+  "glyph": "ۏ",
+  "labelMs": "Va",
+  "contentVersion": 3,
+  "viewBox": [
+    0,
+    0,
+    1000,
+    1000
+  ],
+  "pilot": false,
+  "additional": true,
+  "geometry": {
+    "status": "approved",
+    "review": {
+      "revision": 3,
+      "reviewer": "Project owner (Codex user; name not supplied)",
+      "date": "2026-10-04",
+      "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+      "kind": "projectOwner"
+    },
+    "displayPaths": [
+      "M 620.9 568.6 C 620.9 408.2 458.3 384.5 454.6 526.8 C 451.6 637.7 592.5 573.1 612.1 572 C 618.5 571.7 623.4 575.2 623.9 581.8 C 626 608 612 636.9 598.8 658.8 C 543 750.9 479.6 726.8 394.3 708.3"
+    ],
+    "strokes": [
+      {
+        "id": "stroke-1",
+        "path": "M 620.9 568.6 C 620.9 408.2 458.3 384.5 454.6 526.8 C 451.6 637.7 592.5 573.1 612.1 572 C 618.5 571.7 623.4 575.2 623.9 581.8 C 626 608 612 636.9 598.8 658.8 C 543 750.9 479.6 726.8 394.3 708.3",
+        "width": 44,
+        "penLiftPolicy": "continuous",
+        "checkpoints": [
+          0.25,
+          0.5,
+          0.75,
+          0.95
+        ],
+        "displayWidth": 50
+      }
+    ],
+    "dotTargets": [
+      {
+        "id": "dot-1",
+        "x": 528,
+        "y": 315,
+        "visibleRadius": 19,
+        "hitRadius": 48,
+        "maxTravel": 30,
+        "policy": "tap"
+      }
+    ],
+    "validSequences": [
+      [
+        "stroke-1",
+        "dot-1"
+      ]
+    ]
+  },
+  "audio": {
+    "name": {
+      "src": "/audio/letters/va-name.mp3",
+      "transcriptMs": "Va",
+      "version": 1,
+      "status": "approved",
+      "review": {
+        "revision": 1,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+      "synthesis": {
+        "provider": "Microsoft Edge online speech synthesis",
+        "client": "edge-tts 7.2.8",
+        "voice": "ms-MY-YasminNeural",
+        "locale": "ms-MY",
+        "rate": "-15%",
+        "pitch": "+0Hz",
+        "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+        "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+      }
+    },
+    "pronunciationExamples": []
+  }
+}

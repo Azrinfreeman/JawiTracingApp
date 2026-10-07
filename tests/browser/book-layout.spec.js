@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './helpers/localTest.js';
 import letters from '../../src/content/letters.json' with { type: 'json' };
 import { dismissSplash, chooseLetter } from './helpers/navigation.js';
 import { boardModels, draw, openTeacher, menuAction, openMenu, tapDots } from './helpers/tracing.js';
@@ -46,7 +47,8 @@ test('freezes completed writing in place and saves once; revisiting is a new att
   await complete(page); await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Sa!' })).toBeVisible();
   const after = await page.locator('.trace-board').evaluate(documentBox); expect(after.x).toBeCloseTo(before.x, 1); expect(after.y).toBeCloseTo(before.y, 1);
   expect(await board.evaluate(node => node.isConnected)).toBe(true); expect(await attempts(page)).toHaveLength(1);
-  await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).click(); await expect(page.getByRole('heading', { name: 'Sin', exact: true })).toBeVisible();
+  const nextLetter = eligibleLetters[eligibleLetters.findIndex(letter => letter.id === 'sa') + 1];
+  await page.getByRole('button', { name: 'Huruf seterusnya', exact: true }).click(); await expect(page.getByRole('heading', { name: nextLetter.labelMs, exact: true })).toBeVisible();
   await menuAction(page, 'Huruf sebelumnya'); await expect(page.getByRole('heading', { name: 'Sa', exact: true })).toBeVisible();
   await expect(page.getByLabel('Siap dijejak', { exact: true })).toBeVisible(); expect(await attempts(page)).toHaveLength(1);
   expect(await page.locator('.play-fill').count()).toBe(0);
@@ -111,11 +113,11 @@ test('discarding an unsaved copy is deliberate and preview exit uses the same gu
   await expect(page.locator('.book-sticker.earned')).toHaveCount(0);
 });
 
-for (const [width, height, density] of [[768, 1024, 2], [390, 844, 3]]) test(`native touch completion cannot activate the new choices at ${width} and DPR ${density}`, async ({ browser, browserName }, testInfo) => {
+for (const [width, height, density] of [[768, 1024, 2], [390, 844, 3]]) test.describe(`native touch ${width} and DPR ${density}`, () => {
+  test.use({ viewport: {width,height}, deviceScaleFactor: density, hasTouch: true, isMobile: true });
+  test('native touch completion cannot activate the new choices', async ({ page, context, browserName }) => {
   test.skip(browserName !== 'chromium', 'Native emulated touch uses Chromium CDP.');
-  const context = await browser.newContext({ baseURL: testInfo.project.use.baseURL, viewport: { width, height }, deviceScaleFactor: density, hasTouch: true, isMobile: true });
-  try {
-    const page = await context.newPage(), session = await context.newCDPSession(page); await page.emulateMedia({ reducedMotion: 'reduce' }); await open(page, 'Ba');
+    const session = await context.newCDPSession(page); await page.emulateMedia({ reducedMotion: 'reduce' }); await open(page, 'Ba');
     const points = (await boardModels(page)).strokes[0];
     await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ ...points[0], id: 1 }] });
     for (const point of points.slice(1)) await session.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ ...point, id: 1 }] });
@@ -123,14 +125,17 @@ for (const [width, height, density] of [[768, 1024, 2], [390, 844, 3]]) test(`na
     const dot = (await boardModels(page)).dots[0]; await session.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ ...dot, id: 1 }] });
     // The final contact is still down: nothing can turn the page yet.
     await expect(page.getByRole('button', { name: 'Huruf seterusnya', exact: true })).toHaveCount(0); await expect(page.getByRole('heading', { name: 'Ba', exact: true })).toBeVisible();
-    await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] }); await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Ba!', exact: true })).toBeVisible();
+    await session.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+    await expect(page.locator('.book-completed')).toBeVisible();
+    await expect(page.locator('.completion-overlay')).toHaveCount(0);
+    await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Ba!', exact: true })).toBeVisible();
     const next = page.getByRole('button', { name: 'Huruf seterusnya', exact: true });
-    // The choices stay inert until the release has settled, so the final lift cannot press them.
-    await expect(next).toBeDisabled(); await expect(next).toBeEnabled();
+    // The panel appears after the release pause, so the final lift cannot press it.
+    await expect(next).toBeEnabled();
     expect(await attempts(page)).toHaveLength(1); await expect(page.getByRole('heading', { name: 'Ba', exact: true })).toBeVisible();
     await next.tap(); await expect(page.getByRole('heading', { name: 'Ta', exact: true })).toBeVisible();
     expect(await attempts(page)).toHaveLength(1);
-  } finally { await context.close(); }
+  });
 });
 
 for (const [width, height] of [[320, 740], [390, 844], [1024, 768], [768, 1024], [1280, 720], [1920, 1080], [844, 390]]) {

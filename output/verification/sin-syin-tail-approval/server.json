@@ -1,0 +1,9 @@
+{
+  "exactCatalogue": true,
+  "status": 200,
+  "url": "http://127.0.0.1:5173/src/content/letters.json",
+  "revisions": {
+    "sin": 2,
+    "syin": 3
+  }
+}

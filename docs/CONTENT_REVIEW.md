@@ -1,6 +1,94 @@
 # Teaching content review
 
-Status: 37 student-ready lessons as of 2026-10-04. The project owner approved the 27 tracing
+Status: **36 student-ready lessons as of 2026-10-07**. The owner explicitly approved
+the catalogue-outline revisions **Dal 3, Zal 4, Ra 3 and Zai 4** with “yes I approve”;
+they are promoted without changes to the reviewed outlines or writing steps.
+See [the approval record](CONTENT_APPROVALS.md#approval-of-four-letter-outlines-2026-10-06)
+and [promotion verification](FOUR_LETTER_TRACE_APPEARANCE_APPROVAL.md).
+
+**Sad 3 / Dad 3 are owner-approved:** the owner replied “approve and generate
+newly released apk” to the pictured approval question. Normal lessons and scored
+challenges now use the exact reviewed catalogue contours/routes and Dad’s dot.
+Audio is unchanged; all nine review scopes are empty and all 36 lessons remain
+ready. See [approval record](CONTENT_APPROVALS.md#approval-of-sad-and-dad-catalogue-shapes-2026-10-07),
+[student verification](SAD_DAD_TRACE_APPEARANCE_APPROVAL.md) and the preserved
+[preceding review](SAD_DAD_TRACE_APPEARANCE_REVIEW.md).
+
+**Nya 4 shorter tip is owner-approved:** the owner replied “aprrove” to the
+pictured Nya-4 approval question. Normal lessons and challenges use the exact
+reviewed shorter upper-right tip, retained bowl and three dots. All eight review
+scopes are empty. See [approval](CONTENT_APPROVALS.md#approval-of-nya-shorter-tip-2026-10-07),
+[student verification](NYA_TIP_APPROVAL.md) and the preserved [preceding review](NYA_TIP_REVIEW.md).
+
+**Hamzah 5 straight tail is approved:** the owner approved a straight lower
+diagonal from 2 to 3 on 7 October. Ye is removed from the active catalogue;
+Ya and Nya remain. See [verification](HAMZAH_STRAIGHT_TAIL_AND_YE_REMOVAL.md).
+
+**Ha 4 photo order is approved for students:** the owner replied “proceed” to
+the pictured approval question on 7 October. Normal lessons/challenges follow
+top tip → outer right loop → left loop upward → inner downstroke → left tail,
+continuously. Other entries and audio are preserved; all seven scopes are empty.
+See [approval](CONTENT_APPROVALS.md#approval-of-ha-photo-order-2026-10-07),
+[student verification](HA_TRACE_ORDER_APPROVAL.md) and [preceding review](HA_TRACE_ORDER_REVIEW.md).
+
+**Nun 3 catalogue outline is approved for students:** the owner replied “approve”
+to the pictured Nun-3 approval question on 7 October. Normal lessons and challenges
+use that exact reviewed bowl, tapered ends and diamond dot from the Isi kandungan
+font. Routes, direction, dot-last sequence, touch targets and audio are preserved.
+The other 36 entries and all recordings remain exact; all six review scopes were
+empty at that approval stage. The later Ha-4 scope above is now also approved.
+See [approval](CONTENT_APPROVALS.md#approval-of-nun-catalogue-outline-2026-10-07),
+[student verification](NUN_TRACE_APPEARANCE_APPROVAL.md) and the preserved
+[preceding review](NUN_TRACE_APPEARANCE_REVIEW.md).
+
+**Ta 6 and Za 6 original curves are approved for students:** the owner replied
+“proceed” to the explicit pictured approval question on 7 October. Normal
+lessons and challenges use the exact reviewed models: the original-3 head/loop
+and stem translated left without reshaping, fixed tail number 3 through a
+shortened final approach, and Za's dot aligned with the head. Their obsolete
+proposals have expired; the later Nun outline above is also approved. The other
+35 entries and all audio were preserved by this approval. See
+[approval](CONTENT_APPROVALS.md#approval-of-ta-and-za-original-curves-2026-10-07),
+[student verification](TA_ZA_APPROVAL.md) and the preserved
+[preceding review](TA_ZA_ORIGINAL_CURVE_REVIEW.md).
+
+**Fa 4 and Pa 4 are approved for students:** the owner wrote **“approve”** to the
+explicit revision-4 approval request on 6 October. Their left-first departure,
+head → lift → tail → dots sequence and Jejak Ceria cues match the reviewed
+candidates; obsolete direction proposals disappear. Qaf, the other 35 entries
+and all recordings are preserved. See [the approval record](CONTENT_APPROVALS.md#approval-of-fa-and-pa-directions-2026-10-06),
+[student verification](FA_PA_DIRECTION_APPROVAL.md) and [preceding review](FA_PA_DIRECTION_REVIEW.md).
+
+**Ain 4, Ghain 4 and Nga 4 catalogue outlines are approved for students:** the
+owner replied “proceed” to the explicit question approving replacement with
+the corrected outlines. The regular game uses the exact reviewed catalogue
+silhouettes and direct thin neck, preserving head → lift → bowl → dots.
+The other 34 entries and all audio remained unchanged at that approval stage.
+Superseded Ain-family alternatives expire; the later approval below resolves
+the four remaining video proposals.
+See [the approval record](CONTENT_APPROVALS.md#approval-of-ain-ghain-and-nga-outlines-2026-10-06)
+and [student verification](AIN_FAMILY_TRACE_APPEARANCE_APPROVAL.md).
+
+**Sin 2 and Syin 3 higher tails are approved for students:** the owner replied
+“approved” to the pictured comparison approval request. Both normal lessons use
+those exact reviewed paths. The tips remain below the second peak; dots,
+writing sequence and audio are preserved. Obsolete tail previews expire.
+See [approval](CONTENT_APPROVALS.md#approval-of-sin-and-syin-tails-2026-10-06),
+[student verification](SIN_SYIN_TAIL_APPROVAL.md) and the preserved
+[preceding review](SIN_SYIN_TAIL_REVIEW.md).
+
+**The preceding Semakan video proposals are approved:** on 6 October the owner
+wrote “approve all tthe alphabets in semakan video”. Exact reviewed **Mim 5,
+Ta marbutah 4, Hamzah 4 and Jim 4** are now active in normal lessons and challenges.
+The five scopes reviewed then are empty; the later Ta/Za scope is also resolved
+by the approval above. Mim's tiny left head opening remains visible
+with its tail connected in one continuous stroke; rejected Mim 4 stays historical.
+The other 33 entries and all audio remain unchanged. See
+[approval](CONTENT_APPROVALS.md#approval-of-all-current-semakan-video-proposals-2026-10-06),
+[promotion verification](VIDEO_REVIEW_APPROVAL.md) and
+[preceding Mim comparison](MIM_HEAD_OPENING_REVIEW.md).
+
+On 2026-10-04 the project owner approved the 27 tracing
 models redrawn from the catalogue glyph that day, with Kaf revision 2 and Ga revision 3, after testing
 them in the app ([approval record](CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04),
 [review sheet and verification](GLYPH_MATCHED_TRACING_MODELS_VERIFICATION.md)). See [the correction review sheet and
@@ -8,12 +96,21 @@ verification](KAF_GA_SHAPE_CORRECTION_VERIFICATION.md).
 The project owner approved the earlier 12 pilot models and 25 additional
 revision-2 models on 2026-10-02; those historical approvals are preserved in
 [the approval record](CONTENT_APPROVALS.md).
-All 37 current name recordings were subsequently approved by the project owner;
+The original 37 name recordings were subsequently approved by the project owner;
 see [the audio approval record](AUDIO_APPROVALS.md). No named teacher assessment
 has been supplied. The user's
 subsequent authorisation produced 37 synthetic audio drafts, then supplied files
 replaced 27 matching entries while 10 were retained. See
 [the current recording review list](AUDIO_REPLACEMENT_REVIEW.md).
+On 6 October the owner authorised a guided Ga attempt with direct recording
+fallback. The game now uses that complete supplied utterance as audio revision 7;
+Ga geometry revision 3 is unchanged. See [Ga correction](GA_AUDIO_REVIEW.md).
+On 7 October the owner supplied Recording (5).m4a as the target Nga pronunciation.
+Nga now uses its complete first utterance as audio revision 2; geometry revision
+4 remains unchanged. See [Nga correction](NGA_AUDIO_CORRECTION.md).
+The owner then supplied Recording (6).m4a and authorised a Va guided comparison
+with direct fallback. Va audio 2 now uses its complete first utterance; geometry
+3 and all other entries stay intact. See [Va correction](VA_AUDIO_CORRECTION.md).
 
 The source of truth is `src/content/letters.json`. Review geometry and audio
 independently. Teacher review is required for teaching accuracy, beyond the
@@ -23,21 +120,22 @@ behavioural tests of the tracing engine.
 
 | Content | Count | State |
 | --- | --- | --- |
-| Jawi catalogue entries | 37 | Labels/glyphs from the existing research bank |
-| Pilot handwriting models | 12 | 11 approved at revision 1; corrected Kaf revision 2 pending review |
-| Additional handwriting models | 5 | Sa, Jim, Ca, Ha (ح), Kha; revision 2; approved by project owner |
-| Second additional handwriting batch | 5 | Zal, Zai, Syin, Sad, Dad; revision 2; approved by project owner |
-| Final handwriting batch | 15 | 14 approved at revision 2; corrected Ga revision 3 pending review |
-| Letter-name recordings | 37 | 27 supplied MP3/WAV recordings and 10 retained synthetic MP3s; approved by project owner |
+| Jawi catalogue entries | 36 | Ye removed by the owner; Ya and Nya retained |
+| Pilot handwriting models | 12 | All approved at their current revisions; historical pilot approvals retained |
+| Additional handwriting models | 5 | Sa, Jim, Ca, Ha (ح), Kha; all approved at current revisions; historical revision-2 approvals retained |
+| Second additional handwriting batch | 5 | Zal, Zai, Syin, Sad, Dad; all approved at current revisions; historical revision-2 approvals retained |
+| Final handwriting batch | 14 | All approved at current revisions, including Ga revision 3 |
+| Letter-name recordings | 36 | 30 supplied files and 6 retained synthetic MP3s; Ga 7, Nga 2 and Va 2 owner selections retained |
 | Pronunciation examples | As selected by educator | Not yet specified/recorded |
-| Current geometry approvals | 37 | Every model at its current revision; project-owner approval (29 of them on 2026-10-04) |
-| Audio approvals | 37 | Project-owner approval of current recording revisions |
-| Student-ready lessons | 37 | Current model and required audio approvals match their revisions |
-| Numbered tracing guidance | All 37 authored models | Sequential movement and dot cues; Kaf/Ga reviewed through adult preview |
+| Current geometry approvals | 36 | Every current model, including Nya 4, Hamzah 5, Ha 4, Nun 3, Ta 6 and Za 6 approved on 2026-10-07; earlier approvals retained |
+| Audio approvals | 36 | Project-owner approval of current recording revisions |
+| Student-ready lessons | 36 | Current model and required audio approvals match their revisions |
+| Numbered tracing guidance | All 36 active models | Sequential movement and dot cues; Kaf/Ga reviewed through adult preview |
 
-All 37 models are approved at their current revisions. The earlier 2026-10-02 approvals of 27
+All 36 active models are approved at their current revisions. The earlier 2026-10-02 approvals of 27
 of them were for previous revisions and are historical; the redrawn revisions (and Kaf and Ga) were
-approved on 2026-10-04.
+approved on 2026-10-04. Dal 3, Zal 4, Ra 3 and Zai 4 subsequently superseded
+their prior geometry revisions after the 2026-10-06 outline review and approval.
 
 The approval source is the user's explicit message, not a fabricated teacher
 identity. All 37 name recordings are approved at their current revisions; all 37
@@ -47,9 +145,11 @@ The second batch is also available to students; see
 [its review notes](LETTER_BATCH_2_REVIEW.md). The final batch's earlier approvals
 at revision 2 remain in [their historical review notes](LETTER_BATCH_3_REVIEW.md).
 
-No catalogue entry remains without a tracing model. Kaf/Ga's new revisions need
-fresh geometry approval. Teacher assessment and physical pupil/device review remain
-outstanding and are separate from the recorded project-owner approvals.
+No catalogue entry remains without an approved tracing model. Four separate
+video proposals (Mim, Ta marbutah, Hamzah and Jim) still need their identified
+content review. Earlier Ain-family continuous-stroke alternatives are superseded
+by the approved catalogue outlines. Teacher assessment and physical pupil/device
+review remain outstanding and separate from the recorded owner approvals.
 
 The chosen pilot order is not a compulsory KPM teaching order. PI 1.5.1 concerns
 recognition and naming. Tracing is preparation for writing; it does not by itself
@@ -65,7 +165,8 @@ satisfy PI 1.5.2 reading or PI 1.5.3 copying words.
 3. Check consistency across similar bodies (ba/ta/nun) and differences between
    ha forms, ta forms, ye and ya. Check all additional Jawi characters.
 4. Confirm the display model matches the intended pen route. Edit centreline
-   paths rather than turning glyph outlines into strokes.
+   paths rather than turning glyph outlines into strokes. Stored closed outlines
+   describe visible ink separately from the matching route, as in the four approved models.
 5. Trace valid examples on the actual target device. Try plausible incorrect
    forms, missing dots and the wrong direction. Adjust the explicit profile or
    model, then rerun geometry and browser checks.

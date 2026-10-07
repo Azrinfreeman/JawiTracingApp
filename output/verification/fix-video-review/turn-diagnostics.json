@@ -1,0 +1,230 @@
+[
+  {
+    "letter": "sad",
+    "type": "touch",
+    "events": [
+      {
+        "part": "stroke-2",
+        "inputArc": 160,
+        "point": {
+          "x": 538.624474732944,
+          "y": 459.2225527222922
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 192,
+        "point": {
+          "x": 538.7964435444612,
+          "y": 491.2156165807843
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 224,
+        "point": {
+          "x": 536.5908767879433,
+          "y": 523.1310056155382
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 256,
+        "point": {
+          "x": 531.6732702123207,
+          "y": 554.7395423893591
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 288,
+        "point": {
+          "x": 523.6862446830481,
+          "y": 585.7114782291541
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      }
+    ],
+    "result": "awaitingStart"
+  },
+  {
+    "letter": "sad",
+    "type": "pen",
+    "events": [
+      {
+        "part": "stroke-2",
+        "inputArc": 160,
+        "point": {
+          "x": 538.624474732944,
+          "y": 459.2225527222922
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 192,
+        "point": {
+          "x": 538.7964435444612,
+          "y": 491.2156165807843
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 224,
+        "point": {
+          "x": 536.5908767879433,
+          "y": 523.1310056155382
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 256,
+        "point": {
+          "x": 531.6732702123207,
+          "y": 554.7395423893591
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 288,
+        "point": {
+          "x": 523.6862446830481,
+          "y": 585.7114782291541
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      }
+    ],
+    "result": "awaitingStart"
+  },
+  {
+    "letter": "dad",
+    "type": "touch",
+    "events": [
+      {
+        "part": "stroke-2",
+        "inputArc": 160,
+        "point": {
+          "x": 538.624474732944,
+          "y": 459.2225527222922
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 192,
+        "point": {
+          "x": 538.7964435444612,
+          "y": 491.2156165807843
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 224,
+        "point": {
+          "x": 536.5908767879433,
+          "y": 523.1310056155382
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 256,
+        "point": {
+          "x": 531.6732702123207,
+          "y": 554.7395423893591
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 288,
+        "point": {
+          "x": 523.6862446830481,
+          "y": 585.7114782291541
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      }
+    ],
+    "result": "awaitingStart"
+  },
+  {
+    "letter": "dad",
+    "type": "pen",
+    "events": [
+      {
+        "part": "stroke-2",
+        "inputArc": 160,
+        "point": {
+          "x": 538.624474732944,
+          "y": 459.2225527222922
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 192,
+        "point": {
+          "x": 538.7964435444612,
+          "y": 491.2156165807843
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 224,
+        "point": {
+          "x": 536.5908767879433,
+          "y": 523.1310056155382
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 256,
+        "point": {
+          "x": 531.6732702123207,
+          "y": 554.7395423893591
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      },
+      {
+        "part": "stroke-2",
+        "inputArc": 288,
+        "point": {
+          "x": 523.6862446830481,
+          "y": 585.7114782291541
+        },
+        "reason": "advanceGap",
+        "acceptedArc": 103.96099027256038
+      }
+    ],
+    "result": "awaitingStart"
+  }
+]

@@ -56,7 +56,7 @@ export function attachInput(svg, callbacks) {
     const pointer = activePointer;
     if (pointer === null) return;
     activePointer = null; converter = null;
-    callbacks.cancel(); frame();
+    callbacks.cancel(event?.type || 'application'); frame();
     if (svg.hasPointerCapture(pointer)) svg.releasePointerCapture(pointer);
   };
   const resize = () => cancel();

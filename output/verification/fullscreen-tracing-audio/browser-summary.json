@@ -1,0 +1,943 @@
+{
+  "recordedAt": "2026-10-04T10:11:23.068Z",
+  "policy": "Latest result for each project/file/title replaces its earlier failed or duplicate result; original reports are retained.",
+  "totals": {
+    "chromium": {
+      "passed": 69,
+      "skipped": 0,
+      "failed": 0
+    },
+    "webkit": {
+      "passed": 55,
+      "skipped": 8,
+      "failed": 0
+    }
+  },
+  "caseCount": 132,
+  "cases": [
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 320x600 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 390x844 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 768x1024 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 1024x768 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 1280x800 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 1920x1080 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 3840x2160 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "menu replaces the toolbar: every action is reachable and closing keeps accepted progress",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "the full letter is announced once, after the last required dot, with its approved recording",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "a finished body with a dot still to place stays silent until the dot is placed",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "blocked voice never blocks completion; replay recovers from a fresh gesture",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "saving a freehand copy never announces the letter",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "music is one quiet local loop that ducks under the voice, obeys mute and survives leaving only by stopping",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "music stops for background, hidden pages and leaving the game, and honours a saved preference",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "browser fullscreen is requested once from the game-entry gesture, not on every page",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "Solo: readiness is an overlay, the letter is announced once at completion and replay is on the result",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "Duo: the first accepted letter starts one shared announcement; the second finish neither restarts nor cuts it",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "Duo menu pauses both lanes, retries one lane, and dot help appears only in the chosen lane after the shared countdown",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "the packaged music and existing MP3/WAV letter names decode to non-silent audio",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "actual Chromium playback starts the music and completion voice from game interactions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "hiding an active completion voice stops it and leaves music silent until the page returns",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 320x600 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 390x844 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 768x1024 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 1024x768 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 1280x800 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 1920x1080 has no dock, no strip and no collisions",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "practice at 3840x2160 has no dock, no strip and no collisions",
+      "status": "skipped",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "menu replaces the toolbar: every action is reachable and closing keeps accepted progress",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "the full letter is announced once, after the last required dot, with its approved recording",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "a finished body with a dot still to place stays silent until the dot is placed",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "blocked voice never blocks completion; replay recovers from a fresh gesture",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "saving a freehand copy never announces the letter",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "music is one quiet local loop that ducks under the voice, obeys mute and survives leaving only by stopping",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "music stops for background, hidden pages and leaving the game, and honours a saved preference",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "browser fullscreen is requested once from the game-entry gesture, not on every page",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "Solo: readiness is an overlay, the letter is announced once at completion and replay is on the result",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "Duo: the first accepted letter starts one shared announcement; the second finish neither restarts nor cuts it",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "Duo menu pauses both lanes, retries one lane, and dot help appears only in the chosen lane after the shared countdown",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "the packaged music and existing MP3/WAV letter names decode to non-silent audio",
+      "status": "skipped",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "actual Chromium playback starts the music and completion voice from game interactions",
+      "status": "skipped",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "title": "hiding an active completion voice stops it and leaves music silent until the page returns",
+      "status": "passed",
+      "report": "final-focused.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 320x600",
+      "status": "passed",
+      "report": "layout-followup.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 390x844",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1024x768",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 768x1024",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1920x1080",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1280x800",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 3840x2160",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 320x600",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 390x844",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1024x768",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 768x1024",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1920x1080",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1280x800",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 3840x2160",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+      "status": "passed",
+      "report": "duo-layout-final.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+      "status": "passed",
+      "report": "duo-layout-final.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 390x844",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 1024x768",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "chromium",
+      "file": "fullscreen-layout.spec.js",
+      "title": "small-space fullscreen rejection stays visible and preserves the current screen",
+      "status": "passed",
+      "report": "layout-chromium.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 320x600",
+      "status": "passed",
+      "report": "layout-followup.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 1024x768",
+      "status": "passed",
+      "report": "duo-layout-final.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "Duo has equal fitted stages and recovers from small space at 768x1024",
+      "status": "passed",
+      "report": "duo-layout-final.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 390x844",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 1024x768",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "fitted menus, catalogue and teacher pages at 768x1024",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 320x600",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 390x844",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 1024x768",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "all 37 complete letter envelopes and guides fit at 768x1024",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 390x844",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "demo, completion and copy tools fit at 1024x768",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "webkit",
+      "file": "fullscreen-layout.spec.js",
+      "title": "small-space fullscreen rejection stays visible and preserves the current screen",
+      "status": "passed",
+      "report": "layout-webkit.json"
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android fullscreen uses the native bridge when browser fullscreen is unavailable",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android viewport notifications refit the current lesson without a browser resize event",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android export hands the complete teacher payload to the document bridge",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android Back preserves unsaved copying, then returns through contents before exit",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android background cancels held writing without erasing accepted colour",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android background resolves one pending page turn and stops a demonstration",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "android-platform.spec.js",
+      "title": "Android background pauses the shared Duo clock and Back uses the existing exit confirmation",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android fullscreen uses the native bridge when browser fullscreen is unavailable",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android viewport notifications refit the current lesson without a browser resize event",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android export hands the complete teacher payload to the document bridge",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android Back preserves unsaved copying, then returns through contents before exit",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android background cancels held writing without erasing accepted colour",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android background resolves one pending page turn and stops a demonstration",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "android-platform.spec.js",
+      "title": "Android background pauses the shared Duo clock and Back uses the existing exit confirmation",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "the tools cancel a held contact and a demonstration; a turn then proceeds once",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "copy exit offers save, discard and return without silently losing ink",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "filtered contents and missing animation events keep one destination",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "native touch completion cannot activate the new choices at 768 and DPR 2",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "book-layout.spec.js",
+      "title": "native touch completion cannot activate the new choices at 390 and DPR 3",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "turns deliberately, ignores rapid duplicate navigation and stops at the end",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "freezes completed writing in place and saves once; revisiting is a new attempt",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "the tools cancel a held contact and a demonstration; a turn then proceeds once",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "copy exit offers save, discard and return without silently losing ink",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "filtered contents and missing animation events keep one destination",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "discarding an unsaved copy is deliberate and preview exit uses the same guard",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "native touch completion cannot activate the new choices at 768 and DPR 2",
+      "status": "skipped",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "book-layout.spec.js",
+      "title": "native touch completion cannot activate the new choices at 390 and DPR 3",
+      "status": "skipped",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "an endpoint confirmation held past the Solo deadline cannot award completion",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "solo: independent endpoint confirmations obey pause and complete exactly once",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "endpoint-finish.spec.js",
+      "title": "duo: independent endpoint confirmations obey pause and complete exactly once",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "an endpoint confirmation held past the Solo deadline cannot award completion",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "solo: independent endpoint confirmations obey pause and complete exactly once",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "endpoint-finish.spec.js",
+      "title": "duo: independent endpoint confirmations obey pause and complete exactly once",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "touch gate rejects mouse verification; adult preview cannot persist a score or trophy",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "storage failure retains session export and reload never restores a live match",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "held dot pad cannot complete during pause or countdown; help returns only after the shared countdown",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "chromium",
+      "file": "solo-duo.spec.js",
+      "title": "native portrait Duo completes together with direct dots and appears in teacher history",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Solo challenge completes, earns a trophy, exports both stores and resets both",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "shared pause cancels a held gesture, preserves progress, excludes wait and requires new contact",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "touch gate rejects mouse verification; adult preview cannot persist a score or trophy",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "native concurrent Duo finishes both profiles, independent dot pads and one shared trophy",
+      "status": "skipped",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "captured contact cannot cross lanes; extra own-lane contact is ignored; retry affects only owner",
+      "status": "skipped",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "storage failure retains session export and reload never restores a live match",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "Duo survives insufficient space and visibility pause with both accepted trails intact",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "held dot pad cannot complete during pause or countdown; help returns only after the shared countdown",
+      "status": "passed",
+      "report": "regressions.json"
+    },
+    {
+      "project": "webkit",
+      "file": "solo-duo.spec.js",
+      "title": "native portrait Duo completes together with direct dots and appears in teacher history",
+      "status": "skipped",
+      "report": "regressions.json"
+    }
+  ]
+}

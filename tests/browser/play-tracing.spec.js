@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './helpers/localTest.js';
 import { openLesson, boardModels, draw, movePoints, openTeacher, menuAction, showDotHelp, openMenu } from './helpers/tracing.js';
 
 const fill = page => page.locator('.play-fill').first();
@@ -27,7 +28,7 @@ test('default play pauses without erasing colour; held-pointer return earns no b
   await movePoints(page, stroke.slice(1, middle)); await expect(fill(page)).toBeVisible();
   const saved = await amount(page), point = stroke[middle - 1];
   await page.mouse.move(point.x + 130 * scale, point.y);
-  await expect(page.locator('.board-tip')).toContainText('Sambung di sini');
+  await expect(page.locator('.board-tip')).toContainText('Sambung dari anak panah');
   expect(await amount(page)).toBe(saved); await expect(page.locator('.pupil-ink')).toHaveCount(0);
   await page.mouse.move(point.x, point.y); expect(await amount(page)).toBe(saved);
   await movePoints(page, stroke.slice(middle)); await page.mouse.up();
@@ -119,7 +120,7 @@ test('phone, tablet and short landscape keep large controls, legible cues and no
     const menuButton = await page.getByRole('button', { name: 'Menu permainan', exact: true }).boundingBox();
     expect(menuButton.width).toBeGreaterThanOrEqual(48); expect(menuButton.height).toBeGreaterThanOrEqual(48);
     await openMenu(page);
-    for (const label of ['Dengar', 'Tunjuk cara', 'Cuba lagi']) {
+    for (const label of ['Tunjuk cara', 'Cuba lagi']) {
       const box = await page.getByRole('dialog', { name: 'Menu permainan' }).getByRole('button', { name: label, exact: true }).boundingBox();
       expect(box.width).toBeGreaterThanOrEqual(48); expect(box.height).toBeGreaterThanOrEqual(48);
     }

@@ -48,15 +48,21 @@ trace points, with short labels beside the writing path:
 - **Mula:** touch this number to start the current stroke.
 - **Ikut:** follow the route through the middle number; keep tracing.
 - **Henti:** stop at the stroke endpoint and lift before the next part.
-- **Siap:** the endpoint or final dot that finishes the letter.
-- **Titik:** touch a dot, then lift before the next dot.
+- **Siap:** the final stroke endpoint; completion still requires validation and release.
+- **Titik / Titik akhir:** touch a required dot and lift. A pending dot is not labelled as completed.
 
 Only the current stroke or dot is shown. Numbers continue through the letter's
 existing movement sequence. For Ba, 1–3 show the body and 4 shows the final dot.
 For Ta, the body uses 1–3, followed by separate dots 4 and 5. A short stroke uses
 just its start and endpoint to keep its numbers apart.
 
-A brief instruction under the board explains the numbers and when to lift.
+A visible instruction on the writing stage explains starts, saved-frontier recovery,
+lifting and restarting, and the actual number of dots remaining. Revision-keyed
+sections explain Wau and Ha loops, Sin/Syin teeth, starting hooks and Sad/Dad's
+tight turn. **Menu → Tunjuk bahagian ini** demonstrates the remaining current
+part without crediting progress; full demonstrations pause between sections and
+pen lifts. Reduced motion uses discrete steps. In Duo the section demonstration
+keeps both lanes and the clock paused, then restores the pause menu.
 The current waypoint is filled; passed waypoints become softer. In Jejak Ceria,
 the final destination has an outlined dashed badge until validation is ready.
 Then its filled badge and **Angkat jari untuk siap** cue ask for release; an
@@ -79,10 +85,48 @@ Numbers and
 labels scale for phone and tablet layouts. Labels are placed away from the
 writing routes and from each other.
 
-For a closed loop such as Mim's first stroke, the start and stop share a point.
-One circle first displays the start number, then the stop number after passing
-the middle. Separate start/stop labels explain this return to the same location.
+The selected-letter heading now includes **Dengar** beneath the name (6 October).
+Guide label placement reserves its taller corner area. A complete-letter fit
+that approaches this corner gains top clearance, preventing Lam's phone start
+number from overlapping the control. This changes only display framing: scale
+remains uniform and independent of progress; authored anchors, directions and
+approval revisions are preserved. See [direct sound verification](INLINE_LETTER_AUDIO_VERIFICATION.md).
+
+For shared or nearby start/stop anchors, including Ta marbutah, only the relevant
+badge and its label are shown: start until 85% progress, then stop. The anchors
+remain on the approved path. Passed badges near the moving frontier are hidden;
+the initial start number is visible before the arrow moves. Label placement also
+avoids the full visible dot bounds, instruction, corner controls and reward area.
 The next stroke receives the next numbers after the loop is completed and lifted.
+
+These 6 October changes preserve approved geometry and the scope of the dated
+approvals above. See [the video implementation verification](FIX_VIDEO_VERIFICATION.md).
+
+The four catalogue-outline models (Dal 3, Zal 4, Ra 3 and Zai 4)
+place their number badges beside the letter, with leaders and small rings at
+the original movement anchors. Label placement considers the full outline and
+the combined badge/label bounds. Their stage uses 148 units of clearance so the
+labels do not hide tapered tips, tails or diamond dots. The original routes,
+direction, checkpoints and touch areas are preserved. The owner explicitly
+approved these revisions on 6 October; see [approval verification](FOUR_LETTER_TRACE_APPEARANCE_APPROVAL.md)
+and [the preceding appearance verification](FOUR_LETTER_TRACE_APPEARANCE_VERIFICATION.md).
+
+The owner-approved Ain 4/Ghain 4/Nga 4 catalogue outlines use detached badges
+and leader cues for head → lift → bowl → dots. Their reference silhouette has
+one unsplit body; the two movement anchors and independent dot actions remain
+visible. The regular game now uses these exact reviewed shapes. See
+[student promotion verification](AIN_FAMILY_TRACE_APPEARANCE_APPROVAL.md).
+
+The owner-approved **Fa 4 / Pa 4** direction models (6 October) remove the upward
+starting hook. Their numbers still follow Qaf's pattern: head 1–3, lift/restart
+for tail 4–6, then one dot for Fa or three for Pa. Jejak Ceria explicitly says
+**“Ke kiri, kemudian naik mengikut gelung”** at the head and
+**“Turun, kemudian ikut ekor ke kiri”** at the tail, including the restart cue.
+The strict modes retain their usual numbered guidance. Demonstrations use the
+same corrected paths, pen-up gaps and head/tail cues. The owner subsequently
+wrote **“approve”** for these exact revisions; student lessons now use them.
+Other models and cues are preserved. See [approval verification](FA_PA_DIRECTION_APPROVAL.md)
+and [the preceding review](FA_PA_DIRECTION_REVIEW.md).
 
 ## Input and teaching content
 

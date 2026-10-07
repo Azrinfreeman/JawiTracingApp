@@ -1,0 +1,977 @@
+{
+  "date": "2026-10-07",
+  "letterId": "va",
+  "transcriptMs": "Va",
+  "sourceFile": "C:/Users/azrin/OneDrive/Documents/Sound Recordings/Recording (6).m4a",
+  "sourceSha256": "50e2f45b12c63b746462ce73f5d398efb0e1d0900cf9f6f33ee936a716e50a53",
+  "sourceBytes": 101396,
+  "sourceChannels": 2,
+  "rate": 24000,
+  "duration": 3.925291666666667,
+  "peak": 0.648040771484375,
+  "clippedSamples": 0,
+  "rms": [
+    {
+      "t": 0,
+      "rms": 0
+    },
+    {
+      "t": 0.02,
+      "rms": 0.000101
+    },
+    {
+      "t": 0.04,
+      "rms": 0.000041
+    },
+    {
+      "t": 0.06,
+      "rms": 0.003004
+    },
+    {
+      "t": 0.08,
+      "rms": 0.000632
+    },
+    {
+      "t": 0.1,
+      "rms": 0.000241
+    },
+    {
+      "t": 0.12,
+      "rms": 0.000127
+    },
+    {
+      "t": 0.14,
+      "rms": 0.000044
+    },
+    {
+      "t": 0.16,
+      "rms": 0.000019
+    },
+    {
+      "t": 0.18,
+      "rms": 0.000012
+    },
+    {
+      "t": 0.2,
+      "rms": 0.000028
+    },
+    {
+      "t": 0.22,
+      "rms": 0.000037
+    },
+    {
+      "t": 0.24,
+      "rms": 0.000021
+    },
+    {
+      "t": 0.26,
+      "rms": 0.00001
+    },
+    {
+      "t": 0.28,
+      "rms": 0.000008
+    },
+    {
+      "t": 0.3,
+      "rms": 0
+    },
+    {
+      "t": 0.32,
+      "rms": 0.000002
+    },
+    {
+      "t": 0.34,
+      "rms": 0
+    },
+    {
+      "t": 0.36,
+      "rms": 0.000002
+    },
+    {
+      "t": 0.38,
+      "rms": 0
+    },
+    {
+      "t": 0.4,
+      "rms": 0
+    },
+    {
+      "t": 0.42,
+      "rms": 0
+    },
+    {
+      "t": 0.44,
+      "rms": 0
+    },
+    {
+      "t": 0.46,
+      "rms": 0.000001
+    },
+    {
+      "t": 0.48,
+      "rms": 0
+    },
+    {
+      "t": 0.5,
+      "rms": 0
+    },
+    {
+      "t": 0.52,
+      "rms": 0
+    },
+    {
+      "t": 0.54,
+      "rms": 0
+    },
+    {
+      "t": 0.56,
+      "rms": 0
+    },
+    {
+      "t": 0.58,
+      "rms": 0
+    },
+    {
+      "t": 0.6,
+      "rms": 0
+    },
+    {
+      "t": 0.62,
+      "rms": 0
+    },
+    {
+      "t": 0.64,
+      "rms": 0
+    },
+    {
+      "t": 0.66,
+      "rms": 0
+    },
+    {
+      "t": 0.68,
+      "rms": 0
+    },
+    {
+      "t": 0.7,
+      "rms": 0
+    },
+    {
+      "t": 0.72,
+      "rms": 0
+    },
+    {
+      "t": 0.74,
+      "rms": 0
+    },
+    {
+      "t": 0.76,
+      "rms": 0
+    },
+    {
+      "t": 0.78,
+      "rms": 0
+    },
+    {
+      "t": 0.8,
+      "rms": 0
+    },
+    {
+      "t": 0.82,
+      "rms": 0
+    },
+    {
+      "t": 0.84,
+      "rms": 0
+    },
+    {
+      "t": 0.86,
+      "rms": 0.000007
+    },
+    {
+      "t": 0.88,
+      "rms": 0.000229
+    },
+    {
+      "t": 0.9,
+      "rms": 0.057498
+    },
+    {
+      "t": 0.92,
+      "rms": 0.082776
+    },
+    {
+      "t": 0.94,
+      "rms": 0.090788
+    },
+    {
+      "t": 0.96,
+      "rms": 0.094794
+    },
+    {
+      "t": 0.98,
+      "rms": 0.085251
+    },
+    {
+      "t": 1,
+      "rms": 0.089528
+    },
+    {
+      "t": 1.02,
+      "rms": 0.087299
+    },
+    {
+      "t": 1.04,
+      "rms": 0.08699
+    },
+    {
+      "t": 1.06,
+      "rms": 0.09078
+    },
+    {
+      "t": 1.08,
+      "rms": 0.142405
+    },
+    {
+      "t": 1.1,
+      "rms": 0.225286
+    },
+    {
+      "t": 1.12,
+      "rms": 0.204418
+    },
+    {
+      "t": 1.14,
+      "rms": 0.187317
+    },
+    {
+      "t": 1.16,
+      "rms": 0.158748
+    },
+    {
+      "t": 1.18,
+      "rms": 0.147673
+    },
+    {
+      "t": 1.2,
+      "rms": 0.130755
+    },
+    {
+      "t": 1.22,
+      "rms": 0.124773
+    },
+    {
+      "t": 1.24,
+      "rms": 0.130879
+    },
+    {
+      "t": 1.26,
+      "rms": 0.119869
+    },
+    {
+      "t": 1.28,
+      "rms": 0.100579
+    },
+    {
+      "t": 1.3,
+      "rms": 0.112268
+    },
+    {
+      "t": 1.32,
+      "rms": 0.098332
+    },
+    {
+      "t": 1.34,
+      "rms": 0.090452
+    },
+    {
+      "t": 1.36,
+      "rms": 0.067004
+    },
+    {
+      "t": 1.38,
+      "rms": 0.059614
+    },
+    {
+      "t": 1.4,
+      "rms": 0.04285
+    },
+    {
+      "t": 1.42,
+      "rms": 0.039049
+    },
+    {
+      "t": 1.44,
+      "rms": 0.031491
+    },
+    {
+      "t": 1.46,
+      "rms": 0.037849
+    },
+    {
+      "t": 1.48,
+      "rms": 0.029219
+    },
+    {
+      "t": 1.5,
+      "rms": 0.012528
+    },
+    {
+      "t": 1.52,
+      "rms": 0.002726
+    },
+    {
+      "t": 1.54,
+      "rms": 0.001241
+    },
+    {
+      "t": 1.56,
+      "rms": 0.000492
+    },
+    {
+      "t": 1.58,
+      "rms": 0.000193
+    },
+    {
+      "t": 1.6,
+      "rms": 0.000114
+    },
+    {
+      "t": 1.62,
+      "rms": 0.00004
+    },
+    {
+      "t": 1.64,
+      "rms": 0.000038
+    },
+    {
+      "t": 1.66,
+      "rms": 0.000016
+    },
+    {
+      "t": 1.68,
+      "rms": 0.00001
+    },
+    {
+      "t": 1.7,
+      "rms": 0.000009
+    },
+    {
+      "t": 1.72,
+      "rms": 0
+    },
+    {
+      "t": 1.74,
+      "rms": 0
+    },
+    {
+      "t": 1.76,
+      "rms": 0
+    },
+    {
+      "t": 1.78,
+      "rms": 0
+    },
+    {
+      "t": 1.8,
+      "rms": 0
+    },
+    {
+      "t": 1.82,
+      "rms": 0
+    },
+    {
+      "t": 1.84,
+      "rms": 0
+    },
+    {
+      "t": 1.86,
+      "rms": 0
+    },
+    {
+      "t": 1.88,
+      "rms": 0
+    },
+    {
+      "t": 1.9,
+      "rms": 0
+    },
+    {
+      "t": 1.92,
+      "rms": 0
+    },
+    {
+      "t": 1.94,
+      "rms": 0
+    },
+    {
+      "t": 1.96,
+      "rms": 0
+    },
+    {
+      "t": 1.98,
+      "rms": 0
+    },
+    {
+      "t": 2,
+      "rms": 0
+    },
+    {
+      "t": 2.02,
+      "rms": 0
+    },
+    {
+      "t": 2.04,
+      "rms": 0
+    },
+    {
+      "t": 2.06,
+      "rms": 0
+    },
+    {
+      "t": 2.08,
+      "rms": 0
+    },
+    {
+      "t": 2.1,
+      "rms": 0
+    },
+    {
+      "t": 2.12,
+      "rms": 0.000317
+    },
+    {
+      "t": 2.14,
+      "rms": 0.001417
+    },
+    {
+      "t": 2.16,
+      "rms": 0.000079
+    },
+    {
+      "t": 2.18,
+      "rms": 0.000012
+    },
+    {
+      "t": 2.2,
+      "rms": 0.000002
+    },
+    {
+      "t": 2.22,
+      "rms": 0
+    },
+    {
+      "t": 2.24,
+      "rms": 0
+    },
+    {
+      "t": 2.26,
+      "rms": 0
+    },
+    {
+      "t": 2.28,
+      "rms": 0
+    },
+    {
+      "t": 2.3,
+      "rms": 0
+    },
+    {
+      "t": 2.32,
+      "rms": 0
+    },
+    {
+      "t": 2.34,
+      "rms": 0
+    },
+    {
+      "t": 2.36,
+      "rms": 0
+    },
+    {
+      "t": 2.38,
+      "rms": 0
+    },
+    {
+      "t": 2.4,
+      "rms": 0
+    },
+    {
+      "t": 2.42,
+      "rms": 0
+    },
+    {
+      "t": 2.44,
+      "rms": 0
+    },
+    {
+      "t": 2.46,
+      "rms": 0
+    },
+    {
+      "t": 2.48,
+      "rms": 0
+    },
+    {
+      "t": 2.5,
+      "rms": 0
+    },
+    {
+      "t": 2.52,
+      "rms": 0
+    },
+    {
+      "t": 2.54,
+      "rms": 0
+    },
+    {
+      "t": 2.56,
+      "rms": 0
+    },
+    {
+      "t": 2.58,
+      "rms": 0
+    },
+    {
+      "t": 2.6,
+      "rms": 0
+    },
+    {
+      "t": 2.62,
+      "rms": 0
+    },
+    {
+      "t": 2.64,
+      "rms": 0
+    },
+    {
+      "t": 2.66,
+      "rms": 0.00019
+    },
+    {
+      "t": 2.68,
+      "rms": 0.041082
+    },
+    {
+      "t": 2.7,
+      "rms": 0.088085
+    },
+    {
+      "t": 2.72,
+      "rms": 0.115313
+    },
+    {
+      "t": 2.74,
+      "rms": 0.124966
+    },
+    {
+      "t": 2.76,
+      "rms": 0.120199
+    },
+    {
+      "t": 2.78,
+      "rms": 0.112357
+    },
+    {
+      "t": 2.8,
+      "rms": 0.091296
+    },
+    {
+      "t": 2.82,
+      "rms": 0.084035
+    },
+    {
+      "t": 2.84,
+      "rms": 0.089618
+    },
+    {
+      "t": 2.86,
+      "rms": 0.17782
+    },
+    {
+      "t": 2.88,
+      "rms": 0.228239
+    },
+    {
+      "t": 2.9,
+      "rms": 0.191895
+    },
+    {
+      "t": 2.92,
+      "rms": 0.161475
+    },
+    {
+      "t": 2.94,
+      "rms": 0.157306
+    },
+    {
+      "t": 2.96,
+      "rms": 0.129645
+    },
+    {
+      "t": 2.98,
+      "rms": 0.117572
+    },
+    {
+      "t": 3,
+      "rms": 0.110982
+    },
+    {
+      "t": 3.02,
+      "rms": 0.108393
+    },
+    {
+      "t": 3.04,
+      "rms": 0.097009
+    },
+    {
+      "t": 3.06,
+      "rms": 0.086935
+    },
+    {
+      "t": 3.08,
+      "rms": 0.07507
+    },
+    {
+      "t": 3.1,
+      "rms": 0.06251
+    },
+    {
+      "t": 3.12,
+      "rms": 0.036419
+    },
+    {
+      "t": 3.14,
+      "rms": 0.039648
+    },
+    {
+      "t": 3.16,
+      "rms": 0.029414
+    },
+    {
+      "t": 3.18,
+      "rms": 0.036884
+    },
+    {
+      "t": 3.2,
+      "rms": 0.03201
+    },
+    {
+      "t": 3.22,
+      "rms": 0.010042
+    },
+    {
+      "t": 3.24,
+      "rms": 0.001549
+    },
+    {
+      "t": 3.26,
+      "rms": 0.000959
+    },
+    {
+      "t": 3.28,
+      "rms": 0.000227
+    },
+    {
+      "t": 3.3,
+      "rms": 0.000311
+    },
+    {
+      "t": 3.32,
+      "rms": 0.000131
+    },
+    {
+      "t": 3.34,
+      "rms": 0.000089
+    },
+    {
+      "t": 3.36,
+      "rms": 0.000065
+    },
+    {
+      "t": 3.38,
+      "rms": 0.000037
+    },
+    {
+      "t": 3.4,
+      "rms": 0.000011
+    },
+    {
+      "t": 3.42,
+      "rms": 0.000009
+    },
+    {
+      "t": 3.44,
+      "rms": 0.00002
+    },
+    {
+      "t": 3.46,
+      "rms": 0.000004
+    },
+    {
+      "t": 3.48,
+      "rms": 0
+    },
+    {
+      "t": 3.5,
+      "rms": 0
+    },
+    {
+      "t": 3.52,
+      "rms": 0
+    },
+    {
+      "t": 3.54,
+      "rms": 0
+    },
+    {
+      "t": 3.56,
+      "rms": 0
+    },
+    {
+      "t": 3.58,
+      "rms": 0
+    },
+    {
+      "t": 3.6,
+      "rms": 0
+    },
+    {
+      "t": 3.62,
+      "rms": 0
+    },
+    {
+      "t": 3.64,
+      "rms": 0
+    },
+    {
+      "t": 3.66,
+      "rms": 0
+    },
+    {
+      "t": 3.68,
+      "rms": 0
+    },
+    {
+      "t": 3.7,
+      "rms": 0
+    },
+    {
+      "t": 3.72,
+      "rms": 0
+    },
+    {
+      "t": 3.74,
+      "rms": 0
+    },
+    {
+      "t": 3.76,
+      "rms": 0
+    },
+    {
+      "t": 3.78,
+      "rms": 0
+    },
+    {
+      "t": 3.8,
+      "rms": 0
+    },
+    {
+      "t": 3.82,
+      "rms": 0
+    },
+    {
+      "t": 3.84,
+      "rms": 0
+    },
+    {
+      "t": 3.86,
+      "rms": 0
+    },
+    {
+      "t": 3.88,
+      "rms": 0
+    },
+    {
+      "t": 3.9,
+      "rms": 0
+    },
+    {
+      "t": 3.92,
+      "rms": 0
+    }
+  ],
+  "regions": [
+    {
+      "start": 0.9,
+      "end": 1.52
+    },
+    {
+      "start": 2.68,
+      "end": 3.24
+    }
+  ],
+  "pitch": [
+    {
+      "t": 0.88,
+      "hz": 122.45,
+      "confidence": 0.857
+    },
+    {
+      "t": 0.92,
+      "hz": 109.59,
+      "confidence": 0.989
+    },
+    {
+      "t": 0.96,
+      "hz": 106.19,
+      "confidence": 0.976
+    },
+    {
+      "t": 1,
+      "hz": 106.67,
+      "confidence": 0.955
+    },
+    {
+      "t": 1.04,
+      "hz": 108.11,
+      "confidence": 0.917
+    },
+    {
+      "t": 1.08,
+      "hz": 121.21,
+      "confidence": 0.814
+    },
+    {
+      "t": 1.12,
+      "hz": 122.45,
+      "confidence": 0.976
+    },
+    {
+      "t": 1.16,
+      "hz": 118.23,
+      "confidence": 0.974
+    },
+    {
+      "t": 1.2,
+      "hz": 112.15,
+      "confidence": 0.938
+    },
+    {
+      "t": 1.32,
+      "hz": 88.56,
+      "confidence": 0.846
+    },
+    {
+      "t": 1.36,
+      "hz": 88.56,
+      "confidence": 0.947
+    },
+    {
+      "t": 1.44,
+      "hz": 111.11,
+      "confidence": 0.919
+    },
+    {
+      "t": 1.48,
+      "hz": 110.09,
+      "confidence": 0.988
+    },
+    {
+      "t": 2.68,
+      "hz": 113.21,
+      "confidence": 0.901
+    },
+    {
+      "t": 2.72,
+      "hz": 109.59,
+      "confidence": 0.995
+    },
+    {
+      "t": 2.76,
+      "hz": 109.09,
+      "confidence": 0.989
+    },
+    {
+      "t": 2.8,
+      "hz": 109.09,
+      "confidence": 0.958
+    },
+    {
+      "t": 2.84,
+      "hz": 124.35,
+      "confidence": 0.864
+    },
+    {
+      "t": 2.88,
+      "hz": 126.98,
+      "confidence": 0.966
+    },
+    {
+      "t": 2.92,
+      "hz": 120,
+      "confidence": 0.934
+    },
+    {
+      "t": 2.96,
+      "hz": 114.83,
+      "confidence": 0.978
+    },
+    {
+      "t": 3,
+      "hz": 108.11,
+      "confidence": 0.917
+    },
+    {
+      "t": 3.08,
+      "hz": 88.56,
+      "confidence": 0.806
+    },
+    {
+      "t": 3.2,
+      "hz": 112.15,
+      "confidence": 0.984
+    }
+  ],
+  "medianPitchApproxHz": 111.11,
+  "permission": "Owner supplied Recording (6).m4a as Va on 2026-10-07 after requesting guided comparison and direct use if a match cannot be achieved.",
+  "catalogueSha256": "5c07846ea1018aad5e58f658e039855f32d0fa1deed9f891cfde4d7c5249b0ec",
+  "protectedRecordings": {
+    "/audio/letters/alphabet/alif-name-v2.mp3": "062b495ec1506ebaf1bb66bbbd1bd0cf3143f69fe1e8c5d0645450fbcaf4d8e4",
+    "/audio/letters/alphabet/ba-name-v2.mp3": "987d2db9dc79dc348d022a5d6324ae1702e8a4736875113a5d4172f10603cf91",
+    "/audio/letters/alphabet/ta-name-v2.mp3": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d",
+    "/audio/letters/ta-marbuta-name.mp3": "c3d6e0b040ef65215cc3dd52899505ab8e00d1ceb00ebbd44a65a5aec4082773",
+    "/audio/letters/alphabet/sa-name-v2.mp3": "ecd13ed9a2d6ef025b117fa5ed9b8aeb3f9c48564fbc3b9d7cacae932bda3ff6",
+    "/audio/letters/alphabet/jim-name-v2.mp3": "e50bb0c1cff95018602e0dd884a1f99c7a2aa48e65d919ad38a687516f6fa4a9",
+    "/audio/letters/ca-name.mp3": "f01709e62cd3aeb3da609a3c6b34a07373a8ec529f7a7c86c983214144e2a5b3",
+    "/audio/letters/alphabet/ha-pedat-name-v2.mp3": "70aff1d8e0cdfe0951644a4fb4f8d398db47962e435d75a19890b84347edf074",
+    "/audio/letters/alphabet/kha-name-v2.mp3": "d2ec10e1bf498155442361153ebe04f38d6e161857a4aac09d6cbfdd1f28a3a2",
+    "/audio/letters/alphabet/dal-name-v2.mp3": "743ca5838453493045fe17d85f2377bb57eebbdbe0b6859f160b36ab8410c921",
+    "/audio/letters/alphabet/zal-name-v2.mp3": "0ea67e64c41d8e8414fa4ebc754e71332b1069b4523fe99d4d6aa10f3b575a32",
+    "/audio/letters/alphabet/ra-name-v2.mp3": "3fbc1ca4733dd40e419891248ae6184b149a63903bfe46a3ba21b6147bee2553",
+    "/audio/letters/alphabet/zai-name-v2.mp3": "4e887a969999838cfce6ae60b5c146929650d5aef53c7ecb8934ffd49b09a3eb",
+    "/audio/letters/alphabet/sin-name-v2.mp3": "58f170c037b8f4229466df9cfb7ecddcf9875706c68cc47255ca3521129e9a3b",
+    "/audio/letters/alphabet/syin-name-v2.mp3": "d2ecece86ebe31e9dd22595a94eaf265fef04afcf10b75acdd6eb32a306f2dc5",
+    "/audio/letters/alphabet/sad-name-v2.mp3": "df2c1465abccebc534a738658b4098c62be74c780729b4e03f6e3ceb4769f8ed",
+    "/audio/letters/alphabet/dad-name-v2.mp3": "69222ad37d2e7e17910cfe66578f83c239483cd9639c41bdb848d34e45c89ebb",
+    "/audio/letters/alphabet/tho-name-v2.mp3": "781fbf7ed4c2edc5044b002a974c83f45f353361e51ca4604401329c572fe81e",
+    "/audio/letters/alphabet/za-name-v2.mp3": "e5af1f6c308fde0b3347bc1685181251295a8cde7e29ea15a18568d03f6057d3",
+    "/audio/letters/alphabet/ain-name-v2.mp3": "7c3974d9768f6747ae0b99df2c991f05b7ac44faad64e2e333937dcc03c87e1b",
+    "/audio/letters/alphabet/ghain-name-v2.mp3": "371dba3f910d3118713a6a35bd08aa96d0d24bbc44583dbe1bdb2052b602d188",
+    "/audio/letters/alphabet/nga-name-v2.wav": "12207db99c7d5bd306c0b1e3ac5f6b5c6e9d8ab8958dca1d20a95a82106a3f22",
+    "/audio/letters/alphabet/fa-name-v2.mp3": "9650bfd6c8b3a7642a099efcc43705cd31bce7d8eb1ae1948ae6a3ed06ad8f94",
+    "/audio/letters/pa-name.mp3": "7a857dd174d2ee83a6c5aefaa7e2d2c0cb84da6d922e481379597454ede1f55c",
+    "/audio/letters/alphabet/qaf-name-v2.mp3": "35a6903e672757cb808d22f121b348a572326d8246200ea0b6e90fce4b59b842",
+    "/audio/letters/kaf-name.mp3": "2e5ac33e648cdc580caecb63c3fb8ef2afde8ab63daba042f489d2bc990ac308",
+    "/audio/letters/alphabet/ga-name-v7.wav": "bce006203bf9f9297679c4defcfd260777b4646682f1372744e6d37006bcc3c1",
+    "/audio/letters/alphabet/lam-name-v2.wav": "2ea37a3cfe0f7ce7c67670717d99f0ee35d5f0d4a3fe38064f25d6fb8a37fd71",
+    "/audio/letters/alphabet/mim-name-v2.wav": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2",
+    "/audio/letters/alphabet/nun-name-v2.wav": "6056e86e290d10e576e347e9049d3fc7dc1caeef1fe5d6ca8044b2157d223f5c",
+    "/audio/letters/alphabet/wau-name-v2.wav": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298",
+    "/audio/letters/va-name.mp3": "4b8879c9200a0ecfdc119327b9d1a308ab48404095dbb4dba271dfe6f0edd0f0",
+    "/audio/letters/ha-name.mp3": "83bc8720b12d8bfc5f0e66dc5deac6546a3d3817bd5ee43d50e94ca81a4136ed",
+    "/audio/letters/alphabet/hamzah-name-v2.wav": "9145078ee74a68a71ab028a833170c24d7c139ae659b8fc9abcfc7d167357dd1",
+    "/audio/letters/alphabet/ya-name-v2.wav": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1",
+    "/audio/letters/ye-name.mp3": "11130897351163086760089d6112d40b02b7d7aaf3353c4e833132cf476b4b02",
+    "/audio/letters/nya-name.mp3": "279ee3232eeb27eeb0ee9c77929611d32380e4aa997f596f27444cf8fb57cd56"
+  }
+}

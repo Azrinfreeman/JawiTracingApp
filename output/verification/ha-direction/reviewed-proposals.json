@@ -1,0 +1,149 @@
+[
+  {
+    "original": {
+      "id": "ha",
+      "glyph": "ه",
+      "labelMs": "Ha (ه)",
+      "contentVersion": 3,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 3,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-04",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 501.3 409.5 C 508.8 420.9 544.8 460.9 548.3 467 C 571.5 507.2 568 565.7 543.3 603.2 C 537.5 612.1 533.4 630.9 521.3 632.9 C 514.3 634.1 497.4 635.2 491 631.9 C 483.4 627.9 480.6 614.7 474.5 608.4 C 433.3 565.9 417.5 534.7 464.1 485.5 C 553.7 390.8 690.8 542.7 664.3 651.6 C 656.3 684.5 606.9 667.8 586 662.3 C 566.8 657.3 528 634.4 517.8 633 C 474.6 627.3 469.4 682 327.5 645"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 501.3 409.5 C 508.8 420.9 544.8 460.9 548.3 467 C 571.5 507.2 568 565.7 543.3 603.2 C 537.5 612.1 533.4 630.9 521.3 632.9 C 514.3 634.1 497.4 635.2 491 631.9 C 483.4 627.9 480.6 614.7 474.5 608.4 C 433.3 565.9 417.5 534.7 464.1 485.5 C 553.7 390.8 690.8 542.7 664.3 651.6 C 656.3 684.5 606.9 667.8 586 662.3 C 566.8 657.3 528 634.4 517.8 633 C 474.6 627.3 469.4 682 327.5 645",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "displayWidth": 50
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ha-name.mp3",
+          "transcriptMs": "Ha",
+          "version": 1,
+          "status": "approved",
+          "review": {
+            "revision": 1,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    "candidate": {
+      "id": "ha",
+      "glyph": "ه",
+      "labelMs": "Ha (ه)",
+      "contentVersion": 4,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": false,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [
+          "M 501.3 409.5 C 508.8 420.9 544.8 460.9 548.3 467 L 550.458017 458.65764 C 620.399671 476.754098 682.975345 574.854903 664.3 651.6 C 656.3 684.5 606.9 667.8 586 662.3 C 566.8 657.3 528 634.4 517.8 633 L 517.84482 633.385048 C 509.785837 634.321382 496.506496 634.739287 491 631.9 C 483.4 627.9 480.6 614.7 474.5 608.4 C 433.3 565.9 417.5 534.7 464.1 485.5 C 490.556192 457.537931 521.153642 451.075528 550.458017 458.65764 L 548.3 467 C 571.5 507.2 568 565.7 543.3 603.2 C 537.5 612.1 533.4 630.9 521.3 632.9 C 520.32273 633.067532 519.1525 633.233115 517.84482 633.385048 L 517.8 633 C 474.6 627.3 469.4 682 327.5 645"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 501.3 409.5 C 508.8 420.9 544.8 460.9 548.3 467 L 550.458017 458.65764 C 620.399671 476.754098 682.975345 574.854903 664.3 651.6 C 656.3 684.5 606.9 667.8 586 662.3 C 566.8 657.3 528 634.4 517.8 633 L 517.84482 633.385048 C 509.785837 634.321382 496.506496 634.739287 491 631.9 C 483.4 627.9 480.6 614.7 474.5 608.4 C 433.3 565.9 417.5 534.7 464.1 485.5 C 490.556192 457.537931 521.153642 451.075528 550.458017 458.65764 L 548.3 467 C 571.5 507.2 568 565.7 543.3 603.2 C 537.5 612.1 533.4 630.9 521.3 632.9 C 520.32273 633.067532 519.1525 633.233115 517.84482 633.385048 L 517.8 633 C 474.6 627.3 469.4 682 327.5 645",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "displayWidth": 50
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/ha-name.mp3",
+          "transcriptMs": "Ha",
+          "version": 1,
+          "status": "approved",
+          "review": {
+            "revision": 1,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised generation and preview use in Codex chat on 2026-10-02; pronunciation review deferred.",
+          "synthesis": {
+            "provider": "Microsoft Edge online speech synthesis",
+            "client": "edge-tts 7.2.8",
+            "voice": "ms-MY-YasminNeural",
+            "locale": "ms-MY",
+            "rate": "-15%",
+            "pitch": "+0Hz",
+            "generatedAt": "2026-10-02T10:10:48.970706+08:00",
+            "reference": "docs/AUDIO_DRAFT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    "note": "Satu gerakan bersambung: turun dari hujung atas, ikut gelung luar kanan ke sambungan bawah, naik mengikut gelung kiri ke sambungan atas, turun melalui garisan dalam, kemudian ikut ekor ke kiri. Mengikut anak panah dalam foto."
+  }
+]

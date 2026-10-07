@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-07",
+  "browserName": "chromium",
+  "src": "/audio/letters/alphabet/nga-name-v2.wav",
+  "metrics": {
+    "sha256": "12207db99c7d5bd306c0b1e3ac5f6b5c6e9d8ab8958dca1d20a95a82106a3f22",
+    "duration": 1,
+    "clipped": 0,
+    "rms": 0.06130518778785671
+  },
+  "playback": {
+    "starts": 2,
+    "ended": 2
+  }
+}

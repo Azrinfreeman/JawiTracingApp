@@ -55,7 +55,7 @@ test('welcome, approved student entry, explicit adult preview, full catalogue an
   await expect(page.locator('.letter-card:enabled')).toHaveCount(readyLessons);
   await selectPractice(page, 'guided');
   await expect(page.locator('.letter-card')).toHaveCount(12);
-  await page.getByRole('button',{name:'Semua huruf',exact:true}).click();await expect(page.locator('.letter-card')).toHaveCount(37);
+  await page.getByRole('button',{name:'Semua huruf',exact:true}).click();await expect(page.locator('.letter-card')).toHaveCount(36);
   await expect(page.locator('.letter-card:disabled')).toHaveCount(letters.filter(letter=>!letter.geometry.strokes.length).length);
   await page.getByRole('button',{name:'Huruf tambahan',exact:true}).click();await expect(page.locator('.letter-card')).toHaveCount(6);
   await page.getByRole('button',{name:'Huruf permulaan',exact:true}).click();

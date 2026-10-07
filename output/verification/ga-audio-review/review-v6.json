@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Asia/Kuala_Lumpur",
+  "revision": 6,
+  "src": "/audio/letters/review/ga-name-v6-garden-context.wav",
+  "sha256": "561b73605083295441a1c655052204d8e3f5e65c0634c26588f2abec65cde2d5",
+  "outcome": "rejected",
+  "reviewer": "Project owner (Codex user; name not supplied)",
+  "quote": "both sound and tone is wrong, it''s cutoff",
+  "scope": "Pronunciation, tone and completeness rejected. Do not promote the extracted recording."
+}

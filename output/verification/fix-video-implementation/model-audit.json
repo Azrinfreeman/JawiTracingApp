@@ -1,0 +1,3528 @@
+{
+  "date": "2026-10-05T21:37:32.711Z",
+  "catalogueSha256": "4e5e611a7ac05a7fa8555de31781f8b0a987d696b13b842b29e7a160650ee02f",
+  "checks": 352,
+  "failures": [],
+  "results": [
+    {
+      "letter": "alif",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "alif",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "alif",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "alif",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "alif",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "alif",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "alif",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "alif",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ba",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ba",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ba",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ba",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ba",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ba",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ba",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ba",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sa",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sa",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sa",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sa",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sa",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sa",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sa",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sa",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ca",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ca",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ca",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ca",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ca",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ca",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ca",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ca",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ha-pedat",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ha-pedat",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ha-pedat",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ha-pedat",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ha-pedat",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ha-pedat",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ha-pedat",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "ha-pedat",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "kha",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kha",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kha",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kha",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kha",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kha",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kha",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kha",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dal",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dal",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dal",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dal",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dal",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dal",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dal",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dal",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zal",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zal",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zal",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zal",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zal",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zal",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zal",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zal",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ra",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ra",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ra",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ra",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ra",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ra",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ra",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ra",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "zai",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "zai",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "zai",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "zai",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "zai",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "zai",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "zai",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "zai",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "sin",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sin",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sin",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sin",
+      "revision": 1,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sin",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sin",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sin",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sin",
+      "revision": 1,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "syin",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "syin",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "syin",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "syin",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "syin",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "syin",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "syin",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "syin",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sad",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sad",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sad",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sad",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9958345966805653,
+      "pauses": 0
+    },
+    {
+      "letter": "sad",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sad",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sad",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "sad",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9958345966805653,
+      "pauses": 0
+    },
+    {
+      "letter": "dad",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dad",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dad",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dad",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9958345966805653,
+      "pauses": 0
+    },
+    {
+      "letter": "dad",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dad",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dad",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "dad",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9958345966805653,
+      "pauses": 0
+    },
+    {
+      "letter": "tho",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "tho",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "tho",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "tho",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "tho",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "tho",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "tho",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "tho",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "za",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "za",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "za",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "za",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "za",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "za",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "za",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "za",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "fa",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "fa",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "fa",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "fa",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "fa",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "fa",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "fa",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "fa",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "pa",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "pa",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "pa",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "pa",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "pa",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "pa",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "pa",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "pa",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "qaf",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "qaf",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "qaf",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "qaf",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "qaf",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "qaf",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "qaf",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "qaf",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999998,
+      "pauses": 0
+    },
+    {
+      "letter": "kaf",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kaf",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kaf",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kaf",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kaf",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kaf",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kaf",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "kaf",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ga",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ga",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ga",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ga",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ga",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ga",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ga",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ga",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "lam",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "lam",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "lam",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "lam",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "lam",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "lam",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "lam",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "lam",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 0.9999999999999999,
+      "pauses": 0
+    },
+    {
+      "letter": "nun",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nun",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nun",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nun",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nun",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nun",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nun",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nun",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "wau",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "wau",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "wau",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "wau",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "wau",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "wau",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "wau",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "wau",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "va",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "va",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "va",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "va",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "va",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "va",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "va",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "va",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ha",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ha",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ha",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ha",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ha",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ha",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ha",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ha",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ya",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ya",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ya",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ya",
+      "revision": 2,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ya",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ya",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ya",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ya",
+      "revision": 2,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ye",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ye",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ye",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ye",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ye",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ye",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ye",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ye",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nya",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nya",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nya",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nya",
+      "revision": 3,
+      "proposal": false,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nya",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nya",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nya",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nya",
+      "revision": 3,
+      "proposal": false,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 3,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 3,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 3,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 3,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 3,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 3,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 3,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "mim",
+      "revision": 3,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ta-marbuta",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ain",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "ghain",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "nga",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "hamzah",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 4,
+      "proposal": true,
+      "type": "touch",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 2,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 8,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 16,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    },
+    {
+      "letter": "jim",
+      "revision": 4,
+      "proposal": true,
+      "type": "pen",
+      "spacing": 32,
+      "phase": "complete",
+      "coverage": 1,
+      "pauses": 0
+    }
+  ]
+}

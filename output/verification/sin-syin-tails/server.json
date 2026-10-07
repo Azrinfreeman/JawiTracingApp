@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-06",
+  "url": "http://127.0.0.1:5173/",
+  "candidateStatus": 200,
+  "reviewStatus": 200,
+  "reviewChoiceServed": true,
+  "sinBaseRevision": 1,
+  "syinBaseRevision": 2,
+  "raisedEndServed": true
+}

@@ -1,0 +1,9 @@
+{
+  "exactProposal": true,
+  "status": 200,
+  "revisions": {
+    "za": 4,
+    "tho": 4
+  },
+  "url": "http://127.0.0.1:5173/src/content/taZaStems.json"
+}

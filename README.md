@@ -19,7 +19,7 @@ npm run dev
 
 Open **http://127.0.0.1:5173**. The Hanana Academy splash automatically continues
 after 1.8 seconds; press **Teruskan** to continue immediately. Select a local
-profile and press **Jom mula** to open the 37 approved lessons. For adult preview,
+profile and press **Jom mula** to open the 36 approved lessons. For adult preview,
 open **Ruang guru → Buka pratonton dewasa**.
 
 **Cara bermain → Solo → Latihan santai** is selected by default. Choose
@@ -69,14 +69,14 @@ For later practice, select **Ruang guru → Jenis latihan → Berpandu** or
 **Kurang panduan**, then open a new lesson. Difficulty choices stay in the
 teacher area. The coloured play result is labelled as assisted practice.
 
-**Teaching readiness:** 37 catalogue entries and tracing models, all 37 owner-approved and
+**Teaching readiness:** 36 active catalogue entries and tracing models, all 36 owner-approved and
 student-ready. On 4 October 27 tracing models were redrawn from the catalogue glyph so the game draws the
 letter **Isi kandungan** shows; after testing them the owner approved those and the corrected Kaf and Ga
 (see [the approval record](docs/CONTENT_APPROVALS.md), [the glyph-matched delivery and verification](docs/GLYPH_MATCHED_TRACING_MODELS_VERIFICATION.md)
 and [the Kaf/Ga correction](docs/KAF_GA_SHAPE_CORRECTION_VERIFICATION.md)). 27 supplied alphabet recordings
 and 10 retained synthetic name recordings were all approved by the project owner
 on 2 October 2026. See [the audio approval record](docs/AUDIO_APPROVALS.md).
-Open **Ruang guru → Suara → Semakan suara Jawi** to listen to all 37
+Open **Ruang guru → Suara → Semakan suara Jawi** to listen to all 36 active
 recordings, or press **Dengar** in a pilot lesson. See
 [the current recording review list](docs/AUDIO_REPLACEMENT_REVIEW.md).
 The application never substitutes beeps or speech synthesis for pronunciation.
@@ -84,12 +84,13 @@ The application never substitutes beeps or speech synthesis for pronunciation.
 The pilot models are Alif, Ba, Ta, Dal, Ra, Sin, Kaf, Lam, Mim, Nun, Wau and Ya.
 Ten further models—Sa, Jim, Ca, Ha (ح), Kha, Zal, Zai, Syin, Sad and Dad—are
 approved at revision 2.
-The final 15 models—Ta marbutah, Ta (ط), Za, Ain, Ghain, Nga, Fa, Pa, Qaf, Ga,
-Va, Ha (ه), Hamzah, Ye and Nya—were approved at revision 2. Ga's corrected
-revision 3 now awaits fresh review.
-**Jom mula → Huruf tersedia** shows the 37 approved lessons. **Huruf permulaan**
+The final batch now contains 14 active models—Ta marbutah, Ta (ط), Za, Ain,
+Ghain, Nga, Fa, Pa, Qaf, Ga, Va, Ha (ه), Hamzah and Nya. Ye was removed by
+the owner on 7 October. All current revisions are owner-approved; Hamzah 5
+uses the straight lower tail. See [the latest checks](docs/HAMZAH_STRAIGHT_TAIL_AND_YE_REMOVAL.md).
+**Jom mula → Huruf tersedia** shows the 36 approved lessons. **Huruf permulaan**
 retains the original 12, and **Model tersedia** in adult preview shows all authored
-models. Adult preview includes all 37 models. **Ruang guru → Kandungan & semakan**
+models. Adult preview includes all 36 active models. **Ruang guru → Kandungan & semakan**
 records approvals and provides **Buka** buttons for individual models.
 See [the first batch's implementation and review notes](docs/LETTER_BATCH_1_REVIEW.md).
 See [the second batch's implementation and review notes](docs/LETTER_BATCH_2_REVIEW.md).
@@ -203,31 +204,7 @@ The screenshot check found no external runtime requests. The web version does
 not include PWA offline caching. The separate signed Android APK bundles the
 game, recordings and artwork for offline use; see [Android release and installation](docs/ANDROID_RELEASE.md).
 Android progress stays in the app's own storage, and teacher exports use its
-native save-file picker. The latest APK is [Taman Jawi 1.0.5](output/releases/Taman-Jawi-1.0.5-release.apk),
-with native fullscreen, fitted controls and a lightweight Android presentation
-that reduces tracing redraw work, plus reliable endpoint confirmation after
-accepted tracing; see [verification and measured limits](docs/ENDPOINT_FINISH_DETECTION_VERIFICATION.md).
-
-## Source layout
-
-`src/tracing/` owns geometry, matching, tolerances, raw input and lesson actions.
-`src/components/TraceBoard.jsx` separates raw diagnostics, accepted tracing ink,
-assisted dot stamps, free copying and demonstrations.
-The play matcher exposes assisted route fill separately from raw movement and
-measured coverage. Its diagnostic buffer can be deliberately continued without
-losing accepted play progress. Legacy, strict and play summaries remain readable
-under storage version 1.
-`src/content/` owns the catalogue and readiness gate. `src/audio/` owns playback
-lifecycle. `src/storage/` owns bounded persistence. Screens do not award tracing
-success; the matcher commits completion only on a validated pointer-up.
-
-Primary technical references: [React](https://react.dev/learn),
-[Vite](https://vite.dev/guide/), [Pointer Events](https://developer.mozilla.org/en-US/docs/Web/API/Pointer_events),
-[SVG geometry](https://developer.mozilla.org/en-US/docs/Web/API/SVGGeometryElement/getPointAtLength),
-[Vitest](https://vitest.dev/guide/) and [Playwright](https://playwright.dev/docs/emulation).
-
-## Publishing
-
-No website deployment or app-store publication has been performed. `dist/` is a static build;
-deployment configuration and any future offline policy should be verified for
-the chosen hosting environment before publication.
+native save-file picker. The latest APK is [Taman Jawi 1.0.8](output/releases/Taman-Jawi-1.0.8-release.apk),
+with all 36 currently approved lessons, updated tracing shapes/orders and recordings.
+It preserves native fullscreen, fitted controls and the lightweight Android
+presentation. See [release verification and device limits](docs/ANDROID_RELEASE.md).

@@ -12,7 +12,7 @@ test('student can start an approved lesson, complete Ba and save an approved stu
   await expect(page.locator('.preview-banner')).toHaveCount(0);
   await expect(page.locator('.letter-card:enabled')).toHaveCount(readyLessons);
   await page.getByRole('button', { name: 'Semua huruf', exact: true }).click();
-  await expect(page.locator('.letter-card')).toHaveCount(37);
+  await expect(page.locator('.letter-card')).toHaveCount(36);
   await expect(page.locator('.letter-card:disabled')).toHaveCount(0);
   await page.getByRole('button', { name: 'Ba', exact: true }).click();
   const model = await boardModels(page);
@@ -23,8 +23,8 @@ test('student can start an approved lesson, complete Ba and save an approved stu
   expect(record).toMatchObject({ letterId: 'ba', preview: false, audioStatus: 'approved', geometryStatus: 'approved', audioVersion: 2, outcome: 'playComplete' });
   await openTeacher(page);
   await expect(page.locator('.teacher-stat-grid')).toContainText(`${readyLessons}pelajaran sedia untuk murid`);
-  await expect(page.getByRole('cell', { name: 'Diluluskan', exact: true })).toHaveCount(37);
-  await expect(page.locator('.audio-review-panel')).toContainText('37 rakaman diluluskan');
+  await expect(page.getByRole('cell', { name: 'Diluluskan', exact: true })).toHaveCount(36);
+  await expect(page.locator('.audio-review-panel')).toContainText('36 rakaman diluluskan');
   await expect(page.locator('.audio-review-transcript')).toContainText('Suara diluluskan');
   await expect(page.getByRole('cell', { name: 'Draf suara · perlu semakan', exact: true })).toHaveCount(0);
 });

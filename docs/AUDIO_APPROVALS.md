@@ -1,5 +1,78 @@
 # Audio approval record
 
+## Selection of supplied Va recording 2026-10-07
+
+The owner reported Va was wrong and instructed **“try to compare with mine if
+cannot then use mine”**, then supplied **Recording (6).m4a**. One guided Malay
+attempt was compared with the reference; a faithful pronunciation/tone match
+could not be confidently established. The exact complete first supplied utterance
+is selected as the authorised fallback. No synthetic pronunciation approval or
+owner rejection of the guided candidate is inferred.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date: **7 October
+2026**, Asia/Kuala_Lumpur. Scope: **Va name audio 2 only**,
+[va-name-v2.wav](../public/audio/letters/alphabet/va-name-v2.wav), 1.10 seconds,
+52,844 bytes, SHA-256
+`fb20da4d695f0f1f6928a645f9d1278abe38fa06ed58b74642e9508a9cfc0446`.
+Source interval 0.70–1.80 seconds preserves the complete consonant/vowel/decay
+and surrounding silence, with no fades, pitch, gain or timing edits. Permission
+and matching review record the actual supplied target and conditional fallback
+request, not a later audition or named teacher assessment. Va geometry 3, other
+36 entries and all previous recordings are preserved. Current inventory:
+30 supplied, 7 synthetic, 37 ready lessons. Earlier Va-1 approval below remains
+historical. See [preparation and verification](VA_AUDIO_CORRECTION.md).
+
+## Selection of supplied Nga recording 2026-10-07
+
+The project owner supplied **Recording (5).m4a** and requested: **“it's not n-g,
+it's nga. Like my recording, can you do it?”** This identifies the supplied
+pronunciation as the target. The correction uses its complete first utterance
+directly, replacing the synthetic Nga name audio. No generated pronunciation
+is marked approved and no separate teacher assessment is inferred.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**7 October 2026**, Asia/Kuala_Lumpur. Scope: Nga name audio only, revision **2**,
+[nga-name-v2.wav](../public/audio/letters/alphabet/nga-name-v2.wav), **48,044 bytes**,
+SHA-256 `12207db99c7d5bd306c0b1e3ac5f6b5c6e9d8ab8958dca1d20a95a82106a3f22`.
+The 0.70–1.70-second source interval preserves the complete first utterance and
+decay; five-millisecond fades affect near-silent margins only. Speech samples,
+pitch, pacing and gain are unchanged. The original source and old synthetic file
+are retained. The matching review records the owner's supplied target and request
+for its use in this correction, rather than a later audition of the packaged WAV.
+
+Nga geometry/content revision 4 and its approval, all 36 other entries and all
+previous active recording files are unchanged. Current inventory: 29 supplied
+recordings and 8 retained synthetic recordings; 37 student-ready lessons.
+The dated 2 October Nga revision-1 entry below remains historical. See
+[preparation and verification](NGA_AUDIO_CORRECTION.md).
+
+## Approval of Ga recording fallback 2026-10-06
+
+The project owner supplied **Recording (4).m4a**, was shown the prepared complete
+first utterance in this conversation, then instructed **“make it as a guide, if
+the guide still failed then use mine”**. This authorises conditional game reuse
+of that recording after a guided synthesis attempt. The guided revision-8 output
+remained materially different in approximate pitch and word length; a faithful
+synthetic match could not be established. The exact prepared **revision-7** user
+recording is used as the authorised fallback. This is an owner fallback selection,
+not an invented owner rejection or pronunciation approval of the synthetic attempt.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**6 October 2026**, Asia/Kuala_Lumpur. Scope: Ga name audio only, revision **7**,
+[ga-name-v7.wav](../public/audio/letters/alphabet/ga-name-v7.wav), **50,444 bytes**,
+SHA-256 `bce006203bf9f9297679c4defcfd260777b4646682f1372744e6d37006bcc3c1`.
+It preserves the complete first utterance, with surrounding silence trimmed and
+near-silent edge fades only; speech samples, pitch, pacing and gain are unchanged.
+No voice cloning, speaker-identity claim or professional teacher assessment.
+
+Ga's `audio.name.review.revision` matches audio version 7 and records this
+project-owner authorisation. Ga geometry/content revision 3 and its review,
+the 36 unrelated entries and all original recording files are preserved.
+The dated 2 October record below remains historical; this selection supersedes
+its Ga revision-1 audio entry. All 37 lessons remain ready. See
+[method and verification](GA_AUDIO_REVIEW.md) and
+[exact authorisation evidence](../output/verification/ga-audio-approval/authorisation.json).
+
 ## Approval 2026-10-02
 
 The project owner explicitly wrote **“approve all”** in this Codex conversation,

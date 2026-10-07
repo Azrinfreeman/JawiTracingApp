@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-10-07T09:21:59.544147+08:00",
+  "letterId": "va",
+  "transcriptMs": "Va",
+  "spokenText": "Va.",
+  "status": "pendingReview",
+  "review": null,
+  "synthesis": {
+    "provider": "Microsoft Edge online speech synthesis",
+    "client": "edge-tts 7.2.8",
+    "voice": "ms-MY-OsmanNeural",
+    "rate": "-20%",
+    "pitch": "+0Hz",
+    "volume": "+0%",
+    "locale": "ms-MY"
+  },
+  "guide": {
+    "sourceSha256": "50e2f45b12c63b746462ce73f5d398efb0e1d0900cf9f6f33ee936a716e50a53",
+    "medianPitchApproxHz": 111.11,
+    "firstActiveDurationApproxSeconds": 0.62,
+    "method": "Lower male Malay voice and moderate pacing guided by reference pitch/envelope; no voice cloning or reference audio upload."
+  },
+  "sourceSha256": "dc3c06bec362bac64916b1f5092a077daf4bdad0ce77f3db98514463b6bb856d",
+  "sourceBytes": 11664,
+  "catalogueSha256": "5c07846ea1018aad5e58f658e039855f32d0fa1deed9f891cfde4d7c5249b0ec",
+  "authorisation": "try to compare with mine if cannot then use mine",
+  "pronunciationAssessment": null
+}

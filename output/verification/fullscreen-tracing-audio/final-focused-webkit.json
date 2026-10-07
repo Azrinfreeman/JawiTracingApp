@@ -1,0 +1,937 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/fullscreen-tracing-audio.spec.js",
+      "--config=playwright.tracing.config.js",
+      "--project=webkit",
+      "--workers=2",
+      "--global-timeout=240000"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.tracing.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 240000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fullscreen-tracing-audio/final-focused-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fullscreen-tracing-audio/final-focused-webkit",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/fullscreen-tracing-audio/final-focused-webkit.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run preview -- --port 4173",
+      "url": "http://127.0.0.1:4173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "fullscreen-tracing-audio.spec.js",
+      "file": "fullscreen-tracing-audio.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "practice at 320x600 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1993,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:08.030Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-819a13e846ee195984cf",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 390x844 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1976,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:10.116Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-f31b4233426e19fb71ac",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 768x1024 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4985,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:12.102Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-a5ba06e04c03d6da1ca4",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 1024x768 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:17.105Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-cc74f8922336f494856e",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 1280x800 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5878,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:22.039Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-22b09ccc66558ae7d735",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 1920x1080 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9239,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:27.930Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-c73eef5457096297b9e3",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "practice at 3840x2160 has no dock, no strip and no collisions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Recorded Windows WebKit native-4K timeout; Chromium covers 4K.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                    "line": 48,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:37.179Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Recorded Windows WebKit native-4K timeout; Chromium covers 4K.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                        "line": 48,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-ab5bb88c0301bba25589",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 47,
+          "column": 3
+        },
+        {
+          "title": "menu replaces the toolbar: every action is reachable and closing keeps accepted progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9508,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:37.445Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-29a61125e8edc5c9c395",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 73,
+          "column": 1
+        },
+        {
+          "title": "the full letter is announced once, after the last required dot, with its approved recording",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9439,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:46.964Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-44cc2904505116d6bcb1",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 98,
+          "column": 1
+        },
+        {
+          "title": "a finished body with a dot still to place stays silent until the dot is placed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7037,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:50:56.414Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-13c3a429d6cb482ed5d4",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 122,
+          "column": 1
+        },
+        {
+          "title": "blocked voice never blocks completion; replay recovers from a fresh gesture",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7612,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:51:03.463Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-ce9c2b2974640c50b092",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 133,
+          "column": 1
+        },
+        {
+          "title": "saving a freehand copy never announces the letter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8075,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:51:11.084Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-500d2563c0f258fc220c",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 142,
+          "column": 1
+        },
+        {
+          "title": "music is one quiet local loop that ducks under the voice, obeys mute and survives leaving only by stopping",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8059,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at musicPlayingAt (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:35:191)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:158:9",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                      "column": 191,
+                      "line": 35
+                    },
+                    "snippet": "  33 | const voices = async page => (await page.evaluate(() => window.__media.plays)).filter(play => !play.music);\n  34 | const musicState = page => page.evaluate(() => { const e = window.__media.elements.find(el => (el.getAttribute('src') || '').includes('/audio/music/')); return e ? { playing: !e.paused, volume: e.volume, loop: e.loop } : null; });\n> 35 | const musicPlayingAt = (page, level) => expect.poll(async () => { const state = await musicState(page); return state?.playing && Math.abs(state.volume - level) < .012; }, { timeout: 5000 }).toBe(true);\n     |                                                                                                                                                                                               ^\n  36 | const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));\n  37 | const completeHeading = (page, letter) => page.getByRole('heading', { name: `Kamu sudah ikut huruf ${letter}!` });\n  38 | async function trace(page, { dots = true } = {}) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                        "column": 191,
+                        "line": 35
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  33 | const voices = async page => (await page.evaluate(() => window.__media.plays)).filter(play => !play.music);\n  34 | const musicState = page => page.evaluate(() => { const e = window.__media.elements.find(el => (el.getAttribute('src') || '').includes('/audio/music/')); return e ? { playing: !e.paused, volume: e.volume, loop: e.loop } : null; });\n> 35 | const musicPlayingAt = (page, level) => expect.poll(async () => { const state = await musicState(page); return state?.playing && Math.abs(state.volume - level) < .012; }, { timeout: 5000 }).toBe(true);\n     |                                                                                                                                                                                               ^\n  36 | const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));\n  37 | const completeHeading = (page, letter) => page.getByRole('heading', { name: `Kamu sudah ikut huruf ${letter}!` });\n  38 | async function trace(page, { dots = true } = {}) {\n    at musicPlayingAt (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:35:191)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:158:9"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:51:19.171Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\final-focused-webkit\\fullscreen-tracing-audio-m-4069c-es-leaving-only-by-stopping-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\final-focused-webkit\\fullscreen-tracing-audio-m-4069c-es-leaving-only-by-stopping-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                    "column": 191,
+                    "line": 35
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-fad5296f84a62b1c53f6",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 155,
+          "column": 1
+        },
+        {
+          "title": "music stops for background, hidden pages and leaving the game, and honours a saved preference",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8431,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at musicPlayingAt (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:35:191)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:182:49",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                      "column": 191,
+                      "line": 35
+                    },
+                    "snippet": "  33 | const voices = async page => (await page.evaluate(() => window.__media.plays)).filter(play => !play.music);\n  34 | const musicState = page => page.evaluate(() => { const e = window.__media.elements.find(el => (el.getAttribute('src') || '').includes('/audio/music/')); return e ? { playing: !e.paused, volume: e.volume, loop: e.loop } : null; });\n> 35 | const musicPlayingAt = (page, level) => expect.poll(async () => { const state = await musicState(page); return state?.playing && Math.abs(state.volume - level) < .012; }, { timeout: 5000 }).toBe(true);\n     |                                                                                                                                                                                               ^\n  36 | const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));\n  37 | const completeHeading = (page, letter) => page.getByRole('heading', { name: `Kamu sudah ikut huruf ${letter}!` });\n  38 | async function trace(page, { dots = true } = {}) {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                        "column": 191,
+                        "line": 35
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  33 | const voices = async page => (await page.evaluate(() => window.__media.plays)).filter(play => !play.music);\n  34 | const musicState = page => page.evaluate(() => { const e = window.__media.elements.find(el => (el.getAttribute('src') || '').includes('/audio/music/')); return e ? { playing: !e.paused, volume: e.volume, loop: e.loop } : null; });\n> 35 | const musicPlayingAt = (page, level) => expect.poll(async () => { const state = await musicState(page); return state?.playing && Math.abs(state.volume - level) < .012; }, { timeout: 5000 }).toBe(true);\n     |                                                                                                                                                                                               ^\n  36 | const settle = page => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));\n  37 | const completeHeading = (page, letter) => page.getByRole('heading', { name: `Kamu sudah ikut huruf ${letter}!` });\n  38 | async function trace(page, { dots = true } = {}) {\n    at musicPlayingAt (D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:35:191)\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:182:49"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:51:28.122Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\final-focused-webkit\\fullscreen-tracing-audio-m-bd0d6--honours-a-saved-preference-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\final-focused-webkit\\fullscreen-tracing-audio-m-bd0d6--honours-a-saved-preference-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                    "column": 191,
+                    "line": 35
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-2b117a25a8109a388594",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 180,
+          "column": 1
+        },
+        {
+          "title": "browser fullscreen is requested once from the game-entry gesture, not on every page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4385,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:51:37.295Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-4f4a7b17fc818c2c8fd5",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 206,
+          "column": 1
+        },
+        {
+          "title": "Solo: readiness is an overlay, the letter is announced once at completion and replay is on the result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6625,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:51:41.759Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-2d1d5b7461c6858b0d20",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 236,
+          "column": 1
+        },
+        {
+          "title": "Duo: the first accepted letter starts one shared announcement; the second finish neither restarts nor cuts it",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9709,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:51:48.395Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-d6699722fcfef1c0dc80",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 253,
+          "column": 1
+        },
+        {
+          "title": "Duo menu pauses both lanes, retries one lane, and dot help appears only in the chosen lane after the shared countdown",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14983,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:51:58.114Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-934fca2f56074b16dd5f",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 272,
+          "column": 1
+        },
+        {
+          "title": "the packaged music and existing MP3/WAV letter names decode to non-silent audio",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 402,
+                  "error": {
+                    "message": "Error: page.evaluate: TypeError: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')",
+                    "stack": "Error: page.evaluate: TypeError: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:307:30",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                      "column": 30,
+                      "line": 307
+                    },
+                    "snippet": "  305 |   await page.goto('/');\n  306 |   const sources = [MUSIC, letters.find(letter => letter.id === 'alif').audio.name.src, letters.find(letter => letter.audio.name.src.endsWith('.wav')).audio.name.src];\n> 307 |   const decoded = await page.evaluate(async sources => {\n      |                              ^\n  308 |     const context = new (window.AudioContext || window.webkitAudioContext)();\n  309 |     try {\n  310 |       return await Promise.all(sources.map(async src => {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                        "column": 30,
+                        "line": 307
+                      },
+                      "message": "Error: page.evaluate: TypeError: undefined is not a constructor (evaluating 'new (window.AudioContext || window.webkitAudioContext)()')\n\n  305 |   await page.goto('/');\n  306 |   const sources = [MUSIC, letters.find(letter => letter.id === 'alif').audio.name.src, letters.find(letter => letter.audio.name.src.endsWith('.wav')).audio.name.src];\n> 307 |   const decoded = await page.evaluate(async sources => {\n      |                              ^\n  308 |     const context = new (window.AudioContext || window.webkitAudioContext)();\n  309 |     try {\n  310 |       return await Promise.all(sources.map(async src => {\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js:307:30"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:52:13.106Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\final-focused-webkit\\fullscreen-tracing-audio-t-1298d--decode-to-non-silent-audio-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fullscreen-tracing-audio\\final-focused-webkit\\fullscreen-tracing-audio-t-1298d--decode-to-non-silent-audio-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                    "column": 30,
+                    "line": 307
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-fe0dd1fa2532fab9c970",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 304,
+          "column": 1
+        },
+        {
+          "title": "actual Chromium playback starts the music and completion voice from game interactions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Windows WebKit media playback is a recorded runtime limitation; decoding is checked separately.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                    "line": 325,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T09:52:14.137Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Windows WebKit media playback is a recorded runtime limitation; decoding is checked separately.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+                        "line": 325,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "a092cb7d4b31340a805e-e50e18ceed7c43f38adc",
+          "file": "fullscreen-tracing-audio.spec.js",
+          "line": 324,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T09:50:07.466Z",
+    "duration": 127048.48,
+    "expected": 15,
+    "skipped": 2,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

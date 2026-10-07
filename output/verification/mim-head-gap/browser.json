@@ -1,0 +1,883 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/mim-head-gap.spec.js",
+      "tests/browser/fix-video.spec.js",
+      "--grep",
+      "Mim keeps|demonstration follows the continuous|review card shows revision|old and revised proposals|adult comparisons",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=line,json"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fix-video.spec.js",
+      "file": "fix-video.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "adult comparisons 320x600 are paged and proposals stay out of student lessons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6918,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:24:52.279Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24c8c7b66826c57a2429-4a74fc00af1bc94351a3",
+          "file": "fix-video.spec.js",
+          "line": 68,
+          "column": 62
+        },
+        {
+          "title": "adult comparisons 320x740 are paged and proposals stay out of student lessons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6873,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:24:59.328Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24c8c7b66826c57a2429-3b8cb1d362588940ce4d",
+          "file": "fix-video.spec.js",
+          "line": 68,
+          "column": 62
+        },
+        {
+          "title": "adult comparisons 1366x768 are paged and proposals stay out of student lessons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6677,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:06.212Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24c8c7b66826c57a2429-c178580a797c0a90c406",
+          "file": "fix-video.spec.js",
+          "line": 68,
+          "column": 62
+        },
+        {
+          "title": "adult comparisons 320x600 are paged and proposals stay out of student lessons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8698,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:13.728Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24c8c7b66826c57a2429-c831f3d618662144e6ab",
+          "file": "fix-video.spec.js",
+          "line": 68,
+          "column": 62
+        },
+        {
+          "title": "adult comparisons 320x740 are paged and proposals stay out of student lessons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:22.533Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24c8c7b66826c57a2429-109db7d84dff15612240",
+          "file": "fix-video.spec.js",
+          "line": 68,
+          "column": 62
+        },
+        {
+          "title": "adult comparisons 1366x768 are paged and proposals stay out of student lessons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:29.992Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "24c8c7b66826c57a2429-108271804715bb817fbd",
+          "file": "fix-video.spec.js",
+          "line": 68,
+          "column": 62
+        }
+      ]
+    },
+    {
+      "title": "mim-head-gap.spec.js",
+      "file": "mim-head-gap.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "play 320: Mim keeps a tiny head opening and continuous tail",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3850,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:24:52.280Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-f5772cba4b9dc0c1fc92",
+          "file": "mim-head-gap.spec.js",
+          "line": 23,
+          "column": 2
+        },
+        {
+          "title": "play 768: Mim keeps a tiny head opening and continuous tail",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:24:56.261Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-4ec326b98af1b462140c",
+          "file": "mim-head-gap.spec.js",
+          "line": 23,
+          "column": 2
+        },
+        {
+          "title": "guided 768: Mim keeps a tiny head opening and continuous tail",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3631,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:24:59.876Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-999bce62c0b6d71a223e",
+          "file": "mim-head-gap.spec.js",
+          "line": 23,
+          "column": 2
+        },
+        {
+          "title": "precision 1280: Mim keeps a tiny head opening and continuous tail",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 9105,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.book-completed')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.book-completed') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.book-completed')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.book-completed')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.book-completed') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.book-completed')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js:31:171",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js",
+                      "column": 171,
+                      "line": 31
+                    },
+                    "snippet": "  29 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);\n  30 |   await page.screenshot({path:`${root}/${browserName}-${mode}-${width}-partial.png`,animations:'disabled'});\n> 31 |   await draw(page,(await boardModels(page)).strokes[0].slice(Math.floor((await boardModels(page)).strokes[0].length*.7)-1));await expect(page.locator('.book-completed')).toBeVisible();\n     |                                                                                                                                                                           ^\n  32 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));\n  33 |   expect(saved).toMatchObject({letterId:'mim',contentVersion:5,geometryStatus:'pendingReview',preview:true,mode});\n  34 |   await page.screenshot({path:`${root}/${browserName}-${mode}-${width}-complete.png`,animations:'disabled'});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js",
+                        "column": 171,
+                        "line": 31
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.book-completed')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.book-completed') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.book-completed')\u001b[22m\n\n\n  29 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);\n  30 |   await page.screenshot({path:`${root}/${browserName}-${mode}-${width}-partial.png`,animations:'disabled'});\n> 31 |   await draw(page,(await boardModels(page)).strokes[0].slice(Math.floor((await boardModels(page)).strokes[0].length*.7)-1));await expect(page.locator('.book-completed')).toBeVisible();\n     |                                                                                                                                                                           ^\n  32 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));\n  33 |   expect(saved).toMatchObject({letterId:'mim',contentVersion:5,geometryStatus:'pendingReview',preview:true,mode});\n  34 |   await page.screenshot({path:`${root}/${browserName}-${mode}-${width}-complete.png`,animations:'disabled'});\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js:31:171"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:03.518Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\mim-head-gap-precision-128-8e132-opening-and-continuous-tail-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\mim-head-gap-precision-128-8e132-opening-and-continuous-tail-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js",
+                    "column": 171,
+                    "line": 31
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-7bc84b10dbe9be345e40",
+          "file": "mim-head-gap.spec.js",
+          "line": 23,
+          "column": 2
+        },
+        {
+          "title": "demonstration follows the continuous path and leaves earned head progress intact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5492,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:13.869Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-1aaaf8ac7bc87e0b4d1b",
+          "file": "mim-head-gap.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "review card shows revision 5 with one continuous movement; student Mim stays approved revision 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:19.503Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-769356147a6db13c9905",
+          "file": "mim-head-gap.spec.js",
+          "line": 46,
+          "column": 1
+        },
+        {
+          "title": "old and revised proposals use the actual illustration renderer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 456,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:22.535Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-8cacff5cef7d9f8c94a4",
+          "file": "mim-head-gap.spec.js",
+          "line": 55,
+          "column": 1
+        },
+        {
+          "title": "play 320: Mim keeps a tiny head opening and continuous tail",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4005,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:25.482Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-703ccf8d907e2b9d908d",
+          "file": "mim-head-gap.spec.js",
+          "line": 23,
+          "column": 2
+        },
+        {
+          "title": "play 768: Mim keeps a tiny head opening and continuous tail",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7196,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:29.602Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-0dbdd0984c2926eedf5f",
+          "file": "mim-head-gap.spec.js",
+          "line": 23,
+          "column": 2
+        },
+        {
+          "title": "guided 768: Mim keeps a tiny head opening and continuous tail",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7112,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:36.810Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-0f69305589d89a86df34",
+          "file": "mim-head-gap.spec.js",
+          "line": 23,
+          "column": 2
+        },
+        {
+          "title": "precision 1280: Mim keeps a tiny head opening and continuous tail",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 12294,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.book-completed')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.book-completed') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.book-completed')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.book-completed')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.book-completed') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.book-completed')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js:31:171",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js",
+                      "column": 171,
+                      "line": 31
+                    },
+                    "snippet": "  29 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);\n  30 |   await page.screenshot({path:`${root}/${browserName}-${mode}-${width}-partial.png`,animations:'disabled'});\n> 31 |   await draw(page,(await boardModels(page)).strokes[0].slice(Math.floor((await boardModels(page)).strokes[0].length*.7)-1));await expect(page.locator('.book-completed')).toBeVisible();\n     |                                                                                                                                                                           ^\n  32 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));\n  33 |   expect(saved).toMatchObject({letterId:'mim',contentVersion:5,geometryStatus:'pendingReview',preview:true,mode});\n  34 |   await page.screenshot({path:`${root}/${browserName}-${mode}-${width}-complete.png`,animations:'disabled'});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js",
+                        "column": 171,
+                        "line": 31
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.book-completed')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" locator('.book-completed') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.book-completed')\u001b[22m\n\n\n  29 |   expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);\n  30 |   await page.screenshot({path:`${root}/${browserName}-${mode}-${width}-partial.png`,animations:'disabled'});\n> 31 |   await draw(page,(await boardModels(page)).strokes[0].slice(Math.floor((await boardModels(page)).strokes[0].length*.7)-1));await expect(page.locator('.book-completed')).toBeVisible();\n     |                                                                                                                                                                           ^\n  32 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).attempts.at(-1));\n  33 |   expect(saved).toMatchObject({letterId:'mim',contentVersion:5,geometryStatus:'pendingReview',preview:true,mode});\n  34 |   await page.screenshot({path:`${root}/${browserName}-${mode}-${width}-complete.png`,animations:'disabled'});\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js:31:171"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:43.933Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\mim-head-gap-precision-128-8e132-opening-and-continuous-tail-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\test-results\\mim-head-gap-precision-128-8e132-opening-and-continuous-tail-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js",
+                    "column": 171,
+                    "line": 31
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-7100bba7fa142d90ffb9",
+          "file": "mim-head-gap.spec.js",
+          "line": 23,
+          "column": 2
+        },
+        {
+          "title": "demonstration follows the continuous path and leaves earned head progress intact",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8607,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:25:57.013Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-8389e36736fd776a8e89",
+          "file": "mim-head-gap.spec.js",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "review card shows revision 5 with one continuous movement; student Mim stays approved revision 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7332,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:26:05.706Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-50009c5243ce822ad0b9",
+          "file": "mim-head-gap.spec.js",
+          "line": 46,
+          "column": 1
+        },
+        {
+          "title": "old and revised proposals use the actual illustration renderer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 623,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:26:13.048Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b66c0a969576c109ff2-220e3242c48ce4837d78",
+          "file": "mim-head-gap.spec.js",
+          "line": 55,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T12:24:51.608Z",
+    "duration": 82167.571,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

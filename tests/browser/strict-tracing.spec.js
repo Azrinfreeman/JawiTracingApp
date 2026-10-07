@@ -1,4 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { test } from './helpers/localTest.js';
 import { openLesson, boardModels, draw, movePoints, openTeacher, menuAction } from './helpers/tracing.js';
 
 test('wrong-start scribbles stay invisible until release and a fresh correct gesture', async ({ page }) => {

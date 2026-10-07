@@ -1,0 +1,11 @@
+{
+  "url": "http://127.0.0.1:5173/src/content/letters.json",
+  "status": 200,
+  "exactCatalogue": true,
+  "revisions": {
+    "mim": 5,
+    "ta-marbuta": 4,
+    "hamzah": 4,
+    "jim": 4
+  }
+}

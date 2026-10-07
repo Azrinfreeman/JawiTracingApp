@@ -1,0 +1,11 @@
+{
+  "originalPath": "M 617.4 345.8 C 617.4 363.7 604.2 380.5 605.8 399.7 C 610 453.7 653.6 508.3 613 558.1 C 511.3 682.8 295 645.7 366.6 451.4",
+  "baseRevision": 3,
+  "revision": 4,
+  "path": "M 608.34011 417 C 618.34592 465.29744 649.26781 513.61386 613 558.1 C 511.3 682.8 295 645.7 366.6 451.4",
+  "cutGuideY": 393,
+  "startY": 417,
+  "retainedCurveFraction": 0.10670411186939024,
+  "sourceImage": "C:/Users/azrin/AppData/Local/Temp/codex-clipboard-03fa36e1-9659-42b0-8b06-5c7b3a7312ee.png",
+  "scope": "Remove upper-right tip above the marked green line; preserve remaining curve and three dots."
+}

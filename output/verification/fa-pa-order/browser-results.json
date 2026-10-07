@@ -1,0 +1,1254 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/fa-pa-directions.spec.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=line,json",
+      "--output=output/verification/fa-pa-order/test-results"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fa-pa-order/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fa-pa-order/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/fa-pa-order/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line"
+      ],
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fa-pa-directions.spec.js",
+      "file": "fa-pa-directions.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "fa play 320: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:37:29.750Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-ade51733aec1fa473f0e",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "fa play 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8473,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:37:38.722Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-b07295e85fbc22183b57",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "fa guided 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6199,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n\n  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:37:47.205Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-fa-guided-e0e18-ead-lift-tail-and-every-dot-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-fa-guided-e0e18-ead-lift-tail-and-every-dot-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-917d6e24e4376f667b41",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "fa precision 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6737,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n\n  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:37:54.267Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-fa-precis-48047-ead-lift-tail-and-every-dot-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-fa-precis-48047-ead-lift-tail-and-every-dot-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-9254cb07c55897b07096",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "pa play 320: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10197,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:01.967Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-ec017d3d6f68b3d13ce7",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "pa play 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8819,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:12.290Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-56464262a84d634674aa",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "pa guided 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6349,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n\n  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:21.120Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-guided-51b12-ead-lift-tail-and-every-dot-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-guided-51b12-ead-lift-tail-and-every-dot-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-45d497f5d0ee7c93a0e2",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "pa precision 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8964,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n\n  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:29.522Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-precis-97a32-ead-lift-tail-and-every-dot-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-precis-97a32-ead-lift-tail-and-every-dot-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-36d765e41a129d236b04",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "fa: demonstration uses the corrected route and preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8404,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:39.474Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-d33927685f57ff3668ce",
+          "file": "fa-pa-directions.spec.js",
+          "line": 74,
+          "column": 35
+        },
+        {
+          "title": "pa: demonstration uses the corrected route and preserves earned progress",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 17410,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected substring: \u001b[32m\"\u001b[7mTurun, kemudian ikut ekor ke kiri\u001b[27m.\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mSambung dari anak panah\u001b[27m.\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.writing-cue') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\u001b[2m    3 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m      - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 7, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 7, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 8, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 8, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 9, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 9, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Perhatikan arah gerakan.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Perhatikan arah gerakan.\"\u001b[22m\n\u001b[2m    11 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Sambung dari anak panah.</p>\u001b[22m\n\u001b[2m       - unexpected value \"Sambung dari anak panah.\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected substring: \u001b[32m\"\u001b[7mTurun, kemudian ikut ekor ke kiri\u001b[27m.\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mSambung dari anak panah\u001b[27m.\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.writing-cue') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\u001b[2m    3 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m      - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 7, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 7, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 8, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 8, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 9, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 9, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Perhatikan arah gerakan.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Perhatikan arah gerakan.\"\u001b[22m\n\u001b[2m    11 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Sambung dari anak panah.</p>\u001b[22m\n\u001b[2m       - unexpected value \"Sambung dari anak panah.\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:83:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 83
+                    },
+                    "snippet": "  81 |   await expect(page.locator('.writing-cue')).toContainText('Ke kiri, kemudian naik mengikut gelung.');\n  82 |   await capture(page,`${browserName}-${candidate.id}-demo`);\n> 83 |   await expect(page.locator('.writing-cue')).toContainText('Angkat pen',{timeout:10000});\n     |                                              ^\n  84 |   await expect(page.locator('.writing-cue')).toContainText('Turun, kemudian ikut ekor ke kiri.',{timeout:10000});\n  85 |   await expect(page.locator('.demonstration-ink')).toHaveCount(0,{timeout:20000});\n  86 |   expect(await page.locator('.play-fill').getAttribute('data-measured-frontier')).toBe(before);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 83
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected substring: \u001b[32m\"\u001b[7mTurun, kemudian ikut ekor ke kiri\u001b[27m.\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[7mSambung dari anak panah\u001b[27m.\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.writing-cue') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\u001b[2m    3 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m      - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 7, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 7, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 8, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 8, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Angkat pen. Perhatikan titik mula seterusnya.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Angkat pen. Perhatikan titik mula seterusnya.\"\u001b[22m\n\u001b[2m    2 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Bentuk huruf siap. Tinggal 3 titik. Sentuh 9, kem…</p>\u001b[22m\n\u001b[2m      - unexpected value \"Bentuk huruf siap. Tinggal 3 titik. Sentuh 9, kemudian angkat pen.\"\u001b[22m\n\u001b[2m    - locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Perhatikan arah gerakan.</p>\u001b[22m\n\u001b[2m    - unexpected value \"Perhatikan arah gerakan.\"\u001b[22m\n\u001b[2m    11 × locator resolved to <p role=\"status\" class=\"writing-cue board-tip\">Sambung dari anak panah.</p>\u001b[22m\n\u001b[2m       - unexpected value \"Sambung dari anak panah.\"\u001b[22m\n\n\n  81 |   await expect(page.locator('.writing-cue')).toContainText('Ke kiri, kemudian naik mengikut gelung.');\n  82 |   await capture(page,`${browserName}-${candidate.id}-demo`);\n> 83 |   await expect(page.locator('.writing-cue')).toContainText('Angkat pen',{timeout:10000});\n     |                                              ^\n  84 |   await expect(page.locator('.writing-cue')).toContainText('Turun, kemudian ikut ekor ke kiri.',{timeout:10000});\n  85 |   await expect(page.locator('.demonstration-ink')).toHaveCount(0,{timeout:20000});\n  86 |   expect(await page.locator('.play-fill').getAttribute('data-measured-frontier')).toBe(before);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:83:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:47.990Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-demons-84257-d-preserves-earned-progress-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-demons-84257-d-preserves-earned-progress-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 83
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-3e7134aa80f45bef9b4a",
+          "file": "fa-pa-directions.spec.js",
+          "line": 74,
+          "column": 35
+        },
+        {
+          "title": "Fa and Pa review 320: separate new revisions and preserved older proposals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1051,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:39:06.368Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-8ea49d5efa0a45914b20",
+          "file": "fa-pa-directions.spec.js",
+          "line": 88,
+          "column": 51
+        },
+        {
+          "title": "Fa and Pa review 768: separate new revisions and preserved older proposals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1077,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:39:08.024Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-4605a437381fcb9c4067",
+          "file": "fa-pa-directions.spec.js",
+          "line": 88,
+          "column": 51
+        },
+        {
+          "title": "fa play 320: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8604,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:37:29.750Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-28a71da3de3284df4085",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "fa play 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10974,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:37:38.465Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-15f33f62ebd0be1ff329",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "fa guided 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 10225,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n\n  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:37:49.446Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-fa-guided-e0e18-ead-lift-tail-and-every-dot-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-fa-guided-e0e18-ead-lift-tail-and-every-dot-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-6c30476599f8292bb2ed",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "fa precision 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 7856,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n\n  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:01.642Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-fa-precis-48047-ead-lift-tail-and-every-dot-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-fa-precis-48047-ead-lift-tail-and-every-dot-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-be2737f4c634cfaf8c44",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "pa play 320: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8882,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:10.549Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-829e0181714b9094c0c8",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "pa play 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 14777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:19.518Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-61f4a0d2c2bc573b8a54",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "pa guided 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 8490,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n\n  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:34.305Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-guided-51b12-ead-lift-tail-and-every-dot-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-guided-51b12-ead-lift-tail-and-every-dot-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-2b1a845cbbe797575a58",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "pa precision 768: Qaf departure, closed head, lift, tail and every dot",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 8482,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                      "column": 46,
+                      "line": 43
+                    },
+                    "snippet": "  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                        "column": 46,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.writing-cue')\nExpected: \u001b[32m\"Mula di 1. Ke kiri, kemudian naik mengikut gelung.\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" locator('.writing-cue') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.writing-cue')\u001b[22m\n\n\n  41 |   test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});\n  42 |   await openCandidate(page,candidate.labelMs,mode);\n> 43 |   await expect(page.locator('.writing-cue')).toHaveText('Mula di 1. Ke kiri, kemudian naik mengikut gelung.');\n     |                                              ^\n  44 |   const departure=await page.locator('.reference-stroke').first().evaluate(path=>{const a=path.getPointAtLength(0),b=path.getPointAtLength(1);return {dx:b.x-a.x,dy:b.y-a.y};});\n  45 |   expect(departure.dx).toBeLessThan(0);expect(departure.dy).toBeGreaterThan(0);\n  46 |   await expect(page.locator('.reference-stroke').first()).toHaveAttribute('d',candidate.geometry.strokes[0].path);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js:43:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:43.573Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-precis-97a32-ead-lift-tail-and-every-dot-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\fa-pa-order\\test-results\\fa-pa-directions-pa-precis-97a32-ead-lift-tail-and-every-dot-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+                    "column": 46,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-4fe8d9a1fae6210d0c94",
+          "file": "fa-pa-directions.spec.js",
+          "line": 40,
+          "column": 2
+        },
+        {
+          "title": "fa: demonstration uses the corrected route and preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:38:53.151Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-420d749d35935219dd38",
+          "file": "fa-pa-directions.spec.js",
+          "line": 74,
+          "column": 35
+        },
+        {
+          "title": "pa: demonstration uses the corrected route and preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 13666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:39:04.943Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-a48523d29566657c7da5",
+          "file": "fa-pa-directions.spec.js",
+          "line": 74,
+          "column": 35
+        },
+        {
+          "title": "Fa and Pa review 320: separate new revisions and preserved older proposals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1833,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:39:18.619Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-949f9803dc85329efbfc",
+          "file": "fa-pa-directions.spec.js",
+          "line": 88,
+          "column": 51
+        },
+        {
+          "title": "Fa and Pa review 768: separate new revisions and preserved older proposals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3353,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T02:39:20.462Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21159a8ab87c5795e198-568214a069b6b7969885",
+          "file": "fa-pa-directions.spec.js",
+          "line": 88,
+          "column": 51
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T02:37:29.116Z",
+    "duration": 114813.238,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 9,
+    "flaky": 0
+  }
+}

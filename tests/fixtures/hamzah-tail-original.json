@@ -1,0 +1,72 @@
+{
+  "id": "hamzah",
+  "glyph": "ء",
+  "labelMs": "Hamzah",
+  "contentVersion": 4,
+  "viewBox": [
+    0,
+    0,
+    1000,
+    1000
+  ],
+  "pilot": false,
+  "additional": false,
+  "geometry": {
+    "status": "approved",
+    "review": {
+      "revision": 4,
+      "reviewer": "Project owner (Codex user; name not supplied)",
+      "date": "2026-10-06",
+      "reference": "docs/CONTENT_APPROVALS.md#approval-of-all-current-semakan-video-proposals-2026-10-06",
+      "kind": "projectOwner"
+    },
+    "displayPaths": [
+      "M 566.8 437.2 C 562.7 426.6 567 412.8 559.9 403.5 C 527.6 360.9 451.8 412.3 442.7 450.4 C 437.6 472.2 470.9 519.2 491 524.3 C 520 531.8 596.5 517.2 621.8 502.1 C 596.5 517.2 520 531.8 491 524.3 L 486.5 524.1 C 480.5 526.1 475.4 535.1 468.9 538.1 C 450.4 546.6 426.9 553.8 408.4 560.4"
+    ],
+    "strokes": [
+      {
+        "id": "stroke-1",
+        "path": "M 566.8 437.2 C 562.7 426.6 567 412.8 559.9 403.5 C 527.6 360.9 451.8 412.3 442.7 450.4 C 437.6 472.2 470.9 519.2 491 524.3 C 520 531.8 596.5 517.2 621.8 502.1 C 596.5 517.2 520 531.8 491 524.3 L 486.5 524.1 C 480.5 526.1 475.4 535.1 468.9 538.1 C 450.4 546.6 426.9 553.8 408.4 560.4",
+        "width": 44,
+        "penLiftPolicy": "continuous",
+        "checkpoints": [
+          0.25,
+          0.5,
+          0.75,
+          0.95
+        ],
+        "displayWidth": 50
+      }
+    ],
+    "dotTargets": [],
+    "validSequences": [
+      [
+        "stroke-1"
+      ]
+    ]
+  },
+  "audio": {
+    "name": {
+      "src": "/audio/letters/alphabet/hamzah-name-v2.wav",
+      "transcriptMs": "Hamzah",
+      "version": 2,
+      "status": "approved",
+      "review": {
+        "revision": 2,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-02",
+        "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+        "kind": "projectOwner"
+      },
+      "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+      "origin": {
+        "kind": "userProvided",
+        "source": "voices/alphabet/25_hamzah.wav",
+        "sha256": "9145078ee74a68a71ab028a833170c24d7c139ae659b8fc9abcfc7d167357dd1",
+        "importedAt": "2026-10-02T02:39:02.335Z",
+        "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+      }
+    },
+    "pronunciationExamples": []
+  }
+}
