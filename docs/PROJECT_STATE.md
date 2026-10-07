@@ -447,7 +447,7 @@ verify changing facts against [the catalogue](../src/content/letters.json) and
 - **Local addresses:** development `http://127.0.0.1:5173`, production preview
   `http://127.0.0.1:4173`. Confirm reachability and build before reuse.
 - **Version control:** source, reviewed teaching assets, Android APK and lightweight
-  verification records are tracked in the private
+  verification records are tracked in the
   [Azrinfreeman/JawiPrasekolah](https://github.com/Azrinfreeman/JawiPrasekolah)
   repository on `main`, following the user's commit/push request. Signing keys,
   local SDK configuration, caches, temporary files and generated screenshots stay
