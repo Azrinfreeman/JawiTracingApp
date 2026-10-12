@@ -15,6 +15,7 @@ import { fitTraceViewport } from '../game/screenLayout.js';
 import { createLiveRenderer, controlKey } from '../tracing/liveRenderer.js';
 import { createInkPath } from '../tracing/inkPath.js';
 import { demonstrationPlan, stageInstruction } from '../tracing/teachingCues.js';
+import { demonstrationFrame } from '../tracing/demonstrationFrame.js';
 import { outlineAppearance, outlinePart, outlinePath, outlineIllustrationParts, createOutlineReveal } from '../tracing/outlineAppearance.js';
 import { isLightweightPresentation, setTracingContact } from '../platform/presentation.js';
 
@@ -57,14 +58,44 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
   const [state, setState] = useState(null);
   const [references, setReferences] = useState({});
   const [hint, setHint] = useState(false), [scale, setScale] = useState(1);
+  const [controlBounds, setControlBounds] = useState([]);
+  const [fitControlBounds, setFitControlBounds] = useState([]);
   const stageSize = useViewportLayout(stageRef, () => { inputRef.current?.cancel(); if (demoActive.current) callbacks.current.onDemoEnd?.(); });
   const smallStage = fitted && stageSize.height > 0 && Math.min(stageSize.width, stageSize.height) < 230;
   enabledRef.current = enabled && !smallStage;
-  const presentation = useMemo(() => fitTraceViewport(letter, references, stageSize.width, stageSize.height, isCopy || !fitted), [letter, references, stageSize.width, stageSize.height, isCopy, fitted]);
+  const presentation = useMemo(() => fitTraceViewport(letter, references, stageSize.width, stageSize.height, isCopy || !fitted, fitControlBounds), [letter, references, stageSize.width, stageSize.height, isCopy, fitted, fitControlBounds]);
+  const guideControls = useMemo(() => controlBounds.map(bounds => ({ x: presentation.x + bounds.x / scale, y: presentation.y + bounds.y / scale, width: bounds.width / scale, height: bounds.height / scale })), [controlBounds, presentation, scale]);
   const viewBox = `${presentation.x} ${presentation.y} ${presentation.width} ${presentation.height}`;
   liveContext.current = { scale, presentation, demo };
   useLayoutEffect(() => { if (liveView.current) renderer.current?.paint(liveView.current, liveContext.current); });
-  useImperativeHandle(ref, () => ({ cancel: () => { inputRef.current?.cancel(); setSectionDemo(false); }, demonstrateSection: () => { inputRef.current?.cancel(); setSectionDemo(true); }, isBusy: () => demoActive.current || Boolean(inputRef.current?.isBusy()), exportDiagnostic: () => inputRef.current?.diagnostic(), exportInk: () => inkData.current.map(line => line.map(p => ({ x: Math.round(p.x * 10) / 10, y: Math.round(p.y * 10) / 10 }))) }), []);
+  useImperativeHandle(ref, () => ({ cancel: () => { inputRef.current?.cancel(); setSectionDemo(false); }, demonstrateSection: () => { inputRef.current?.cancel(); setSectionDemo(true); }, isBusy: () => demoActive.current || Boolean(inputRef.current?.isBusy()), hasWork: () => inkData.current.some(line => line.length > 1) || Boolean(liveView.current?.completed?.length) || Object.values(liveView.current?.progress || {}).some(value => value > 0), exportDiagnostic: () => inputRef.current?.diagnostic(), exportInk: () => inkData.current.map(line => line.map(p => ({ x: Math.round(p.x * 10) / 10, y: Math.round(p.y * 10) / 10 }))) }), []);
+  useLayoutEffect(() => {
+    if (!stageOnly || !fitted) return;
+    const host = svgRef.current.closest('.stage-workspace, .stage-arena');
+    if (!host) return;
+    const controls = [...host.querySelectorAll('[data-stage-control]')];
+    let active = true, measureFrame;
+    const measure = () => {
+      if (!active) return;
+      const board = svgRef.current.getBoundingClientRect();
+      const rectangles = controls.map(node => node.getBoundingClientRect()).filter(rect => rect.width && rect.height);
+      const bounds = rectangles.map(rect => ({ x: Math.round(rect.x - board.x - 8), y: Math.round(rect.y - board.y - 8), width: Math.round(rect.width + 16), height: Math.round(rect.height + 16) }));
+      setControlBounds(previous => JSON.stringify(previous) === JSON.stringify(bounds) ? previous : bounds);
+      // Both challenge lanes reserve the same header space on every viewport.
+      // Actual control positions still guide label placement within each lane.
+      const firstBoard = host.querySelector('.trace-board').getBoundingClientRect();
+      const fitBounds = host.matches('.stage-arena') && rectangles.length
+        ? [{ x: 0, y: 0, width: Math.round(board.width), height: Math.max(0, Math.round(Math.max(...rectangles.map(rect => rect.bottom)) - firstBoard.top + 8)) }]
+        : bounds;
+      setFitControlBounds(previous => JSON.stringify(previous) === JSON.stringify(fitBounds) ? previous : fitBounds);
+    };
+    const requestMeasure = () => {
+      if (active && measureFrame === undefined) measureFrame = requestAnimationFrame(() => { measureFrame = undefined; measure(); });
+    };
+    const observer = new ResizeObserver(requestMeasure); observer.observe(host); observer.observe(svgRef.current); controls.forEach(node => observer.observe(node)); measure();
+    document.fonts?.ready.then(requestMeasure);
+    return () => { active = false; cancelAnimationFrame(measureFrame); observer.disconnect(); };
+  }, [stageOnly, fitted, letter.id, isCopy]);
   useEffect(() => { if (!enabled) inputRef.current?.cancel(); }, [enabled]);
 
   useEffect(() => {
@@ -299,19 +330,18 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
     const marker = document.createElementNS(NS, 'circle');
     marker.setAttribute('class', 'demo-marker'); marker.setAttribute('r', '20'); group.append(marker);
     let frame, start = performance.now(), timeout, lastStep = -1;
+    const painted = new Map(), partsById = new Map(parts.map(part => [part.id,part]));
     const tick = now => {
-      let elapsed = now-start, current = null;
-      for (const [index, step] of schedule.entries()) {
-        const duration = reduced ? 700 : step.duration;
-        if (elapsed < 0) break;
-        const part = parts.find(p => p.id === step.id);
-        const fraction = reduced ? 1 : Math.min(1, elapsed/duration);
-        const arc = step.from + (step.to-step.from)*fraction;
+      const result = demonstrationFrame(schedule, now-start, reduced);
+      const current = result.current && { ...result.current, part:partsById.get(result.current.id) };
+      for (const [id, {arc,fraction}] of result.reveals) {
+        const part = partsById.get(id), previous = painted.get(id);
+        // A completed section is never replayed at an earlier arc each frame.
+        if (previous?.arc === arc && previous?.fraction === fraction) continue;
         if (part.reveal)part.reveal.paint(arc,arc>=references[part.id].length);
         else if (part.stroke) part.node.setAttribute('stroke-dashoffset', references[part.id].length-arc);
         else part.node.setAttribute('opacity', fraction >= .3 ? '1' : '0');
-        if (elapsed < duration + step.pause) current = {part, arc, index, lifted:elapsed >= duration};
-        elapsed -= duration + step.pause;
+        painted.set(id,{arc,fraction});
       }
       if (current?.part.stroke && !current.lifted && !reduced) {
         const p = pointAt(references[current.part.id], current.arc);
@@ -325,7 +355,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
         setDemoCue(current?.lifted && next && next.id !== current.part.id ? 'Angkat pen. Perhatikan titik mula seterusnya.'
           : part ? stageInstruction(letter, part, {phase:'tracing',progress:{[part.id]:current.arc},completed:[]}) : 'Perhatikan arah gerakan.');
       }
-      if (elapsed >= 0) { timeout = setTimeout(() => callbacks.current.onDemoEnd(), 500); return; }
+      if (result.finished) { timeout = setTimeout(() => callbacks.current.onDemoEnd(), 500); return; }
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);
@@ -365,7 +395,7 @@ export const TraceBoard = forwardRef(function TraceBoard({ letter, mode, activit
       <g ref={demoRef} aria-hidden="true"/>
       <g ref={cursorRef} aria-hidden="true"/>
       <g ref={tailRef} aria-hidden="true"/>
-      {guidePart && <NumberedTraceGuides part={guidePart} letter={letter} references={references} scale={scale} viewport={fitted ? presentation : undefined} progress={state?.progress[pendingId] || 0} finish={isPlay ? state?.finish : undefined}/>}
+      {guidePart && <NumberedTraceGuides part={guidePart} letter={letter} references={references} scale={scale} viewport={fitted ? presentation : undefined} controls={guideControls.length ? guideControls : undefined} progress={state?.progress[pendingId] || 0} finish={isPlay ? state?.finish : undefined}/>}
       <g ref={resumeRef} aria-hidden="true"/>
     </svg>
   </div>

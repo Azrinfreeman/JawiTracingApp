@@ -1,0 +1,39 @@
+{
+  "recordedAt": "2026-10-07T18:53:52.9767304+08:00",
+  "scope": "Duo left/right layout on tablet and smartboard",
+  "server": "http://127.0.0.1:5173/",
+  "node": "24.19",
+  "playwright": "1.63",
+  "build": "passed, 36 ready lessons",
+  "browsers": [
+    "chromium",
+    "webkit"
+  ],
+  "checks": {
+    "passed": 18,
+    "skipped": 1,
+    "unresolvedFailures": 0
+  },
+  "report": "docs/DUO_LEFT_RIGHT_LAYOUT.md",
+  "hashes": {
+    "src/screens/MatchScreen.jsx": "bb9f11f507828814666ebd910445961ab4786779dbbd2fa4735716e18b92ce07",
+    "src/styles/fullscreen.css": "7315782537fefc0f3d629577d15533e207090bfb6a2be76decadd9af7e7d7758",
+    "src/styles/match.css": "79df242187178956e586d1fa743a1d7da5b983e8bb493728e999a4b113f79f55",
+    "src/components/TraceBoard.jsx": "d71c2e7924b0ee6086cb723ff3d7add148e9caffda1fe6f2351d214c89138ad4",
+    "src/components/RaceTracePane.jsx": "31acd63051d5a7a3f89917466a1c8d76a63a3042e9339996ac394e6a6656d232",
+    "src/game/screenLayout.js": "780684ce83b154b007c146c9aa5bd56dbd24c0e7310469b23361c5a6994ffaab",
+    "src/game/scoring.js": "a6112fc479daf28c9201f1de9b6dc41bab959db12614b31d27c15bddf098f6cd",
+    "tests/browser/fullscreen-layout.spec.js": "489c47beacd048031d67ad5393a079a6251691a80316982d50638e18420d92f6",
+    "tests/browser/solo-duo.spec.js": "7819c1c63cfcab019944eb2f02a259132c1e008b1fcbf63eebb273cd7c1c0ce2",
+    "tests/browser/fullscreen-tracing-audio.spec.js": "64b196977cddc0ec4508466c2824eac3e1588aae8a8c1f0b8038aef0ea66f80b",
+    "tests/browser/gameplay-navigation.spec.js": "246c3c5a762783dbb8d542c689651a201fe7e5fdfa7e45e8975bf4bfee54a369",
+    "tests/browser/helpers/tracing.js": "b7dc6662ac43d70ad5198c80eeaef2db1f4c316a0d27cc15b424ad9fb4daffc1",
+    "tests/browser/helpers/audio.js": "88b1e72b89cb1960620243a0d264a58d9d2ac3deef89fbfdf2bdf379ddce0f06",
+    "src/content/letters.json": "9bc5256261ce3ed5b703c2fc3fe4c86562be8ace11a7edf6ccfca2f9ae04e7d6",
+    "package.json": "ac046cef16f885ce96e15c3e23c90ba830ccdf1145a843e0e01f8236b6cf86b8",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "playwright.config.js": "f9ce1412decf8249638a0b59c48a3c52e811bb9885dc8cc8f2282e823ad3d4d7",
+    "dist/assets/index-BJNqiUhF.js": "78f3e923c3cf6ccac07fb90839f40d4cd1276fce087297b4ec18695f229982eb",
+    "dist/assets/index-DbweFF8G.css": "0764aa3bb4839f976f3639e0ed8e8839c748d1acd73a1fea5dae1715bbcc67d0"
+  }
+}

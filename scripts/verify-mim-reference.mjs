@@ -1,0 +1,25 @@
+import {readFileSync,writeFileSync,readdirSync,existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import * as factories from '../src/content/reviewCandidates.js';
+import {validateLetter} from '../src/content/validateContent.js';
+const root='output/verification/mim-reference',read=p=>JSON.parse(readFileSync(p,'utf8')),hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+const before=read(`${root}/before-inputs.json`),letters=read('src/content/letters.json');
+assert.equal(hash('src/content/letters.json'),hash(`${root}/before-catalogue.json`));
+const allowed=new Set(['src/content/reviewCandidates.js','src/components/VideoModelReview.jsx','src/components/LetterModelGlyph.jsx','src/tracing/teachingCues.js','src/game/screenLayout.js','scripts/author-mim-reference.mjs','tests/geometry/haDirection.test.js','tests/geometry/nunOutline.test.js','tests/geometry/sadDadApproval.test.js','tests/browser/fixtures/outlineMatchHarness.jsx']);
+const changed=Object.entries(before).filter(([p,h])=>!existsSync(p)||hash(p)!==h).map(([p])=>p);
+assert.deepEqual(changed.filter(p=>!allowed.has(p)),[]);
+const inventory=Object.fromEntries(Object.entries(factories).map(([name,factory])=>[name,factory(letters).map(p=>[p.candidate.id,p.candidate.contentVersion])]));
+assert.deepEqual(inventory.mimReferenceReviewCandidates,[['mim',6]]);for(const[name,items]of Object.entries(inventory))if(name!=='mimReferenceReviewCandidates')assert.deepEqual(items,[]);
+const [{candidate}]=factories.mimReferenceReviewCandidates(letters);assert.deepEqual(validateLetter(candidate),{valid:true,errors:[],ready:false});assert.equal(candidate.geometry.review,null);assert.equal(letters.filter(l=>validateLetter(l).ready).length,36);
+const audio={},inputs={};function walk(dir,target){for(const f of readdirSync(dir,{withFileTypes:true})){const p=`${dir}/${f.name}`;if(f.isDirectory())walk(p,target);else target[p]=hash(p);}}
+walk('public/audio',audio);assert.deepEqual(audio,Object.fromEntries(Object.entries(before).filter(([p])=>p.startsWith('public/audio/'))));
+for(const dir of ['src','tests','scripts','public'])walk(dir,inputs);
+for(const p of ['package.json','package-lock.json','vite.config.js','playwright.config.js','docs/references/mim-photo-reference.png','docs/references/mim-current-tracing.png'])inputs[p]=hash(p);
+assert.equal(candidate.geometry.appearance.source.sha256,inputs['docs/references/mim-photo-reference.png']);
+const unit=read(`${root}/unit-clearance-results.json`),browser=read(`${root}/browser-clearance-results.json`).stats;
+assert.equal(unit.numFailedTests,0);assert.equal(browser.unexpected,0);assert.equal(browser.flaky,0);
+const build={};for(const p of ['dist/index.html',...readdirSync('dist/assets').filter(p=>p.endsWith('.js')||p.endsWith('.css')).map(p=>`dist/assets/${p}`)])build[p]=hash(p);
+const report={date:'2026-10-12',authorization:'go, following the Mim implementation document',activeCatalogueByteExact:true,otherEntriesExact:35,audioFilesExact:Object.keys(audio).length,protectedExistingFilesExact:Object.keys(before).length-changed.length,accountedExistingChanges:changed,studentReady:36,candidate:{id:'mim',revision:6,status:'pendingReview',movements:1,dots:0,revealPieces:candidate.geometry.appearance.parts[0].segments.length},inventory,unit:{passed:unit.numPassedTests,failed:unit.numFailedTests,files:unit.testResults.length},browser,inputs,build};
+writeFileSync(`${root}/verification.json`,JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({activeCatalogueByteExact:true,protectedExistingFilesExact:report.protectedExistingFilesExact,audioFilesExact:report.audioFilesExact,studentReady:36,candidate:report.candidate,unit:report.unit,browser}));

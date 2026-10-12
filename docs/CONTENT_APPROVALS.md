@@ -1,5 +1,163 @@
 # Content approval record
 
+## Approval of Ya smaller head 2026-10-12
+
+The project owner replied **“approve d”** directly to **“Approve this Ya 3 for
+student lessons?”**, after the reference/current/proposed picture and
+verification. This is approval of that exact reviewed **Ya 3**. Reviewer:
+**Project owner (Codex user; name not supplied)**. Date: **2026-10-12**,
+Asia/Kuala_Lumpur. No teacher assessment is claimed.
+
+The head curves are scaled to 72% around the existing bowl join. The exact
+reviewed route, lower bowl, two dots, widths, checkpoints, touch policies,
+continuous-body/two-tap order, cue boundary, numbered guides and framing are
+preserved. Activation adds only approved geometry status and matching review
+metadata relative to the candidate. The revision and independent audio
+approval do not change. Other 35 entries and all 78 audio files are preserved;
+historical and preview attempts retain their recorded revisions/statuses.
+
+See [the preserved candidate review](YA_SMALLER_HEAD_REVIEW.md) and
+[activation verification](YA_SMALLER_HEAD_APPROVAL.md).
+
+## Approval of Mim reference shape 2026-10-12
+
+The project owner replied **“approved”** directly to the pictured **Mim 6**
+student-lesson approval question, after the reference/current/proposed image
+and verification. Reviewer: **Project owner (Codex user; name not supplied)**.
+Date: **2026-10-12**, Asia/Kuala_Lumpur. No teacher assessment is claimed.
+
+This approves the exact reviewed open hooked head, flatter return and connected
+slender pointed tail. The one continuous movement, endpoint, outline/reveal
+pieces, widths, checkpoints, numbered guides, cue boundary and framing clearance
+are preserved. Promotion adds only approved geometry status and matching review
+metadata relative to the Mim 6 candidate. Revision and audio approvals do not
+change. Other 35 entries and all 78 public/audio files remain exact; historical
+and preview attempts keep their recorded revision/status.
+
+See [the preserved candidate review](MIM_REFERENCE_REVIEW.md) and
+[activation verification](MIM_REFERENCE_APPROVAL.md).
+
+## Approval of Wau and Va smaller heads 2026-10-12
+
+The project owner replied **“proceed”** directly to **“Approve Wau 4 / Va 5 for
+student lessons?”**, after seeing the same-scale current/proposed image and
+verification. This approves those exact reviewed smaller-head models. Reviewer:
+**Project owner (Codex user; name not supplied)**. Date: **2026-10-12**,
+Asia/Kuala_Lumpur. No teacher assessment is claimed.
+
+The head loops are approximately 17% smaller; the original junctions, tails,
+endpoints, widths, checkpoints, policies, left-first continuous route and Va's
+separate dot remain exact. The original framing, revised cue boundary and
+detached numbered labels are retained. Promotion adds only approved geometry
+status and matching review metadata relative to the reviewed Wau 4 / Va 5
+candidates; content versions and audio approvals remain unchanged. Other 34
+entries and all 78 public/audio files are preserved, including Ta 9 / Za 9.
+Earlier/preview attempts retain their recorded revision and status.
+
+See [the preserved candidate review](WAU_VA_SMALLER_HEAD_REVIEW.md) and
+[activation verification](WAU_VA_SMALLER_HEAD_APPROVAL.md).
+
+## Approval of Ta and Za photo reference shapes 2026-10-12
+
+The project owner replied **“proceed”** directly after the exact pictured
+**Ta 9 / Za 9** review, which stated that student activation awaited shape
+approval. This authorises activating those reviewed photo-adapted shapes.
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-12**, Asia/Kuala_Lumpur. No teacher assessment is claimed.
+
+The compact lower loop, pointed left tail, thin tapered pillar and straight
+downward pillar route match the reviewed revision-9 candidates exactly.
+Trace the loop/tail through 1–3, lift, then the pillar from 4 through 5 to 6.
+Za requires its retained separate dot at 7. Promotion adds only approved
+geometry status and matching review metadata to the candidates; routes,
+outlines, reveal pieces, bounds, provenance, checkpoints, policies, dots, audio
+and content versions remain exact. Other 34 catalogue entries and all 78
+public/audio files are preserved. Historical and preview attempts remain stored
+under their actual revision/status.
+
+See [the preserved review](TA_ZA_PHOTO_REFERENCE_REVIEW.md) and
+[activation verification](TA_ZA_REFERENCE_APPROVAL.md).
+
+## Approval of Sin and Syin reference shapes 2026-10-12
+
+The project owner replied **“proceed”** directly to **“Approve Sin 3 and Syin 4
+for student lessons?”**, after seeing the exact before/proposed image and verified
+review. This authorises activating those pictured revisions. Reviewer:
+**Project owner (Codex user; name not supplied)**. Date: **2026-10-12**,
+Asia/Kuala_Lumpur. No teacher assessment is claimed.
+
+The approved **Sin 3 and Syin 4** match the third reference photograph's shallow
+teeth, compact bowl and tapered left terminal at the illustrated reference height.
+Trace continuously from the right teeth around the bowl to the left tip; Syin
+then requires its three unchanged separate dots. Exact reviewed routes, outlines,
+reveal pieces, bounds, provenance, checkpoints and versions are retained. Promotion
+adds only approved geometry status and matching review metadata to the candidates.
+The other 34 catalogue entries, all audio metadata and 78 public/audio files remain
+exact. Earlier and preview attempts stay stored under their actual revisions.
+
+See [the preserved review](SIN_SYIN_REFERENCE_REVIEW.md) and
+[activation verification](SIN_SYIN_REFERENCE_APPROVAL.md).
+
+## Approval of Ra and Zai shorter heads 2026-10-11
+
+The project owner replied **“yes approved”** to the exact pictured **Ra 4 and
+Zai 5** approval question, before requesting a separate implementation document
+for Sin/Syin. This approves those two reviewed shorter heads for student lessons.
+Reviewer: **Project owner (Codex user; name not supplied)**. Date: **2026-10-11**.
+No educator assessment is claimed.
+
+The exact approved data is preserved in `src/content/raZaiShortHeads.json` and
+[the preceding review](RA_ZAI_SHORTER_HEAD_REVIEW.md). The upper sloping portions
+are removed at the photographed cut band. The surviving lower contours and
+following curves retain their original coordinates and scale; the route starts
+inside the new cap. Ra remains one continuous body. Zai requires its unchanged
+separate dot after the body. All audio approvals and recordings are preserved.
+
+Only the two exact candidates are promoted; geometry status becomes approved
+and a matching revision-specific review is added. All 34 other active entries,
+including Sin 2 and Syin 3, remain exact. Their next correction is **document
+only**, as explicitly requested. See [activation verification](RA_ZAI_SHORTER_HEAD_APPROVAL.md)
+and [the Sin/Syin implementation plan](SIN_SYIN_REFERENCE_TAIL_IMPLEMENTATION.md).
+
+## Approval of Jim Ca Ha and Kha straight tops 2026-10-11
+
+The project owner replied **“approve”** to **“Do you approve Jim 5, Ca 4,
+Ha (ح) 4, and Kha 4 for student lessons?”**, after viewing the four-model
+review sheet and completed verification. This approves the exact reviewed
+**Jim geometry 5, Ca geometry 4, Ha (ح) geometry 4 (`ha-pedat`) and Kha
+geometry 4**: horizontal top traced left to right through 1 → 2 → 3, then
+lift and start the retained bowl at 4, with existing dots last.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-11**, Asia/Kuala_Lumpur. Promotion changes only geometry status and
+review metadata relative to the reviewed candidates; paths, dots, order,
+checkpoints, widths and content versions remain exact. All 32 other catalogue
+entries and independently approved recordings are preserved. No named teacher
+assessment or physical-device pupil review is inferred.
+
+See [student/challenge verification](JIM_CA_HA_KHA_STRAIGHT_TOP_APPROVAL.md)
+and the preserved [preceding review](JIM_CA_HA_KHA_STRAIGHT_TOP_REVIEW.md).
+
+## Approval of Wau and Va left-first routes 2026-10-07
+
+The project owner replied **“approve”** to **“Approve these two revisions for
+normal gameplay?”**, after the prepared Wau 3 / Va 4 routes and their review
+location were presented. This approves the exact reviewed **Wau geometry 3**
+and **Va geometry 4**: start at the right join, move left under the head,
+rise around the loop, return to the join, then continue into the left tail.
+Each remains one continuous movement; Va's dot follows the body.
+
+Reviewer: **Project owner (Codex user; name not supplied)**. Date:
+**2026-10-07**, Asia/Kuala_Lumpur. Manifest reference matches this section and
+each exact content revision, with kind `projectOwner`. Promotion preserves the
+reviewed paths, dots, checkpoints, sequences and versions; only geometry
+status/review change relative to the reviewed proposals. The independently
+approved Wau 2 / Va 2 audio and all other entries/recordings remain intact.
+No named teacher assessment or physical-device pupil review is inferred.
+
+See [student verification](WAU_VA_DIRECTION_APPROVAL.md) and the preserved
+[preceding review](WAU_VA_DIRECTION_REVIEW.md).
+
 ## Approval of Nya shorter tip 2026-10-07
 
 The project owner (Codex user; name not supplied) replied **“aprrove”** to

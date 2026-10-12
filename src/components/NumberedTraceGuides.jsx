@@ -2,8 +2,8 @@ import { useMemo } from 'react';
 import { placeNumberedGuides, visibleGuideIndexes } from '../tracing/numberedGuides.js';
 import { pointAt } from '../tracing/geometry.js';
 
-export function NumberedTraceGuides({ part, letter, references, scale, progress, viewport, finish }) {
-  const placed = useMemo(() => placeNumberedGuides(part, letter, references, scale, viewport), [part, letter, references, scale, viewport]);
+export function NumberedTraceGuides({ part, letter, references, scale, progress, viewport, controls, finish }) {
+  const placed = useMemo(() => placeNumberedGuides(part, letter, references, scale, viewport, controls), [part, letter, references, scale, viewport, controls]);
   const fraction = part.reference ? progress / part.reference.length : 0;
   const current = part.kind === 'dot' || fraction < .45 ? 0 : part.points.length === 2 || fraction >= .85 ? part.points.length - 1 : 1;
   const visible = visibleGuideIndexes(placed, fraction, part.reference && pointAt(part.reference, progress));

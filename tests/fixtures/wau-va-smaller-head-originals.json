@@ -1,0 +1,165 @@
+[
+  {
+    "id": "wau",
+    "glyph": "و",
+    "labelMs": "Wau",
+    "contentVersion": 3,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": true,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 3,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-07",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-wau-and-va-left-first-routes-2026-10-07",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 612.1 582.6 C 592.5 583.6 451.6 648.3 454.6 537.3 C 458.3 395.1 620.9 418.7 620.9 579.1 L 612.1 582.6 C 618.5 582.2 623.4 585.7 623.9 592.3 C 626 618.6 612 647.5 598.8 669.3 C 543 761.4 479.6 737.3 394.3 718.8"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 612.1 582.6 C 592.5 583.6 451.6 648.3 454.6 537.3 C 458.3 395.1 620.9 418.7 620.9 579.1 L 612.1 582.6 C 618.5 582.2 623.4 585.7 623.9 592.3 C 626 618.6 612 647.5 598.8 669.3 C 543 761.4 479.6 737.3 394.3 718.8",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/wau-name-v2.wav",
+        "transcriptMs": "Wau",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/24_wau.wav",
+          "sha256": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "va",
+    "glyph": "ۏ",
+    "labelMs": "Va",
+    "contentVersion": 4,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": true,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 4,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-07",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-wau-and-va-left-first-routes-2026-10-07",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 612.1 572 C 592.5 573.1 451.6 637.7 454.6 526.8 C 458.3 384.5 620.9 408.2 620.9 568.6 L 612.1 572 C 618.5 571.7 623.4 575.2 623.9 581.8 C 626 608 612 636.9 598.8 658.8 C 543 750.9 479.6 726.8 394.3 708.3"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 612.1 572 C 592.5 573.1 451.6 637.7 454.6 526.8 C 458.3 384.5 620.9 408.2 620.9 568.6 L 612.1 572 C 618.5 571.7 623.4 575.2 623.9 581.8 C 626 608 612 636.9 598.8 658.8 C 543 750.9 479.6 726.8 394.3 708.3",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 50
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 528,
+          "y": 315,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/va-name-v2.wav",
+        "transcriptMs": "Va",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-07",
+          "reference": "docs/AUDIO_APPROVALS.md#selection-of-supplied-va-recording-2026-10-07",
+          "kind": "projectOwner"
+        },
+        "permission": "Project owner requested comparison with their Va recording and direct use if the guided match cannot be achieved, then supplied Recording (6).m4a in Codex on 2026-10-07. The complete first utterance is used as this authorised fallback.",
+        "origin": {
+          "kind": "userProvided",
+          "reference": "User attachment Recording (6).m4a; docs/VA_AUDIO_CORRECTION.md",
+          "speaker": "User-supplied speaker; identity not assessed",
+          "sha256": "50e2f45b12c63b746462ce73f5d398efb0e1d0900cf9f6f33ee936a716e50a53",
+          "recordingSha256": "fb20da4d695f0f1f6928a645f9d1278abe38fa06ed58b74642e9508a9cfc0446",
+          "processing": {
+            "sourceStartSeconds": 0.7,
+            "sourceEndSeconds": 1.8,
+            "speechRegionStartApprox": 0.86,
+            "speechRegionEndApprox": 1.7,
+            "fadeMs": 0,
+            "method": "Complete first supplied Va utterance with silence before onset and after decay. Only surrounding silence/repeated second utterance omitted. Decoded 24-kHz mono PCM retained byte-for-byte; no fades, gain, filtering, pitch or timing changes."
+          }
+        }
+      },
+      "pronunciationExamples": []
+    }
+  }
+]

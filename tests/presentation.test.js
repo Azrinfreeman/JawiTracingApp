@@ -1,9 +1,9 @@
 import { it, expect, vi, afterEach } from 'vitest';
 import { readPresentation, savePresentation, presentationKey, setTracingContact, resetTracingContacts } from '../src/platform/presentation.js';
 afterEach(() => vi.unstubAllGlobals());
-it('defaults native Android to light, honours explicit choices and tolerates blocked storage', () => {
+it('defaults new browser and Android installations to light, honours explicit choices and tolerates blocked storage', () => {
   const values = new Map(), storage = { getItem: key => values.get(key), setItem: (key, value) => values.set(key, value) };
-  expect(readPresentation(storage, true)).toBe('light'); expect(readPresentation(storage, false)).toBe('full');
+  expect(readPresentation(storage, true)).toBe('light'); expect(readPresentation(storage, false)).toBe('light');
   expect(savePresentation(storage, 'full')).toBe(true); expect(readPresentation(storage, true)).toBe('full');
   expect([...values.keys()]).toEqual([presentationKey]); expect(savePresentation(storage, 'invalid')).toBe(false);
   const blocked = { getItem() { throw Error(); }, setItem() { throw Error(); } };

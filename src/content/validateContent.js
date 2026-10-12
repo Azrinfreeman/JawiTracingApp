@@ -28,12 +28,17 @@ const validContours = paths => Array.isArray(paths) && paths.length>0 && paths.l
   paths.every(path=>validPath(path) && /[Zz]\s*$/.test(path) && !/[HhVvCcSsQqTtAa]/.test(path) &&
     (path.match(/[-+]?(?:\d*\.?\d+)(?:[eE][-+]?\d+)?/g)||[]).every(n=>Number(n)>=0&&Number(n)<=1000));
 function validAppearance(appearance,letter,strokes,dots) {
-  if(appearance.kind!=='catalogueOutline' || appearance.baseRevision!==letter.contentVersion-1 || !validBounds(appearance.bounds))return false;
+  if(!['catalogueOutline','referenceOutline'].includes(appearance.kind) || appearance.baseRevision!==letter.contentVersion-1 || !validBounds(appearance.bounds))return false;
   const source=appearance.source;
-  if(!source || source.glyph!==letter.glyph || source.weight!==400 || !/^[a-f0-9]{64}$/.test(source.sha256||'') ||
+  if(!source || source.glyph!==letter.glyph || !/^[a-f0-9]{64}$/.test(source.sha256||'') ||
+    !finite(source.maxContourError) || source.maxContourError<0 || source.maxContourError>.5)return false;
+  if(appearance.kind==='referenceOutline'){
+    if(source.kind!=='referencePhoto' || source.method!=='authoredVectorAdaptation' ||
+      !/^[a-zA-Z0-9_-]+\.png$/.test(source.image||'') || !/^docs\/[A-Z0-9_]+\.md$/.test(source.reference||''))return false;
+  }else if(source.weight!==400 ||
     source.font!=='@fontsource/noto-naskh-arabic/files/noto-naskh-arabic-arabic-400-normal.woff2' ||
     source.method!=='highResolutionInkContours' || !finite(source.scale) || source.scale<=0 ||
-    !Number.isInteger(source.fontSize) || source.fontSize<600 || !finite(source.maxContourError) || source.maxContourError<0 || source.maxContourError>.5 ||
+    !Number.isInteger(source.fontSize) || source.fontSize<600 ||
     !Array.isArray(source.center) || source.center.length!==2 || !source.center.every(finite))return false;
   const parts=appearance.parts,ids=[...strokes,...dots].map(p=>p.id);
   if(appearance.bodyContours!==undefined && !validContours(appearance.bodyContours))return false;

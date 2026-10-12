@@ -1,0 +1,17 @@
+{
+  "saveCosts": [
+    {
+      "ms": 4.700000002980232,
+      "bytes": 1596348
+    },
+    {
+      "ms": 5.700000002980232,
+      "bytes": 1597168
+    }
+  ],
+  "retainedAttempts": 300,
+  "retainedCopies": 12,
+  "firstSaveWhileOtherContactHeld": true,
+  "input": "Frame-paced synthetic board events; native concurrent/capture checks are separate",
+  "media": "Stubbed lifecycle, no native decoder timing"
+}

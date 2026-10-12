@@ -1,5 +1,5 @@
 import { playFillWidth } from '../content/displayWidth.js';
-import { pointAt } from './geometry.js';
+import { pointAt, arcSegments } from './geometry.js';
 import { sectionIndex } from './teachingCues.js';
 import { outlineAppearance, outlinePart, createOutlineReveal } from './outlineAppearance.js';
 
@@ -7,9 +7,13 @@ const NS = 'http://www.w3.org/2000/svg';
 // Accepted progress is drawn as short fixed pieces. A frame then repaints one small
 // region instead of re-dashing and re-rasterising the whole wide stroke.
 const PIECE = 48;
-const polyline = (ref, from, to) => {
+export const polyline = (ref, from, to) => {
   const points = [pointAt(ref, from)];
-  for (const v of ref.vertices) if (v.s > from && v.s < to) points.push(v);
+  const [first, end] = arcSegments(ref, from, to);
+  for (let i = first; i < end; i++) {
+    const v = ref.vertices[i];
+    if (v.s > from && v.s < to) points.push(v);
+  }
   points.push(pointAt(ref, to));
   return points.map((p, i) => `${i ? 'L' : 'M'}${+p.x.toFixed(2)} ${+p.y.toFixed(2)}`).join('');
 };
@@ -103,19 +107,21 @@ export function createLiveRenderer(groups, letter, references, isPlay, isCopy, l
           const group = make(groups.fill, 'g', { class: 'play-fill', 'stroke-width': playFillWidth(stroke) });
           const count = Math.max(1, Math.ceil(length / PIECE));
           const pieces = Array.from({ length: count }, (_, i) => make(group, 'path', { display: 'none' }));
-          fill = { group, pieces, shown: 0 }; fills.set(stroke.id, fill);
+          fill = { group, pieces, shown: 0, fullPaths: [] }; fills.set(stroke.id, fill);
         }
         if (!fill) continue;
         attrs(fill.group, { 'data-measured-frontier': measured, 'data-display-frontier': filled });
+        if (fill.frontier === filled) continue;
         const count = fill.pieces.length, last = Math.min(count - 1, Math.floor(filled / PIECE));
         // Only pieces between the previous and current frontier can have changed.
         for (let i = Math.min(fill.shown, last); i <= Math.max(fill.shown, last); i++) {
           const from = i * PIECE, to = Math.min(length, from + PIECE), node = fill.pieces[i];
-          if (filled >= to) attrs(node, { display: 'inline', d: polyline(ref, from, to) });
+          if (filled >= to) attrs(node, { display: 'inline', d: fill.fullPaths[i] ||= polyline(ref, from, to) });
           else if (filled - from > .5) attrs(node, { display: 'inline', d: polyline(ref, from, filled) });
           else attrs(node, { display: 'none' });
         }
         fill.shown = last;
+        fill.frontier = filled;
       }
     },
     clear() { Object.values(groups).forEach(group => group.replaceChildren()); },

@@ -1,0 +1,184 @@
+[
+  {
+    "original": {
+      "id": "ya",
+      "glyph": "ي",
+      "labelMs": "Ya",
+      "contentVersion": 2,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-04",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-of-glyph-matched-models-2026-10-04",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 650.3 390.5 C 577.1 324.6 483.7 463.6 492.5 511.5 C 504.1 574 715.9 546.1 627.2 632.5 C 555.9 701.9 350.2 764.7 338.1 610.5 C 335.9 582.8 340 556.9 351.1 532.4"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 650.3 390.5 C 577.1 324.6 483.7 463.6 492.5 511.5 C 504.1 574 715.9 546.1 627.2 632.5 C 555.9 701.9 350.2 764.7 338.1 610.5 C 335.9 582.8 340 556.9 351.1 532.4",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "displayWidth": 50
+          }
+        ],
+        "dotTargets": [
+          {
+            "id": "dot-1",
+            "x": 411,
+            "y": 807,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          },
+          {
+            "id": "dot-2",
+            "x": 510,
+            "y": 797,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          }
+        ],
+        "validSequences": [
+          [
+            "stroke-1",
+            "dot-1",
+            "dot-2"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/alphabet/ya-name-v2.wav",
+          "transcriptMs": "Ya",
+          "version": 2,
+          "status": "approved",
+          "review": {
+            "revision": 2,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+          "origin": {
+            "kind": "userProvided",
+            "source": "voices/alphabet/26_ya.wav",
+            "sha256": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1",
+            "importedAt": "2026-10-02T02:39:02.335Z",
+            "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    "candidate": {
+      "id": "ya",
+      "glyph": "ي",
+      "labelMs": "Ya",
+      "contentVersion": 3,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [
+          "M 643.832 458.26  C 591.128 410.812 523.88 510.892 530.216 545.38  C 538.568 590.38 691.064 570.292 627.2 632.5 C 555.9 701.9 350.2 764.7 338.1 610.5  C 335.9 582.8 340 556.9 351.1 532.4"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 643.832 458.26  C 591.128 410.812 523.88 510.892 530.216 545.38  C 538.568 590.38 691.064 570.292 627.2 632.5 C 555.9 701.9 350.2 764.7 338.1 610.5  C 335.9 582.8 340 556.9 351.1 532.4",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "displayWidth": 50
+          }
+        ],
+        "dotTargets": [
+          {
+            "id": "dot-1",
+            "x": 411,
+            "y": 807,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          },
+          {
+            "id": "dot-2",
+            "x": 510,
+            "y": 797,
+            "visibleRadius": 19,
+            "hitRadius": 48,
+            "maxTravel": 30,
+            "policy": "tap"
+          }
+        ],
+        "validSequences": [
+          [
+            "stroke-1",
+            "dot-1",
+            "dot-2"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/alphabet/ya-name-v2.wav",
+          "transcriptMs": "Ya",
+          "version": 2,
+          "status": "approved",
+          "review": {
+            "revision": 2,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+          "origin": {
+            "kind": "userProvided",
+            "source": "voices/alphabet/26_ya.wav",
+            "sha256": "bb390e069c57e00903e665681bd8ac6f1dacd62d73a6ed6ea3bb101402095df1",
+            "importedAt": "2026-10-02T02:39:02.335Z",
+            "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    }
+  }
+]

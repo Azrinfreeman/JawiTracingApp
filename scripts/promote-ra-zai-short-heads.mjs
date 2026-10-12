@@ -1,0 +1,16 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {raZaiShortHeadReviewCandidates} from '../src/content/reviewCandidates.js';
+import {validateLetter} from '../src/content/validateContent.js';
+const root='output/verification/ra-zai-short-head-approval';
+const reviewed=JSON.parse(readFileSync('output/verification/ra-zai-short-heads/verification.json','utf8'));
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+for(const p of ['src/content/letters.json','src/content/raZaiShortHeads.json','src/content/reviewCandidates.js'])if(hash(p)!==reviewed.inputs[p])throw Error(`Reviewed input changed: ${p}`);
+const file='src/content/letters.json',raw=readFileSync(file,'utf8'),letters=JSON.parse(raw),proposals=raZaiShortHeadReviewCandidates(letters);
+if(JSON.stringify(proposals.map(p=>[p.candidate.id,p.candidate.contentVersion]))!==JSON.stringify([['ra',4],['zai',5]]))throw Error('Expected exact Ra 4 / Zai 5');
+const next=letters.map(letter=>{const proposal=proposals.find(p=>p.candidate.id===letter.id);if(!proposal)return letter;const candidate=structuredClone(proposal.candidate);
+ candidate.geometry.status='approved';candidate.geometry.review={revision:candidate.contentVersion,reviewer:'Project owner (Codex user; name not supplied)',date:'2026-10-11',reference:'docs/CONTENT_APPROVALS.md#approval-of-ra-and-zai-shorter-heads-2026-10-11',kind:'projectOwner'};
+ if(!validateLetter(candidate).ready)throw Error(`Invalid candidate ${candidate.id}`);return candidate;});
+mkdirSync(root,{recursive:true});writeFileSync(`${root}/before-catalogue.json`,raw,{flag:'wx'});writeFileSync(`${root}/reviewed-proposals.json`,JSON.stringify(proposals,null,2)+'\n',{flag:'wx'});
+const newline=raw.includes('\r\n')?'\r\n':'\n';writeFileSync(file,(JSON.stringify(next,null,2)+'\n').replace(/\n/g,newline));
+console.log('Promoted exact reviewed Ra 4 and Zai 5; geometry approval added, audio preserved.');

@@ -1,0 +1,978 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/ya-smaller-head.spec.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=json",
+      "--output=output/verification/ya-smaller-head/test-results"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ya-smaller-head/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ya-smaller-head/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/ya-smaller-head/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ya-smaller-head.spec.js",
+      "file": "ya-smaller-head.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "adult comparison shows a smaller head at matching scale and exact unchanged dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 936,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:13.008Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-bce139735fcc9738cc1d",
+          "file": "ya-smaller-head.spec.js",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "play 320: compact head, continuous bowl, two final taps and preview-only credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8168,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:14.056Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-f0773db6fd8aa917f173",
+          "file": "ya-smaller-head.spec.js",
+          "line": 23,
+          "column": 113
+        },
+        {
+          "title": "play 1024: compact head, continuous bowl, two final taps and preview-only credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7717,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:22.235Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-3a818f0ee37d6127f465",
+          "file": "ya-smaller-head.spec.js",
+          "line": 23,
+          "column": 113
+        },
+        {
+          "title": "guided 768: compact head, continuous bowl, two final taps and preview-only credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5107,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:29.963Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-6c41f2225e8c75f6d7f1",
+          "file": "ya-smaller-head.spec.js",
+          "line": 23,
+          "column": 113
+        },
+        {
+          "title": "precision 1280: compact head, continuous bowl, two final taps and preview-only credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:35.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-527e30fb5179400b5a52",
+          "file": "ya-smaller-head.spec.js",
+          "line": 23,
+          "column": 113
+        },
+        {
+          "title": "full and current-section demonstrations use the new route without changing partial work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13223,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:40.291Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-e034fc7f6267b110e244",
+          "file": "ya-smaller-head.spec.js",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "native touch: compact head and separate final dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3555,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:53.532Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-4fe81877a2cfc57a07ba",
+          "file": "ya-smaller-head.spec.js",
+          "line": 35,
+          "column": 35
+        },
+        {
+          "title": "native pen: compact head and separate final dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3511,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:57.098Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-43948954b25f8a84e152",
+          "file": "ya-smaller-head.spec.js",
+          "line": 35,
+          "column": 35
+        },
+        {
+          "title": "student Ya remains approved revision 2 in lessons, cards and help",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1762,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\nExpected: \u001b[32m\"ي\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') resolved to 2 elements:\n    1) <span dir=\"rtl\" class=\"jawi\" lang=\"ms-Arab\">…</span> aka locator('span').filter({ hasText: 'ي' }).first()\n    2) <span dir=\"rtl\" class=\"jawi \" lang=\"ms-Arab\">ي</span> aka getByText('ي')\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\nExpected: \u001b[32m\"ي\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') resolved to 2 elements:\n    1) <span dir=\"rtl\" class=\"jawi\" lang=\"ms-Arab\">…</span> aka locator('span').filter({ hasText: 'ي' }).first()\n    2) <span dir=\"rtl\" class=\"jawi \" lang=\"ms-Arab\">ي</span> aka getByText('ي')\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js:41:578",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                      "column": 578,
+                      "line": 41
+                    },
+                    "snippet": "  39 | });\n  40 | test('student Ya remains approved revision 2 in lessons, cards and help',async({page,browserName})=>{\n> 41 |  await page.setViewportSize({width:1024,height:768});await page.goto('/');await dismissSplash(page);await page.getByRole('button',{name:'Jom mula',exact:true}).click();await chooseLetter(page,'Ya');await expect(page.locator('.reference-stroke')).toHaveAttribute('d',original.geometry.strokes[0].path);await expect(page.locator('.preview-banner')).toHaveCount(0);await menuAction(page,'Kenal huruf dan panduan');const help=page.getByRole('dialog',{name:'Kenal huruf Ya'});await expect(help.locator('svg[data-letter-id=\"ya\"]')).toHaveCount(0);await expect(help.locator('.jawi')).toHaveText('ي');await help.getByRole('button',{name:'Tutup',exact:true}).click();await menuAction(page,'Isi kandungan');const card=page.getByRole('button',{name:/Ya.*Buka halaman/});await expect(card.locator('.jawi')).toHaveText('ي');await page.screenshot({path:`${root}/${browserName}-student-cards.png`,animations:'disabled'});\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^\n  42 | });\n  43 | for(const mode of ['solo','duo'])test(`${mode}: candidate lanes finish independently with two dots and remain unscored`,async({page,browserName})=>{\n  44 |  await page.setViewportSize({width:1024,height:768});await page.goto('/');await page.evaluate(()=>document.fonts.ready);await page.evaluate(url=>history.replaceState(null,'',url),`/?ya-smaller-head=1&mode=${mode}`);await page.addScriptTag({content:readFileSync('output/verification/ya-smaller-head/test-harness.js','utf8')});const count=mode==='duo'?2:1;await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                        "column": 578,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\nExpected: \u001b[32m\"ي\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') resolved to 2 elements:\n    1) <span dir=\"rtl\" class=\"jawi\" lang=\"ms-Arab\">…</span> aka locator('span').filter({ hasText: 'ي' }).first()\n    2) <span dir=\"rtl\" class=\"jawi \" lang=\"ms-Arab\">ي</span> aka getByText('ي')\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\u001b[22m\n\n\n  39 | });\n  40 | test('student Ya remains approved revision 2 in lessons, cards and help',async({page,browserName})=>{\n> 41 |  await page.setViewportSize({width:1024,height:768});await page.goto('/');await dismissSplash(page);await page.getByRole('button',{name:'Jom mula',exact:true}).click();await chooseLetter(page,'Ya');await expect(page.locator('.reference-stroke')).toHaveAttribute('d',original.geometry.strokes[0].path);await expect(page.locator('.preview-banner')).toHaveCount(0);await menuAction(page,'Kenal huruf dan panduan');const help=page.getByRole('dialog',{name:'Kenal huruf Ya'});await expect(help.locator('svg[data-letter-id=\"ya\"]')).toHaveCount(0);await expect(help.locator('.jawi')).toHaveText('ي');await help.getByRole('button',{name:'Tutup',exact:true}).click();await menuAction(page,'Isi kandungan');const card=page.getByRole('button',{name:/Ya.*Buka halaman/});await expect(card.locator('.jawi')).toHaveText('ي');await page.screenshot({path:`${root}/${browserName}-student-cards.png`,animations:'disabled'});\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^\n  42 | });\n  43 | for(const mode of ['solo','duo'])test(`${mode}: candidate lanes finish independently with two dots and remain unscored`,async({page,browserName})=>{\n  44 |  await page.setViewportSize({width:1024,height:768});await page.goto('/');await page.evaluate(()=>document.fonts.ready);await page.evaluate(url=>history.replaceState(null,'',url),`/?ya-smaller-head=1&mode=${mode}`);await page.addScriptTag({content:readFileSync('output/verification/ya-smaller-head/test-harness.js','utf8')});const count=mode==='duo'?2:1;await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js:41:578"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:00.624Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ya-smaller-head\\test-results\\ya-smaller-head-student-Ya-45c69-2-in-lessons-cards-and-help-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ya-smaller-head\\test-results\\ya-smaller-head-student-Ya-45c69-2-in-lessons-cards-and-help-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                    "column": 578,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-e28b7920e183e13ed71d",
+          "file": "ya-smaller-head.spec.js",
+          "line": 40,
+          "column": 1
+        },
+        {
+          "title": "solo: candidate lanes finish independently with two dots and remain unscored",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6604,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:03.562Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-2a046dfdada740c51f28",
+          "file": "ya-smaller-head.spec.js",
+          "line": 43,
+          "column": 34
+        },
+        {
+          "title": "duo: candidate lanes finish independently with two dots and remain unscored",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9253,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:10.278Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-807386d159e95ecb3fd1",
+          "file": "ya-smaller-head.spec.js",
+          "line": 43,
+          "column": 34
+        },
+        {
+          "title": "adult comparison shows a smaller head at matching scale and exact unchanged dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2302,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:13.016Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-314ea70291cf7959d188",
+          "file": "ya-smaller-head.spec.js",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "play 320: compact head, continuous bowl, two final taps and preview-only credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11045,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:15.402Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-a05fba60e1d9e5ac0a8f",
+          "file": "ya-smaller-head.spec.js",
+          "line": 23,
+          "column": 113
+        },
+        {
+          "title": "play 1024: compact head, continuous bowl, two final taps and preview-only credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 15916,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:26.457Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-d46e7d751117ecf0b01d",
+          "file": "ya-smaller-head.spec.js",
+          "line": 23,
+          "column": 113
+        },
+        {
+          "title": "guided 768: compact head, continuous bowl, two final taps and preview-only credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 13772,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:42.386Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-801ad91c95dd0a9b71c3",
+          "file": "ya-smaller-head.spec.js",
+          "line": 23,
+          "column": 113
+        },
+        {
+          "title": "precision 1280: compact head, continuous bowl, two final taps and preview-only credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 13509,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:30:56.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-f341b6a53499ff06b026",
+          "file": "ya-smaller-head.spec.js",
+          "line": 23,
+          "column": 113
+        },
+        {
+          "title": "full and current-section demonstrations use the new route without changing partial work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 16803,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:09.690Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-163ead58abd5e75f4bfc",
+          "file": "ya-smaller-head.spec.js",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "native touch: compact head and separate final dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native input emulation requires Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                    "line": 36,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 157,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:26.503Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native input emulation requires Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                        "line": 36,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-f73c4a24bbf4b7ce464f",
+          "file": "ya-smaller-head.spec.js",
+          "line": 35,
+          "column": 35
+        },
+        {
+          "title": "native pen: compact head and separate final dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native input emulation requires Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                    "line": 36,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 164,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:26.672Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native input emulation requires Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                        "line": 36,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-2fe83c287d923f2eb006",
+          "file": "ya-smaller-head.spec.js",
+          "line": 35,
+          "column": 35
+        },
+        {
+          "title": "student Ya remains approved revision 2 in lessons, cards and help",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 4371,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\nExpected: \u001b[32m\"ي\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') resolved to 2 elements:\n    1) <span dir=\"rtl\" class=\"jawi\" lang=\"ms-Arab\">…</span> aka locator('span').filter({ hasText: 'ي' }).first()\n    2) <span dir=\"rtl\" class=\"jawi \" lang=\"ms-Arab\">ي</span> aka getByText('ي')\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\nExpected: \u001b[32m\"ي\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') resolved to 2 elements:\n    1) <span dir=\"rtl\" class=\"jawi\" lang=\"ms-Arab\">…</span> aka locator('span').filter({ hasText: 'ي' }).first()\n    2) <span dir=\"rtl\" class=\"jawi \" lang=\"ms-Arab\">ي</span> aka getByText('ي')\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js:41:578",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                      "column": 578,
+                      "line": 41
+                    },
+                    "snippet": "  39 | });\n  40 | test('student Ya remains approved revision 2 in lessons, cards and help',async({page,browserName})=>{\n> 41 |  await page.setViewportSize({width:1024,height:768});await page.goto('/');await dismissSplash(page);await page.getByRole('button',{name:'Jom mula',exact:true}).click();await chooseLetter(page,'Ya');await expect(page.locator('.reference-stroke')).toHaveAttribute('d',original.geometry.strokes[0].path);await expect(page.locator('.preview-banner')).toHaveCount(0);await menuAction(page,'Kenal huruf dan panduan');const help=page.getByRole('dialog',{name:'Kenal huruf Ya'});await expect(help.locator('svg[data-letter-id=\"ya\"]')).toHaveCount(0);await expect(help.locator('.jawi')).toHaveText('ي');await help.getByRole('button',{name:'Tutup',exact:true}).click();await menuAction(page,'Isi kandungan');const card=page.getByRole('button',{name:/Ya.*Buka halaman/});await expect(card.locator('.jawi')).toHaveText('ي');await page.screenshot({path:`${root}/${browserName}-student-cards.png`,animations:'disabled'});\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^\n  42 | });\n  43 | for(const mode of ['solo','duo'])test(`${mode}: candidate lanes finish independently with two dots and remain unscored`,async({page,browserName})=>{\n  44 |  await page.setViewportSize({width:1024,height:768});await page.goto('/');await page.evaluate(()=>document.fonts.ready);await page.evaluate(url=>history.replaceState(null,'',url),`/?ya-smaller-head=1&mode=${mode}`);await page.addScriptTag({content:readFileSync('output/verification/ya-smaller-head/test-harness.js','utf8')});const count=mode==='duo'?2:1;await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                        "column": 578,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\nExpected: \u001b[32m\"ي\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') resolved to 2 elements:\n    1) <span dir=\"rtl\" class=\"jawi\" lang=\"ms-Arab\">…</span> aka locator('span').filter({ hasText: 'ي' }).first()\n    2) <span dir=\"rtl\" class=\"jawi \" lang=\"ms-Arab\">ي</span> aka getByText('ي')\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Ya' }).locator('.jawi')\u001b[22m\n\n\n  39 | });\n  40 | test('student Ya remains approved revision 2 in lessons, cards and help',async({page,browserName})=>{\n> 41 |  await page.setViewportSize({width:1024,height:768});await page.goto('/');await dismissSplash(page);await page.getByRole('button',{name:'Jom mula',exact:true}).click();await chooseLetter(page,'Ya');await expect(page.locator('.reference-stroke')).toHaveAttribute('d',original.geometry.strokes[0].path);await expect(page.locator('.preview-banner')).toHaveCount(0);await menuAction(page,'Kenal huruf dan panduan');const help=page.getByRole('dialog',{name:'Kenal huruf Ya'});await expect(help.locator('svg[data-letter-id=\"ya\"]')).toHaveCount(0);await expect(help.locator('.jawi')).toHaveText('ي');await help.getByRole('button',{name:'Tutup',exact:true}).click();await menuAction(page,'Isi kandungan');const card=page.getByRole('button',{name:/Ya.*Buka halaman/});await expect(card.locator('.jawi')).toHaveText('ي');await page.screenshot({path:`${root}/${browserName}-student-cards.png`,animations:'disabled'});\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^\n  42 | });\n  43 | for(const mode of ['solo','duo'])test(`${mode}: candidate lanes finish independently with two dots and remain unscored`,async({page,browserName})=>{\n  44 |  await page.setViewportSize({width:1024,height:768});await page.goto('/');await page.evaluate(()=>document.fonts.ready);await page.evaluate(url=>history.replaceState(null,'',url),`/?ya-smaller-head=1&mode=${mode}`);await page.addScriptTag({content:readFileSync('output/verification/ya-smaller-head/test-harness.js','utf8')});const count=mode==='duo'?2:1;await expect(page.locator('.trace-board')).toHaveCount(count);for(let slot=0;slot<count;slot++)await page.locator(`[data-player-slot=\"${slot}\"]`).getByRole('button',{name:'Saya sedia!',exact:true}).click();await expect(page.locator('.countdown-overlay')).toHaveCount(0,{timeout:10000});\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js:41:578"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:26.845Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ya-smaller-head\\test-results\\ya-smaller-head-student-Ya-45c69-2-in-lessons-cards-and-help-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\ya-smaller-head\\test-results\\ya-smaller-head-student-Ya-45c69-2-in-lessons-cards-and-help-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ya-smaller-head.spec.js",
+                    "column": 578,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-ba6693758c19b18d1001",
+          "file": "ya-smaller-head.spec.js",
+          "line": 40,
+          "column": 1
+        },
+        {
+          "title": "solo: candidate lanes finish independently with two dots and remain unscored",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8407,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:32.131Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-d5d186d1738ee0b26369",
+          "file": "ya-smaller-head.spec.js",
+          "line": 43,
+          "column": 34
+        },
+        {
+          "title": "duo: candidate lanes finish independently with two dots and remain unscored",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12489,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:31:40.617Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "76c4392b61e568d941cc-9d0b06060b3ac2b7d1b6",
+          "file": "ya-smaller-head.spec.js",
+          "line": 43,
+          "column": 34
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T04:30:12.410Z",
+    "duration": 100889.257,
+    "expected": 18,
+    "skipped": 2,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

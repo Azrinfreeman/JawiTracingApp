@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-10-07T18:43:21.1358918+08:00",
+  "scope": "Authorised tracing gameplay navigation; source server, Chromium and WebKit",
+  "server": "http://127.0.0.1:5173/",
+  "node": "24.19",
+  "playwright": "1.63",
+  "unit": {
+    "files": 39,
+    "passed": 249
+  },
+  "build": "passed: 36 letters / models / ready lessons",
+  "correctionFollowup": {
+    "failed": 0,
+    "passed": 16
+  },
+  "challengeCompletionFollowup": {
+    "failed": 0,
+    "skipped": 1,
+    "passed": 11
+  },
+  "report": "docs/TRACING_GAMEPLAY_NAVIGATION_IMPLEMENTATION.md",
+  "hashes": {
+    "src/components/FitDialog.jsx": "a647bb9ab4a4ac68dd05d8b5a13551e33f7ba48abba4e62e091719007105ad2a",
+    "src/components/NumberedTraceGuides.jsx": "7e92d60089ce825766faab2e8427fe1c2b999e61205abae253df33a184df01a4",
+    "src/components/TraceBoard.jsx": "ecbeb6632669795d80e2f0495c11c894651b82ae5681db8fa647bd268fb16a01",
+    "src/components/TracingMenu.jsx": "13eda66ee8851ed6adf4606070f33f31737c49c2e5dbcf8bc50ea3e56e8e8796",
+    "src/game/screenLayout.js": "780684ce83b154b007c146c9aa5bd56dbd24c0e7310469b23361c5a6994ffaab",
+    "src/screens/BookLessonScreen.jsx": "24b5da0d8a6fee06a0d99d16e33c268eabb7bc80ea487682d10ae1c1cf7ae0da",
+    "src/screens/MatchScreen.jsx": "2315ea1721f3c31d0cedd99793cb823fc5d631591575f740bd7693efbda696e6",
+    "src/screens/ResultScreen.jsx": "c78d4c5b85723a3f8582d70d51f7debf2bceada25193f2716a25c86aae5cd011",
+    "src/styles/fullscreen.css": "4c99a405407070c37083edad9f3d7286d2209dc7f780a9f07d5d2f66b1af6f06",
+    "src/tracing/numberedGuides.js": "46c44853e3f1d65c194767666ac7a4b2f7bac5cbb84304001f2847a7ad14bd3b",
+    "tests/browser/gameplay-navigation.spec.js": "246c3c5a762783dbb8d542c689651a201fe7e5fdfa7e45e8975bf4bfee54a369",
+    "tests/browser/book-layout.spec.js": "e505910050905922e650b8ba457ef412f175d8a60e16a1a81bdf4ad0d46dfe65",
+    "tests/browser/fullscreen-layout.spec.js": "eefefc6d3ee0804316eb9faa198e902790fb6ddcf99db07d9bbc8a9fb5e9c24d",
+    "tests/browser/fullscreen-tracing-audio.spec.js": "64b196977cddc0ec4508466c2824eac3e1588aae8a8c1f0b8038aef0ea66f80b",
+    "tests/browser/helpers/tracing.js": "b7dc6662ac43d70ad5198c80eeaef2db1f4c316a0d27cc15b424ad9fb4daffc1",
+    "tests/browser/helpers/audio.js": "88b1e72b89cb1960620243a0d264a58d9d2ac3deef89fbfdf2bdf379ddce0f06",
+    "src/content/letters.json": "9bc5256261ce3ed5b703c2fc3fe4c86562be8ace11a7edf6ccfca2f9ae04e7d6",
+    "package.json": "ac046cef16f885ce96e15c3e23c90ba830ccdf1145a843e0e01f8236b6cf86b8",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "playwright.config.js": "f9ce1412decf8249638a0b59c48a3c52e811bb9885dc8cc8f2282e823ad3d4d7",
+    "dist/assets/index-Bm989V6y.js": "d9e598bfa03243e49f70127e1e4e1937e1a0b6e111da5184a5f312ad8156e130",
+    "dist/assets/index-B1SN2YYA.css": "cc011f74ce26cb758cf45bca7434eac655bbec590815b35650abc57e48911394"
+  }
+}

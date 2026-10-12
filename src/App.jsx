@@ -50,13 +50,13 @@ export default function App() {
   const [selected, setSelected] = useState(letters.find(l => l.id === 'alif'));
   const [activity, setActivity] = useState('trace'), [muted, setMuted] = useState(false), [volume, setVolume] = useState(0.8);
   const [bookIds, setBookIds] = useState([]), bookExit = useRef(null);
-  const book = eligibleBook(letters, preview).filter(letter => !bookIds.length || bookIds.includes(letter.id));
+  const book = useMemo(() => eligibleBook(letters, preview).filter(letter => !bookIds.length || bookIds.includes(letter.id)), [preview,bookIds]);
   const [adjustment, setAdjustment] = useState('standard');
   const [practiceMode, setPracticeMode] = useState('play');
   const diagnostic = useRef(null), gateRef = useRef(null);
-  const ready = letters.filter(l => validateLetter(l).ready);
-  const modelCount = letters.filter(l => l.geometry.strokes.length).length;
-  const draftCount = letters.filter(l => l.geometry.strokes.length && l.geometry.status !== 'approved').length;
+  const ready = useMemo(() => letters.filter(l => validateLetter(l).ready), []);
+  const modelCount = useMemo(() => letters.filter(l => l.geometry.strokes.length).length, []);
+  const draftCount = useMemo(() => letters.filter(l => l.geometry.strokes.length && l.geometry.status !== 'approved').length, []);
   const refresh = () => setProgress({ ...store.read() });
   useEffect(() => { audio.setMuted(muted); }, [audio, muted]);
   useEffect(() => { audio.setVolume(volume); }, [audio, volume]);

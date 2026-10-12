@@ -61,11 +61,10 @@ test('welcome, approved student entry, explicit adult preview, full catalogue an
   await page.getByRole('button',{name:'Huruf permulaan',exact:true}).click();
   await page.route(`**${letters.find(letter=>letter.id==='ba').audio.name.src}`,route=>route.fulfill({status:404,body:''}));
   await page.getByRole('button',{name:'Ba',exact:true}).click();
-  await openMenu(page);await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.locator('.audio-notice')).toContainText('Audio tidak dapat dimainkan');
+  await page.getByRole('button',{name:'Dengar nama Ba',exact:true}).click();await expect(page.locator('.audio-notice')).toContainText('Audio tidak dapat dimainkan');
   await page.getByRole('button',{name:'Dengar sekali lagi',exact:true}).click();await expect(page.locator('.audio-notice')).toContainText('cuba semula');
   await page.getByRole('dialog',{name:'Dengar nama huruf'}).getByRole('button',{name:'Tutup',exact:true}).click();
-  await page.getByRole('button',{name:'Halaman menu seterusnya'}).click();
-  await page.getByRole('button',{name:'Senyapkan audio'}).click();await expect(page.getByRole('button',{name:'Hidupkan audio'})).toHaveAttribute('aria-pressed','true');
+  await menuAction(page,'Audio: Hidup');await expect(page.getByRole('button',{name:'Audio: Senyap'})).toHaveAttribute('aria-pressed','false');
   expect(errors).toEqual([]);
 });
 

@@ -1,5 +1,6 @@
 import {describe,it,expect} from 'vitest';
-import letters from '../../src/content/letters.json';
+import currentLetters from '../../src/content/letters.json';
+import approvedMim5 from '../fixtures/mim-reference-original.json';
 import previous from '../fixtures/mim-video-original.json';
 import videoOriginals from '../fixtures/video-review-originals.json';
 import {videoReviewCandidates} from '../../src/content/reviewCandidates.js';
@@ -9,6 +10,8 @@ import {createPlayMatcher} from '../../src/tracing/playMatcher.js';
 import {getProfile} from '../../src/tracing/profiles.js';
 import {validateLetter} from '../../src/content/validateContent.js';
 import {playGuideWidth} from '../../src/content/displayWidth.js';
+// Preserve the historical Mim-5 approval contract after the reference-shaped revision.
+const letters=currentLetters.map(letter=>letter.id==='mim'?approvedMim5:letter);
 const {candidate}=videoReviewCandidates(letters.map(letter=>videoOriginals.find(original=>original.id===letter.id)||letter)).find(p=>p.candidate.id==='mim');
 describe('Mim tiny opening on the left of the head',()=>{
  it('narrows the head opening without closing it and preserves the connected tail exactly',()=>{

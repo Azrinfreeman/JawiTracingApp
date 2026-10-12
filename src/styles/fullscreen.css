@@ -154,13 +154,12 @@ body { position: fixed; inset: 0; }
 .race-toolbar-actions { width: auto; }
 .race-lanes, .match-arena.solo .race-lanes { grid-row: 1; grid-column: 1; min-height: 0; min-width: 0; margin: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); gap: 8px; }
 .match-arena.solo .race-lanes { grid-template-columns: minmax(0, 1fr); }
-.match-arena.stacked .race-lanes { grid-template-columns: minmax(0, 1fr); grid-template-rows: repeat(2, minmax(0, 1fr)); }
 .race-pane { height: 100%; min-height: 0; padding: 4px; display: grid; grid-template-rows: minmax(0, 1fr); position: relative; }
 .race-player-heading { height: 36px; }
 .race-player-heading h2 { font-size: 19px; }
 .race-player-heading .profile-portrait { width: 30px; height: 30px; }
-.race-paper, .match-arena.stacked .race-paper { display: block; position: relative; height: 100%; min-height: 0; }
-.race-paper .board-wrap, .match-arena.stacked .board-wrap { width: 100%; height: 100%; }
+.race-paper { display: block; position: relative; height: 100%; min-height: 0; }
+.race-paper .board-wrap { width: 100%; height: 100%; }
 .arena-space { grid-row: 1; grid-column: 1; margin: auto; max-width: 600px; padding: 20px; }
 .race-overlay { position: absolute; inset: 0; padding: 12px; z-index: 20; }
 .race-dialog { overflow: hidden; padding: 20px; }
@@ -334,6 +333,16 @@ body { position: fixed; inset: 0; }
 .stage-menu-button { position: absolute; top: 8px; left: 8px; z-index: 6; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-width: 48px; min-height: 48px; padding: 6px 14px; border: 2px solid var(--control-border); border-radius: 16px; background: rgb(255 253 245 / .94); color: var(--primary-hover); font: 700 15px var(--font-body); }
 .stage-menu-button > span:first-child { font-size: 22px; line-height: 1; }
 .stage-menu-button:disabled { opacity: .55; }
+.stage-navigation { position: absolute; top: 8px; left: 8px; z-index: 9; display: flex; align-items: flex-start; gap: 8px; max-width: calc(54% - 24px); }
+.stage-navigation .stage-menu-button { position: static; flex-shrink: 0; box-shadow: 0 3px 0 rgb(35 61 49 / .18); }
+.stage-menu-button svg, .tracing-menu .button svg { flex-shrink: 0; }
+.control-navigation { background: #dfedff; color: #204c7a; border-color: #557ca5; }
+.control-help { background: #eee4ff; color: #583981; border-color: #8364a7; }
+.control-retry { background: #fff0bc; color: #6b4900; border-color: #a48435; }
+.control-exit { background: #ffe4db; color: #823d28; border-color: #a96850; }
+.stage-navigation .stage-demo-button { display: none; }
+.stage-menu-button:focus-visible, .tracing-menu button:focus-visible { outline: 3px solid #204c7a; outline-offset: 3px; }
+.stage-menu-button:active:not(:disabled) { transform: translateY(2px); box-shadow: none; }
 .stage-badge { position: absolute; top: 8px; right: 8px; z-index: 5; max-width: 46%; margin: 0; padding: 4px 12px; flex-wrap: nowrap; justify-content: flex-start; gap: 8px; border: 1px solid #c2ceab; border-radius: 16px; background: rgb(255 253 245 / .9); pointer-events: none; }
 .stage-badge h1 { margin: 0; font-size: 26px; line-height: 1.1; }
 .stage-badge[data-long-name="true"] h1 { font-size: 18px; }
@@ -396,6 +405,16 @@ body { position: fixed; inset: 0; }
 .tracing-menu-pages { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; }
 .menu-notice { margin: 8px 0 0; font-size: 13px; }
 .fit-dialog-content:has(.tracing-menu-grid) { display: flex; flex-direction: column; justify-content: space-between; }
+.tracing-menu { height: 100%; min-height: 0; display: flex; flex-direction: column; gap: 10px; }
+.tracing-menu-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; flex-shrink: 0; }
+.tracing-menu-tabs button { min-height: 48px; padding: 6px; border: 2px solid #8364a7; border-radius: 14px; color: #583981; background: #f7f2ff; font: 700 16px var(--font-body); }
+.tracing-menu-tabs button[aria-selected="true"] { background: #583981; color: #fff; }
+.tracing-menu-body { flex: 1; min-height: 0; }
+.tracing-menu-grid .button { line-height: 1.2; padding: 6px 10px; font-size: 16px; }
+.tracing-menu-pages { flex-shrink: 0; margin: 0; min-height: 48px; }
+.tracing-menu-pages .button { padding: 6px 10px; font-size: 14px; }
+.menu-resume { flex-shrink: 0; width: 100%; min-height: 56px; }
+.arena-hud .stage-navigation { position: static; max-width: none; }
 
 .arena-hud { position: absolute; top: 12px; z-index: 12; display: flex; align-items: center; gap: 8px; }
 .arena-hud-left { left: 12px; }
@@ -423,8 +442,13 @@ body { position: fixed; inset: 0; }
 .music-switch input { width: 24px; height: 24px; }
 
 @media (max-width: 480px) {
-  .stage-menu-label { display: none; }
-  .stage-menu-button { padding: 6px; }
+  .stage-navigation { flex-direction: column; gap: 6px; }
+  .stage-navigation .stage-menu-button { min-width: 110px; justify-content: flex-start; padding: 6px 10px; }
+  .stage-menu-label { display: inline; }
+  .arena-hud-left .stage-navigation .control-navigation { width: 126px; white-space: normal; }
+  .arena-hud-right { max-width: calc(100% - 154px); padding: 4px 6px; gap: 4px; }
+  .arena-round { white-space: normal; }
+  .stage-arena .race-clock { padding: 2px 3px; font-size: 18px; }
   .stage-badge h1 { font-size: 21px; }
   .arena-round-full { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .arena-round-short { display: inline; }
@@ -444,6 +468,23 @@ body { position: fixed; inset: 0; }
   .completion-card { width: min(60%, 560px); }
   .completion-card h2 { font-size: 30px; }
   .completion-actions .button, .completion-actions .text-button { min-height: 64px; font-size: 18px; }
+}
+@media (min-width: 900px) and (min-height: 600px) {
+  .stage-navigation .stage-demo-button { display: inline-flex; }
+  .stage-navigation .stage-menu-button { min-height: 56px; font-size: 17px; }
+}
+@media (min-width: 1500px) and (min-height: 850px) {
+  .stage-navigation .stage-menu-button { min-height: clamp(64px, 2.2vw, 84px); font-size: clamp(18px, .75vw, 26px); padding: 10px 18px; }
+  .stage-badge .audio-group .button { min-height: 56px; font-size: 18px; }
+}
+@media (max-width: 360px) {
+  .tracing-menu-tabs button { font-size: 14px; }
+  .tracing-menu-grid .button { font-size: 14px; padding: 6px; gap: 5px; }
+  .tracing-menu .button svg { width: 18px; height: 18px; }
+  .completion-card { padding: 10px; gap: 6px; }
+  .completion-card h2 { font-size: 20px; }
+  .completion-actions { gap: 6px; }
+  .completion-actions .button, .completion-actions .text-button { min-height: 48px; padding: 6px 10px; }
 }
 @media (max-width: 600px) and (max-height: 650px) {
   .teacher-page .teacher-panel { padding: 4px; gap: 2px; }

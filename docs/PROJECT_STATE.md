@@ -1,14 +1,178 @@
 # Current project state
 
-Confirmed: **7 October 2026**, Asia/Kuala_Lumpur. Earlier items below are dated where they were checked. This is a dated summary;
+Confirmed: **12 October 2026**, Asia/Kuala_Lumpur. Earlier items below are dated where they were checked. This is a dated summary;
 verify changing facts against [the catalogue](../src/content/letters.json) and
 [its validator](../src/content/validateContent.js).
 
+Savepoint requested **12 October 2026** after delivery of APK 1.0.10: current
+release, approvals, checks and remaining device limits are captured in the
+[current checkpoint](CURRENT_TASK.md#release-1010-savepoint--12-october-2026).
+
+- **Android release 1.0.10 (12 October):** generated the requested signed
+  [APK](../output/releases/Taman-Jawi-1.0.10-release.apk), version code 11,
+  approximately 7.5 MB, Android 8.0+. Includes current approved Ya 3, Mim 6 and
+  all other current content. All 486 verified web/build inputs match Ya
+  activation evidence; native files match 1.0.9 except version metadata.
+  Assembly/lint pass (zero errors, four existing warnings); signature,
+  alignment, version/API metadata, checksum and all 104 assets / 36 active
+  recordings pass. Same release certificate as 1.0.9. No connected Android
+  device; installation/update retention and physical runtime remain untested.
+  See [release details](ANDROID_RELEASE.md#latest-release--1010).
+
+- **Ya smaller head activated (12 October):** the owner replied “approve d”
+  directly to the pictured Ya 3 student approval question. That exact compact
+  head is active in lessons, cards/help and scored Solo/Duo. The head curves
+  remain scaled to 72% around the original bowl join; the lower bowl, two dots,
+  widths, touch policies, continuous-body/two-tap order, framing and audio are
+  unchanged from the reviewed candidate. Proposals expire; historical/preview
+  attempts keep their recorded revisions/statuses. **342 distinct unit passes /
+  50 files**, checked build and **20 Chromium/WebKit passes / two CDP-only
+  skips**. Other 35 entries and 78 audio files exact; all 36 lessons ready.
+  Phone/tablet/Duo captures inspected; existing server serves the approval.
+  No physical-tablet check or new APK. See [activation verification](YA_SMALLER_HEAD_APPROVAL.md)
+  and the historical [candidate review](YA_SMALLER_HEAD_REVIEW.md).
+
+- **Mim reference shape activated (12 October):** the owner replied “approved”
+  directly to the pictured **Mim 6** student approval question. The exact
+  reviewed open hooked head, flatter return and slender pointed tail are now
+  active in student lessons, cards/help and scored Solo/Duo. One continuous
+  movement uses 1 Mula → 2 Ikut → 3 Siap, with no dots and unchanged audio.
+  Retained frame clearance keeps the finish guide above the instruction bubble.
+  Proposal cards expire; older and preview work keeps its revision/status.
+  Wau 4 / Va 5, Ta 9 / Za 9 and the other 35 entries are unchanged. All 36
+  lessons remain ready. **332 unit passes / 49 files**, checked build and
+  **20 distinct Chromium/WebKit passes / two CDP-only skips**. The running
+  browser server serves this approval. No physical-tablet check or new APK. See
+  [activation verification](MIM_REFERENCE_APPROVAL.md), the historical
+  [candidate verification](MIM_REFERENCE_REVIEW.md) and preserved
+  [implementation plan](MIM_REFERENCE_IMPLEMENTATION.md).
+
+- **Wau/Va smaller heads activated (12 October):** the owner replied “proceed”
+  directly to the pictured Wau 4 / Va 5 student approval question. Those exact
+  reviewed heads, approximately 17% smaller, are active in student lessons,
+  cards and scored Solo/Duo. Original tails, junctions, left-first continuous
+  route, Va dot, widths, framing and audio are preserved. Detached numbered
+  labels avoid overlap at the smaller neck. Candidate cards expire; older and
+  preview attempts keep their recorded revision/status. **318 unit passes /
+  48 files**, checked build and **30 distinct Chromium/WebKit passes / two
+  CDP-only skips**. Other 34 entries (including Ta 9 / Za 9) and 78 audio files
+  are exact; all 36 lessons ready. No physical-tablet test or new APK.
+  See [activation verification](WAU_VA_SMALLER_HEAD_APPROVAL.md), the historical
+  [candidate review](WAU_VA_SMALLER_HEAD_REVIEW.md) and preserved
+  [implementation plan](WAU_VA_SMALLER_HEAD_IMPLEMENTATION.md).
+
+- **Ta/Za photo-reference shapes activated (12 October):** the owner replied
+  “proceed” directly after the pictured Ta (ط) 9 / Za (ظ) 9 review and student
+  activation approval statement. Those exact shapes are now active in student
+  lessons and scored Solo/Duo: compact lower loop, thin tapered pillar and pointed
+  left tail. Trace the body through 1–3, lift, then the straight downward pillar
+  through 4–6; Za's unchanged separate dot is last at 7. Audio is preserved.
+  The candidate cards expire; older and preview attempts retain their original
+  revision/status. **306 distinct unit passes / 47 files**, checked build and
+  **28 Chromium/WebKit passes / two CDP-only skips**. All 34 other entries and
+  78 audio files are exact; all 36 lessons ready. No physical-tablet test or new APK.
+  See [activation verification](TA_ZA_REFERENCE_APPROVAL.md), the historical
+  [revision-9 candidate verification](TA_ZA_PHOTO_REFERENCE_REVIEW.md), the
+  [preceding revision-8 review](TA_ZA_ROUNDED_LOOP_REVIEW.md), the
+  [preceding revision-7 review](TA_ZA_STRAIGHT_PILLAR_REVIEW.md) and the preserved
+  [implementation plan](TA_ZA_STRAIGHT_PILLAR_IMPLEMENTATION.md).
+- **Ra/Zai shorter heads approved (11 October):** the owner replied “yes approved”
+  to the exact pictured Ra-4/Zai-5 question. Both are now active in student lessons
+  and scored Solo/Duo, with retained lower contours/tails and Zai's separate dot.
+  The other 34 entries, including Sin 2/Syin 3, and all 78 public/audio files are
+  exact; all 36 lessons are ready and the corresponding review cards expire.
+  **284 unit passes / 45 files**, checked build, **32 distinct Chromium/WebKit
+  passes / two CDP-only skips**, revision/preview persistence and scored independent
+  lanes. No new APK or physical-device test. See [activation verification](RA_ZAI_SHORTER_HEAD_APPROVAL.md)
+  and the historical [preceding review](RA_ZAI_SHORTER_HEAD_REVIEW.md).
+- **Sin/Syin reference shapes activated (12 October):** the owner replied “proceed”
+  directly to the pictured Sin-3/Syin-4 student approval question. Those exact
+  shapes now appear in student lessons and scored Solo/Duo: shallow teeth,
+  compact bowl and tapered terminal at the marked reference height; Syin's three
+  separate dots are retained. Other 34 entries and all 78 public/audio files remain
+  exact. All 36 lessons are ready and the candidate cards expire. **296 distinct
+  unit passes / 46 files**, checked build, **32 Chromium/WebKit passes / two
+  CDP-only skips**, persisted revision credit and independent scored lanes. See
+  [activation verification](SIN_SYIN_REFERENCE_APPROVAL.md); the preceding
+  [adult review](SIN_SYIN_REFERENCE_REVIEW.md) is historical.
+- **Ta-marbutah Ta-only audio approved (11 October):** the owner replied
+  “approve” to the exact reviewed audio revision 2, transcript **Ta**. It is now
+  active in lessons, adult preview, teacher playback and Solo/Duo; its draft
+  audition button expires. Geometry revision 4, saved tracing credit, the other
+  35 entries and all 78 existing public/audio files are exact. The preceding
+  endpoint correction is retained: real tracing from the displayed frontier
+  can finish an interrupted loop, then both dots are required. **276 unit passes
+  / 44 files**, checked build with 36 ready lessons, **21 distinct Chromium/WebKit
+  browser passes / three platform skips**, real playback twice and retained
+  saved geometry credit. Checks and input hashes are in
+  [the approval record](TA_MARBUTAH_TA_VOICE_APPROVAL.md).
+  The [preceding implementation checks](TA_MARBUTAH_ENDPOINT_AND_TA_VOICE_REVIEW.md)
+  remain historical. No new APK or physical-device verification.
+- **Straight tops approved (11 October):** owner replied “approve” to the exact
+  Jim 5 / Ca 4 / Ha (ح) 4 / Kha 4 question. Normal student lessons and scored
+  Solo/Duo now use those reviewed horizontal top strokes, traced left to right
+  through 1/2/3; lift before the retained bowl at 4, then existing dots. Other
+  32 entries and all 80 audio-tree files remain exact; all 36 lessons are ready
+  and all 11 review scopes are empty. **268 unit passes / 42 files**, checked
+  build and **54 distinct Chromium/WebKit browser passes / four CDP-only skips**;
+  phone/tablet/desktop and scored-lane captures inspected. Older/preview attempts
+  remain stored without granting new-revision credit. No physical-device test
+  or new APK; 1.0.9 predates this correction. See [approval verification](JIM_CA_HA_KHA_STRAIGHT_TOP_APPROVAL.md)
+  and the preserved [preceding review](JIM_CA_HA_KHA_STRAIGHT_TOP_REVIEW.md).
 - **Inventory:** 36 letters and authored models; **all 36 are owner-approved and student-ready**.
   On 4 October the owner approved the 29 revisions that had awaited review (27 redrawn models plus Kaf
   revision 2 and Ga revision 3); see [the approval record](CONTENT_APPROVALS.md). All 36 active name recordings
-  are approved: 30 supplied files and 6 retained synthetic recordings. Ye's
+  are approved: 31 supplied-recording mappings and 5 retained synthetic recordings. Ye's
   historical entry, recordings and saves remain preserved.
+- **Signed APK 1.0.9 (7 October):** generated at the owner's request with the
+  latest navigation, left/right Duo, approved Wau/Va routes and tablet/smartboard
+  optimisations. Version code 10; same application ID and release certificate as
+  1.0.8. Assembly/lint, signature, alignment, checksum and all 103 packaged assets
+  pass. All 219 source/test/build fingerprints match the completed optimisation
+  verification. No connected device; native installation/runtime remain untested.
+  [Download APK](../output/releases/Taman-Jawi-1.0.9-release.apk) and
+  [release verification](ANDROID_RELEASE.md).
+- **Tablet/smartboard optimisations implemented (7 October):** the owner
+  authorised the performance plan. Route serialization and outline reveals now
+  skip redundant work; immutable SVG/turn preparation is bounded and shared,
+  demonstrations publish each part once per frame, header reads are batched and
+  static catalogue checks are memoised. New browser installations default to
+  light presentation; explicit full choices remain. **260 unit checks / 41 files,
+  checked build, 108 distinct Chromium/WebKit browser passes and two CDP-only
+  skips**; no unresolved failures. All 36 modes pass in Chromium and all 36 play
+  lessons pass in WebKit. Five-run comparisons preserve exact traced outcomes;
+  same-letter restarts avoid 65–121 ms of sampled SVG API work. Light desktop
+  drawing stays near 16.7–16.8 ms p95 intervals; **full-effects 4K remains slow**
+  (median run p95 50.1 ms after versus 33.4 ms before), and the 6× CPU probe exceeds
+  the input budget. No physical device is connected, so native smoothness and
+  thermal behaviour remain unverified. Content and all 77 audio-tree files are
+  exact. APK 1.0.9 now includes this work. See
+  [results, commands and limitations](ANDROID_TABLET_SMARTBOARD_PERFORMANCE_VERIFICATION.md).
+- **Wau / Va left-first routes approved (7 October):** owner replied “approve”
+  to the exact Wau 3 / Va 4 review question. Normal lessons and scored challenges
+  now move left under the head like Pa, around the loop, then continuously into
+  the retained tail; Va's dot is last. Exact reviewed models, audio and 34 other
+  entries are preserved; all ten review scopes are empty. **256 unit checks /
+  40 files**, checked build and **32 Chromium/WebKit browser cases** pass, with
+  four CDP-only skips. Local source is current; APK 1.0.8 predates this change.
+  See [approval verification](WAU_VA_DIRECTION_APPROVAL.md) and the preserved
+  [preceding review](WAU_VA_DIRECTION_REVIEW.md).
+- **Duo always uses left/right lanes (7 October):** requested by the owner for
+  tablet and smartboard play. Automatic top/bottom portrait switching is removed;
+  undersized screens keep the pause/rotate/fullscreen guidance. Equal lanes,
+  independent simultaneous tracing and teacher history are verified. Checked
+  build and **18 browser checks** pass with one CDP-only skip. Physical-device
+  testing remains unverified. See [layout verification](DUO_LEFT_RIGHT_LAYOUT.md).
+- **Gameplay navigation implemented (7 October):** the owner authorised the
+  implementation plan with “proceed”. Lessons now show blue Kembali, purple
+  Menu, green Dengar and named Bantuan/Pilih huruf/Tetapan sections. Restart
+  protects unfinished tracing/copying; completion adds Pilih huruf lain.
+  Solo/Duo use one global exit with equal fitted Duo boards. Unit checks
+  **249/39 files**, checked build and affected Chromium/WebKit navigation,
+  layout, copy and challenge checks pass after documented follow-ups. No
+  geometry/audio/approval changes. Source is available on the local server;
+  **APK 1.0.8 does not contain this new UI**. See
+  [implementation and verification](TRACING_GAMEPLAY_NAVIGATION_IMPLEMENTATION.md).
 - **Sad / Dad shapes approved and APK 1.0.8 (7 October):** the owner approved
   both pictured revision-3 catalogue shapes and requested a new release APK.
   Exact reviewed contours/routes/dot are now active in normal lessons and scored

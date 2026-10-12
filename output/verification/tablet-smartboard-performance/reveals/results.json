@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-07T12:00:14.585Z",
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 1024,
+    "height": 768
+  },
+  "results": [
+    {
+      "label": "Sad",
+      "phase": "awaitingStart",
+      "frontier": 488.3647143132187,
+      "visibleSegments": 11
+    },
+    {
+      "label": "Nun",
+      "phase": "awaitingStart",
+      "frontier": 412.4677151973204,
+      "visibleSegments": 9
+    },
+    {
+      "label": "Ain",
+      "phase": "awaitingStart",
+      "frontier": 320.9415695787819,
+      "visibleSegments": 7
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-11",
+  "catalogueUnchanged": true,
+  "approvedLessons": 36,
+  "audioFilesUnchanged": 78,
+  "proposals": [
+    {
+      "id": "ra",
+      "revision": 4,
+      "status": "pendingReview",
+      "path": "M 605.85676 515.95013 C 621.29484 554.704 629.82986 599.23704 595.4 653.8 C 579 679.8 554.5 702.3 525.1 712.3 C 481.7 727.2 446.6 698.3 410.7 707.7",
+      "cut": {
+        "x": 600,
+        "y": 518,
+        "slope": -0.35
+      }
+    },
+    {
+      "id": "zai",
+      "revision": 5,
+      "status": "pendingReview",
+      "path": "M 605.83927 503.30625 C 621.28839 542.07038 629.84286 586.61645 595.4 641.2 C 579 667.2 554.5 689.6 525.1 699.7 C 481.7 714.5 446.6 685.7 410.7 695.1",
+      "cut": {
+        "x": 600,
+        "y": 505.35,
+        "slope": -0.35
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "ra",
+      "preserved": 14433,
+      "lowerDifference": 0,
+      "upperInk": 0,
+      "missingReveal": 0,
+      "bodyPixels": 14504,
+      "missingRevealRatio": 0
+    },
+    {
+      "id": "zai",
+      "preserved": 14447,
+      "lowerDifference": 0,
+      "upperInk": 0,
+      "missingReveal": 0,
+      "bodyPixels": 14523,
+      "missingRevealRatio": 0
+    }
+  ],
+  "inputs": {
+    "src/App.jsx": "0d604239eef055bf1777e5b7914857cd9eecc93069f3c05a36ad064a57c9f8f4",
+    "src/audio/audioManager.js": "fc9d6b4b9f4dc2e4a96ba552fb6641f32b3c2f78efa1c0b8b8c5e1e10c2c88f9",
+    "src/audio/musicManager.js": "e3e724bb56b5fbc93fe8a3ebd0ed769d1003e210258f63a2043f901abb58988f",
+    "src/audio/musicPreferences.js": "26e73fa5cd36ae8d98b85e4eb8dcf17bf3e6126c9209839f5a87eab384954b81",
+    "src/components/AudioControls.jsx": "0d676d55c4027e626108179d8142578040c44ada285d9882b338b4cfeb1c89f1",
+    "src/components/AudioReviewPanel.jsx": "6f8cb97a550f3262a5095c48db64b6e04d991a5e8910a53d5ed46cbe1e89f66f",
+    "src/components/BookFrame.jsx": "c65c4751aee822ff1108035e35e77d40ecd2562ae1bcb8e9ffe07c5b347a397b",
+    "src/components/CompanyBrand.jsx": "bf0777c606cf5624a4afced6f8f9d8310afe1a153dc7905a3ccd74eaf1e8dd14",
+    "src/components/DotTapPad.jsx": "c3d001af09f8d58a6226bdc6a695d0415f70bb14ce1df52f5507d806e781868c",
+    "src/components/DraftModelReview.jsx": "b0ac25bfe9d9f581dd4fdfcb3b697dcb58e7a3bfbae67e888250bd4e72a7c77a",
+    "src/components/DuoInputCheck.jsx": "29fc5e12affdd75c04f45c578afca554c65c6c514c67674ab09bc41b7d31d1c2",
+    "src/components/FitDialog.jsx": "a647bb9ab4a4ac68dd05d8b5a13551e33f7ba48abba4e62e091719007105ad2a",
+    "src/components/GameIllustrations.jsx": "96a02ac512b21fc69e600da29119fbcafc1e8536be9ef70c34be630510817423",
+    "src/components/GameMascot.jsx": "4f4bc38ca0d4992ccf1fd635f38144839a557958242ec2de86511eb87175948e",
+    "src/components/Icons.jsx": "abff57f855c1d684fe81992975cc6c3c32620bb9abf4a9696924694916af6835",
+    "src/components/LetterCard.jsx": "3bc56ac3eec0cdb517346dac74b3d8b12886a85a0e838342ad05d9ba5ac36f20",
+    "src/components/LetterModelGlyph.jsx": "ff50f44515dbc9bd2873dcc7adea1f733c64aafd7cbea1db32fcd189f26434fb",
+    "src/components/MatchClockDisplay.jsx": "7346473c01d0261ac8ead280e0f35efdfd2baa9ef0dc2865fd727b84c473f599",
+    "src/components/NumberedTraceGuides.jsx": "7e92d60089ce825766faab2e8427fe1c2b999e61205abae253df33a184df01a4",
+    "src/components/PagedRecords.jsx": "2c2ec02b2a8bed09da720bc3f3c47528479e656f2b276c87c50ce13f3f4ab53d",
+    "src/components/Pager.jsx": "d07dc33e56c8a0033879a742807516b338a4f9ef599bcfbe830dc05d8f40cb60",
+    "src/components/PlayFeedback.jsx": "f0245ccc2748e3cbbaaad550e32c69fee88c851798a09c8c1ee8bdcdcf26cfdb",
+    "src/components/RaceTracePane.jsx": "31acd63051d5a7a3f89917466a1c8d76a63a3042e9339996ac394e6a6656d232",
+    "src/components/TraceBoard.jsx": "3581c28744e155e25e4cdb211b0f4e729e11132d1362c3f507159e5f52f3045d",
+    "src/components/TracingMenu.jsx": "13eda66ee8851ed6adf4606070f33f31737c49c2e5dbcf8bc50ea3e56e8e8796",
+    "src/components/Trophy.jsx": "e1addd34175af17d47726debef6874b3a358dbc5b426875fee5f8d903a7e9cf7",
+    "src/components/usePageTurn.js": "74771cdff6e9886851cbde6d05739fb05e7acdfae4a6d8a61ca5d11c5ccbc4d6",
+    "src/components/useViewportLayout.js": "e566d53569f0aa6847e0ac8173ef2c8e5d7ec74a4b2f47d323423623f1a118a8",
+    "src/components/VideoModelReview.jsx": "6bc4d804a375b0f4d1610bcd9822fed5e754a1804b71cae84a0919dfaa4ae023",
+    "src/content/ainFamilyOutlines.json": "4b6e70c5a5e0d06de1f6ab3d548e237df9997a2991de7e7634d072cc62442104",
+    "src/content/audioReviewCandidates.js": "8abfc0b2a94a37bce1884815be4ed756d902c490012690c4822e3a5b489e5acb",
+    "src/content/displayWidth.js": "4fd8e020b5933dce2338b4a7dfd08c7424fbd4e28549802e7c256e766c93f7e7",
+    "src/content/faPaDirections.json": "1eaa593ca0a24a96932b3f3e60fa0a3ca32e2a6367adc4176a96c78d45220e12",
+    "src/content/fourLetterOutlines.json": "0f7aa455c1cff0e8ca4705f54c6634c51e75bd9be9c9f73ec4115d6e1a4297e8",
+    "src/content/haDirection.json": "f4d396e016c608a796957185ca4b3d5e08382535ffb5137ce76a0280a86a8d2e",
+    "src/content/jimFamilyStraightTops.json": "c309f4cb937e0cccd64f33eaefd021d39d943f855745b12c3b96ed009806912a",
+    "src/content/letters.json": "c8ab572cc397819075e59b05d2aea1ef5801a9d6a13b1134c42bee152c172e86",
+    "src/content/mimTailGap.json": "6c00f5736c83898946a303be7e04133ad1e087ee692ff07c8848c6ce5818bb84",
+    "src/content/nunOutline.json": "4172d3b9ce2f539454909b740417c31c5ad316214988426ac0be2d0f1f9d92c9",
+    "src/content/nyaTip.json": "badde53551792c11b9ab7a7b2cdcce5f226d26e4cbdc878bf742a51a30e248c2",
+    "src/content/raZaiShortHeads.json": "04b6725913162e2186d6f7ef8f22f6eb7e68a1781b942688e61d07d935b9157a",
+    "src/content/reviewCandidates.js": "9ecb874dc39a417e473f27b197659ddcdc55c9980f8a7e959d433fa438e2861c",
+    "src/content/sadDadOutlines.json": "59647c895840c50f5a5da5c88735bb0cee27a156bf4bde1357694260945f9fc9",
+    "src/content/sinSyinTails.json": "d4d5365e9587560af067ec53a694a551a15ff11a982ef295f696a299cb3fdb4a",
+    "src/content/taMarbutaVoice.json": "d34673031a4dcdc10cc85a9bc8df4a6338cf0776c5aa99a998d86b436e2822a4",
+    "src/content/taZaStems.json": "02fa026bffc41a0416aa4c90a82ba7d35fe95fe8d6c1daa6a2150f86123b87d7",
+    "src/content/validateContent.js": "ca4a2f5c38af37a93599f3f917df31acbbf83fc453ab09dac5a732c84ac9d2f8",
+    "src/content/wauVaDirections.json": "4e63a84b0d4c1db8e28fd2a1ae60a9b85f43cf3f67895bfaa685f7fe55b9f805",
+    "src/game/bookNavigation.js": "1d2203fbc50d6f94968091fd75e4bd984c5d7bef8607cb7e926f4cb8a0cf5a71",
+    "src/game/matchClock.js": "6cb656f9b2cd99d2b5dd296f0f547769c3d41347fa3f075988ddba9e7a83fb4a",
+    "src/game/matchConfig.js": "50c0bfe3471ced33e9548abd92f102e9e2eb2710ceb60397d5ad2d57eda92bc3",
+    "src/game/matchReducer.js": "a7cbc8e300c5de0e9cad0267f2d34fb58af9a094f5e78d4e5ade1ac4fd74b446",
+    "src/game/scoring.js": "a6112fc479daf28c9201f1de9b6dc41bab959db12614b31d27c15bddf098f6cd",
+    "src/game/screenLayout.js": "780684ce83b154b007c146c9aa5bd56dbd24c0e7310469b23361c5a6994ffaab",
+    "src/main.jsx": "cc1dc05c42db831cfec4ee6a59227271acb950cff2818dbbd00d9f4567dbe868",
+    "src/platform/download.js": "8b2bd11e616d329fe8ef21929b83eb7af09fceceff4f6633b2148d164566990c",
+    "src/platform/fullscreen.js": "03db04e966399c7dc1a062af968c430f725712fdf496e54a2bdbebd3da0bf2cd",
+    "src/platform/presentation.js": "aa67c94b1f7b9c9909aca6f541a33914f91024377eb644eb4ed42294a846815f",
+    "src/screens/BookLessonScreen.jsx": "24b5da0d8a6fee06a0d99d16e33c268eabb7bc80ea487682d10ae1c1cf7ae0da",
+    "src/screens/LessonScreen.jsx": "0e1349c488e2a5e059cd53f540b2083c643f06e7d48778e3aa766b2ecacfcf67",
+    "src/screens/LetterGarden.jsx": "97c44112a3de638e148c3485e97a79926d68b00afbbe04b1609ffedf000269fe",
+    "src/screens/MatchResultScreen.jsx": "fa9d868410974b2feda3174ffc6218b06759d64b10bd86048a70fecc61d95b22",
+    "src/screens/MatchScreen.jsx": "bb9f11f507828814666ebd910445961ab4786779dbbd2fa4735716e18b92ce07",
+    "src/screens/MatchSetupScreen.jsx": "45f45d726cce5bd7cec6fe9fd48bef9f9ed93730d9951e5e8c160c631d521aea",
+    "src/screens/ResultScreen.jsx": "c78d4c5b85723a3f8582d70d51f7debf2bceada25193f2716a25c86aae5cd011",
+    "src/screens/SplashScreen.jsx": "8b59c2c129c5bb0adba2341cfb254dc4acad502160f2c8c7e1bfed0eb13e8cf4",
+    "src/screens/TeacherScreen.jsx": "84a75827fc4655334054ab8ef0e9379d4d92be89f64cbcb8f542d3f906b3a0e8",
+    "src/screens/WelcomeScreen.jsx": "e7bc79c76215d4362bc72ea3d465ce9cc7b2956237044eaa7c577a1cf1be5001",
+    "src/storage/matchStore.js": "b47f220ad0b2f1beb14e72bc244a9a4994910969bfd4332c5a6e5b4c21d96dc3",
+    "src/storage/progressStore.js": "b316a45fa966b68027ca653917626f0a6e0f40110e4bbb7c0282c53f87ef6b53",
+    "src/styles/app.css": "cb4bbbde36520eee668b54a443f6e31244970216d79f8c5c16fdac4f95297c4d",
+    "src/styles/book.css": "44a16f8712b3c2f3b163ae6ee43e5a718d6380bd6ca78320841cc6dc706e8d6a",
+    "src/styles/fullscreen.css": "7315782537fefc0f3d629577d15533e207090bfb6a2be76decadd9af7e7d7758",
+    "src/styles/letter-model.css": "da2b2463c117c93de8f4a69c55f1e0a27b24dbedbb9e0334475f60d8e2a00d7d",
+    "src/styles/match.css": "79df242187178956e586d1fa743a1d7da5b983e8bb493728e999a4b113f79f55",
+    "src/styles/playground.css": "22f2d04460e3d82d5f90f04503f9c7670629ec3d5a1ad09b620a1de79277cab8",
+    "src/styles/presentation.css": "217a5ee411f582c17671db8ad04d822e5675db4cfc2d60f2904e4b3896f63320",
+    "src/styles/theme.css": "a10769b2244372eac205aa86b0189f6ce9d9ec7b155c83ed5457159cb99e760d",
+    "src/tracing/contactClick.js": "e6143dbd1af696455bb9474c9f7945e50eaa886a86a3b9ee9a38e508047d61eb",
+    "src/tracing/demonstrationFrame.js": "d7f72c348f74e991ec0e131b394ef2b067647574702409f500e626bac875e76c",
+    "src/tracing/dotMatcher.js": "84e3742623c7ec46ce9fb1dc585a55db3d6fc0955063bb7e0322da4b26ac1999",
+    "src/tracing/geometry.js": "f8b0f600007001fb656199ad1583c2db71e5c17c0e2938a0ceb611ca1078dce5",
+    "src/tracing/inkPath.js": "a43203c384dc05b5cb9a043ef96f15b255fb0ebd9466a3d24285447053e798fc",
+    "src/tracing/inputController.js": "3c074a0dcfdf36441a0b0572ba01aceffee7de8457dae0f861dd51bbf5a3c3df",
+    "src/tracing/liveRenderer.js": "2e94d71a6c5d8e2f68314a0acdf3c475627433f642f7ad8a4eedffe964cd52a5",
+    "src/tracing/matcher.js": "b29f82061774bf6cdb8d1a45182d18e72a687e781fda43c6154d05debc407c2d",
+    "src/tracing/numberedGuides.js": "46c44853e3f1d65c194767666ac7a4b2f7bac5cbb84304001f2847a7ad14bd3b",
+    "src/tracing/outlineAppearance.js": "61961bd0498d482fe276054a9519494d7a8cf465f6efb559e06f8aa4941ee255",
+    "src/tracing/playMatcher.js": "47f5efbcd55e7c9aa9f45ad937e80df27336d1ebddc83b86ce3c3567439627a4",
+    "src/tracing/prepareReference.js": "a0ac6de94aa4218b0cf268cc2cc8dfd51b8456845a8320d5aa2dd21b10a5d667",
+    "src/tracing/profiles.js": "1f8729320d364606629959e27c1b986e4710f8e4582f0d27b8fb8bf536a014e7",
+    "src/tracing/teachingCues.js": "969fa8a91714c84c9df6cb0c73eef35651e3b7d9c06078a3be301340a111fe2c",
+    "src/tracing/traceReducer.js": "459959d0ac8236f56f365e153d5294904832c0028330a389fee152a6d62e8853",
+    "package.json": "ac046cef16f885ce96e15c3e23c90ba830ccdf1145a843e0e01f8236b6cf86b8",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "scripts/author-ra-zai-short-heads.mjs": "949bbf8b0d57434f2f25fab8ec77fdffa0ff6775bb9a0a9f848caae18c9f7dbc",
+    "scripts/verify-ra-zai-short-heads.mjs": "172d012fd8556deb7830e034531a4eb849e8170eb5a1b081aa0708b69cf9d6c9",
+    "tests/geometry/raZaiShortHeads.test.js": "1ad23f14fc4ffc428dc81b20577434b28b02e4fb6185fae8b50ccdeb40fa1c26",
+    "tests/browser/ra-zai-short-heads.spec.js": "1683e0fc0fe0d6909cd4cf40bdacccd16be77d3e25c0284eb500286cd56b6d06",
+    "tests/fixtures/ra-zai-short-head-routes.json": "bfe9e2d75f3a4a4162f3e932be75801153d5bf410a0b8708c1a914b8f610cdc6",
+    "tests/fixtures/ra-zai-short-head-originals.json": "9b584c7536d1de15919fd378ffafe59522adababd05162c8a740e9967de889da"
+  },
+  "build": [
+    "index-DbweFF8G.css",
+    "index-DMyvB2mW.js"
+  ],
+  "runtime": {
+    "node": "v24.19.0",
+    "browsers": {
+      "chromium": "153.0.8010.12",
+      "webkit": "26.6"
+    }
+  },
+  "dependencies": {
+    "tests/browser/helpers/localTest.js": "70e9f7743a8e2ad349a4d2fdc5151f4ab5ad60eb6532191f9279a555bbf02744",
+    "tests/browser/helpers/navigation.js": "feecede17d4c63d614bebd7e3caf2d17ef7229d273f01e98f2d1d74261e88178",
+    "tests/browser/helpers/tracing.js": "b7dc6662ac43d70ad5198c80eeaef2db1f4c316a0d27cc15b424ad9fb4daffc1",
+    "tests/browser/helpers/audio.js": "88b1e72b89cb1960620243a0d264a58d9d2ac3deef89fbfdf2bdf379ddce0f06",
+    "playwright.config.js": "f9ce1412decf8249638a0b59c48a3c52e811bb9885dc8cc8f2282e823ad3d4d7",
+    "vite.config.js": "323fe0ae769c0120763304445b67b2be7a398ebb48db3e431d6d098ad6c01d4b"
+  },
+  "checks": {
+    "unit": {
+      "command": "npm test -- --pool=threads --maxWorkers=2 --reporter=dot",
+      "passed": 283,
+      "files": 45,
+      "log": "unit.log"
+    },
+    "build": {
+      "command": "npm run build",
+      "valid": 36,
+      "ready": 36,
+      "log": "build.log"
+    },
+    "browser": {
+      "command": "npx playwright test tests/browser/ra-zai-short-heads.spec.js --project=chromium --project=webkit --workers=2 --reporter=list",
+      "passedDistinct": 20,
+      "skipped": 2,
+      "initialPassed": 16,
+      "correctedDemonstrations": 4,
+      "unresolvedFailures": 0,
+      "logs": [
+        "browser.log",
+        "browser-demo-retry.log"
+      ],
+      "environment": {
+        "JAWI_STATIC_TEST": "1",
+        "PLAYWRIGHT_BROWSERS_PATH": "C:/Users/azrin/AppData/Local/ms-playwright"
+      },
+      "scope": "Both candidates in adult preview; play, guided, precision; 320x600, 768x1024, 1280x800; mouse and native Chromium touch; gating, persistence, dot-last, recovery, demonstrations and comparisons"
+    },
+    "visual": {
+      "inspected": [
+        "comparison.png",
+        "browser/chromium-ra-play-start.png",
+        "browser/webkit-zai-guided-start.png",
+        "browser/chromium-zai-partial.png",
+        "browser/chromium-ra-precision-finished.png",
+        "browser/webkit-zai-demo.png"
+      ]
+    }
+  },
+  "limits": [
+    "Pending shape approval; student catalogue unchanged",
+    "Two WebKit CDP touch skips",
+    "Physical smartboard/tablet/Android not tested",
+    "APK unchanged; no deploy",
+    "Scored Solo/Duo verification reserved for approved activation"
+  ]
+}

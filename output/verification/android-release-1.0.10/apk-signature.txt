@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Taman Jawi, OU=Android, O=Hanana Academy, C=MY
+Signer #1 certificate SHA-256 digest: 864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365
+Signer #1 certificate SHA-1 digest: 5ff11a277487f335dce7475c4a90545371efb641
+Signer #1 certificate MD5 digest: 77b2d3fc10330747a453c0007fec467b
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 3072
+Signer #1 public key SHA-256 digest: 29807c7f7bd3eb92d86e4fa84a719d6f14ae7cbbd193a730f6d8c0dee5f9df0a
+Signer #1 public key SHA-1 digest: 802ca517c14e0b004e8a086210273c6cbe2cd414
+Signer #1 public key MD5 digest: c8993c4569ae951fc1d6d04d20c4dcc4

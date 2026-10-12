@@ -4,7 +4,9 @@ import {createHash} from 'node:crypto';
 import letters from '../../src/content/letters.json';
 import original from '../fixtures/va-audio-original.json';
 import {validateLetter} from '../../src/content/validateContent.js';
-const va=letters.find(l=>l.id==='va'),hash=b=>createHash('sha256').update(b).digest('hex');
+// Audio-selection stage used Va 3. The later approved left-first geometry has
+// independent exact-model checks in wauVaDirections.test.js.
+const currentVa=letters.find(l=>l.id==='va'),va={...currentVa,contentVersion:original.contentVersion,geometry:original.geometry},hash=b=>createHash('sha256').update(b).digest('hex');
 it('selects the explicitly authorised user Va fallback without changing handwriting or identity',()=>{
  const restored=structuredClone(va);restored.audio.name=original.audio.name;expect(restored).toEqual(original);
  expect(va.audio.name).toMatchObject({src:'/audio/letters/alphabet/va-name-v2.wav',transcriptMs:'Va',version:2,status:'approved',origin:{kind:'userProvided'},review:{revision:2,date:'2026-10-07',kind:'projectOwner'}});

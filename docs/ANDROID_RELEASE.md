@@ -1,6 +1,89 @@
 # Taman Jawi Android release
 
-## Latest release — 1.0.8
+## Latest release — 1.0.10
+
+Built and verified **12 October 2026**, Asia/Kuala_Lumpur, at the owner's
+request after approving the revised Mim and smaller Ya head.
+
+| Item | Value |
+| --- | --- |
+| File | [Taman-Jawi-1.0.10-release.apk](../output/releases/Taman-Jawi-1.0.10-release.apk) |
+| Version | 1.0.10, version code 11 |
+| Application ID | `com.hananaacademy.tamanjawi` |
+| Size | 7,511,529 bytes, approximately 7.5 MB |
+| Android compatibility | Android 8.0+; minimum API 26, target API 36 |
+| Signing | Preserved RSA 3072 release identity; verified APK v2 signature |
+| Certificate SHA-256 | `864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365` |
+| APK SHA-256 | `3bd49c63c7fd02af34f5fb20b455359a6c27375e04dc82c347cfaad3c7e56341` |
+| Checksum | [SHA-256 sidecar](../output/releases/Taman-Jawi-1.0.10-release.apk.sha256) |
+
+Includes the current approved **Ya 3**, **Mim 6**, **Wau 4 / Va 5**, **Ta 9 /
+Za 9**, all intervening approved shapes/recordings and existing tablet tracing
+optimisations. All 36 lessons remain ready; Jejak Ceria and Android lightweight
+presentation remain defaults. No student content, recording, native behaviour
+or release signing identity changed during packaging. Previous APKs are preserved.
+
+| Check / command | Scope and result |
+| --- | --- |
+| `node output/verification/android-release-1.0.10/verify-web-inputs.mjs` | All **486** recorded source, test, public asset, dependency and production-build fingerprints match the completed Ya activation verification: **342 distinct unit passes / 50 files**, **20 browser passes / two CDP-only skips**. Native inputs match 1.0.9 except the new version metadata. Reused checked `index-OaHaSlzY.js`; no duplicate web build/browser run. |
+| `scripts/build-android.ps1 -Offline -SkipWebBuild -SdkPath <installed SDK>` | Synchronized **104 assets**. Assembly and lint passed after finalizing two completed project-local Gradle compilation caches at the exact locations named in the Windows rename errors. Copied files were hash-verified; no cache deletion or signing-key replacement. Lint: **zero errors, four existing warnings**. |
+| `scripts/verify-android-release.ps1 -SdkPath <installed SDK>` | Signature, ZIP alignment, identity/version/API metadata, non-debuggable flag, no permissions/private files, checksum and all **104 packaged assets** passed. All **36 active name recordings** are included. |
+| Previous/current certificate comparison | Matches 1.0.9; same application ID and increased version code support an update. Actual installation and saved-progress retention on update are untested on a device. |
+| `adb devices -l` | No connected device or emulator. No installation performed. |
+
+Evidence: [APK inspection](../output/verification/android-release-1.0.10/apk-verification.json),
+[verified web/native inputs](../output/verification/android-release-1.0.10/verified-inputs.json),
+[successful build](../output/verification/android-release-1.0.10/android-build-retry2.log),
+[lint](../output/verification/android-release-1.0.10/lint-results-release.txt),
+[Ya activation](YA_SMALLER_HEAD_APPROVAL.md) and [Mim activation](MIM_REFERENCE_APPROVAL.md).
+Initial build/retry logs are retained in the same evidence directory.
+
+No physical-tablet runtime or smoothness check was performed. No store
+publication, deployment, commit or push was requested or performed.
+
+## Historical release — 1.0.9
+
+Built and verified **7 October 2026**, Asia/Kuala_Lumpur, at the owner's request
+after the tablet/smartboard optimisations were completed.
+
+| Item | Value |
+| --- | --- |
+| File | [Taman-Jawi-1.0.9-release.apk](../output/releases/Taman-Jawi-1.0.9-release.apk) |
+| Version | 1.0.9, version code 10 |
+| Application ID | `com.hananaacademy.tamanjawi` |
+| Size | 7,442,915 bytes, approximately 7.4 MB |
+| Android compatibility | Android 8.0+; minimum API 26, target API 36 |
+| Signing | Existing RSA 3072 release identity; verified APK v2 signature |
+| Certificate SHA-256 | `864f4e05661fae5e6ea3865d007c8b93d18db959396fe617d589d9aed55f3365` |
+| APK SHA-256 | `015453a1b1e2eec151cb2e778dbf509d05ec15804c5ab299573555113b1a6e6e` |
+| Checksum | [SHA-256 sidecar](../output/releases/Taman-Jawi-1.0.9-release.apk.sha256) |
+
+Includes the latest tracing/preparation optimisations, colourful gameplay
+navigation, left/right Duo layout and approved Wau 3 / Va 4 directions, alongside
+all earlier approved shapes and recordings. All 36 lessons remain student-ready.
+Jejak Ceria and Android light presentation remain defaults; saved display choices
+are retained. Previous APKs and the release signing key are preserved.
+
+| Check / command | Scope and result |
+| --- | --- |
+| Source/build fingerprint comparison | All 219 recorded source, test, dependency and production-build inputs match the completed optimisation verification: 260 unit passes / 41 files, 108 distinct browser passes and two expected CDP-only skips. No duplicate web build/browser run for this packaging-only change. |
+| `scripts/build-android.ps1 -Offline -SkipWebBuild` | Reused the checked `index-RZB2b9dH.js` build; synchronized 103 assets. First attempt hit the documented Windows immutable-cache rename issue; after copying that completed project-local cache into its expected location, retry assembled and linted successfully. Lint: zero errors, four existing warnings. |
+| `scripts/verify-android-release.ps1 -SdkPath <installed SDK>` | Signature, alignment, package/version/API metadata, non-debuggable flag, absence of permissions/private files, checksum and all 103 packaged assets passed. All 36 active letter recordings are bundled. |
+| Previous/current certificate comparison | Certificate matches 1.0.8; same application ID and increased version code support updating an existing install. Actual update/progress retention remains untested. |
+| `adb devices -l` | No connected device or emulator. Installation and native runtime testing remain unavailable. |
+
+Evidence: [APK inspection](../output/verification/android-release-1.0.9/apk-verification.json),
+[unchanged verified inputs and native release inputs](../output/verification/android-release-1.0.9/verified-inputs.json),
+[successful build](../output/verification/android-release-1.0.9/android-build-retry.log),
+[lint](../output/verification/android-release-1.0.9/lint-results-release.txt), and
+[optimisation verification](ANDROID_TABLET_SMARTBOARD_PERFORMANCE_VERIFICATION.md).
+
+Desktop full-effects 4K remains slow; this package is not a physical-device
+smoothness certification. Native WebView drawing/audio, Android Back/rotation,
+two-contact play and thermal behaviour still need device validation. No
+installation, publication, commit or push was performed.
+
+## Historical release — 1.0.8
 
 Built and verified **7 October 2026**, Asia/Kuala_Lumpur, after the owner approved
 Sad/Dad and requested a new release APK.

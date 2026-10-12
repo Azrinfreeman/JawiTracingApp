@@ -1,0 +1,25 @@
+{
+  "id": "ta-marbuta",
+  "baseVersion": 1,
+  "baseSrc": "/audio/letters/ta-marbuta-name.mp3",
+  "recording": {
+    "src": "/audio/letters/alphabet/ta-marbuta-name-v2.mp3",
+    "transcriptMs": "Ta",
+    "version": 2,
+    "status": "draft",
+    "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+    "origin": {
+      "kind": "userProvided",
+      "source": "voices/alphabet/03_ta.mp3",
+      "sha256": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d",
+      "recordingSha256": "68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d",
+      "reference": "docs/TA_MARBUTAH_ENDPOINT_AND_TA_VOICE_REVIEW.md",
+      "reusedFrom": {
+        "letterId": "ta",
+        "audioVersion": 2,
+        "src": "/audio/letters/alphabet/ta-name-v2.mp3",
+        "approvalReference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02"
+      }
+    }
+  }
+}

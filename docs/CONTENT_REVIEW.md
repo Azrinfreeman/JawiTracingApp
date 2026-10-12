@@ -1,5 +1,84 @@
 # Teaching content review
 
+**Ya smaller head approved, 12 October:** the owner replied “approve d” directly
+to the pictured Ya 3 student approval question. That exact compact head at 1
+is active in lessons, cards/help and scored Solo/Duo. Head curves remain scaled
+to 72% around the existing bowl join; lower bowl, both dots, order, widths,
+touch policies, framing scale and audio are preserved. Proposals expire;
+historical/preview work keeps its recorded revision/status. No teacher
+assessment is claimed. See [approval](CONTENT_APPROVALS.md#approval-of-ya-smaller-head-2026-10-12),
+[activation verification](YA_SMALLER_HEAD_APPROVAL.md) and the historical
+[candidate review](YA_SMALLER_HEAD_REVIEW.md).
+
+**Mim reference shape approved, 12 October:** the owner replied “approved”
+directly to the pictured **Mim 6** student approval question. The exact reviewed
+open hooked head, flatter return and connected slender pointed tail are active
+in student lessons, cards/help and scored Solo/Duo. One continuous movement
+uses 1–3; no dots or recording changes. Proposal cards expire and older/preview
+work retains its original revision/status. See
+[approval](CONTENT_APPROVALS.md#approval-of-mim-reference-shape-2026-10-12),
+[activation verification](MIM_REFERENCE_APPROVAL.md) and the historical
+[candidate review](MIM_REFERENCE_REVIEW.md). No teacher assessment is claimed.
+
+**Wau/Va smaller heads approved, 12 October:** the owner replied “proceed”
+directly to the pictured Wau 4 / Va 5 student approval question. Those exact
+reviewed heads, approximately 17% smaller, are active in student lessons,
+cards and scored Solo/Duo. Tails, junctions, left-first continuous movement,
+Va dot, framing and audio remain exact. Proposal cards expire; older and
+preview work retains its original revision/status. See
+[approval](CONTENT_APPROVALS.md#approval-of-wau-and-va-smaller-heads-2026-10-12),
+[activation verification](WAU_VA_SMALLER_HEAD_APPROVAL.md) and the historical
+[candidate review](WAU_VA_SMALLER_HEAD_REVIEW.md).
+
+**Ta/Za photo-reference shapes approved, 12 October:** the owner replied
+“proceed” after the exact pictured **Ta (ط) 9 / Za (ظ) 9** review and student
+activation approval statement. These reviewed shapes are now active in student
+lessons and scored Solo/Duo; candidate cards expire. The compact lower loop,
+thin tapered pillar, pointed tail, straight downward pillar route and Za's
+separate dot match the reviewed candidates exactly. Audio is unchanged.
+See [approval](CONTENT_APPROVALS.md#approval-of-ta-and-za-photo-reference-shapes-2026-10-12)
+and [activation verification](TA_ZA_REFERENCE_APPROVAL.md). The preceding
+[revision-9 candidate verification](TA_ZA_PHOTO_REFERENCE_REVIEW.md),
+[revision-8 review](TA_ZA_ROUNDED_LOOP_REVIEW.md) and
+[revision-7 review](TA_ZA_STRAIGHT_PILLAR_REVIEW.md) remain historical.
+
+**Sin/Syin reference shapes approved, 12 October:** the owner replied “proceed”
+directly to the exact pictured **Sin 3 / Syin 4** student approval question.
+Those reviewed reference-shaped bodies and terminal height are active in student
+lessons and scored challenges; the proposal cards expire. Syin's three separate
+dots, the other 34 entries and recordings remain exact; all 36 lessons are ready.
+See [approval record](CONTENT_APPROVALS.md#approval-of-sin-and-syin-reference-shapes-2026-10-12)
+and [activation verification](SIN_SYIN_REFERENCE_APPROVAL.md). The preceding
+[review](SIN_SYIN_REFERENCE_REVIEW.md) remains historical.
+
+**Ra/Zai shorter heads approved, 11 October:** the owner replied “yes approved”
+to the exact pictured Ra-4/Zai-5 question. Those reviewed shorter heads are now
+active in student lessons and scored challenges, with retained lower curves/tails,
+Zai's separate dot and unchanged audio. The 34 other entries, including Sin 2
+and Syin 3, remain exact. All 36 lessons are ready; the corresponding proposal
+cards expire. See [approval](CONTENT_APPROVALS.md#approval-of-ra-and-zai-shorter-heads-2026-10-11),
+[activation verification](RA_ZAI_SHORTER_HEAD_APPROVAL.md) and the preserved
+[preceding review](RA_ZAI_SHORTER_HEAD_REVIEW.md). The subsequent Sin/Syin activation
+is described in [its approval verification](SIN_SYIN_REFERENCE_APPROVAL.md).
+
+**Straight tops owner-approved, 11 October:** the owner replied “approve” to
+the exact four-revision question. **Jim 5, Ca 4, Ha (ح) 4 (`ha-pedat`) and Kha 4**
+now appear in normal lessons and scored challenges, with horizontal top paths
+from left to right through 1/2/3. The retained bowl starts at 4 after lifting;
+dots remain last. The other 32 entries and all recordings are exact. All 36
+lessons are ready and all 11 review scopes are empty. See
+[approval record](CONTENT_APPROVALS.md#approval-of-jim-ca-ha-and-kha-straight-tops-2026-10-11),
+[student verification](JIM_CA_HA_KHA_STRAIGHT_TOP_APPROVAL.md) and the preserved
+[preceding review](JIM_CA_HA_KHA_STRAIGHT_TOP_REVIEW.md).
+
+**Wau 3 / Va 4 owner-approved, 7 October:** the owner replied “approve” to the
+exact reviewed routes. Normal lessons and scored challenges now start right to
+left under the head like Pa, follow the loop, then continuously trace the tail;
+Va's dot is last. Audio and other entries remain exact. All 36 lessons are ready
+and all ten review scopes are empty. See [approval record](CONTENT_APPROVALS.md#approval-of-wau-and-va-left-first-routes-2026-10-07),
+[student verification](WAU_VA_DIRECTION_APPROVAL.md) and the preserved
+[preceding review](WAU_VA_DIRECTION_REVIEW.md).
+
 Status: **36 student-ready lessons as of 2026-10-07**. The owner explicitly approved
 the catalogue-outline revisions **Dal 3, Zal 4, Ra 3 and Zai 4** with “yes I approve”;
 they are promoted without changes to the reviewed outlines or writing steps.

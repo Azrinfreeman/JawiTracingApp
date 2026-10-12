@@ -31,8 +31,8 @@ describe('Ha outer-loop-first photo route',()=>{
   restored.geometry.strokes[0].path=original.geometry.strokes[0].path;restored.geometry.displayPaths=original.geometry.displayPaths;
   expect(restored).toEqual(original);expect(candidate.audio).toEqual(original.audio);
   expect(letters.every(letter=>validateLetter(letter).ready)).toBe(true);
-  // Historical Ha stage excludes the later, separately gated Nya proposal.
-  expect(Object.entries(factories).filter(([name])=>!['nyaTipReviewCandidates','sadDadReviewCandidates'].includes(name)).flatMap(([,factory])=>factory(before)).map(p=>p.candidate.id)).toEqual(['ha']);
+  // Historical Ha stage excludes later, separately gated proposals.
+  expect(Object.entries(factories).filter(([name])=>!['nyaTipReviewCandidates','sadDadReviewCandidates','wauVaReviewCandidates','jimFamilyStraightTopReviewCandidates','raZaiShortHeadReviewCandidates','sinSyinReferenceReviewCandidates','taZaStraightPillarReviewCandidates','wauVaSmallerHeadReviewCandidates','mimReferenceReviewCandidates','yaSmallerHeadReviewCandidates'].includes(name)).flatMap(([,factory])=>factory(before)).map(p=>p.candidate.id)).toEqual(['ha']);
  });
  it('requires approval of revision 4 and keeps the approved student model at revision 3',()=>{
   expect(candidate).toMatchObject({contentVersion:4,geometry:{status:'pendingReview',review:null}});

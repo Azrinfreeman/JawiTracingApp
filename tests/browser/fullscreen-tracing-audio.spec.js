@@ -58,13 +58,11 @@ test('menu replaces the toolbar: every action is reachable and closing keeps acc
   await expect(page.locator('.validated-dot')).toHaveCount(0);
   const before = Number(await page.locator('.play-fill').first().getAttribute('data-measured-frontier'));
   await openMenu(page);
-  for (const name of ['Tunjuk cara', 'Tunjuk bahagian ini', 'Cuba lagi', 'Kenal huruf dan panduan', 'Huruf seterusnya', 'Huruf sebelumnya', 'Isi kandungan', 'Bantuan titik']) {
-    const dialog=page.getByRole('dialog',{name:'Menu permainan'}), item=dialog.getByRole('button',{name,exact:true});
-    if (!(await item.isVisible())) await page.getByRole('button',{name:'Halaman menu seterusnya'}).click();
-    await expect(item).toBeVisible();
+  for (const [section, names] of [['Bantuan', ['Tunjuk cara', 'Tunjuk bahagian ini', 'Cuba lagi', 'Kenal huruf dan panduan', 'Bantuan titik']], ['Pilih huruf', ['Huruf seterusnya', 'Huruf sebelumnya', 'Isi kandungan']], ['Tetapan', ['Muzik: Hidup', 'Audio: Hidup', 'Paparan penuh']]]) {
+    const dialog = page.getByRole('dialog', { name: 'Menu permainan' });
+    await dialog.getByRole('tab', { name: section }).click();
+    for (const name of names) await expect(dialog.getByRole('button', { name, exact: true })).toBeVisible();
   }
-  if (!(await page.getByRole('button', {name:'Muzik mati',exact:true}).isVisible())) await page.getByRole('button', { name: 'Halaman menu seterusnya' }).click();
-  for (const name of ['Muzik mati', 'Senyapkan audio', 'Paparan penuh']) await expect(page.getByRole('button', { name, exact: true })).toBeVisible();
   await page.screenshot({ path: `${evidence}/${browserName}-menu-page-2.png`, animations: 'disabled' });
   await page.getByRole('button', { name: 'Tutup', exact: true }).click();
   await expect(page.getByRole('dialog', { name: 'Menu permainan' })).toHaveCount(0);
@@ -157,21 +155,22 @@ test('music is one quiet local loop that ducks under the voice, obeys mute and s
   expect(await page.evaluate(() => window.__media.plays.filter(play => play.music).length)).toBe(1);
   expect((await musicState(page)).loop).toBe(true);
   await draw(page, (await boardModels(page)).strokes[0]);
-  await expect(completeHeading(page, 'Alif')).toBeVisible();
+  await expect(page.locator('.book-completed')).toBeVisible();
   await expect.poll(async () => { const s = await musicState(page); return s.volume; }, { timeout: 3000 }).toBeLessThan(.06);
   await musicPlayingAt(page, .15); // restored after the recording ends
+  await expect(completeHeading(page, 'Alif')).toBeVisible();
   // Separate music switch: speech remains available.
-  await menuAction(page, 'Muzik mati');
+  await menuAction(page, 'Muzik: Hidup');
   await expect.poll(async () => (await musicState(page)).playing).toBe(false);
   expect(await page.evaluate(() => JSON.parse(localStorage.getItem('taman-jawi.music.v1')))).toMatchObject({ version: 1, enabled: false });
   await page.getByRole('dialog', { name: 'Menu permainan' }).getByRole('button', { name: 'Tutup', exact: true }).click();
   await page.locator('.completion-actions').getByRole('button', { name: 'Dengar', exact: true }).click();
   await expect.poll(async () => (await voices(page)).length).toBe(2);
-  await menuAction(page, 'Muzik hidup'); await musicPlayingAt(page, .15);
+  await menuAction(page, 'Muzik: Mati'); await musicPlayingAt(page, .15);
   // Master mute silences both channels.
-  await menuAction(page, 'Senyapkan audio');
+  await menuAction(page, 'Audio: Hidup');
   await expect.poll(async () => (await musicState(page)).playing).toBe(false);
-  await menuAction(page, 'Hidupkan audio'); await musicPlayingAt(page, .15);
+  await menuAction(page, 'Audio: Senyap'); await musicPlayingAt(page, .15);
   expect(await page.evaluate(() => window.__media.plays.filter(play => play.music).length)).toBeGreaterThanOrEqual(3);
   expect(await page.evaluate(() => window.__media.elements.filter(el => (el.getAttribute('src') || '').includes('/audio/music/')).length)).toBe(1);
 });

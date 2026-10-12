@@ -23,7 +23,7 @@ async function complete(page) {
 test('turns deliberately, ignores rapid duplicate navigation and stops at the end', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' }); await open(page);
   const shell = await page.locator('.book-cover').elementHandle();
-  await openMenu(page); await expect(turn(page).getByRole('button', { name: 'Huruf sebelumnya', exact: true })).toBeDisabled();
+  await openMenu(page); await turn(page).getByRole('tab', { name: 'Pilih huruf' }).click(); await expect(turn(page).getByRole('button', { name: 'Huruf sebelumnya', exact: true })).toBeDisabled();
   await turn(page).getByRole('button', { name: 'Huruf seterusnya', exact: true }).click();
   await expect(page.locator('.book-fold')).toBeVisible();
   // While the page is turning the tools cannot reopen, so a duplicate request has no target.
@@ -64,7 +64,7 @@ test('the tools cancel a held contact and a demonstration; a turn then proceeds 
   await menuAction(page, 'Tunjuk cara'); await expect(page.locator('.demonstration-ink').first()).toBeVisible();
   await menuButton(page).click(); await expect(page.locator('.demonstration-ink')).toHaveCount(0);
   expect(await attempts(page)).toHaveLength(0);
-  await turn(page).getByRole('button', { name: 'Huruf seterusnya', exact: true }).click(); await page.setViewportSize({ width: 1000, height: 760 });
+  await turn(page).getByRole('tab', { name: 'Pilih huruf' }).click(); await turn(page).getByRole('button', { name: 'Huruf seterusnya', exact: true }).click(); await page.setViewportSize({ width: 1000, height: 760 });
   await expect(page.getByRole('heading', { name: 'Ta', exact: true })).toBeVisible(); await expect(page.locator('.book-fold')).toHaveCount(0);
 });
 
@@ -151,7 +151,7 @@ for (const [width, height] of [[320, 740], [390, 844], [1024, 768], [768, 1024],
     expect(box.x).toBeGreaterThanOrEqual(0); expect(box.y).toBeGreaterThanOrEqual(0);
     expect(box.x + box.width).toBeLessThanOrEqual(width); expect(box.y + box.height).toBeLessThanOrEqual(height);
     const tool = await menuButton(page).boundingBox(); expect(tool.height).toBeGreaterThanOrEqual(48); expect(tool.width).toBeGreaterThanOrEqual(48);
-    await openMenu(page);
+    await openMenu(page); await turn(page).getByRole('tab', { name: 'Pilih huruf' }).click();
     for (const button of ['Huruf sebelumnya', 'Isi kandungan']) { const b = await turn(page).getByRole('button', { name: button, exact: true }).boundingBox(); expect(b.height).toBeGreaterThanOrEqual(48); }
     await page.getByRole('button', { name: 'Tutup', exact: true }).click();
     await complete(page); await expect(page.getByRole('heading', { name: 'Kamu sudah ikut huruf Nga!' })).toBeVisible();

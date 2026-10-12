@@ -1,0 +1,314 @@
+[
+  {
+    "original": {
+      "id": "mim",
+      "glyph": "م",
+      "labelMs": "Mim",
+      "contentVersion": 5,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "approved",
+        "review": {
+          "revision": 5,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-06",
+          "reference": "docs/CONTENT_APPROVALS.md#approval-of-all-current-semakan-video-proposals-2026-10-06",
+          "kind": "projectOwner"
+        },
+        "displayPaths": [
+          "M 449.2238 542.170763 C 451.27625 526.9395 454.325 513.39 459.5 499.8 C 472.7 465.4 518.6 419.5 558.5 443.6 C 580.2 456.8 595.4 481.7 609.9 502 C 617.6 512.9 630.2 524.1 634 537.2 C 637 547.4 633.3 556.7 633.3 566.9 C 622.9 582.4 482.9 569.9 444.1 608.7 C 437 611.1 435.5 624.4 435.2 630.7 C 432.4 683.2 451.4 736.5 452.7 789.1 C 453.3 808.9 436.4 823.9 436.4 843"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 449.2238 542.170763 C 451.27625 526.9395 454.325 513.39 459.5 499.8 C 472.7 465.4 518.6 419.5 558.5 443.6 C 580.2 456.8 595.4 481.7 609.9 502 C 617.6 512.9 630.2 524.1 634 537.2 C 637 547.4 633.3 556.7 633.3 566.9 C 622.9 582.4 482.9 569.9 444.1 608.7 C 437 611.1 435.5 624.4 435.2 630.7 C 432.4 683.2 451.4 736.5 452.7 789.1 C 453.3 808.9 436.4 823.9 436.4 843",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "displayWidth": 50
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ]
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/alphabet/mim-name-v2.wav",
+          "transcriptMs": "Mim",
+          "version": 2,
+          "status": "approved",
+          "review": {
+            "revision": 2,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+          "origin": {
+            "kind": "userProvided",
+            "source": "voices/alphabet/22_mim.wav",
+            "sha256": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2",
+            "importedAt": "2026-10-02T02:39:02.335Z",
+            "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    "candidate": {
+      "id": "mim",
+      "glyph": "م",
+      "labelMs": "Mim",
+      "contentVersion": 6,
+      "viewBox": [
+        0,
+        0,
+        1000,
+        1000
+      ],
+      "pilot": true,
+      "additional": false,
+      "geometry": {
+        "status": "pendingReview",
+        "review": null,
+        "displayPaths": [
+          "M 429.8 449.8 C 456.2 414.6 473.8 405.8 495.8 410.2 C 539.8 410.2 575 463 588.2 515.8 C 526.6 520.2 421 515.8 385.8 559.8 C 350.6 586.2 359.4 643.4 381.4 705 C 399 762.2 412.2 806.2 416.6 837"
+        ],
+        "strokes": [
+          {
+            "id": "stroke-1",
+            "path": "M 429.8 449.8 C 456.2 414.6 473.8 405.8 495.8 410.2 C 539.8 410.2 575 463 588.2 515.8 C 526.6 520.2 421 515.8 385.8 559.8 C 350.6 586.2 359.4 643.4 381.4 705 C 399 762.2 412.2 806.2 416.6 837",
+            "width": 44,
+            "penLiftPolicy": "continuous",
+            "checkpoints": [
+              0.25,
+              0.5,
+              0.75,
+              0.95
+            ],
+            "displayWidth": 50
+          }
+        ],
+        "dotTargets": [],
+        "validSequences": [
+          [
+            "stroke-1"
+          ]
+        ],
+        "appearance": {
+          "baseRevision": 5,
+          "kind": "referenceOutline",
+          "source": {
+            "kind": "referencePhoto",
+            "image": "mim-photo-reference.png",
+            "sha256": "f014b327bdd35379fb9b9efc6f06256aea6ea797846402dd546470678068eced",
+            "glyph": "م",
+            "method": "authoredVectorAdaptation",
+            "reference": "docs/MIM_REFERENCE_REVIEW.md",
+            "maxContourError": 0.45
+          },
+          "authoring": {
+            "scale": 4.4,
+            "photoOrigin": [
+              16,
+              17
+            ],
+            "modelOrigin": [
+              355,
+              375
+            ],
+            "bodyPhoto": "M 29 35 C 35 24 40 17 49 17 C 61 16 71 31 76 41 L 76 57 C 60 57 34 56 23 62 C 15 69 20 79 24 92 C 29 103 32 113 30 122 C 26 113 22 98 19 87 C 16 76 14 68 18 60 C 24 48 41 45 61 44 C 58 37 53 29 48 30 C 42 30 39 38 37 40 L 29 35 Z",
+            "bodyPath": "M 412.2 454.2 C 438.6 405.8 460.6 375 500.2 375 C 553 370.6 597 436.6 619 480.6 L 619 551 C 548.6 551 434.2 546.6 385.8 573 C 350.6 603.8 372.6 647.8 390.2 705 C 412.2 753.4 425.4 797.4 416.6 837 C 399 797.4 381.4 731.4 368.2 683 C 355 634.6 346.2 599.4 363.8 564.2 C 390.2 511.4 465 498.2 553 493.8 C 539.8 463 517.8 427.8 495.8 432.2 C 469.4 432.2 456.2 467.4 447.4 476.2 L 412.2 454.2 Z",
+            "headLength": 443.7648010253906,
+            "routeLength": 735.341796875,
+            "visibleTailTip": {
+              "x": 416.6,
+              "y": 837
+            },
+            "routeTail": {
+              "x": 416.6000061035156,
+              "y": 837
+            },
+            "note": "Open hooked head with a flatter return and a connected slender pointed tail; one continuous movement."
+          },
+          "bounds": {
+            "x": 354,
+            "y": 374.9,
+            "width": 264.9,
+            "height": 461.7
+          },
+          "parts": [
+            {
+              "id": "stroke-1",
+              "bounds": {
+                "x": 354,
+                "y": 374.9,
+                "width": 264.9,
+                "height": 461.7
+              },
+              "contours": [
+                "M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.2 791.9 L419.4 807.8 L418.8 823.7 L416.7 836.6 L414.6 833 L407.4 814.7 L396.9 783.8 L378.6 721.7 L364.8 671.3 L358.5 645.5 L355.8 631.1 L354 614.9 L354 600.2 L356.1 585.2 L360.6 570.8 L366 559.4 L370.5 552.5 L375 546.8 L377.1 545 L377.1 544.4 L382.5 539 L383.1 539 L384.9 536.9 L392.1 531.2 L404.1 523.7 L414.9 518.3 L428.4 512.9 L440.7 509 L454.5 505.4 L472.2 501.8 L507.3 497 L552.9 493.7 L549.6 485.9 L542.1 471.2 L530.1 452.6 L526.5 448.1 L523.8 445.7 L523.8 445.1 L518.1 439.7 L511.2 434.9 L505.5 432.5 L502.5 431.9 L496.8 431.9 L489.3 432.8 L484.5 434.3 L475.5 439.7 L468.3 446.6 L468.3 447.2 L464.1 451.7 L450.9 472.1 L447.6 476 L446.7 476 L423 460.7 L412.2 454.4 L421.2 437.6 L432 420.2 L442.5 405.8 L452.4 395 L453 395 L456.3 391.4 L463.8 385.7 L474.9 379.7 L485.4 376.4 Z"
+              ],
+              "segments": [
+                {
+                  "from": 0,
+                  "to": 48,
+                  "contours": [
+                    "M451.5 395.9 L477.3 438.8 L474 440.9 L464.1 451.7 L450.9 472.1 L447.6 476 L446.7 476 L441.6 472.4 L412.2 454.4 L412.2 453.8 L421.2 437.6 L432 420.2 L442.5 405.8 Z"
+                  ]
+                },
+                {
+                  "from": 48,
+                  "to": 96,
+                  "contours": [
+                    "M496.5 374.9 L510.6 374.9 L519.6 376.4 L507.9 418.4 L504.6 432.5 L502.5 431.9 L490.8 432.5 L484.5 434.3 L478.8 437.3 L477.6 438.5 L476.4 437.6 L452.1 397.1 L451.8 395.6 L453 395 L456.3 391.4 L463.8 385.7 L474.9 379.7 L485.4 376.4 Z"
+                  ]
+                },
+                {
+                  "from": 96,
+                  "to": 144,
+                  "contours": [
+                    "M519.6 376.4 L528.6 379.1 L534.3 381.5 L543.3 386.3 L549.6 390.5 L559.5 398.3 L561.3 400.4 L561.9 400.4 L575.7 414.5 L575.7 415.1 L575.1 415.1 L546.9 440.3 L531 454.1 L526.5 448.1 L518.1 439.7 L511.2 434.9 L504.6 432.5 L507.9 418.4 Z"
+                  ]
+                },
+                {
+                  "from": 144,
+                  "to": 192,
+                  "contours": [
+                    "M575.7 414.8 L583.8 424.1 L592.5 435.8 L603.9 453.2 L609.3 462.8 L560.4 485 L552.6 488.9 L550.8 489.2 L542.1 471.2 L534.6 458.9 L531 454.1 Z"
+                  ]
+                },
+                {
+                  "from": 192,
+                  "to": 240,
+                  "contours": [
+                    "M608.7 462.8 L609.9 463.4 L618.9 480.2 L618.9 551 L581.7 550.7 L580.8 531.5 L579.6 509.6 L559.5 495.8 L551.7 491.3 L551.1 489.2 L598.5 467.9 Z"
+                  ]
+                },
+                {
+                  "from": 240,
+                  "to": 288,
+                  "contours": [
+                    "M552 491.3 L559.5 495.8 L579.6 509.6 L581.7 550.7 L559.2 550.7 L533.4 550.7 L530.7 495.2 L551.7 494 L552.9 493.7 Z"
+                  ]
+                },
+                {
+                  "from": 288,
+                  "to": 336,
+                  "contours": [
+                    "M527.7 495.2 L530.7 495.2 L531 496.4 L533.7 551 L508.5 551.3 L487.5 552.5 L481.5 500.3 L507.3 497 Z"
+                  ]
+                },
+                {
+                  "from": 336,
+                  "to": 384,
+                  "contours": [
+                    "M481.2 500.3 L481.8 500.9 L482.1 503.3 L487.5 552.5 L468 553.7 L444 556.4 L442.8 551.6 L431.7 512 L440.7 509 L454.5 505.4 Z"
+                  ]
+                },
+                {
+                  "from": 384,
+                  "to": 432,
+                  "contours": [
+                    "M431.1 512 L432 512.6 L444.3 556.7 L425.1 559.7 L414.6 562.1 L406.2 564.8 L403.8 563 L401.4 559.7 L383.1 538.7 L392.1 531.2 L404.1 523.7 L414.9 518.3 Z"
+                  ]
+                },
+                {
+                  "from": 432,
+                  "to": 480,
+                  "contours": [
+                    "M382.5 539 L383.4 539 L384.6 540.2 L384.6 540.8 L405.6 564.8 L396.6 567.8 L386.1 572.6 L380.7 577.7 L374.4 586.1 L372.3 590.6 L371.1 590.9 L356.7 586.7 L356.1 586.4 L356.1 585.2 L360.6 570.8 L366 559.4 L373.5 548.6 Z"
+                  ]
+                },
+                {
+                  "from": 480,
+                  "to": 528,
+                  "contours": [
+                    "M356.1 586.4 L372 590.9 L369 598.4 L367.2 608.6 L367.2 622.1 L369.3 635 L369.3 636.2 L357 637.7 L355.2 626.9 L354 614.9 L354 600.2 Z"
+                  ]
+                },
+                {
+                  "from": 528,
+                  "to": 576,
+                  "contours": [
+                    "M366.9 636.2 L369.6 636.2 L370.5 641.9 L374.1 655.4 L382.5 680.9 L371.7 684.2 L368.7 685.1 L368.1 683.3 L360.6 654.8 L357 638 L357.9 637.4 Z"
+                  ]
+                },
+                {
+                  "from": 576,
+                  "to": 624,
+                  "contours": [
+                    "M381.3 681.2 L382.5 681.2 L382.8 681.8 L390 704.9 L399.3 725.6 L399.3 726.2 L396.6 727.1 L385.5 730.1 L382.8 731.3 L381.3 731.3 L368.7 685.4 Z"
+                  ]
+                },
+                {
+                  "from": 624,
+                  "to": 672,
+                  "contours": [
+                    "M398.4 726.2 L399.3 726.2 L399.9 727.1 L405.6 742.1 L411 758.6 L414.3 772.1 L397.2 776.9 L394.8 777.2 L381.6 731.3 Z"
+                  ]
+                },
+                {
+                  "from": 672,
+                  "to": 720,
+                  "contours": [
+                    "M413.4 772.1 L414.6 772.4 L415.2 774.8 L418.5 794.6 L419.4 807.8 L418.8 821 L410.4 822.5 L408 815.6 L403.2 803 L395.1 777.2 Z"
+                  ]
+                },
+                {
+                  "from": 720,
+                  "to": 735.341796875,
+                  "contours": [
+                    "M417.6 821 L418.8 821 L418.8 823.7 L416.7 836.6 L414.9 833.6 L410.7 822.5 Z"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "audio": {
+        "name": {
+          "src": "/audio/letters/alphabet/mim-name-v2.wav",
+          "transcriptMs": "Mim",
+          "version": 2,
+          "status": "approved",
+          "review": {
+            "revision": 2,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+          "origin": {
+            "kind": "userProvided",
+            "source": "voices/alphabet/22_mim.wav",
+            "sha256": "0b87c956398a1b708efd0bf17b14c68834062df6366c11d1102fe5504fc23da2",
+            "importedAt": "2026-10-02T02:39:02.335Z",
+            "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      }
+    },
+    "note": "Bentuk mengikut foto rujukan: kepala terbuka, sambungan lebih rata dan ekor halus dengan hujung tirus. Ikut kepala dari hujung kiri, kembali ke kiri dan teruskan ekor ke bawah tanpa angkat pen. Rakaman dikekalkan."
+  }
+]

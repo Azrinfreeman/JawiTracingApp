@@ -1,5 +1,21 @@
 # Audio approval record
 
+## Approval of Ta marbutah Ta-only voice 2026-10-11
+
+The project owner replied **“approve”** after being presented the exact reviewed
+Ta-marbutah name audio **revision 2**, transcript **Ta**, and asked to approve
+its activation. Reviewer: **Project owner (Codex user; name not supplied)**.
+Date: **11 October 2026**, Asia/Kuala_Lumpur. Scope: **Ta-marbutah name audio 2 only**.
+
+Approved file: [ta-marbuta-name-v2.mp3](../public/audio/letters/alphabet/ta-marbuta-name-v2.mp3),
+SHA-256 `68b6f576c362607bb1f50ceb4a1876f54796b77888b4242ae3f5604cf2d1a12d`.
+The exact supplied Ta bytes are reused without editing. The new active transcript
+is “Ta”; label, glyph, geometry revision 4 and saved geometry credit remain
+unchanged. Other entries and all existing recordings are preserved. This is
+owner approval of the identified mapping, not an invented teacher assessment.
+See [activation and verification](TA_MARBUTAH_TA_VOICE_APPROVAL.md) and the
+preserved [preceding review](TA_MARBUTAH_ENDPOINT_AND_TA_VOICE_REVIEW.md).
+
 ## Selection of supplied Va recording 2026-10-07
 
 The owner reported Va was wrong and instructed **“try to compare with mine if

@@ -1,5 +1,12 @@
 # Mim: tiny opening on the left of the head
 
+Historical candidate stage: Mim 5 was approved on 6 October 2026; see
+[the approval record](CONTENT_APPROVALS.md#approval-of-all-current-semakan-video-proposals-2026-10-06).
+On 12 October the owner requested and subsequently approved reference-shaped
+Mim 6; see [current activation](MIM_REFERENCE_APPROVAL.md) and its preserved
+[candidate review](MIM_REFERENCE_REVIEW.md). The evidence below describes the
+earlier candidate stage.
+
 6 October 2026, Asia/Kuala_Lumpur. The owner corrected the gap location with an
 arrow at the opening on the left of Mim's head: bring the ends closer, leaving
 only a tiny gap. The earlier detached-tail interpretation (pending Mim 4) is

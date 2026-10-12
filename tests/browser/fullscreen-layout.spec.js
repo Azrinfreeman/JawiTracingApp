@@ -4,6 +4,7 @@ import { validateLetter } from '../../src/content/validateContent.js';
 import { mkdirSync } from 'node:fs';
 import { dismissSplash, chooseLetter, selectPractice } from './helpers/navigation.js';
 import { boardModels, draw, openTeacher, menuAction, openMenu, tapDots } from './helpers/tracing.js';
+import { instrument } from './helpers/audio.js';
 const evidence = process.env.JAWI_EVIDENCE_DIR || 'output/verification/fullscreen-layout'; mkdirSync(evidence,{recursive:true});
 async function frames(page) { await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))); }
 async function fitted(page) {
@@ -39,11 +40,11 @@ for (const [width,height] of [[320,600],[360,640],[320,740],[390,844],[1024,768]
 }
 for(const [width,height] of [[320,600],[360,640],[390,844],[1024,768],[768,1024],[1920,1080],[1280,800],[800,1280],[3840,2160]]) {
  test(`all 36 complete letter envelopes and guides fit at ${width}x${height}`,async({page,browserName})=>{
-  test.setTimeout(width >= 1900 ? 300000 : 120000);await page.setViewportSize({width,height});await welcome(page);await selectPractice(page,'play');await chooseLetter(page,'Alif');
+  test.setTimeout(width >= 1900 ? 300000 : 120000);await instrument(page);await page.setViewportSize({width,height});await welcome(page);await selectPractice(page,'play');await chooseLetter(page,'Alif');
   for(let i=0;i<letters.length;i++){
    await expect(page.getByRole('heading',{name:letters[i].labelMs,exact:true})).toBeVisible();await fitted(page);
    const fit=await page.locator('.trace-board').evaluate(svg=>{const board=svg.getBoundingClientRect();const nodes=[...svg.querySelectorAll('.reference-stroke,.reference-dot,.trace-number-badge,.trace-number-label-backdrop')];return nodes.map(n=>{const r=n.getBoundingClientRect();return r.left>=board.left-1&&r.right<=board.right+1&&r.top>=board.top-1&&r.bottom<=board.bottom+1;});});expect(fit.every(Boolean),letters[i].id).toBe(true);
-   const clear=await page.evaluate(()=>{const controls=[document.querySelector('.stage-menu-button'),document.querySelector('.stage-badge')].map(e=>e.getBoundingClientRect());return [...document.querySelectorAll('.reference-stroke,.reference-dot,.trace-number-badge,.trace-number-label-backdrop')].filter(n=>n.getBoundingClientRect().width).every(n=>{const r=n.getBoundingClientRect();return controls.every(c=>r.right<=c.left||c.right<=r.left||r.bottom<=c.top||c.bottom<=r.top);});});expect(clear,letters[i].id+' clears the menu and letter badge').toBe(true);
+   const clear=await page.evaluate(()=>{const controls=[...document.querySelectorAll('[data-stage-control]')].map(e=>e.getBoundingClientRect());return [...document.querySelectorAll('.reference-stroke,.reference-dot,.trace-number-badge,.trace-number-label-backdrop')].filter(n=>n.getBoundingClientRect().width).every(n=>{const r=n.getBoundingClientRect();return controls.every(c=>r.right<=c.left||c.right<=r.left||r.bottom<=c.top||c.bottom<=r.top);});});expect(clear,letters[i].id+' clears the navigation and letter badge').toBe(true);
    if(['alif','mim','nga','nya'].includes(letters[i].id))await shot(page,`${browserName}-${width}-${letters[i].id}`);
    await menuAction(page,'Huruf seterusnya');
   }
@@ -51,6 +52,7 @@ for(const [width,height] of [[320,600],[360,640],[390,844],[1024,768],[768,1024]
  });
 }
 test('completion, dots, copy coordinates, save protection, audio failure and resize keep a stable board',async({page})=>{
+ await instrument(page, { failVoice: true });
  await page.setViewportSize({width:768,height:1024});await welcome(page);await selectPractice(page,'play');await chooseLetter(page,'Nga');await expect(page.getByRole('button',{name:'Menu permainan',exact:true})).toBeEnabled();
  const board=page.locator('.trace-board'),initial=await board.getAttribute('viewBox'),box=await board.boundingBox(),model=await boardModels(page);
  for(const stroke of model.strokes)await draw(page,stroke);await expect(page.locator('.numbered-trace-guides')).toHaveAttribute('data-part-id','dot-1');await expect(page.locator('.race-dock,.lesson-dock')).toHaveCount(0);await fitted(page);expect(await board.getAttribute('viewBox')).toBe(initial);
@@ -58,12 +60,13 @@ test('completion, dots, copy coordinates, save protection, audio failure and res
  await page.getByRole('button',{name:'Sekarang, cuba salin sendiri',exact:true}).click();await expect(page.locator('.copy-board')).toHaveAttribute('viewBox','0 0 1000 1000');await expect(page.getByRole('button',{name:'Menu permainan',exact:true})).toBeEnabled();await frames(page);
  const points=await board.evaluate(svg=>{svg.addEventListener('pointerdown',event=>{const p=new DOMPoint(event.clientX,event.clientY).matrixTransform(svg.getScreenCTM().inverse());svg.dataset.copyStart=JSON.stringify({x:Math.round(p.x*10)/10,y:Math.round(p.y*10)/10});},{once:true});return [new DOMPoint(200,200),new DOMPoint(400,400)].map(p=>{const q=p.matrixTransform(svg.getScreenCTM());return{x:q.x,y:q.y};});});await draw(page,points);const delivered=JSON.parse(await board.getAttribute('data-copy-start'));await menuAction(page,'Huruf seterusnya');await fitted(page);await page.getByRole('button',{name:'Simpan',exact:true}).click();await expect(page.getByRole('heading',{name:'Fa',exact:true})).toBeVisible();
  const copy=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')).copies[0]);expect(copy.ink[0][0]).toEqual(delivered);
- await page.route('**/audio/**',route=>route.abort());await openMenu(page);await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Dengar',exact:true}).click();await expect(page.getByRole('dialog',{name:'Dengar nama huruf'})).toBeVisible();await fitted(page);await page.keyboard.press('Escape');await page.keyboard.press('Escape');
+ await page.getByRole('button',{name:'Dengar nama Fa',exact:true}).click();await expect(page.getByRole('dialog',{name:'Dengar nama huruf'})).toBeVisible();await fitted(page);await page.keyboard.press('Escape');
  await page.setViewportSize({width:1024,height:768});await fitted(page);await expect(board).toBeVisible();
 });
 for(const [width,height] of [[1024,768],[768,1024],[1280,720],[1920,1080],[1280,800],[800,1280],[3840,2160]]){
  test(`Duo has equal fitted stages and recovers from small space at ${width}x${height}`,async({page,browserName})=>{
   await page.setViewportSize({width,height});await welcome(page);await page.getByRole('button',{name:'Duo 1v1',exact:true}).click();await page.getByRole('button',{name:'Jom mula',exact:true}).click();await fitted(page);await page.getByRole('button',{name:'Seterusnya',exact:true}).click();await page.getByLabel('Bilangan pusingan').selectOption('3');await fitted(page);await page.getByRole('button',{name:'Uji dua sentuhan'}).click();await fitted(page);await page.getByRole('button',{name:/Pratonton susun atur dewasa/}).click();await frames(page);await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);
+  const lanes=await page.locator('.race-pane').evaluateAll(nodes=>nodes.map(node=>{const r=node.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top};}));expect(lanes[0].right).toBeLessThanOrEqual(lanes[1].left);expect(lanes[0].top).toBe(lanes[1].top);
   const sizes=await page.locator('.trace-stage').evaluateAll(nodes=>nodes.map(n=>{const b=n.getBoundingClientRect();return{width:b.width,height:b.height};}));expect(sizes[0]).toEqual(sizes[1]);expect(Math.min(sizes[0].width,sizes[0].height)).toBeGreaterThanOrEqual(280);expect(await page.locator('.trace-board').first().getAttribute('viewBox')).toBe(await page.locator('.trace-board').last().getAttribute('viewBox'));await shot(page,`${browserName}-${width}-duo`);
   const squeeze=await page.addStyleTag({content:'.race-pane { max-height: 240px !important; }'});await expect(page.locator('.arena-space')).toBeVisible();await fitted(page);await squeeze.evaluate(node=>node.remove());await expect(page.locator('.arena-space')).toHaveCount(0);await fitted(page);
  });

@@ -54,15 +54,6 @@
 .race-actions { grid-row: 5; display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; }
 .race-actions .button { min-height: 48px; padding: 8px 12px; font-size: 14px; }
 .race-lane-status { font-size: 14px; font-weight: 600; text-align: center; color: var(--player-color); }
-.match-arena.stacked .race-lanes { grid-template-columns: minmax(0, 1fr); }
-.match-arena.stacked .race-paper { grid-template-columns: var(--board-size) minmax(0, 1fr); grid-template-rows: 40px 56px 84px minmax(104px, 1fr); height: var(--board-size); gap: 8px 16px; align-items: center; }
-.match-arena.stacked .board-wrap { grid-column: 1; grid-row: 1 / 5; }
-.match-arena.stacked .board-tip, .match-arena.stacked .trace-number-instruction, .match-arena.stacked .play-dot-tools, .match-arena.stacked .race-actions { grid-column: 2; }
-.match-arena.stacked .board-tip { grid-row: 1; }
-.match-arena.stacked .trace-number-instruction { grid-row: 2; }
-.match-arena.stacked .play-dot-tools { grid-row: 3; }
-.match-arena.stacked .race-actions { grid-row: 4; flex-direction: column; height: auto; }
-.match-arena.stacked .dot-pad-row { flex-direction: column; gap: 8px; }
 .race-overlay { position: absolute; inset: 0; z-index: 10; display: flex; align-items: center; justify-content: center; padding: 96px 20px 20px; background: rgb(31 59 48 / .48); backdrop-filter: blur(3px); }
 .race-dialog { background: var(--surface); border-radius: 28px; padding: 28px; width: min(560px, 100%); max-height: 100%; overflow-y: auto; text-align: center; box-shadow: var(--shadow-panel); }
 .race-dialog > p { margin: 12px 0 20px; }

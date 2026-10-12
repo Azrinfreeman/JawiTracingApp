@@ -43,9 +43,9 @@ test('Ga replay preserves partial tracing, obeys mute and stops on letter change
   const points=(await boardModels(page)).strokes[0];await draw(page,points.slice(0,Math.floor(points.length*.3)));
   const frontier=await page.locator('.play-fill').first().getAttribute('data-measured-frontier');
   await hear(page).click();expect(await page.locator('.play-fill').first().getAttribute('data-measured-frontier')).toBe(frontier);
-  await menuAction(page,'Senyapkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();
+  await menuAction(page,'Audio: Hidup');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();
   await hear(page).click();expect((await voices(page)).at(-1)).toMatchObject({src:ga.audio.name.src,muted:true});
-  await menuAction(page,'Hidupkan audio');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();
+  await menuAction(page,'Audio: Senyap');await page.getByRole('dialog',{name:'Menu permainan'}).getByRole('button',{name:'Tutup',exact:true}).click();
   await hear(page).click();const paused=await page.evaluate(()=>window.__media.voicePauses);
   await menuAction(page,'Huruf seterusnya');
   await expect(page.locator('.stage-badge').getByRole('button',{name:'Dengar nama Lam',exact:true})).toBeVisible();

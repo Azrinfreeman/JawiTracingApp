@@ -1,0 +1,14 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {yaSmallerHeadReviewCandidates} from '../src/content/reviewCandidates.js';
+import {validateLetter} from '../src/content/validateContent.js';
+const root='output/verification/ya-smaller-head-approval',read=p=>JSON.parse(readFileSync(p,'utf8')),reviewed=read('output/verification/ya-smaller-head/verification.json');
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+for(const[p,h]of Object.entries(reviewed.inputs))if(p.startsWith('src/'))assert.equal(hash(p),h,`Reviewed source changed: ${p}`);
+const file='src/content/letters.json',raw=readFileSync(file,'utf8'),letters=JSON.parse(raw),proposals=yaSmallerHeadReviewCandidates(letters);
+assert.equal(proposals.length,1);assert.equal(proposals[0].candidate.contentVersion,3);assert.deepEqual(proposals.map(({original,candidate})=>({original,candidate})),read('output/verification/ya-smaller-head/reviewed-proposals.json'));
+const next=letters.map(letter=>{if(letter.id!=='ya')return letter;const candidate=structuredClone(proposals[0].candidate);candidate.geometry.status='approved';candidate.geometry.review={revision:3,reviewer:'Project owner (Codex user; name not supplied)',date:'2026-10-12',reference:'docs/CONTENT_APPROVALS.md#approval-of-ya-smaller-head-2026-10-12',kind:'projectOwner'};assert.equal(validateLetter(candidate).ready,true);return candidate;});
+mkdirSync(root,{recursive:true});writeFileSync(`${root}/before-catalogue.json`,raw,{flag:'wx'});writeFileSync(`${root}/reviewed-proposals.json`,JSON.stringify(proposals,null,2)+'\n',{flag:'wx'});
+const newline=raw.includes('\r\n')?'\r\n':'\n';writeFileSync(file,(JSON.stringify(next,null,2)+'\n').replace(/\n/g,newline));
+console.log('Activated the exact reviewed Ya 3 with matching owner approval.');

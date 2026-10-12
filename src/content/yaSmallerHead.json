@@ -1,0 +1,36 @@
+{
+  "baseRevision": 2,
+  "revision": 3,
+  "factor": 0.72,
+  "junction": {
+    "x": 627.2,
+    "y": 632.5
+  },
+  "oldHead": "M 650.3 390.5  C 577.1 324.6 483.7 463.6 492.5 511.5  C 504.1 574 715.9 546.1 627.2 632.5",
+  "headPath": "M 643.832 458.26  C 591.128 410.812 523.88 510.892 530.216 545.38  C 538.568 590.38 691.064 570.292 627.2 632.5",
+  "bowlPath": "C 555.9 701.9 350.2 764.7 338.1 610.5  C 335.9 582.8 340 556.9 351.1 532.4",
+  "path": "M 643.832 458.26  C 591.128 410.812 523.88 510.892 530.216 545.38  C 538.568 590.38 691.064 570.292 627.2 632.5 C 555.9 701.9 350.2 764.7 338.1 610.5  C 335.9 582.8 340 556.9 351.1 532.4",
+  "headLength": 339.90532220663175,
+  "routeLength": 781.5474473388887,
+  "fitBounds": {
+    "x": 337.5274907491335,
+    "y": 373.0892744640186,
+    "width": 312.77250925086645,
+    "height": 332.9398746807397
+  },
+  "sections": [
+    [
+      0,
+      "Ikut lengkung kepala kecil ke kiri dan turun."
+    ],
+    [
+      0.4349,
+      "Teruskan lengkung mangkuk hingga hujung kiri."
+    ]
+  ],
+  "reference": {
+    "image": "docs/references/ya-smaller-head-reference.png",
+    "sha256": "f3543bdb41b7820af646d995c25f4a3b222ab519ed69a1ce3a556bb3c1cac6e3",
+    "method": "Head-only proportional adaptation; lower bowl and two dots preserved exactly."
+  }
+}

@@ -13,7 +13,8 @@ describe('Sad and Dad approved catalogue shapes',()=>{
    expect(current.geometry.review).toEqual({revision:3,reviewer:'Project owner (Codex user; name not supplied)',date:'2026-10-07',reference:'docs/CONTENT_APPROVALS.md#approval-of-sad-and-dad-catalogue-shapes-2026-10-07',kind:'projectOwner'});
    expect(current.audio).toEqual(original.audio);expect(validateLetter(current)).toMatchObject({valid:true,ready:true});expect(eligibleBook(letters)).toContain(current);expect(eligiblePool(letters,'ready')).toContain(current);
   }
-  for(const factory of Object.values(factories))expect(factory(letters)).toEqual([]);
+  // Historical Sad/Dad approval cleared its scopes; later proposals are separate.
+  for(const [name,factory] of Object.entries(factories))if(!['wauVaReviewCandidates','jimFamilyStraightTopReviewCandidates','raZaiShortHeadReviewCandidates','sinSyinReferenceReviewCandidates','taZaStraightPillarReviewCandidates','wauVaSmallerHeadReviewCandidates','mimReferenceReviewCandidates','yaSmallerHeadReviewCandidates'].includes(name))expect(factory(letters)).toEqual([]);
  });
  it('retains old and preview attempts without awarding current student credit in three modes',()=>{
   for(const {candidate}of proposals)for(const mode of ['play','guided','precision']){

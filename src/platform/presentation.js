@@ -1,7 +1,7 @@
 export const presentationKey = 'taman-jawi.presentation.v1';
-export function readPresentation(storage, native = Boolean(globalThis.TamanJawiAndroid)) {
+export function readPresentation(storage) {
   try { const value = storage?.getItem(presentationKey); if (value === 'light' || value === 'full') return value; } catch { /* Session setting still works. */ }
-  return native ? 'light' : 'full';
+  return 'light';
 }
 export function savePresentation(storage, value) {
   if (value !== 'light' && value !== 'full') return false;

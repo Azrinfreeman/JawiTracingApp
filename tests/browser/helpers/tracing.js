@@ -34,7 +34,7 @@ export async function draw(page, points) {
   await movePoints(page, points.slice(1)); await page.mouse.up();
 }
 
-/** The tracing menu is the only tools surface; these helpers open it and press one action, paging if needed. */
+/** Find an action in the named menu sections, paging within a section when needed. */
 export async function openMenu(page) {
   if (await page.getByRole('dialog', { name: /Menu permainan|Rehat sekejap/ }).isVisible()) return;
   await page.getByRole('button', { name: 'Menu permainan', exact: true }).click();
@@ -45,11 +45,22 @@ async function findMenuAction(page, name) {
   const dialog = page.getByRole('dialog', { name: /Menu permainan|Rehat sekejap/ });
   const button = dialog.getByRole('button', { name, exact: true }), more = dialog.getByRole('button', { name: 'Halaman menu seterusnya' });
   const previous = dialog.getByRole('button', { name: 'Halaman menu sebelumnya' });
-  for (let i = 0; i < 3 && !(await button.isVisible()) && await previous.isVisible() && await previous.isEnabled(); i++) await previous.click();
-  for (let i = 0; i < 3 && !(await button.isVisible()); i++) { if (!(await more.isVisible()) || !(await more.isEnabled())) break; await more.click(); }
+  for (const section of ['Bantuan', 'Pilih huruf', 'Tetapan']) {
+    if (await button.isVisible()) break;
+    await dialog.getByRole('tab', { name: section, exact: true }).click();
+    for (let i = 0; i < 4 && !(await button.isVisible()) && await previous.isVisible() && await previous.isEnabled(); i++) await previous.click();
+    for (let i = 0; i < 4 && !(await button.isVisible()); i++) { if (!(await more.isVisible()) || !(await more.isEnabled())) break; await more.click(); }
+  }
   return button;
 }
-export async function menuAction(page, name) { await (await findMenuAction(page,name)).click(); }
+export async function menuAction(page, name) {
+  await (await findMenuAction(page,name)).click();
+  // Existing exercise cases deliberately restart; the navigation spec tests cancellation separately.
+  if (name === 'Cuba lagi') {
+    const restart = page.getByRole('dialog', { name: /Mula semula\?|Tulisan belum disimpan/ });
+    if (await restart.isVisible()) await restart.getByRole('button', { name: 'Mula semula', exact: true }).click();
+  }
+}
 /** Direct taps on the authored dots are the primary input path. */
 export async function tapDots(page, board = page.locator('.trace-board')) {
   const { dots } = await boardModels(page, board);

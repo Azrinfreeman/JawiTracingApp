@@ -1,4 +1,5 @@
 import { pointAt } from './geometry.js';
+import wauVaSmallerHeads from '../content/wauVaSmallerHeads.json' with {type:'json'};
 
 /** Visual landmarks only. They never become matcher gates or change authored movements. */
 export function numberedGuidePlan(letter, references) {
@@ -28,7 +29,7 @@ const overlaps = (a, b) => a.x < b.x + b.width && a.x + a.width > b.x && a.y < b
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
 /** Place text beside the routes; numbered touch points stay on the authored path. */
-export function placeNumberedGuides(part, letter, references, scale, viewport) {
+export function placeNumberedGuides(part, letter, references, scale, viewport, controls) {
   const radius = Math.max(25, 18 / scale), numberSize = Math.max(26, 16 / scale), labelSize = Math.max(20, 12 / scale);
   const obstacles = Object.values(references).flatMap(reference => reference.vertices.filter((_, i) => i % 6 === 0));
   obstacles.push(...letter.geometry.dotTargets);
@@ -37,16 +38,18 @@ export function placeNumberedGuides(part, letter, references, scale, viewport) {
   // Keep labels clear of the board's reward leaf and its flower animation.
   const rewardCorner = { x: 1000 - 90 / scale, y: 1000 - 90 / scale, width: 90 / scale, height: 90 / scale };
   // ...and of the stage Menu button (top left) and letter badge (top right), which sit on the board.
-  const stageControls = viewport ? [
+  const stageControls = viewport ? [...(controls || [
     { x: viewport.x, y: viewport.y, width: 96 / scale, height: 96 / scale },
     // The letter badge includes its sound button beneath the name.
     { x: viewport.x + viewport.width - Math.min(260 / scale, viewport.width * .46 + 16 / scale), y: viewport.y,
       width: Math.min(260 / scale, viewport.width * .46 + 16 / scale), height: 136 / scale },
+    ]),
     // The visible writing cue occupies the bottom centre of a full-screen stage.
     { x: viewport.x + viewport.width * .06, y: viewport.y + viewport.height - 86 / scale, width: viewport.width * .88, height: 86 / scale },
   ] : [];
   const placed = [];
-  const detached=Boolean(letter.geometry.appearance);
+  const compactLoop=wauVaSmallerHeads[letter.id];
+  const detached=Boolean(letter.geometry.appearance || (compactLoop && compactLoop.revision===letter.contentVersion));
   for (const guide of part.points) {
     const label = `${guide.number} ${guide.label}`;
     const textWidth = label.length * labelSize * .65 + labelSize;
@@ -72,7 +75,7 @@ export function placeNumberedGuides(part, letter, references, scale, viewport) {
       const x = clamp(candidate.x, (viewport?.x ?? 0) + 28 + width / 2, (viewport ? viewport.x + viewport.width : 1000) - 28 - width / 2);
       const y = clamp(candidate.y, (viewport?.y ?? 72) + 28 + height / 2, (viewport ? viewport.y + viewport.height - 28 : 870) - height / 2);
       const bounds = { x: x - width / 2, y: y - height / 2, width, height };
-      const outlineCollisions = detached ? letter.geometry.appearance.parts.filter(part=>overlaps(bounds,part.bounds)).length : 0;
+      const outlineCollisions = detached ? (letter.geometry.appearance?.parts || []).filter(part=>overlaps(bounds,part.bounds)).length : 0;
       const expanded = { x: bounds.x - 44, y: bounds.y - 44, width: bounds.width + 88, height: bounds.height + 88 };
       const onRoute = obstacles.reduce((count, p) => count + (p.x > expanded.x && p.x < expanded.x + expanded.width && p.y > expanded.y && p.y < expanded.y + expanded.height ? 1 : 0), 0);
       const markerCollisions = placed.filter(p => {const b=p.occupiedBounds||p.bounds;return overlaps(bounds, { x: b.x - 16, y: b.y - 16, width: b.width + 32, height: b.height + 32 });}).length;

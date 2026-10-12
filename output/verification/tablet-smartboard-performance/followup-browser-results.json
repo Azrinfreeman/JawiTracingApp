@@ -1,0 +1,1081 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=playwright.performance.config.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--grep",
+      "all 36 authored|demonstration follows all five|demonstration starts left|section and full examples|near-limit history|shared book turn|storage failure retains|new browser light",
+      "tests/browser/tracing-terminal.spec.js",
+      "tests/browser/ha-direction.spec.js",
+      "tests/browser/wau-va-directions.spec.js",
+      "tests/browser/ain-family-outlines.spec.js",
+      "tests/browser/performance-regressions.spec.js",
+      "tests/browser/solo-duo.spec.js"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.performance.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/tablet-smartboard-performance/followup-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/tablet-smartboard-performance/followup-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/verification/tablet-smartboard-performance/followup-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ain-family-outlines.spec.js",
+      "file": "ain-family-outlines.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ain: section and full examples preserve two-part progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10413,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:09.889Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "18aa2bed06dad2f67afa-0f9907dea6d6d8bb6a83",
+          "file": "ain-family-outlines.spec.js",
+          "line": 59,
+          "column": 35
+        },
+        {
+          "title": "ghain: section and full examples preserve two-part progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11372,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:20.419Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "18aa2bed06dad2f67afa-7197db7aa6b04b725194",
+          "file": "ain-family-outlines.spec.js",
+          "line": 59,
+          "column": 35
+        },
+        {
+          "title": "nga: section and full examples preserve two-part progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13448,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:31.802Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "18aa2bed06dad2f67afa-4925c6a6e39e1ec916cd",
+          "file": "ain-family-outlines.spec.js",
+          "line": 59,
+          "column": 35
+        },
+        {
+          "title": "ain: section and full examples preserve two-part progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 14891,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:05.641Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "18aa2bed06dad2f67afa-0cd66bd1ed837d2bf7ef",
+          "file": "ain-family-outlines.spec.js",
+          "line": 59,
+          "column": 35
+        },
+        {
+          "title": "ghain: section and full examples preserve two-part progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 15592,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:20.613Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "18aa2bed06dad2f67afa-c702f386528b1fa9e015",
+          "file": "ain-family-outlines.spec.js",
+          "line": 59,
+          "column": 35
+        },
+        {
+          "title": "nga: section and full examples preserve two-part progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 17632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:36.220Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "18aa2bed06dad2f67afa-3b5ca5b138ee1cec8ed0",
+          "file": "ain-family-outlines.spec.js",
+          "line": 59,
+          "column": 35
+        }
+      ]
+    },
+    {
+      "title": "ha-direction.spec.js",
+      "file": "ha-direction.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Ha demonstration follows all five phases without earning or replacing progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10180,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:09.890Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe3392c01ac1c188e004-acab24022f82616fb8da",
+          "file": "ha-direction.spec.js",
+          "line": 40,
+          "column": 1
+        },
+        {
+          "title": "Ha demonstration follows all five phases without earning or replacing progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12655,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:15.462Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fe3392c01ac1c188e004-3b7c7d305976758c3868",
+          "file": "ha-direction.spec.js",
+          "line": 40,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "performance-regressions.spec.js",
+      "file": "performance-regressions.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "new browser light default keeps colourful controls and explicit full preference after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 814,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:20.197Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8f7a193fbde8e1f315ce-c39d8828162f336a345f",
+          "file": "performance-regressions.spec.js",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "near-limit history saves the first Duo player while the other keeps tracing, music false",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 11474,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-board').first()\nExpected: \u001b[32m\"complete\"\u001b[39m\nReceived: \u001b[31m\"tracing\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-board').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-board').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <svg role=\"img\" data-demo=\"none\" class=\"trace-board \" data-phase=\"tracing\" preserveAspectRatio=\"xMidYMid meet\" data-interaction-policy=\"play-guided-v2\" data-tolerance-profile=\"play-touch-standard-v2\" aria-label=\"Ruang jejak huruf Alif. Gunakan jari, pen atau tetikus.\" viewBox=\"176.65549065814753 -114.03414634146344 672.4552845528456 1021.0341463414635\">…</svg>\u001b[22m\n\u001b[2m       - unexpected value \"tracing\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-board').first()\nExpected: \u001b[32m\"complete\"\u001b[39m\nReceived: \u001b[31m\"tracing\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-board').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-board').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <svg role=\"img\" data-demo=\"none\" class=\"trace-board \" data-phase=\"tracing\" preserveAspectRatio=\"xMidYMid meet\" data-interaction-policy=\"play-guided-v2\" data-tolerance-profile=\"play-touch-standard-v2\" aria-label=\"Ruang jejak huruf Alif. Gunakan jari, pen atau tetikus.\" viewBox=\"176.65549065814753 -114.03414634146344 672.4552845528456 1021.0341463414635\">…</svg>\u001b[22m\n\u001b[2m       - unexpected value \"tracing\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js:74:53",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                      "column": 53,
+                      "line": 74
+                    },
+                    "snippet": "  72 |   for(let i=1;i<a.length;i++)await touch('touchMove',[{...a[i],id:1},{...b[Math.min(i,middle)],id:2}]);\n  73 |   await touch('touchEnd',[{...b[middle],id:2}]);\n> 74 |   await expect(page.locator('.trace-board').nth(0)).toHaveAttribute('data-phase','complete');\n     |                                                     ^\n  75 |   await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','tracing');\n  76 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')));\n  77 |   expect(saved.attempts).toHaveLength(300);expect(saved.attempts.at(-1)).toMatchObject({sessionType:'duo',playerSlot:0,outcome:'playComplete'});expect(JSON.stringify(saved.copies)).toBe(copiesBefore);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                        "column": 53,
+                        "line": 74
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-board').first()\nExpected: \u001b[32m\"complete\"\u001b[39m\nReceived: \u001b[31m\"tracing\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-board').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-board').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <svg role=\"img\" data-demo=\"none\" class=\"trace-board \" data-phase=\"tracing\" preserveAspectRatio=\"xMidYMid meet\" data-interaction-policy=\"play-guided-v2\" data-tolerance-profile=\"play-touch-standard-v2\" aria-label=\"Ruang jejak huruf Alif. Gunakan jari, pen atau tetikus.\" viewBox=\"176.65549065814753 -114.03414634146344 672.4552845528456 1021.0341463414635\">…</svg>\u001b[22m\n\u001b[2m       - unexpected value \"tracing\"\u001b[22m\n\n\n  72 |   for(let i=1;i<a.length;i++)await touch('touchMove',[{...a[i],id:1},{...b[Math.min(i,middle)],id:2}]);\n  73 |   await touch('touchEnd',[{...b[middle],id:2}]);\n> 74 |   await expect(page.locator('.trace-board').nth(0)).toHaveAttribute('data-phase','complete');\n     |                                                     ^\n  75 |   await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','tracing');\n  76 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')));\n  77 |   expect(saved.attempts).toHaveLength(300);expect(saved.attempts.at(-1)).toMatchObject({sessionType:'duo',playerSlot:0,outcome:'playComplete'});expect(JSON.stringify(saved.copies)).toBe(copiesBefore);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js:74:53"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:21.021Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\tablet-smartboard-performance\\followup-results\\performance-regressions-ne-34e64-r-keeps-tracing-music-false-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\tablet-smartboard-performance\\followup-results\\performance-regressions-ne-34e64-r-keeps-tracing-music-false-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                    "column": 53,
+                    "line": 74
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8f7a193fbde8e1f315ce-234d2fee718717bb5643",
+          "file": "performance-regressions.spec.js",
+          "line": 47,
+          "column": 34
+        },
+        {
+          "title": "near-limit history saves the first Duo player while the other keeps tracing, music true",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 11474,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-board').first()\nExpected: \u001b[32m\"complete\"\u001b[39m\nReceived: \u001b[31m\"tracing\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-board').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-board').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <svg role=\"img\" data-demo=\"none\" class=\"trace-board \" data-phase=\"tracing\" preserveAspectRatio=\"xMidYMid meet\" data-interaction-policy=\"play-guided-v2\" data-tolerance-profile=\"play-touch-standard-v2\" aria-label=\"Ruang jejak huruf Alif. Gunakan jari, pen atau tetikus.\" viewBox=\"176.65549065814753 -114.03414634146344 672.4552845528456 1021.0341463414635\">…</svg>\u001b[22m\n\u001b[2m       - unexpected value \"tracing\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-board').first()\nExpected: \u001b[32m\"complete\"\u001b[39m\nReceived: \u001b[31m\"tracing\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-board').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-board').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <svg role=\"img\" data-demo=\"none\" class=\"trace-board \" data-phase=\"tracing\" preserveAspectRatio=\"xMidYMid meet\" data-interaction-policy=\"play-guided-v2\" data-tolerance-profile=\"play-touch-standard-v2\" aria-label=\"Ruang jejak huruf Alif. Gunakan jari, pen atau tetikus.\" viewBox=\"176.65549065814753 -114.03414634146344 672.4552845528456 1021.0341463414635\">…</svg>\u001b[22m\n\u001b[2m       - unexpected value \"tracing\"\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js:74:53",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                      "column": 53,
+                      "line": 74
+                    },
+                    "snippet": "  72 |   for(let i=1;i<a.length;i++)await touch('touchMove',[{...a[i],id:1},{...b[Math.min(i,middle)],id:2}]);\n  73 |   await touch('touchEnd',[{...b[middle],id:2}]);\n> 74 |   await expect(page.locator('.trace-board').nth(0)).toHaveAttribute('data-phase','complete');\n     |                                                     ^\n  75 |   await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','tracing');\n  76 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')));\n  77 |   expect(saved.attempts).toHaveLength(300);expect(saved.attempts.at(-1)).toMatchObject({sessionType:'duo',playerSlot:0,outcome:'playComplete'});expect(JSON.stringify(saved.copies)).toBe(copiesBefore);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                        "column": 53,
+                        "line": 74
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.trace-board').first()\nExpected: \u001b[32m\"complete\"\u001b[39m\nReceived: \u001b[31m\"tracing\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" locator('.trace-board').first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.trace-board').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <svg role=\"img\" data-demo=\"none\" class=\"trace-board \" data-phase=\"tracing\" preserveAspectRatio=\"xMidYMid meet\" data-interaction-policy=\"play-guided-v2\" data-tolerance-profile=\"play-touch-standard-v2\" aria-label=\"Ruang jejak huruf Alif. Gunakan jari, pen atau tetikus.\" viewBox=\"176.65549065814753 -114.03414634146344 672.4552845528456 1021.0341463414635\">…</svg>\u001b[22m\n\u001b[2m       - unexpected value \"tracing\"\u001b[22m\n\n\n  72 |   for(let i=1;i<a.length;i++)await touch('touchMove',[{...a[i],id:1},{...b[Math.min(i,middle)],id:2}]);\n  73 |   await touch('touchEnd',[{...b[middle],id:2}]);\n> 74 |   await expect(page.locator('.trace-board').nth(0)).toHaveAttribute('data-phase','complete');\n     |                                                     ^\n  75 |   await expect(page.locator('.trace-board').nth(1)).toHaveAttribute('data-phase','tracing');\n  76 |   const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('taman-jawi.progress.v1')));\n  77 |   expect(saved.attempts).toHaveLength(300);expect(saved.attempts.at(-1)).toMatchObject({sessionType:'duo',playerSlot:0,outcome:'playComplete'});expect(JSON.stringify(saved.copies)).toBe(copiesBefore);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js:74:53"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:33.390Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\tablet-smartboard-performance\\followup-results\\performance-regressions-ne-6371d-er-keeps-tracing-music-true-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\tablet-smartboard-performance\\followup-results\\performance-regressions-ne-6371d-er-keeps-tracing-music-true-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                    "column": 53,
+                    "line": 74
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "8f7a193fbde8e1f315ce-33c4170db6655b856b79",
+          "file": "performance-regressions.spec.js",
+          "line": 47,
+          "column": 34
+        },
+        {
+          "title": "new browser light default keeps colourful controls and explicit full preference after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3038,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:28.220Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8f7a193fbde8e1f315ce-6a57eb6d564a483c5ce7",
+          "file": "performance-regressions.spec.js",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "near-limit history saves the first Duo player while the other keeps tracing, music false",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Concurrent trusted touch uses Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                    "line": 48,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 162,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:31.272Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Concurrent trusted touch uses Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                        "line": 48,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8f7a193fbde8e1f315ce-86ec49ffe5a3711a83e0",
+          "file": "performance-regressions.spec.js",
+          "line": 47,
+          "column": 34
+        },
+        {
+          "title": "near-limit history saves the first Duo player while the other keeps tracing, music true",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Concurrent trusted touch uses Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                    "line": 48,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 179,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:31.445Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Concurrent trusted touch uses Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+                        "line": 48,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "8f7a193fbde8e1f315ce-eb5e1809c9ceb97f04df",
+          "file": "performance-regressions.spec.js",
+          "line": 47,
+          "column": 34
+        }
+      ]
+    },
+    {
+      "title": "solo-duo.spec.js",
+      "file": "solo-duo.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1508,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:45.830Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-6f3a5e922d5cb59e0f50",
+          "file": "solo-duo.spec.js",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "storage failure retains session export and reload never restores a live match",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3259,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:47.467Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-fad404e8a4fb50e3b606",
+          "file": "solo-duo.spec.js",
+          "line": 224,
+          "column": 1
+        },
+        {
+          "title": "shared book turn keeps both players together and starts the next clock only after readiness",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7230,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:31.673Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-f2fc713faf13a6f801e5",
+          "file": "solo-duo.spec.js",
+          "line": 62,
+          "column": 1
+        },
+        {
+          "title": "storage failure retains session export and reload never restores a live match",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6111,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:38.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b0e18ec210b2d857989d-a259a87b605b2aa128e0",
+          "file": "solo-duo.spec.js",
+          "line": 224,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "tracing-terminal.spec.js",
+      "file": "tracing-terminal.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all 36 authored models retain valid play sequences and separate dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 29180,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:45.283Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-f6e128b76d413901cf41",
+          "file": "tracing-terminal.spec.js",
+          "line": 127,
+          "column": 1
+        },
+        {
+          "title": "all 36 authored models retain valid play sequences and separate dots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 360000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 202052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:45.058Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3ec561d68acaa5fcdb6c-b1ab80032eb7bd454c3d",
+          "file": "tracing-terminal.spec.js",
+          "line": 127,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "wau-va-directions.spec.js",
+      "file": "wau-va-directions.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "wau demonstration starts left and preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6563,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:50.770Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34b7fa39397ebdbb6d93-80fe5aeb6a4da2136a25",
+          "file": "wau-va-directions.spec.js",
+          "line": 44,
+          "column": 36
+        },
+        {
+          "title": "va demonstration starts left and preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 7582,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:54:57.348Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34b7fa39397ebdbb6d93-3d60ce8b35ee3abd4f08",
+          "file": "wau-va-directions.spec.js",
+          "line": 44,
+          "column": 36
+        },
+        {
+          "title": "wau demonstration starts left and preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9900,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:55:53.891Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34b7fa39397ebdbb6d93-77300c0986e3572e3a7a",
+          "file": "wau-va-directions.spec.js",
+          "line": 44,
+          "column": 36
+        },
+        {
+          "title": "va demonstration starts left and preserves earned progress",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:56:03.805Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "34b7fa39397ebdbb6d93-c7c4120996e176c4c721",
+          "file": "wau-va-directions.spec.js",
+          "line": 44,
+          "column": 36
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-07T11:54:09.169Z",
+    "duration": 298294.669,
+    "expected": 20,
+    "skipped": 2,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

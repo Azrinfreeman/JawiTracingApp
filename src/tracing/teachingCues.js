@@ -1,5 +1,11 @@
 // Presentation only: these sections never credit movement or change writing order.
 import haDirection from '../content/haDirection.json' with {type:'json'};
+import wauVaDirections from '../content/wauVaDirections.json' with {type:'json'};
+import wauVaSmallerHeads from '../content/wauVaSmallerHeads.json' with {type:'json'};
+import mimReferenceShape from '../content/mimReferenceShape.json' with {type:'json'};
+import yaSmallerHead from '../content/yaSmallerHead.json' with {type:'json'};
+import jimFamilyStraightTops from '../content/jimFamilyStraightTops.json' with {type:'json'};
+import taZaStraightPillars from '../content/taZaStraightPillars.json' with {type:'json'};
 const revisions = { wau: 2, ha: 3, sin: 1, syin: 2, ra: 2, zal: 3, zai: 3, nun: 2, nya: 3, sad: 2, dad: 2, fa: 4, pa: 4 };
 const sections = {
   wau: [[0, 'Naik dan ikut gelung kepala.'], [.58, 'Ikut gelung hingga ke sambungan.'], [.76, 'Teruskan ekor ke kiri.']],
@@ -8,6 +14,16 @@ const sections = {
   syin: [[0, 'Ikut setiap lengkung gigi.'], [.56, 'Teruskan lengkung ke mangkuk.']],
 };
 export function teachingSections(letter, id) {
+  if(letter.id==='ya' && letter.contentVersion===yaSmallerHead.revision) return id==='stroke-1'?yaSmallerHead.sections:[];
+  if(letter.id==='mim' && letter.contentVersion===mimReferenceShape.revision) return id==='stroke-1'?mimReferenceShape.sections:[];
+  if(wauVaSmallerHeads[letter.id]?.revision===letter.contentVersion) return id==='stroke-1'?wauVaSmallerHeads[letter.id].sections:[];
+  if(taZaStraightPillars[letter.id]?.revision===letter.contentVersion) return id==='stroke-2'
+    ? [[0, 'Mula di atas. Tarik satu garis lurus ke bawah hingga pangkal.']]
+    : id==='stroke-1' ? [[0, 'Ikut gelung dan ekor hingga hujung.']] : [];
+  if(jimFamilyStraightTops[letter.id]?.revision===letter.contentVersion) return id==='stroke-1'
+    ? [[0, 'Tarik garis lurus ke kanan hingga 3.']]
+    : id==='stroke-2' ? [[0, 'Ikut lengkung mangkuk hingga hujung.']] : [];
+  if(wauVaDirections[letter.id]?.revision===letter.contentVersion) return id==='stroke-1'?wauVaDirections[letter.id].sections:[];
   if(letter.id==='ha' && letter.contentVersion===haDirection.revision) return id==='stroke-1'?haDirection.sections:[];
   if (revisions[letter.id] !== letter.contentVersion) return [];
   if (['fa', 'pa'].includes(letter.id)) return id === 'stroke-1'
@@ -35,6 +51,12 @@ export function stageInstruction(letter, part, view, finishText) {
   if (view.phase === 'awaitingStart') {
     if (progress > 0) return 'Sambung dari anak panah.';
     if ((['fa', 'pa'].includes(letter.id) && revisions[letter.id] === letter.contentVersion)
+      || wauVaDirections[letter.id]?.revision===letter.contentVersion
+      || wauVaSmallerHeads[letter.id]?.revision===letter.contentVersion
+      || (letter.id==='mim' && letter.contentVersion===mimReferenceShape.revision)
+      || (letter.id==='ya' && letter.contentVersion===yaSmallerHead.revision)
+      || jimFamilyStraightTops[letter.id]?.revision===letter.contentVersion
+      || taZaStraightPillars[letter.id]?.revision===letter.contentVersion
       || (letter.id==='ha' && letter.contentVersion===haDirection.revision)) {
       const start = view.completed.length ? `Angkat pen. Mula semula di ${part.points[0].number}.` : `Mula di ${part.points[0].number}.`;
       return `${start} ${teachingSections(letter, part.id)[0][1]}`;

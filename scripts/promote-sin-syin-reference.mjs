@@ -1,0 +1,16 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {sinSyinReferenceReviewCandidates} from '../src/content/reviewCandidates.js';
+import {validateLetter} from '../src/content/validateContent.js';
+const root='output/verification/sin-syin-reference-approval';
+const reviewed=JSON.parse(readFileSync('output/verification/sin-syin-reference/verification.json','utf8'));
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+for(const [p,h]of Object.entries(reviewed.inputs))if(p.startsWith('src/')&&hash(p)!==h)throw Error(`Reviewed input changed: ${p}`);
+const file='src/content/letters.json',raw=readFileSync(file,'utf8'),letters=JSON.parse(raw),proposals=sinSyinReferenceReviewCandidates(letters);
+if(JSON.stringify(proposals.map(p=>[p.candidate.id,p.candidate.contentVersion]))!==JSON.stringify([['sin',3],['syin',4]]))throw Error('Expected exact Sin 3 / Syin 4');
+const next=letters.map(letter=>{const proposal=proposals.find(p=>p.candidate.id===letter.id);if(!proposal)return letter;const candidate=structuredClone(proposal.candidate);
+ candidate.geometry.status='approved';candidate.geometry.review={revision:candidate.contentVersion,reviewer:'Project owner (Codex user; name not supplied)',date:'2026-10-12',reference:'docs/CONTENT_APPROVALS.md#approval-of-sin-and-syin-reference-shapes-2026-10-12',kind:'projectOwner'};
+ if(!validateLetter(candidate).ready)throw Error(`Invalid candidate ${candidate.id}`);return candidate;});
+mkdirSync(root,{recursive:true});writeFileSync(`${root}/before-catalogue.json`,raw,{flag:'wx'});writeFileSync(`${root}/reviewed-proposals.json`,JSON.stringify(proposals,null,2)+'\n',{flag:'wx'});
+const newline=raw.includes('\r\n')?'\r\n':'\n';writeFileSync(file,(JSON.stringify(next,null,2)+'\n').replace(/\n/g,newline));
+console.log('Activated exact reviewed Sin 3 and Syin 4; approval metadata added, dots and audio preserved.');

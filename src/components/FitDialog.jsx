@@ -5,7 +5,7 @@ export function FitDialog({ title, onClose, onBack, children }) {
   const id = useId(), ref = useRef(null);
   useEffect(() => {
     const previous = document.activeElement, dialog = ref.current;
-    const controls = () => [...dialog.querySelectorAll('button:not(:disabled), select, input, a[href]')];
+    const controls = () => [...dialog.querySelectorAll('button:not(:disabled), select, input, a[href]')].filter(node => node.tabIndex >= 0 && getComputedStyle(node).visibility !== 'hidden' && node.getBoundingClientRect().height > 0);
     controls()[0]?.focus({ preventScroll: true });
     const key = event => {
       if (event.key === 'Escape') { event.stopImmediatePropagation(); onClose(); }

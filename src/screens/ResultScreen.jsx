@@ -10,7 +10,7 @@ export function ResultScreen({ letter, result, audio, preview, onNext, onAgain, 
     {!actionsOnly && <><span className="book-sticker earned"><Icon name={copied ? 'pen' : 'flower'} size={24}/>{copied ? 'Tulisan disimpan' : 'Siap dijejak!'}</span>
     <h2>{playful ? `Kamu sudah ikut huruf ${letter.labelMs}!` : copied ? 'Terima kasih kerana mencuba!' : 'Bagus, kamu sudah cuba!'}</h2>
     <p>{copied ? 'Guru boleh melihat tulisan kamu.' : 'Hebat! Selak apabila kamu sedia.'}</p></>}
-    {!summaryOnly && <><button className="button button-outline" disabled={choicesDisabled} onClick={onAgain}><Icon name="retry" size={18}/>{playful ? 'Main lagi' : 'Ulang huruf'}</button>
+    {!summaryOnly && <><button className="button button-outline control-retry" disabled={choicesDisabled} onClick={onAgain}><Icon name="retry" size={18}/>{playful ? 'Main lagi' : 'Ulang huruf'}</button>
     {!copied && <button className="text-button copy-action" aria-label="Sekarang, cuba salin sendiri" disabled={choicesDisabled} onClick={onCopy}><Icon name="pen" size={16}/>{compact ? 'Salin sendiri' : 'Sekarang, cuba salin sendiri'}</button>}</>}
   </section>;
   return <main className={`result-page page-enter ${playful ? 'play-result' : ''}`}><div className="result-card">

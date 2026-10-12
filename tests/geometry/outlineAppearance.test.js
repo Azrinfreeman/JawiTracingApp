@@ -1,10 +1,13 @@
 import {describe,it,expect} from 'vitest';
-import letters from '../../src/content/letters.json';
+import currentLetters from '../../src/content/letters.json';
+import shorterHeadOriginals from '../fixtures/ra-zai-short-head-originals.json';
 import originals from '../fixtures/four-letter-originals.json';
 import {fourLetterReviewCandidates,videoReviewCandidates} from '../../src/content/reviewCandidates.js';
 import {validateLetter} from '../../src/content/validateContent.js';
 import {eligibleBook,completedBookLetters} from '../../src/game/bookNavigation.js';
 import {fitTraceViewport} from '../../src/game/screenLayout.js';
+// Verify the October-6 outline approval; later Ra/Zai geometry has separate checks.
+const letters=currentLetters.map(letter=>shorterHeadOriginals.find(original=>original.id===letter.id)||letter);
 // Genuine pre-promotion entries retain the pending-candidate validation cases after approval.
 const before=letters.map(letter=>originals.find(original=>original.id===letter.id)||letter);
 const candidates=fourLetterReviewCandidates(before).filter(proposal=>originals.some(original=>original.id===proposal.original.id));

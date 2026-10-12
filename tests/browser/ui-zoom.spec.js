@@ -35,7 +35,7 @@ test('200% zoom-equivalent reflow keeps navigation, writing and adult controls u
     expect(preview.height).toBeGreaterThanOrEqual(56);
     await expect(page.getByLabel('Jenis latihan')).toHaveValue('play'); await fits();
     await page.getByLabel('Huruf untuk semakan suara').selectOption('ta-marbuta');
-    await expect(page.locator('.audio-review-transcript')).toContainText('Ta marbutah');
+    await expect(page.locator('.audio-review-transcript strong')).toHaveText('Ta');
     await page.getByRole('button', { name: 'Padam rekod', exact: true }).click();
     await expect(page.getByRole('group', { name: 'Sahkan pemadaman' })).toBeVisible();
     await page.getByRole('button', { name: 'Batal', exact: true }).click(); await fits();

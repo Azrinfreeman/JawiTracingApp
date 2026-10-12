@@ -17,6 +17,10 @@ import sadDadOriginals from '../fixtures/sad-dad-originals.json';
 import tailOriginals from '../fixtures/sin-syin-tail-originals.json';
 import videoOriginals from '../fixtures/video-review-originals.json';
 import stemOriginals from '../fixtures/ta-za-originals.json';
+import wauVaOriginals from '../fixtures/wau-va-direction-originals.json';
+import straightTopOriginals from '../fixtures/jim-family-straight-top-originals.json';
+import shortHeadOriginals from '../fixtures/ra-zai-short-head-originals.json';
+import yaSmallerHeadOriginal from '../fixtures/ya-smaller-head-original.json';
 import { GLYPH_MATCHED_DOTS, GLYPH_MATCHED_IDS } from '../fixtures/glyphMatched.js';
 import { validateLetter } from '../../src/content/validateContent.js';
 import { completedBookLetters, eligibleBook } from '../../src/game/bookNavigation.js';
@@ -44,7 +48,7 @@ describe('glyph-matched tracing models', () => {
     expect(GLYPH_MATCHED_IDS).toHaveLength(27);
     for (const id of GLYPH_MATCHED_IDS) {
       // Later video approvals are verified separately against these preserved source revisions.
-      const letter = stemOriginals.find(original=>original.id===id) || videoOriginals.find(original=>original.id===id) || (id==='nya'?nyaTipOriginal:id==='va'?vaAudioOriginal:id==='ha'?haOriginal:id==='nun'?nunOriginal:id==='nga'?ngaAudioOriginal:byId(id)), before = baseline.entries[id];
+      const letter = stemOriginals.find(original=>original.id===id) || videoOriginals.find(original=>original.id===id) || shortHeadOriginals.find(original=>original.id===id) || (id==='ya'?yaSmallerHeadOriginal:id==='nya'?nyaTipOriginal:id==='va'?vaAudioOriginal:id==='ha'?haOriginal:id==='nun'?nunOriginal:id==='nga'?ngaAudioOriginal:wauVaOriginals.find(original=>original.id===id)||straightTopOriginals.find(original=>original.id===id)||byId(id)), before = baseline.entries[id];
       const outlineOriginal=outlineOriginals.find(original=>original.id===id);
       const directionOriginal=directionOriginals.find(original=>original.id===id);
       const familyOriginal=familyOriginals.find(original=>original.id===id);

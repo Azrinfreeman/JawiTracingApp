@@ -15,7 +15,7 @@ describe('Nun catalogue-outline review',()=>{
  it('isolates Nun 3 for adult review without replacing approved Nun 2 or its audio',()=>{
   const inventory=Object.fromEntries(Object.entries(factories).map(([name,factory])=>[name,factory(before).map(proposal=>proposal.candidate.id)]));
   // This historical check covers the six scopes present when Nun was proposed.
-  for(const [name,ids]of Object.entries(inventory).filter(([name])=>!['haDirectionReviewCandidates','nyaTipReviewCandidates','sadDadReviewCandidates'].includes(name)))expect(ids).toEqual(name==='fourLetterReviewCandidates'?['nun']:[]);
+  for(const [name,ids]of Object.entries(inventory).filter(([name])=>!['haDirectionReviewCandidates','nyaTipReviewCandidates','sadDadReviewCandidates','wauVaReviewCandidates','jimFamilyStraightTopReviewCandidates','raZaiShortHeadReviewCandidates','sinSyinReferenceReviewCandidates','taZaStraightPillarReviewCandidates','wauVaSmallerHeadReviewCandidates','mimReferenceReviewCandidates','yaSmallerHeadReviewCandidates'].includes(name)))expect(ids).toEqual(name==='fourLetterReviewCandidates'?['nun']:[]);
   expect(original).toBe(nunOriginal);expect(original.contentVersion).toBe(2);
   expect(candidate).toMatchObject({id:'nun',contentVersion:3,geometry:{status:'pendingReview',review:null}});
   expect(validateLetter(candidate)).toMatchObject({valid:true,ready:false});

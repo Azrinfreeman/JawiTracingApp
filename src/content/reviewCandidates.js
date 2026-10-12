@@ -8,7 +8,109 @@ import taZaStems from './taZaStems.json' with {type:'json'};
 import haDirection from './haDirection.json' with {type:'json'};
 import nyaTip from './nyaTip.json' with {type:'json'};
 import sadDadOutlines from './sadDadOutlines.json' with {type:'json'};
+import wauVaDirections from './wauVaDirections.json' with {type:'json'};
+import jimFamilyStraightTops from './jimFamilyStraightTops.json' with {type:'json'};
+import raZaiShortHeads from './raZaiShortHeads.json' with {type:'json'};
+import sinSyinReferenceBodies from './sinSyinReferenceBodies.json' with {type:'json'};
+import taZaStraightPillars from './taZaStraightPillars.json' with {type:'json'};
+import wauVaSmallerHeads from './wauVaSmallerHeads.json' with {type:'json'};
+import mimReferenceShape from './mimReferenceShape.json' with {type:'json'};
+import yaSmallerHead from './yaSmallerHead.json' with {type:'json'};
+export function yaSmallerHeadReviewCandidates(letters) {
+  const original=letters.find(letter=>letter.id==='ya');
+  if(!original||original.geometry.status!=='approved'||original.contentVersion!==yaSmallerHead.baseRevision)return [];
+  const candidate=structuredClone(original);candidate.contentVersion=yaSmallerHead.revision;
+  candidate.geometry.status='pendingReview';candidate.geometry.review=null;
+  candidate.geometry.strokes[0].path=yaSmallerHead.path;
+  candidate.geometry.displayPaths=[yaSmallerHead.path];
+  return [{original,candidate,note:'Kepala pada 1 dikecilkan mengikut rujukan. Ikut kepala kecil, teruskan mangkuk hingga 3, kemudian angkat pen dan sentuh dua titik berasingan. Mangkuk, titik, kawasan sentuh dan rakaman dikekalkan.'}];
+}
+export function mimReferenceReviewCandidates(letters) {
+  const original=letters.find(letter=>letter.id==='mim');
+  if(!original||original.geometry.status!=='approved'||original.contentVersion!==mimReferenceShape.baseRevision)return [];
+  const candidate=structuredClone(original);candidate.contentVersion=mimReferenceShape.revision;
+  candidate.geometry.status='pendingReview';candidate.geometry.review=null;
+  candidate.geometry.strokes[0].path=mimReferenceShape.path;
+  candidate.geometry.displayPaths=[mimReferenceShape.path];
+  candidate.geometry.appearance=structuredClone(mimReferenceShape.appearance);
+  return [{original,candidate,note:'Bentuk mengikut foto rujukan: kepala terbuka, sambungan lebih rata dan ekor halus dengan hujung tirus. Ikut kepala dari hujung kiri, kembali ke kiri dan teruskan ekor ke bawah tanpa angkat pen. Rakaman dikekalkan.'}];
+}
+export function wauVaSmallerHeadReviewCandidates(letters) {
+  return Object.entries(wauVaSmallerHeads).flatMap(([id,correction])=>{
+    const original=letters.find(letter=>letter.id===id);
+    if(!original||original.contentVersion!==correction.baseRevision)return [];
+    const candidate=structuredClone(original);candidate.contentVersion=correction.revision;
+    candidate.geometry.status='pendingReview';candidate.geometry.review=null;
+    candidate.geometry.strokes[0].path=correction.path;candidate.geometry.displayPaths=[correction.path];
+    return [{original,candidate,note:'Gelung kepala dikecilkan sedikit mengikut rujukan. Mula ke kiri di bawah kepala, ikut gelung, kemudian teruskan ekor tanpa angkat pen. Ekor, kawasan sentuh dan rakaman dikekalkan. Titik Va dibuat terakhir.'}];
+  });
+}
 // Separate adult-only proposals. These entries never join the student catalogue.
+export function taZaStraightPillarReviewCandidates(letters) {
+  return Object.entries(taZaStraightPillars).flatMap(([id, correction]) => {
+    const original=letters.find(letter=>letter.id===id);
+    if(!original || original.contentVersion!==correction.baseRevision)return [];
+    const candidate=structuredClone(original);
+    candidate.contentVersion=correction.revision;
+    candidate.geometry.status='pendingReview';candidate.geometry.review=null;
+    candidate.geometry.strokes[0].path=correction.headPath;
+    candidate.geometry.displayPaths[0]=correction.headPath;
+    candidate.geometry.strokes[1].path=correction.path;
+    candidate.geometry.displayPaths[1]=correction.path;
+    candidate.geometry.appearance=structuredClone(correction.appearance);
+    return [{original,candidate,note:'Bentuk mengikut foto rujukan: gelung lebih rendah dan padat, hujung tirus dan batang lebih halus. Ikut gelung dan ekor dahulu. Angkat pen, mula di 4 di atas dan tarik satu garis lurus melalui 5 hingga 6 di pangkal. Titik Za dibuat terakhir. Rakaman dikekalkan.'}];
+  });
+}
+export function sinSyinReferenceReviewCandidates(letters) {
+  return Object.entries(sinSyinReferenceBodies).flatMap(([id, correction]) => {
+    const original=letters.find(letter=>letter.id===id);
+    if(!original || original.contentVersion!==correction.baseRevision)return [];
+    const candidate=structuredClone(original);
+    candidate.contentVersion=correction.revision;
+    candidate.geometry.status='pendingReview';candidate.geometry.review=null;
+    candidate.geometry.strokes[0].path=correction.path;
+    candidate.geometry.displayPaths=[correction.path];
+    candidate.geometry.appearance=structuredClone(correction.appearance);
+    return [{original,candidate,note:'Bentuk mengikut foto ketiga: gigi lebih cetek dan mangkuk lebih padat. Mula di kanan, ikut gigi dan mangkuk tanpa angkat pen hingga hujung kiri pada aras garisan rujukan. Tiga titik Syin disentuh berasingan selepas badan. Rakaman dikekalkan.'}];
+  });
+}
+export function raZaiShortHeadReviewCandidates(letters) {
+  return Object.entries(raZaiShortHeads).flatMap(([id, correction]) => {
+    const original=letters.find(letter=>letter.id===id);
+    if(!original || original.contentVersion!==correction.baseRevision)return [];
+    const candidate=structuredClone(original);
+    candidate.contentVersion=correction.revision;
+    candidate.geometry.status='pendingReview';candidate.geometry.review=null;
+    candidate.geometry.strokes[0].path=correction.path;
+    candidate.geometry.displayPaths=[correction.path];
+    candidate.geometry.appearance=structuredClone(correction.appearance);
+    return [{original,candidate,note:'Kepala dipendekkan pada garisan dalam foto. Mula pada hujung baharu, ikut lengkung ke bawah dan ekor ke kiri tanpa angkat pen. Lengkung bawah, ekor dan rakaman dikekalkan. Titik Zai kekal di tempat asal dan disentuh selepas badan.'}];
+  });
+}
+export function jimFamilyStraightTopReviewCandidates(letters) {
+  return Object.entries(jimFamilyStraightTops).flatMap(([id, correction]) => {
+    const original=letters.find(letter=>letter.id===id);
+    if(!original || original.contentVersion!==correction.baseRevision)return [];
+    const candidate=structuredClone(original);
+    candidate.contentVersion=correction.revision;
+    candidate.geometry.status='pendingReview';candidate.geometry.review=null;
+    candidate.geometry.strokes[0].path=correction.path;
+    candidate.geometry.displayPaths[0]=correction.path;
+    return [{original,candidate,note:'Mula di 1 di kiri. Tarik garis lurus melalui 2 hingga 3 di kanan. Angkat pen, mula semula di 4 untuk mangkuk, kemudian sentuh titik jika ada. Mangkuk, arah mangkuk, titik dan rakaman dikekalkan.'}];
+  });
+}
+export function wauVaReviewCandidates(letters) {
+  return Object.entries(wauVaDirections).flatMap(([id, correction]) => {
+    const original=letters.find(letter=>letter.id===id);
+    if(!original || original.contentVersion!==correction.baseRevision)return [];
+    const candidate=structuredClone(original);
+    candidate.contentVersion=correction.revision;
+    candidate.geometry.status='pendingReview';candidate.geometry.review=null;
+    candidate.geometry.strokes[0].path=correction.path;
+    candidate.geometry.displayPaths=[correction.path];
+    return [{original,candidate,note:'Seperti arah mula Pa: mula di sambungan kanan, ke kiri di bawah kepala, naik mengikut gelung dan kembali ke sambungan, kemudian teruskan ekor ke kiri tanpa angkat pen. Titik Va dibuat terakhir. Lengkung, ekor, kawasan sentuh dan rakaman dikekalkan.'}];
+  });
+}
 export function sadDadReviewCandidates(letters) {
   return Object.entries(sadDadOutlines).flatMap(([id, correction]) => {
     const original=letters.find(letter=>letter.id===id);

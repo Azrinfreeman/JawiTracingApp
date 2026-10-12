@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-12",
+  "protectedCount": 169,
+  "audioTreeFiles": 78,
+  "mismatches": [],
+  "bundles": {
+    "/assets/index-BPD1veRz.js": "5a2bc64325b8e2d6475527ae1978aa126cb86dd28647bacfe5583776ee23819d",
+    "/assets/index-DbweFF8G.css": "0764aa3bb4839f976f3639e0ed8e8839c748d1acd73a1fea5dae1715bbcc67d0"
+  },
+  "referenceFile": "docs/references/ta-za-photo-reference.png",
+  "referenceSha256": "7d0115a6c8c1ae9bb6262218afce4224679f12fb32b6611123cdb325e47b9ef5"
+}

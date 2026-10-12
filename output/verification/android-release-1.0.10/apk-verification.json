@@ -1,0 +1,18 @@
+{
+  "verifiedAt": "2026-10-12T04:52:15.2745699Z",
+  "apk": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\releases\\Taman-Jawi-1.0.10-release.apk",
+  "bytes": 7511529,
+  "sha256": "3bd49c63c7fd02af34f5fb20b455359a6c27375e04dc82c347cfaad3c7e56341",
+  "package": "com.hananaacademy.tamanjawi",
+  "version": "1.0.10",
+  "versionCode": 11,
+  "minSdk": 26,
+  "targetSdk": 36,
+  "signatureVerified": true,
+  "alignmentVerified": true,
+  "debuggable": false,
+  "permissions": [],
+  "matchingBundledAssets": 104,
+  "activeLetterRecordings": 36,
+  "deviceInstallTest": "Not run: no Android device or emulator connected."
+}

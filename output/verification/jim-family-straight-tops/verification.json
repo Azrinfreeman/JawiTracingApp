@@ -1,0 +1,1011 @@
+{
+  "date": "2026-10-11",
+  "timezone": "Asia/Kuala_Lumpur",
+  "geometryStatus": "pendingReview",
+  "candidates": {
+    "kha": 4,
+    "ha-pedat": 4,
+    "jim": 5,
+    "ca": 4
+  },
+  "studentReady": 36,
+  "unit": {
+    "passed": 267,
+    "command": "npm test -- --pool=threads --maxWorkers=2 --reporter=dot",
+    "files": 42
+  },
+  "browser": {
+    "input": [
+      "mouse",
+      "Chromium CDP touch"
+    ],
+    "skipped": 4,
+    "finalBuild": "index-BcrOdj-j.js",
+    "testFile": "tests/browser/jim-family-straight-tops.spec.js",
+    "finalChange": "Review-note text only: titik jika ada",
+    "browserPath": "C:/Users/azrin/AppData/Local/ms-playwright",
+    "fixture": "JAWI_STATIC_TEST=1",
+    "followupRepeatedPasses": 2,
+    "viewports": [
+      "320x600",
+      "768x1024",
+      "1280x800"
+    ],
+    "webkitPassed": 22,
+    "buildDuringBehaviorChecks": "index-DrzLDX2c.js",
+    "chromiumPassed": 26,
+    "distinctPassed": 48
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "vitest": "5.0.3",
+    "playwright": "1.63.0"
+  },
+  "preservation": {
+    "checked": 81,
+    "mismatches": 0
+  },
+  "physicalDeviceVerified": false,
+  "fingerprints": [
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\package.json",
+      "Hash": "AC046CEF16F885CE96E15C3E23C90BA830CCDF1145A843E0E01F8236B6CF86B8"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\package-lock.json",
+      "Hash": "57BAA5196ED8F895FF438530FC5621D31AC026949CF23817015069BCC21C431D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\vite.config.js",
+      "Hash": "323FE0AE769C0120763304445B67B2BE7A398EBB48DB3E431D6D098AD6C01D4B"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+      "Hash": "F9CE1412DECF8249638A0B59C48A3C52E811BB9885DC8CC8F2282E823AD3D4D7"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\index.html",
+      "Hash": "E1DFA25E8767B57D52A7E9C1E70756D2315B0459B3CBF566059F896641C22E73"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\scripts\\lib\\outline-contours.mjs",
+      "Hash": "E5EEB027989C88A7537A77FC6EA23026946B80A41E5756A2198BB5CB64E33E28"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\scripts\\lib\\glyph-metrics.mjs",
+      "Hash": "D0CC8882E458806C3C26E430328643F3EAC38F1EADB95BDE57DD4A1D81D825FF"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\scripts\\lib\\glyph-geometry.mjs",
+      "Hash": "13DE4931B6492CFDF1A2FBEA86E21463C0793004A90A112F4D2FBC024E74E1FF"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\scripts\\lib\\audio-wave.mjs",
+      "Hash": "A065049CE43F62323B6AB2181A568F55F7B1ACF0BBEDE33CB1924AA113CC01FF"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\tracing\\renderPreparation.test.js",
+      "Hash": "22574875F2BC5AE192D8A4AEFD6B07C2AFEC7C60283A9C632608A298E5589708"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\screen-layout.test.js",
+      "Hash": "90E9E63BF91EA70F58854B59116BB9A81FF9644B73630AA012C2801B5DFC2DCA"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\presentation.test.js",
+      "Hash": "4D6255F709B0C7E9B1D3F19BE19F58C00A2E28350403BAC61E2A5312FCFEB1D1"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\traceReducer.js",
+      "Hash": "459959D0AC8236F56F365E153D5294904832C0028330A389FEE152A6D62E8853"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\teachingCues.js",
+      "Hash": "969FA8A91714C84C9DF6CB0C73EEF35651E3B7D9C06078A3BE301340A111FE2C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\profiles.js",
+      "Hash": "1F8729320D364606629959E27C1B986E4710F8E4582F0D27B8FB8BF536A014E7"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\prepareReference.js",
+      "Hash": "A0AC6DE94AA4218B0CF268CC2CC8DFD51B8456845A8320D5AA2DD21B10A5D667"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\playMatcher.js",
+      "Hash": "342A9B00CADE6860F13169F64F1BFCA27FB06852D7AB0B24039DC834BC394359"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\outlineAppearance.js",
+      "Hash": "61961BD0498D482FE276054A9519494D7A8CF465F6EFB559E06F8AA4941EE255"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\numberedGuides.js",
+      "Hash": "46C44853E3F1D65C194767666AC7A4B2F7BAC5CBB84304001F2847A7AD14BD3B"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\matcher.js",
+      "Hash": "B29F82061774BF6CDB8D1A45182D18E72A687E781FDA43C6154D05DEBC407C2D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\liveRenderer.js",
+      "Hash": "2E94D71A6C5D8E2F68314A0ACDF3C475627433F642F7AD8A4EEDFFE964CD52A5"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\inputController.js",
+      "Hash": "3C074A0DCFDF36441A0B0572BA01ACEFFEE7DE8457DAE0F861DD51BBF5A3C3DF"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\inkPath.js",
+      "Hash": "A43203C384DC05B5CB9A043EF96F15B255FB0EBD9466A3D24285447053E798FC"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\geometry.js",
+      "Hash": "F8B0F600007001FB656199AD1583C2DB71E5C17C0E2938A0CEB611CA1078DCE5"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\dotMatcher.js",
+      "Hash": "84E3742623C7EC46CE9FB1DC585A55DB3D6FC0955063BB7E0322DA4B26AC1999"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\demonstrationFrame.js",
+      "Hash": "D7F72C348F74E991EC0E131B394EF2B067647574702409F500E626BAC875E76C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\tracing\\contactClick.js",
+      "Hash": "E6143DBD1AF696455BB9474C9F7945E50EAA886A86A3B9EE9A38E508047D61EB"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\wauVaDirections.test.js",
+      "Hash": "0B8F577D027C15617BA2572571C9C19923BCE434EC5F854DD8308C9A0155E1EC"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\videoReviewApproval.test.js",
+      "Hash": "D7FF04AC8922CB261865AC28FC200C32CF7D39D89D839048AF1DF59AC72B52B9"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\terminal.test.js",
+      "Hash": "76E02179475067FB9A3F3E72EE28DB914AA70C455A1979B5166F39EB5F59AF85"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\taZaStems.test.js",
+      "Hash": "18371B04EDACBA7839CDF9863B0A97E64E1887A2D3F846D98E9D550A6100B1EF"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\taZaApproval.test.js",
+      "Hash": "54CA7317363513CE223F1C7BC857A4A24FFFE1C96078FFB323B86FDBA76690E1"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\support.test.js",
+      "Hash": "310B3D29586F1E4A01E99DAD8E61674F174D8D0966840C8242FF02B756E077DC"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\strict.test.js",
+      "Hash": "5A6757F532172A0616AD24EDFB6CEE3C03F13BA59A25C7121B7F12A604129656"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\sinSyinTails.test.js",
+      "Hash": "ED99B24343F1DCBCD1FE88921D28570F6C6D1558E191D187D2FB57A30C2A0152"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\sadDadOutlines.test.js",
+      "Hash": "CAD05511B49BD65CDFACDB30354C769F0319EE665909A2FB2AB20D4CBEAE18DA"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\sadDadApproval.test.js",
+      "Hash": "B6C6CC7F2E48B6674CECF0FE2C8604068AF51A63C1C270E6B79ADD2B85FCE5C5"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\playMatcher.test.js",
+      "Hash": "110B3E531D048F738DBE198DA8DCBF495892F427A874022F00193BE404EF20D1"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\outlineAppearance.test.js",
+      "Hash": "D7840F7A8DA2B76FAA82E49D72A5D8932C6488C2F32E60805E7C44CB2C8EFFA3"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\nyaTip.test.js",
+      "Hash": "590641B853DC1E31B44A149D4D3872ED2568AE98234228CF39863789D19D63E2"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\nyaApproval.test.js",
+      "Hash": "304C2E5020DC01168DAFB13DF7AA13BF3CFE11922A52BA50916B8589DF8F74AF"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\nunOutline.test.js",
+      "Hash": "13D6FD3042A4EA7575014A090784E9D50BE1B433B6CFB0A770685DED71402759"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\nunApproval.test.js",
+      "Hash": "F6F8534EFA6BE9EB43942907F8732739EF5102ECC6AA75784C5ED00513E124B8"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\mimHeadGap.test.js",
+      "Hash": "376785F98DFDBE5B5C1077578DAD25F902B6567147F9385BCA792407C1EA0BD1"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\matcher.test.js",
+      "Hash": "3958DEF87C15D9576E8831F7048CAE6384116865A1B25B879755C05BBAD3811C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\localProjection.test.js",
+      "Hash": "A075A467CE6F571175B220D1F5D6150CDB267CC339549A38F4B42101CBECD3FC"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\jimFamilyStraightTops.test.js",
+      "Hash": "648764F64560FEE8CB6F243EF948AD85F0612729827AF662BA79EDFD5312F162"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\inputController.test.js",
+      "Hash": "6CF3C758090F2398CFC3975386AC1A875093E14C54A7973731775601875C1293"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\inkPath.test.js",
+      "Hash": "DDCBE91DD4F9453859E8792A03F152FB2DD601D774310C54AC76A746FAE56803"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\hamzahYe.test.js",
+      "Hash": "A640EB82A2D727EB9BF82825B4004FEF4B08B558061A1EEBA132B1C0A31D9B97"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\haDirection.test.js",
+      "Hash": "C816A024A49843011DEA2418FB0D30629F3F92A22E14FBF4EF036F36C90CB930"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\haApproval.test.js",
+      "Hash": "DF017AF4C1808E9525EA31BD786CD81074700DCA1E08D84BD909F305B99B3D4A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\fixVideo.test.js",
+      "Hash": "B267B281D86F4914CE07F9375D807EA8AFA168DF8C244CFB056C6F80AA1873F9"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\faPaDirections.test.js",
+      "Hash": "372AC6FA4A8CDE34899DD7586B4CC882D24C5BAE830E45D62739BF59A8411F6E"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\compactMatcher.test.js",
+      "Hash": "F109E93ECB1643EA72D1221777EA6DDE4152763E06E27411D6DA9DC161913E40"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\geometry\\ainFamilyOutlines.test.js",
+      "Hash": "84757BB889251B307DCDB74332B6D66631A59AAD0E47029B312E2713DDC6C7B3"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\styles\\theme.css",
+      "Hash": "A10769B2244372EAC205AA86B0189F6CE9D9EC7B155C83ED5457159CB99E760D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\styles\\presentation.css",
+      "Hash": "217A5EE411F582C17671DB8AD04D822E5675DB4CFC2D60F2904E4B3896F63320"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\styles\\playground.css",
+      "Hash": "22F2D04460E3D82D5F90F04503F9C7670629EC3D5A1AD09B620A1DE79277CAB8"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\styles\\match.css",
+      "Hash": "79DF242187178956E586D1FA743A1D7DA5B983E8BB493728E999A4B113F79F55"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\styles\\letter-model.css",
+      "Hash": "DA2B2463C117C93DE8F4A69C55F1E0A27B24DBEDBB9E0334475F60D8E2A00D7D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\styles\\fullscreen.css",
+      "Hash": "7315782537FEFC0F3D629577D15533E207090BFB6A2BE76DECADD9AF7E7D7758"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\styles\\book.css",
+      "Hash": "44A16F8712B3C2F3B163AE6EE43E5A718D6380BD6CA78320841CC6DC706E8D6A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\styles\\app.css",
+      "Hash": "CB4BBBDE36520EEE668B54A443F6E31244970216D79F8C5C16FDAC4F95297C4D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\game\\voiceRecovery.test.js",
+      "Hash": "641031634351B8E7BC97FD28E2F5915572234445BEFB3250B9F701A6CA5DB598"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\game\\music.test.js",
+      "Hash": "332376ED9CEAF33CB9F369AA03A459C38CEFE3352CE9D47689BB01B512D8AC43"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\game\\match.test.js",
+      "Hash": "FA10F1F469C04A94C8F45F9E3E1DFA80EC0DEA8AE16B7CFB76ACF2EF0378843D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\game\\kafGa.test.js",
+      "Hash": "08389D9FC9F58F69C1B4A133042A6D01FFD7BCD1BCF6EAE7CAAACD14B4F419AA"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\game\\glyphMatched.test.js",
+      "Hash": "CF9AFB39BBDB5F7190F78EEAE57C188AABD27AFC18B80C96705D9F4E497E340A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\game\\contactClick.test.js",
+      "Hash": "F9616A6339C2D20E23920192FDE021B24C7A0B383D57CEF2B86A8C352AAE8D71"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\game\\bookNavigation.test.js",
+      "Hash": "BE18F37734D78980822D8EA8819BB1AED4C05B6DA1724CD69D83B2F4E8BE103C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\storage\\progressStore.js",
+      "Hash": "B316A45FA966B68027CA653917626F0A6E0F40110E4BBB7C0282C53F87EF6B53"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\storage\\matchStore.js",
+      "Hash": "B47F220AD0B2F1BEB14E72BC244A9A4994910969BFD4332C5A6E5B4C21D96DC3"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\wau-va-direction-originals.json",
+      "Hash": "4E9B1B93D1DCF8F04578B9D6349E1EB9ABB26922062F80283508F209A4DC7519"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\video-review-originals.json",
+      "Hash": "FD924F392CF7038F0D191A8B3F3AFD3C22FC8719C0BD33993328A9DC59683EAD"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\va-audio-original.json",
+      "Hash": "C7DF15DDB7B3584F783FEA2F91F3E8E52198778D58C0841B01315ED87222E198"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\traces.js",
+      "Hash": "4C6B215B6F202C90A28295F2369A31417C46814A1D122942C8BD19490B90271F"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\ta-za-originals.json",
+      "Hash": "46932B7E3CA26BF3AF2D959B0033EBBB4EC4A43F808CED806B623EC6868C7D42"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\sin-syin-tail-originals.json",
+      "Hash": "15F1EB56FC7A74D6581DB1BD1CBBED445AD393BA139985FB9246FFA364894DF4"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\sad-dad-originals.json",
+      "Hash": "5EC04C7686FAE5B77D0BA930C62738786136C09C2E0D677CA60C0B853C61580C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\removed-ye.json",
+      "Hash": "974A2A762491A739403344378ADE6B136F449E4FFFE304E3723A546DE68831FB"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\nya-tip-original.json",
+      "Hash": "2699B3662FFF17A31CF00E13A271A3745866666E9F604C13B19FD362C467A474"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\nun-outline-original.json",
+      "Hash": "5C3D2B0AEE23D5B1319824F65E60B4708722CAA43264A88C644C8F633A92F34B"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\nga-audio-original.json",
+      "Hash": "2E6C39583EF4D8386684E1D702730F2AF7CA8C8540620D41E1CE43955392C097"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\mim-video-original.json",
+      "Hash": "8A9E0623DB3FB3E6FCF34F49665921DD9F54E159A6C081C4264304AC5FEC4C61"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\jim-family-straight-top-originals.json",
+      "Hash": "7B42179D674AB9B931101E39A118D4DC4C428212A2DCF5AEADA3E5ED35E2A715"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\hamzah-tail-original.json",
+      "Hash": "E4B39BDDBAFA148409C402C4A52E2F9DAF3C1AD87EE989CB8D7F818F61BCC923"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\ha-direction-original.json",
+      "Hash": "A313E678F22092DA25728910BA649AC1CE01EEE1C9ECD11B835076A191876DF2"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\glyphMatched.js",
+      "Hash": "0D816438DAFF43A8DEC5978C5571B99D7FD80E12C8F09446008BD2CC3BB9F336"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\glyph-baseline.json",
+      "Hash": "2DB832A7B936386644A80B346DDFB0C8897FE409A29A578458418218339F718F"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\ga-audio-original.json",
+      "Hash": "B601A44EAABCD5945B8F4A730DFFF70B08B76E8E508DDF79C7D826597232E06C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\four-letter-originals.json",
+      "Hash": "AE594DFCD8DB08F5B763855E75E201AFBB008D101326446B1B94C3387845CAE5"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\fa-pa-originals.json",
+      "Hash": "2E8A9761E7329109DEDD90EC0A8E98225C65C4FA15CC22AF3F850ECED89CD82C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\fixtures\\ain-family-originals.json",
+      "Hash": "AAF044D47674CE8ED3D7988B9B684E9B413143B9313D4CB8DE6097A3CC75FD00"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\WelcomeScreen.jsx",
+      "Hash": "E7BC79C76215D4362BC72EA3D465CE9CC7B2956237044EAA7C577A1CF1BE5001"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\TeacherScreen.jsx",
+      "Hash": "84A75827FC4655334054AB8EF0E9379D4D92BE89F64CBCB8F542D3F906B3A0E8"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\SplashScreen.jsx",
+      "Hash": "8B59C2C129C5BB0ADBA2341CFB254DC4ACAD502160F2C8C7E1BFED0EB13E8CF4"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\ResultScreen.jsx",
+      "Hash": "C78D4C5B85723A3F8582D70D51F7DEBF2BCEADA25193F2716A25C86AAE5CD011"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\MatchSetupScreen.jsx",
+      "Hash": "45F45D726CCE5BD7CEC6FE9FD48BEF9F9ED93730D9951E5E8C160C631D521AEA"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\MatchScreen.jsx",
+      "Hash": "BB9F11F507828814666EBD910445961AB4786779DBBD2FA4735716E18B92CE07"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\MatchResultScreen.jsx",
+      "Hash": "FA9D868410974B2FEDA3174FFC6218B06759D64B10BD86048A70FECC61D95B22"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\LetterGarden.jsx",
+      "Hash": "97C44112A3DE638E148C3485E97A79926D68B00AFBBE04B1609FFEDF000269FE"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\LessonScreen.jsx",
+      "Hash": "0E1349C488E2A5E059CD53F540B2083C643F06E7D48778E3AA766B2ECACFCF67"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\screens\\BookLessonScreen.jsx",
+      "Hash": "24B5DA0D8A6FEE06A0D99D16E33C268EABB7BC80EA487682D10AE1C1CF7AE0DA"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\platform\\presentation.js",
+      "Hash": "AA67C94B1F7B9C9909ACA6F541A33914F91024377EB644EB4ED42294A846815F"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\platform\\fullscreen.js",
+      "Hash": "03DB04E966399C7DC1A062AF968C430F725712FDF496E54A2BDBEBD3DA0BF2CD"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\platform\\download.js",
+      "Hash": "8B2BD11E616D329FE8EF21929B83EB7AF09FCECEFF4F6633B2148D164566990C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\main.jsx",
+      "Hash": "CC1DC05C42DB831CFEC4EE6A59227271ACB950CFF2818DBBD00D9F4567DBE868"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\wau-va-directions.spec.js",
+      "Hash": "FA08A7434CC0AD3E08409964DA2C90EB8EDB0AF7CBA90DD5555FD556256A502D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\video-review-approval.spec.js",
+      "Hash": "629E4925ED737F2171979624553966E080843FF295EB1A1D29079A15DD9DFC3B"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\va-audio.spec.js",
+      "Hash": "C665C08FB94643F16F179D04133D2726B7888E7D82CB7860C35A2B034C157EBD"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ui-zoom.spec.js",
+      "Hash": "9BCC0CD60AB5578F9904AB8F43570BB64020237616D9AF7B14B2EA5864425BE6"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ui-theme.spec.js",
+      "Hash": "BF8A689150D460D81AD7CE1FD5512C2F120A04B9FC6A0FA61E9483E2C1437E62"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-terminal.spec.js",
+      "Hash": "F799F5F8422B976FBB06B0F698983854AD64A2E579A8F3B57574E2CFC22833F6"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\tracing-latency.spec.js",
+      "Hash": "1898104282B3E261D4FF8CE6CB09DCC6E277181F26C1388DF713AAACC6AD7116"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\touch.spec.js",
+      "Hash": "3D2F97BC69678AB396D302F44C30F35F77E98E0C55A0DEB7077082C0BC2E033A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ta-za-stems.spec.js",
+      "Hash": "E7008E070DCBD2E342EB20D578F985CC7758712D13F473A62D1C557C1FCC3825"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\strict-tracing.spec.js",
+      "Hash": "A995C74F14367FA7118D028187FF54516E34DB30F389682F8D11E59D7B29D481"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\solo-duo.spec.js",
+      "Hash": "C036DCE35391B56EF8B58D0BABCB0F941992177279FAF5EC39F3FF0C144A8D5F"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sin-syin-tails.spec.js",
+      "Hash": "E489022E50898A85C806C4A0E6F5BED48002BC25D9EFC35AE0B812A8A92A4393"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\sad-dad-outlines.spec.js",
+      "Hash": "F11DCE2DA69986ED475DA361F63CD9E5F00B232E8FC51E1238D88FFFD15AD97C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\rtl-catalogue.spec.js",
+      "Hash": "152C4543713D1FFF664114AC416E249AB46E094B4A727AF49DBB581B1F722EF4"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\play-tracing.spec.js",
+      "Hash": "D1AE634FD13C9CAB4AD6C71A52C361802917A1959EF9133B2FA6CF7A2297F957"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\pilot.spec.js",
+      "Hash": "C2C3BD51AFB5650B36B0C78F538A588F7A6D5A7C7A13C5A3BCE7E318641B6C7E"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\performance-regressions.spec.js",
+      "Hash": "F3E301AE8A8F31B89FE3233366A3208858DACE775349649E77C9A8A7AD99D42F"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\outline-review.spec.js",
+      "Hash": "3CB7B05AE951B775BDE2404959062B09CF846A5C5EE607BA330D5C8EC2CCD2AA"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\outline-matches.spec.js",
+      "Hash": "E19AA8C68C877B9D60016826B4D9881E3761BF97474D88CDBFE3BA27EC483C5D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nya-tip.spec.js",
+      "Hash": "724C9D814A4B751A2815819E0DFAA669662A0727D010843C7980A73EFE2FBACE"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nun-outline.spec.js",
+      "Hash": "E50E1162EF93C75D8F93975CF21F49B71B12120544A7C15C403690CC73FB8628"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\numbered-guides.spec.js",
+      "Hash": "F4A1933AA3248F1B4D3F02CFF69E8D44BB2E866AB477B1BF3D2DD8E53605C298"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\nga-audio.spec.js",
+      "Hash": "444952F3116531B4FF1DCFB282AA84B7E30A1F9BDF8F9F009DC0AFFCDC3310C3"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-head-gap.spec.js",
+      "Hash": "010C8C979539C31E03281F39CA3BF72EF4B90C1C1714DF7254C051C2E69B8E0B"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\low-spec-performance.spec.js",
+      "Hash": "18C38FC51A8FD14D3855EFF7D1D112D89AA2A6005612E72B587C36C0F0121BFA"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\letter-batch-3.spec.js",
+      "Hash": "1D16CDDC33E1B5D2A6FB7FDE3F759D8262E26F644F8A4C091C3BCE039C2238DC"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\letter-batch-2.spec.js",
+      "Hash": "F8315690C070A4AD3344F8741D7DBAED464FB4C0C235A38665EC2199D82F43C1"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\letter-batch-1.spec.js",
+      "Hash": "3589D20F1410F63B328E1C8B9D51F6E4E3700082289B784C8E8BBE251A0EDFD4"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\kaf-ga.spec.js",
+      "Hash": "F67395B383C4468C3B2EB5ED588CF11B4272709B66031C3A2A27E7AADCFFA140"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\jim-family-straight-tops.spec.js",
+      "Hash": "5DEF45B1BAFDD4EA4158D42D0D80DCF4505E9FE3000EC7F00556861AFE5E912A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\inline-letter-audio.spec.js",
+      "Hash": "21A5C24D510E4474D2F6C6DBADA4243665E9D7813CFF568BE44FFC4EEF334756"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\game\\screenLayout.js",
+      "Hash": "780684CE83B154B007C146C9AA5BD56DBD24C0E7310469B23361C5A6994FFAAB"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\game\\scoring.js",
+      "Hash": "A6112FC479DAF28C9201F1DE9B6DC41BAB959DB12614B31D27C15BDDF098F6CD"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\game\\matchReducer.js",
+      "Hash": "A7CBC8E300C5DE0E9CAD0267F2D34FB58AF9A094F5E78D4E5ADE1AC4FD74B446"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\game\\matchConfig.js",
+      "Hash": "50C0BFE3471CED33E9548ABD92F102E9E2EB2710CEB60397D5AD2D57EDA92BC3"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\game\\matchClock.js",
+      "Hash": "6CB656F9B2CD99D2B5DD296F0F547769C3D41347FA3F075988DDBA9E7A83FB4A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\game\\bookNavigation.js",
+      "Hash": "1D2203FBC50D6F94968091FD75E4BD984C5D7BEF8607CB7E926F4CB8A0CF5A71"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\tracing.js",
+      "Hash": "B7DC6662AC43D70AD5198C80EEAEF2DB1F4C316A0D27CC15B424AD9FB4DAFFC1"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\readyCatalogue.js",
+      "Hash": "5F1A122511946BA391BF19C6B51D0AA3C07F136F57A6F6EAF8EFCC385DCB1726"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\navigation.js",
+      "Hash": "FEECEDE17D4C63D614BEBD7E3CAF2D17EF7229D273F01E98F2D1D74261E88178"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\localTest.js",
+      "Hash": "70E9F7743A8E2AD349A4D2FDC5151F4AB5AD60EB6532191F9279A555BBF02744"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\helpers\\audio.js",
+      "Hash": "88B1E72B89CB1960620243A0D264A58D9D2AC3DEEF89FBFDF2BDF379DDCE0F06"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\hamzah-ye.spec.js",
+      "Hash": "8ABE34FF035DAFEFC013B37F0D7C62D3BFF3BB777110DA4552149C44229481B2"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ha-direction.spec.js",
+      "Hash": "18A52458284E7E98A37589EF31C3FD330F9657A0EB19FFA59769AA28A9A4D2E7"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\glyph-matched.spec.js",
+      "Hash": "B1CB41A6B4522EF2B450F5F9C39060F0FE66E28B65F1323DA46E9DB89DF6789D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\gameplay-navigation.spec.js",
+      "Hash": "246C3C5A762783DBB8D542C689651A201FE7E5FDFA7E45E8975BF4BFEE54A369"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\game.spec.js",
+      "Hash": "C304BD90CB49D62D5A7B03B93100532271DB297E87D5BDE53DD1CC95EBDE5495"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ga-audio.spec.js",
+      "Hash": "4524E85890AF357D4CF178F9B44C0A85C31FA6540C52B3A058E0A45707CA0D7C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-tracing-audio.spec.js",
+      "Hash": "64B196977CDDC0EC4508466C2824EAC3E1588AAE8A8C1F0B8038AEF0EA66F80B"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fullscreen-layout.spec.js",
+      "Hash": "489C47BEACD048031D67AD5393A079A6251691A80316982D50638E18420D92F6"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\four-letter-outlines.spec.js",
+      "Hash": "2A8625CBDEC4C8057889F9600A63A411E805CC89B68720FECB4A08F5FF9F610F"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\wauVaDirections.json",
+      "Hash": "4E63A84B0D4C1DB8E28FD2A1AE60A9B85F43CF3F67895BFAA685F7FE55B9F805"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\validateContent.js",
+      "Hash": "CA4A2F5C38AF37A93599F3F917DF31ACBBF83FC453AB09DAC5A732C84AC9D2F8"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\taZaStems.json",
+      "Hash": "02FA026BFFC41A0416AA4C90A82BA7D35FE95FE8D6C1DAA6A2150F86123B87D7"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\sinSyinTails.json",
+      "Hash": "D4D5365E9587560AF067EC53A694A551A15FF11A982EF295F696A299CB3FDB4A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\sadDadOutlines.json",
+      "Hash": "59647C895840C50F5A5DA5C88735BB0CEE27A156BF4BDE1357694260945F9FC9"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\reviewCandidates.js",
+      "Hash": "EF37D4D4B2379F8B045C3FA25782AF9B4BE25149662FC5949534A305A9E48C7E"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\nyaTip.json",
+      "Hash": "BADDE53551792C11B9AB7A7B2CDCCE5F226D26E4CBDC878BF742A51A30E248C2"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\nunOutline.json",
+      "Hash": "4172D3B9CE2F539454909B740417C31C5AD316214988426AC0BE2D0F1F9D92C9"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\mimTailGap.json",
+      "Hash": "6C00F5736C83898946A303BE7E04133AD1E087EE692FF07C8848C6CE5818BB84"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\letters.json",
+      "Hash": "68FDE9A839A8F8A01179CB39F857B69799CAC8BA045FF1BCA19945C599F0319D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\jimFamilyStraightTops.json",
+      "Hash": "C309F4CB937E0CCCD64F33EAEFD021D39D943F855745B12C3B96ED009806912A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\haDirection.json",
+      "Hash": "F4D396E016C608A796957185CA4B3D5E08382535FFB5137CE76A0280A86A8D2E"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\fourLetterOutlines.json",
+      "Hash": "0F7AA455C1CFF0E8CA4705F54C6634C51E75BD9BE9C9F73EC4115D6E1A4297E8"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\faPaDirections.json",
+      "Hash": "1EAA593CA0A24A96932B3F3E60FA0A3CA32E2A6367ADC4176A96C78D45220E12"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\displayWidth.js",
+      "Hash": "4FD8E020B5933DCE2338B4A7DFD08C7424FBD4E28549802E7C256E766C93F7E7"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\content\\ainFamilyOutlines.json",
+      "Hash": "4B6E70C5A5E0D06DE1F6AB3D548E237DF9997A2991DE7E7634D072CC62442104"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fixtures\\outlineMatchHarness.jsx",
+      "Hash": "2EFC0550456AECDBEB524208FEE84CD1B899BD6CBDAAD1435C0BDC00196A872F"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fix-video.spec.js",
+      "Hash": "605C5308F0590D6531F8AEC2BA3B62B5AB62A41DB09F10F17DBE9969C7C7C5FF"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fix-video-input.spec.js",
+      "Hash": "DC3BBF04E8744C887FBFF8D845A79493A5742674FE68DE43C995D12563A93D6E"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\fa-pa-directions.spec.js",
+      "Hash": "A39DF63A013BE83F963FC8764CDC90BE30AEAFE38AB2A58D97D51A2CE6FA0AB9"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\endpoint-finish.spec.js",
+      "Hash": "0338C995C8399FF745CDB76398D654089EE534D97070850E45B254A70DB28633"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\draft-audio.spec.js",
+      "Hash": "EF13452B32682B5E4D27AF685EE320C39D7481357EFC600D01B63178625ED7D9"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\completion-delay.spec.js",
+      "Hash": "35DA76EFBFA66B2E1648BE35596D93B72C084E22283698DC5AA0EF9E455291FF"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\branding.spec.js",
+      "Hash": "2164D1D2BA1A7AB4C99EB68F6234837794FF8B0B62350B27EFD254E793A3D2B4"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\book-layout.spec.js",
+      "Hash": "E505910050905922E650B8BA457EF412F175D8A60E16A1A81BDF4AD0D46DFE65"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\audio-approval.spec.js",
+      "Hash": "FA0CDE161F094E246C61744AD764905D3AA72DA18DE4BBD2943E105C01ABBCAE"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\android-platform.spec.js",
+      "Hash": "0C94B5DA57F72777734293A9086E766055758A427673F787191B109941B1A58B"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-outlines.spec.js",
+      "Hash": "4C58F82A74B9E0C9A87130AF3A69CD9F01B91DF195AD64EC1B07B6A88F936644"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\ain-family-matches.spec.js",
+      "Hash": "D7B9F2530527B5B87113A9F84D9710D4DE4CAE2FB387D77DBDF89AFDA3EEDAA7"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\VideoModelReview.jsx",
+      "Hash": "43B6EB4E89573D33214672821395104484B5E60C56DA0D0FD89B9F0BAEB9E310"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\useViewportLayout.js",
+      "Hash": "E566D53569F0AA6847E0AC8173EF2C8E5D7EC74A4B2F47D323423623F1A118A8"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\usePageTurn.js",
+      "Hash": "74771CDFF6E9886851CBDE6D05739FB05E7ACDFAE4A6D8A61CA5D11C5CCBC4D6"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\Trophy.jsx",
+      "Hash": "E1ADDD34175AF17D47726DEBEF6874B3A358DBC5B426875FEE5F8D903A7E9CF7"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\TracingMenu.jsx",
+      "Hash": "13EDA66EE8851ED6ADF4606070F33F31737C49C2E5DBCF8BC50EA3E56E8E8796"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\TraceBoard.jsx",
+      "Hash": "3581C28744E155E25E4CDB211B0F4E729E11132D1362C3F507159E5F52F3045D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\RaceTracePane.jsx",
+      "Hash": "31ACD63051D5A7A3F89917466A1C8D76A63A3042E9339996AC394E6A6656D232"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\PlayFeedback.jsx",
+      "Hash": "F0245CCC2748E3CBBAAAD550E32C69FEE88C851798A09C8C1EE8BDCDCF26CFDB"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\Pager.jsx",
+      "Hash": "D07DC33E56C8A0033879A742807516B338A4F9EF599BCFBE830DC05D8F40CB60"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\PagedRecords.jsx",
+      "Hash": "2C2EC02B2A8BED09DA720BC3F3C47528479E656F2B276C87C50CE13F3F4AB53D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\NumberedTraceGuides.jsx",
+      "Hash": "7E92D60089CE825766FAAB2E8427FE1C2B999E61205ABAE253DF33A184DF01A4"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\MatchClockDisplay.jsx",
+      "Hash": "7346473C01D0261AC8EAD280E0F35EFDFD2BAA9EF0DC2865FD727B84C473F599"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\LetterModelGlyph.jsx",
+      "Hash": "FF50F44515DBC9BD2873DCC7ADEA1F733C64AAFD7CBEA1DB32FCD189F26434FB"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\LetterCard.jsx",
+      "Hash": "3BC56AC3EEC0CDB517346DAC74B3D8B12886A85A0E838342AD05D9BA5AC36F20"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\Icons.jsx",
+      "Hash": "ABFF57F855C1D684FE81992975CC6C3C32620BB9ABF4A9696924694916AF6835"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\GameMascot.jsx",
+      "Hash": "4F4BC38CA0D4992CCF1FD635F38144839A557958242EC2DE86511EB87175948E"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\GameIllustrations.jsx",
+      "Hash": "96A02AC512B21FC69E600DA29119FBCAFC1E8536BE9EF70C34BE630510817423"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\FitDialog.jsx",
+      "Hash": "A647BB9AB4A4AC68DD05D8B5A13551E33F7BA48ABBA4E62E091719007105AD2A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\DuoInputCheck.jsx",
+      "Hash": "29FC5E12AFFDD75C04F45C578AFCA554C65C6C514C67674AB09BC41B7D31D1C2"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\DraftModelReview.jsx",
+      "Hash": "B0AC25BFE9D9F581DD4FDFCB3B697DCB58E7A3BFBAE67E888250BD4E72A7C77A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\DotTapPad.jsx",
+      "Hash": "C3D001AF09F8D58A6226BDC6A695D0415F70BB14CE1DF52F5507D806E781868C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\CompanyBrand.jsx",
+      "Hash": "BF0777C606CF5624A4AFCED6F8F9D8310AFE1A153DC7905A3CCD74EAF1E8DD14"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\BookFrame.jsx",
+      "Hash": "C65C4751AEE822FF1108035E35E77D40ECD2562AE1BCB8E9FFE07C5B347A397B"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\AudioReviewPanel.jsx",
+      "Hash": "CE9974D827FCC906C6557025D57A463438B1DB79CB5EE6964CDBBAFA5C75A453"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\components\\AudioControls.jsx",
+      "Hash": "0D676D55C4027E626108179D8142578040C44ADA285D9882B338B4CFEB1C89F1"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\audio\\vaRecording.test.js",
+      "Hash": "83ADDD19C09C5C6B3B10665F1767C8EBDB5BFCDD94870E491AE3FEE08921686D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\audio\\ngaRecording.test.js",
+      "Hash": "2CD47080ED3DEF113694C283EB7A142C61BC815127AD462BD36B0F09FDD0F45A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\audio\\gaRecording.test.js",
+      "Hash": "46E0693E3F7DA9D0C0D7595C783BB63055FC8200640DD6C0ACD50B4F06AE3CA1"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\App.jsx",
+      "Hash": "0D604239EEF055BF1777E5B7914857CD9EECC93069F3C05A36AD064A57C9F8F4"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\audio\\audioManager.js",
+      "Hash": "FC9D6B4B9F4DC2E4A96BA552FB6641F32B3C2F78EFA1C0B8B8C5E1E10C2C88F9"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\audio\\musicManager.js",
+      "Hash": "E3E724BB56B5FBC93FE8A3EBD0ED769D1003E210258F63A2043F901ABB58988F"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\src\\audio\\musicPreferences.js",
+      "Hash": "26E73FA5CD36AE8D98B85E4EB8DCF17BF3E6126C9209839F5A87EAB384954B81"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\dm-sans-latin-400-normal-BwCSEQnW.woff",
+      "Hash": "38702875FE179437D200E7BA6F7FAB4D497FFE48117EF332029B2081751186AD"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\dm-sans-latin-400-normal-CW0RaeGs.woff2",
+      "Hash": "4AB51EB2CD7305D177187908D6397474D4520663F6C6E572FEB0A64F4FA80006"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\dm-sans-latin-500-normal-B9HHJjqV.woff2",
+      "Hash": "19BF1984956517C35C2BD35B6CDEDAC12A21D6FCD3596C614ECDFB88B648909D"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\dm-sans-latin-500-normal-Dr3UlScf.woff",
+      "Hash": "7DEB957E430B780EE3272D801AF4F9F2211B1330EC40A312A8F25309EACB4034"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\dm-sans-latin-600-normal-Aqo67rzb.woff2",
+      "Hash": "6BB2B2645BA5EEAECF56322C543FA3A75B87B927977B9C03B1DABC4205089120"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\dm-sans-latin-600-normal-BmdmIIQ2.woff",
+      "Hash": "E7351257E49400EFF05ACA30A2007289194A900860D30C30770D8B8732897564"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\dm-sans-latin-700-normal-CUSSCpQX.woff",
+      "Hash": "AF422A448AC00679A8DBB13532DB3616829C5A35B58D3EEEA5903CE17AD2E36A"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\dm-sans-latin-700-normal-DvUfVpUG.woff2",
+      "Hash": "35C5EFA0E5DAA52EE5C6500F5BE354BF751FB65C4E49E1D6806C6EB5883E8FE9"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\index-BcrOdj-j.js",
+      "Hash": "66A78E2B6293743C297CA77EEBEEFFB933B06D404611D007C3C38527310381A4"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\index-DbweFF8G.css",
+      "Hash": "0764AA3BB4839F976F3639E0ED8E8839C748D1ACD73A1FEA5DAE1715BBCC67D0"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\noto-naskh-arabic-arabic-400-normal-1AoZhAAW.woff",
+      "Hash": "3F3D49EF3202E3FE1CE4501BB194B9480B937FE4375DA826B816B1DAB0650CE2"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\noto-naskh-arabic-arabic-400-normal-U_i0HMfG.woff2",
+      "Hash": "9CC2D2E90F7B51904468558B4ED529DE8A8206497C8EDB5E33122BD077E0158C"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\noto-naskh-arabic-arabic-600-normal-DaTr67aF.woff",
+      "Hash": "E546B8BA70233B1A99388C6C9DE90E48FB7D70F98B3CF06C2BF5CAEAE5F59E51"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\noto-naskh-arabic-arabic-600-normal-G5n5bgdQ.woff2",
+      "Hash": "0CEFC9B889F4DC4FF1B958EDAE5ACE24B0E9876FEA79558013AA3BF840D8DA91"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\outfit-latin-400-normal-BGsTXAXT.woff2",
+      "Hash": "71F028FD2349990B3F8AA643ABE767E82E0F596BE407AE66F0004FF164121BDB"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\outfit-latin-400-normal-DMwTpYkH.woff",
+      "Hash": "F329DC36D2D9285431FB8322F5E951DEF9CAC4A42C1CADA679747F7C64B04916"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\outfit-latin-500-normal-ClnHRwRh.woff",
+      "Hash": "40083BE5D9C1935C562BFE9BE662D5A2798910DEEE9E8049509142549A995626"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\outfit-latin-500-normal-DKnIMDSk.woff2",
+      "Hash": "FC9BFF941DEF6D924A71632BD8A93190528872EAE6414844F3C367FF948D92FD"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\outfit-latin-600-normal-B7SfZ07L.woff2",
+      "Hash": "8CFE15C2C6DE6EF8EFFF3EEDBD52A383AC9EF23D6C23F6CD9F9B838F5F37DC36"
+    },
+    {
+      "Path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\dist\\assets\\outfit-latin-600-normal-BEfTtDA7.woff",
+      "Hash": "3D1CD1B42CB525ACDE934764B2ADEC41DDDF7932E1A965392D285EFD56F2C148"
+    }
+  ]
+}

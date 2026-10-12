@@ -1,0 +1,978 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/browser/mim-reference-approval.spec.js",
+      "--project=chromium",
+      "--project=webkit",
+      "--workers=2",
+      "--reporter=json",
+      "--output=output/verification/mim-reference-approval/test-results"
+    ],
+    "configFile": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\playwright.config.js",
+    "rootDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/mim-reference-approval/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/mim-reference-approval/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/output/verification/mim-reference-approval/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/UProject/ProjectAIVibeCode/JawiPrasekolah/tests/browser",
+        "testIgnore": [
+          "**/touch.spec.js"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "mim-reference-approval.spec.js",
+      "file": "mim-reference-approval.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "play 320: approved Mim finishes at the pointed tip and persists student credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7800,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:19:37.115Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-c0e7b205aad287f38727",
+          "file": "mim-reference-approval.spec.js",
+          "line": 17,
+          "column": 113
+        },
+        {
+          "title": "play 1024: approved Mim finishes at the pointed tip and persists student credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7038,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:19:45.034Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-d7c077b5d0999cd9f838",
+          "file": "mim-reference-approval.spec.js",
+          "line": 17,
+          "column": 113
+        },
+        {
+          "title": "guided 768: approved Mim finishes at the pointed tip and persists student credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4524,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:19:52.084Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-7cd2aefad036f344d228",
+          "file": "mim-reference-approval.spec.js",
+          "line": 17,
+          "column": 113
+        },
+        {
+          "title": "precision 1280: approved Mim finishes at the pointed tip and persists student credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:19:56.619Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-feec9e4eaeb8791e286e",
+          "file": "mim-reference-approval.spec.js",
+          "line": 17,
+          "column": 113
+        },
+        {
+          "title": "Mim proposal expires after approval",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 620,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:01.419Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-eeca57feffde401ce05f",
+          "file": "mim-reference-approval.spec.js",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "actual student card and help dialog show the exact approved Mim outline",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1612,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\nExpected: \u001b[32m\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.2 791.9 L419.4 807.8 L418.8 823.7 L416.7 836.6 L414.6 833 L407.4 814.7 L396.9 783.8 L378.6 721.7 L364.8 671.3 L358.5 645.5 L355.8 631.1 L354 614.9 L354 600.2 L356.1 585.2 L360.6 570.8 L366 559.4 L370.5 552.5 L375 546.8 L377.1 545 L377.1 544.4 L382.5 539 L383.1 539 L384.9 536.9 L392.1 531.2 L404.1 523.7 L414.9 518.3 L428.4 512.9 L440.7 509 L454.5 505.4 L472.2 501.8 L507.3 497 L552.9 493.7 L549.6 485.9 L542.1 471.2 L530.1 452.6 L526.5 448.1 L523.8 445.7 L523.8 445.1 L518.1 439.7 L511.2 434.9 L505.5 432.5 L502.5 431.9 L496.8 431.9 L489.3 432.8 L484.5 434.3 L475.5 439.7 L468.3 446.6 L468.3 447.2 L464.1 451.7 L450.9 472.1 L447.6 476 L446.7 476 L423 460.7 L412.2 454.4 L421.2 437.6 L432 420.2 L442.5 405.8 L452.4 395 L453 395 L456.3 391.4 L463.8 385.7 L474.9 379.7 L485.4 376.4 Z\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') resolved to 7 elements:\n    1) <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.…></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\nExpected: \u001b[32m\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.2 791.9 L419.4 807.8 L418.8 823.7 L416.7 836.6 L414.6 833 L407.4 814.7 L396.9 783.8 L378.6 721.7 L364.8 671.3 L358.5 645.5 L355.8 631.1 L354 614.9 L354 600.2 L356.1 585.2 L360.6 570.8 L366 559.4 L370.5 552.5 L375 546.8 L377.1 545 L377.1 544.4 L382.5 539 L383.1 539 L384.9 536.9 L392.1 531.2 L404.1 523.7 L414.9 518.3 L428.4 512.9 L440.7 509 L454.5 505.4 L472.2 501.8 L507.3 497 L552.9 493.7 L549.6 485.9 L542.1 471.2 L530.1 452.6 L526.5 448.1 L523.8 445.7 L523.8 445.1 L518.1 439.7 L511.2 434.9 L505.5 432.5 L502.5 431.9 L496.8 431.9 L489.3 432.8 L484.5 434.3 L475.5 439.7 L468.3 446.6 L468.3 447.2 L464.1 451.7 L450.9 472.1 L447.6 476 L446.7 476 L423 460.7 L412.2 454.4 L421.2 437.6 L432 420.2 L442.5 405.8 L452.4 395 L453 395 L456.3 391.4 L463.8 385.7 L474.9 379.7 L485.4 376.4 Z\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') resolved to 7 elements:\n    1) <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.…></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js:27:323",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                      "column": 323,
+                      "line": 27
+                    },
+                    "snippet": "  25 | });\n  26 | test('actual student card and help dialog show the exact approved Mim outline',async({page,browserName})=>{\n> 27 |  await page.setViewportSize({width:1024,height:768});await student(page);await menuAction(page,'Kenal huruf dan panduan');const help=page.getByRole('dialog',{name:'Kenal huruf Mim'});await expect(help.locator('svg[data-letter-id=\"mim\"]')).toHaveAttribute('data-content-version','6');await expect(help.locator('svg path')).toHaveAttribute('d',outline);await page.screenshot({path:`${root}/${browserName}-help.png`,animations:'disabled'});await help.getByRole('button',{name:'Tutup',exact:true}).click();await menuAction(page,'Isi kandungan');const card=page.locator('.letter-card svg[data-letter-id=\"mim\"]');await expect(card).toHaveAttribute('data-content-version','6');await expect(card.locator('path')).toHaveAttribute('d',outline);await page.screenshot({path:`${root}/${browserName}-cards.png`,animations:'disabled'});\n     |                                                                                                                                                                                                                                                                                                                                   ^\n  28 | });\n  29 | test('old and preview records remain historical while new approved completions earn credit',async({page})=>{\n  30 |  await student(page);await finish(page);await expect.poll(async()=>(await attempts(page)).length).toBe(1);const current=(await attempts(page))[0],older={...current,id:'mim-old',contentVersion:original.contentVersion},preview={...current,id:'mim-preview',preview:true,geometryStatus:'pendingReview'};await page.evaluate(records=>{const stored=JSON.parse(localStorage.getItem('taman-jawi.progress.v1'));stored.attempts=records;localStorage.setItem('taman-jawi.progress.v1',JSON.stringify(stored));},[older,preview]);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                        "column": 323,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\nExpected: \u001b[32m\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.2 791.9 L419.4 807.8 L418.8 823.7 L416.7 836.6 L414.6 833 L407.4 814.7 L396.9 783.8 L378.6 721.7 L364.8 671.3 L358.5 645.5 L355.8 631.1 L354 614.9 L354 600.2 L356.1 585.2 L360.6 570.8 L366 559.4 L370.5 552.5 L375 546.8 L377.1 545 L377.1 544.4 L382.5 539 L383.1 539 L384.9 536.9 L392.1 531.2 L404.1 523.7 L414.9 518.3 L428.4 512.9 L440.7 509 L454.5 505.4 L472.2 501.8 L507.3 497 L552.9 493.7 L549.6 485.9 L542.1 471.2 L530.1 452.6 L526.5 448.1 L523.8 445.7 L523.8 445.1 L518.1 439.7 L511.2 434.9 L505.5 432.5 L502.5 431.9 L496.8 431.9 L489.3 432.8 L484.5 434.3 L475.5 439.7 L468.3 446.6 L468.3 447.2 L464.1 451.7 L450.9 472.1 L447.6 476 L446.7 476 L423 460.7 L412.2 454.4 L421.2 437.6 L432 420.2 L442.5 405.8 L452.4 395 L453 395 L456.3 391.4 L463.8 385.7 L474.9 379.7 L485.4 376.4 Z\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') resolved to 7 elements:\n    1) <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.…></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\u001b[22m\n\n\n  25 | });\n  26 | test('actual student card and help dialog show the exact approved Mim outline',async({page,browserName})=>{\n> 27 |  await page.setViewportSize({width:1024,height:768});await student(page);await menuAction(page,'Kenal huruf dan panduan');const help=page.getByRole('dialog',{name:'Kenal huruf Mim'});await expect(help.locator('svg[data-letter-id=\"mim\"]')).toHaveAttribute('data-content-version','6');await expect(help.locator('svg path')).toHaveAttribute('d',outline);await page.screenshot({path:`${root}/${browserName}-help.png`,animations:'disabled'});await help.getByRole('button',{name:'Tutup',exact:true}).click();await menuAction(page,'Isi kandungan');const card=page.locator('.letter-card svg[data-letter-id=\"mim\"]');await expect(card).toHaveAttribute('data-content-version','6');await expect(card.locator('path')).toHaveAttribute('d',outline);await page.screenshot({path:`${root}/${browserName}-cards.png`,animations:'disabled'});\n     |                                                                                                                                                                                                                                                                                                                                   ^\n  28 | });\n  29 | test('old and preview records remain historical while new approved completions earn credit',async({page})=>{\n  30 |  await student(page);await finish(page);await expect.poll(async()=>(await attempts(page)).length).toBe(1);const current=(await attempts(page))[0],older={...current,id:'mim-old',contentVersion:original.contentVersion},preview={...current,id:'mim-preview',preview:true,geometryStatus:'pendingReview'};await page.evaluate(records=>{const stored=JSON.parse(localStorage.getItem('taman-jawi.progress.v1'));stored.attempts=records;localStorage.setItem('taman-jawi.progress.v1',JSON.stringify(stored));},[older,preview]);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js:27:323"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:02.049Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\mim-reference-approval\\test-results\\mim-reference-approval-act-b03c3--exact-approved-Mim-outline-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\mim-reference-approval\\test-results\\mim-reference-approval-act-b03c3--exact-approved-Mim-outline-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                    "column": 323,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-826a27ce987f203e4f4c",
+          "file": "mim-reference-approval.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "old and preview records remain historical while new approved completions earn credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11136,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:04.835Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-f4a3f530aaa701b64354",
+          "file": "mim-reference-approval.spec.js",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "native emulated touch completes approved Mim",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3182,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:16.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-48c4a1a694a7eeb804af",
+          "file": "mim-reference-approval.spec.js",
+          "line": 33,
+          "column": 35
+        },
+        {
+          "title": "native emulated pen completes approved Mim",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3124,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:19.276Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-3908af73c057abe30ad2",
+          "file": "mim-reference-approval.spec.js",
+          "line": 33,
+          "column": 35
+        },
+        {
+          "title": "solo: exact approved Mim scores and lanes complete independently",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:22.410Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-76d759eda5c41f5cdffd",
+          "file": "mim-reference-approval.spec.js",
+          "line": 38,
+          "column": 34
+        },
+        {
+          "title": "duo: exact approved Mim scores and lanes complete independently",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8886,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:28.628Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-38338ecb7423661779e9",
+          "file": "mim-reference-approval.spec.js",
+          "line": 38,
+          "column": 34
+        },
+        {
+          "title": "play 320: approved Mim finishes at the pointed tip and persists student credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:19:37.084Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-7305f907326f85b35a3a",
+          "file": "mim-reference-approval.spec.js",
+          "line": 17,
+          "column": 113
+        },
+        {
+          "title": "play 1024: approved Mim finishes at the pointed tip and persists student credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12707,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:19:47.565Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-f07a43efc67e3cc789ca",
+          "file": "mim-reference-approval.spec.js",
+          "line": 17,
+          "column": 113
+        },
+        {
+          "title": "guided 768: approved Mim finishes at the pointed tip and persists student credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9788,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:00.282Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-0bc430334aad405f99ce",
+          "file": "mim-reference-approval.spec.js",
+          "line": 17,
+          "column": 113
+        },
+        {
+          "title": "precision 1280: approved Mim finishes at the pointed tip and persists student credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11190,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:10.080Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-56a7119392a61717d4d6",
+          "file": "mim-reference-approval.spec.js",
+          "line": 17,
+          "column": 113
+        },
+        {
+          "title": "Mim proposal expires after approval",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1887,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:21.281Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-069f350b1ed6797d74f9",
+          "file": "mim-reference-approval.spec.js",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "actual student card and help dialog show the exact approved Mim outline",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 4079,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\nExpected: \u001b[32m\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.2 791.9 L419.4 807.8 L418.8 823.7 L416.7 836.6 L414.6 833 L407.4 814.7 L396.9 783.8 L378.6 721.7 L364.8 671.3 L358.5 645.5 L355.8 631.1 L354 614.9 L354 600.2 L356.1 585.2 L360.6 570.8 L366 559.4 L370.5 552.5 L375 546.8 L377.1 545 L377.1 544.4 L382.5 539 L383.1 539 L384.9 536.9 L392.1 531.2 L404.1 523.7 L414.9 518.3 L428.4 512.9 L440.7 509 L454.5 505.4 L472.2 501.8 L507.3 497 L552.9 493.7 L549.6 485.9 L542.1 471.2 L530.1 452.6 L526.5 448.1 L523.8 445.7 L523.8 445.1 L518.1 439.7 L511.2 434.9 L505.5 432.5 L502.5 431.9 L496.8 431.9 L489.3 432.8 L484.5 434.3 L475.5 439.7 L468.3 446.6 L468.3 447.2 L464.1 451.7 L450.9 472.1 L447.6 476 L446.7 476 L423 460.7 L412.2 454.4 L421.2 437.6 L432 420.2 L442.5 405.8 L452.4 395 L453 395 L456.3 391.4 L463.8 385.7 L474.9 379.7 L485.4 376.4 Z\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') resolved to 7 elements:\n    1) <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.…></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\nExpected: \u001b[32m\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.2 791.9 L419.4 807.8 L418.8 823.7 L416.7 836.6 L414.6 833 L407.4 814.7 L396.9 783.8 L378.6 721.7 L364.8 671.3 L358.5 645.5 L355.8 631.1 L354 614.9 L354 600.2 L356.1 585.2 L360.6 570.8 L366 559.4 L370.5 552.5 L375 546.8 L377.1 545 L377.1 544.4 L382.5 539 L383.1 539 L384.9 536.9 L392.1 531.2 L404.1 523.7 L414.9 518.3 L428.4 512.9 L440.7 509 L454.5 505.4 L472.2 501.8 L507.3 497 L552.9 493.7 L549.6 485.9 L542.1 471.2 L530.1 452.6 L526.5 448.1 L523.8 445.7 L523.8 445.1 L518.1 439.7 L511.2 434.9 L505.5 432.5 L502.5 431.9 L496.8 431.9 L489.3 432.8 L484.5 434.3 L475.5 439.7 L468.3 446.6 L468.3 447.2 L464.1 451.7 L450.9 472.1 L447.6 476 L446.7 476 L423 460.7 L412.2 454.4 L421.2 437.6 L432 420.2 L442.5 405.8 L452.4 395 L453 395 L456.3 391.4 L463.8 385.7 L474.9 379.7 L485.4 376.4 Z\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') resolved to 7 elements:\n    1) <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.…></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\u001b[22m\n\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js:27:323",
+                    "location": {
+                      "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                      "column": 323,
+                      "line": 27
+                    },
+                    "snippet": "  25 | });\n  26 | test('actual student card and help dialog show the exact approved Mim outline',async({page,browserName})=>{\n> 27 |  await page.setViewportSize({width:1024,height:768});await student(page);await menuAction(page,'Kenal huruf dan panduan');const help=page.getByRole('dialog',{name:'Kenal huruf Mim'});await expect(help.locator('svg[data-letter-id=\"mim\"]')).toHaveAttribute('data-content-version','6');await expect(help.locator('svg path')).toHaveAttribute('d',outline);await page.screenshot({path:`${root}/${browserName}-help.png`,animations:'disabled'});await help.getByRole('button',{name:'Tutup',exact:true}).click();await menuAction(page,'Isi kandungan');const card=page.locator('.letter-card svg[data-letter-id=\"mim\"]');await expect(card).toHaveAttribute('data-content-version','6');await expect(card.locator('path')).toHaveAttribute('d',outline);await page.screenshot({path:`${root}/${browserName}-cards.png`,animations:'disabled'});\n     |                                                                                                                                                                                                                                                                                                                                   ^\n  28 | });\n  29 | test('old and preview records remain historical while new approved completions earn credit',async({page})=>{\n  30 |  await student(page);await finish(page);await expect.poll(async()=>(await attempts(page)).length).toBe(1);const current=(await attempts(page))[0],older={...current,id:'mim-old',contentVersion:original.contentVersion},preview={...current,id:'mim-preview',preview:true,geometryStatus:'pendingReview'};await page.evaluate(records=>{const stored=JSON.parse(localStorage.getItem('taman-jawi.progress.v1'));stored.attempts=records;localStorage.setItem('taman-jawi.progress.v1',JSON.stringify(stored));},[older,preview]);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                        "column": 323,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\nExpected: \u001b[32m\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.2 791.9 L419.4 807.8 L418.8 823.7 L416.7 836.6 L414.6 833 L407.4 814.7 L396.9 783.8 L378.6 721.7 L364.8 671.3 L358.5 645.5 L355.8 631.1 L354 614.9 L354 600.2 L356.1 585.2 L360.6 570.8 L366 559.4 L370.5 552.5 L375 546.8 L377.1 545 L377.1 544.4 L382.5 539 L383.1 539 L384.9 536.9 L392.1 531.2 L404.1 523.7 L414.9 518.3 L428.4 512.9 L440.7 509 L454.5 505.4 L472.2 501.8 L507.3 497 L552.9 493.7 L549.6 485.9 L542.1 471.2 L530.1 452.6 L526.5 448.1 L523.8 445.7 L523.8 445.1 L518.1 439.7 L511.2 434.9 L505.5 432.5 L502.5 431.9 L496.8 431.9 L489.3 432.8 L484.5 434.3 L475.5 439.7 L468.3 446.6 L468.3 447.2 L464.1 451.7 L450.9 472.1 L447.6 476 L446.7 476 L423 460.7 L412.2 454.4 L421.2 437.6 L432 420.2 L442.5 405.8 L452.4 395 L453 395 L456.3 391.4 L463.8 385.7 L474.9 379.7 L485.4 376.4 Z\"\u001b[39m\nError: strict mode violation: getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') resolved to 7 elements:\n    1) <path fill=\"currentColor\" fill-rule=\"evenodd\" d=\"M496.5 374.9 L510.6 374.9 L519.9 376.4 L531.6 380.3 L543.3 386.3 L559.5 398.3 L573.6 412.1 L573.6 412.7 L576 414.8 L576 415.4 L583.8 424.1 L592.5 435.8 L606.6 457.7 L618.9 480.2 L618.9 551 L519.9 551 L483.9 552.5 L453.9 555.2 L429.6 558.8 L405 564.8 L393.6 569 L386.1 572.6 L380.7 577.7 L373.5 587.6 L369 598.4 L367.2 608.6 L367.2 622.1 L367.8 627.5 L370.5 641.9 L377.7 667.1 L386.7 693.5 L390 704.9 L397.2 720.5 L405.6 742.1 L411 758.6 L414.3 770.9 L418.…></path> aka locator('.letter-model-glyph > path')\n    2) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" stroke-linecap=\"round\" d=\"M43 94l-3 12m34-12 4 12\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path').first()\n    3) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M31 72q-13 4-16-5\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(2)')\n    4) <path fill=\"none\" stroke=\"#346f45\" stroke-width=\"5\" d=\"M87 72q17-5 15-22\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > .mascot-hand > path')\n    5) <path fill=\"#a7d879\" stroke=\"#346f45\" stroke-width=\"3\" d=\"M27 88Q8 16 88 17Q106 88 60 100Q39 105 27 88Z\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(4)')\n    6) <path fill=\"none\" stroke=\"#6ca557\" stroke-width=\"3\" stroke-linecap=\"round\" d=\"M43 93Q54 84 62 76M70 34L74 29\"></path> aka locator('path:nth-child(5)')\n    7) <path fill=\"none\" stroke=\"#263d32\" stroke-width=\"3\" d=\"M51 72Q60 85 69 72\" stroke-linecap=\"round\"></path> aka locator('.game-mascot.mascot-leaf > .mascot-character > path:nth-child(9)')\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Kenal huruf Mim' }).locator('svg path')\u001b[22m\n\n\n  25 | });\n  26 | test('actual student card and help dialog show the exact approved Mim outline',async({page,browserName})=>{\n> 27 |  await page.setViewportSize({width:1024,height:768});await student(page);await menuAction(page,'Kenal huruf dan panduan');const help=page.getByRole('dialog',{name:'Kenal huruf Mim'});await expect(help.locator('svg[data-letter-id=\"mim\"]')).toHaveAttribute('data-content-version','6');await expect(help.locator('svg path')).toHaveAttribute('d',outline);await page.screenshot({path:`${root}/${browserName}-help.png`,animations:'disabled'});await help.getByRole('button',{name:'Tutup',exact:true}).click();await menuAction(page,'Isi kandungan');const card=page.locator('.letter-card svg[data-letter-id=\"mim\"]');await expect(card).toHaveAttribute('data-content-version','6');await expect(card.locator('path')).toHaveAttribute('d',outline);await page.screenshot({path:`${root}/${browserName}-cards.png`,animations:'disabled'});\n     |                                                                                                                                                                                                                                                                                                                                   ^\n  28 | });\n  29 | test('old and preview records remain historical while new approved completions earn credit',async({page})=>{\n  30 |  await student(page);await finish(page);await expect.poll(async()=>(await attempts(page)).length).toBe(1);const current=(await attempts(page))[0],older={...current,id:'mim-old',contentVersion:original.contentVersion},preview={...current,id:'mim-preview',preview:true,geometryStatus:'pendingReview'};await page.evaluate(records=>{const stored=JSON.parse(localStorage.getItem('taman-jawi.progress.v1'));stored.attempts=records;localStorage.setItem('taman-jawi.progress.v1',JSON.stringify(stored));},[older,preview]);\n    at D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js:27:323"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:23.183Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\mim-reference-approval\\test-results\\mim-reference-approval-act-b03c3--exact-approved-Mim-outline-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\output\\verification\\mim-reference-approval\\test-results\\mim-reference-approval-act-b03c3--exact-approved-Mim-outline-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                    "column": 323,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-0fa38796c09d412b7b14",
+          "file": "mim-reference-approval.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "old and preview records remain historical while new approved completions earn credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10768,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:28.194Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-d7de7dbce78f21ff7a36",
+          "file": "mim-reference-approval.spec.js",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "native emulated touch completes approved Mim",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native input emulation requires Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                    "line": 34,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 187,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:39.053Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native input emulation requires Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                        "line": 34,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-a55cba4cb3ec1cea9cdc",
+          "file": "mim-reference-approval.spec.js",
+          "line": 33,
+          "column": 35
+        },
+        {
+          "title": "native emulated pen completes approved Mim",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Native input emulation requires Chromium CDP.",
+                  "location": {
+                    "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                    "line": 34,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 157,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:39.251Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Native input emulation requires Chromium CDP.",
+                      "location": {
+                        "file": "D:\\UProject\\ProjectAIVibeCode\\JawiPrasekolah\\tests\\browser\\mim-reference-approval.spec.js",
+                        "line": 34,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-3ee975f91b2cf487e16a",
+          "file": "mim-reference-approval.spec.js",
+          "line": 33,
+          "column": 35
+        },
+        {
+          "title": "solo: exact approved Mim scores and lanes complete independently",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8029,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:39.418Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-8f70607e9672195ca4be",
+          "file": "mim-reference-approval.spec.js",
+          "line": 38,
+          "column": 34
+        },
+        {
+          "title": "duo: exact approved Mim scores and lanes complete independently",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10783,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-12T04:20:47.456Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1f0a90a3fddeb03ac866-797d17a0476fb373c55e",
+          "file": "mim-reference-approval.spec.js",
+          "line": 38,
+          "column": 34
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-12T04:19:36.574Z",
+    "duration": 81785.375,
+    "expected": 18,
+    "skipped": 2,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

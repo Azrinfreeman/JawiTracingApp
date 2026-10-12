@@ -1,0 +1,187 @@
+[
+  {
+    "id": "tho",
+    "glyph": "ط",
+    "labelMs": "Ta (ط)",
+    "contentVersion": 6,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 6,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-07",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-ta-and-za-original-curves-2026-10-07",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 405.2 517.8 C 411.8 513.3 420.4 512.6 427.2 507.7 C 471.4 476.3 510.4 427.1 571.3 432 C 612.9 435.2 697.2 495.2 660.6 543.1 C 605.9 614.7 450.1 621.4 368.9 606.4 C 337.4 600.7 322.9 573.4 310 575",
+        "M 387.6 194.4 C 339 267.1 403.7 442.3 401.4 523.3 C 400.8 545.2 365.9 579.5 357.9 603.6"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 405.2 517.8 C 411.8 513.3 420.4 512.6 427.2 507.7 C 471.4 476.3 510.4 427.1 571.3 432 C 612.9 435.2 697.2 495.2 660.6 543.1 C 605.9 614.7 450.1 621.4 368.9 606.4 C 337.4 600.7 322.9 573.4 310 575",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 387.6 194.4 C 339 267.1 403.7 442.3 401.4 523.3 C 400.8 545.2 365.9 579.5 357.9 603.6",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        }
+      ],
+      "dotTargets": [],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/tho-name-v2.mp3",
+        "transcriptMs": "Ta",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/15_tor.mp3",
+          "sha256": "781fbf7ed4c2edc5044b002a974c83f45f353361e51ca4604401329c572fe81e",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  },
+  {
+    "id": "za",
+    "glyph": "ظ",
+    "labelMs": "Za",
+    "contentVersion": 6,
+    "viewBox": [
+      0,
+      0,
+      1000,
+      1000
+    ],
+    "pilot": false,
+    "additional": false,
+    "geometry": {
+      "status": "approved",
+      "review": {
+        "revision": 6,
+        "reviewer": "Project owner (Codex user; name not supplied)",
+        "date": "2026-10-07",
+        "reference": "docs/CONTENT_APPROVALS.md#approval-of-ta-and-za-original-curves-2026-10-07",
+        "kind": "projectOwner"
+      },
+      "displayPaths": [
+        "M 405.2 517.8 C 411.8 513.3 420.4 512.6 427.2 507.7 C 471.4 476.3 510.4 427.1 571.3 432 C 612.9 435.2 697.2 495.2 660.6 543.1 C 605.9 614.7 450.1 621.4 368.9 606.4 C 337.4 600.7 322.9 573.4 310 575",
+        "M 387.6 194.4 C 339 267.1 403.7 442.3 401.4 523.3 C 400.8 545.2 365.9 579.5 357.9 603.6"
+      ],
+      "strokes": [
+        {
+          "id": "stroke-1",
+          "path": "M 405.2 517.8 C 411.8 513.3 420.4 512.6 427.2 507.7 C 471.4 476.3 510.4 427.1 571.3 432 C 612.9 435.2 697.2 495.2 660.6 543.1 C 605.9 614.7 450.1 621.4 368.9 606.4 C 337.4 600.7 322.9 573.4 310 575",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        },
+        {
+          "id": "stroke-2",
+          "path": "M 387.6 194.4 C 339 267.1 403.7 442.3 401.4 523.3 C 400.8 545.2 365.9 579.5 357.9 603.6",
+          "width": 44,
+          "penLiftPolicy": "continuous",
+          "checkpoints": [
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "displayWidth": 58
+        }
+      ],
+      "dotTargets": [
+        {
+          "id": "dot-1",
+          "x": 552,
+          "y": 297,
+          "visibleRadius": 19,
+          "hitRadius": 48,
+          "maxTravel": 30,
+          "policy": "tap"
+        }
+      ],
+      "validSequences": [
+        [
+          "stroke-1",
+          "stroke-2",
+          "dot-1"
+        ]
+      ]
+    },
+    "audio": {
+      "name": {
+        "src": "/audio/letters/alphabet/za-name-v2.mp3",
+        "transcriptMs": "Za",
+        "version": 2,
+        "status": "approved",
+        "review": {
+          "revision": 2,
+          "reviewer": "Project owner (Codex user; name not supplied)",
+          "date": "2026-10-02",
+          "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+          "kind": "projectOwner"
+        },
+        "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+        "origin": {
+          "kind": "userProvided",
+          "source": "voices/alphabet/16_zor.mp3",
+          "sha256": "e5af1f6c308fde0b3347bc1685181251295a8cde7e29ea15a18568d03f6057d3",
+          "importedAt": "2026-10-02T02:39:02.335Z",
+          "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+        }
+      },
+      "pronunciationExamples": []
+    }
+  }
+]

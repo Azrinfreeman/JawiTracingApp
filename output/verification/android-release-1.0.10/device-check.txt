@@ -1,0 +1,4 @@
+12 October 2026, Asia/Kuala_Lumpur
+Command: installed Android SDK platform-tools/adb.exe devices -l
+Result: command succeeded; "List of devices attached" contained no device rows.
+No installation, native runtime or update/progress-retention test was performed.

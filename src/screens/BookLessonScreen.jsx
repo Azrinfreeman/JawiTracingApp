@@ -10,7 +10,7 @@ import { traceReducer, initialTraceState } from '../tracing/traceReducer.js';
 import { ResultScreen } from './ResultScreen.jsx';
 import { FitDialog } from '../components/FitDialog.jsx';
 import { LetterModelGlyph } from '../components/LetterModelGlyph.jsx';
-import { MenuButton, StageSupport, TracingMenu } from '../components/TracingMenu.jsx';
+import { StageNavigation, StageSupport, TracingMenu } from '../components/TracingMenu.jsx';
 import { PlayFeedback } from '../components/PlayFeedback.jsx';
 import { voiceMessage } from '../audio/audioManager.js';
 
@@ -22,9 +22,12 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
   const isPlay = lesson.mode === 'play' && lesson.activity !== 'copy';
   const hasDots = letter.geometry.dotTargets.length > 0;
   const [help, setHelp] = useState(false);
+  const [restart, setRestart] = useState(false);
+  const leaving = useRef(false);
   const closeHelp = useCallback(() => setHelp(false), []);
   const closeNotice = useCallback(() => setNotice(''), []);
   const closeMenu = useCallback(() => setMenu(false), []);
+  const closeRestart = useCallback(() => setRestart(false), []);
   useEffect(() => audio.subscribeResult(event => {
     if (event.src === letter.audio.name.src && event.reason !== 'obsolete') setVoiceNote(voiceMessage(event));
   }), [audio, letter]);
@@ -52,9 +55,11 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
     setResult(onCopy(bounded, lesson)); return true;
   }
   useImperativeHandle(ref, () => ({
-    busy: () => help || Boolean(notice) || settling || lesson.demo || board.current?.isBusy(),
+    busy: () => help || restart || Boolean(notice) || settling || lesson.demo || board.current?.isBusy(),
     hasUnsavedCopy: () => lesson.activity === 'copy' && !reported.current && board.current?.exportInk().some(line => line.length > 1),
     save: () => saveCopy(true), cancel: () => board.current?.cancel(),
+    prepareLeave: () => { board.current?.cancel(); audio.stop(); dispatch({ type: 'DEMO_END' }); },
+    leave: () => { leaving.current = true; board.current?.cancel(); audio.stop(); dispatch({ type: 'DEMO_END' }); },
   }));
   async function announce() {
     const played = await audio.play(letter.audio.name, { preview });
@@ -62,7 +67,7 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
     setVoiceNote(voiceMessage(played));
   }
   function finish(snapshot) {
-    if (reported.current) return;
+    if (reported.current || leaving.current) return;
     reported.current = true; setResult(onComplete(snapshot, lesson)); setVoiceNote(''); announce();
   }
   function retry() {
@@ -70,15 +75,21 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
     audio.stop(); reported.current = false; setResult(null); setNotice(''); setVoiceNote(''); setMenu(false); dispatch({ type: 'RETRY' });
   }
   function openMenu() { board.current?.cancel(); dispatch({ type: 'DEMO_END' }); setMenu(true); }
+  function demonstrate() { board.current?.cancel(); audio.stop(); dispatch({ type: 'DEMO' }); }
+  function requestRetry() {
+    board.current?.cancel(); audio.stop(); dispatch({ type: 'DEMO_END' }); setMenu(false);
+    if (!result && board.current?.hasWork()) setRestart(true); else retry();
+  }
+  function restartNow() { setRestart(false); retry(); }
   const act = action => () => { setMenu(false); action(); };
   const copyMode = lesson.activity === 'copy';
   const label = copyMode ? 'SALIN' : initialMode === 'play' ? 'JEJAK' : 'LATIHAN';
   return <div className={`book-spread ${result ? 'book-completed' : ''} ${isPlay ? 'book-play' : ''}`}>
     <section className="book-writing lesson-workspace stage-workspace" aria-label="Aktiviti menulis">
-      <TraceBoard ref={board} fitted stageOnly dotAssistance={assist && isPlay} letter={letter} mode={lesson.mode} activity={lesson.activity} attempt={lesson.attempt} demo={lesson.demo} adjustment={adjustment} enabled={!disabled && !settling && !result && !help && !menu} onDemoEnd={() => dispatch({ type: 'DEMO_END' })} onComplete={finish} onDiagnostic={onDiagnostic}
+      <TraceBoard ref={board} fitted stageOnly dotAssistance={assist && isPlay} letter={letter} mode={lesson.mode} activity={lesson.activity} attempt={lesson.attempt} demo={lesson.demo} adjustment={adjustment} enabled={!disabled && !settling && !result && !help && !menu && !restart} onDemoEnd={() => dispatch({ type: 'DEMO_END' })} onComplete={finish} onDiagnostic={onDiagnostic}
         renderSupport={support => <StageSupport {...support} assistance={assist && isPlay}/>}/>
-      <MenuButton disabled={disabled || settling} onClick={openMenu}/>
-      <div className="stage-badge book-letter-heading" data-long-name={letter.labelMs.length > 7}>
+      <StageNavigation disabled={disabled || settling} onBack={nav.onContents} onMenu={openMenu} onDemo={!copyMode ? demonstrate : undefined} demoLabel={isPlay ? 'Tunjuk cara' : 'Lihat cara'} demoDisabled={lesson.demo || Boolean(result)}/>
+      <div className="stage-badge book-letter-heading" data-stage-control data-long-name={letter.labelMs.length > 7}>
         <div className="stage-letter-title"><div className="play-letter-name"><span className="eyebrow">{pageNumber} · {label}</span><h1>{letter.labelMs}</h1></div>{savedComplete && <span className="book-sticker earned" aria-label="Siap dijejak"><Icon name="flower" size={22}/></span>}</div>
         <AudioControls key={letter.id} compact label="Dengar" ariaLabel={`Dengar nama ${letter.labelMs}`} disabled={disabled || settling || Boolean(result) || help || menu || lesson.demo} onAction={() => board.current?.cancel()} letter={letter} audio={audio} preview={preview}/>
       </div>
@@ -92,23 +103,28 @@ const BookActivity = forwardRef(function BookActivity({ letter, audio, sound, pr
             <AudioControls key={letter.id} compact disabled={!choices} letter={letter} audio={audio} preview={preview} label="Dengar" onResult={played => { if (played.reason !== 'obsolete') setVoiceNote(voiceMessage(played)); }}/>
             <ResultScreen embedded actionsOnly letter={letter} result={result} choicesDisabled={!choices} onAgain={retry} onCopy={() => onActivity(true)}/>
             <button className="button button-primary" aria-label="Huruf seterusnya" disabled={!choices || disabled} onClick={nav.onNext}>Huruf seterusnya</button>
+            <button className="button button-outline control-navigation" disabled={!choices || disabled} onClick={nav.onContents}><Icon name="back"/>Pilih huruf lain</button>
           </div>
         </div>
       </div>}
     </section>
-    {menu && <TracingMenu sound={sound} onClose={closeMenu}>
-      {!result && !copyMode && <button className="button button-soft" disabled={disabled || settling || lesson.demo} onClick={act(() => { if (!board.current?.isBusy()) dispatch({ type: 'DEMO' }); })}><Icon name="play" size={18}/>{isPlay ? 'Tunjuk cara' : 'Lihat cara'}</button>}
-      {isPlay && !result && <button className="button button-soft" disabled={disabled || settling || lesson.demo} onClick={act(() => board.current?.demonstrateSection())}>Tunjuk bahagian ini</button>}
-      <button className="button button-outline" disabled={disabled || settling} onClick={retry}><Icon name="retry" size={18}/>Cuba lagi</button>
-      <button className="button button-outline" aria-label="Kenal huruf dan panduan" disabled={disabled || settling} onClick={act(() => { board.current?.cancel(); audio.stop(); dispatch({ type: 'DEMO_END' }); setHelp(true); })}>Panduan</button>
-      <button className="button button-primary" aria-label="Huruf seterusnya" disabled={nav.disabled} onClick={act(nav.onNext)}>Huruf seterusnya</button>
-      <button className="button button-outline" aria-label="Huruf sebelumnya" disabled={nav.disabled || nav.index === 0} onClick={act(nav.onPrevious)}>Huruf sebelumnya</button>
-      <button className="button button-outline" aria-label="Isi kandungan" disabled={nav.disabled} onClick={act(nav.onContents)}>Isi kandungan</button>
-      {isPlay && hasDots && !result && <button className="button button-soft" aria-pressed={assist} onClick={act(() => setAssist(value => !value))}>{assist ? 'Sembunyi bantuan titik' : 'Bantuan titik'}</button>}
-      <button className="button button-outline" aria-label="Ruang guru" disabled={nav.disabled} onClick={act(nav.onTeacher)}>Ruang guru</button>
+    {menu && <TracingMenu sound={sound} onClose={closeMenu} resumeLabel={copyMode ? 'Sambung menulis' : 'Sambung jejak'}>
+      {!result && !copyMode && <button className="button button-soft control-help" disabled={disabled || settling || lesson.demo} onClick={act(demonstrate)}><Icon name="play" size={18}/>{isPlay ? 'Tunjuk cara' : 'Lihat cara'}</button>}
+      {isPlay && !result && <button className="button button-soft control-help" disabled={disabled || settling || lesson.demo} onClick={act(() => board.current?.demonstrateSection())}><Icon name="play" size={18}/>Tunjuk bahagian ini</button>}
+      <button className="button button-outline control-retry" disabled={disabled || settling} onClick={requestRetry}><Icon name="retry" size={18}/>Cuba lagi</button>
+      <button className="button button-outline control-help" aria-label="Kenal huruf dan panduan" disabled={disabled || settling} onClick={act(() => { board.current?.cancel(); audio.stop(); dispatch({ type: 'DEMO_END' }); setHelp(true); })}>Panduan</button>
+      <button data-menu-section="letters" className="button button-outline control-navigation" aria-label="Huruf seterusnya" disabled={nav.disabled} onClick={act(nav.onNext)}><Icon name="arrow"/>Huruf seterusnya</button>
+      <button data-menu-section="letters" className="button button-outline control-navigation" aria-label="Huruf sebelumnya" disabled={nav.disabled || nav.index === 0} onClick={act(nav.onPrevious)}><Icon name="back"/>Huruf sebelumnya</button>
+      <button data-menu-section="letters" className="button button-outline control-navigation" aria-label="Isi kandungan" disabled={nav.disabled} onClick={act(nav.onContents)}><Icon name="back"/>Isi kandungan</button>
+      {isPlay && hasDots && !result && <button className="button button-soft control-help" aria-pressed={assist} onClick={act(() => setAssist(value => !value))}>{assist ? 'Sembunyi bantuan titik' : 'Bantuan titik'}</button>}
+      <button data-menu-section="settings" className="button button-outline" aria-label="Ruang guru" disabled={nav.disabled} onClick={act(nav.onTeacher)}><Icon name="teacher"/>Ruang guru</button>
     </TracingMenu>}
+    {restart && <FitDialog title={copyMode ? 'Tulisan belum disimpan' : 'Mula semula?'} onClose={closeRestart}><div className="letter-help"><p>{copyMode ? 'Simpan tulisan untuk guru sebelum mula semula?' : 'Jejak yang sedang dibuat akan bermula semula.'}</p>
+      {copyMode && <button className="button button-primary" onClick={() => { if (saveCopy()) restartNow(); }}>Simpan</button>}
+      <button className="button button-primary" onClick={closeRestart}>Sambung</button><button className="button button-outline control-retry" onClick={restartNow}>Mula semula</button>
+    </div></FitDialog>}
     {notice && <FitDialog title="Jom tulis dahulu" onClose={closeNotice}><div className="letter-help"><p role="status">{notice}</p></div></FitDialog>}
-    {help && <FitDialog title={`Kenal huruf ${letter.labelMs}`} onClose={closeHelp}><div className="letter-help"><span className="jawi" dir="rtl" lang="ms-Arab"><LetterModelGlyph letter={letter}/></span><p>Ikut bulatan nombor. Angkat jari antara bahagian.</p><p>Belum siap? Boleh selak. Huruf yang belum siap bermula semula apabila dibuka.</p><GameMascot pose="rest"/><p>Perlahan pun boleh. Kita cuba bersama!</p></div></FitDialog>}
+    {help && <FitDialog title={`Kenal huruf ${letter.labelMs}`} onClose={closeHelp}><div className="letter-help"><span className="jawi" dir="rtl" lang="ms-Arab"><LetterModelGlyph letter={letter}/></span><p>Ikut bulatan nombor. Angkat jari antara bahagian.</p><p>Jika keluar sebelum siap, jejak huruf ini bermula semula.</p><GameMascot pose="rest"/><p>Perlahan pun boleh. Kita cuba bersama!</p></div></FitDialog>}
   </div>;
 });
 
@@ -119,15 +135,17 @@ export function BookLessonScreen({ letter, sequence, progress, navigationRef, au
   const pageTurn = usePageTurn();
   const completed = completedBookLetters(pages, progress, initialMode, preview);
   function perform(action, flip, direction) {
-    activity.current?.cancel(); audio.stop();
+    activity.current?.leave(); audio.stop();
     if (flip) pageTurn.start(action, direction); else action();
   }
-  function request(action, flip = false, direction = 'next') {
-    if (pageTurn.pending() || copyExit || activity.current?.busy()) return;
+  function request(action, flip = false, direction = 'next', leaving = false) {
+    if (pageTurn.pending() || copyExit) return;
+    if (leaving) activity.current?.prepareLeave();
+    else if (activity.current?.busy()) return;
     if (activity.current?.hasUnsavedCopy()) { setCopyExit({ action, flip, direction }); return; }
     perform(action, flip, direction);
   }
-  useImperativeHandle(navigationRef, () => ({ leave: action => request(action) }));
+  useImperativeHandle(navigationRef, () => ({ leave: action => request(action, false, 'next', true) }));
   useEffect(() => {
     const frame = requestAnimationFrame(() => { const heading = main.current?.querySelector('h1'); if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); } });
     return () => cancelAnimationFrame(frame);
@@ -142,7 +160,9 @@ export function BookLessonScreen({ letter, sequence, progress, navigationRef, au
       if (event.shiftKey && document.activeElement === buttons[0]) { event.preventDefault(); buttons.at(-1).focus(); }
       else if (!event.shiftKey && document.activeElement === buttons.at(-1)) { event.preventDefault(); buttons[0].focus(); }
     };
-    document.addEventListener('keydown', key); return () => { document.removeEventListener('keydown', key); if (previous?.isConnected) previous.focus({ preventScroll: true }); };
+    const back = event => { event.stopImmediatePropagation(); setCopyExit(null); };
+    document.addEventListener('keydown', key); window.addEventListener('taman-jawi:back', back, true);
+    return () => { document.removeEventListener('keydown', key); window.removeEventListener('taman-jawi:back', back, true); if (previous?.isConnected) previous.focus({ preventScroll: true }); };
   }, [copyExit]);
   function next() {
     const destination = bookDestination(index, 1, pages.length);
@@ -152,7 +172,7 @@ export function BookLessonScreen({ letter, sequence, progress, navigationRef, au
     if (end) request(() => setEnd(false), true, 'previous');
     else { const destination = bookDestination(index, -1, pages.length); if (destination !== null) request(() => onNavigate(pages[destination]), true, 'previous'); }
   }
-  const nav = { index, disabled: Boolean(pageTurn.turn || copyExit), onNext: next, onPrevious: previous, onContents: () => request(onBack), onTeacher: () => request(onTeacher) };
+  const nav = { index, disabled: Boolean(pageTurn.turn || copyExit), onNext: next, onPrevious: previous, onContents: () => request(onBack, false, 'next', true), onTeacher: () => request(onTeacher) };
   const navigation = <BookNavigation index={index} total={pages.length} end={end} disabled={nav.disabled} onNext={next} onPrevious={previous} onContents={nav.onContents}/>;
   return <main ref={main} className="lesson-page book-lesson">
     <div className="book-topline"><button className="text-button" onClick={() => request(onBack)}><Icon name="back" size={18}/>Taman huruf</button><span>Buku Jawi Saya</span><span className="book-mode-label lesson-pilot">{preview ? 'Pratonton dewasa' : initialMode === 'play' ? 'Jejak Ceria' : 'Pilihan guru'}</span></div>

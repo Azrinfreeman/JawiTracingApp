@@ -1,5 +1,19 @@
 import { distance, finitePoint, pointAt, projectLocal, projectSegment, arcSegments, movementSamples } from './geometry.js';
 
+const referenceTurns = new WeakMap();
+function tightTurnsFor(ref) {
+  let turns = referenceTurns.get(ref);
+  if (!turns) {
+    turns = Object.freeze(ref.vertices.filter(p=>{
+      const a=pointAt(ref,Math.max(0,p.s-3)),b=pointAt(ref,Math.min(ref.length,p.s+3));
+      const incoming={x:p.x-a.x,y:p.y-a.y},outgoing={x:b.x-p.x,y:b.y-p.y};
+      return incoming.x*outgoing.x+incoming.y*outgoing.y < -.5*Math.hypot(incoming.x,incoming.y)*Math.hypot(outgoing.x,outgoing.y);
+    }));
+    referenceTurns.set(ref, turns);
+  }
+  return turns;
+}
+
 /** Assisted route progress. Raw movement validates it; display fill is never raw ink. */
 export function createPlayMatcher(letter, references, profile, { compact = false } = {}) {
   const strokes = new Map(letter.geometry.strokes.map(s => [s.id, s]));
@@ -7,11 +21,7 @@ export function createPlayMatcher(letter, references, profile, { compact = false
   const progress = Object.fromEntries([...strokes.keys()].map(id => [id, 0]));
   const sourceProgress = { ...progress };
   const turnAllowance = { ...progress };
-  const tightTurns = Object.fromEntries(Object.entries(references).map(([id,ref])=>[id,ref.vertices.filter(p=>{
-    const a=pointAt(ref,Math.max(0,p.s-3)),b=pointAt(ref,Math.min(ref.length,p.s+3));
-    const incoming={x:p.x-a.x,y:p.y-a.y},outgoing={x:b.x-p.x,y:b.y-p.y};
-    return incoming.x*outgoing.x+incoming.y*outgoing.y < -.5*Math.hypot(incoming.x,incoming.y)*Math.hypot(outgoing.x,outgoing.y);
-  })]));
+  const tightTurns = Object.fromEntries(Object.entries(references).map(([id,ref])=>[id,tightTurnsFor(ref)]));
   const acceptedTravel = { ...progress }, completionMethods = {};
   let sequences = letter.geometry.validSequences.map(s => [...s]);
   let completed = [], active = null, gestureId = 0, bufferSamples = 0, exhausted = false;
@@ -110,7 +120,17 @@ export function createPlayMatcher(letter, references, profile, { compact = false
     if (!selected) return false;
     const resuming = active.paused;
     active.id = selected.id; active.kind = 'stroke'; active.last = p;
-    active.projectionS = Math.max(sourceProgress[selected.id], selected.projectionS);
+    // An off-centre trace can project farther than its accepted coverage. When
+    // the child returns to the displayed frontier, allow the remaining route
+    // to be traced again rather than pinning projection to an old endpoint.
+    // Re-entry itself earns no credit, and contacts ahead keep their high-water
+    // mark so repeated acquisition cannot bridge missing route intervals.
+    // Require a distinct return to the frontier. An ambiguous contact (for
+    // example a wiggle at a tiny loop's centre) cannot reset projection history.
+    const returnedToFrontier = selected.projectionS <= progress[selected.id] + .01 &&
+      selected.delta + profile.projectionTie < distance(p, pointAt(references[selected.id], sourceProgress[selected.id]));
+    active.projectionS = returnedToFrontier
+      ? progress[selected.id] : Math.max(sourceProgress[selected.id], selected.projectionS);
     active.paused = false; active.reason = null;
     if (resuming) metrics.resumeCount++;
     phase = 'tracing'; feedback = 'Ikut titik ini.';

@@ -1,5 +1,89 @@
 # Numbered writing guides
 
+Owner-approved, 12 October 2026: **Ya 3** has a smaller head at 1, with one
+continuous body through **1 Mula → 2 Ikut → 3 Henti**, followed by separate
+taps **4 Titik → 5 Titik akhir**. The shorter head/bowl cue boundary is
+**0.4349** of route length; guides and demonstrations use the actual route.
+The approved lower bowl, both dots and global guide rules are unchanged.
+The owner replied “approve d” directly to the pictured student approval
+question. These exact guides and shape are active for students/scored matches;
+the candidate expires. See [activation verification](YA_SMALLER_HEAD_APPROVAL.md)
+and the historical [candidate review](YA_SMALLER_HEAD_REVIEW.md).
+
+Owner-approved, 12 October 2026: **Mim 6** traces from the open upper-left tip,
+around the hooked head, left along the flatter return and continuously down the
+slender tail to its pointed terminal. **1 Mula → 2 Ikut → 3 Siap** are landmarks
+on that one movement, with no separate tap or lift requirement. The head/tail
+cue boundary is measured at **0.60348** of route length. Detached badges lead
+to real route anchors, with extra frame space below the tail to keep the final
+badge clear of the instruction bubble. Global guide and matcher rules are
+unchanged. The owner replied “approved” directly to the pictured student
+approval question. These exact guides and shape are active in lessons and
+scored Solo/Duo; proposal cards expire. See
+[activation verification](MIM_REFERENCE_APPROVAL.md) and the historical
+[candidate verification](MIM_REFERENCE_REVIEW.md).
+
+Owner-approved, 12 October 2026: **Wau 4 / Va 5** have smaller head loops but
+retain one continuous left-first body through **1 Mula → 2 Ikut → 3 Siap/Henti**.
+Va's unchanged separate dot is **4 Titik akhir**. The head-to-tail instruction
+boundary is recomputed at 0.55275 (Wau) / 0.55274 (Va) of the shorter path;
+number anchors and demonstrations use that real route. There is no lift between
+head and tail. Nearby start/midpoint badges are detached beside their labels with
+leaders to the true path anchors, avoiding overlap at the smaller neck. The
+global guide thresholds remain unchanged. The owner replied “proceed” directly
+to the pictured student approval question; these exact models are active in
+student lessons and scored Solo/Duo, and proposal cards expire. See
+[activation verification](WAU_VA_SMALLER_HEAD_APPROVAL.md) and the historical
+[candidate verification](WAU_VA_SMALLER_HEAD_REVIEW.md).
+
+Owner-approved, 12 October 2026: **Ta (ط) 9 / Za (ظ) 9** use the
+photo-adapted compact lower loop and pointed tail as 1–3, then use **4 Mula** at the top of a straight vertical pillar,
+**5 Ikut** halfway down and **6 Siap** (Ta) / **6 Henti** (Za) at the base.
+Za's unchanged separate dot follows as **7 Titik akhir**. The pillar is one
+continuous downward drag, with a lift before it. Student tracing and
+demonstrations share that path; guide thresholds and matcher rules are unchanged.
+The owner replied “proceed” after the pictured approval review. These exact
+shapes are active in student lessons and scored Solo/Duo; candidate cards expire.
+See [activation verification](TA_ZA_REFERENCE_APPROVAL.md) and the preserved
+[candidate review](TA_ZA_PHOTO_REFERENCE_REVIEW.md). The outline
+guides use detached labels pointing to the actual routes. Revision 8's
+[rounded-loop review](TA_ZA_ROUNDED_LOOP_REVIEW.md) and revision 7's
+[preceding review](TA_ZA_STRAIGHT_PILLAR_REVIEW.md) remain historical.
+
+Owner-approved, 12 October 2026: **Sin 3 / Syin 4** trace continuously from
+the right teeth, around the compact bowl and up to the tapered left terminal at
+the reference level. 1 Mula, 2 Ikut and 3 Siap (Sin) / Henti (Syin) point to this
+new route; Syin's unchanged separate dots follow as 4, 5 and 6. No guide or matcher
+rule changed. The owner replied “proceed” to the exact pictured student approval
+question; these shapes are active in lessons and scored challenges, and their
+candidate cards expire. See [activation](SIN_SYIN_REFERENCE_APPROVAL.md) and the
+preserved [candidate review](SIN_SYIN_REFERENCE_REVIEW.md).
+
+Owner-approved, 11 October 2026: **Ra 4 and Zai 5 shorter heads** use the
+existing route-length numbering rule on their approximately 354-unit bodies.
+1 Mula points to the new cut cap, 2 Ikut follows the retained lower curve and
+3 stays at the original tail (Siap for Ra, Henti for Zai). Zai's unchanged dot
+is a separate 4 Titik akhir action. The owner replied “yes approved”; these exact
+shapes are now active in student lessons and scored challenges, and their
+candidate cards expire. See [activation](RA_ZAI_SHORTER_HEAD_APPROVAL.md) and the
+preserved [review](RA_ZAI_SHORTER_HEAD_REVIEW.md).
+
+Owner-approved 11 October 2026: **Jim 5, Ca 4, Ha (ح) 4 and Kha 4**
+show a straight horizontal top with 1 Mula on the left, 2 Ikut in the middle,
+and 3 Henti on the right. Lift before the retained bowl, which starts at 4.
+Numbered dots remain last. The existing route-length rule already gives these
+333.3-unit heads three guides; no global guide/matcher change was needed.
+These exact reviewed revisions now appear in normal student lessons and scored
+challenges. See [approval verification](JIM_CA_HA_KHA_STRAIGHT_TOP_APPROVAL.md)
+and the preserved [preceding review](JIM_CA_HA_KHA_STRAIGHT_TOP_REVIEW.md).
+
+Approved Wau 3 / Va 4 routes (7 October 2026): student cues start with
+“Mula di 1. Ke kiri, kemudian naik mengikut gelung.”, followed by
+“Teruskan ekor ke kiri.” Va's numbered dot follows its continuous body.
+The owner approved these exact revisions. See
+[approval verification](WAU_VA_DIRECTION_APPROVAL.md) and the preserved
+[preceding review](WAU_VA_DIRECTION_REVIEW.md).
+
 Added on 2 October 2026 following the user's request for numbered cues showing
 where to start, follow, stop and finish a letter.
 

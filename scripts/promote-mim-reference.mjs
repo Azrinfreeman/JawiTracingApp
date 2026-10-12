@@ -1,0 +1,13 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {mimReferenceReviewCandidates} from '../src/content/reviewCandidates.js';
+import {validateLetter} from '../src/content/validateContent.js';
+const root='output/verification/mim-reference-approval',reviewed=JSON.parse(readFileSync('output/verification/mim-reference/verification.json','utf8'));
+const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
+for(const[p,h]of Object.entries(reviewed.inputs))if(p.startsWith('src/')&&hash(p)!==h)throw Error(`Reviewed source changed: ${p}`);
+const file='src/content/letters.json',raw=readFileSync(file,'utf8'),letters=JSON.parse(raw),proposals=mimReferenceReviewCandidates(letters);
+if(proposals.length!==1||proposals[0].candidate.contentVersion!==6)throw Error('Expected reviewed Mim 6');
+const next=letters.map(letter=>{if(letter.id!=='mim')return letter;const candidate=structuredClone(proposals[0].candidate);candidate.geometry.status='approved';candidate.geometry.review={revision:6,reviewer:'Project owner (Codex user; name not supplied)',date:'2026-10-12',reference:'docs/CONTENT_APPROVALS.md#approval-of-mim-reference-shape-2026-10-12',kind:'projectOwner'};if(!validateLetter(candidate).ready)throw Error('Invalid approved Mim');return candidate;});
+mkdirSync(root,{recursive:true});writeFileSync(`${root}/before-catalogue.json`,raw,{flag:'wx'});writeFileSync(`${root}/reviewed-proposals.json`,JSON.stringify(proposals,null,2)+'\n',{flag:'wx'});
+const newline=raw.includes('\r\n')?'\r\n':'\n';writeFileSync(file,(JSON.stringify(next,null,2)+'\n').replace(/\n/g,newline));
+console.log('Activated the exact reviewed Mim 6 with matching owner approval.');

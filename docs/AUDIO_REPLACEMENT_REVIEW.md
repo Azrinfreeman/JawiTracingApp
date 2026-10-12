@@ -1,6 +1,11 @@
 # Supplied alphabet recordings — review list
 
-Current: **7 October 2026**. **30 supplied recordings and 6 retained synthetic
+**Approved, 11 October 2026:** Ta marbutah audio 2 reuses the unchanged reviewed
+Ta bytes to say only “Ta”. The owner's explicit approval activates it throughout
+the game; geometry revision 4 and saved tracing credit stay unchanged. See
+[approval and checks](TA_MARBUTAH_TA_VOICE_APPROVAL.md).
+
+Current: **11 October 2026**. **31 supplied-recording mappings and 5 retained synthetic
 recordings; all 36 active recordings approved for the game**. Ye has been
 removed from the active catalogue; its old recording and approval remain
 historical. Va now uses the complete first
@@ -15,6 +20,9 @@ under the owner's conditional fallback authorisation; see
 [Ga method and checks](GA_AUDIO_REVIEW.md). The 36 other entries and all previous
 recording files remained unchanged by the Nga correction. At that preceding
 stage all 37 lessons were ready; the current catalogue has 36 after removing Ye.
+
+Ta-marbutah audio 2 supersedes its synthetic revision-1 entry in the historical
+table below. The old file remains preserved; the active spoken name is **Ta**.
 
 Va audio 2 supersedes the retained synthetic Va-1 entry in the historical table
 below. Its source and every prior released recording remain intact.

@@ -1,13 +1,16 @@
 import {describe,it,expect} from 'vitest';
 import currentLetters from '../../src/content/letters.json';
 import hamzahOriginal from '../fixtures/hamzah-tail-original.json';
+import straightTopOriginals from '../fixtures/jim-family-straight-top-originals.json';
 import originals from '../fixtures/video-review-originals.json';
+import taMarbutaVoiceOriginal from '../fixtures/ta-marbuta-voice-original.json';
+import approvedMim5 from '../fixtures/mim-reference-original.json';
 import * as factories from '../../src/content/reviewCandidates.js';
 import {validateLetter} from '../../src/content/validateContent.js';
 import {eligibleBook,completedBookLetters} from '../../src/game/bookNavigation.js';
 import {eligiblePool} from '../../src/game/matchConfig.js';
-// This record verifies the October 6 promotion; Hamzah 5 has separate checks.
-const letters=currentLetters.map(letter=>letter.id==='hamzah'?hamzahOriginal:letter);
+// This record verifies October 6; later Hamzah/Jim geometry and Ta-marbutah audio have separate checks.
+const letters=currentLetters.map(letter=>letter.id==='mim'?approvedMim5:letter.id==='hamzah'?hamzahOriginal:letter.id==='ta-marbuta'?taMarbutaVoiceOriginal:letter.id==='jim'?straightTopOriginals.find(original=>original.id==='jim'):letter);
 const before=letters.map(letter=>originals.find(old=>old.id===letter.id)||letter);
 const proposals=factories.videoReviewCandidates(before);
 describe('Owner approval of all current Semakan video proposals',()=>{

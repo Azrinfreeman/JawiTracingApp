@@ -1,12 +1,15 @@
 import {describe,it,expect} from 'vitest';
-import letters from '../../src/content/letters.json';
+import currentLetters from '../../src/content/letters.json';
+import approvedOriginalCurves from '../fixtures/ta-za-straight-pillar-originals.json';
 import originals from '../fixtures/ta-za-originals.json';
 import * as factories from '../../src/content/reviewCandidates.js';
 import {validateLetter} from '../../src/content/validateContent.js';
 import {eligibleBook,completedBookLetters} from '../../src/game/bookNavigation.js';
 import {eligiblePool} from '../../src/game/matchConfig.js';
+// Preserve the October-7 revision-6 approval contract after the later photo approval.
+const letters=currentLetters.map(letter=>approvedOriginalCurves.find(original=>original.id===letter.id)||letter);
 const base=letters.map(letter=>originals.find(original=>original.id===letter.id)||letter),proposals=factories.taZaStemReviewCandidates(base);
-describe('Ta and Za owner approval',()=>{
+describe('Ta and Za original-curves owner approval (historical revision 6)',()=>{
  it('promotes exact reviewed models with matching approval and clears their proposals',()=>{
   expect(proposals.map(p=>[p.candidate.id,p.candidate.contentVersion])).toEqual([['tho',6],['za',6]]);
   for(const {candidate}of proposals){

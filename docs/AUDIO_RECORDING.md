@@ -1,7 +1,14 @@
 # Recording and pronunciation guide
 
-36 letter-name recordings are connected: 30 supplied recordings (27 from
-voices/alphabet and the owner's Ga/Nga/Va recordings; 21 MP3 and 9 WAV) and 6 retained
+Approved (11 October 2026): Ta-marbutah audio revision 2 now says only “Ta”,
+using the exact reviewed copy of the supplied Ta recording. The owner explicitly
+approved this mapping; it is active in lessons, adult preview, teacher playback
+and Solo/Duo. All 36 lessons remain ready; the draft audition button has expired.
+See [the approval and verification](TA_MARBUTAH_TA_VOICE_APPROVAL.md).
+
+36 letter-name recordings are connected: 31 supplied-recording mappings (28 from
+voices/alphabet, including Ta reused for Ta marbutah, and the owner's Ga/Nga/Va
+recordings; 22 MP3 and 9 WAV) and 5 retained
 synthetic MP3s. Ye was removed from the game on 7 October; its old MP3
 and historical approval remain preserved. The owner approved the original mixed set on 2 October 2026
 and authorised the Ga fallback on 6 October and supplied the Nga correction on

@@ -1,5 +1,6 @@
 import {describe,it,expect} from 'vitest';
-import letters from '../../src/content/letters.json';
+import currentLetters from '../../src/content/letters.json';
+import referenceOriginals from '../fixtures/sin-syin-reference-originals.json';
 import originals from '../fixtures/sin-syin-tail-originals.json';
 import {sinSyinTailReviewCandidates,videoReviewCandidates} from '../../src/content/reviewCandidates.js';
 import {validateLetter} from '../../src/content/validateContent.js';
@@ -8,6 +9,8 @@ import {eligiblePool} from '../../src/game/matchConfig.js';
 import {samplePath,parsePath} from '../../scripts/lib/glyph-geometry.mjs';
 import {makeReference} from '../../src/tracing/geometry.js';
 import {numberedGuidePlan} from '../../src/tracing/numberedGuides.js';
+// Verify the October-6 tail approval; the later reference shapes have separate checks.
+const letters=currentLetters.map(letter=>referenceOriginals.find(original=>original.id===letter.id)||letter);
 const reviewBase=letters.map(letter=>originals.find(original=>original.id===letter.id)||letter);
 const candidates=sinSyinTailReviewCandidates(reviewBase);
 describe('Sin and Syin modest tail lift',()=>{

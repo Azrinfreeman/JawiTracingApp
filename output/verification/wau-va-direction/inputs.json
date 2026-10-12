@@ -1,0 +1,244 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Kuala_Lumpur",
+  "node": "v24.19.0",
+  "server": "http://127.0.0.1:5173/",
+  "runtime": "Existing Vite source server; installed Chromium and WebKit via Playwright; controlled audio lifecycle",
+  "catalogueByteExact": true,
+  "activeCount": 36,
+  "readyCount": 36,
+  "candidates": [
+    {
+      "id": "wau",
+      "revision": 3,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "ready": false
+      }
+    },
+    {
+      "id": "va",
+      "revision": 4,
+      "validation": {
+        "valid": true,
+        "errors": [],
+        "ready": false
+      }
+    }
+  ],
+  "audio": [
+    {
+      "id": "wau",
+      "metadata": {
+        "name": {
+          "src": "/audio/letters/alphabet/wau-name-v2.wav",
+          "transcriptMs": "Wau",
+          "version": 2,
+          "status": "approved",
+          "review": {
+            "revision": 2,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-02",
+            "reference": "docs/AUDIO_APPROVALS.md#approval-2026-10-02",
+            "kind": "projectOwner"
+          },
+          "permission": "User authorised using the supplied voices/alphabet files in Codex; pronunciation review remains pending.",
+          "origin": {
+            "kind": "userProvided",
+            "source": "voices/alphabet/24_wau.wav",
+            "sha256": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298",
+            "importedAt": "2026-10-02T02:39:02.335Z",
+            "reference": "docs/AUDIO_REPLACEMENT_REVIEW.md"
+          }
+        },
+        "pronunciationExamples": []
+      },
+      "hash": "d3c3b16fd5353e16d459017788e63d6216ae6dc39855694bc79f4a006c269298"
+    },
+    {
+      "id": "va",
+      "metadata": {
+        "name": {
+          "src": "/audio/letters/alphabet/va-name-v2.wav",
+          "transcriptMs": "Va",
+          "version": 2,
+          "status": "approved",
+          "review": {
+            "revision": 2,
+            "reviewer": "Project owner (Codex user; name not supplied)",
+            "date": "2026-10-07",
+            "reference": "docs/AUDIO_APPROVALS.md#selection-of-supplied-va-recording-2026-10-07",
+            "kind": "projectOwner"
+          },
+          "permission": "Project owner requested comparison with their Va recording and direct use if the guided match cannot be achieved, then supplied Recording (6).m4a in Codex on 2026-10-07. The complete first utterance is used as this authorised fallback.",
+          "origin": {
+            "kind": "userProvided",
+            "reference": "User attachment Recording (6).m4a; docs/VA_AUDIO_CORRECTION.md",
+            "speaker": "User-supplied speaker; identity not assessed",
+            "sha256": "50e2f45b12c63b746462ce73f5d398efb0e1d0900cf9f6f33ee936a716e50a53",
+            "recordingSha256": "fb20da4d695f0f1f6928a645f9d1278abe38fa06ed58b74642e9508a9cfc0446",
+            "processing": {
+              "sourceStartSeconds": 0.7,
+              "sourceEndSeconds": 1.8,
+              "speechRegionStartApprox": 0.86,
+              "speechRegionEndApprox": 1.7,
+              "fadeMs": 0,
+              "method": "Complete first supplied Va utterance with silence before onset and after decay. Only surrounding silence/repeated second utterance omitted. Decoded 24-kHz mono PCM retained byte-for-byte; no fades, gain, filtering, pitch or timing changes."
+            }
+          }
+        },
+        "pronunciationExamples": []
+      },
+      "hash": "fb20da4d695f0f1f6928a645f9d1278abe38fa06ed58b74642e9508a9cfc0446"
+    }
+  ],
+  "checks": [
+    {
+      "command": "npm test (workspace TEMP/TMP)",
+      "scope": "Full unit suite",
+      "passed": 254,
+      "files": 40
+    },
+    {
+      "command": "npm run build",
+      "scope": "Content validation and production build",
+      "result": "passed"
+    },
+    {
+      "command": "npx playwright test tests/browser/wau-va-directions.spec.js --project=chromium --project=webkit --workers=2",
+      "scope": "Both models, 3 modes, comparison, demos and raster comparison",
+      "passed": 16,
+      "failed": 2,
+      "reason": "Va demonstration selector included both body path and dot circle"
+    },
+    {
+      "command": "same command with --grep 'va demonstration|native emulated'",
+      "scope": "Fixed Va demo assertion and added native CDP touch/pen cases",
+      "passed": 6,
+      "skipped": 4,
+      "reason": "CDP input is Chromium only"
+    }
+  ],
+  "distinctBrowserPasses": 22,
+  "rasterChangedPixels": {
+    "wau": 4,
+    "va": 6
+  },
+  "rasterMaxInkDifferencePercent": 0.0142,
+  "inspectedCaptures": [
+    "chromium-wau-play-start.png",
+    "chromium-wau-left-partial.png",
+    "chromium-va-play-comparison.png",
+    "webkit-va-guided-start.png"
+  ],
+  "limitations": [
+    "Physical tablet/smartboard input untested",
+    "Pending exact-revision owner review",
+    "No new APK"
+  ],
+  "sha256": {
+    "src/App.jsx": "ee5fd156af1abda3216e1643fde09436b3606d026867b9de465a4f72f09859da",
+    "src/audio/audioManager.js": "fc9d6b4b9f4dc2e4a96ba552fb6641f32b3c2f78efa1c0b8b8c5e1e10c2c88f9",
+    "src/audio/musicManager.js": "e3e724bb56b5fbc93fe8a3ebd0ed769d1003e210258f63a2043f901abb58988f",
+    "src/audio/musicPreferences.js": "26e73fa5cd36ae8d98b85e4eb8dcf17bf3e6126c9209839f5a87eab384954b81",
+    "src/components/AudioControls.jsx": "0d676d55c4027e626108179d8142578040c44ada285d9882b338b4cfeb1c89f1",
+    "src/components/AudioReviewPanel.jsx": "ce9974d827fcc906c6557025d57a463438b1db79cb5ee6964cdbbafa5c75a453",
+    "src/components/BookFrame.jsx": "c65c4751aee822ff1108035e35e77d40ecd2562ae1bcb8e9ffe07c5b347a397b",
+    "src/components/CompanyBrand.jsx": "bf0777c606cf5624a4afced6f8f9d8310afe1a153dc7905a3ccd74eaf1e8dd14",
+    "src/components/DotTapPad.jsx": "c3d001af09f8d58a6226bdc6a695d0415f70bb14ce1df52f5507d806e781868c",
+    "src/components/DraftModelReview.jsx": "b0ac25bfe9d9f581dd4fdfcb3b697dcb58e7a3bfbae67e888250bd4e72a7c77a",
+    "src/components/DuoInputCheck.jsx": "29fc5e12affdd75c04f45c578afca554c65c6c514c67674ab09bc41b7d31d1c2",
+    "src/components/FitDialog.jsx": "a647bb9ab4a4ac68dd05d8b5a13551e33f7ba48abba4e62e091719007105ad2a",
+    "src/components/GameIllustrations.jsx": "96a02ac512b21fc69e600da29119fbcafc1e8536be9ef70c34be630510817423",
+    "src/components/GameMascot.jsx": "4f4bc38ca0d4992ccf1fd635f38144839a557958242ec2de86511eb87175948e",
+    "src/components/Icons.jsx": "abff57f855c1d684fe81992975cc6c3c32620bb9abf4a9696924694916af6835",
+    "src/components/LetterCard.jsx": "3bc56ac3eec0cdb517346dac74b3d8b12886a85a0e838342ad05d9ba5ac36f20",
+    "src/components/LetterModelGlyph.jsx": "ff50f44515dbc9bd2873dcc7adea1f733c64aafd7cbea1db32fcd189f26434fb",
+    "src/components/MatchClockDisplay.jsx": "7346473c01d0261ac8ead280e0f35efdfd2baa9ef0dc2865fd727b84c473f599",
+    "src/components/NumberedTraceGuides.jsx": "7e92d60089ce825766faab2e8427fe1c2b999e61205abae253df33a184df01a4",
+    "src/components/PagedRecords.jsx": "2c2ec02b2a8bed09da720bc3f3c47528479e656f2b276c87c50ce13f3f4ab53d",
+    "src/components/Pager.jsx": "d07dc33e56c8a0033879a742807516b338a4f9ef599bcfbe830dc05d8f40cb60",
+    "src/components/PlayFeedback.jsx": "f0245ccc2748e3cbbaaad550e32c69fee88c851798a09c8c1ee8bdcdcf26cfdb",
+    "src/components/RaceTracePane.jsx": "31acd63051d5a7a3f89917466a1c8d76a63a3042e9339996ac394e6a6656d232",
+    "src/components/TraceBoard.jsx": "d71c2e7924b0ee6086cb723ff3d7add148e9caffda1fe6f2351d214c89138ad4",
+    "src/components/TracingMenu.jsx": "13eda66ee8851ed6adf4606070f33f31737c49c2e5dbcf8bc50ea3e56e8e8796",
+    "src/components/Trophy.jsx": "e1addd34175af17d47726debef6874b3a358dbc5b426875fee5f8d903a7e9cf7",
+    "src/components/usePageTurn.js": "74771cdff6e9886851cbde6d05739fb05e7acdfae4a6d8a61ca5d11c5ccbc4d6",
+    "src/components/useViewportLayout.js": "e566d53569f0aa6847e0ac8173ef2c8e5d7ec74a4b2f47d323423623f1a118a8",
+    "src/components/VideoModelReview.jsx": "df785de0908e5925a1e9791de33f185a0466f3f5bbec49d6c365061e2d1d1dd9",
+    "src/content/ainFamilyOutlines.json": "4b6e70c5a5e0d06de1f6ab3d548e237df9997a2991de7e7634d072cc62442104",
+    "src/content/displayWidth.js": "4fd8e020b5933dce2338b4a7dfd08c7424fbd4e28549802e7c256e766c93f7e7",
+    "src/content/faPaDirections.json": "1eaa593ca0a24a96932b3f3e60fa0a3ca32e2a6367adc4176a96c78d45220e12",
+    "src/content/fourLetterOutlines.json": "0f7aa455c1cff0e8ca4705f54c6634c51e75bd9be9c9f73ec4115d6e1a4297e8",
+    "src/content/haDirection.json": "f4d396e016c608a796957185ca4b3d5e08382535ffb5137ce76a0280a86a8d2e",
+    "src/content/letters.json": "9bc5256261ce3ed5b703c2fc3fe4c86562be8ace11a7edf6ccfca2f9ae04e7d6",
+    "src/content/mimTailGap.json": "6c00f5736c83898946a303be7e04133ad1e087ee692ff07c8848c6ce5818bb84",
+    "src/content/nunOutline.json": "4172d3b9ce2f539454909b740417c31c5ad316214988426ac0be2d0f1f9d92c9",
+    "src/content/nyaTip.json": "badde53551792c11b9ab7a7b2cdcce5f226d26e4cbdc878bf742a51a30e248c2",
+    "src/content/reviewCandidates.js": "cee47e6e84270100461b81d64c031d6636d09bfe3f44027121a8d6af03b0f219",
+    "src/content/sadDadOutlines.json": "59647c895840c50f5a5da5c88735bb0cee27a156bf4bde1357694260945f9fc9",
+    "src/content/sinSyinTails.json": "d4d5365e9587560af067ec53a694a551a15ff11a982ef295f696a299cb3fdb4a",
+    "src/content/taZaStems.json": "02fa026bffc41a0416aa4c90a82ba7d35fe95fe8d6c1daa6a2150f86123b87d7",
+    "src/content/validateContent.js": "ca4a2f5c38af37a93599f3f917df31acbbf83fc453ab09dac5a732c84ac9d2f8",
+    "src/content/wauVaDirections.json": "4e63a84b0d4c1db8e28fd2a1ae60a9b85f43cf3f67895bfaa685f7fe55b9f805",
+    "src/game/bookNavigation.js": "1d2203fbc50d6f94968091fd75e4bd984c5d7bef8607cb7e926f4cb8a0cf5a71",
+    "src/game/matchClock.js": "6cb656f9b2cd99d2b5dd296f0f547769c3d41347fa3f075988ddba9e7a83fb4a",
+    "src/game/matchConfig.js": "50c0bfe3471ced33e9548abd92f102e9e2eb2710ceb60397d5ad2d57eda92bc3",
+    "src/game/matchReducer.js": "a7cbc8e300c5de0e9cad0267f2d34fb58af9a094f5e78d4e5ade1ac4fd74b446",
+    "src/game/scoring.js": "a6112fc479daf28c9201f1de9b6dc41bab959db12614b31d27c15bddf098f6cd",
+    "src/game/screenLayout.js": "780684ce83b154b007c146c9aa5bd56dbd24c0e7310469b23361c5a6994ffaab",
+    "src/main.jsx": "cc1dc05c42db831cfec4ee6a59227271acb950cff2818dbbd00d9f4567dbe868",
+    "src/platform/download.js": "8b2bd11e616d329fe8ef21929b83eb7af09fceceff4f6633b2148d164566990c",
+    "src/platform/fullscreen.js": "03db04e966399c7dc1a062af968c430f725712fdf496e54a2bdbebd3da0bf2cd",
+    "src/platform/presentation.js": "9d4c4cd3e733673fe4cdfa0d2846241b45013fc210a96e73a1d86a27897b79af",
+    "src/screens/BookLessonScreen.jsx": "24b5da0d8a6fee06a0d99d16e33c268eabb7bc80ea487682d10ae1c1cf7ae0da",
+    "src/screens/LessonScreen.jsx": "0e1349c488e2a5e059cd53f540b2083c643f06e7d48778e3aa766b2ecacfcf67",
+    "src/screens/LetterGarden.jsx": "97c44112a3de638e148c3485e97a79926d68b00afbbe04b1609ffedf000269fe",
+    "src/screens/MatchResultScreen.jsx": "fa9d868410974b2feda3174ffc6218b06759d64b10bd86048a70fecc61d95b22",
+    "src/screens/MatchScreen.jsx": "bb9f11f507828814666ebd910445961ab4786779dbbd2fa4735716e18b92ce07",
+    "src/screens/MatchSetupScreen.jsx": "45f45d726cce5bd7cec6fe9fd48bef9f9ed93730d9951e5e8c160c631d521aea",
+    "src/screens/ResultScreen.jsx": "c78d4c5b85723a3f8582d70d51f7debf2bceada25193f2716a25c86aae5cd011",
+    "src/screens/SplashScreen.jsx": "8b59c2c129c5bb0adba2341cfb254dc4acad502160f2c8c7e1bfed0eb13e8cf4",
+    "src/screens/TeacherScreen.jsx": "84a75827fc4655334054ab8ef0e9379d4d92be89f64cbcb8f542d3f906b3a0e8",
+    "src/screens/WelcomeScreen.jsx": "e7bc79c76215d4362bc72ea3d465ce9cc7b2956237044eaa7c577a1cf1be5001",
+    "src/storage/matchStore.js": "b47f220ad0b2f1beb14e72bc244a9a4994910969bfd4332c5a6e5b4c21d96dc3",
+    "src/storage/progressStore.js": "b316a45fa966b68027ca653917626f0a6e0f40110e4bbb7c0282c53f87ef6b53",
+    "src/styles/app.css": "cb4bbbde36520eee668b54a443f6e31244970216d79f8c5c16fdac4f95297c4d",
+    "src/styles/book.css": "44a16f8712b3c2f3b163ae6ee43e5a718d6380bd6ca78320841cc6dc706e8d6a",
+    "src/styles/fullscreen.css": "7315782537fefc0f3d629577d15533e207090bfb6a2be76decadd9af7e7d7758",
+    "src/styles/letter-model.css": "da2b2463c117c93de8f4a69c55f1e0a27b24dbedbb9e0334475f60d8e2a00d7d",
+    "src/styles/match.css": "79df242187178956e586d1fa743a1d7da5b983e8bb493728e999a4b113f79f55",
+    "src/styles/playground.css": "22f2d04460e3d82d5f90f04503f9c7670629ec3d5a1ad09b620a1de79277cab8",
+    "src/styles/presentation.css": "217a5ee411f582c17671db8ad04d822e5675db4cfc2d60f2904e4b3896f63320",
+    "src/styles/theme.css": "a10769b2244372eac205aa86b0189f6ce9d9ec7b155c83ed5457159cb99e760d",
+    "src/tracing/contactClick.js": "e6143dbd1af696455bb9474c9f7945e50eaa886a86a3b9ee9a38e508047d61eb",
+    "src/tracing/dotMatcher.js": "84e3742623c7ec46ce9fb1dc585a55db3d6fc0955063bb7e0322da4b26ac1999",
+    "src/tracing/geometry.js": "f8b0f600007001fb656199ad1583c2db71e5c17c0e2938a0ceb611ca1078dce5",
+    "src/tracing/inkPath.js": "a43203c384dc05b5cb9a043ef96f15b255fb0ebd9466a3d24285447053e798fc",
+    "src/tracing/inputController.js": "3c074a0dcfdf36441a0b0572ba01aceffee7de8457dae0f861dd51bbf5a3c3df",
+    "src/tracing/liveRenderer.js": "752b1f16b684d4892c7b3c423c865b2a73111beb7aca23ee0539b6255546ad4a",
+    "src/tracing/matcher.js": "b29f82061774bf6cdb8d1a45182d18e72a687e781fda43c6154d05debc407c2d",
+    "src/tracing/numberedGuides.js": "46c44853e3f1d65c194767666ac7a4b2f7bac5cbb84304001f2847a7ad14bd3b",
+    "src/tracing/outlineAppearance.js": "1a2f11a2fc67e90fba277b77324cd3f7ffc2badbc41e851e4ac121e5945b086c",
+    "src/tracing/playMatcher.js": "896ce2f6aa1dba59cddfff178ef72e473aedb9d30907a17dba9993ccf0d94835",
+    "src/tracing/prepareReference.js": "d4402dda2203cfa1bc7a3b76dc3f97c774ece17c6fde8d5c612ced48a5910f61",
+    "src/tracing/profiles.js": "1f8729320d364606629959e27c1b986e4710f8e4582f0d27b8fb8bf536a014e7",
+    "src/tracing/teachingCues.js": "3c651612e1f0e129e3ba131e5c0165c1d5258619744aafe0a0d69dcd390448db",
+    "src/tracing/traceReducer.js": "459959d0ac8236f56f365e153d5294904832c0028330a389fee152a6d62e8853",
+    "package.json": "ac046cef16f885ce96e15c3e23c90ba830ccdf1145a843e0e01f8236b6cf86b8",
+    "package-lock.json": "57baa5196ed8f895ff438530fc5621d31ac026949cf23817015069bcc21c431d",
+    "playwright.config.js": "f9ce1412decf8249638a0b59c48a3c52e811bb9885dc8cc8f2282e823ad3d4d7",
+    "tests/geometry/wauVaDirections.test.js": "04716b105b19c62838a44402e6c409d6f146ff9230b259e235f8463e5668daa9",
+    "tests/fixtures/wau-va-direction-originals.json": "4e9b1b93d1dcf8f04578b9d6349e1eb9abb26922062f80283508f209a4dc7519",
+    "tests/browser/wau-va-directions.spec.js": "cd8116223d06874c4a4f1f582d726fe4ea7abbc5d20333ced0abe3455211f232",
+    "tests/browser/helpers/audio.js": "88b1e72b89cb1960620243a0d264a58d9d2ac3deef89fbfdf2bdf379ddce0f06",
+    "tests/browser/helpers/localTest.js": "70e9f7743a8e2ad349a4d2fdc5151f4ab5ad60eb6532191f9279a555bbf02744",
+    "tests/browser/helpers/navigation.js": "feecede17d4c63d614bebd7e3caf2d17ef7229d273f01e98f2d1d74261e88178",
+    "tests/browser/helpers/readyCatalogue.js": "5f1a122511946ba391bf19c6b51d0aa3c07f136f57a6f6eaf8efcc385dcb1726",
+    "tests/browser/helpers/tracing.js": "b7dc6662ac43d70ad5198c80eeaef2db1f4c316a0d27cc15b424ad9fb4daffc1",
+    "dist/assets/index-CrLRAi-8.js": "b2adb28e8be0e6fc35876be4a4ee8e2a08a325ef6ae1261a27c07db179187600",
+    "dist/assets/index-DbweFF8G.css": "0764aa3bb4839f976f3639e0ed8e8839c748d1acd73a1fea5dae1715bbcc67d0",
+    "dist/index.html": "ab6becc1f1266532a208270e28b4c12fa32a984a0b5baba2f972a193f081f175"
+  }
+}

@@ -36,6 +36,7 @@ output/verification/**/*.py
 # Task-local test caches and generated preview/audio artifacts.
 output/verification/**/temp/
 output/verification/**/test-harness.js
+output/verification/**/glyph-harness.js
 output/verification/**/*.wav
 output/verification/**/*.mp3
 output/verification/**/*.m4a
